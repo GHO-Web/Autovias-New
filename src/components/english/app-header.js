@@ -81,6 +81,41 @@ class AppHeaderEnglish extends HTMLElement {
             </li>
 
             <li><a href="../../../english/" aria-label="Go to home">HOME</a></li>
+            <li class="submenu">
+              <a href="#" role="button" aria-label="Services us" tabindex="0" aria-haspopup="true" aria-expanded="false">Services<span class="icon-arrow-down"></span></a>
+              <ul>
+                <li><a href="../../../english/services/pago-referenciado-oxxo.html" tabindex="0">Referenced Pay OXXO</a></li>
+                <li><a href="../../../english/services/viajero-protegido.html" tabindex="0">Protected traveler</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#" role="button" aria-label="Destinations" tabindex="0" aria-haspopup="true" aria-expanded="false">Destinations<span class="icon-arrow-down"></span></a>
+              <ul>
+                <li><a href="../../../english/destinations/boletos-de-autobus-a-acambaro.html" tabindex="0">Acámbaro</a></li>
+                <li><a href="../../../english/destinations/boletos-de-autobus-a-acambay.html" tabindex="0">Acambay</a></li>
+                <li><a href="../../../english/destinations/boletos-de-autobus-a-atlacomulco.html" tabindex="0">Atlacomulco</a></li>
+                <li><a href="../../../english/destinations/boletos-de-autobus-a-cdmx.html" tabindex="0">CDMX</a></li>
+                <li><a href="../../../english/destinations/boletos-de-autobus-a-colima.html" tabindex="0">Colima</a></li>
+                <li><a href="../../../english/destinations/boletos-de-autobus-a-guadalajara.html" tabindex="0">Guadalajara</a></li>
+                <li><a href="../../../english/destinations/boletos-de-autobus-a-uruapan.html" tabindex="0">Uruapan</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#" role="button" aria-label="Promotions" tabindex="0" aria-haspopup="true" aria-expanded="false">Promotions<span class="icon-arrow-down"></span></a>
+              <ul>
+                <li><a href="../../../english/promotions/buen-fin/" tabindex="0">Buen Fin</a></li>
+                <li><a href="../../../english/promotions/hot-travel/" tabindex="0">Hot Travel</a></li>
+                <li><a href="../../../english/promotions/offers-in-1-click/" tabindex="0">Offers in 1 Click</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="#" role="button" aria-label="About" tabindex="0" aria-haspopup="true" aria-expanded="false">About<span class="icon-arrow-down"></span></a>
+              <ul>
+                <li><a href="../../../english/about/terminos-condiciones.html" tabindex="0">Terms and Conditions</a></li>
+                <li><a href="../../../english/about/aviso-de-privacidad.html" tabindex="0">Privacy Notice</a></li>
+                <li><a href="../../../english/about/quienes-somos.html" tabindex="0">About Us</a></li>
+              </ul>
+            </li>
 
             <li class="li__login">
               <button id="login-icon" class="btn-travelpass btn-travelpass__submenu js-open-travelpass-login-modal" aria-label="Login TravelPass">
