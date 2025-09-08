@@ -11,7 +11,7 @@ import "../../../components/app-description-destination.js";
 import "../../../components/app-explore-section.js";
 import "../../../js/slick.js?v=1.0.2";
 
-class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
+class PageBoletosAutobusDoloresHidalgoGtoEnglish extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
@@ -19,23 +19,23 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
       <app-modal-doters-english></app-modal-doters-english>
       <div class="__first-section">
         <app-banner-image
-          image-src="../../src/assets/img/english/destinations/acambaro/banner/acambaro.webp"
-          image-alt="Promotional banner for Acámbaro"
+          image-src="../../src/assets/img/english/destinations/dolores-hidalgo-gto/banner/dolores-hidalgo.webp"
+          image-alt="Promotional banner for Dolores Hidalgo Gto"
         ></app-banner-image>
       </div>
       <section class="__section">
         <app-description-destination
-          title-text="Acámbaro is waiting. Autovías La Línea will take you there."
+          title-text="Dolores Hidalgo is waiting. Autovías La Línea will take you there."
           image-data='[
-            {"id": "1", "src": "../../src/assets/img/english/destinations/acambaro/overflow-images/fuente.webp", "alt": "Fuente Taurina"},
-            {"id": "2", "src": "../../src/assets/img/english/destinations/acambaro/overflow-images/chupicuaro.webp", "alt": "Chupícuaro Archaeological Zone"},
-            {"id": "3", "src": "../../src/assets/img/english/destinations/acambaro/overflow-images/solis.webp", "alt": "Solís Dam"}
+            {"id": "1", "src": "../../src/assets/img/english/destinations/dolores-hidalgo-gto/overflow-images/viñedos.webp", "alt": "Cuna de Tierra Vineyards"},
+            {"id": "2", "src": "../../src/assets/img/english/destinations/dolores-hidalgo-gto/overflow-images/museo.webp", "alt": "Casa Museo José Alfredo Jiménez"},
+            {"id": "3", "src": "../../src/assets/img/english/destinations/dolores-hidalgo-gto/overflow-images/bicentenario.webp", "alt": "Bicentennial Museum"}
           ]'
-          paragraph-text="Acámbaro is a cultural crossroads in southern Guanajuato, where ancient civilizations, artisan traditions, and natural beauty converge. Known as the “City of Bread,” this destination offers a unique blend of history, creativity, and outdoor adventure. From its archaeological roots to its scenic dam and iconic monuments, Acámbaro invites travelers to explore a lesser-known side of Mexico — full of flavor, character, and quiet charm."
+          paragraph-text="Dolores Hidalgo is a cultural icon nestled in the heart of Guanajuato. Known as the birthplace of Mexican independence and the hometown of legendary singer José Alfredo Jiménez, this Pueblo Mágico blends history, music, and artisanal charm. From its vibrant plazas and museums to its celebrated vineyards and colorful streets, Dolores Hidalgo invites travelers to experience Mexico’s soul — with style and peace of mind."
         ></app-description-destination>
       </section>
       <section class="__section">
-        <app-section-title section-title="Explore the Highlights of Acámbaro"></app-section-title>
+        <app-section-title section-title="Explore the Highlights of Dolores Hidalgo"></app-section-title>
         <app-explore-section></app-explore-section>
       </section>
         
@@ -45,9 +45,9 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
         <app-banner-multi-image></app-banner-multi-image>
         <p class="text-description">
           Savor the essence of Mexico in every bite.</br>
-          Acámbaro’s culinary heritage is rooted in tradition and craftsmanship. From its legendary bread to its lakeside flavors, every dish reflects the warmth and creativity of its people. Eating here is more than a meal — it’s a taste of history.
+          Dolores Hidalgo’s cuisine is a flavorful tribute to Guanajuato’s culinary heritage. From hearty stews to adventurous ice cream flavors, every dish reflects the town’s bold character and creative spirit.
         </p>
-        <app-card-image-tag-text data-src="../../src/data/english/destinations/acambaro/food.json"></app-card-image-tag-text>
+        <app-card-image-tag-text data-src="../../src/data/english/destinations/dolores-hidalgo-gto/food.json"></app-card-image-tag-text>
       </section>
         
       <section class="__section">
@@ -64,7 +64,7 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
         
       <section class="__section">
         <app-section-title section-title="Explore more destinations with ETN Turistar Mexico is waiting for you."></app-section-title>
-        <app-destiny-slider src="../../src/data/english/destinations/acambaro/grid-text-data.json"></app-destiny-slider>
+        <app-destiny-slider src="../../src/data/english/destinations/dolores-hidalgo-gto/grid-text-data.json"></app-destiny-slider>
       </section>
     `;
 		this._loadExploreSectionData();
@@ -73,7 +73,7 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
 	async _loadExploreSectionData() {
 		try {
 			const response = await fetch(
-				"../../src/data/english/destinations/acambaro/cards-explore-section.json"
+				"../../src/data/english/destinations/dolores-hidalgo-gto/cards-explore-section.json"
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -89,6 +89,6 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-acambaro-english",
-	PageBoletosAutobusAcambaroEnglish
+	"page-boletos-de-autobus-dolores-hidalgo-gto-english",
+	PageBoletosAutobusDoloresHidalgoGtoEnglish
 );

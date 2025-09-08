@@ -70,10 +70,17 @@ import "./english/page-home-english.js?v=1.3.3";
 // Destinations
 import "./english/destinations/page-boletos-de-autobus-acambaro.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-acambay.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-amealco.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-atlacomulco.js?v=1.3.3";
-import "./english/destinations/page-boletos-de-autobus-colima.js?v=1.3.3";
-import "./english/destinations/page-boletos-de-autobus-guadalajara.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-cdmx.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-colima.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-dolores-hidalgo-gto.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-guadalajara.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-huetamo.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-jilotepec.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-manzanillo.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-maravatio.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-morelia.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-uruapan.js?v=1.3.3";
 
 // WHO ARE WE

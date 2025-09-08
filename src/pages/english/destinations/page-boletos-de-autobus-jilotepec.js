@@ -11,7 +11,7 @@ import "../../../components/app-description-destination.js";
 import "../../../components/app-explore-section.js";
 import "../../../js/slick.js?v=1.0.2";
 
-class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
+class PageBoletosAutobusJilotepecEnglish extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
@@ -19,35 +19,35 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
       <app-modal-doters-english></app-modal-doters-english>
       <div class="__first-section">
         <app-banner-image
-          image-src="../../src/assets/img/english/destinations/acambaro/banner/acambaro.webp"
-          image-alt="Promotional banner for Acámbaro"
+          image-src="../../src/assets/img/english/destinations/jilotepec/banner/Jilotepec.webp"
+          image-alt="Promotional banner for Jilotepec"
         ></app-banner-image>
       </div>
       <section class="__section">
         <app-description-destination
-          title-text="Acámbaro is waiting. Autovías La Línea will take you there."
+          title-text="Jilotepec is waiting. Autovías La Línea will take you there."
           image-data='[
-            {"id": "1", "src": "../../src/assets/img/english/destinations/acambaro/overflow-images/fuente.webp", "alt": "Fuente Taurina"},
-            {"id": "2", "src": "../../src/assets/img/english/destinations/acambaro/overflow-images/chupicuaro.webp", "alt": "Chupícuaro Archaeological Zone"},
-            {"id": "3", "src": "../../src/assets/img/english/destinations/acambaro/overflow-images/solis.webp", "alt": "Solís Dam"}
+            {"id": "1", "src": "../../src/assets/img/english/destinations/jilotepec/overflow-images/balsas.webp", "alt": "Las Peñas Rock Formations"},
+            {"id": "2", "src": "../../src/assets/img/english/destinations/jilotepec/overflow-images/jilotepec.webp", "alt": "Manuel Ávila Camacho Plaza"},
+            {"id": "3", "src": "../../src/assets/img/english/destinations/jilotepec/overflow-images/recreational.webp", "alt": "Huamango Archaeological Site"}
           ]'
-          paragraph-text="Acámbaro is a cultural crossroads in southern Guanajuato, where ancient civilizations, artisan traditions, and natural beauty converge. Known as the “City of Bread,” this destination offers a unique blend of history, creativity, and outdoor adventure. From its archaeological roots to its scenic dam and iconic monuments, Acámbaro invites travelers to explore a lesser-known side of Mexico — full of flavor, character, and quiet charm."
+          paragraph-text="Jilotepec is a mountain town in northern Estado de México, known for its rugged landscapes, Otomí heritage, and adventurous spirit. Surrounded by forests, canyons, and ancient ruins, this destination blends natural beauty with cultural depth. From its panoramic rock formations to its vibrant central plaza and pre-Hispanic legacy, Jilotepec invites travelers to explore a highland escape — with style and peace of mind."
         ></app-description-destination>
       </section>
       <section class="__section">
-        <app-section-title section-title="Explore the Highlights of Acámbaro"></app-section-title>
+        <app-section-title section-title="Explore the Highlights of Jilotepec"></app-section-title>
         <app-explore-section></app-explore-section>
       </section>
         
         
       <section class="__section">
-        <app-section-title section-title="Hungry for Mexico? Start here."></app-section-title>
+        <app-section-title section-title="Hungry for México? Start here."></app-section-title>
         <app-banner-multi-image></app-banner-multi-image>
         <p class="text-description">
           Savor the essence of Mexico in every bite.</br>
-          Acámbaro’s culinary heritage is rooted in tradition and craftsmanship. From its legendary bread to its lakeside flavors, every dish reflects the warmth and creativity of its people. Eating here is more than a meal — it’s a taste of history.
+          Jilotepec’s cuisine is rooted in mountain ingredients and indigenous flavors. From earthy greens to rustic stews, every dish reflects the town’s agricultural heritage and culinary creativity.
         </p>
-        <app-card-image-tag-text data-src="../../src/data/english/destinations/acambaro/food.json"></app-card-image-tag-text>
+        <app-card-image-tag-text data-src="../../src/data/english/destinations/jilotepec/food.json"></app-card-image-tag-text>
       </section>
         
       <section class="__section">
@@ -63,8 +63,8 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
       </section>
         
       <section class="__section">
-        <app-section-title section-title="Explore more destinations with ETN Turistar Mexico is waiting for you."></app-section-title>
-        <app-destiny-slider src="../../src/data/english/destinations/acambaro/grid-text-data.json"></app-destiny-slider>
+        <app-section-title section-title="Explore more destinations with Autovías La Línea — Mexico is waiting for you."></app-section-title>
+        <app-destiny-slider src="../../src/data/english/destinations/jilotepec/grid-text-data.json"></app-destiny-slider>
       </section>
     `;
 		this._loadExploreSectionData();
@@ -73,7 +73,7 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
 	async _loadExploreSectionData() {
 		try {
 			const response = await fetch(
-				"../../src/data/english/destinations/acambaro/cards-explore-section.json"
+				"../../src/data/english/destinations/jilotepec/cards-explore-section.json"
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -89,6 +89,6 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-acambaro-english",
-	PageBoletosAutobusAcambaroEnglish
+	"page-boletos-de-autobus-jilotepec-english",
+	PageBoletosAutobusJilotepecEnglish
 );

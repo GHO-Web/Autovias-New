@@ -11,7 +11,7 @@ import "../../../components/app-description-destination.js";
 import "../../../components/app-explore-section.js";
 import "../../../js/slick.js?v=1.0.2";
 
-class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
+class PageBoletosAutobusMaravatioEnglish extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
@@ -19,35 +19,35 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
       <app-modal-doters-english></app-modal-doters-english>
       <div class="__first-section">
         <app-banner-image
-          image-src="../../src/assets/img/english/destinations/acambaro/banner/acambaro.webp"
-          image-alt="Promotional banner for Acámbaro"
+          image-src="../../src/assets/img/english/destinations/maravatio/banner/Maravatio.webp"
+          image-alt="Promotional banner for Maravatio"
         ></app-banner-image>
       </div>
       <section class="__section">
         <app-description-destination
-          title-text="Acámbaro is waiting. Autovías La Línea will take you there."
+          title-text="Maravatío is waiting. Autovías La Línea will take you there.."
           image-data='[
-            {"id": "1", "src": "../../src/assets/img/english/destinations/acambaro/overflow-images/fuente.webp", "alt": "Fuente Taurina"},
-            {"id": "2", "src": "../../src/assets/img/english/destinations/acambaro/overflow-images/chupicuaro.webp", "alt": "Chupícuaro Archaeological Zone"},
-            {"id": "3", "src": "../../src/assets/img/english/destinations/acambaro/overflow-images/solis.webp", "alt": "Solís Dam"}
+            {"id": "1", "src": "../../src/assets/img/english/destinations/maravatio/overflow-images/balsas.webp", "alt": "Independence Gate"},
+            {"id": "2", "src": "../../src/assets/img/english/destinations/maravatio/overflow-images/jilotepec.webp", "alt": "Morelos Theater"},
+            {"id": "3", "src": "../../src/assets/img/english/destinations/maravatio/overflow-images/recreational.webp", "alt": "Pomoca Hacienda"}
           ]'
-          paragraph-text="Acámbaro is a cultural crossroads in southern Guanajuato, where ancient civilizations, artisan traditions, and natural beauty converge. Known as the “City of Bread,” this destination offers a unique blend of history, creativity, and outdoor adventure. From its archaeological roots to its scenic dam and iconic monuments, Acámbaro invites travelers to explore a lesser-known side of Mexico — full of flavor, character, and quiet charm."
+          paragraph-text="Maravatío is a highland town with deep historical roots and a vibrant cultural identity. Located in eastern Michoacán, it’s known for its colonial architecture, artisan traditions, and scenic countryside. From its historic landmarks and civic spaces to its legacy as a hub of independence-era activity, Maravatío invites travelers to explore a quieter, more authentic side of Mexico — with style and peace of mind."
         ></app-description-destination>
       </section>
       <section class="__section">
-        <app-section-title section-title="Explore the Highlights of Acámbaro"></app-section-title>
+        <app-section-title section-title="Explore the Highlights of Maravatío"></app-section-title>
         <app-explore-section></app-explore-section>
       </section>
         
         
       <section class="__section">
-        <app-section-title section-title="Hungry for Mexico? Start here."></app-section-title>
+        <app-section-title section-title="Hungry for México? Start here."></app-section-title>
         <app-banner-multi-image></app-banner-multi-image>
         <p class="text-description">
           Savor the essence of Mexico in every bite.</br>
-          Acámbaro’s culinary heritage is rooted in tradition and craftsmanship. From its legendary bread to its lakeside flavors, every dish reflects the warmth and creativity of its people. Eating here is more than a meal — it’s a taste of history.
+          Maravatío’s cuisine blends Michoacán’s rustic flavors with local creativity. From hearty stews to sweet breads and seasonal snacks, every dish reflects the town’s agricultural heritage and culinary pride.
         </p>
-        <app-card-image-tag-text data-src="../../src/data/english/destinations/acambaro/food.json"></app-card-image-tag-text>
+        <app-card-image-tag-text data-src="../../src/data/english/destinations/maravatio/food.json"></app-card-image-tag-text>
       </section>
         
       <section class="__section">
@@ -63,8 +63,8 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
       </section>
         
       <section class="__section">
-        <app-section-title section-title="Explore more destinations with ETN Turistar Mexico is waiting for you."></app-section-title>
-        <app-destiny-slider src="../../src/data/english/destinations/acambaro/grid-text-data.json"></app-destiny-slider>
+        <app-section-title section-title="Explore more destinations with Autovías La Línea — Mexico is waiting for you."></app-section-title>
+        <app-destiny-slider src="../../src/data/english/destinations/maravatio/grid-text-data.json"></app-destiny-slider>
       </section>
     `;
 		this._loadExploreSectionData();
@@ -73,7 +73,7 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
 	async _loadExploreSectionData() {
 		try {
 			const response = await fetch(
-				"../../src/data/english/destinations/acambaro/cards-explore-section.json"
+				"../../src/data/english/destinations/maravatio/cards-explore-section.json"
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -89,6 +89,6 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-acambaro-english",
-	PageBoletosAutobusAcambaroEnglish
+	"page-boletos-de-autobus-maravatio-english",
+	PageBoletosAutobusMaravatioEnglish
 );

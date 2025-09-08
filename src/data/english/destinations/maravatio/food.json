@@ -1,20 +1,20 @@
 [
   {
-    "imageSrc": "../../src/assets/img/english/destinations/maravatio/food/cabrito-english.webp",
-    "imageAlt": "Cabrito",
-    "tag": "Cabrito al horno",
-    "text": "Tender, juicy goat meat, marinated and slow-roasted to perfection, served with traditional side dishes from the Bajío region."
+    "imageSrc": "../../src/assets/img/english/destinations/maravatio/food/carnitas.webp",
+    "imageAlt": "Carnitas de Maravatío",
+    "tag": "Carnitas de Maravatío",
+    "text": "Slow-cooked pork prepared in copper pots, seasoned with local herbs and served with handmade tortillas. Crispy on the outside, tender inside — a regional favorite with bold flavor"
   },
   {
-    "imageSrc": "../../src/assets/img/english/destinations/maravatio/food/sopa-campesina-english.webp",
-    "imageAlt": "Sopa Campesina",
-    "tag": "Sopa Campesina",
-    "text": "A comforting broth with vegetables, meat, and spices perfect for cool days. It’s a reflection of traditional, homemade Mexican cooking"
+    "imageSrc": "../../src/assets/img/english/destinations/maravatio/food/enchiladas.webp",
+    "imageAlt": "Enchiladas Placeras",
+    "tag": "Enchiladas Placeras",
+    "text": "Corn tortillas filled with cheese or meat, bathed in red salsa and topped with potatoes, carrots, and lettuce. A colorful, satisfying dish often served during local festivities."
   },
   {
-    "imageSrc": "../../src/assets/img/english/destinations/maravatio/food/flan-english.webp",
-    "imageAlt": "Flan de queso y guayaba",
-    "tag": "Flan de queso y guayaba",
-    "text": "A smooth, creamy dessert that blends the rich flavor of cheese with the sweetness of guava—a festive favorite in local celebrations."
+    "imageSrc": "../../src/assets/img/english/destinations/maravatio/food/pan.webp",
+    "imageAlt": "Pan de Leche",
+    "tag": "Pan de Leche",
+    "text": "Soft, slightly sweet bread made with milk and eggs, often enjoyed with coffee or hot chocolate. A comforting treat found in Maravatío’s bakeries and morning markets."
   }
 ]

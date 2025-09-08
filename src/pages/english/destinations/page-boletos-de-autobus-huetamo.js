@@ -11,7 +11,7 @@ import "../../../components/app-description-destination.js";
 import "../../../components/app-explore-section.js";
 import "../../../js/slick.js?v=1.0.2";
 
-class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
+class PageBoletosAutobusHuetamoEnglish extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
@@ -19,35 +19,35 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
       <app-modal-doters-english></app-modal-doters-english>
       <div class="__first-section">
         <app-banner-image
-          image-src="../../src/assets/img/english/destinations/acambaro/banner/acambaro.webp"
-          image-alt="Promotional banner for Acámbaro"
+          image-src="../../src/assets/img/english/destinations/huetamo/banner/Huetamo.webp"
+          image-alt="Promotional banner for Huetamo"
         ></app-banner-image>
       </div>
       <section class="__section">
         <app-description-destination
-          title-text="Acámbaro is waiting. Autovías La Línea will take you there."
+          title-text="Huetamo is waiting. Autovías La Línea will take you there."
           image-data='[
-            {"id": "1", "src": "../../src/assets/img/english/destinations/acambaro/overflow-images/fuente.webp", "alt": "Fuente Taurina"},
-            {"id": "2", "src": "../../src/assets/img/english/destinations/acambaro/overflow-images/chupicuaro.webp", "alt": "Chupícuaro Archaeological Zone"},
-            {"id": "3", "src": "../../src/assets/img/english/destinations/acambaro/overflow-images/solis.webp", "alt": "Solís Dam"}
+            {"id": "1", "src": "../../src/assets/img/english/destinations/huetamo/overflow-images/balsas.webp", "alt": "Balsas River Lookout"},
+            {"id": "2", "src": "../../src/assets/img/english/destinations/huetamo/overflow-images/huetamo.webp", "alt": "Huetamo Cultural Center"},
+            {"id": "3", "src": "../../src/assets/img/english/destinations/huetamo/overflow-images/recreational.webp", "alt": "La Cañada Recreational Zone"}
           ]'
-          paragraph-text="Acámbaro is a cultural crossroads in southern Guanajuato, where ancient civilizations, artisan traditions, and natural beauty converge. Known as the “City of Bread,” this destination offers a unique blend of history, creativity, and outdoor adventure. From its archaeological roots to its scenic dam and iconic monuments, Acámbaro invites travelers to explore a lesser-known side of Mexico — full of flavor, character, and quiet charm."
+          paragraph-text="Huetamo is a sun-drenched town in the Tierra Caliente region of Michoacán, known for its warm climate, vibrant traditions, and deep-rooted community spirit. Nestled near the Balsas River and surrounded by rugged hills, this destination blends natural beauty with cultural pride. From scenic viewpoints and artisan spaces to lively plazas and local music, Huetamo invites travelers to experience the heart of Michoacán — with style and peace of mind."
         ></app-description-destination>
       </section>
       <section class="__section">
-        <app-section-title section-title="Explore the Highlights of Acámbaro"></app-section-title>
+        <app-section-title section-title="Explore the Highlights of Huetamo"></app-section-title>
         <app-explore-section></app-explore-section>
       </section>
         
         
       <section class="__section">
-        <app-section-title section-title="Hungry for Mexico? Start here."></app-section-title>
+        <app-section-title section-title="Hungry for México? Start here."></app-section-title>
         <app-banner-multi-image></app-banner-multi-image>
         <p class="text-description">
           Savor the essence of Mexico in every bite.</br>
-          Acámbaro’s culinary heritage is rooted in tradition and craftsmanship. From its legendary bread to its lakeside flavors, every dish reflects the warmth and creativity of its people. Eating here is more than a meal — it’s a taste of history.
+          Huetamo’s cuisine reflects the bold flavors of Tierra Caliente — smoky meats, fresh produce, and time-honored recipes passed down through generations. Every dish is a celebration of local identity and culinary pride.
         </p>
-        <app-card-image-tag-text data-src="../../src/data/english/destinations/acambaro/food.json"></app-card-image-tag-text>
+        <app-card-image-tag-text data-src="../../src/data/english/destinations/huetamo/food.json"></app-card-image-tag-text>
       </section>
         
       <section class="__section">
@@ -63,8 +63,8 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
       </section>
         
       <section class="__section">
-        <app-section-title section-title="Explore more destinations with ETN Turistar Mexico is waiting for you."></app-section-title>
-        <app-destiny-slider src="../../src/data/english/destinations/acambaro/grid-text-data.json"></app-destiny-slider>
+        <app-section-title section-title="Explore more destinations with Autovías La Línea — Mexico is waiting for you."></app-section-title>
+        <app-destiny-slider src="../../src/data/english/destinations/huetamo/grid-text-data.json"></app-destiny-slider>
       </section>
     `;
 		this._loadExploreSectionData();
@@ -73,7 +73,7 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
 	async _loadExploreSectionData() {
 		try {
 			const response = await fetch(
-				"../../src/data/english/destinations/acambaro/cards-explore-section.json"
+				"../../src/data/english/destinations/huetamo/cards-explore-section.json"
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -89,6 +89,6 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-acambaro-english",
-	PageBoletosAutobusAcambaroEnglish
+	"page-boletos-de-autobus-huetamo-english",
+	PageBoletosAutobusHuetamoEnglish
 );

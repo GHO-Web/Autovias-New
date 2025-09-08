@@ -1,20 +1,20 @@
 [
   {
-    "imageSrc": "../../src/assets/img/english/destinations/manzanillo/food/cabrito-english.webp",
-    "imageAlt": "Cabrito",
-    "tag": "Cabrito al horno",
-    "text": "Tender, juicy goat meat, marinated and slow-roasted to perfection, served with traditional side dishes from the Bajío region."
+    "imageSrc": "../../src/assets/img/english/destinations/manzanillo/food/ceviche.webp",
+    "imageAlt": "Ceviche de Colima",
+    "tag": "Ceviche de Colima",
+    "text": "Fresh fish marinated in lime juice, mixed with tomato, onion, cilantro, and avocado. Light, tangy, and refreshing — a beachside classic that captures the spirit of Manzanillo."
   },
   {
-    "imageSrc": "../../src/assets/img/english/destinations/manzanillo/food/sopa-campesina-english.webp",
-    "imageAlt": "Sopa Campesina",
-    "tag": "Sopa Campesina",
-    "text": "A comforting broth with vegetables, meat, and spices perfect for cool days. It’s a reflection of traditional, homemade Mexican cooking"
+    "imageSrc": "../../src/assets/img/english/destinations/manzanillo/food/camarones.webp",
+    "imageAlt": "Camarones a la Diabla",
+    "tag": "Camarones a la Diabla",
+    "text": "Shrimp sautéed in a fiery red chile sauce, served with rice and tortillas. Bold, spicy, and deeply satisfying — a favorite among locals and visitors alike."
   },
   {
-    "imageSrc": "../../src/assets/img/english/destinations/manzanillo/food/flan-english.webp",
-    "imageAlt": "Flan de queso y guayaba",
-    "tag": "Flan de queso y guayaba",
-    "text": "A smooth, creamy dessert that blends the rich flavor of cheese with the sweetness of guava—a festive favorite in local celebrations."
+    "imageSrc": "../../src/assets/img/english/destinations/manzanillo/food/tatemado.webp",
+    "imageAlt": "Tatemado",
+    "tag": "Tatemado",
+    "text": "Slow-cooked pork shoulder seasoned with guajillo chile, garlic, and bay leaf. Rich and aromatic, this traditional dish offers a taste of Colima’s inland flavors with a coastal twist."
   }
 ]
