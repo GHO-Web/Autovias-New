@@ -1,20 +1,20 @@
 [
   {
     "imageSrc": "../../src/assets/img/english/destinations/tepotzotlan/food/cabrito-english.webp",
-    "imageAlt": "Cabrito",
-    "tag": "Cabrito al horno",
-    "text": "Tender, juicy goat meat, marinated and slow-roasted to perfection, served with traditional side dishes from the Bajío region."
+    "imageAlt": "Mixiotes de Borrego",
+    "tag": "Mixiotes de Borrego",
+    "text": "Tender lamb marinated in chile sauce, wrapped in maguey leaves, and slow-cooked until juicy. A flavorful dish that honors ancient cooking traditions."
   },
   {
     "imageSrc": "../../src/assets/img/english/destinations/tepotzotlan/food/sopa-campesina-english.webp",
-    "imageAlt": "Sopa Campesina",
-    "tag": "Sopa Campesina",
-    "text": "A comforting broth with vegetables, meat, and spices perfect for cool days. It’s a reflection of traditional, homemade Mexican cooking"
+    "imageAlt": "Tamales de Acelga",
+    "tag": "Tamales de Acelga",
+    "text": "Vegetarian tamales filled with sautéed Swiss chard, onion, and spices. Steamed in corn husks and served with salsa, they’re a comforting and nutritious local favorite."
   },
   {
     "imageSrc": "../../src/assets/img/english/destinations/tepotzotlan/food/flan-english.webp",
-    "imageAlt": "Flan de queso y guayaba",
-    "tag": "Flan de queso y guayaba",
-    "text": "A smooth, creamy dessert that blends the rich flavor of cheese with the sweetness of guava—a festive favorite in local celebrations."
+    "imageAlt": "Escamoles Tostadas",
+    "tag": "Escamoles Tostadas",
+    "text": "Ant larvae sautéed with epazote and garlic, served over crispy tostadas with avocado and fresh herbs. A delicacy with deep pre-Hispanic roots and bold flavor."
   }
 ]

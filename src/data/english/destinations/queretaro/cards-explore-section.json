@@ -1,17 +1,17 @@
 [
   {
     "image": "../../src/assets/img/english/destinations/queretaro/cards-explore-section/san-marcos-garden.webp",
-    "title": "San Marcos Garden",
-    "description": "Visit the heart of Aguascalientes. Surrounded by pink quarry stone and century-old trees, San Marcos Garden is the perfect place to stroll, take photos, and connect with local culture. A charming corner full of history  ideal for relaxing and experiencing the authentic spirit of Mexico."
+    "title": "Peña de Bernal",
+    "description": "Just outside the city, this towering monolith is one of the largest in the world. Ideal for hiking, photography, and panoramic views, Peña de Bernal offers a dramatic natural escape and a chance to connect with the region’s geological wonders."
   },
   {
     "image": "../../src/assets/img/english/destinations/queretaro/cards-explore-section/adventure-park.webp",
-    "title": "Boca de Túnel Adventure Park",
-    "description": "Boca de Túnel is an adventure park nestled among rocky canyons and a crystal-clear reservoir. It’s one of central Mexico’s best-kept secrets a place where wild nature, adrenaline, and breathtaking views come together in perfect harmony."
+    "title": "Museo de la Ciudad",
+    "description": "Housed in a former colonial building, this museum features contemporary art, photography, and cultural exhibitions. It’s a dynamic space that showcases local and international talent in a historic setting."
   },
   {
     "image": "../../src/assets/img/english/destinations/queretaro/cards-explore-section/railway-workers-museum.webp",
-    "title": "Railway Workers Museum",
-    "description": "Housed in a former train station built in 1911, the Museo Ferrocarrilero de Aguascalientes is a time capsule that brings Mexico’s golden age of railroads back to life. This museum doesn’t just showcase original locomotives, railcars, and tools — it tells the human stories behind the progress: the workers, the travelers, and the dreams that once crossed the country on steel tracks."
+    "title": "El Cerrito Archaeological Zone",
+    "description": "Located in nearby Corregidora, this pre-Hispanic site features pyramids, ceremonial platforms, and ancient relics. It’s a quiet, educational stop that reveals Querétaro’s indigenous roots and architectural legacy."
   }
 ]
