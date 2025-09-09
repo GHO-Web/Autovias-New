@@ -33,4 +33,4 @@ class AppAutobusMonterrey extends HTMLElement {
     `;
 	}
 }
-customElements.define("page-autobus-monterrey", AppAutobusMonterrey);
+customElements.define("page-autobus-a-monterrey", AppAutobusMonterrey);

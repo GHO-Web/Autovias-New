@@ -33,4 +33,4 @@ class AppAutobusMorelia extends HTMLElement {
     `;
 	}
 }
-customElements.define("page-autobus-morelia", AppAutobusMorelia);
+customElements.define("page-autobus-a-morelia", AppAutobusMorelia);

@@ -10,7 +10,7 @@ class PageSiteMap extends HTMLElement {
       <app-modal-travelpass></app-modal-travelpass>
       <div class="space"></div>
       <section class="__section">
-        <app-section-title section-title="Site Map | ETN Turistar Lujo"></app-section-title>
+        <app-section-title section-title="Site Map | Autovías La Línea"></app-section-title>
         <div id="site-map-listas">Cargando...</div>
       </section>
 			<app-cookies-policy></app-cookies-policy>

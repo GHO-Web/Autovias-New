@@ -25,7 +25,7 @@ class AppHeaderEnglish extends HTMLElement {
                 <li><a href="../../../english/destinations/boletos-de-autobus-a-acambaro.html" tabindex="0">Acámbaro</a></li>
                 <li><a href="../../../english/destinations/boletos-de-autobus-a-acambay.html" tabindex="0">Acambay</a></li>
                 <li><a href="../../../english/destinations/boletos-de-autobus-a-atlacomulco.html" tabindex="0">Atlacomulco</a></li>
-                <li><a href="../../../english/destinations/boletos-de-autobus-a-cdmx.html" tabindex="0">CDMX</a></li>
+                <li><a href="../../../english/destinations/boletos-de-autobus-a-ciudad-de-mexico.html" tabindex="0">CDMX</a></li>
                 <li><a href="../../../english/destinations/boletos-de-autobus-a-colima.html" tabindex="0">Colima</a></li>
                 <li><a href="../../../english/destinations/boletos-de-autobus-a-guadalajara.html" tabindex="0">Guadalajara</a></li>
                 <li><a href="../../../english/destinations/boletos-de-autobus-a-uruapan.html" tabindex="0">Uruapan</a></li>
