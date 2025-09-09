@@ -72,6 +72,9 @@ class PageHomeEnglish extends HTMLElement {
         <app-grid-text src="../../src/data/english/home/grid-text-data.json"></app-grid-text>
       </section>
 
+		<app-cookies-policy-english></app-cookies-policy-english>
+		<app-button-whats></app-button-whats>
+		<app-button-eva-trip-english></app-button-eva-trip-english>
     `;
 	}
 }

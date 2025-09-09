@@ -530,6 +530,9 @@ class PageViajeroProtegidoEnglish extends HTMLElement {
                 </article>
             </section>
 
+		<app-cookies-policy-english></app-cookies-policy-english>
+		<app-button-whats></app-button-whats>
+		<app-button-eva-trip-english></app-button-eva-trip-english>
         `;
 	}
 }

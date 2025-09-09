@@ -108,6 +108,9 @@ class PageAvisoDePrivacidadEnglish extends HTMLElement {
           <p class="__terms-purchase-text">If you believe that your right to personal data protection has been violated or affected by any conduct of our staff, actions, or responses from the company, or if there is any breach of the provisions set forth in the Federal Law on Protection of Personal Data Held by Private Parties, you may file the corresponding complaint with the IFAI. For more information, please visit <a href="http://www.ifai.org.mx" target="_blank" rel="noopener noreferrer" class="__link-text">www.ifai.org.mx</a>.</p>
         </article>
       </section>
+		<app-cookies-policy-english></app-cookies-policy-english>
+		<app-button-whats></app-button-whats>
+		<app-button-eva-trip-english></app-button-eva-trip-english>
     `;
 	}
 }

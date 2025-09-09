@@ -64,6 +64,9 @@ class PageBoletosAutobusTacambaroEnglish extends HTMLElement {
         <app-section-title section-title="Explore more destinations with Autovías La Línea — Mexico is waiting for you."></app-section-title>
         <app-destiny-slider src="../../src/data/english/destinations/tacambaro/grid-text-data.json"></app-destiny-slider>
       </section>
+		<app-cookies-policy-english></app-cookies-policy-english>
+		<app-button-whats></app-button-whats>
+		<app-button-eva-trip-english></app-button-eva-trip-english>
     `;
 		this._loadExploreSectionData();
 	}
