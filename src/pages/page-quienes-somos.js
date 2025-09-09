@@ -12,7 +12,8 @@ class PageQuienesSomos extends HTMLElement {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
 
-            <app-modal-doters></app-modal-doters>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
     
             <app-banner-slider
                     slides-data='[
@@ -58,6 +59,9 @@ class PageQuienesSomos extends HTMLElement {
                     </ul>
                 </article>
             </section>
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
         `;
 	}
 }

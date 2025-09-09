@@ -32,15 +32,15 @@ class PageHome extends HTMLElement {
                 {"id": "title1", "title": "¿Aún no sabes a dónde viajar?", "text": "Conoce nuestros destinos Autovías La Línea y elige tu lugar favorito"}
                 ]'
                 destinations='[
-                {"id": "destination1", "title": "Ciudad de México", "content": "Sumérgete en la esencia vibrante y cultural de la Ciudad de México.", "image": "./src/assets/img/destinos-img/ciudad-de-mexico.webp", "link": "../boletos-de-autobus-a-ciudad-de-mexico.html"},
+                {"id": "destination1", "title": "Ciudad de México", "content": "Sumérgete en la esencia vibrante y cultural de la Ciudad de México.", "image": "./src/assets/img/destinos-img/ciudad-de-mexico.webp", "link": "../boletos-autobus/ciudad-de-mexico.html"},
         
-                {"id": "destination2", "title": "Colima", "content": "Explora la serenidad y riqueza natural de Colima.", "image": "./src/assets/img/destinos-img/Colima.webp", "link": "../boletos-de-autobus-a-colima.html"},
+                {"id": "destination2", "title": "Colima", "content": "Explora la serenidad y riqueza natural de Colima.", "image": "./src/assets/img/destinos-img/Colima.webp", "link": "../boletos-autobus/colima.html"},
         
-                {"id": "destination3", "title": "Guadalajara", "content": "Déjate envolver por la energía y el sabor vibrante de Guadalajara.", "image": "./src/assets/img/destinos-img/guadalajara.webp", "link": "../boletos-de-autobus-a-guadalajara.html"},
+                {"id": "destination3", "title": "Guadalajara", "content": "Déjate envolver por la energía y el sabor vibrante de Guadalajara.", "image": "./src/assets/img/destinos-img/guadalajara.webp", "link": "../boletos-autobus/guadalajara.html"},
                 
-                {"id": "destination5", "title": "Morelia", "content": "Descubre el encanto colonial y la riqueza histórica de Morelia.", "image": "./src/assets/img/destinos-img/Morelia.webp", "link": "../boletos-de-autobus-a-morelia.html"},
+                {"id": "destination5", "title": "Morelia", "content": "Descubre el encanto colonial y la riqueza histórica de Morelia.", "image": "./src/assets/img/destinos-img/Morelia.webp", "link": "../boletos-autobus/morelia.html"},
         
-                {"id": "destination4", "title": "Zitácuaro", "content": "Descubre la esencia natural y cultural de Zitácuaro.", "image": "./src/assets/img/destinos-img/Zitacuaro.webp", "link": "../boletos-de-autobus-a-zitacuaro.html"}
+                {"id": "destination4", "title": "Zitácuaro", "content": "Descubre la esencia natural y cultural de Zitácuaro.", "image": "./src/assets/img/destinos-img/Zitacuaro.webp", "link": "../boletos-autobus/zitacuaro.html"}
                 ]'
             >
             </app-destinations-grid>
@@ -52,15 +52,15 @@ class PageHome extends HTMLElement {
                 {"id": "title1", "title": "Destinos Autovías La Línea", "text": "Para los amantes de destinos cálidos"}
                 ]'
                 destinations='[
-                {"id": "destination1", "title": "Uruapan", "content": "Déjate llevar por la magia natural de Uruapan.", "image": "./src/assets/img/destinos-img/Uruapan.webp", "link": "../boletos-de-autobus-a-uruapan.html"},
+                {"id": "destination1", "title": "Uruapan", "content": "Déjate llevar por la magia natural de Uruapan.", "image": "./src/assets/img/destinos-img/Uruapan.webp", "link": "../boletos-autobus/uruapan.html"},
 
-                {"id": "destination2", "title": "Ixtapa", "content": "Descubre la esencia tropical de Ixtapa, Guerrero.", "image": "./src/assets/img/destinos-img/Ixtapan.webp", "link": "../boletos-de-autobus-a-ixtapa.html"},
+                {"id": "destination2", "title": "Ixtapa", "content": "Descubre la esencia tropical de Ixtapa, Guerrero.", "image": "./src/assets/img/destinos-img/Ixtapan.webp", "link": "../boletos-autobus/ixtapa.html"},
 
-                {"id": "destination3", "title": "Atlacomulco", "content": "Explora la esencia histórica y natural de Atlacomulco.", "image": "./src/assets/img/destinos-img/Atlacomulco.webp", "link": "../boletos-de-autobus-a-atlacomulco.html"},
+                {"id": "destination3", "title": "Atlacomulco", "content": "Explora la esencia histórica y natural de Atlacomulco.", "image": "./src/assets/img/destinos-img/Atlacomulco.webp", "link": "../boletos-autobus/atlacomulco.html"},
 
-                {"id": "destination4", "title": "Querétaro", "content": "Déjate sorprender por la historia y el encanto de Querétaro.", "image": "./src/assets/img/destinos-img/Queretaro.webp", "link": "../boletos-de-autobus-a-queretaro.html"},
+                {"id": "destination4", "title": "Querétaro", "content": "Déjate sorprender por la historia y el encanto de Querétaro.", "image": "./src/assets/img/destinos-img/Queretaro.webp", "link": "../boletos-autobus/queretaro.html"},
 
-                {"id": "destination5", "title": "Maravatío", "content": "Descubre los maravillosos lugares de Maravatío.", "image": "./src/assets/img/destinos-img/maravatio.webp", "link": "../boletos-de-autobus-a-maravatio.html"}
+                {"id": "destination5", "title": "Maravatío", "content": "Descubre los maravillosos lugares de Maravatío.", "image": "./src/assets/img/destinos-img/maravatio.webp", "link": "../boletos-autobus/maravatio.html"}
                 ]'
             >
             </app-destinations-grid>
@@ -77,6 +77,9 @@ class PageHome extends HTMLElement {
         >
             </app-other-services>
             <app-blog></app-blog>
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
         `;
 	}
 }

@@ -13,22 +13,25 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppBoletosAutobusQueretaro extends HTMLElement {
+class AppAutobusCiudadDeMexico extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Queretaro_banner_web.webp","mediumImage": "./src/assets/img/banner/tablet/Queretaro_tablet.webp", "smallImage": "./src/assets/img/banner/mobile/Queretaro_mobile.webp", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/ciudad_de_mexico.webp","mediumImage": "../src/assets/img/banner/tablet/cdmx_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/cdmx_mobile.webp", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>
 
             <section class="__section __section__monterrey__destinations">
-                <app-section-title section-title="Viaja a Uruapan en autobús con Autovías La Línea"></app-section-title>
-                <p class="__subtitle__destinos">Uruapan</p>
-                <p class="__paragraph">Uruapan, corazón de la Meseta Purépecha y puerta al Parque Nacional Barranca del Cupatitzio, te invita a descubrir un destino lleno de historia, naturaleza exuberante y una identidad cultural que late en cada rincón. Con Autovías La Línea, llegar a esta joya de Michoacán es tan cómodo como inspirador. Disfruta de un viaje seguro, relajado y con todo el confort que mereces.</p>
-                <p class="__paragraph">Bienvenido a Uruapan, donde la tradición y la naturaleza se abrazan en una experiencia única. Esta ciudad michoacana te cautiva con sus cascadas cristalinas, arquitectura virreinal y el legado ancestral de la cultura purépecha. Recorre el emblemático Parque Nacional Barranca del Cupatitzio, donde el río nace entre manantiales y senderos frondosos. Admira el arte del maque en el Museo La Huatápera, pasea por el pintoresco centro histórico y sumérgete en la espiritualidad del Antiguo Templo de San Juan Bautista. Además, si visitas en Semana Santa, no te pierdas el Tianguis Artesanal más grande de América Latina.</p>
+                <app-section-title section-title="Viaja a Cuidad de México en autobús con Autovías La Línea"></app-section-title>
+                <p class="__subtitle__destinos">Ciudad de México</p>
+                <p class="__paragraph">Ciudad de México, vibrante metrópoli que combina historia, modernidad y una oferta cultural inigualable, te espera con su energía única. Sus imponentes monumentos, barrios emblemáticos y gastronomía de renombre mundial hacen de cada visita una experiencia inolvidable. Autovías La Línea ofrece un servicio de autobús de lujo que conecta la capital con diversos destinos, garantizando un viaje seguro, cómodo y sin estrés</p>
+                <p class="__subtitle__destinos">¿Que lugares visitar en Ciudad de México?</p>
+                <p class="__paragraph">Bienvenido a la Ciudad de México, la vibrante capital del país, donde la historia y la modernidad se entrelazan en cada rincón. Con una riqueza cultural incomparable, esta metrópoli cautiva con su arquitectura majestuosa, su gastronomía diversa y su inagotable oferta de entretenimiento. Desde el imponente Castillo de Chapultepec y la icónica Plaza de la Constitución, hasta los encantadores barrios de Coyoacán y San Ángel, cada sitio ofrece una experiencia única. No te pierdas el legado prehispánico en Teotihuacán, la majestuosidad del Palacio de Bellas Artes y el encanto de Xochimilco con sus trajineras coloridas.</p>
              </section>
 
              <section class="__section __section__grid" id="monterrey-grid-section">
@@ -38,7 +41,7 @@ class AppBoletosAutobusQueretaro extends HTMLElement {
              </section>
                 <p class="__subtitle__destinos">Gastronomía</p>
               <section class="__section __section__monterrey__food">
-                <p class="__paragraph__xl">Uruapan deleita al paladar con sabores que son herencia viva de la cocina purépecha. Prueba las tradicionales corundas con crema y queso, los uchepos recién salidos del vapor, las carnitas michoacanas y la emblemática sopa tarasca. En sus mercados y fondas, la autenticidad es la protagonista, y cada platillo es un viaje por los sabores del alma michoacana.</p>
+                <p class="__paragraph__xl">Ciudad de México, la vibrante capital del país, es un epicentro gastronómico donde convergen tradición e innovación. Su cocina es el resultado de una fusión de raíces prehispánicas y europeas, creando una diversidad de sabores únicos. Desde los icónicos tacos al pastor y los tradicionales tamales hasta los irresistibles chiles en nogada, cada platillo es un reflejo de la riqueza cultural de la ciudad. Entre mercados, fondas y restaurantes de alta cocina, la capital ofrece una experiencia culinaria inigualable que deleita a locales y visitantes.</p>
                  <article class="container-cards__food">
                     <!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
                 </article>
@@ -61,6 +64,9 @@ class AppBoletosAutobusQueretaro extends HTMLElement {
              <app-modal-multi-image></app-modal-multi-image>
               <app-modal-image></app-modal-image>
 
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
 
         `;
 		await this.loadAndRenderGridItems();
@@ -304,6 +310,6 @@ class AppBoletosAutobusQueretaro extends HTMLElement {
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-a-queretaro",
-	AppBoletosAutobusQueretaro
+	"page-autobus-a-ciudad-de-mexico",
+	AppAutobusCiudadDeMexico
 );

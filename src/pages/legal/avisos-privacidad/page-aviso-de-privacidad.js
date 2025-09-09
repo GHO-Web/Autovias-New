@@ -11,8 +11,8 @@ class PageAvisoDePrivacidad extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
-
-            <app-modal-doters></app-modal-doters>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
                 {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/metodos_pago_web.webp","mediumImage": "../src/assets/img/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
@@ -112,6 +112,9 @@ class PageAvisoDePrivacidad extends HTMLElement {
                     <p class="__terms-purchase-text">Si usted considera que su derecho de protección de datos personales ha sido lesionado o se ve afectados por alguna conducta de nuestro personal, actuaciones o respuestas de la empresa, existe alguna violación a las disposiciones previstas en la Ley Federal de Protección de Datos Personales en Posesión de Particulares, podrá interponer la queja correspondiente ante el IFAl, para mayor información consulte <a href="http://www.ifai.org.mx" target="_blank" rel="noopener noreferrer" class="__link-text">www.ifai.org.mx</a>.</p>
                 </article>
             </section>
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
         `;
 	}
 }

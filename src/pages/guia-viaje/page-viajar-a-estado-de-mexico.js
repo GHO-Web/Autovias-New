@@ -13,23 +13,24 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppBoletosAutobusZitacuaro extends HTMLElement {
+class AppViajarEstadoDeMexico extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Zitacuaro_banner_web.webp","mediumImage": "./src/assets/img/banner/tablet/Zitacuaro_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/zitacuaro_mobile.webp", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/banner-monterrey.png","mediumImage": "./src/assets/img/banner/banner-monterrey-tablet.png", "smallImage": "./src/assets/img/banner/banner-monterrey-sm.png", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>
 
             <section class="__section __section__monterrey__destinations">
-                <app-section-title section-title="Viaja a Zitácuaro en autobús con Autovías La Línea"></app-section-title>
-                <p class="__subtitle__destinos">Zitácuaro</p>
-                <p class="__paragraph">Zitácuaro, la Heroica Ciudad de la Independencia, es un destino lleno de historia y naturaleza. Recorre el Cerrito de la Independencia, símbolo de lucha y libertad, y maravíllate con los paisajes de la Presa El Bosque. Explora su vibrante mercado, disfruta su gastronomía tradicional y visita el Santuario de la Mariposa Monarca, donde la naturaleza ofrece un espectáculo inolvidable.</p>
-                <p class="__subtitle__destinos">¿Que lugares visitar en Zitácuaro?</p>
-                <p class="__paragraph">Esta ciudad michoacana es un punto clave en la historia de México y un paraíso natural. Explora el Santuario de la Mariposa Monarca, maravíllate con la vista desde el Cerrito de la Independencia y recorre la Zona Arqueológica de San Felipe los Alzati. Con su riqueza cultural y paisajes impresionantes, Zitácuaro ofrece una experiencia inolvidable.</p>
+                <app-section-title section-title="Viaja a Uruapan en autobús con Autovías La Línea"></app-section-title>
+                <p class="__subtitle__destinos">Uruapan</p>
+                <p class="__paragraph">Uruapan, corazón de la Meseta Purépecha y puerta al Parque Nacional Barranca del Cupatitzio, te invita a descubrir un destino lleno de historia, naturaleza exuberante y una identidad cultural que late en cada rincón. Con Autovías La Línea, llegar a esta joya de Michoacán es tan cómodo como inspirador. Disfruta de un viaje seguro, relajado y con todo el confort que mereces.</p>
+                <p class="__paragraph">Bienvenido a Uruapan, donde la tradición y la naturaleza se abrazan en una experiencia única. Esta ciudad michoacana te cautiva con sus cascadas cristalinas, arquitectura virreinal y el legado ancestral de la cultura purépecha. Recorre el emblemático Parque Nacional Barranca del Cupatitzio, donde el río nace entre manantiales y senderos frondosos. Admira el arte del maque en el Museo La Huatápera, pasea por el pintoresco centro histórico y sumérgete en la espiritualidad del Antiguo Templo de San Juan Bautista. Además, si visitas en Semana Santa, no te pierdas el Tianguis Artesanal más grande de América Latina.</p>
              </section>
 
              <section class="__section __section__grid" id="monterrey-grid-section">
@@ -39,9 +40,7 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
              </section>
                 <p class="__subtitle__destinos">Gastronomía</p>
               <section class="__section __section__monterrey__food">
-                <p class="__paragraph__xl">Zitácuaro ofrece una gastronomía rica en tradición mazahua-otomí, con sabores auténticos y recetas ancestrales. Destacan los tamales de ceniza, elaborados con maíz nixtamalizado y envueltos en hojas de maíz, y el mole, presente en celebraciones religiosas y cívicas. La trucha arcoíris, preparada dorada, a la diabla o en caldo, es otro platillo emblemático. Además, los atoles de maíz negro, pinole y frutas como guayaba y zarzamora son bebidas tradicionales.
-
-</p>
+                <p class="__paragraph__xl">Uruapan deleita al paladar con sabores que son herencia viva de la cocina purépecha. Prueba las tradicionales corundas con crema y queso, los uchepos recién salidos del vapor, las carnitas michoacanas y la emblemática sopa tarasca. En sus mercados y fondas, la autenticidad es la protagonista, y cada platillo es un viaje por los sabores del alma michoacana.</p>
                  <article class="container-cards__food">
                     <!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
                 </article>
@@ -64,6 +63,9 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
              <app-modal-multi-image></app-modal-multi-image>
               <app-modal-image></app-modal-image>
 
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
 
         `;
 		await this.loadAndRenderGridItems();
@@ -82,7 +84,7 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-zitacuaro.json");
+			const response = await fetch("../src/data/lugares-ciudad-de-mexico.json");
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -123,10 +125,12 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
 		foodContainer.innerHTML = "";
 
 		try {
-			const response = await fetch("../src/data/platillos-zitacuaro.json");
+			const response = await fetch(
+				"../src/data/platillos-ciudad-de-mexico.json"
+			);
 			if (!response.ok) {
 				throw new Error(
-					`Error HTTP al cargar platillos-zitacuaro.json: ${response.status}`
+					`Error HTTP al cargar platillos-morelia.json: ${response.status}`
 				);
 			}
 			const foodData = await response.json();
@@ -208,53 +212,22 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
 		}
 		container.innerHTML = "";
 
-		const faqQuestions = [];
-
 		dropdownsData.forEach((data) => {
 			const dropdownElement = document.createElement("app-dropdown");
 			dropdownElement.setAttribute("title-dropdown", data["title-dropdown"]);
-			const questionText = data["title-dropdown"];
-			const answerText = data["content-dropdown"];
-
-			dropdownElement.setAttribute("title-dropdown", questionText);
 			dropdownElement.setAttribute(
 				"content-dropdown",
 				data["content-dropdown"]
-				answerText
 			);
 			container.appendChild(dropdownElement);
-
-			// Add to our schema object
-			faqQuestions.push({
-				"@type": "Question",
-				name: questionText,
-				acceptedAnswer: {
-					"@type": "Answer",
-					text: answerText,
-				},
-			});
 		});
-
-		// Create and inject the FAQPage schema
-		if (faqQuestions.length > 0) {
-			const faqSchema = {
-				"@context": "https://schema.org",
-				"@type": "FAQPage",
-				mainEntity: faqQuestions,
-			};
-
-			const script = document.createElement("script");
-			script.type = "application/ld+json";
-			script.textContent = JSON.stringify(faqSchema, null, 2);
-			document.head.appendChild(script);
-		}
 	}
 
 	async _configureDestinationSlider() {
 		const sliderElement = this.querySelector("app-slider-opacity");
 		if (!sliderElement) {
 			console.error(
-				"AppBoletosAutobusMorelia: app-slider-opacity element not found."
+				"AppMorelia: app-slider-opacity element not found."
 			);
 			return;
 		}
@@ -276,7 +249,7 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
 			);
 		} catch (error) {
 			console.error(
-				"AppBoletosAutobusMorelia: Error loading or setting data for destination slider:",
+				"AppMorelia: Error loading or setting data for destination slider:",
 				error
 			);
 			sliderElement.innerHTML =
@@ -288,7 +261,7 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
 		const modal = this.querySelector("app-modal-multi-image");
 		if (!modal) {
 			console.error(
-				"AppBoletosAutobusMorelia: app-modal-multi-image element not found."
+				"AppMorelia: app-modal-multi-image element not found."
 			);
 			return;
 		}
@@ -330,12 +303,12 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
 			modal.show();
 		} else {
 			console.warn(
-				'AppBoletosAutobusMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
+				'AppMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
 			);
 		}
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-a-zitacuaro",
-	AppBoletosAutobusZitacuaro
+	"page-viajar-a-estado-de-mexico",
+	AppViajarEstadoDeMexico
 );

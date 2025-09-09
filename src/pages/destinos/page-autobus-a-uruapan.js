@@ -13,24 +13,24 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppBoletosAutobusGuadalajara extends HTMLElement {
+class AppBoletosAutobusUruapan extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/guadalajara_banner_web.webp","mediumImage": "../src/assets/img/banner/tablet/Guadalajara_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/Guadalajara_mobile.webp", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Uruapan_banner_web.webp","mediumImage": "./src/assets/img/banner/tablet/Uruapan_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/Uruapan_mobile.webp", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>
 
             <section class="__section __section__monterrey__destinations">
-                <app-section-title section-title="Viaja a Guadalajara en autobús con Autovías La Línea"></app-section-title>
-                <p class="__subtitle__destinos">Guadalajara</p>
-                <p class="__paragraph">Guadalajara, cuna del mariachi y el tequila, es una ciudad vibrante donde la tradición y la modernidad se entrelazan con elegancia. Sus monumentos históricos, barrios llenos de arte y una gastronomía inigualable hacen de cada visita una experiencia única. Autovías La Línea ofrece un servicio de autobús de lujo que conecta esta joya tapatía con diversos destinos, garantizando un viaje cómodo, seguro y sin estrés.</p>
-                <p class="__subtitle__destinos">¿Que lugares visitar en Guadalajara?</p>
-                <p class="__paragraph">Guadalajara, corazón cultural de Jalisco, ofrece una mezcla vibrante de historia, arte y tradición. Comienza tu recorrido en la Catedral Metropolitana y la Plaza de Armas, donde la arquitectura colonial te envuelve. Visita el Teatro Degollado, joya neoclásica, y el Instituto Cultural Cabañas, con murales de Orozco. Pasea por Tlaquepaque y Tonalá, ideales para comprar artesanías. No te pierdas la Rotonda de los Jaliscienses Ilustres ni el Templo Expiatorio, de estilo neogótico. Disfruta de una torta ahogada en el Mercado Libertad y relájate en el Bosque Los Colomos. Para una experiencia natural, visita el Lago de Chapala o explora el sitio arqueológico de Guachimontones. Guadalajara te espera con historia, sabor y calidez.
-</p>
+                <app-section-title section-title="Viaja a Uruapan en autobús con Autovías La Línea"></app-section-title>
+                <p class="__subtitle__destinos">Uruapan</p>
+                <p class="__paragraph">Uruapan, corazón de la Meseta Purépecha y puerta al Parque Nacional Barranca del Cupatitzio, te invita a descubrir un destino lleno de historia, naturaleza exuberante y una identidad cultural que late en cada rincón. Con Autovías La Línea, llegar a esta joya de Michoacán es tan cómodo como inspirador. Disfruta de un viaje seguro, relajado y con todo el confort que mereces.</p>
+                <p class="__paragraph">Bienvenido a Uruapan, donde la tradición y la naturaleza se abrazan en una experiencia única. Esta ciudad michoacana te cautiva con sus cascadas cristalinas, arquitectura virreinal y el legado ancestral de la cultura purépecha. Recorre el emblemático Parque Nacional Barranca del Cupatitzio, donde el río nace entre manantiales y senderos frondosos. Admira el arte del maque en el Museo La Huatápera, pasea por el pintoresco centro histórico y sumérgete en la espiritualidad del Antiguo Templo de San Juan Bautista. Además, si visitas en Semana Santa, no te pierdas el Tianguis Artesanal más grande de América Latina.</p>
              </section>
 
              <section class="__section __section__grid" id="monterrey-grid-section">
@@ -40,7 +40,7 @@ class AppBoletosAutobusGuadalajara extends HTMLElement {
              </section>
                 <p class="__subtitle__destinos">Gastronomía</p>
               <section class="__section __section__monterrey__food">
-                <p class="__paragraph__xl">Guadalajara conquista el paladar con sabores que son orgullo tapatío. Prueba la icónica torta ahogada, sumergida en salsa picante; la birria de chivo, cocida lentamente con especias; y la carne en su jugo, servida con frijoles y cebolla. Endulza tu visita con jericallas, un postre tradicional horneado. En mercados y fondas, cada platillo refleja la riqueza cultural de Jalisco y convierte cada comida en una experiencia auténtica e inolvidable.</p>
+                <p class="__paragraph__xl">Uruapan deleita al paladar con sabores que son herencia viva de la cocina purépecha. Prueba las tradicionales corundas con crema y queso, los uchepos recién salidos del vapor, las carnitas michoacanas y la emblemática sopa tarasca. En sus mercados y fondas, la autenticidad es la protagonista, y cada platillo es un viaje por los sabores del alma michoacana.</p>
                  <article class="container-cards__food">
                     <!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
                 </article>
@@ -63,6 +63,9 @@ class AppBoletosAutobusGuadalajara extends HTMLElement {
              <app-modal-multi-image></app-modal-multi-image>
               <app-modal-image></app-modal-image>
 
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
 
         `;
 		await this.loadAndRenderGridItems();
@@ -81,7 +84,7 @@ class AppBoletosAutobusGuadalajara extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-guadalajara.json");
+			const response = await fetch("../src/data/lugares-ciudad-de-mexico.json");
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -122,7 +125,9 @@ class AppBoletosAutobusGuadalajara extends HTMLElement {
 		foodContainer.innerHTML = "";
 
 		try {
-			const response = await fetch("../src/data/platillos-guadalajara.json");
+			const response = await fetch(
+				"../src/data/platillos-ciudad-de-mexico.json"
+			);
 			if (!response.ok) {
 				throw new Error(
 					`Error HTTP al cargar platillos-morelia.json: ${response.status}`
@@ -304,6 +309,6 @@ class AppBoletosAutobusGuadalajara extends HTMLElement {
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-a-guadalajara",
-	AppBoletosAutobusGuadalajara
+	"page-autobus-a-uruapan",
+	AppBoletosAutobusUruapan
 );

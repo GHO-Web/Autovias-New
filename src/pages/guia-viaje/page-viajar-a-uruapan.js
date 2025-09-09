@@ -13,13 +13,15 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppBoletosAutobusIxtapa extends HTMLElement {
+class AppViajarUruapan extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/banner-monterrey.png","mediumImage": "../src/assets/img/banner/tablet/Ixtapa_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/Ixtapa_mobile.webp", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Uruapan_banner_web.webp","mediumImage": "./src/assets/img/banner/tablet/Uruapan_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/Uruapan_mobile.webp", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>
@@ -62,6 +64,9 @@ class AppBoletosAutobusIxtapa extends HTMLElement {
               <app-modal-image></app-modal-image>
 
 
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
         `;
 		await this.loadAndRenderGridItems();
 		await this.loadAndRenderFoodCards();
@@ -304,6 +309,6 @@ class AppBoletosAutobusIxtapa extends HTMLElement {
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-a-ixtapa",
-	AppBoletosAutobusIxtapa
+	"page-viajar-a-uruapan",
+	AppViajarUruapan
 );

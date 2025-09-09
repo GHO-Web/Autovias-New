@@ -13,23 +13,25 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppBoletosAutobusMaravatio extends HTMLElement {
+class AppViajarZitacuaro extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Maravatio_Banner_web.webp","mediumImage": "./src/assets/img/banner/banner-monterrey-tablet.png", "smallImage": "./src/assets/img/banner/banner-monterrey-sm.png", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Zitacuaro_banner_web.webp","mediumImage": "../src/assets/img/banner/tablet/Zitacuaro_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/zitacuaro_mobile.webp", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>
 
             <section class="__section __section__monterrey__destinations">
-                <app-section-title section-title="Viaja a Maravatio en autobús con Autovías La Línea"></app-section-title>
-                <p class="__subtitle__destinos">Maravatio</p>
-                <p class="__paragraph">Maravatío, un destino que fusiona historia, cultura y belleza natural, te invita a descubrir su riqueza única. Sus calles evocan el pasado colonial, mientras que sus paisajes serranos y su cercanía a los bosques de la mariposa monarca ofrecen un espectáculo inigualable. Conocido por su arquitectura tradicional, su vibrante feria anual y su gastronomía local, cada visita a Maravatío es una experiencia auténtica. Autovías La Línea te conecta con este destino, garantizando un viaje seguro, cómodo y sin estrés.</p>
-                <p class="__subtitle__destinos">¿Que lugares visitar en Maravatio?</p>
-                <p class="__paragraph">Bienvenido a Maravatío, el corazón histórico de Michoacán, donde la tradición y la naturaleza se entrelazan en cada rincón. Este encantador destino cautiva con su arquitectura colonial, su legado purépecha y su vibrante vida cultural. Desde el majestuoso Teatro Morelos y la emblemática Torre Mirador, hasta las antiguas haciendas como la de Apeo y Pomoca, cada sitio cuenta una historia única. Disfruta de su exquisita gastronomía local —como el pan de pulque y las cocadas— y sumérgete en sus coloridas festividades, como la Feria de la Fresa. Rodeado de paisajes serranos y rutas rurales, Maravatío ofrece una experiencia auténtica para quienes buscan descubrir la esencia de México.</p>
+                <app-section-title section-title="Viaja a Zitácuaro en autobús con Autovías La Línea"></app-section-title>
+                <p class="__subtitle__destinos">Zitácuaro</p>
+                <p class="__paragraph">Zitácuaro, la Heroica Ciudad de la Independencia, es un destino lleno de historia y naturaleza. Recorre el Cerrito de la Independencia, símbolo de lucha y libertad, y maravíllate con los paisajes de la Presa El Bosque. Explora su vibrante mercado, disfruta su gastronomía tradicional y visita el Santuario de la Mariposa Monarca, donde la naturaleza ofrece un espectáculo inolvidable.</p>
+                <p class="__subtitle__destinos">¿Que lugares visitar en Zitácuaro?</p>
+                <p class="__paragraph">Esta ciudad michoacana es un punto clave en la historia de México y un paraíso natural. Explora el Santuario de la Mariposa Monarca, maravíllate con la vista desde el Cerrito de la Independencia y recorre la Zona Arqueológica de San Felipe los Alzati. Con su riqueza cultural y paisajes impresionantes, Zitácuaro ofrece una experiencia inolvidable.</p>
              </section>
 
              <section class="__section __section__grid" id="monterrey-grid-section">
@@ -39,7 +41,9 @@ class AppBoletosAutobusMaravatio extends HTMLElement {
              </section>
                 <p class="__subtitle__destinos">Gastronomía</p>
               <section class="__section __section__monterrey__food">
-                <p class="__paragraph__xl">Maravatío, sabor auténtico entre tradiciones y productos del campo, es un destino gastronómico que conquista con su esencia rural y su herencia purépecha. Su cocina refleja la riqueza agrícola de la región, con ingredientes frescos como la fresa, el maíz, el maguey y el trigo, que dan vida a platillos llenos de identidad. Desde el tradicional pan de pulque y las cocadas artesanales, hasta antojitos típicos en ferias y mercados, cada bocado cuenta una historia local. En fondas familiares y cocinas comunitarias, la gastronomía de Maravatío se vive con calidez y autenticidad, ofreciendo una experiencia culinaria que conecta con la tierra y las raíces de Michoacán.</p>
+                <p class="__paragraph__xl">Zitácuaro ofrece una gastronomía rica en tradición mazahua-otomí, con sabores auténticos y recetas ancestrales. Destacan los tamales de ceniza, elaborados con maíz nixtamalizado y envueltos en hojas de maíz, y el mole, presente en celebraciones religiosas y cívicas. La trucha arcoíris, preparada dorada, a la diabla o en caldo, es otro platillo emblemático. Además, los atoles de maíz negro, pinole y frutas como guayaba y zarzamora son bebidas tradicionales.
+
+</p>
                  <article class="container-cards__food">
                     <!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
                 </article>
@@ -63,6 +67,9 @@ class AppBoletosAutobusMaravatio extends HTMLElement {
               <app-modal-image></app-modal-image>
 
 
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
         `;
 		await this.loadAndRenderGridItems();
 		await this.loadAndRenderFoodCards();
@@ -80,7 +87,7 @@ class AppBoletosAutobusMaravatio extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-maravatio.json");
+			const response = await fetch("../src/data/lugares-zitacuaro.json");
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -121,10 +128,10 @@ class AppBoletosAutobusMaravatio extends HTMLElement {
 		foodContainer.innerHTML = "";
 
 		try {
-			const response = await fetch("../src/data/platillos-maravatio.json");
+			const response = await fetch("../src/data/platillos-zitacuaro.json");
 			if (!response.ok) {
 				throw new Error(
-					`Error HTTP al cargar platillos-morelia.json: ${response.status}`
+					`Error HTTP al cargar platillos-zitacuaro.json: ${response.status}`
 				);
 			}
 			const foodData = await response.json();
@@ -151,13 +158,13 @@ class AppBoletosAutobusMaravatio extends HTMLElement {
 				);
 				cardElement.setAttribute(
 					"card-image",
-					foodItem.imageSrc || "src/assets/img/platillos/default-card.png"
+					foodItem.imageSrc || "../src/assets/img/platillos/default-card.png"
 				);
 				cardElement.setAttribute(
 					"card-modal-image",
 					foodItem.imageModal ||
 						foodItem.imageSrc ||
-						"src/assets/img/platillos/default-modal.png"
+						"../src/assets/img/platillos/default-modal.png"
 				);
 				cardElement.setAttribute(
 					"card-alt",
@@ -206,15 +213,46 @@ class AppBoletosAutobusMaravatio extends HTMLElement {
 		}
 		container.innerHTML = "";
 
+		const faqQuestions = [];
+
 		dropdownsData.forEach((data) => {
 			const dropdownElement = document.createElement("app-dropdown");
 			dropdownElement.setAttribute("title-dropdown", data["title-dropdown"]);
+			const questionText = data["title-dropdown"];
+			const answerText = data["content-dropdown"];
+
+			dropdownElement.setAttribute("title-dropdown", questionText);
 			dropdownElement.setAttribute(
 				"content-dropdown",
-				data["content-dropdown"]
+				data["content-dropdown"],
+				answerText
 			);
 			container.appendChild(dropdownElement);
+
+			// Add to our schema object
+			faqQuestions.push({
+				"@type": "Question",
+				name: questionText,
+				acceptedAnswer: {
+					"@type": "Answer",
+					text: answerText,
+				},
+			});
 		});
+
+		// Create and inject the FAQPage schema
+		if (faqQuestions.length > 0) {
+			const faqSchema = {
+				"@context": "https://schema.org",
+				"@type": "FAQPage",
+				mainEntity: faqQuestions,
+			};
+
+			const script = document.createElement("script");
+			script.type = "application/ld+json";
+			script.textContent = JSON.stringify(faqSchema, null, 2);
+			document.head.appendChild(script);
+		}
 	}
 
 	async _configureDestinationSlider() {
@@ -303,6 +341,6 @@ class AppBoletosAutobusMaravatio extends HTMLElement {
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-a-maravatio",
-	AppBoletosAutobusMaravatio
+	"page-viajar-a-zitacuaro",
+	AppViajarZitacuaro
 );

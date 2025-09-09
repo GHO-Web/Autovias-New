@@ -13,22 +13,27 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppBoletosAutobusQueretaro extends HTMLElement {
+class AppViajarColima extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Queretaro_banner_web.webp","mediumImage": "./src/assets/img/banner/tablet/Queretaro_tablet.webp", "smallImage": "./src/assets/img/banner/mobile/Queretaro_mobile.webp", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/banner-colima.webp","mediumImage": "./src/assets/img/banner/banner-monterrey-tablet.png", "smallImage": "./src/assets/img/banner/banner-colima.webp", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>
 
             <section class="__section __section__monterrey__destinations">
-                <app-section-title section-title="Viaja a Uruapan en autobús con Autovías La Línea"></app-section-title>
-                <p class="__subtitle__destinos">Uruapan</p>
-                <p class="__paragraph">Uruapan, corazón de la Meseta Purépecha y puerta al Parque Nacional Barranca del Cupatitzio, te invita a descubrir un destino lleno de historia, naturaleza exuberante y una identidad cultural que late en cada rincón. Con Autovías La Línea, llegar a esta joya de Michoacán es tan cómodo como inspirador. Disfruta de un viaje seguro, relajado y con todo el confort que mereces.</p>
-                <p class="__paragraph">Bienvenido a Uruapan, donde la tradición y la naturaleza se abrazan en una experiencia única. Esta ciudad michoacana te cautiva con sus cascadas cristalinas, arquitectura virreinal y el legado ancestral de la cultura purépecha. Recorre el emblemático Parque Nacional Barranca del Cupatitzio, donde el río nace entre manantiales y senderos frondosos. Admira el arte del maque en el Museo La Huatápera, pasea por el pintoresco centro histórico y sumérgete en la espiritualidad del Antiguo Templo de San Juan Bautista. Además, si visitas en Semana Santa, no te pierdas el Tianguis Artesanal más grande de América Latina.</p>
+                <app-section-title section-title="Viaja a Colima en autobús con Autovías La Línea"></app-section-title>
+                <p class="__subtitle__destinos">Colima</p>
+                <p class="__paragraph">Colima, joya del Pacífico mexicano, te recibe con su encanto tranquilo, naturaleza exuberante y una riqueza cultural fascinante. Sus playas paradisíacas, su imponente Volcán de Colima y la calidez de su gente hacen de cada visita una experiencia única. Autovías La Línea te ofrece un servicio de autobús de lujo que conecta este destino con diversas ciudades, garantizando un viaje seguro, cómodo y sin preocupaciones.
+</p>
+                <p class="__subtitle__destinos">¿Que lugares visitar en Colima?</p>
+                <p class="__paragraph">Bienvenido a Colima, un destino donde la tranquilidad y la naturaleza se fusionan con una riqueza cultural fascinante. Con un encanto auténtico, este estado cautiva con sus paisajes imponentes, su deliciosa gastronomía y su cálida hospitalidad. Desde las playas vírgenes de Manzanillo y el imponente Volcán de Colima, hasta los pintorescos Pueblos Mágicos de Comala y Suchitlán, cada rincón ofrece una experiencia inolvidable. No te pierdas el legado prehispánico en la Zona Arqueológica La Campana, la majestuosidad de sus haciendas coloniales y la frescura de un buen ponche artesanal.
+</p>
              </section>
 
              <section class="__section __section__grid" id="monterrey-grid-section">
@@ -38,7 +43,8 @@ class AppBoletosAutobusQueretaro extends HTMLElement {
              </section>
                 <p class="__subtitle__destinos">Gastronomía</p>
               <section class="__section __section__monterrey__food">
-                <p class="__paragraph__xl">Uruapan deleita al paladar con sabores que son herencia viva de la cocina purépecha. Prueba las tradicionales corundas con crema y queso, los uchepos recién salidos del vapor, las carnitas michoacanas y la emblemática sopa tarasca. En sus mercados y fondas, la autenticidad es la protagonista, y cada platillo es un viaje por los sabores del alma michoacana.</p>
+                <p class="__paragraph__xl">Colima, un tesoro gastronómico del Pacífico mexicano, combina la autenticidad de sus sabores con una rica herencia cultural. Su cocina es el resultado de una fusión entre tradiciones prehispánicas y coloniales, creando una diversidad de platillos únicos. Desde el emblemático sopito y los deliciosos burritos de Colima hasta el inconfundible pozole seco, cada bocado refleja la esencia del estado. Entre mercados, fondas y marisquerías a la orilla del mar, Colima ofrece una experiencia culinaria excepcional que conquista a quienes buscan sabor y tradición.
+</p>
                  <article class="container-cards__food">
                     <!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
                 </article>
@@ -61,6 +67,9 @@ class AppBoletosAutobusQueretaro extends HTMLElement {
              <app-modal-multi-image></app-modal-multi-image>
               <app-modal-image></app-modal-image>
 
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
 
         `;
 		await this.loadAndRenderGridItems();
@@ -79,7 +88,7 @@ class AppBoletosAutobusQueretaro extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-ciudad-de-mexico.json");
+			const response = await fetch("../src/data/lugares-colima.json");
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -120,9 +129,7 @@ class AppBoletosAutobusQueretaro extends HTMLElement {
 		foodContainer.innerHTML = "";
 
 		try {
-			const response = await fetch(
-				"../src/data/platillos-ciudad-de-mexico.json"
-			);
+			const response = await fetch("../src/data/platillos-colima.json");
 			if (!response.ok) {
 				throw new Error(
 					`Error HTTP al cargar platillos-morelia.json: ${response.status}`
@@ -222,7 +229,7 @@ class AppBoletosAutobusQueretaro extends HTMLElement {
 		const sliderElement = this.querySelector("app-slider-opacity");
 		if (!sliderElement) {
 			console.error(
-				"AppBoletosAutobusMorelia: app-slider-opacity element not found."
+				"AppMorelia: app-slider-opacity element not found."
 			);
 			return;
 		}
@@ -244,7 +251,7 @@ class AppBoletosAutobusQueretaro extends HTMLElement {
 			);
 		} catch (error) {
 			console.error(
-				"AppBoletosAutobusMorelia: Error loading or setting data for destination slider:",
+				"AppMorelia: Error loading or setting data for destination slider:",
 				error
 			);
 			sliderElement.innerHTML =
@@ -256,7 +263,7 @@ class AppBoletosAutobusQueretaro extends HTMLElement {
 		const modal = this.querySelector("app-modal-multi-image");
 		if (!modal) {
 			console.error(
-				"AppBoletosAutobusMorelia: app-modal-multi-image element not found."
+				"AppMorelia: app-modal-multi-image element not found."
 			);
 			return;
 		}
@@ -298,12 +305,12 @@ class AppBoletosAutobusQueretaro extends HTMLElement {
 			modal.show();
 		} else {
 			console.warn(
-				'AppBoletosAutobusMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
+				'AppMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
 			);
 		}
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-a-queretaro",
-	AppBoletosAutobusQueretaro
+	"page-viajar-a-colima",
+	AppViajarColima
 );

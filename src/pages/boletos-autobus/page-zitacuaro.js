@@ -13,10 +13,12 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppBoletosAutobusZitacuaro extends HTMLElement {
+class AppZitacuaro extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
                 {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Zitacuaro_banner_web.webp","mediumImage": "./src/assets/img/banner/tablet/Zitacuaro_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/zitacuaro_mobile.webp", "link": "#index.html/banner1"}]'
@@ -65,6 +67,9 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
               <app-modal-image></app-modal-image>
 
 
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
         `;
 		await this.loadAndRenderGridItems();
 		await this.loadAndRenderFoodCards();
@@ -208,15 +213,46 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
 		}
 		container.innerHTML = "";
 
+		const faqQuestions = [];
+
 		dropdownsData.forEach((data) => {
 			const dropdownElement = document.createElement("app-dropdown");
 			dropdownElement.setAttribute("title-dropdown", data["title-dropdown"]);
+			const questionText = data["title-dropdown"];
+			const answerText = data["content-dropdown"];
+
+			dropdownElement.setAttribute("title-dropdown", questionText);
 			dropdownElement.setAttribute(
 				"content-dropdown",
-				data["content-dropdown"]
+				data["content-dropdown"],
+				answerText
 			);
 			container.appendChild(dropdownElement);
+
+			// Add to our schema object
+			faqQuestions.push({
+				"@type": "Question",
+				name: questionText,
+				acceptedAnswer: {
+					"@type": "Answer",
+					text: answerText,
+				},
+			});
 		});
+
+		// Create and inject the FAQPage schema
+		if (faqQuestions.length > 0) {
+			const faqSchema = {
+				"@context": "https://schema.org",
+				"@type": "FAQPage",
+				mainEntity: faqQuestions,
+			};
+
+			const script = document.createElement("script");
+			script.type = "application/ld+json";
+			script.textContent = JSON.stringify(faqSchema, null, 2);
+			document.head.appendChild(script);
+		}
 	}
 
 	async _configureDestinationSlider() {
@@ -305,6 +341,6 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-a-zitacuaro",
-	AppBoletosAutobusZitacuaro
+	"page-zitacuaro",
+	AppZitacuaro
 );

@@ -13,7 +13,8 @@ class PageTerminalesTaquillas extends HTMLElement {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
 
-            <app-modal-doters></app-modal-doters>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
     
             <app-banner-slider
                     slides-data='[
@@ -44,6 +45,9 @@ class PageTerminalesTaquillas extends HTMLElement {
                     <!-- Contenedor para los dropdowns -->
                 </article>
             </section>
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
         `;
 
 		this.loadAndRenderImageCards();

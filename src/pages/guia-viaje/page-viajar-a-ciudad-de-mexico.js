@@ -2,6 +2,7 @@
 import "../../components/app-cotiza.js";
 import "../../components/app-modal-doters.js";
 import "../../components/app-modal-travelpass.js";
+import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-open-modal.js";
@@ -12,23 +13,25 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppBoletosAutobusMorelia extends HTMLElement {
+class AppViajarCiudadDeMexico extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Morelia_Banner_web.webp","mediumImage": "./src/assets/img/banner/tablet/Morelia_tablet.webp", "smallImage": "./src/assets/img/banner/mobile/Morelia_mobile.webp", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/ciudad_de_mexico.webp","mediumImage": "../src/assets/img/banner/tablet/cdmx_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/cdmx_mobile.webp", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>
 
             <section class="__section __section__monterrey__destinations">
-                <app-section-title section-title="Viaja a Morelia en autobús con Autovías La Línea"></app-section-title>
-                <p class="__subtitle__destinos">Morelia</p>
-                <p class="__paragraph">Morelia, joya colonial en el corazón de México, deslumbra con su arquitectura de cantera rosa, su gastronomía y su riqueza cultural. Autovías La Línea ofrece un servicio de autobús de lujo desde la Ciudad de México, asegurando un viaje seguro, cómodo y sin estrés. Ya sea una escapada de fin de semana o una estancia prolongada, tu experiencia será tan extraordinaria como el destino.</p>
-                <p class="__subtitle__destinos">¿Que lugares visitar en Morelia?</p>
-                <p class="__paragraph">Bienvenido a Morelia, la majestuosa capital del estado de Michoacán, en el centro de México. Conocida por su arquitectura de cantera rosa y su vibrante vida cultural, Morelia es un destino que fusiona historia y modernidad con un encanto inigualable. Enmarcada por imponentes construcciones coloniales, la ciudad ofrece experiencias inolvidables en lugares como la Catedral de Morelia, el Callejón del Romance, el Acueducto y el Santuario de Guadalupe</p>
+                <app-section-title section-title="Viaja a Cuidad de México en autobús con Autovías La Línea"></app-section-title>
+                <p class="__subtitle__destinos">Ciudad de México</p>
+                <p class="__paragraph">Ciudad de México, vibrante metrópoli que combina historia, modernidad y una oferta cultural inigualable, te espera con su energía única. Sus imponentes monumentos, barrios emblemáticos y gastronomía de renombre mundial hacen de cada visita una experiencia inolvidable. Autovías La Línea ofrece un servicio de autobús de lujo que conecta la capital con diversos destinos, garantizando un viaje seguro, cómodo y sin estrés</p>
+                <p class="__subtitle__destinos">¿Que lugares visitar en Ciudad de México?</p>
+                <p class="__paragraph">Bienvenido a la Ciudad de México, la vibrante capital del país, donde la historia y la modernidad se entrelazan en cada rincón. Con una riqueza cultural incomparable, esta metrópoli cautiva con su arquitectura majestuosa, su gastronomía diversa y su inagotable oferta de entretenimiento. Desde el imponente Castillo de Chapultepec y la icónica Plaza de la Constitución, hasta los encantadores barrios de Coyoacán y San Ángel, cada sitio ofrece una experiencia única. No te pierdas el legado prehispánico en Teotihuacán, la majestuosidad del Palacio de Bellas Artes y el encanto de Xochimilco con sus trajineras coloridas.</p>
              </section>
 
              <section class="__section __section__grid" id="monterrey-grid-section">
@@ -36,9 +39,9 @@ class AppBoletosAutobusMorelia extends HTMLElement {
                     <!-- Los elementos del grid se cargarán aquí -->
                 </article>
              </section>
-
+                <p class="__subtitle__destinos">Gastronomía</p>
               <section class="__section __section__monterrey__food">
-                <p class="__paragraph__xl">Morelia, la encantadora capital de Michoacán, destaca por su exquisita tradición culinaria. Su gastronomía es una fusión de influencias indígenas y españolas, dando como resultado una riqueza de sabores auténticos. Desde las tradicionales carnitas y uchepos hasta los deliciosos gazpachos morelianos, cada platillo refleja la identidad cultural de la ciudad con una mezcla única de historia y sabor.</p>
+                <p class="__paragraph__xl">Ciudad de México, la vibrante capital del país, es un epicentro gastronómico donde convergen tradición e innovación. Su cocina es el resultado de una fusión de raíces prehispánicas y europeas, creando una diversidad de sabores únicos. Desde los icónicos tacos al pastor y los tradicionales tamales hasta los irresistibles chiles en nogada, cada platillo es un reflejo de la riqueza cultural de la ciudad. Entre mercados, fondas y restaurantes de alta cocina, la capital ofrece una experiencia culinaria inigualable que deleita a locales y visitantes.</p>
                  <article class="container-cards__food">
                     <!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
                 </article>
@@ -61,6 +64,9 @@ class AppBoletosAutobusMorelia extends HTMLElement {
              <app-modal-multi-image></app-modal-multi-image>
               <app-modal-image></app-modal-image>
 
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
 
         `;
 		await this.loadAndRenderGridItems();
@@ -79,7 +85,7 @@ class AppBoletosAutobusMorelia extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-morelia.json");
+			const response = await fetch("../src/data/lugares-ciudad-de-mexico.json");
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -120,7 +126,9 @@ class AppBoletosAutobusMorelia extends HTMLElement {
 		foodContainer.innerHTML = "";
 
 		try {
-			const response = await fetch("../src/data/platillos-morelia.json");
+			const response = await fetch(
+				"../src/data/platillos-ciudad-de-mexico.json"
+			);
 			if (!response.ok) {
 				throw new Error(
 					`Error HTTP al cargar platillos-morelia.json: ${response.status}`
@@ -220,7 +228,7 @@ class AppBoletosAutobusMorelia extends HTMLElement {
 		const sliderElement = this.querySelector("app-slider-opacity");
 		if (!sliderElement) {
 			console.error(
-				"AppBoletosAutobusMorelia: app-slider-opacity element not found."
+				"AppMorelia: app-slider-opacity element not found."
 			);
 			return;
 		}
@@ -242,7 +250,7 @@ class AppBoletosAutobusMorelia extends HTMLElement {
 			);
 		} catch (error) {
 			console.error(
-				"AppBoletosAutobusMorelia: Error loading or setting data for destination slider:",
+				"AppMorelia: Error loading or setting data for destination slider:",
 				error
 			);
 			sliderElement.innerHTML =
@@ -254,7 +262,7 @@ class AppBoletosAutobusMorelia extends HTMLElement {
 		const modal = this.querySelector("app-modal-multi-image");
 		if (!modal) {
 			console.error(
-				"AppBoletosAutobusMorelia: app-modal-multi-image element not found."
+				"AppMorelia: app-modal-multi-image element not found."
 			);
 			return;
 		}
@@ -296,12 +304,12 @@ class AppBoletosAutobusMorelia extends HTMLElement {
 			modal.show();
 		} else {
 			console.warn(
-				'AppBoletosAutobusMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
+				'AppMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
 			);
 		}
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-morelia",
-	AppBoletosAutobusMorelia
+	"page-viajar-a-ciudad-de-mexico",
+	AppViajarCiudadDeMexico
 );

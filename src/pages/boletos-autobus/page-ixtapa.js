@@ -13,10 +13,12 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppBoletosAutobusIxtapa extends HTMLElement {
+class AppIxtapa extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
                 {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/banner-monterrey.png","mediumImage": "../src/assets/img/banner/tablet/Ixtapa_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/Ixtapa_mobile.webp", "link": "#index.html/banner1"}]'
@@ -61,6 +63,9 @@ class AppBoletosAutobusIxtapa extends HTMLElement {
              <app-modal-multi-image></app-modal-multi-image>
               <app-modal-image></app-modal-image>
 
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
 
         `;
 		await this.loadAndRenderGridItems();
@@ -222,7 +227,7 @@ class AppBoletosAutobusIxtapa extends HTMLElement {
 		const sliderElement = this.querySelector("app-slider-opacity");
 		if (!sliderElement) {
 			console.error(
-				"AppBoletosAutobusMorelia: app-slider-opacity element not found."
+				"AppMorelia: app-slider-opacity element not found."
 			);
 			return;
 		}
@@ -244,7 +249,7 @@ class AppBoletosAutobusIxtapa extends HTMLElement {
 			);
 		} catch (error) {
 			console.error(
-				"AppBoletosAutobusMorelia: Error loading or setting data for destination slider:",
+				"AppMorelia: Error loading or setting data for destination slider:",
 				error
 			);
 			sliderElement.innerHTML =
@@ -256,7 +261,7 @@ class AppBoletosAutobusIxtapa extends HTMLElement {
 		const modal = this.querySelector("app-modal-multi-image");
 		if (!modal) {
 			console.error(
-				"AppBoletosAutobusMorelia: app-modal-multi-image element not found."
+				"AppMorelia: app-modal-multi-image element not found."
 			);
 			return;
 		}
@@ -298,12 +303,12 @@ class AppBoletosAutobusIxtapa extends HTMLElement {
 			modal.show();
 		} else {
 			console.warn(
-				'AppBoletosAutobusMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
+				'AppMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
 			);
 		}
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-a-ixtapa",
-	AppBoletosAutobusIxtapa
+	"page-ixtapa",
+	AppIxtapa
 );

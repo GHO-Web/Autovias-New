@@ -67,7 +67,6 @@ class PageQuienesSomosEnglish extends HTMLElement {
                     </ul>
                 </article>
             </section>
-
         `;
 	}
 }

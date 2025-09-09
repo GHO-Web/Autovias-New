@@ -13,22 +13,25 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppBoletosAutobusUruapan extends HTMLElement {
+class AppViajarMaravatio extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Uruapan_banner_web.webp","mediumImage": "./src/assets/img/banner/tablet/Uruapan_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/Uruapan_mobile.webp", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Maravatio_Banner_web.webp","mediumImage": "./src/assets/img/banner/banner-monterrey-tablet.png", "smallImage": "./src/assets/img/banner/banner-monterrey-sm.png", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>
 
             <section class="__section __section__monterrey__destinations">
-                <app-section-title section-title="Viaja a Uruapan en autobús con Autovías La Línea"></app-section-title>
-                <p class="__subtitle__destinos">Uruapan</p>
-                <p class="__paragraph">Uruapan, corazón de la Meseta Purépecha y puerta al Parque Nacional Barranca del Cupatitzio, te invita a descubrir un destino lleno de historia, naturaleza exuberante y una identidad cultural que late en cada rincón. Con Autovías La Línea, llegar a esta joya de Michoacán es tan cómodo como inspirador. Disfruta de un viaje seguro, relajado y con todo el confort que mereces.</p>
-                <p class="__paragraph">Bienvenido a Uruapan, donde la tradición y la naturaleza se abrazan en una experiencia única. Esta ciudad michoacana te cautiva con sus cascadas cristalinas, arquitectura virreinal y el legado ancestral de la cultura purépecha. Recorre el emblemático Parque Nacional Barranca del Cupatitzio, donde el río nace entre manantiales y senderos frondosos. Admira el arte del maque en el Museo La Huatápera, pasea por el pintoresco centro histórico y sumérgete en la espiritualidad del Antiguo Templo de San Juan Bautista. Además, si visitas en Semana Santa, no te pierdas el Tianguis Artesanal más grande de América Latina.</p>
+                <app-section-title section-title="Viaja a Maravatio en autobús con Autovías La Línea"></app-section-title>
+                <p class="__subtitle__destinos">Maravatio</p>
+                <p class="__paragraph">Maravatío, un destino que fusiona historia, cultura y belleza natural, te invita a descubrir su riqueza única. Sus calles evocan el pasado colonial, mientras que sus paisajes serranos y su cercanía a los bosques de la mariposa monarca ofrecen un espectáculo inigualable. Conocido por su arquitectura tradicional, su vibrante feria anual y su gastronomía local, cada visita a Maravatío es una experiencia auténtica. Autovías La Línea te conecta con este destino, garantizando un viaje seguro, cómodo y sin estrés.</p>
+                <p class="__subtitle__destinos">¿Que lugares visitar en Maravatio?</p>
+                <p class="__paragraph">Bienvenido a Maravatío, el corazón histórico de Michoacán, donde la tradición y la naturaleza se entrelazan en cada rincón. Este encantador destino cautiva con su arquitectura colonial, su legado purépecha y su vibrante vida cultural. Desde el majestuoso Teatro Morelos y la emblemática Torre Mirador, hasta las antiguas haciendas como la de Apeo y Pomoca, cada sitio cuenta una historia única. Disfruta de su exquisita gastronomía local —como el pan de pulque y las cocadas— y sumérgete en sus coloridas festividades, como la Feria de la Fresa. Rodeado de paisajes serranos y rutas rurales, Maravatío ofrece una experiencia auténtica para quienes buscan descubrir la esencia de México.</p>
              </section>
 
              <section class="__section __section__grid" id="monterrey-grid-section">
@@ -38,7 +41,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
              </section>
                 <p class="__subtitle__destinos">Gastronomía</p>
               <section class="__section __section__monterrey__food">
-                <p class="__paragraph__xl">Uruapan deleita al paladar con sabores que son herencia viva de la cocina purépecha. Prueba las tradicionales corundas con crema y queso, los uchepos recién salidos del vapor, las carnitas michoacanas y la emblemática sopa tarasca. En sus mercados y fondas, la autenticidad es la protagonista, y cada platillo es un viaje por los sabores del alma michoacana.</p>
+                <p class="__paragraph__xl">Maravatío, sabor auténtico entre tradiciones y productos del campo, es un destino gastronómico que conquista con su esencia rural y su herencia purépecha. Su cocina refleja la riqueza agrícola de la región, con ingredientes frescos como la fresa, el maíz, el maguey y el trigo, que dan vida a platillos llenos de identidad. Desde el tradicional pan de pulque y las cocadas artesanales, hasta antojitos típicos en ferias y mercados, cada bocado cuenta una historia local. En fondas familiares y cocinas comunitarias, la gastronomía de Maravatío se vive con calidez y autenticidad, ofreciendo una experiencia culinaria que conecta con la tierra y las raíces de Michoacán.</p>
                  <article class="container-cards__food">
                     <!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
                 </article>
@@ -61,6 +64,9 @@ class AppBoletosAutobusUruapan extends HTMLElement {
              <app-modal-multi-image></app-modal-multi-image>
               <app-modal-image></app-modal-image>
 
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
 
         `;
 		await this.loadAndRenderGridItems();
@@ -79,7 +85,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-ciudad-de-mexico.json");
+			const response = await fetch("../src/data/lugares-maravatio.json");
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -120,9 +126,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 		foodContainer.innerHTML = "";
 
 		try {
-			const response = await fetch(
-				"../src/data/platillos-ciudad-de-mexico.json"
-			);
+			const response = await fetch("../src/data/platillos-maravatio.json");
 			if (!response.ok) {
 				throw new Error(
 					`Error HTTP al cargar platillos-morelia.json: ${response.status}`
@@ -222,7 +226,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 		const sliderElement = this.querySelector("app-slider-opacity");
 		if (!sliderElement) {
 			console.error(
-				"AppBoletosAutobusMorelia: app-slider-opacity element not found."
+				"AppMorelia: app-slider-opacity element not found."
 			);
 			return;
 		}
@@ -244,7 +248,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 			);
 		} catch (error) {
 			console.error(
-				"AppBoletosAutobusMorelia: Error loading or setting data for destination slider:",
+				"AppMorelia: Error loading or setting data for destination slider:",
 				error
 			);
 			sliderElement.innerHTML =
@@ -256,7 +260,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 		const modal = this.querySelector("app-modal-multi-image");
 		if (!modal) {
 			console.error(
-				"AppBoletosAutobusMorelia: app-modal-multi-image element not found."
+				"AppMorelia: app-modal-multi-image element not found."
 			);
 			return;
 		}
@@ -298,12 +302,12 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 			modal.show();
 		} else {
 			console.warn(
-				'AppBoletosAutobusMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
+				'AppMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
 			);
 		}
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-a-uruapan",
-	AppBoletosAutobusUruapan
+	"page-viajar-a-maravatio",
+	AppViajarMaravatio
 );

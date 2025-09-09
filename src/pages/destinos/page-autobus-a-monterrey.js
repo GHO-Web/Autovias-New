@@ -2,7 +2,6 @@
 import "../../components/app-cotiza.js";
 import "../../components/app-modal-doters.js";
 import "../../components/app-modal-travelpass.js";
-import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-open-modal.js";
@@ -13,10 +12,12 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppBoletosAutobusEstadoDeMexico extends HTMLElement {
+class AppAutobusMonterrey extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
                 {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/banner-monterrey.png","mediumImage": "./src/assets/img/banner/banner-monterrey-tablet.png", "smallImage": "./src/assets/img/banner/banner-monterrey-sm.png", "link": "#index.html/banner1"}]'
@@ -25,10 +26,11 @@ class AppBoletosAutobusEstadoDeMexico extends HTMLElement {
             <app-payments></app-payments>
 
             <section class="__section __section__monterrey__destinations">
-                <app-section-title section-title="Viaja a Uruapan en autobús con Autovías La Línea"></app-section-title>
-                <p class="__subtitle__destinos">Uruapan</p>
-                <p class="__paragraph">Uruapan, corazón de la Meseta Purépecha y puerta al Parque Nacional Barranca del Cupatitzio, te invita a descubrir un destino lleno de historia, naturaleza exuberante y una identidad cultural que late en cada rincón. Con Autovías La Línea, llegar a esta joya de Michoacán es tan cómodo como inspirador. Disfruta de un viaje seguro, relajado y con todo el confort que mereces.</p>
-                <p class="__paragraph">Bienvenido a Uruapan, donde la tradición y la naturaleza se abrazan en una experiencia única. Esta ciudad michoacana te cautiva con sus cascadas cristalinas, arquitectura virreinal y el legado ancestral de la cultura purépecha. Recorre el emblemático Parque Nacional Barranca del Cupatitzio, donde el río nace entre manantiales y senderos frondosos. Admira el arte del maque en el Museo La Huatápera, pasea por el pintoresco centro histórico y sumérgete en la espiritualidad del Antiguo Templo de San Juan Bautista. Además, si visitas en Semana Santa, no te pierdas el Tianguis Artesanal más grande de América Latina.</p>
+                <app-section-title section-title="Viaja a Morelia en autobús con Autovías La Línea"></app-section-title>
+                <p class="__subtitle__destinos">Morelia</p>
+                <p class="__paragraph">Morelia, joya colonial en el corazón de México, deslumbra con su arquitectura de cantera rosa, su gastronomía y su riqueza cultural. Autovías La Línea ofrece un servicio de autobús de lujo desde la Ciudad de México, asegurando un viaje seguro, cómodo y sin estrés. Ya sea una escapada de fin de semana o una estancia prolongada, tu experiencia será tan extraordinaria como el destino.</p>
+                <p class="__subtitle__destinos">¿Que lugares visitar en Morelia?</p>
+                <p class="__paragraph">Bienvenido a Morelia, la majestuosa capital del estado de Michoacán, en el centro de México. Conocida por su arquitectura de cantera rosa y su vibrante vida cultural, Morelia es un destino que fusiona historia y modernidad con un encanto inigualable. Enmarcada por imponentes construcciones coloniales, la ciudad ofrece experiencias inolvidables en lugares como la Catedral de Morelia, el Callejón del Romance, el Acueducto y el Santuario de Guadalupe</p>
              </section>
 
              <section class="__section __section__grid" id="monterrey-grid-section">
@@ -36,9 +38,9 @@ class AppBoletosAutobusEstadoDeMexico extends HTMLElement {
                     <!-- Los elementos del grid se cargarán aquí -->
                 </article>
              </section>
-                <p class="__subtitle__destinos">Gastronomía</p>
+              <p class="__subtitle__destinos">Gastronomía</p>
               <section class="__section __section__monterrey__food">
-                <p class="__paragraph__xl">Uruapan deleita al paladar con sabores que son herencia viva de la cocina purépecha. Prueba las tradicionales corundas con crema y queso, los uchepos recién salidos del vapor, las carnitas michoacanas y la emblemática sopa tarasca. En sus mercados y fondas, la autenticidad es la protagonista, y cada platillo es un viaje por los sabores del alma michoacana.</p>
+                <p class="__paragraph__xl">Morelia, la encantadora capital de Michoacán, destaca por su exquisita tradición culinaria. Su gastronomía es una fusión de influencias indígenas y españolas, dando como resultado una riqueza de sabores auténticos. Desde las tradicionales carnitas y uchepos hasta los deliciosos gazpachos morelianos, cada platillo refleja la identidad cultural de la ciudad con una mezcla única de historia y sabor.</p>
                  <article class="container-cards__food">
                     <!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
                 </article>
@@ -62,6 +64,9 @@ class AppBoletosAutobusEstadoDeMexico extends HTMLElement {
               <app-modal-image></app-modal-image>
 
 
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
         `;
 		await this.loadAndRenderGridItems();
 		await this.loadAndRenderFoodCards();
@@ -79,7 +84,7 @@ class AppBoletosAutobusEstadoDeMexico extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-ciudad-de-mexico.json");
+			const response = await fetch("../src/data/lugares-monterrey.json");
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -121,11 +126,11 @@ class AppBoletosAutobusEstadoDeMexico extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/platillos-ciudad-de-mexico.json"
+				"../src/data/card-open-modal-platillos.json"
 			);
 			if (!response.ok) {
 				throw new Error(
-					`Error HTTP al cargar platillos-morelia.json: ${response.status}`
+					`Error HTTP al cargar card-open-modal-platillos.json: ${response.status}`
 				);
 			}
 			const foodData = await response.json();
@@ -222,7 +227,7 @@ class AppBoletosAutobusEstadoDeMexico extends HTMLElement {
 		const sliderElement = this.querySelector("app-slider-opacity");
 		if (!sliderElement) {
 			console.error(
-				"AppBoletosAutobusMorelia: app-slider-opacity element not found."
+				"AppBoletosAutobusMonterrey: app-slider-opacity element not found."
 			);
 			return;
 		}
@@ -244,7 +249,7 @@ class AppBoletosAutobusEstadoDeMexico extends HTMLElement {
 			);
 		} catch (error) {
 			console.error(
-				"AppBoletosAutobusMorelia: Error loading or setting data for destination slider:",
+				"AppBoletosAutobusMonterrey: Error loading or setting data for destination slider:",
 				error
 			);
 			sliderElement.innerHTML =
@@ -256,7 +261,7 @@ class AppBoletosAutobusEstadoDeMexico extends HTMLElement {
 		const modal = this.querySelector("app-modal-multi-image");
 		if (!modal) {
 			console.error(
-				"AppBoletosAutobusMorelia: app-modal-multi-image element not found."
+				"AppBoletosAutobusMonterrey: app-modal-multi-image element not found."
 			);
 			return;
 		}
@@ -298,12 +303,12 @@ class AppBoletosAutobusEstadoDeMexico extends HTMLElement {
 			modal.show();
 		} else {
 			console.warn(
-				'AppBoletosAutobusMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
+				'AppBoletosAutobusMonterrey: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
 			);
 		}
 	}
 }
 customElements.define(
-	"page-boletos-de-autobus-a-estado-de-mexico",
-	AppBoletosAutobusEstadoDeMexico
+	"page-autobus-monterrey",
+	AppAutobusMonterrey
 );

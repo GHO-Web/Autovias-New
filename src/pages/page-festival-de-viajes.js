@@ -11,8 +11,8 @@ class PageFestivalViajes extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
-
-            <app-modal-doters></app-modal-doters>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
 
             <app-banner-slider
                 slides-data='[
@@ -221,6 +221,9 @@ class PageFestivalViajes extends HTMLElement {
                           
                     </ol>
             </section>
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
         `;
 	}
 }
