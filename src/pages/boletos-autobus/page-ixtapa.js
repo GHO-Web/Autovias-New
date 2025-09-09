@@ -82,7 +82,9 @@ class AppIxtapa extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-ciudad-de-mexico.json");
+			const response = await fetch(
+				"../src/data/boletos-autobus/ixtapa/lugares.json"
+			);
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -124,7 +126,7 @@ class AppIxtapa extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/platillos-ciudad-de-mexico.json"
+				"../src/data/boletos-autobus/ixtapa/platillos-ciudad-de-mexico.json"
 			);
 			if (!response.ok) {
 				throw new Error(
@@ -185,7 +187,7 @@ class AppIxtapa extends HTMLElement {
 	async loadAndRenderDropdowns() {
 		try {
 			const response = await fetch(
-				"../src/data/dropdown-preguntas-morelia.json"
+				"../src/data/boletos-autobus/ixtapa/dropdown-preguntas-frecuentes.json"
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -230,7 +232,7 @@ class AppIxtapa extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/card-opacity-destinations.json"
+				"../src/data/boletos-autobus/ixtapa/card-opacity-destinations.json"
 			);
 			if (!response.ok) {
 				throw new Error(

@@ -85,7 +85,9 @@ class AppZitacuaro extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-zitacuaro.json");
+			const response = await fetch(
+				"../src/data/boletos-autobus/zitacuaro/lugares.json"
+			);
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -126,7 +128,9 @@ class AppZitacuaro extends HTMLElement {
 		foodContainer.innerHTML = "";
 
 		try {
-			const response = await fetch("../src/data/platillos-zitacuaro.json");
+			const response = await fetch(
+				"../src/data/boletos-autobus/zitacuaro/platillos-zitacuaro.json"
+			);
 			if (!response.ok) {
 				throw new Error(
 					`Error HTTP al cargar platillos-zitacuaro.json: ${response.status}`
@@ -186,7 +190,7 @@ class AppZitacuaro extends HTMLElement {
 	async loadAndRenderDropdowns() {
 		try {
 			const response = await fetch(
-				"../src/data/dropdown-preguntas-morelia.json"
+				"../src/data/boletos-autobus/zitacuaro/dropdown-preguntas-frecuentes.json"
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -264,7 +268,7 @@ class AppZitacuaro extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/card-opacity-destinations.json"
+				"../src/data/boletos-autobus/zitacuaro/card-opacity-destinations.json"
 			);
 			if (!response.ok) {
 				throw new Error(
