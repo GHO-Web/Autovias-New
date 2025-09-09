@@ -15,7 +15,7 @@ class PageTerminosHotTravel extends HTMLElement {
 
         <app-banner-slider
             slides-data='[
-            {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/global/banner/Hot_Travel_web.webp","mediumImage": "../../src/assets/img/global/banner/tablet/Hot_Travel_tablet.webp", "smallImage": "../../src/assets/img/global/banner/mobile/Hot_Travel_mobile.webp", "link": "#index.html/banner1"}
+            {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/promociones/hot-travel/Hot_Travel_web.webp","mediumImage": "../../src/assets/img/promociones/hot-travel/Hot_Travel_tablet.webp", "smallImage": "../../src/assets/img/promociones/hot-travel/Hot_Travel_mobile.webp", "link": "#index.html/banner1"}
             ]'
         >
         </app-banner-slider>
