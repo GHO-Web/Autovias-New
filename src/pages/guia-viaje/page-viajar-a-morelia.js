@@ -18,7 +18,7 @@ class AppViajarMorelia extends HTMLElement {
 			<app-modal-doters></app-modal-doters>
 			<app-banner-slider
 					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Atlacomulco_Banner_web.webp","mediumImage": "./src/assets/img/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
+					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/Atlacomulco_Banner_web.webp","mediumImage": "./src/assets/img/global/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/global/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
 			>
 			</app-banner-slider>
 			<app-payments></app-payments>

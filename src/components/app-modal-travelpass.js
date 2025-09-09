@@ -3,8 +3,8 @@
 import "../js/travelpass-cookie.js?v=1.0.0";
 
 class AppModalTravelpass extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
       
       <!-- Modal de inicio de sesión con selector de marca -->
       <div id="modalTravelPass" class="ModalTravelPs">
@@ -12,9 +12,9 @@ class AppModalTravelpass extends HTMLElement {
             <button class="close" class="close" id="close-login-modal"><span>&times;</span></button>
             <div class="card-modal">
               <div class="modal-header">
-                  <img src="../src/assets/img/gho-img/logos/logo-travel-pass.webp" alt="Logotipo TravelPass" title="Travel Pass Formulario" width="100" height="32" class="modal-logo">
+                  <img src="../src/assets/img/global/gho-img/logos/logo-travel-pass.webp" alt="Logotipo TravelPass" title="Travel Pass Formulario" width="100" height="32" class="modal-logo">
                   <hr class="__line-separador"/>
-                  <img src="../src/assets/img/gho-img/logos/logo_Pegasso.webp" class="modal-logo" alt="Viajero">
+                  <img src="../src/assets/img/global/gho-img/logos/logo_Pegasso.webp" class="modal-logo" alt="Viajero">
               </div>
 
               <div>
@@ -28,7 +28,7 @@ class AppModalTravelpass extends HTMLElement {
                       <img src="https://rsrvms-vanda-prod.s3.us-east-1.amazonaws.com/funnel/test/surdejalisco.png" class="__image__button-size" alt="Sur de Jalisco">
                   </button>
                   <button type="button" class="brand-btn" data-brand="pegasso">
-                      <img src="../src/assets/img/gho-img/logos/logo_Pegasso.webp" class="__image__button-size" alt="Viajero">
+                      <img src="../src/assets/img/global/gho-img/logos/logo_Pegasso.webp" class="__image__button-size" alt="Viajero">
                   </button>
               </div>-->
               
@@ -58,7 +58,7 @@ class AppModalTravelpass extends HTMLElement {
                 <button class="close" id="close-profile-modal"><span>&times;</span></button>
                 <div class="card-modal">
                     <div class="modal-header">
-                        <img src="../src/assets/img/gho-img/logos/logo-travel-pass.webp" alt="Logotipo TravelPass" title="Logo Travel Pass" width="100" height="32" class="modal-logo">
+                        <img src="../src/assets/img/global/gho-img/logos/logo-travel-pass.webp" alt="Logotipo TravelPass" title="Logo Travel Pass" width="100" height="32" class="modal-logo">
                     </div>
                     <div class="modalContenido">
                         <h2>Información del Usuario</h2>
@@ -71,7 +71,7 @@ class AppModalTravelpass extends HTMLElement {
             </div>  
       </div>
     `;
-  }
+	}
 }
 
-customElements.define('app-modal-travelpass', AppModalTravelpass);
+customElements.define("app-modal-travelpass", AppModalTravelpass);

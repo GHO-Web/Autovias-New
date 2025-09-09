@@ -11,7 +11,7 @@ class AppFooterEnglish extends HTMLElement {
 				<div class="footer__content main-container">
 					<div class="footer__content__footer-logo">
 						<a href="https://www.autovias.com.mx/" aria-label="Go to homepage of CompanyName">
-							<img src="../../src/assets/img/logos/logo.svg" alt="Logo of [Company Name]" class="footer__logo" width="922" height="143" loading="lazy"/>
+							<img src="../../../src/assets/img/global/logos/logo.svg" alt="Logo of [Company Name]" class="footer__logo" width="922" height="143" loading="lazy"/>
 						</a>
 					</div>
 					<div class="footer__content__columns"></div>
@@ -33,7 +33,10 @@ class AppFooterEnglish extends HTMLElement {
 			{
 				title: "About the Company",
 				links: [
-					{ text: "Who We Are", href: "../../english/about/quienes-somos.html" },
+					{
+						text: "Who We Are",
+						href: "../../english/about/quienes-somos.html",
+					},
 					{
 						text: "Job Opportunities",
 						href: "https://Autovías.com.mx/bolsa-de-trabajo/",

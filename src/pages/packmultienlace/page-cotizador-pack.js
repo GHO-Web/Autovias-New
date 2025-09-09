@@ -15,7 +15,7 @@ class PageCotizadorPack extends HTMLElement {
         
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/paqueteria/banner/pack-banner-cotizador.webp","mediumImage": "../../src/assets/img/banner/Tablet-1.png", "smallImage": "../../src/assets/img/banner/Movil-1.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/paqueteria/banner/pack-banner-cotizador.webp","mediumImage": "../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
 
                 ]'
             >

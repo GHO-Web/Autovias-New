@@ -1,13 +1,13 @@
 class AppDescriptionDestination extends HTMLElement {
-  connectedCallback() {
-    const titleText = this.getAttribute("title-text") || "Aguascalientes";
-    const paragraphText =
-      this.getAttribute("paragraph-text") ||
-      "Aguascalientes is a hidden gem in the heart of Mexico.";
-    const imageData = this.getAttribute("image-data") || "[]";
-    const images = JSON.parse(imageData);
+	connectedCallback() {
+		const titleText = this.getAttribute("title-text") || "Aguascalientes";
+		const paragraphText =
+			this.getAttribute("paragraph-text") ||
+			"Aguascalientes is a hidden gem in the heart of Mexico.";
+		const imageData = this.getAttribute("image-data") || "[]";
+		const images = JSON.parse(imageData);
 
-    this.innerHTML = `
+		this.innerHTML = `
       <article class="__description-destination">
         <h3 class="__subtitle-section">${titleText}</h3>
         <div class="__destinations-scroll-wrapper">
@@ -20,12 +20,12 @@ class AppDescriptionDestination extends HTMLElement {
         </p>
       </article>
     `;
-  }
+	}
 
-  renderDestinationsImages(images) {
-    return images
-      .map(
-        (image) => `
+	renderDestinationsImages(images) {
+		return images
+			.map(
+				(image) => `
           <div id="${image.id}" class="__item-image">
             <img 
               class="__img-destination" 
@@ -37,12 +37,12 @@ class AppDescriptionDestination extends HTMLElement {
               height="285"
             >
             <div class="__image-footer">
-              <img src="../../src/assets/img/logos/autovias-logo-blanco.webp" alt="Brand Icon" class="__brand-icon">
+              <img src="../../src/assets/img/global/autovias-logo-blanco.webp" alt="Brand Icon" class="__brand-icon">
             </div>
           </div>
         `
-      )
-      .join("");
-  }
+			)
+			.join("");
+	}
 }
 customElements.define("app-description-destination", AppDescriptionDestination);
