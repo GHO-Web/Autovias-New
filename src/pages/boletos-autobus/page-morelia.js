@@ -82,7 +82,9 @@ class AppMorelia extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-morelia.json");
+			const response = await fetch(
+				"../src/data/boletos-autobus/morelia/lugares.json"
+			);
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -123,7 +125,9 @@ class AppMorelia extends HTMLElement {
 		foodContainer.innerHTML = "";
 
 		try {
-			const response = await fetch("../src/data/platillos-morelia.json");
+			const response = await fetch(
+				"../src/data/boletos-autobus/morelia/platillos-morelia.json"
+			);
 			if (!response.ok) {
 				throw new Error(
 					`Error HTTP al cargar platillos-morelia.json: ${response.status}`
@@ -183,7 +187,7 @@ class AppMorelia extends HTMLElement {
 	async loadAndRenderDropdowns() {
 		try {
 			const response = await fetch(
-				"../src/data/dropdown-preguntas-morelia.json"
+				"../src/data/boletos-autobus/morelia/dropdown-preguntas-frecuentes.json"
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -228,7 +232,7 @@ class AppMorelia extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/card-opacity-destinations.json"
+				"../src/data/boletos-autobus/morelia/card-opacity-destinations.json"
 			);
 			if (!response.ok) {
 				throw new Error(

@@ -85,7 +85,7 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-zitacuaro.json");
+			const response = await fetch("../src/data/lugares.json");
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -186,7 +186,7 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
 	async loadAndRenderDropdowns() {
 		try {
 			const response = await fetch(
-				"../src/data/dropdown-preguntas-morelia.json"
+				"../src/data/dropdown-preguntas-frecuentes.json"
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);

@@ -14,58 +14,57 @@ import "../../js/slick.js?v=1.0.0";
 class AppAtlacomulco extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
-            <app-banner-slider
-                slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Atlacomulco_Banner_web.webp","mediumImage": "./src/assets/img/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
-            >
-            </app-banner-slider>
-            <app-payments></app-payments>
+			<app-cotiza></app-cotiza>
+			<app-modal-travelpass></app-modal-travelpass>
+			<app-modal-doters></app-modal-doters>
+			<app-banner-slider
+					slides-data='[
+					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Atlacomulco_Banner_web.webp","mediumImage": "./src/assets/img/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
+			>
+			</app-banner-slider>
+			<app-payments></app-payments>
 
-            <section class="__section __section__monterrey__destinations">
-                <app-section-title section-title="Viaja a Uruapan en autobús con Autovías La Línea"></app-section-title>
-                <p class="__subtitle__destinos">Uruapan</p>
-                <p class="__paragraph">Uruapan, corazón de la Meseta Purépecha y puerta al Parque Nacional Barranca del Cupatitzio, te invita a descubrir un destino lleno de historia, naturaleza exuberante y una identidad cultural que late en cada rincón. Con Autovías La Línea, llegar a esta joya de Michoacán es tan cómodo como inspirador. Disfruta de un viaje seguro, relajado y con todo el confort que mereces.</p>
-                <p class="__paragraph">Bienvenido a Uruapan, donde la tradición y la naturaleza se abrazan en una experiencia única. Esta ciudad michoacana te cautiva con sus cascadas cristalinas, arquitectura virreinal y el legado ancestral de la cultura purépecha. Recorre el emblemático Parque Nacional Barranca del Cupatitzio, donde el río nace entre manantiales y senderos frondosos. Admira el arte del maque en el Museo La Huatápera, pasea por el pintoresco centro histórico y sumérgete en la espiritualidad del Antiguo Templo de San Juan Bautista. Además, si visitas en Semana Santa, no te pierdas el Tianguis Artesanal más grande de América Latina.</p>
-             </section>
+			<section class="__section __section__monterrey__destinations">
+				<app-section-title section-title="Viaja a Uruapan en autobús con Autovías La Línea"></app-section-title>
+				<p class="__subtitle__destinos">Uruapan</p>
+				<p class="__paragraph">Uruapan, corazón de la Meseta Purépecha y puerta al Parque Nacional Barranca del Cupatitzio, te invita a descubrir un destino lleno de historia, naturaleza exuberante y una identidad cultural que late en cada rincón. Con Autovías La Línea, llegar a esta joya de Michoacán es tan cómodo como inspirador. Disfruta de un viaje seguro, relajado y con todo el confort que mereces.</p>
+				<p class="__paragraph">Bienvenido a Uruapan, donde la tradición y la naturaleza se abrazan en una experiencia única. Esta ciudad michoacana te cautiva con sus cascadas cristalinas, arquitectura virreinal y el legado ancestral de la cultura purépecha. Recorre el emblemático Parque Nacional Barranca del Cupatitzio, donde el río nace entre manantiales y senderos frondosos. Admira el arte del maque en el Museo La Huatápera, pasea por el pintoresco centro histórico y sumérgete en la espiritualidad del Antiguo Templo de San Juan Bautista. Además, si visitas en Semana Santa, no te pierdas el Tianguis Artesanal más grande de América Latina.</p>
+			</section>
 
-             <section class="__section __section__grid" id="monterrey-grid-section">
-                <article class="grid-container">
-                    <!-- Los elementos del grid se cargarán aquí -->
-                </article>
-             </section>
-                <p class="__subtitle__destinos">Gastronomía</p>
-              <section class="__section __section__monterrey__food">
-                <p class="__paragraph__xl">Uruapan deleita al paladar con sabores que son herencia viva de la cocina purépecha. Prueba las tradicionales corundas con crema y queso, los uchepos recién salidos del vapor, las carnitas michoacanas y la emblemática sopa tarasca. En sus mercados y fondas, la autenticidad es la protagonista, y cada platillo es un viaje por los sabores del alma michoacana.</p>
-                 <article class="container-cards__food">
-                    <!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
-                </article>
-             </section>
+			<section class="__section __section__grid" id="monterrey-grid-section">
+				<article class="grid-container">
+						<!-- Los elementos del grid se cargarán aquí -->
+				</article>
+			</section>
+				<p class="__subtitle__destinos">Gastronomía</p>
+			<section class="__section __section__monterrey__food">
+				<p class="__paragraph__xl">Uruapan deleita al paladar con sabores que son herencia viva de la cocina purépecha. Prueba las tradicionales corundas con crema y queso, los uchepos recién salidos del vapor, las carnitas michoacanas y la emblemática sopa tarasca. En sus mercados y fondas, la autenticidad es la protagonista, y cada platillo es un viaje por los sabores del alma michoacana.</p>
+					<article class="container-cards__food">
+						<!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
+				</article>
+			</section>
 
-             <section class="__section __section__monterrey__ask">
-                <app-section-title section-title="Preguntas Frecuentes"></app-section-title>
-                <article class="__grid-cards-container__dropdown" id="dropdowns-container">
-                    <!-- Contenedor para los dropdowns -->
-                </article>
-            </section>
+			<section class="__section __section__monterrey__ask">
+				<app-section-title section-title="Preguntas Frecuentes"></app-section-title>
+				<article class="__grid-cards-container__dropdown" id="dropdowns-container">
+						<!-- Contenedor para los dropdowns -->
+				</article>
+			</section>
 
-              <section class="__section __section__monterrey__other">
-                <app-section-title section-title="Otros destinos"></app-section-title>
-                <article class="container-slider-other">
-                    <app-slider-opacity></app-slider-opacity>
-                </article>
-             </section>
+			<section class="__section __section__monterrey__other">
+				<app-section-title section-title="Otros destinos"></app-section-title>
+				<article class="container-slider-other">
+						<app-slider-opacity></app-slider-opacity>
+				</article>
+			</section>
 
-             <app-modal-multi-image></app-modal-multi-image>
-              <app-modal-image></app-modal-image>
+			<app-modal-multi-image></app-modal-multi-image>
+			<app-modal-image></app-modal-image>
 			<app-cookies-policy></app-cookies-policy>
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
+		`;
 
-
-        `;
 		await this.loadAndRenderGridItems();
 		await this.loadAndRenderFoodCards();
 		await this.loadAndRenderDropdowns();
@@ -82,7 +81,9 @@ class AppAtlacomulco extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-ciudad-de-mexico.json");
+			const response = await fetch(
+				"../src/data/boletos-autobus/atlacomulco/lugares.json"
+			);
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -124,7 +125,7 @@ class AppAtlacomulco extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/platillos-ciudad-de-mexico.json"
+				"../src/data/boletos-autobus/atlacomulco/platillos-ciudad-de-mexico.json"
 			);
 			if (!response.ok) {
 				throw new Error(
@@ -185,7 +186,7 @@ class AppAtlacomulco extends HTMLElement {
 	async loadAndRenderDropdowns() {
 		try {
 			const response = await fetch(
-				"../src/data/dropdown-preguntas-morelia.json"
+				"../src/data/boletos-autobus/atlacomulco/dropdown-preguntas-frecuentes.json"
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -230,7 +231,7 @@ class AppAtlacomulco extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/card-opacity-destinations.json"
+				"../src/data/boletos-autobus/atlacomulco/card-opacity-destinations.json"
 			);
 			if (!response.ok) {
 				throw new Error(

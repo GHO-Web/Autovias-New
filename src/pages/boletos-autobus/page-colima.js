@@ -86,7 +86,9 @@ class AppColima extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-colima.json");
+			const response = await fetch(
+				"../src/data/boletos-autobus/colima/lugares.json"
+			);
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -127,7 +129,9 @@ class AppColima extends HTMLElement {
 		foodContainer.innerHTML = "";
 
 		try {
-			const response = await fetch("../src/data/platillos-colima.json");
+			const response = await fetch(
+				"../src/data/boletos-autobus/colima/platillos-colima.json"
+			);
 			if (!response.ok) {
 				throw new Error(
 					`Error HTTP al cargar platillos-morelia.json: ${response.status}`
@@ -187,7 +191,7 @@ class AppColima extends HTMLElement {
 	async loadAndRenderDropdowns() {
 		try {
 			const response = await fetch(
-				"../src/data/dropdown-preguntas-morelia.json"
+				"../src/data/boletos-autobus/colima/dropdown-preguntas-frecuentes.json"
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -232,7 +236,7 @@ class AppColima extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/card-opacity-destinations.json"
+				"../src/data/boletos-autobus/colima/card-opacity-destinations.json"
 			);
 			if (!response.ok) {
 				throw new Error(

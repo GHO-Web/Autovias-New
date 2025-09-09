@@ -82,7 +82,9 @@ class AppMonterrey extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-monterrey.json");
+			const response = await fetch(
+				"../src/data/boletos-autobus/monterrey/lugares.json"
+			);
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -124,7 +126,7 @@ class AppMonterrey extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/card-open-modal-platillos.json"
+				"../src/data/boletos-autobus/monterrey/card-open-modal-platillos.json"
 			);
 			if (!response.ok) {
 				throw new Error(
@@ -185,7 +187,7 @@ class AppMonterrey extends HTMLElement {
 	async loadAndRenderDropdowns() {
 		try {
 			const response = await fetch(
-				"../src/data/dropdown-preguntas-morelia.json"
+				"../src/data/boletos-autobus/monterrey/dropdown-preguntas-frecuentes.json"
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -230,7 +232,7 @@ class AppMonterrey extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/card-opacity-destinations.json"
+				"../src/data/boletos-autobus/monterrey/card-opacity-destinations.json"
 			);
 			if (!response.ok) {
 				throw new Error(

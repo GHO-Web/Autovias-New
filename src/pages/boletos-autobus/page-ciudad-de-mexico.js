@@ -14,53 +14,53 @@ import "../../js/slick.js?v=1.0.0";
 class AppCiudadDeMexico extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
-            <app-banner-slider
-                slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/ciudad_de_mexico.webp","mediumImage": "../src/assets/img/banner/tablet/cdmx_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/cdmx_mobile.webp", "link": "#index.html/banner1"}]'
-            >
-            </app-banner-slider>
-            <app-payments></app-payments>
+			<app-cotiza></app-cotiza>
+			<app-modal-travelpass></app-modal-travelpass>
+			<app-modal-doters></app-modal-doters>
+			<app-banner-slider
+					slides-data='[
+					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/ciudad_de_mexico.webp","mediumImage": "../src/assets/img/banner/tablet/cdmx_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/cdmx_mobile.webp", "link": "#index.html/banner1"}]'
+			>
+			</app-banner-slider>
+			<app-payments></app-payments>
 
-            <section class="__section __section__monterrey__destinations">
-                <app-section-title section-title="Viaja a Cuidad de México en autobús con Autovías La Línea"></app-section-title>
-                <p class="__subtitle__destinos">Ciudad de México</p>
-                <p class="__paragraph">Ciudad de México, vibrante metrópoli que combina historia, modernidad y una oferta cultural inigualable, te espera con su energía única. Sus imponentes monumentos, barrios emblemáticos y gastronomía de renombre mundial hacen de cada visita una experiencia inolvidable. Autovías La Línea ofrece un servicio de autobús de lujo que conecta la capital con diversos destinos, garantizando un viaje seguro, cómodo y sin estrés</p>
-                <p class="__subtitle__destinos">¿Que lugares visitar en Ciudad de México?</p>
-                <p class="__paragraph">Bienvenido a la Ciudad de México, la vibrante capital del país, donde la historia y la modernidad se entrelazan en cada rincón. Con una riqueza cultural incomparable, esta metrópoli cautiva con su arquitectura majestuosa, su gastronomía diversa y su inagotable oferta de entretenimiento. Desde el imponente Castillo de Chapultepec y la icónica Plaza de la Constitución, hasta los encantadores barrios de Coyoacán y San Ángel, cada sitio ofrece una experiencia única. No te pierdas el legado prehispánico en Teotihuacán, la majestuosidad del Palacio de Bellas Artes y el encanto de Xochimilco con sus trajineras coloridas.</p>
-             </section>
+			<section class="__section __section__monterrey__destinations">
+				<app-section-title section-title="Viaja a Cuidad de México en autobús con Autovías La Línea"></app-section-title>
+					<p class="__subtitle__destinos">Ciudad de México</p>
+					<p class="__paragraph">Ciudad de México, vibrante metrópoli que combina historia, modernidad y una oferta cultural inigualable, te espera con su energía única. Sus imponentes monumentos, barrios emblemáticos y gastronomía de renombre mundial hacen de cada visita una experiencia inolvidable. Autovías La Línea ofrece un servicio de autobús de lujo que conecta la capital con diversos destinos, garantizando un viaje seguro, cómodo y sin estrés</p>
+					<p class="__subtitle__destinos">¿Que lugares visitar en Ciudad de México?</p>
+					<p class="__paragraph">Bienvenido a la Ciudad de México, la vibrante capital del país, donde la historia y la modernidad se entrelazan en cada rincón. Con una riqueza cultural incomparable, esta metrópoli cautiva con su arquitectura majestuosa, su gastronomía diversa y su inagotable oferta de entretenimiento. Desde el imponente Castillo de Chapultepec y la icónica Plaza de la Constitución, hasta los encantadores barrios de Coyoacán y San Ángel, cada sitio ofrece una experiencia única. No te pierdas el legado prehispánico en Teotihuacán, la majestuosidad del Palacio de Bellas Artes y el encanto de Xochimilco con sus trajineras coloridas.</p>
+			</section>
 
-             <section class="__section __section__grid" id="monterrey-grid-section">
-                <article class="grid-container">
-                    <!-- Los elementos del grid se cargarán aquí -->
-                </article>
-             </section>
-                <p class="__subtitle__destinos">Gastronomía</p>
-              <section class="__section __section__monterrey__food">
-                <p class="__paragraph__xl">Ciudad de México, la vibrante capital del país, es un epicentro gastronómico donde convergen tradición e innovación. Su cocina es el resultado de una fusión de raíces prehispánicas y europeas, creando una diversidad de sabores únicos. Desde los icónicos tacos al pastor y los tradicionales tamales hasta los irresistibles chiles en nogada, cada platillo es un reflejo de la riqueza cultural de la ciudad. Entre mercados, fondas y restaurantes de alta cocina, la capital ofrece una experiencia culinaria inigualable que deleita a locales y visitantes.</p>
-                 <article class="container-cards__food">
-                    <!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
-                </article>
-             </section>
+			<section class="__section __section__grid" id="monterrey-grid-section">
+				<article class="grid-container">
+						<!-- Los elementos del grid se cargarán aquí -->
+				</article>
+			</section>
+				<p class="__subtitle__destinos">Gastronomía</p>
+			<section class="__section __section__monterrey__food">
+				<p class="__paragraph__xl">Ciudad de México, la vibrante capital del país, es un epicentro gastronómico donde convergen tradición e innovación. Su cocina es el resultado de una fusión de raíces prehispánicas y europeas, creando una diversidad de sabores únicos. Desde los icónicos tacos al pastor y los tradicionales tamales hasta los irresistibles chiles en nogada, cada platillo es un reflejo de la riqueza cultural de la ciudad. Entre mercados, fondas y restaurantes de alta cocina, la capital ofrece una experiencia culinaria inigualable que deleita a locales y visitantes.</p>
+					<article class="container-cards__food">
+						<!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
+				</article>
+			</section>
 
-             <section class="__section __section__monterrey__ask">
-                <app-section-title section-title="Preguntas Frecuentes"></app-section-title>
-                <article class="__grid-cards-container__dropdown" id="dropdowns-container">
-                    <!-- Contenedor para los dropdowns -->
-                </article>
-            </section>
+			<section class="__section __section__monterrey__ask">
+				<app-section-title section-title="Preguntas Frecuentes"></app-section-title>
+				<article class="__grid-cards-container__dropdown" id="dropdowns-container">
+						<!-- Contenedor para los dropdowns -->
+				</article>
+			</section>
 
-              <section class="__section __section__monterrey__other">
-                <app-section-title section-title="Otros destinos"></app-section-title>
-                <article class="container-slider-other">
-                    <app-slider-opacity></app-slider-opacity>
-                </article>
-             </section>
+			<section class="__section __section__monterrey__other">
+				<app-section-title section-title="Otros destinos"></app-section-title>
+				<article class="container-slider-other">
+						<app-slider-opacity></app-slider-opacity>
+				</article>
+			</section>
 
-             <app-modal-multi-image></app-modal-multi-image>
-              <app-modal-image></app-modal-image>
+			<app-modal-multi-image></app-modal-multi-image>
+			<app-modal-image></app-modal-image>
 
 			<app-cookies-policy></app-cookies-policy>
 			<app-button-whats></app-button-whats>
@@ -83,7 +83,9 @@ class AppCiudadDeMexico extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-ciudad-de-mexico.json");
+			const response = await fetch(
+				"../src/data/boletos-autobus/ciudad-de-mexico/lugares.json"
+			);
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -125,7 +127,7 @@ class AppCiudadDeMexico extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/platillos-ciudad-de-mexico.json"
+				"../src/data/boletos-autobus/ciudad-de-mexico/platillos-ciudad-de-mexico.json"
 			);
 			if (!response.ok) {
 				throw new Error(
@@ -156,13 +158,13 @@ class AppCiudadDeMexico extends HTMLElement {
 				);
 				cardElement.setAttribute(
 					"card-image",
-					foodItem.imageSrc || "src/assets/img/platillos/default-card.png"
+					foodItem.imageSrc || "../src/assets/img/platillos/default-card.png"
 				);
 				cardElement.setAttribute(
 					"card-modal-image",
 					foodItem.imageModal ||
 						foodItem.imageSrc ||
-						"src/assets/img/platillos/default-modal.png"
+						"../src/assets/img/platillos/default-modal.png"
 				);
 				cardElement.setAttribute(
 					"card-alt",
@@ -186,7 +188,7 @@ class AppCiudadDeMexico extends HTMLElement {
 	async loadAndRenderDropdowns() {
 		try {
 			const response = await fetch(
-				"../src/data/dropdown-preguntas-morelia.json"
+				"../src/data/boletos-autobus/ciudad-de-mexico/dropdown-preguntas-frecuentes.json"
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -231,7 +233,7 @@ class AppCiudadDeMexico extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/card-opacity-destinations.json"
+				"../src/data/boletos-autobus/ciudad-de-mexico/card-opacity-destinations.json"
 			);
 			if (!response.ok) {
 				throw new Error(

@@ -84,7 +84,9 @@ class AppGuadalajara extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/lugares-guadalajara.json");
+			const response = await fetch(
+				"../src/data/boletos-autobus/guadalajara/lugares.json"
+			);
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
 			}
@@ -125,7 +127,9 @@ class AppGuadalajara extends HTMLElement {
 		foodContainer.innerHTML = "";
 
 		try {
-			const response = await fetch("../src/data/platillos-guadalajara.json");
+			const response = await fetch(
+				"../src/data/boletos-autobus/guadalajara/platillos-guadalajara.json"
+			);
 			if (!response.ok) {
 				throw new Error(
 					`Error HTTP al cargar platillos-morelia.json: ${response.status}`
@@ -185,7 +189,7 @@ class AppGuadalajara extends HTMLElement {
 	async loadAndRenderDropdowns() {
 		try {
 			const response = await fetch(
-				"../src/data/dropdown-preguntas-morelia.json"
+				"../src/data/boletos-autobus/guadalajara/dropdown-preguntas-frecuentes.json"
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -230,7 +234,7 @@ class AppGuadalajara extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/card-opacity-destinations.json"
+				"../src/data/boletos-autobus/guadalajara/card-opacity-destinations.json"
 			);
 			if (!response.ok) {
 				throw new Error(
