@@ -7,6 +7,14 @@
 		]
 	},
 	{
+		"categoria": "Servicios",
+		"landings": [
+			{ "nombre": "Renta de Autobuses", "url": "../../turismo/index.html" },
+			{ "nombre": "Servicios a bordo", "url": "../../servicio-a-bordo.html" },
+			{ "nombre": "Paquetería", "url": "../../paqueteria.html" }
+		]
+	},
+	{
 		"categoria": "Rutas y Destinos",
 		"landings": [
 			{ "nombre": "Destinos", "url": "../../destinos/" },
@@ -79,32 +87,6 @@
 		]
 	},
 	{
-		"categoria": "Rutas y Destinos",
-		"landings": [
-			{ "nombre": "Destinos", "url": "../../destinos/" },
-			{
-				"nombre": "Ciudad de México",
-				"url": "../../destinos/autobus-a-ciudad-de-mexico.html"
-			},
-			{ "nombre": "Colima", "url": "../../destinos/autobus-a-colima.html" },
-			{
-				"nombre": "Guadalajara",
-				"url": "../../destinos/autobus-a-guadalajara.html"
-			},
-			{ "nombre": "Morelia", "url": "../../destinos/autobus-a-morelia.html" },
-			{
-				"nombre": "Zitacuaro",
-				"url": "../../destinos/autobus-a-zitacuaro.html"
-			},
-			{ "nombre": "Uruapan", "url": "../../destinos/autobus-a-uruapan.html" },
-			{ "nombre": "Ixtapa", "url": "../../destinos/autobus-a-ixtapa.html" },
-			{
-				"nombre": "Maravatío",
-				"url": "../../destinos/autobus-a-maravatio.html"
-			}
-		]
-	},
-	{
 		"categoria": "Comprar Boletos",
 		"landings": [
 			{
@@ -117,14 +99,6 @@
 			},
 			{ "nombre": "Promociones", "url": "../../promociones.html" },
 			{ "nombre": "Terminales y Taquillas", "url": "../../taquillas.html" }
-		]
-	},
-	{
-		"categoria": "Servicios",
-		"landings": [
-			{ "nombre": "Renta de Autobuses", "url": "../../turismo/index.html" },
-			{ "nombre": "Servicios a bordo", "url": "../../servicio-a-bordo.html" },
-			{ "nombre": "Paquetería", "url": "../../paqueteria.html" }
 		]
 	},
 	{
