@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/app-modal-doters.js";
-import "../../components/app-modal-travelpass.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-open-modal.js";
@@ -224,9 +222,7 @@ class AppMorelia extends HTMLElement {
 	async _configureDestinationSlider() {
 		const sliderElement = this.querySelector("app-slider-opacity");
 		if (!sliderElement) {
-			console.error(
-				"AppMorelia: app-slider-opacity element not found."
-			);
+			console.error("AppMorelia: app-slider-opacity element not found.");
 			return;
 		}
 
@@ -258,9 +254,7 @@ class AppMorelia extends HTMLElement {
 	openMultiImageModal(itemData) {
 		const modal = this.querySelector("app-modal-multi-image");
 		if (!modal) {
-			console.error(
-				"AppMorelia: app-modal-multi-image element not found."
-			);
+			console.error("AppMorelia: app-modal-multi-image element not found.");
 			return;
 		}
 
@@ -306,7 +300,4 @@ class AppMorelia extends HTMLElement {
 		}
 	}
 }
-customElements.define(
-	"page-morelia",
-	AppMorelia
-);
+customElements.define("page-morelia", AppMorelia);

@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/app-modal-doters.js";
-import "../../components/app-modal-travelpass.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-open-modal.js";
@@ -226,9 +224,7 @@ class AppViajarMonterrey extends HTMLElement {
 	async _configureDestinationSlider() {
 		const sliderElement = this.querySelector("app-slider-opacity");
 		if (!sliderElement) {
-			console.error(
-				"AppMonterrey: app-slider-opacity element not found."
-			);
+			console.error("AppMonterrey: app-slider-opacity element not found.");
 			return;
 		}
 
@@ -260,9 +256,7 @@ class AppViajarMonterrey extends HTMLElement {
 	openMultiImageModal(itemData) {
 		const modal = this.querySelector("app-modal-multi-image");
 		if (!modal) {
-			console.error(
-				"AppMonterrey: app-modal-multi-image element not found."
-			);
+			console.error("AppMonterrey: app-modal-multi-image element not found.");
 			return;
 		}
 
@@ -308,7 +302,4 @@ class AppViajarMonterrey extends HTMLElement {
 		}
 	}
 }
-customElements.define(
-	"page-viajar-a-monterrey",
-	AppViajarMonterrey
-);
+customElements.define("page-viajar-a-monterrey", AppViajarMonterrey);

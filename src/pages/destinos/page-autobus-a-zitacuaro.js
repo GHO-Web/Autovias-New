@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/app-modal-doters.js";
-import "../../components/app-modal-travelpass.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
@@ -309,7 +307,4 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
 		}
 	}
 }
-customElements.define(
-	"page-autobus-a-zitacuaro",
-	AppBoletosAutobusZitacuaro
-);
+customElements.define("page-autobus-a-zitacuaro", AppBoletosAutobusZitacuaro);

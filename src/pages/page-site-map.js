@@ -1,8 +1,6 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../components/app-cotiza.js";
 import "../components/app-section-title.js";
-import "../components/app-modal-doters.js";
-import "../components/app-modal-travelpass.js";
 
 class PageSiteMap extends HTMLElement {
 	async connectedCallback() {

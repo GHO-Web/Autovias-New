@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/app-modal-doters.js";
-import "../../components/app-modal-travelpass.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-open-modal.js";
@@ -306,7 +304,4 @@ class AppAutobusMorelia extends HTMLElement {
 		}
 	}
 }
-customElements.define(
-	"page-autobus-morelia",
-	AppAutobusMorelia
-);
+customElements.define("page-autobus-morelia", AppAutobusMorelia);

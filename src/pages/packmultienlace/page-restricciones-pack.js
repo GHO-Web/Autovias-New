@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/packmultienlace/app-cotiza-pack.js";
-import "../../components/app-modal-doters.js";
-import "../../components/app-modal-travelpass.js";
 import "../../components/app-section-title.js";
 import "../../js/slick.js?v=1.0.0";
 import "../../components/packmultienlace/app-card-bg-primary.js";

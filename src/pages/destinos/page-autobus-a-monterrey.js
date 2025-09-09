@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/app-modal-doters.js";
-import "../../components/app-modal-travelpass.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-open-modal.js";
@@ -308,7 +306,4 @@ class AppAutobusMonterrey extends HTMLElement {
 		}
 	}
 }
-customElements.define(
-	"page-autobus-monterrey",
-	AppAutobusMonterrey
-);
+customElements.define("page-autobus-monterrey", AppAutobusMonterrey);
