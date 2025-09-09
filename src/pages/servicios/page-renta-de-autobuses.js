@@ -54,7 +54,7 @@ class PageRentaDeAutobuses extends HTMLElement {
                 <div class="seats-grid-container">
                   <div class="seat-image-container">
                       <h3 class="__subtitle-seats">24 asientos</h3>
-                      <img class="__image" src="../../../src/assets/img/autobuses/plano-bus-24.webp" alt="Autobús de 24 asientos">
+                      <img class="__image" src="../../../src/assets/img/global/autobuses/plano-bus-24.webp" alt="Autobús de 24 asientos">
                   </div>
                   <div class="hover-cards-grid-container hover-cards-24-seats">
                   </div>
@@ -62,7 +62,7 @@ class PageRentaDeAutobuses extends HTMLElement {
                   </div>
                   <div class="seat-image-container">
                       <h3 class="__subtitle-seats">44 asientos</h3>
-                      <img class="__image" src="../../../src/assets/img/autobuses/plano-bus-44.webp" alt="44 asientos">
+                      <img class="__image" src="../../../src/assets/img/global/autobuses/plano-bus-44.webp" alt="44 asientos">
                   </div>
                 </div>
             </section>
