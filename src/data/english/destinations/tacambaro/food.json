@@ -1,20 +1,20 @@
 [
   {
     "imageSrc": "../../src/assets/img/english/destinations/tacambaro/food/cabrito-english.webp",
-    "imageAlt": "Cabrito",
-    "tag": "Cabrito al horno",
-    "text": "Tender, juicy goat meat, marinated and slow-roasted to perfection, served with traditional side dishes from the Bajío region."
+    "imageAlt": "Aporreadillo",
+    "tag": "Aporreadillo",
+    "text": "Shredded beef beaten until tender, then cooked with scrambled eggs, tomato, and chile. Savory, spicy, and satisfying — a breakfast staple with serious character."
   },
   {
     "imageSrc": "../../src/assets/img/english/destinations/tacambaro/food/sopa-campesina-english.webp",
-    "imageAlt": "Sopa Campesina",
-    "tag": "Sopa Campesina",
-    "text": "A comforting broth with vegetables, meat, and spices perfect for cool days. It’s a reflection of traditional, homemade Mexican cooking"
+    "imageAlt": "Bola de Pedernales",
+    "tag": "Bola de Pedernales",
+    "text": "A hearty dumpling made from masa, beans, cheese, and dried meat. Steamed and served with salsa, it’s a rustic dish born in the nearby community of Pedernales."
   },
   {
     "imageSrc": "../../src/assets/img/english/destinations/tacambaro/food/flan-english.webp",
-    "imageAlt": "Flan de queso y guayaba",
-    "tag": "Flan de queso y guayaba",
-    "text": "A smooth, creamy dessert that blends the rich flavor of cheese with the sweetness of guava—a festive favorite in local celebrations."
+    "imageAlt": "Nieve de Aguacate",
+    "tag": "Nieve de Aguacate",
+    "text": "Creamy avocado ice cream with a subtle sweetness and smooth texture. A local specialty that surprises and delights — perfect for warm afternoons in the plaza."
   }
 ]

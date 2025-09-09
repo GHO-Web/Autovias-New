@@ -4,28 +4,55 @@ import "./home/page-home.js?v=1.0.0";
 
 /*----------------------------PAGINAS-LANDINGS----------------------------------------*/
 
-// DESTIONOS
+// DESTINOS
 
-
-import "./destinations/page-boletos-de-autobus-monterrey.js?v=1.0.0";
-import "./destinations/page-boletos-de-autobus-morelia.js?v=1.0.0";
-import "./destinations/page-boletos-de-autobus-a-ciudad-de-mexico.js?v=1.0.0";
-import "./destinations/page-boletos-de-autobus-a-colima.js?v=1.0.0";
-import "./destinations/page-boletos-de-autobus-a-uruapan.js?v=1.0.0";
-import "./destinations/page-boletos-de-autobus-a-ixtapa.js?v=1.0.0";
-import "./destinations/page-boletos-de-autobus-a-atlacomulco.js?v=1.0.0";
-import "./destinations/page-boletos-de-autobus-a-queretaro.js?v=1.0.0";
-import "./destinations/page-boletos-de-autobus-a-estado-de-mexico.js?v=1.0.0";
-import "./destinations/page-boletos-de-autobus-a-guadalajara.js?v=1.0.0";
-import "./destinations/page-boletos-de-autobus-a-zitacuaro.js?v=1.0.0";
-import "./destinations/page-boletos-de-autobus-a-maravatio.js?v=1.0.0";
+import "./destinos/page-destinos.js?v=1.0.0";
+import "./destinos/page-autobus-a-monterrey.js?v=1.0.0";
+import "./destinos/page-autobus-a-morelia.js?v=1.0.0";
+import "./destinos/page-autobus-a-ciudad-de-mexico.js?v=1.0.0";
+import "./destinos/page-autobus-a-colima.js?v=1.0.0";
+import "./destinos/page-autobus-a-uruapan.js?v=1.0.0";
+import "./destinos/page-autobus-a-ixtapa.js?v=1.0.0";
+import "./destinos/page-autobus-a-atlacomulco.js?v=1.0.0";
+import "./destinos/page-autobus-a-queretaro.js?v=1.0.0";
+import "./destinos/page-autobus-a-estado-de-mexico.js?v=1.0.0";
+import "./destinos/page-autobus-a-guadalajara.js?v=1.0.0";
+import "./destinos/page-autobus-a-zitacuaro.js?v=1.0.0";
+import "./destinos/page-autobus-a-maravatio.js?v=1.0.0";
 
 // BOLETOS DE AUTOBUS
 
+import "./boletos-autobus/page-donde-comprar.js?v=1.0.0";
 import "./boletos-autobus/page-boletos-de-autobus.js?v=1.0.0";
+import "./boletos-autobus/page-monterrey.js?v=1.0.0";
+import "./boletos-autobus/page-morelia.js?v=1.0.0";
+import "./boletos-autobus/page-ciudad-de-mexico.js?v=1.0.0";
+import "./boletos-autobus/page-colima.js?v=1.0.0";
+import "./boletos-autobus/page-uruapan.js?v=1.0.0";
+import "./boletos-autobus/page-ixtapa.js?v=1.0.0";
+import "./boletos-autobus/page-atlacomulco.js?v=1.0.0";
+import "./boletos-autobus/page-queretaro.js?v=1.0.0";
+import "./boletos-autobus/page-estado-de-mexico.js?v=1.0.0";
+import "./boletos-autobus/page-guadalajara.js?v=1.0.0";
+import "./boletos-autobus/page-zitacuaro.js?v=1.0.0";
+import "./boletos-autobus/page-maravatio.js?v=1.0.0";
 
-// DESTINOS
-import "./destinos/page-destinos.js?v=1.0.0";
+// GUIA DE VIAJE
+
+
+import "./guia-viaje/page-viajar-a-monterrey.js?v=1.0.0";
+import "./guia-viaje/page-viajar-a-morelia.js?v=1.0.0";
+import "./guia-viaje/page-viajar-a-ciudad-de-mexico.js?v=1.0.0";
+import "./guia-viaje/page-viajar-a-colima.js?v=1.0.0";
+import "./guia-viaje/page-viajar-a-uruapan.js?v=1.0.0";
+import "./guia-viaje/page-viajar-a-ixtapa.js?v=1.0.0";
+import "./guia-viaje/page-viajar-a-atlacomulco.js?v=1.0.0";
+import "./guia-viaje/page-viajar-a-queretaro.js?v=1.0.0";
+import "./guia-viaje/page-viajar-a-estado-de-mexico.js?v=1.0.0";
+import "./guia-viaje/page-viajar-a-guadalajara.js?v=1.0.0";
+import "./guia-viaje/page-viajar-a-zitacuaro.js?v=1.0.0";
+import "./guia-viaje/page-viajar-a-maravatio.js?v=1.0.0";
+
 
 // SERVICIOS
 import "./servicios/page-pago-oxxo.js?v=1.0.0";
@@ -57,11 +84,16 @@ import "./legal/page-atencion-a-clientes.js?v=1.0.0";
 
 import "./page-salidas-charters.js?v=1.0.0";
 import "./page-site-map.js?v=1.3.3";
-import "./page-donde-comprar.js?v=1.0.0";
 import "./page-terminales-taquillas.js?v=1.0.0";
 import "./page-festival-de-viajes.js?v=1.0.0";
 import "./page-quienes-somos.js?v=1.0.0";
 import "./page-preguntas-frecuentes.js?v=1.0.0";
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
 
 // Imports pages for english version
 
@@ -70,11 +102,25 @@ import "./english/page-home-english.js?v=1.3.3";
 // Destinations
 import "./english/destinations/page-boletos-de-autobus-acambaro.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-acambay.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-amealco.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-atlacomulco.js?v=1.3.3";
-import "./english/destinations/page-boletos-de-autobus-colima.js?v=1.3.3";
-import "./english/destinations/page-boletos-de-autobus-guadalajara.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-cdmx.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-colima.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-dolores-hidalgo-gto.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-guadalajara.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-huetamo.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-jilotepec.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-manzanillo.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-maravatio.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-morelia.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-patzcuaro.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-queretaro.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-san-felipe-del-progreso.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-tacambaro.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-tepotzotlan.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-toluca.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-uruapan.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-zitacuaro.js?v=1.3.3";
 
 // WHO ARE WE
 
@@ -110,6 +156,8 @@ import "./packmultienlace/page-terminales-pack.js?v=1.3.3";
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../components/app-header.js?v=1.0.0";
+import "../components/app-modal-doters.js";
+import "../components/app-modal-travelpass.js";
 import "../components/app-cookies-policy.js?v=1.0.0";
 import "../components/app-button-whats.js?v=1.0.0";
 import "../components/app-button-eva-trip.js?v=1.0.0";
@@ -118,6 +166,8 @@ import "../components/app-footer.js?v=1.0.0";
 /*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
 
 import "../components/english/app-header.js?v=1.0.0";
+import "../components/english/app-modal-doters.js";
+import "../components/english/app-modal-travelpass.js";
 import "../components/english/app-cookies-policy.js?v=1.0.0";
 import "../components/english/app-button-eva-trip.js?v=1.0.0";
 import "../components/english/app-footer.js?v=1.0.0";

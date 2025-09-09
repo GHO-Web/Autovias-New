@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../../components/app-cotiza.js";
-import "../../../components/english/app-modal-doters.js";
-import "../../../components/english/app-modal-travelpass.js";
 import "../../../components/english/app-destiny-slider.js";
 import "../../../components/english/app-banner-multi-image.js";
 import "../../../components/english/app-card-image-tag-text.js";
@@ -66,6 +64,9 @@ class PageBoletosAutobusAtlacomulcoEnglish extends HTMLElement {
         <app-section-title section-title="Explore more destinations with ETN Turistar Mexico is waiting for you."></app-section-title>
         <app-destiny-slider src="../../src/data/english/destinations/atlacomulco/grid-text-data.json"></app-destiny-slider>
       </section>
+		<app-cookies-policy-english></app-cookies-policy-english>
+		<app-button-whats></app-button-whats>
+		<app-button-eva-trip-english></app-button-eva-trip-english>
     `;
 		this._loadExploreSectionData();
 	}

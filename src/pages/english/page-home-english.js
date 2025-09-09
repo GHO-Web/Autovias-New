@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/english/app-modal-doters.js";
-import "../../components/english/app-modal-travelpass.js";
 import "../../components/english/app-grid-text.js";
 import "../../components/english/app-destinations-grid-english.js";
 import "../../components/english/app-banner-promotional.js";
@@ -74,6 +72,9 @@ class PageHomeEnglish extends HTMLElement {
         <app-grid-text src="../../src/data/english/home/grid-text-data.json"></app-grid-text>
       </section>
 
+		<app-cookies-policy-english></app-cookies-policy-english>
+		<app-button-whats></app-button-whats>
+		<app-button-eva-trip-english></app-button-eva-trip-english>
     `;
 	}
 }

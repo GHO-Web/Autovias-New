@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/app-modal-doters.js";
-import "../../components/app-modal-travelpass.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
@@ -14,8 +12,8 @@ class PageDestinos extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
         <app-cotiza></app-cotiza>
-
-        <app-modal-doters></app-modal-doters>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
 				<app-banner-slider
 						slides-data='[
 						{"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/metodos_pago_web.webp","mediumImage": "../../src/assets/img/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../../src/assets/img/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
@@ -69,6 +67,10 @@ class PageDestinos extends HTMLElement {
                       <!-- Contenedor para las nuevas tarjetas con título e icono -->
             </article>
         </section>
+
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
     `;
 		this.loadAndRenderCardsText();
 		this.loadAndRenderTitleIconCards();

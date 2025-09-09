@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/app-modal-doters.js";
-import "../../components/app-modal-travelpass.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-cards-text-list.js";
@@ -13,27 +11,32 @@ class PageBoletosDeAutobus extends HTMLElement {
 		// Establecer la estructura HTML base del componente.
 		// El contenido de __boletos-de-autobus__scrollbar se llenará dinámicamente.
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
-            <app-modal-doters></app-modal-doters>
-            <app-banner-slider
-                slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Bw_Doters_Feria_Tacambaro1_Autovias.webp","mediumImage": "../src/assets/img/banner/Tablet-1.png", "smallImage": "../src/assets/img/banner/Movil-1.webp", "link": "#index.html/banner1"},
-                {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/banner/Bw_Patio_Santa_Fe_Morelia2_Autovias.webp", "mediumImage": "../src/assets/img/banner/Tablet.png","smallImage": "../src/assets/img/banner/Movil.png", "link": "#index.html/banner2"},
-                {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/banner/Bw_Playas_Semana_Santa_Autovias.webp", "mediumImage": "../src/assets/img/banner/Tablet-1.png","smallImage": "../src/assets/img/banner/Movil-1.webp", "link": "#index.html/banner3"}
-                ]'
-            >
-            </app-banner-slider>
-            <app-payments></app-payments>
-            <section class="section__boletos-de-autobus">
-                <app-section-title section-title="Boletos de Autobús Autovías La Línea: tu mejor opcón para viajar"></app-section-title>
-                <article class="__boletos-de-autobus__text">
-                    <p class="__text__paragraph"><b class="__text__bold">Viajar con Autovías La Línea es sinónimo de comodidad, seguridad y puntualidad.</b> No esperes más y adquiere tus boletos de autobús hoy mismo para disfrutar de una experiencia de viaje superior. Si te preguntas dónde comprar boletos de autobús de Autovías La Línea recuerda que puedes hacerlo fácilmente a través de nuestro sitio web, por teléfono o en nuestras taquillas.</p>
-                    <div class="__boletos-de-autobus__scrollbar">
-                        <p>Cargando tipos de boletos...</p> 
-                    </div>
-                </article>
-            </section>
-        `;
+			<app-cotiza></app-cotiza>
+			<app-modal-travelpass></app-modal-travelpass>
+			<app-modal-doters></app-modal-doters>
+			<app-banner-slider
+					slides-data='[
+					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Bw_Doters_Feria_Tacambaro1_Autovias.webp","mediumImage": "../src/assets/img/banner/Tablet-1.png", "smallImage": "../src/assets/img/banner/Movil-1.webp", "link": "#index.html/banner1"},
+					{"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/banner/Bw_Patio_Santa_Fe_Morelia2_Autovias.webp", "mediumImage": "../src/assets/img/banner/Tablet.png","smallImage": "../src/assets/img/banner/Movil.png", "link": "#index.html/banner2"},
+					{"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/banner/Bw_Playas_Semana_Santa_Autovias.webp", "mediumImage": "../src/assets/img/banner/Tablet-1.png","smallImage": "../src/assets/img/banner/Movil-1.webp", "link": "#index.html/banner3"}
+					]'
+			>
+			</app-banner-slider>
+			<app-payments></app-payments>
+			<section class="section__boletos-de-autobus">
+					<app-section-title section-title="Boletos de Autobús Autovías La Línea: tu mejor opcón para viajar"></app-section-title>
+					<article class="__boletos-de-autobus__text">
+							<p class="__text__paragraph"><b class="__text__bold">Viajar con Autovías La Línea es sinónimo de comodidad, seguridad y puntualidad.</b> No esperes más y adquiere tus boletos de autobús hoy mismo para disfrutar de una experiencia de viaje superior. Si te preguntas dónde comprar boletos de autobús de Autovías La Línea recuerda que puedes hacerlo fácilmente a través de nuestro sitio web, por teléfono o en nuestras taquillas.</p>
+							<div class="__boletos-de-autobus__scrollbar">
+									<p>Cargando tipos de boletos...</p> 
+							</div>
+					</article>
+			</section>
+						
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
+		`;
 		// Cargar y renderizar las tarjetas dinámicamente
 		await this.loadAndRenderBusTicketCards();
 	}

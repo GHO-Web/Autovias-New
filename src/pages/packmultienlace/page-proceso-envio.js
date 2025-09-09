@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/app-modal-doters.js";
-import "../../components/app-modal-travelpass.js";
 import "../../components/app-section-title.js";
 import "../../components/app-cotizador-pack.js";
 import "../../components/packmultienlace/app-header-pack-multienlace.js";

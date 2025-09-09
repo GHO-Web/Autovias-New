@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../../components/app-cotiza.js";
-import "../../../../components/english/app-modal-doters.js";
-import "../../../../components/english/app-modal-travelpass.js";
 import "../../../../components/app-banner-slider.js";
 import "../../../../components/app-payments.js";
 import "../../../../components/app-section-title.js";
@@ -381,6 +379,9 @@ class PageTerminosCondicionesEnglish extends HTMLElement {
                     </ul>
                 </article>
             </section>
+		<app-cookies-policy-english></app-cookies-policy-english>
+		<app-button-whats></app-button-whats>
+		<app-button-eva-trip-english></app-button-eva-trip-english>
         `;
 	}
 }

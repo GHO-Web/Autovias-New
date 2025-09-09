@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../../components/app-cotiza.js";
-import "../../../components/english/app-modal-doters.js";
-import "../../../components/english/app-modal-travelpass.js";
 import "../../../components/english/app-destiny-slider.js";
 import "../../../components/english/app-banner-multi-image.js";
 import "../../../components/english/app-card-image-tag-text.js";
@@ -45,7 +43,7 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
         <app-banner-multi-image></app-banner-multi-image>
         <p class="text-description">
           Savor the essence of Mexico in every bite.</br>
-          Acámbaro’s culinary heritage is rooted in tradition and craftsmanship. From its legendary bread to its lakeside flavors, every dish reflects the warmth and creativity of its people. Eating here is more than a meal — it’s a taste of history..
+          Acámbaro’s culinary heritage is rooted in tradition and craftsmanship. From its legendary bread to its lakeside flavors, every dish reflects the warmth and creativity of its people. Eating here is more than a meal — it’s a taste of history.
         </p>
         <app-card-image-tag-text data-src="../../src/data/english/destinations/acambaro/food.json"></app-card-image-tag-text>
       </section>
@@ -66,6 +64,9 @@ class PageBoletosAutobusAcambaroEnglish extends HTMLElement {
         <app-section-title section-title="Explore more destinations with ETN Turistar Mexico is waiting for you."></app-section-title>
         <app-destiny-slider src="../../src/data/english/destinations/acambaro/grid-text-data.json"></app-destiny-slider>
       </section>
+		<app-cookies-policy-english></app-cookies-policy-english>
+		<app-button-whats></app-button-whats>
+		<app-button-eva-trip-english></app-button-eva-trip-english>
     `;
 		this._loadExploreSectionData();
 	}

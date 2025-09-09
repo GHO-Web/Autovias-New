@@ -147,13 +147,13 @@
 
 		<link
 			rel="stylesheet"
-			href="./src/styles/css/css-components/page-boletos-de-autobus-monterrey.min.css?v=1.0.7"
+			href="../src/styles/css/css-components/page-boletos-de-autobus-destino.min.css?v=1.0.7"
 		/>
 
 		<!-- Scripts -->
 
-		<script src="./src/js/jquery.min.js?v=1.0.0"></script>
-		<script type="module" src="./app.js?v=1.0.0"></script>
+		<script src="../src/js/jquery.min.js?v=1.0.0"></script>
+		<script type="module" src="../app.js?v=1.0.0"></script>
 
 		<!-- CSS widget de reservamos -->
 		<link
@@ -164,21 +164,16 @@
 	<body>
 		<app-header
 			logo='{
-        "src": "./src/assets/img/logos/logo.svg", 
+        "src": "../src/assets/img/logos/logo.svg", 
         "alt": "Logo de Autovías La Línea",
         "href": "https://www.autovias.com.mx/"
       }'
 		>
 		</app-header>
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
 		<main>
-			<page-boletos-de-autobus-a-uruapan></page-boletos-de-autobus-a-uruapan>
+			<page-uruapan></page-uruapan>
 		</main>
 		<app-footer></app-footer>
-		<app-cookies-policy></app-cookies-policy>
-		<!--<app-button-whats></app-button-whats> -->
-		<app-button-eva-trip></app-button-eva-trip>
 
 		<!-- JS widget de reservamos -->
 		<script src="https://widgets.reservamos.mx/search/5.18.0/search.js?v=5.18.0"></script>

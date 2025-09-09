@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../components/app-cotiza.js";
-import "../components/app-modal-doters.js";
-import "../components/app-modal-travelpass.js";
 import "../components/app-banner-slider.js";
 import "../components/app-payments.js";
 import "../components/app-section-title.js";
@@ -12,7 +10,8 @@ class PageQuienesSomos extends HTMLElement {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
 
-            <app-modal-doters></app-modal-doters>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
     
             <app-banner-slider
                     slides-data='[
@@ -58,6 +57,9 @@ class PageQuienesSomos extends HTMLElement {
                     </ul>
                 </article>
             </section>
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
         `;
 	}
 }

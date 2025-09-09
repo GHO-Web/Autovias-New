@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/app-modal-doters.js";
-import "../../components/app-modal-travelpass.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-cards-icons.js";
@@ -16,8 +14,8 @@ class PageRentaDeAutobuses extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
-
-            <app-modal-doters></app-modal-doters>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
     
             <app-banner-slider
                     slides-data='[
