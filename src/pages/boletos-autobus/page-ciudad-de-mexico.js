@@ -19,7 +19,7 @@ class AppCiudadDeMexico extends HTMLElement {
 			<app-modal-doters></app-modal-doters>
 			<app-banner-slider
 					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/ciudad_de_mexico.webp","mediumImage": "../src/assets/img/global/banner/tablet/cdmx_tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/cdmx_mobile.webp", "link": "#index.html/banner1"}]'
+					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/ciudad-de-mexico/banner/ciudad_de_mexico.webp","mediumImage": "../src/assets/img/boletos-autobus/ciudad-de-mexico/banner/tablet/cdmx_tablet.webp", "smallImage": "../src/assets/img/boletos-autobus/ciudad-de-mexico/banner/mobile/cdmx_mobile.webp", "link": "#index.html/banner1"}]'
 			>
 			</app-banner-slider>
 			<app-payments></app-payments>

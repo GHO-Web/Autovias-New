@@ -19,7 +19,7 @@ class AppEstadoDeMexico extends HTMLElement {
 		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/banner-monterrey.png","mediumImage": "./src/assets/img/global/banner/banner-monterrey-tablet.png", "smallImage": "./src/assets/img/global/banner/banner-monterrey-sm.png", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/estado-de-mexico/banner/banner-monterrey.png","mediumImage": "./src/assets/img/boletos-autobus/estado-de-mexico/banner/banner-monterrey-tablet.png", "smallImage": "./src/assets/img/boletos-autobus/estado-de-mexico/banner/banner-monterrey-sm.png", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>

@@ -19,7 +19,7 @@ class AppUruapan extends HTMLElement {
 		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/Uruapan_banner_web.webp","mediumImage": "./src/assets/img/global/banner/tablet/Uruapan_tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/Uruapan_mobile.webp", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/uruapan/banner/Uruapan_banner_web.webp","mediumImage": "./src/assets/img/boletos-autobus/uruapan/banner/tablet/Uruapan_tablet.webp", "smallImage": "../src/assets/img/boletos-autobus/uruapan/banner/mobile/Uruapan_mobile.webp", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>
