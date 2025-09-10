@@ -9,9 +9,34 @@
 	{
 		"categoria": "Servicios",
 		"landings": [
-			{ "nombre": "Renta de Autobuses", "url": "../../turismo/index.html" },
-			{ "nombre": "Servicios a bordo", "url": "../../servicio-a-bordo.html" },
-			{ "nombre": "Paquetería", "url": "../../paqueteria.html" }
+			{
+				"nombre": "Facturación electrónica",
+				"url": "../../servicios/facturacion/"
+			},
+			{
+				"nombre": "OXXO Pay",
+				"url": "../../servicios/pago-referenciado-oxxo.html"
+			},
+			{
+				"nombre": "Pack Multienlace",
+				"url": "../../servicios/packmultienlace/"
+			},
+			{
+				"nombre": "Renta de autobuses",
+				"url": "../../servicios/renta-de-autobuses.html"
+			},
+			{
+				"nombre": "Salas de espera vip",
+				"url": "../../servicios/salas-de-espera-vip.html"
+			},
+			{
+				"nombre": "Servicio a bordo",
+				"url": "../../servicios/servicio-a-bordo.html"
+			},
+			{
+				"nombre": "Viajero Protegido",
+				"url": "../../servicios/viajero-protegido.html"
+			}
 		]
 	},
 	{
@@ -27,16 +52,32 @@
 				"nombre": "Guadalajara",
 				"url": "../../destinos/autobus-a-guadalajara.html"
 			},
-			{ "nombre": "Morelia", "url": "../../destinos/autobus-a-morelia.html" },
-			{
-				"nombre": "Zitacuaro",
-				"url": "../../destinos/autobus-a-zitacuaro.html"
-			},
-			{ "nombre": "Uruapan", "url": "../../destinos/autobus-a-uruapan.html" },
 			{ "nombre": "Ixtapa", "url": "../../destinos/autobus-a-ixtapa.html" },
 			{
 				"nombre": "Maravatío",
 				"url": "../../destinos/autobus-a-maravatio.html"
+			},
+			{ "nombre": "Morelia", "url": "../../destinos/autobus-a-morelia.html" },
+			{ "nombre": "Uruapan", "url": "../../destinos/autobus-a-uruapan.html" },
+			{
+				"nombre": "Zitacuaro",
+				"url": "../../destinos/autobus-a-zitacuaro.html"
+			}
+		]
+	},
+	{
+		"categoria": "Promociones",
+		"landings": [
+			{ "nombre": "Promociones", "url": "../../promociones/" },
+			{ "nombre": "Buen Fin", "url": "../../promociones/buen-fin/" },
+			{ "nombre": "Hot travel", "url": "../../promociones/hot-travel/" },
+			{
+				"nombre": "Festival de viajes",
+				"url": "../../promociones/festival-de-viajes.html"
+			},
+			{
+				"nombre": "Ofertas en 1 click",
+				"url": "../../promociones/ofertas-en-1-click.html"
 			}
 		]
 	},
@@ -44,6 +85,10 @@
 		"categoria": "Boletos de autobus",
 		"landings": [
 			{ "nombre": "Boletos de autobus", "url": "../../boletos-autobus/" },
+			{
+				"nombre": "¿Dónde comprar boletos?",
+				"url": "../../donde-comprar.html"
+			},
 			{
 				"nombre": "Ciudad de México",
 				"url": "../../boletos-autobus/ciudad-de-mexico.html"
@@ -53,11 +98,11 @@
 				"nombre": "Guadalajara",
 				"url": "../../boletos-autobus/guadalajara.html"
 			},
-			{ "nombre": "Morelia", "url": "../../boletos-autobus/morelia.html" },
-			{ "nombre": "Zitacuaro", "url": "../../boletos-autobus/zitacuaro.html" },
-			{ "nombre": "Uruapan", "url": "../../boletos-autobus/uruapan.html" },
 			{ "nombre": "Ixtapa", "url": "../../boletos-autobus/ixtapa.html" },
-			{ "nombre": "Maravatío", "url": "../../boletos-autobus/maravatio.html" }
+			{ "nombre": "Maravatío", "url": "../../boletos-autobus/maravatio.html" },
+			{ "nombre": "Morelia", "url": "../../boletos-autobus/morelia.html" },
+			{ "nombre": "Uruapan", "url": "../../boletos-autobus/uruapan.html" },
+			{ "nombre": "Zitacuaro", "url": "../../boletos-autobus/zitacuaro.html" }
 		]
 	},
 	{
@@ -73,116 +118,94 @@
 				"nombre": "Guadalajara",
 				"url": "../../guia-viaje/viajar-a-guadalajara.html"
 			},
-			{ "nombre": "Morelia", "url": "../../guia-viaje/viajar-a-morelia.html" },
-			{
-				"nombre": "Zitacuaro",
-				"url": "../../guia-viaje/viajar-a-zitacuaro.html"
-			},
-			{ "nombre": "Uruapan", "url": "../../guia-viaje/viajar-a-uruapan.html" },
 			{ "nombre": "Ixtapa", "url": "../../guia-viaje/viajar-a-ixtapa.html" },
 			{
 				"nombre": "Maravatío",
 				"url": "../../guia-viaje/viajar-a-maravatio.html"
+			},
+			{ "nombre": "Morelia", "url": "../../guia-viaje/viajar-a-morelia.html" },
+			{ "nombre": "Uruapan", "url": "../../guia-viaje/viajar-a-uruapan.html" },
+			{
+				"nombre": "Zitacuaro",
+				"url": "../../guia-viaje/viajar-a-zitacuaro.html"
 			}
 		]
 	},
 	{
-		"categoria": "Comprar Boletos",
+		"categoria": "Nosotros",
 		"landings": [
 			{
-				"nombre": "Boletos de Autobus",
-				"url": "../../boletos-de-autobus.html"
+				"nombre": "Atencion a Clientes",
+				"url": "../../nosotros/atencion-a-clientes.html"
 			},
-			{
-				"nombre": "¿Dónde comprar boletos?",
-				"url": "../../donde-comprar.html"
-			},
-			{ "nombre": "Promociones", "url": "../../promociones.html" },
-			{ "nombre": "Terminales y Taquillas", "url": "../../taquillas.html" }
-		]
-	},
-	{
-		"categoria": "Autovías",
-		"landings": [
-			{ "nombre": "¿Quienes somos?", "url": "../../quienes-somos.html" },
-			{ "nombre": "Contacto", "url": "../../atencion-a-clientes.html" },
 			{
 				"nombre": "Aviso de privacidad",
-				"url": "../../aviso-de-privacidad.html"
+				"url": "../../nosotros/aviso-de-privacidad.html"
+			},
+			{
+				"nombre": "Preguntas Frecuentes",
+				"url": "../../nosotros/preguntas-frecuentes.html"
+			},
+			{
+				"nombre": "¿Quienes somos?",
+				"url": "../../nosotros/quienes-somos.html"
+			},
+			{
+				"nombre": "Terminos y condiciones",
+				"url": "../../nosotros/terminos-condiciones.html"
 			}
 		]
 	},
 	{
-		"categoria": "Terminos y Condiciones",
+		"categoria": "GHO",
 		"landings": [
 			{
-				"nombre": "Terminos y Condiciones",
-				"url": "../../terminos-condiciones.html"
-			},
-			{ "nombre": "Viajero Protegido", "url": "../../viajero-protegido.html" },
-			{ "nombre": "Buen fin", "url": "../../buen-fin/index.html" },
-			{ "nombre": "Hot travel", "url": "../../hot-travel/index.html" },
-			{
-				"nombre": "Festival de Viajes",
-				"url": "../../festival-de-viajes.html"
+				"nombre": "Pegasso",
+				"url": "https://www.autovias.com.mx/gho/pegasso/"
 			},
 			{
-				"nombre": "Ofertas en 1 click",
-				"url": "../../ofertas-en-1-click.html"
-			},
-			{
-				"nombre": "Pago referenciado oxxo",
-				"url": "../../pago-referenciado-oxxo.html"
+				"nombre": "Sur de jalisco",
+				"url": "https://surdejalisco.com.mx/"
 			}
 		]
 	},
 	{
-		"categoria": "Paquetería",
+		"categoria": "Paquetería (Pack Multienlace)",
 		"landings": [
 			{
 				"nombre": "¿Como funciona?",
-				"url": "../../packmultienlace/como-funciona-paqueteria.html"
+				"url": "../../servicios/packmultienlace/como-funciona-paqueteria.html"
 			},
 			{
 				"nombre": "Cotizador",
-				"url": "../../packmultienlace/cotizador-paqueteria.html"
+				"url": "../../servicios/packmultienlace/cotizador-paqueteria.html"
 			},
 			{
 				"nombre": "Pack Multienlace",
-				"url": "../../packmultienlace/pack-multienlace.html"
+				"url": "../../servicios/packmultienlace/pack-multienlace.html"
 			},
 			{
 				"nombre": "Proceso de Envio",
-				"url": "../../packmultienlace/proceso-de-envio.html"
+				"url": "../../servicios/packmultienlace/proceso-de-envio.html"
 			},
 			{
 				"nombre": "Servicios corporativos",
-				"url": "../../packmultienlace/servicios-corporativos-paqueteria.html"
+				"url": "../../servicios/packmultienlace/servicios-corporativos-paqueteria.html"
 			},
 			{
 				"nombre": "Terminales de paqueteria",
-				"url": "../../packmultienlace/terminales-paqueteria.html"
+				"url": "../../servicios/packmultienlace/terminales-paqueteria.html"
 			},
 			{
 				"nombre": "Restricciones de Envios",
-				"url": "../../packmultienlace/restricciones-envios.html"
+				"url": "../../servicios/packmultienlace/restricciones-envios.html"
 			}
 		]
 	},
 	{
-		"categoria": "Otros",
+		"categoria": "Blog",
 		"landings": [
-			{ "nombre": "Blog", "url": "https://www.autovias.com.mx/blog/" },
-			{
-				"nombre": "Atencion a Clientes",
-				"url": "../../atencion-a-clientes.html"
-			}
-		]
-	},
-	{
-		"categoria": "Facturación",
-		"landings": [
-			{ "nombre": "Facturación electrónica", "url": "../../facturacion.html" }
+			{ "nombre": "Blog", "url": "https://www.autovias.com.mx/blog/" }
 		]
 	}
 ]

@@ -1,8 +1,8 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
-import "../components/app-cotiza.js";
-import "../components/app-section-title.js";
+import "../../components/app-cotiza.js";
+import "../../components/app-section-title.js";
 
-class PageSiteMap extends HTMLElement {
+class PageSiteMapEnglish extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
@@ -13,14 +13,14 @@ class PageSiteMap extends HTMLElement {
         <app-section-title section-title="Site Map | Autovías La Línea"></app-section-title>
         <div id="site-map-listas">Cargando...</div>
       </section>
-			<app-cookies-policy></app-cookies-policy>
+			<app-cookies-policy-english></app-cookies-policy-english>
 			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+			<app-button-eva-trip-english></app-button-eva-trip-english>
     `;
 
 		// Cargar el JSON externo
 		try {
-			const resp = await fetch("/src/data/sitemap.json");
+			const resp = await fetch("../../src/data/english/sitemap.json");
 			const data = await resp.json();
 
 			// Generar HTML de listas por categorías
@@ -51,4 +51,4 @@ class PageSiteMap extends HTMLElement {
 		}
 	}
 }
-customElements.define("page-site-map", PageSiteMap);
+customElements.define("page-site-map-english", PageSiteMapEnglish);

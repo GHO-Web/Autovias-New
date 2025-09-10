@@ -9,39 +9,38 @@ import "../../js/slick.js?v=1.0.0";
 class PageSalasDeEsperaVip extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
+			<app-cotiza></app-cotiza>
+			<app-modal-travelpass></app-modal-travelpass>
+			<app-modal-doters></app-modal-doters>
 
-            <app-banner-slider
-                    slides-data='[
-                    {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
-                    {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
-                    {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
-                    ]'
-            >
-            </app-banner-slider>
+			<app-banner-slider
+							slides-data='[
+							{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
+							{"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
+							{"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
+							]'
+			>
+			</app-banner-slider>
 
 
-            <app-payments></app-payments>
+			<app-payments></app-payments>
 
-            <section class="__section __section__salas">
-                <app-section-title section-title="Salas de espera"></app-section-title>
-                <p class="__paragraph">En Autovías La Línea contamos con cómodas salas de espera VIP, para que disfrutesde la línea más cómoda desde antes de abordar el autobús.</p>
-                <div class="__grid-container">
-                    <aside class="__aside-image">
-                        <img class="__aside-img" src="src/assets/img/salas-espera/salas-de-espera-etn.webp" alt="salas de espera vip">
-                    </aside>
-                    <article class="__article-buttons">
-                        <h3 class="__article-title">Servicios Disponibles</h3>
-                          <div class="services-container" id="services-cards-container">
-                                <!-- Las tarjetas de tiendas se cargarán aquí -->
-                          </div>
-                    </article>
-                </div>
-            </section>
-           
-        `;
+			<section class="__section __section__salas">
+					<app-section-title section-title="Salas de espera"></app-section-title>
+					<p class="__paragraph">En Autovías La Línea contamos con cómodas salas de espera VIP, para que disfrutesde la línea más cómoda desde antes de abordar el autobús.</p>
+					<div class="__grid-container">
+							<aside class="__aside-image">
+									<img class="__aside-img" src="../src/assets/img/salas-espera/salas-de-espera-etn.webp" alt="salas de espera vip">
+							</aside>
+							<article class="__article-buttons">
+									<h3 class="__article-title">Servicios Disponibles</h3>
+										<div class="services-container" id="services-cards-container">
+													<!-- Las tarjetas de tiendas se cargarán aquí -->
+										</div>
+							</article>
+					</div>
+			</section>
+		`;
 
 		// Mapper para app-cards-text-image
 		const textImageMapper = (element, data) => {

@@ -141,6 +141,11 @@ import "./english/legal/terminos-condiciones/page-terminos-condiciones.js?v=1.0.
 import "./english/legal/terminos-condiciones/page-terminos-hot-travel.js?v=1.0.0";
 import "./english/legal/terminos-condiciones/page-viajero-protegido.js?v=1.0.0";
 
+// OTHERS
+
+import "./english/page-site-map.js?v=1.3.3";
+
+
 /*------------------------------- PACK MULTIENLACE---------------------------------*/
 
 import "./packmultienlace/page-pack-multienlace.js?v=1.3.3";

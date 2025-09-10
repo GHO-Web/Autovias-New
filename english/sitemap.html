@@ -3,20 +3,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>
-			Salas de Espera VIP | Autovías, La Línea, Pegasso y Sur de Jalisco
-		</title>
+		<title>Mapa del sitio | Autovías La Línea</title>
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 
 		<meta name="language" content="Español" />
-		<link
-			rel="canonical"
-			href="https://autovias.com.mx/servicios/salas-de-espera-vip.html"
-		/>
+		<link rel="canonical" href="https://autovias.com.mx/sitemap.html" />
 		<link
 			rel="alternate"
-			href="https://autovias.com.mx/english/servicios/salas-de-espera-vip.html"
+			href="https://autovias.com.mx/english/sitemap.html"
 			hreflang="en-US"
 		/>
 
@@ -42,8 +37,8 @@
 					{
 						"@type": "ListItem",
 						"position": 2,
-						"name": "Salas de Espera VIP",
-						"item": "https://autovias.com.mx/servicios/salas-de-espera-vip.html"
+						"name": "Renta de autobuses",
+						"item": "https://autovias.com.mx/sitemap.html"
 					}
 				]
 			}
@@ -134,26 +129,26 @@
 
 		<!-- Open Graph -->
 
-		<meta property="og:title" content="" />
+		<meta
+			property="og:title"
+			content="Mapa de navegación del sitio | Autovías La Línea"
+		/>
 		<meta property="og:description" content="" />
 		<meta
 			property="og:image"
 			content="https://www.autovias.com.mx/gho-img/carrusel/Bw_Rio_Tiber_Mor_Uruapan_Autovias.webp"
 		/>
-		<!-- End Open Graph -->
 
 		<!-- Scripts -->
-
-		<script src="../src/js/jquery.min.js?v=1.0.0"></script>
-		<script type="module" src="../app.js?v=1.0.0"></script>
-
+		<script src="../../src/js/jquery.min.js?v=1.0.0"></script>
+		<script type="module" src="../../app.js?v=1.0.0"></script>
 		<!-- Stylesheets -->
 
 		<!-- CSS All Components -->
 
 		<link
 			rel="stylesheet"
-			href="../src/styles/css/css-components/page-salas-espera.min.css?v=1.0.7"
+			href="../../src/styles/css/css-components/page-site-map.min.css?v=1.0.7"
 			type="text/css"
 		/>
 
@@ -164,20 +159,19 @@
 		/>
 	</head>
 	<body>
-		<app-header
+		<app-header-english
 			logo='{
         "src": "../src/assets/img/global/logos/logo.svg", 
-        "alt": "Logo de Autovías La Línea",
-        "href": "https://www.autovias.com.mx/"
+        "alt": "Logo de Etn Turistar Lujo",
+        "href": "https://etn.com.mx/"
       }'
 		>
-		</app-header>
+		</app-header-english>
 		<main>
-			<page-salas-de-espera-vip></page-salas-de-espera-vip>
+			<page-site-map-english></page-site-map-english>
 		</main>
-		<app-footer></app-footer>
-
+		<app-footer-english></app-footer-english>
 		<!-- JS widget de reservamos -->
-		<script src="https://widgets.reservamos.mx/search/5.16.8/search.js"></script>
+		<script src="https://widgets.reservamos.mx/search/5.18.0/search.js?v=5.18.0"></script>
 	</body>
 </html>

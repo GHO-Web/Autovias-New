@@ -1,0 +1,81 @@
+[
+	{
+		"categoria": "Home",
+		"landings": [
+			{ "nombre": "Inicio (Spanish)", "url": "../../" },
+			{ "nombre": "Inicio (ingles)", "url": "../../english/" }
+		]
+	},
+	{
+		"categoria": "Services",
+		"landings": [
+			{
+				"nombre": "OXXO Pay",
+				"url": "../../english/servicios/pago-referenciado-oxxo.html"
+			},
+			{
+				"nombre": "Pack Multienlace",
+				"url": "../../servicios/packmultienlace/"
+			},
+			{
+				"nombre": "Viajero Protegido",
+				"url": "../../english/servicios/viajero-protegido.html"
+			}
+		]
+	},
+	{
+		"categoria": "Destinations",
+		"landings": [
+			{ "nombre": "Destinos", "url": "../../destinos/" },
+			{
+				"nombre": "Ciudad de México",
+				"url": "../../english/destinations/boletos-de-autobus-a-ciudad-de-mexico.html"
+			},
+			{ "nombre": "Colima", "url": "../../english/destinations/boletos-de-autobus-a-colima.html" },
+			{
+				"nombre": "Guadalajara",
+				"url": "../../english/destinations/boletos-de-autobus-a-guadalajara.html"
+			},
+			{ "nombre": "Ixtapa", "url": "../../english/destinations/boletos-de-autobus-a-ixtapa.html" },
+			{
+				"nombre": "Maravatío",
+				"url": "../../english/destinations/boletos-de-autobus-a-maravatio.html"
+			},
+			{ "nombre": "Morelia", "url": "../../english/destinations/boletos-de-autobus-a-morelia.html" },
+			{ "nombre": "Uruapan", "url": "../../english/destinations/boletos-de-autobus-a-uruapan.html" },
+			{
+				"nombre": "Zitacuaro",
+				"url": "../../english/destinations/boletos-de-autobus-a-zitacuaro.html"
+			}
+		]
+	},
+	{
+		"categoria": "Promotions",
+		"landings": [
+			{ "nombre": "Promociones", "url": "../../english/promotions/" },
+			{ "nombre": "Buen Fin", "url": "../../english/promotions/buen-fin/" },
+			{ "nombre": "Hot travel", "url": "../../english/promotions/hot-travel/" },
+			{
+				"nombre": "Ofertas en 1 click",
+				"url": "../../english/promotions/offers-in-1-click/"
+			}
+		]
+	},
+	{
+		"categoria": "About",
+		"landings": [
+			{
+				"nombre": "Aviso de privacidad",
+				"url": "../../english/about/aviso-de-privacidad.html"
+			},
+			{
+				"nombre": "¿Quienes somos?",
+				"url": "../../english/about/quienes-somos.html"
+			},
+			{
+				"nombre": "Terminos y condiciones",
+				"url": "../../english/about/terminos-condiciones.html"
+			}
+		]
+	}
+]
