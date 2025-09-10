@@ -23,7 +23,7 @@ class PageBoletosAutobusMaravatioEnglish extends HTMLElement {
       </div>
       <section class="__section">
         <app-description-destination
-          title-text="Maravatío is waiting. Autovías La Línea will take you there.."
+          title-text="Maravatío is waiting. Autovías La Línea will take you there."
           image-data='[
             {"id": "1", "src": "../../src/assets/img/english/destinations/maravatio/overflow-images/independence.webp", "alt": "Independence Gate"},
             {"id": "2", "src": "../../src/assets/img/english/destinations/maravatio/overflow-images/morelos.webp", "alt": "Morelos Theater"},
