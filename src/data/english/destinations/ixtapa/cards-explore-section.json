@@ -1,0 +1,17 @@
+[
+  {
+    "image": "../../src/assets/img/english/destinations/huetamo/cards-explore-section/canyon.webp",
+    "title": "El Mal Paso Canyon",
+    "description": "A dramatic natural formation carved by centuries of water and wind, El Mal Paso offers hiking trails, panoramic views, and geological intrigue. It’s a favorite among locals for weekend adventures and quiet escapes into nature."
+  },
+  {
+    "image": "../../src/assets/img/english/destinations/huetamo/cards-explore-section/market.webp",
+    "title": "Huetamo Artisan Market",
+    "description": "This colorful market showcases handmade goods from across Tierra Caliente — embroidered textiles, pottery, leatherwork, and regional snacks. It’s a lively hub where tradition meets creativity, perfect for finding unique souvenirs."
+  },
+  {
+    "image": "../../src/assets/img/english/destinations/huetamo/cards-explore-section/eco-zone.webp",
+    "title": "La Presita Eco Zone",
+    "description": "A tranquil area near a small reservoir, ideal for kayaking, birdwatching, and picnics. Surrounded by native vegetation and open skies, it’s a peaceful spot to unwind and enjoy Huetamo’s natural charm."
+  }
+]

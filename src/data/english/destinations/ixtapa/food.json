@@ -1,0 +1,20 @@
+[
+  {
+    "imageSrc": "../../src/assets/img/english/destinations/huetamo/food/aporreado.webp",
+    "imageAlt": "Aporreado",
+    "tag": "Aporreado",
+    "text": "Thin strips of beef or pork, beaten and cooked with scrambled eggs, tomato, and chile. Savory, spicy, and deeply satisfying — a breakfast staple with serious character."
+  },
+  {
+    "imageSrc": "../../src/assets/img/english/destinations/huetamo/food/pan.webp",
+    "imageAlt": "Pan de horno",
+    "tag": "Pan de horno",
+    "text": "Traditional oven-baked bread with a golden crust and soft interior, often flavored with cinnamon or piloncillo. A comforting treat enjoyed with coffee or at local gatherings"
+  },
+  {
+    "imageSrc": "../../src/assets/img/english/destinations/huetamo/food/uchepo.webp",
+    "imageAlt": "Uchepos y Toqueres",
+    "tag": "Uchepos y Toqueres",
+    "text": "Fresh corn tamales (uchepos) served with cream and cheese, and crispy corn fritters (toqueres) topped with salsa. These regional favorites showcase Huetamo’s love for maize in all its forms."
+  }
+]

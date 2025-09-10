@@ -110,6 +110,7 @@ import "./english/destinations/page-boletos-de-autobus-colima.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-dolores-hidalgo-gto.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-guadalajara.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-huetamo.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-ixtapa.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-jilotepec.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-manzanillo.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-maravatio.js?v=1.3.3";
