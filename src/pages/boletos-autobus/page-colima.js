@@ -19,7 +19,7 @@ class AppColima extends HTMLElement {
 		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/colima/banner/banner-colima.webp","mediumImage": "./src/assets/img/boletos-autobus/colima/banner/banner-monterrey-tablet.png", "smallImage": "./src/assets/img/boletos-autobus/colima/banner/banner-colima.webp", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/colima/banner/colima.webp","mediumImage": "../src/assets/img/boletos-autobus/colima/banner/monterrey-tablet.png", "smallImage": "../src/assets/img/boletos-autobus/colima/banner/colima.webp", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>

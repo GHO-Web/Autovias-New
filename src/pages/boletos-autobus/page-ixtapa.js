@@ -19,7 +19,7 @@ class AppIxtapa extends HTMLElement {
 		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/ixtapa/banner/banner-monterrey.png","mediumImage": "../src/assets/img/boletos-autobus/ixtapa/banner/tablet/Ixtapa_tablet.webp", "smallImage": "../src/assets/img/boletos-autobus/ixtapa/banner/mobile/Ixtapa_mobile.webp", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/ixtapa/banner/Ixtapa.webp","mediumImage": "../src/assets/img/boletos-autobus/ixtapa/banner/Ixtapa_tablet.webp", "smallImage": "../src/assets/img/boletos-autobus/ixtapa/banner/Ixtapa_mobile.webp", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>

@@ -25,9 +25,9 @@ class PageBoletosAutobusMaravatioEnglish extends HTMLElement {
         <app-description-destination
           title-text="Maravatío is waiting. Autovías La Línea will take you there.."
           image-data='[
-            {"id": "1", "src": "../../src/assets/img/english/destinations/maravatio/overflow-images/balsas.webp", "alt": "Independence Gate"},
-            {"id": "2", "src": "../../src/assets/img/english/destinations/maravatio/overflow-images/jilotepec.webp", "alt": "Morelos Theater"},
-            {"id": "3", "src": "../../src/assets/img/english/destinations/maravatio/overflow-images/recreational.webp", "alt": "Pomoca Hacienda"}
+            {"id": "1", "src": "../../src/assets/img/english/destinations/maravatio/overflow-images/independence.webp", "alt": "Independence Gate"},
+            {"id": "2", "src": "../../src/assets/img/english/destinations/maravatio/overflow-images/morelos.webp", "alt": "Morelos Theater"},
+            {"id": "3", "src": "../../src/assets/img/english/destinations/maravatio/overflow-images/hacienda.webp", "alt": "Pomoca Hacienda"}
           ]'
           paragraph-text="Maravatío is a highland town with deep historical roots and a vibrant cultural identity. Located in eastern Michoacán, it’s known for its colonial architecture, artisan traditions, and scenic countryside. From its historic landmarks and civic spaces to its legacy as a hub of independence-era activity, Maravatío invites travelers to explore a quieter, more authentic side of Mexico — with style and peace of mind."
         ></app-description-destination>
