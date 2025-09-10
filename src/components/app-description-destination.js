@@ -37,7 +37,7 @@ class AppDescriptionDestination extends HTMLElement {
               height="285"
             >
             <div class="__image-footer">
-              <img src="../../src/assets/img/global/autovias-logo-blanco.webp" alt="Brand Icon" class="__brand-icon">
+              <img src="../../src/assets/img/global/logos/autovias-logo-blanco.webp" alt="Brand Icon" class="__brand-icon">
             </div>
           </div>
         `
