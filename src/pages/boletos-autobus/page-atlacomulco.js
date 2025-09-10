@@ -19,7 +19,7 @@ class AppAtlacomulco extends HTMLElement {
 			<app-modal-doters></app-modal-doters>
 			<app-banner-slider
 					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/atlacomulco/banner/Atlacomulco_Banner_web.webp","mediumImage": "./src/assets/img/boletos-autobus/atlacomulco/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/boletos-autobus/atlacomulco/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
+					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/atlacomulco/banner/Atlacomulco_Banner_web.webp","mediumImage": "../src/assets/img/boletos-autobus/atlacomulco/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/boletos-autobus/atlacomulco/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
 			>
 			</app-banner-slider>
 			<app-payments></app-payments>

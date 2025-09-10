@@ -18,7 +18,7 @@ class AppMorelia extends HTMLElement {
 		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/morelia/banner/Morelia_Banner_web.webp","mediumImage": "./src/assets/img/boletos-autobus/morelia/banner/tablet/Morelia_tablet.webp", "smallImage": "./src/assets/img/boletos-autobus/morelia/banner/mobile/Morelia_mobile.webp", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/morelia/banner/Morelia_Banner_web.webp","mediumImage": "../src/assets/img/boletos-autobus/morelia/banner/tablet/Morelia_tablet.webp", "smallImage": "./src/assets/img/boletos-autobus/morelia/banner/mobile/Morelia_mobile.webp", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>

@@ -19,7 +19,7 @@ class AppMaravatio extends HTMLElement {
 		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/maravatio/banner/Maravatio_Banner_web.webp","mediumImage": "./src/assets/img/boletos-autobus/maravatio/banner/banner-monterrey-tablet.png", "smallImage": "./src/assets/img/boletos-autobus/maravatio/banner/banner-monterrey-sm.png", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/maravatio/banner/Maravatio_Banner_web.webp","mediumImage": "../src/assets/img/boletos-autobus/maravatio/banner/banner-monterrey-tablet.png", "smallImage": "./src/assets/img/boletos-autobus/maravatio/banner/banner-monterrey-sm.png", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>
