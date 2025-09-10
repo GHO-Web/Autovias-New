@@ -15,9 +15,9 @@ class PagePromociones extends HTMLElement {
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Bw_Doters_Feria_Tacambaro1_Autovias.webp","mediumImage": "../src/assets/img/banner/Tablet-1.png", "smallImage": "../src/assets/img/banner/Movil-1.webp", "link": "#index.html/banner1"},
-                {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/banner/Bw_Patio_Santa_Fe_Morelia2_Autovias.webp", "mediumImage": "../src/assets/img/banner/Tablet.png","smallImage": "../src/assets/img/banner/Movil.png", "link": "#index.html/banner2"},
-                {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/banner/Bw_Playas_Semana_Santa_Autovias.webp", "mediumImage": "../src/assets/img/banner/Tablet-1.png","smallImage": "../src/assets/img/banner/Movil-1.webp", "link": "#index.html/banner3"}
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/Bw_Doters_Feria_Tacambaro1_Autovias.webp","mediumImage": "../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"},
+                {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/global/banner/Bw_Patio_Santa_Fe_Morelia2_Autovias.webp", "mediumImage": "../src/assets/img/global/banner/Tablet.png","smallImage": "../src/assets/img/global/banner/Movil.png", "link": "#index.html/banner2"},
+                {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/global/banner/Bw_Playas_Semana_Santa_Autovias.webp", "mediumImage": "../src/assets/img/global/banner/Tablet-1.png","smallImage": "../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner3"}
                 ]'
             >
             </app-banner-slider>
@@ -30,17 +30,17 @@ class PagePromociones extends HTMLElement {
                   <div class="__grid-container">
                     <article class="__article__promo">
                         <h3 class="__article-title">Compra con descuento </h3>
-                       <a class="__article-link" href="../../../promociones/ofertas-en-1-click.html">  <img src="../src/assets/img/programs/5_10_descuento.webp" alt="Atencion a clientes"> </a>
+                       <a class="__article-link" href="../../../promociones/ofertas-en-1-click.html">  <img src="../src/assets/img/promociones/programs/5_10_descuento.webp" alt="Atencion a clientes"> </a>
                     </article>
                     <article class="__article__promo">
                         <h3 class="__article-title">Acumula Puntos Doters</h3>
-                       <a class="__article-link" href="https://autovias.com.mx/doters/"> <img src="../src/assets/img/programs/Mosaico_Doters_ETN_small.jpg" alt="Atencion a clientes">  </a>
+                       <a class="__article-link" href="https://autovias.com.mx/doters/"> <img src="../src/assets/img/promociones/programs/Autovias-Doters-Promociones.webp" alt="Atencion a clientes">  </a>
                     </article>
                 </div>
               <app-section-title section-title="Descuentos de Temporadas"></app-section-title>
                   <article class="__article__banner">
                       <h3 class="__article-title">Buen fin </h3>
-                      <a class="__article-banner-link" href="../../../promociones/buen-fin/">  <img src="../src/assets/img/banner/Buen_fin_web.webp" alt="Atencion a clientes"> </a>
+                      <a class="__article-banner-link" href="../../../promociones/buen-fin/">  <img src="../src/assets/img/promociones/buen-fin/Buen_fin_web.webp" alt="Atencion a clientes"> </a>
                   </article>
               <app-section-title section-title="Convenios"></app-section-title>
                   <article class="__article__guide">

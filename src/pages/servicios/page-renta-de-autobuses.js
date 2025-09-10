@@ -19,9 +19,9 @@ class PageRentaDeAutobuses extends HTMLElement {
     
             <app-banner-slider
                     slides-data='[
-                    {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/metodos_pago_web.webp","mediumImage": "../src/assets/img/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
-                    {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/banner/Doters_web.webp", "mediumImage": "../src/assets/img/banner/tablet/doters_tablet.webp","smallImage": "../src/assets/img/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
-                    {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/banner/verano_web.webp", "mediumImage": "../src/assets/img/banner/tablet/verano_tablet.webp","smallImage": "../src/assets/img/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
+                    {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
+                    {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
+                    {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
                     ]'
             >
             </app-banner-slider>
@@ -54,7 +54,7 @@ class PageRentaDeAutobuses extends HTMLElement {
                 <div class="seats-grid-container">
                   <div class="seat-image-container">
                       <h3 class="__subtitle-seats">24 asientos</h3>
-                      <img class="__image" src="../../../src/assets/img/autobuses/plano-bus-24.webp" alt="Autobús de 24 asientos">
+                      <img class="__image" src="../../../src/assets/img/global/autobuses/plano-bus-24.webp" alt="Autobús de 24 asientos">
                   </div>
                   <div class="hover-cards-grid-container hover-cards-24-seats">
                   </div>
@@ -62,7 +62,7 @@ class PageRentaDeAutobuses extends HTMLElement {
                   </div>
                   <div class="seat-image-container">
                       <h3 class="__subtitle-seats">44 asientos</h3>
-                      <img class="__image" src="../../../src/assets/img/autobuses/plano-bus-44.webp" alt="44 asientos">
+                      <img class="__image" src="../../../src/assets/img/global/autobuses/plano-bus-44.webp" alt="44 asientos">
                   </div>
                 </div>
             </section>

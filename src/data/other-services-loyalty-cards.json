@@ -1,19 +1,19 @@
 [
   {
     "href": "https://www.autovias.com.mx/doters",
-    "imageSrc": "../src/assets/img/programs/mosaico_Puntos_Doters_Autovias.webp",
+    "imageSrc": "../src/assets/img/home/mosaic/programs/mosaico_Puntos_Doters_Autovias.webp",
     "imageAlt": "Enlace a puntos Doters",
     "title": "Puntos Doters Autovías La Línea"
   },
   {
     "href": "https://www.autovias.com.mx/",
-    "imageSrc": "../src/assets/img/programs/Mosaico_Compra_en_Internet_5_mas_10_Autovias.webp",
+    "imageSrc": "../src/assets/img/home/mosaic/programs/Mosaico_Compra_en_Internet_5_mas_10_Autovias.webp",
     "imageAlt": "Enlace a descuentos 5% ida y 10% regreso",
     "title": "Descuentos ida y regreso 5% más 10%"
   },
   {
     "href": "https://www.autovias.com.mx/servicios/asiento-contiguo.html",
-    "imageSrc": "../src/assets/img/programs/Asiento_contiguo_mosaico.webp",
+    "imageSrc": "../src/assets/img/home/mosaic/programs/Asiento_contiguo_mosaico.webp",
     "imageAlt": "Enlace al servicio de asiento contiguo",
     "title": "Asiento contiguo"
   }

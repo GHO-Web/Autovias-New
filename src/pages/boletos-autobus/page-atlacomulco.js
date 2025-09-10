@@ -19,7 +19,7 @@ class AppAtlacomulco extends HTMLElement {
 			<app-modal-doters></app-modal-doters>
 			<app-banner-slider
 					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Atlacomulco_Banner_web.webp","mediumImage": "./src/assets/img/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
+					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/atlacomulco/banner/Atlacomulco_Banner_web.webp","mediumImage": "./src/assets/img/boletos-autobus/atlacomulco/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/boletos-autobus/atlacomulco/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
 			>
 			</app-banner-slider>
 			<app-payments></app-payments>
@@ -156,13 +156,13 @@ class AppAtlacomulco extends HTMLElement {
 				);
 				cardElement.setAttribute(
 					"card-image",
-					foodItem.imageSrc || "src/assets/img/platillos/default-card.png"
+					foodItem.imageSrc || "src/assets/img/global/default-card.png"
 				);
 				cardElement.setAttribute(
 					"card-modal-image",
 					foodItem.imageModal ||
 						foodItem.imageSrc ||
-						"src/assets/img/platillos/default-modal.png"
+						"src/assets/img/global/default-modal.png"
 				);
 				cardElement.setAttribute(
 					"card-alt",

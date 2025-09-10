@@ -14,7 +14,7 @@ class PageOfertasClick extends HTMLElement {
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/ofertas-1-click.png","mediumImage": "../src/assets/img/banner/Tablet-1.png", "smallImage": "../src/assets/img/banner/Movil-1.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/promociones/ofertas-en-1-click/ofertas-1-click.png","mediumImage": "../src/assets/img/promociones/ofertas-en-1-click/Tablet-1.png", "smallImage": "../src/assets/img/promociones/ofertas-en-1-click/Movil-1.webp", "link": "#index.html/banner1"}
                
                 ]'
             >

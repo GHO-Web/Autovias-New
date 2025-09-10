@@ -11,7 +11,7 @@ class AppFooter extends HTMLElement {
         <div class="footer__content main-container">
           <div class="footer__content__footer-logo">
             <a href="https://www.autovias.com.mx/" aria-label="Ir a página de inicio de NombreDeLaEmpresa">
-              <img src="../../src/assets/img/logos/logo.svg" alt="Logo de [Nombre de la empresa]" class="footer__logo" width="922" height="143" loading="lazy"/>
+              <img src="../../../src/assets/img/global/logos/logo.svg" alt="Logo de [Nombre de la empresa]" class="footer__logo" width="922" height="143" loading="lazy"/>
             </a>
           </div>
           <div class="footer__content__columns"></div>

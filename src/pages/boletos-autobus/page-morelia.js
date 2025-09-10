@@ -18,7 +18,7 @@ class AppMorelia extends HTMLElement {
 		<app-modal-doters></app-modal-doters>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/Morelia_Banner_web.webp","mediumImage": "./src/assets/img/banner/tablet/Morelia_tablet.webp", "smallImage": "./src/assets/img/banner/mobile/Morelia_mobile.webp", "link": "#index.html/banner1"}]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/morelia/banner/Morelia_Banner_web.webp","mediumImage": "./src/assets/img/boletos-autobus/morelia/banner/tablet/Morelia_tablet.webp", "smallImage": "./src/assets/img/boletos-autobus/morelia/banner/mobile/Morelia_mobile.webp", "link": "#index.html/banner1"}]'
             >
             </app-banner-slider>
             <app-payments></app-payments>
@@ -157,13 +157,13 @@ class AppMorelia extends HTMLElement {
 				);
 				cardElement.setAttribute(
 					"card-image",
-					foodItem.imageSrc || "src/assets/img/platillos/default-card.png"
+					foodItem.imageSrc || "src/assets/img/global/default-card.png"
 				);
 				cardElement.setAttribute(
 					"card-modal-image",
 					foodItem.imageModal ||
 						foodItem.imageSrc ||
-						"src/assets/img/platillos/default-modal.png"
+						"src/assets/img/global/default-modal.png"
 				);
 				cardElement.setAttribute(
 					"card-alt",
