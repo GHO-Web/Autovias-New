@@ -82,7 +82,7 @@ Modifica tu archivo `settings.json` en la configuración de VS Code del compilad
     {
       "format": "compressed",
       "extensionName": ".min.css",
-      "savePath": "/src/styles/css/css-components"
+      "savePath": "/src/styles/css/css-pages"
     }
   ],
   "liveSassCompile.settings.includeItems": [
@@ -521,7 +521,7 @@ Modify your `settings.json` file in VS Code with the following snippet:
     {
       "format": "compressed",
       "extensionName": ".min.css",
-      "savePath": "/src/styles/css/css-components"
+      "savePath": "/src/styles/css/css-pages"
     }
   ],
   "liveSassCompile.settings.includeItems": [

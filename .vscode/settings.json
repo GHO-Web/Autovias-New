@@ -4,7 +4,7 @@
         {
             "format": "compressed",
             "extensionName": ".min.css",
-            "savePath": "/src/styles/css/css-components"
+            "savePath": "/src/styles/css/css-pages"
         }
     ],
     "liveSassCompile.settings.includeItems": [
