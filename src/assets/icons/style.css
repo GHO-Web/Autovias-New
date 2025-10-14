@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?rv0gyw');
-  src:  url('fonts/icomoon.eot?rv0gyw#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?rv0gyw') format('truetype'),
-    url('fonts/icomoon.woff?rv0gyw') format('woff'),
-    url('fonts/icomoon.svg?rv0gyw#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?kjkyp2');
+  src:  url('fonts/icomoon.eot?kjkyp2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?kjkyp2') format('truetype'),
+    url('fonts/icomoon.woff?kjkyp2') format('woff'),
+    url('fonts/icomoon.svg?kjkyp2#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +13,6 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -25,6 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-armchair:before {
+  content: "\ea34";
+}
+.icon-pig:before {
+  content: "\ea35";
+}
+.icon-camera:before {
+  content: "\ea36";
+}
+.icon-car:before {
+  content: "\ea37";
+}
 .icon-tarifas_generales:before {
   content: "\e912";
   color: #fff;

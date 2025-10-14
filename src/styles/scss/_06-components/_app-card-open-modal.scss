@@ -1,4 +1,4 @@
-@import "../main.scss";
+@use '../_01-settings/variables' as *;
 
 .__card-open-modal {
     width: 330px;
@@ -7,11 +7,12 @@
     display: flex;
     flex-direction: column;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2);
-    position: relative; 
+    position: relative;
+
     @media (max-width: 767px) {
         width: 90vw;
     }
-    
+
     img {
         width: 100%;
         height: 100%;
@@ -36,13 +37,13 @@
         text-decoration: none;
         font-weight: bold;
         color: white;
-        background-color:$primary-color;
+        background-color: $primary-color;
         text-align: center;
         transition: all 0.3s ease;
         border-top: 2px solid $primary-color;
 
 
-        &:hover{
+        &:hover {
             background-color: white;
             color: $primary-color;
             transition: all 0.3s ease;

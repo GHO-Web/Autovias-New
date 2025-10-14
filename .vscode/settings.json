@@ -8,6 +8,6 @@
         }
     ],
     "liveSassCompile.settings.includeItems": [
-        "/src/styles/scss/_06-components/*.scss"
+        "/src/styles/scss/pages/*.scss"
     ],
 }

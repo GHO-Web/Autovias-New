@@ -1,3 +1,5 @@
+@use '../_01-settings/variables' as *;
+
 .app-dropdown__toggle-indicator svg {
   transition: transform 0.3s ease;
   transform: rotate(180deg);
