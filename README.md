@@ -111,7 +111,7 @@ git clone https://github.com/WebmasterETN/WebIAMSA.git
 cd WEBIAMSA
 
 # Compilar SCSS
-sass src/styles/scss:src/styles/css --style compressed
+sass sass src/styles/scss/pages:src/styles/css/css-pages --style compressed
 
 # Visualizar en navegador
 open index.html
@@ -545,7 +545,7 @@ git clone https://github.com/WebmasterETN/WebIAMSA.git
 cd WEBIAMSA
 
 # Compile SCSS
-sass src/styles/scss:src/styles/css --style compressed
+sass sass src/styles/scss/pages:src/styles/css/css-pages --style compressed
 
 # View in browser
 open index.html
