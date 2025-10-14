@@ -185,7 +185,7 @@ class AppAutobusAtlacomulco extends HTMLElement {
 							<h2 class="cta__title">¡Viaja a Morelia con Autovías La Línea!</h2>
 							<p class="cta__subtitle">No esperes más, reserva tu asiento ahora y prepárate para una experiencia inolvidable.</p>
 							<div class="cta__action">
-									<a href="../boletos-autobus/morelia.html" class="btn btn--primary" aria-label="Comprar boletos" tabindex="0">
+									<a href="../boletos-autobus/atlacomulco.html" class="btn btn--primary" aria-label="Comprar boletos" tabindex="0">
 											Comprar boletos ahora
 									</a>
 							</div>
