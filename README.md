@@ -77,24 +77,19 @@ Para compilar archivos `.scss` a `.css` automáticamente, se utiliza la extensi�
 Modifica tu archivo `settings.json` en la configuración de VS Code del compilador SASS con el siguiente fragmento:
 
 ```json
-  //"liveSassCompile.settings.forceBaseDirectory": "/d:/Documents/Proyects/WebIAMSA/src/styles",
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "compressed",
-      "extensionName": ".min.css",
-      "savePath": "/src/styles/css/css-pages"
-    }
-  ],
-  "liveSassCompile.settings.includeItems": [
-    "/src/styles/scss/_06-components/*.scss"
-  ],
-  "liveSassCompile.settings.generateMap": true,
-  "liveSassCompile.settings.autoprefix": [
+//.vscode folder in file settings.json
 
-
-    "> 1%",
-    "last 2 versions"
-  ],
+{
+	"liveServer.settings.port": 5502,
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "compressed",
+			"extensionName": ".min.css",
+			"savePath": "/src/styles/css/css-pages"
+		}
+	],
+	"liveSassCompile.settings.includeItems": ["/src/styles/scss/pages/*.scss"]
+}
 ```
 
 ### Pasos para aplicar la configuración:
@@ -516,24 +511,19 @@ To automatically compile `.scss` files to `.css`, the **Live Sass Compiler** ext
 Modify your `settings.json` file in VS Code with the following snippet:
 
 ```json
-  //"liveSassCompile.settings.forceBaseDirectory": "/d:/Documents/Proyects/WebIAMSA/src/styles",
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "compressed",
-      "extensionName": ".min.css",
-      "savePath": "/src/styles/css/css-pages"
-    }
-  ],
-  "liveSassCompile.settings.includeItems": [
-    "/src/styles/scss/_06-components/*.scss"
-  ],
-  "liveSassCompile.settings.generateMap": true,
-  "liveSassCompile.settings.autoprefix": [
+//.vscode folder in file settings.json
 
-
-    "> 1%",
-    "last 2 versions"
-  ],
+{
+	"liveServer.settings.port": 5502,
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "compressed",
+			"extensionName": ".min.css",
+			"savePath": "/src/styles/css/css-pages"
+		}
+	],
+	"liveSassCompile.settings.includeItems": ["/src/styles/scss/pages/*.scss"]
+}
 ```
 
 ### Steps to Apply the Configuration
