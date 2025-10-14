@@ -4,20 +4,20 @@
 @use './_01-settings/variables' as *;
 
 // Import tools
-@use './_02-tools/_mixin' as *;
+@use './_02-tools/mixin' as *;
 
 // Import generic
-@use './_03-generic/_reset' as *;
+@use './_03-generic/reset' as *;
 
 // Import elements
-@use './_04-elements/_elements' as *;
+@use './_04-elements/elements' as *;
 
 // Import object
-@use './_05-object/_animations' as *;
-@use './_05-object/_layout' as *;
+@use './_05-object/animations' as *;
+@use './_05-object/layout' as *;
 
 // Import utilities
-@use './_07-utilities/_utilities' as *;
+@use './_07-utilities/utilities' as *;
 
 // Import libreries
 
