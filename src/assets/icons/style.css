@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?kjkyp2');
-  src:  url('fonts/icomoon.eot?kjkyp2#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?kjkyp2') format('truetype'),
-    url('fonts/icomoon.woff?kjkyp2') format('woff'),
-    url('fonts/icomoon.svg?kjkyp2#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?vs7qxf');
+  src:  url('fonts/icomoon.eot?vs7qxf#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vs7qxf') format('truetype'),
+    url('fonts/icomoon.woff?vs7qxf') format('woff'),
+    url('fonts/icomoon.svg?vs7qxf#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,6 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -24,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-travel-security:before {
+  content: "\ea38";
+}
+.icon-montain:before {
+  content: "\ea39";
+}
 .icon-armchair:before {
   content: "\ea34";
 }

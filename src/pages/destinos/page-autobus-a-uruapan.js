@@ -32,7 +32,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
             <p class="hero__subtitle">
                 Viaja desde CDMX a Morelia con la máxima comodidad y seguridad. Disfruta de un viaje sin preocupaciones y llega a tu destino listo para explorar.
             </p>
-            <a href="../boletos-autobus/uruapan.html" class="btn btn--primary" aria-label="Comprar boletos" tabindex="0">
+            <a href="../boletos-autobus/uruapan.html" class="btn btn--primary" target="_blank" aria-label="Comprar boletos" tabindex="0">
                 Comprar boletos
             </a>
         </article>
