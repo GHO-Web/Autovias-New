@@ -40,6 +40,7 @@ $light-text-header: #111827;
 $light-text-subtle: #4b5563;
 $dark-text-base: #d1d5db;
 $dark-text-subtle: #9ca3af;
+$light-text: #333333;
 
 
 // Light & Dark Theme from landings
@@ -65,6 +66,7 @@ $breakpoints: (
   // Escritorio estándar
   'xxl': 1400px // Pantallas grandes
 );
+$container-xl: 36rem;
 
 // Spacing
 $spacing-xs: 0.3125rem;

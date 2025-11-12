@@ -1,5 +1,4 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
-import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
@@ -11,174 +10,202 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppViajarIxtapa extends HTMLElement {
+class PageViajarAIxtapa extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-			<app-cotiza></app-cotiza>
-			<app-modal-travelpass></app-modal-travelpass>
-			<app-modal-doters></app-modal-doters>
-			<app-banner-slider
-					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/Atlacomulco_Banner_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/global/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
-			>
-			</app-banner-slider>
-			<app-payments></app-payments>
-			
-			<!-- Components for page -->
+      <app-cotiza></app-cotiza>
 
-			<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwRaNTXjC4hzOr7ORLU-a3-j_UGbsvK7KtPHMWzlMIR7xRNvcNaGo5GljsW9D44Ws7OgfDXE9ZPKBCpsr_uf_g_-ztpdGzfFPThxKuqb2hzD5nT362Mv4oP93kRGTkAx9UnO_P23Y8b_Zh0Kzt0FfD8RNTp80XvDNVvgy3PM5RpC3-DSI9e35zvy0R7kCRBq5Q6i4QAZYrBVNatDorVIR8azyZFtazNR6phcIv6Whute_reg49odo8zdG3_O3E2MSzmGst9hwG-0A");'>
-					<div class="hero__content">
-							<h1 class="hero__title">Autobús a Morelia</h1>
-							<p class="hero__subtitle">Descubre la belleza de Morelia viajando en autobús desde la Ciudad de México. Disfruta de un viaje cómodo, seguro y económico.</p>
-							<a href="../destinos/autobus-a-ixtapa.html" class="btn btn--primary btn--large" target="_blank" aria-label="Comprar boletos" tabindex="0">Conoce más</a>
-					</div>
-			</section>
 
-			<section class="features">
-					<div class="container">
-							<h2 class="section-title">¿Por qué viajar en autobús a Morelia?</h2>
-							<div class="features__grid">
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-armchair material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Comodidad</h3>
-											<p class="feature-card__description">Viaja en autobuses modernos con asientos reclinables, aire acondicionado y entretenimiento a bordo.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-pig material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Ahorro</h3>
-											<p class="feature-card__description">Disfruta de tarifas competitivas y promociones especiales para que tu viaje sea más accesible.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-travel-security material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Viaje sin complicaciones</h3>
-											<p class="feature-card__description">Olvídate del tráfico y el estrés de conducir. Relájate y disfruta del paisaje.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-montain material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Paisajes inolvidables</h3>
-											<p class="feature-card__description">Admira la belleza de los paisajes mexicanos durante tu trayecto a Morelia.</p>
-									</div>
-							</div>
-					</div>
-			</section>
+<!-- Components for page -->
 
-			<section class="route-info">
-					<div class="container route-info__container">
-							<h2 class="section-title">Trayecto destacado CDMX → Morelia</h2>
-							<div class="route-info__card">
-									<div class="route-info__timeline">
-											<div class="route-info__line"></div>
-											<div class="route-info__stops">
-													<div class="route-info__stop">
-															<div class="route-info__stop-icon"><span class="icon-bus material-symbols-outlined"></span></div>
-															<span class="route-info__stop-name">Ciudad de México</span>
-													</div>
-													<div class="route-info__stop">
-															<span class="route-info__stop-name">Morelia</span>
-															<div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined"></span></div>
-													</div>
-											</div>
-									</div>
-									<div class="route-info__details-grid">
-											<div class="detail-item">
-													<p class="detail-item__label">Duración</p>
-													<p class="detail-item__value">4.5 horas</p>
-											</div>
-											<div class="detail-item">
-													<p class="detail-item__label">Frecuencia</p>
-													<p class="detail-item__value">Diaria</p>
-											</div>
-											<div class="detail-item">
-													<p class="detail-item__label">Tipo de autobús</p>
-													<p class="detail-item__value">Doble piso, Ejecutivo</p>
-											</div>
-									</div>
-							</div>
-					</div>
-			</section>
+<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/ixtapa/banner/banner-guia-viaje-ixtapa-zihuatanejo.webp");' data-alt="Vista aérea de Ixtapa Zihuatanejo, Guerrero con playas y mar turquesa">
+  <div class="hero__content">
+    <h1 class="hero__title">Escápate a Ixtapa Zihuatanejo</h1>
+    <h2 class="hero__subtitle">
+      Viaja cómodamente con ETN Turistar Lujo hacia Ixtapa Zihuatanejo y disfruta un paraíso de playas doradas, naturaleza tropical y un ambiente relajado en la Costa Grande de Guerrero.
+    </h2>
+    <a href="../destinos/autobus-a-ixtapa-zihuatanejo.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
+  </div>
+</section>
 
-			<section class="attractions">
-					<div class="container">
-							<h2 class="section-title">Atracciones cerca de la terminal</h2>
-							<div class="attractions__grid">
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">Palacio de Gobierno</h3>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">La Soterraña</h3>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">Mercado Independencia</h3>
-											</div>
-									</div>
-							</div>
-					</div>
-			</section>
+<section class="content-section content-section--light">
+  <div class="container">
+    <p class="intro-text">
+      Ixtapa Zihuatanejo combina lo mejor de dos mundos: el encanto pesquero y tradicional de Zihuatanejo, con la modernidad y el confort turístico de Ixtapa. Su clima cálido todo el año, playas de ensueño y una gastronomía que fusiona mar y tierra lo convierten en uno de los destinos más amados del Pacífico mexicano.
+    </p>
+    <hr class="divider">
+    <h2 class="section-title">Top 5 Lugares Imprescindibles en Ixtapa Zihuatanejo</h2>
 
-			<section class="faq">
-					<div class="container faq__container">
-							<h2 class="section-title">Preguntas frecuentes</h2>
-							<div class="faq__list">
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Cuál es el precio del boleto de autobús de CDMX a Morelia?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Los precios varían según la temporada, la línea de autobús y el tipo de servicio. Te recomendamos consultar los precios actualizados en nuestra sección de compra de boletos.</p>
-									</details>
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Cuáles son los horarios de salida de los autobuses?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Contamos con salidas diarias y frecuentes. Puedes ver todos los horarios disponibles al momento de seleccionar tu fecha de viaje en el portal de compra.</p>
-									</details>
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Qué servicios incluyen los autobuses ejecutivos?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Nuestros autobuses ejecutivos ofrecen asientos más amplios y cómodos, pantallas individuales, conexión Wi-Fi, sanitarios y un refrigerio de cortesía para hacer tu viaje más placentero.</p>
-									</details>
-							</div>
-					</div>
-			</section>
+    <div class="place-list">
 
-			<section class="cta">
-					<div class="container">
-							<h2 class="cta__title">¡Viaja a Morelia con ETN Turistar Lujo!</h2>
-							<p class="cta__subtitle">No esperes más para descubrir una de las ciudades más bellas de México. Tu aventura está a solo un clic de distancia.</p>
-							<a href="../destinos/autobus-a-ixtapa.html" class="btn btn--primary btn--large" target="_blank" aria-label="Comprar boletos" tabindex="0">Consulta horarios y compra tu boleto</a>
-					</div>
-			</section>
-			
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ixtapa/destinos/playa-la-rope.webp");' data-alt="Playa La Ropa en Zihuatanejo, Guerrero"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">1. Playa La Ropa</p>
+            <p class="place-card__description">
+              Considerada una de las playas más bellas del Pacífico mexicano, Playa La Ropa es perfecta para nadar, practicar deportes acuáticos o disfrutar un atardecer desde sus restaurantes frente al mar.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ixtapa/destinos/isla-ixtapa.webp");' data-alt="Isla Ixtapa vista desde lancha turística"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">2. Isla Ixtapa</p>
+            <p class="place-card__description">
+              Un paraíso natural a pocos minutos en lancha, con playas tranquilas ideales para snorkel, descanso y platillos frescos de mariscos. Ideal para pasar un día completo desconectado.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ixtapa/destinos/muelle-zihuatanejo.webp");' data-alt="Muelle principal de Zihuatanejo con vista al mar y embarcaciones"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">3. Muelle Principal de Zihuatanejo</p>
+            <p class="place-card__description">
+              Punto icónico para paseos al amanecer o al atardecer. Desde aquí parten tours de pesca deportiva y recorridos por la bahía. Un espacio ideal para fotos y caminatas junto al malecón.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ixtapa/destinos/ciclopista-ixtapa.webp");' data-alt="Ciclopista ecológica de Ixtapa entre palmeras y selva"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">4. Ciclopista Ecológica de Ixtapa</p>
+            <p class="place-card__description">
+              Una ruta de más de 10 km que conecta Ixtapa con Playa Linda, rodeada de vegetación tropical y fauna local. Perfecta para quienes disfrutan de recorrer en bicicleta o caminando entre naturaleza.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ixtapa/destinos/museo-arqueologico-zihuatanejo.webp");' data-alt="Museo Arqueológico de la Costa Grande, Zihuatanejo"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">5. Museo Arqueológico de la Costa Grande</p>
+            <p class="place-card__description">
+              Este pequeño pero interesante museo en el centro de Zihuatanejo ofrece una mirada al pasado prehispánico de la región y las culturas que habitaron la costa guerrerense.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="content-section content-section--darker">
+  <div class="container">
+    <h2 class="section-title">Sabores Típicos de Ixtapa Zihuatanejo</h2>
+    <div class="food-grid">
+      <div class="food-card">
+        <img alt="Pescado a la talla" class="food-card__image" src="../src/assets/img/guia-viaje/ixtapa/platillos/pescado-a-la-talla.webp">
+        <h3 class="food-card__title">Pescado a la talla</h3>
+        <p class="food-card__description">
+          Platillo emblema del Pacífico: pescado asado al carbón y bañado en salsa roja o verde, acompañado de arroz, frijoles y tortillas hechas a mano.
+        </p>
+      </div>
+
+      <div class="food-card">
+        <img alt="Tiritas de pescado" class="food-card__image" src="../src/assets/img/guia-viaje/ixtapa/platillos/tiritas-de-pescado.webp">
+        <h3 class="food-card__title">Tiritas de pescado</h3>
+        <p class="food-card__description">
+          Preparación tradicional de Zihuatanejo: pescado fresco cortado en tiras, marinado con limón, cebolla morada y chile. Refrescante y ligera, ideal para la playa.
+        </p>
+      </div>
+
+      <div class="food-card">
+        <img alt="Camarones al coco" class="food-card__image" src="../src/assets/img/guia-viaje/ixtapa/platillos/camarones-al-coco.webp">
+        <h3 class="food-card__title">Camarones al coco</h3>
+        <p class="food-card__description">
+          Camarones empanizados en coco rallado, dorados a la perfección y servidos con salsa de mango o tamarindo. Un clásico de la cocina guerrerense costera.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section content-section--light">
+  <div class="container container--narrow">
+    <h2 class="section-title">Tips de Viaje para Ixtapa Zihuatanejo</h2>
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Cuál es la mejor época para visitar Ixtapa Zihuatanejo?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          La temporada ideal va de noviembre a mayo, cuando el clima es seco, soleado y perfecto para disfrutar las playas. Durante junio a octubre hay lluvias, pero también paisajes más verdes y tarifas más bajas.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Cómo moverse por la zona?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Puedes usar taxis, transporte local o rentar una bicicleta para recorrer la ciclopista. Las distancias entre Ixtapa y Zihuatanejo son cortas y muy accesibles.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Dónde hospedarse?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Ixtapa ofrece hoteles de lujo y resorts todo incluido, mientras que Zihuatanejo es ideal para hospedajes boutique frente al mar o cabañas ecológicas con vista a la bahía.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Qué actividades no debo perderme?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Snorkel en Isla Ixtapa, paseos en lancha por la bahía, visitas a Playa Las Gatas, y recorridos en bicicleta por la ciclopista ecológica son imperdibles.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Qué souvenirs llevar?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Artesanías de coco, textiles guerrerenses, joyería hecha con conchas marinas y productos locales como café o mezcal de la región son recuerdos típicos de este destino.
+        </p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2 class="cta-section__title">¿Listo para tu Aventura en Ixtapa Zihuatanejo?</h2>
+  <p class="cta-section__text">
+    Viaja con comodidad, lujo y puntualidad con ETN Turistar Lujo. Vive el equilibrio perfecto entre relax y naturaleza en uno de los destinos más hermosos del Pacífico mexicano. ¡Compra tus boletos y disfruta la experiencia costera más auténtica!
+  </p>
+  <a href="../destinos/autobus-a-ixtapa-zihuatanejo.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
+
+</section>
+
+<app-cookies-policy></app-cookies-policy>
+<app-button-whats></app-button-whats>
+<app-button-eva-trip></app-button-eva-trip>
 
     `;
 	}
 }
-customElements.define("page-viajar-a-ixtapa", AppViajarIxtapa);
+customElements.define("page-viajar-a-ixtapa", PageViajarAIxtapa);

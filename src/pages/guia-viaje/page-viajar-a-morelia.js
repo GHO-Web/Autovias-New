@@ -1,5 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
-import "../../components/app-cotiza.js";
+import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-open-modal.js";
@@ -13,169 +13,196 @@ import "../../js/slick.js?v=1.0.0";
 class AppViajarMorelia extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-			<app-cotiza></app-cotiza>
-			<app-modal-travelpass></app-modal-travelpass>
-			<app-modal-doters></app-modal-doters>
-			<app-banner-slider
-					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/Atlacomulco_Banner_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/global/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
-			>
-			</app-banner-slider>
-			<app-payments></app-payments>
-			
-			<!-- Components for page -->
+      <app-cotiza></app-cotiza>
 
-			<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwRaNTXjC4hzOr7ORLU-a3-j_UGbsvK7KtPHMWzlMIR7xRNvcNaGo5GljsW9D44Ws7OgfDXE9ZPKBCpsr_uf_g_-ztpdGzfFPThxKuqb2hzD5nT362Mv4oP93kRGTkAx9UnO_P23Y8b_Zh0Kzt0FfD8RNTp80XvDNVvgy3PM5RpC3-DSI9e35zvy0R7kCRBq5Q6i4QAZYrBVNatDorVIR8azyZFtazNR6phcIv6Whute_reg49odo8zdG3_O3E2MSzmGst9hwG-0A");'>
-					<div class="hero__content">
-							<h1 class="hero__title">Autobús a Morelia</h1>
-							<p class="hero__subtitle">Descubre la belleza de Morelia viajando en autobús desde la Ciudad de México. Disfruta de un viaje cómodo, seguro y económico.</p>
-							<a href="../destinos/autobus-a-morelia.html" class="btn btn--primary btn--large" aria-label="Comprar boletos" tabindex="0">Conoce más</a>
-					</div>
-			</section>
 
-			<section class="features">
-					<div class="container">
-							<h2 class="section-title">¿Por qué viajar en autobús a Morelia?</h2>
-							<div class="features__grid">
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-armchair material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Comodidad</h3>
-											<p class="feature-card__description">Viaja en autobuses modernos con asientos reclinables, aire acondicionado y entretenimiento a bordo.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-pig material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Ahorro</h3>
-											<p class="feature-card__description">Disfruta de tarifas competitivas y promociones especiales para que tu viaje sea más accesible.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-travel-security material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Viaje sin complicaciones</h3>
-											<p class="feature-card__description">Olvídate del tráfico y el estrés de conducir. Relájate y disfruta del paisaje.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-montain material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Paisajes inolvidables</h3>
-											<p class="feature-card__description">Admira la belleza de los paisajes mexicanos durante tu trayecto a Morelia.</p>
-									</div>
-							</div>
-					</div>
-			</section>
+<!-- Components for page -->
 
-			<section class="route-info">
-					<div class="container route-info__container">
-							<h2 class="section-title">Trayecto destacado CDMX → Morelia</h2>
-							<div class="route-info__card">
-									<div class="route-info__timeline">
-											<div class="route-info__line"></div>
-											<div class="route-info__stops">
-													<div class="route-info__stop">
-															<div class="route-info__stop-icon"><span class="icon-bus material-symbols-outlined"></span></div>
-															<span class="route-info__stop-name">Ciudad de México</span>
-													</div>
-													<div class="route-info__stop">
-															<span class="route-info__stop-name">Morelia</span>
-															<div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined"></span></div>
-													</div>
-											</div>
-									</div>
-									<div class="route-info__details-grid">
-											<div class="detail-item">
-													<p class="detail-item__label">Duración</p>
-													<p class="detail-item__value">4.5 horas</p>
-											</div>
-											<div class="detail-item">
-													<p class="detail-item__label">Frecuencia</p>
-													<p class="detail-item__value">Diaria</p>
-											</div>
-											<div class="detail-item">
-													<p class="detail-item__label">Tipo de autobús</p>
-													<p class="detail-item__value">Doble piso, Ejecutivo</p>
-											</div>
-									</div>
-							</div>
-					</div>
-			</section>
+<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/morelia/banner/banner-guia-viaje-morelia.webp");' data-alt="Catedral de Morelia iluminada de noche">
+  <div class="hero__content">
+    <h1 class="hero__title">Descubre la Joya Colonial de Michoacán</h1>
+    <h2 class="hero__subtitle">
+      Viaja con ETN Turistar Lujo hacia Morelia, una ciudad Patrimonio de la Humanidad que combina historia, arquitectura majestuosa y una gastronomía llena de tradición.
+    </h2>
+    <a href="../destinos/autobus-a-morelia.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
+  </div>
+</section>
 
-			<section class="attractions">
-					<div class="container">
-							<h2 class="section-title">Atracciones cerca de la terminal</h2>
-							<div class="attractions__grid">
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">Palacio de Gobierno</h3>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">La Soterraña</h3>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">Mercado Independencia</h3>
-											</div>
-									</div>
-							</div>
-					</div>
-			</section>
+<section class="content-section content-section--light">
+  <div class="container">
+    <p class="intro-text">
+      Morelia, capital de Michoacán, es una de las ciudades coloniales más hermosas de México. Sus calles empedradas, monumentos de cantera rosa y su ambiente cultural la convierten en un destino ideal para los amantes de la historia, el arte y la buena comida.
+    </p>
+    <hr class="divider">
+    <h2 class="section-title">Top 5 Lugares Imprescindibles en Morelia</h2>
 
-			<section class="faq">
-					<div class="container faq__container">
-							<h2 class="section-title">Preguntas frecuentes</h2>
-							<div class="faq__list">
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Cuál es el precio del boleto de autobús de CDMX a Morelia?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Los precios varían según la temporada, la línea de autobús y el tipo de servicio. Te recomendamos consultar los precios actualizados en nuestra sección de compra de boletos.</p>
-									</details>
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Cuáles son los horarios de salida de los autobuses?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Contamos con salidas diarias y frecuentes. Puedes ver todos los horarios disponibles al momento de seleccionar tu fecha de viaje en el portal de compra.</p>
-									</details>
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Qué servicios incluyen los autobuses ejecutivos?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Nuestros autobuses ejecutivos ofrecen asientos más amplios y cómodos, pantallas individuales, conexión Wi-Fi, sanitarios y un refrigerio de cortesía para hacer tu viaje más placentero.</p>
-									</details>
-							</div>
-					</div>
-			</section>
+    <div class="place-list">
 
-			<section class="cta">
-					<div class="container">
-							<h2 class="cta__title">¡Viaja a Morelia con ETN Turistar Lujo!</h2>
-							<p class="cta__subtitle">No esperes más para descubrir una de las ciudades más bellas de México. Tu aventura está a solo un clic de distancia.</p>
-							<a href="../destinos/autobus-a-morelia.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Comprar boletos" tabindex="0">Consulta horarios y compra tu boleto</a>
-					</div>
-			</section>
-			
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/morelia/destinos/catedral-morelia.webp");' data-alt="Catedral de Morelia Michoacán"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">1. Catedral de Morelia</p>
+            <p class="place-card__description">
+              Símbolo de la ciudad, construida con cantera rosa en estilo barroco. Su iluminación nocturna y los fuegos artificiales de los fines de semana son un espectáculo imperdible.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/morelia/destinos/aqueducto-morelia.webp");' data-alt="Acueducto de Morelia"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">2. Acueducto de Morelia</p>
+            <p class="place-card__description">
+              Una majestuosa obra arquitectónica con más de 250 arcos que data del siglo XVIII. Es uno de los paseos más pintorescos para caminar y admirar la historia viva de la ciudad.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/morelia/destinos/callejon-del-romance.webp");' data-alt="Callejón del Romance Morelia"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">3. Callejón del Romance</p>
+            <p class="place-card__description">
+              Un rincón encantador adornado con bugambilias y fuentes, ideal para una caminata romántica. Sus muros están decorados con versos del poeta Lucas Ortiz.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/morelia/destinos/museo-del-dulce.webp");' data-alt="Museo del Dulce de Morelia"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">4. Museo del Dulce</p>
+            <p class="place-card__description">
+              Dedicado a preservar la tradición de los dulces típicos morelianos. Aquí podrás probar las famosas Morelianas, ates y cocadas artesanales elaboradas al momento.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/morelia/destinos/zoologico-morelia.webp");' data-alt="Zoológico Benito Juárez Morelia"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">5. Zoológico Benito Juárez</p>
+            <p class="place-card__description">
+              Uno de los zoológicos más grandes y completos de México. Ideal para visitar en familia y conocer especies de todo el mundo rodeadas de naturaleza.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="content-section content-section--darker">
+  <div class="container">
+    <h2 class="section-title">Sabores Típicos de Morelia</h2>
+    <div class="food-grid">
+      <div class="food-card">
+        <img alt="Carnitas michoacanas típicas de Morelia" class="food-card__image" src="../src/assets/img/guia-viaje/morelia/platillos/carnitas-michoacanas.webp">
+        <h3 class="food-card__title">Carnitas Michoacanas</h3>
+        <p class="food-card__description">
+          Preparadas en su punto con carne de cerdo dorada lentamente. Un clásico infaltable acompañado de salsa verde, tortillas calientes y limón.
+        </p>
+      </div>
+
+      <div class="food-card">
+        <img alt="Corundas michoacanas con crema y salsa" class="food-card__image" src="../src/assets/img/guia-viaje/morelia/platillos/corundas.webp">
+        <h3 class="food-card__title">Corundas</h3>
+        <p class="food-card__description">
+          Tamales triangulares envueltos en hojas de milpa, servidos con crema, queso y salsa. Son uno de los platillos más representativos de Michoacán.
+        </p>
+      </div>
+
+      <div class="food-card">
+        <img alt="Ate con queso típico de Morelia" class="food-card__image" src="../src/assets/img/guia-viaje/morelia/platillos/ate-con-queso.webp">
+        <h3 class="food-card__title">Ate con Queso</h3>
+        <p class="food-card__description">
+          Postre tradicional que combina lo dulce del ate de frutas con el sabor salado del queso fresco. Un contraste delicioso y típico de la región.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section content-section--light">
+  <div class="container container--narrow">
+    <h2 class="section-title">Tips de Viaje para Morelia</h2>
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Cuál es la mejor época para visitar Morelia?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          De octubre a marzo, cuando el clima es fresco y agradable. Además, durante noviembre se celebra el Día de Muertos, una de las tradiciones más emblemáticas del estado.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Qué eventos destacan en Morelia?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Destacan el Festival Internacional de Cine de Morelia, el Festival de Música de Morelia y las celebraciones de Semana Santa con procesiones históricas.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Dónde hospedarse?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          El centro histórico ofrece hoteles boutique en edificios coloniales, mientras que las zonas modernas brindan opciones con todas las comodidades.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Qué comprar en Morelia?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Dulces típicos, artesanías de cobre de Santa Clara del Cobre, textiles de Uruapan y rebozos de Patamban son recuerdos perfectos para llevar a casa.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Cómo moverse por la ciudad?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          El centro se recorre fácilmente a pie. También hay taxis, transporte público y servicios de aplicaciones móviles para distancias más largas.
+        </p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2 class="cta-section__title">¿Listo para tu viaje a Morelia?</h2>
+  <p class="cta-section__text">
+    Viaja con ETN Turistar Lujo y conoce el corazón colonial de Michoacán. Disfruta la arquitectura, la historia y los sabores únicos de Morelia. ¡Compra tus boletos hoy!
+  </p>
+  <a href="../destinos/autobus-a-morelia.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
+</section>
+
+<app-cookies-policy></app-cookies-policy>
+<app-button-whats></app-button-whats>
+<app-button-eva-trip></app-button-eva-trip>
 
     `;
 	}
