@@ -22,7 +22,7 @@ class PageViajarAMonterrey extends HTMLElement {
   <div class="hero__content">
     <h1 class="hero__title">Explora la Sultana del Norte</h1>
     <h2 class="hero__subtitle">
-      Viaja con ETN Turistar Lujo hacia Monterrey, una ciudad moderna rodeada de montañas, donde la innovación, la cultura y la gastronomía regia te esperan con los brazos abiertos.
+      Viaja con Autovías La Línea hacia Monterrey, una ciudad moderna rodeada de montañas, donde la innovación, la cultura y la gastronomía regia te esperan con los brazos abiertos.
     </h2>
     <a href="../destinos/autobus-a-monterrey.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
   </div>
@@ -196,7 +196,7 @@ class PageViajarAMonterrey extends HTMLElement {
 <section class="cta-section">
   <h2 class="cta-section__title">¿Listo para tu viaje a Monterrey?</h2>
   <p class="cta-section__text">
-    Viaja con ETN Turistar Lujo y disfruta la comodidad y elegancia en cada kilómetro. Descubre la modernidad, los sabores y la energía de la Sultana del Norte. ¡Compra tus boletos hoy!
+    Viaja con Autovías La Línea y disfruta la comodidad y elegancia en cada kilómetro. Descubre la modernidad, los sabores y la energía de la Sultana del Norte. ¡Compra tus boletos hoy!
   </p>
   <a href="../destinos/autobus-a-monterrey.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
 </section>

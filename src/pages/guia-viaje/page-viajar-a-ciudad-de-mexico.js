@@ -24,7 +24,7 @@ class PageViajarACiudadDeMexico extends HTMLElement {
       Descubre la Grandeza de la Ciudad de México
     </h1>
     <h2 class="hero__subtitle">
-      Viaja cómodamente con ETN Turistar Lujo y explora una de las metrópolis más vibrantes del mundo: historia, cultura, gastronomía y modernidad en un solo destino.
+      Viaja cómodamente con Autovías La Línea y explora una de las metrópolis más vibrantes del mundo: historia, cultura, gastronomía y modernidad en un solo destino.
     </h2>
     <a href="../destinos/autobus-a-ciudad-de-mexico.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
 
@@ -188,7 +188,7 @@ class PageViajarACiudadDeMexico extends HTMLElement {
 
 <section class="cta-section">
   <h2 class="cta-section__title">¿Listo para tu Aventura en la Ciudad de México?</h2>
-  <p class="cta-section__text">Viaja con comodidad, lujo y puntualidad con ETN Turistar Lujo. Descubre la historia, cultura y modernidad de una ciudad única. ¡Compra tus boletos y vive la experiencia capitalina!</p>
+  <p class="cta-section__text">Viaja con comodidad, lujo y puntualidad con Autovías La Línea. Descubre la historia, cultura y modernidad de una ciudad única. ¡Compra tus boletos y vive la experiencia capitalina!</p>
   <a href="../destinos/autobus-a-ciudad-de-mexico.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
 
 </section>

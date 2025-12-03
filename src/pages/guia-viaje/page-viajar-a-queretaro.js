@@ -22,7 +22,7 @@ class PageViajarAQueretaro extends HTMLElement {
   <div class="hero__content">
     <h1 class="hero__title">Descubre la Historia y el Encanto de Querétaro</h1>
     <h2 class="hero__subtitle">
-      Viaja con ETN Turistar Lujo hacia Querétaro, una ciudad donde el pasado colonial se mezcla con la modernidad, rodeada de viñedos, historia y cultura.
+      Viaja con Autovías La Línea hacia Querétaro, una ciudad donde el pasado colonial se mezcla con la modernidad, rodeada de viñedos, historia y cultura.
     </h2>
     <a href="../destinos/autobus-a-queretaro.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
   </div>
@@ -195,7 +195,7 @@ class PageViajarAQueretaro extends HTMLElement {
 <section class="cta-section">
   <h2 class="cta-section__title">¿Listo para tu viaje a Querétaro?</h2>
   <p class="cta-section__text">
-    Viaja con ETN Turistar Lujo y explora una de las ciudades más bellas y seguras de México. Vive su historia, su cultura y su sabor en cada rincón. ¡Compra tus boletos hoy!
+    Viaja con Autovías La Línea y explora una de las ciudades más bellas y seguras de México. Vive su historia, su cultura y su sabor en cada rincón. ¡Compra tus boletos hoy!
   </p>
   <a href="../destinos/autobus-a-queretaro.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
 </section>

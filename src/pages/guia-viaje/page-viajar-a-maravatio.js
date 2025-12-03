@@ -168,7 +168,7 @@ class AppViajarMaravatio extends HTMLElement {
 
 			<section class="cta">
 					<div class="container">
-							<h2 class="cta__title">¡Viaja a Morelia con ETN Turistar Lujo!</h2>
+							<h2 class="cta__title">¡Viaja a Morelia con Autovías La Línea!</h2>
 							<p class="cta__subtitle">No esperes más para descubrir una de las ciudades más bellas de México. Tu aventura está a solo un clic de distancia.</p>
 							<a href="../destinos/autobus-a-maravatio.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Comprar boletos" tabindex="0">Consulta horarios y compra tu boleto</a>
 					</div>

@@ -11,8 +11,8 @@ import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
 class PageQueretaro extends HTMLElement {
-  async connectedCallback() {
-    this.innerHTML = `
+	async connectedCallback() {
+		this.innerHTML = `
       <app-cotiza></app-cotiza>
 			<app-banner-slider
 					slides-data='[
@@ -41,7 +41,7 @@ class PageQueretaro extends HTMLElement {
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper"> <span class="icon-armchair material-symbols-outlined"></span> </div>
 							<h3 class="feature-card__title">Comodidad Premium</h3>
-							<p class="feature-card__description">ETN Turistar es tu mejor opción para un viaje cómodo y seguro a este fascinante destino colonial.</p>
+							<p class="feature-card__description">Autovías es tu mejor opción para un viaje cómodo y seguro a este fascinante destino colonial.</p>
 						</div>
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper"> <span class="icon-pig material-symbols-outlined"></span> </div>
@@ -51,7 +51,7 @@ class PageQueretaro extends HTMLElement {
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper"> <span class="icon-travel-security material-symbols-outlined"></span> </div>
 							<h3 class="feature-card__title">Viaje sin complicaciones</h3>
-							<p class="feature-card__description">Viaja con la línea de autobuses de lujo ETN Turistar y llega sin contratiempos a tu destino.</p>
+							<p class="feature-card__description">Viaja con la línea de autobuses de lujo Autovías y llega sin contratiempos a tu destino.</p>
 						</div>
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper"> <span class="icon-montain material-symbols-outlined"></span> </div>
@@ -271,7 +271,7 @@ class PageQueretaro extends HTMLElement {
 			
 			<section class="cta">
 				<div class="container">
-					<h2 class="cta__title">¡Viaja a Querétaro con ETN Turistar!</h2>
+					<h2 class="cta__title">¡Viaja a Querétaro con Autovías!</h2>
 					<p class="cta__subtitle">Prepara tus maletas y descubre todo lo que esta maravillosa ciudad tiene para ofrecer. Tu aventura está a solo un clic.</p> <a href="../destinos/autobus-a-queretaro.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
 				</div>
 			</section>
@@ -280,6 +280,6 @@ class PageQueretaro extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
         `;
-  }
+	}
 }
 customElements.define("page-queretaro", PageQueretaro);

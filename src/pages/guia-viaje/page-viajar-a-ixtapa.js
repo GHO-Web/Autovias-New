@@ -22,7 +22,7 @@ class PageViajarAIxtapa extends HTMLElement {
   <div class="hero__content">
     <h1 class="hero__title">Escápate a Ixtapa Zihuatanejo</h1>
     <h2 class="hero__subtitle">
-      Viaja cómodamente con ETN Turistar Lujo hacia Ixtapa Zihuatanejo y disfruta un paraíso de playas doradas, naturaleza tropical y un ambiente relajado en la Costa Grande de Guerrero.
+      Viaja cómodamente con Autovías La Línea hacia Ixtapa Zihuatanejo y disfruta un paraíso de playas doradas, naturaleza tropical y un ambiente relajado en la Costa Grande de Guerrero.
     </h2>
     <a href="../destinos/autobus-a-ixtapa-zihuatanejo.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
   </div>
@@ -195,7 +195,7 @@ class PageViajarAIxtapa extends HTMLElement {
 <section class="cta-section">
   <h2 class="cta-section__title">¿Listo para tu Aventura en Ixtapa Zihuatanejo?</h2>
   <p class="cta-section__text">
-    Viaja con comodidad, lujo y puntualidad con ETN Turistar Lujo. Vive el equilibrio perfecto entre relax y naturaleza en uno de los destinos más hermosos del Pacífico mexicano. ¡Compra tus boletos y disfruta la experiencia costera más auténtica!
+    Viaja con comodidad, lujo y puntualidad con Autovías La Línea. Vive el equilibrio perfecto entre relax y naturaleza en uno de los destinos más hermosos del Pacífico mexicano. ¡Compra tus boletos y disfruta la experiencia costera más auténtica!
   </p>
   <a href="../destinos/autobus-a-ixtapa-zihuatanejo.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
 

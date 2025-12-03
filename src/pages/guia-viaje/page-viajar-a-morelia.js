@@ -22,7 +22,7 @@ class AppViajarMorelia extends HTMLElement {
   <div class="hero__content">
     <h1 class="hero__title">Descubre la Joya Colonial de Michoacán</h1>
     <h2 class="hero__subtitle">
-      Viaja con ETN Turistar Lujo hacia Morelia, una ciudad Patrimonio de la Humanidad que combina historia, arquitectura majestuosa y una gastronomía llena de tradición.
+      Viaja con Autovías La Línea hacia Morelia, una ciudad Patrimonio de la Humanidad que combina historia, arquitectura majestuosa y una gastronomía llena de tradición.
     </h2>
     <a href="../destinos/autobus-a-morelia.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
   </div>
@@ -195,7 +195,7 @@ class AppViajarMorelia extends HTMLElement {
 <section class="cta-section">
   <h2 class="cta-section__title">¿Listo para tu viaje a Morelia?</h2>
   <p class="cta-section__text">
-    Viaja con ETN Turistar Lujo y conoce el corazón colonial de Michoacán. Disfruta la arquitectura, la historia y los sabores únicos de Morelia. ¡Compra tus boletos hoy!
+    Viaja con Autovías La Línea y conoce el corazón colonial de Michoacán. Disfruta la arquitectura, la historia y los sabores únicos de Morelia. ¡Compra tus boletos hoy!
   </p>
   <a href="../destinos/autobus-a-morelia.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
 </section>

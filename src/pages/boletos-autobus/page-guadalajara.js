@@ -11,8 +11,8 @@ import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
 class PageGuadalajara extends HTMLElement {
-  async connectedCallback() {
-    this.innerHTML = `
+	async connectedCallback() {
+		this.innerHTML = `
       <app-cotiza></app-cotiza>
 			<app-banner-slider
 					slides-data='[
@@ -284,7 +284,7 @@ class PageGuadalajara extends HTMLElement {
 			</section>
 			<section class="cta">
 				<div class="container">
-					<h2 class="cta__title">¡Viaja a Guadalajara con ETN Turistar!</h2>
+					<h2 class="cta__title">¡Viaja a Guadalajara con Autovías!</h2>
 					<p class="cta__subtitle">No esperes más y planifica tu viaje hoy mismo. Tu aventura en la Perla de Occidente está a solo un clic.</p>
 					<a href="../destinos/autobus-a-guadalajara.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
 				</div>
@@ -294,6 +294,6 @@ class PageGuadalajara extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
     `;
-  }
+	}
 }
 customElements.define("page-guadalajara", PageGuadalajara);

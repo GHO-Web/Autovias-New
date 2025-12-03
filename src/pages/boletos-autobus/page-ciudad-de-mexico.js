@@ -11,8 +11,8 @@ import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
 class PageCiudadDeMexico extends HTMLElement {
-  async connectedCallback() {
-    this.innerHTML = `
+	async connectedCallback() {
+		this.innerHTML = `
       <app-cotiza></app-cotiza>
 			<app-banner-slider
 					slides-data='[
@@ -301,7 +301,7 @@ class PageCiudadDeMexico extends HTMLElement {
 
 			<section class="cta">
 				<div class="container">
-					<h2 class="cta__title">¡Viaja a Ciudad de México con ETN Turistar!</h2>
+					<h2 class="cta__title">¡Viaja a Ciudad de México con Autovías!</h2>
 					<p class="cta__subtitle">No esperes más para descubrir esta vibrante metrópolis. Tu aventura está a solo un clic de distancia.</p>
 					<a href="../destinos/autobus-a-ciudad-de-mexico.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
 				</div>
@@ -311,6 +311,6 @@ class PageCiudadDeMexico extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
     `;
-  }
+	}
 }
 customElements.define("page-ciudad-de-mexico", PageCiudadDeMexico);

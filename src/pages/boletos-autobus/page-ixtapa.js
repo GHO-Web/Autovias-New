@@ -11,8 +11,8 @@ import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
 class PageIxtapaZihuatanejo extends HTMLElement {
-  async connectedCallback() {
-    this.innerHTML = `
+	async connectedCallback() {
+		this.innerHTML = `
       <app-cotiza></app-cotiza>
 			<app-banner-slider
 					slides-data='[
@@ -42,7 +42,7 @@ class PageIxtapaZihuatanejo extends HTMLElement {
 								<span class="icon-armchair material-symbols-outlined"></span>
 							</div>
 							<h3 class="feature-card__title">Comodidad Premium</h3>
-							<p class="feature-card__description">ETN Turistar te ofrece un servicio de primera clase, garantizando que tu viaje sea tan cómodo como placentero.</p>
+							<p class="feature-card__description">Autovías te ofrece un servicio de primera clase, garantizando que tu viaje sea tan cómodo como placentero.</p>
 						</div>
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper">
@@ -167,7 +167,7 @@ class PageIxtapaZihuatanejo extends HTMLElement {
 					<div class="faq__list">
 						<details class="faq-item">
 							<summary class="faq-item__summary"><span class="faq-item__question">¿Cómo llego a Ixtapa Zihuatanejo desde Ciudad de México?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
-							<p class="faq-item__answer">Una de las rutas más populares es con ETN Turistar, tomando un autobús a Acapulco Terminal Diamante y conectando desde allí. Te recomendamos reservar con anticipación.</p>
+							<p class="faq-item__answer">Una de las rutas más populares es con Autovías, tomando un autobús a Acapulco Terminal Diamante y conectando desde allí. Te recomendamos reservar con anticipación.</p>
 						</details>
 						<details class="faq-item">
 							<summary class="faq-item__summary"><span class="faq-item__question">¿Qué puedo hacer en Ixtapa Zihuatanejo?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span></span> </summary>
@@ -182,7 +182,7 @@ class PageIxtapaZihuatanejo extends HTMLElement {
 			</section>
 			<section class="cta">
 				<div class="container">
-					<h2 class="cta__title">¡Viaja a Ixtapa Zihuatanejo con ETN Turistar!</h2>
+					<h2 class="cta__title">¡Viaja a Ixtapa Zihuatanejo con Autovías!</h2>
 					<p class="cta__subtitle">Tu aventura en la costa del Pacífico te espera. No esperes más y planifica tu viaje hoy mismo.</p>
 					<a href="../destinos/autobus-a-ixtapa-zihuatanejo.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
 				</div>
@@ -192,6 +192,6 @@ class PageIxtapaZihuatanejo extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
     `;
-  }
+	}
 }
 customElements.define("page-ixtapa-zihuatanejo", PageIxtapaZihuatanejo);

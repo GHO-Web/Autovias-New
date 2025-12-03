@@ -11,8 +11,8 @@ import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
 class PageMonterrey extends HTMLElement {
-  async connectedCallback() {
-    this.innerHTML = `
+	async connectedCallback() {
+		this.innerHTML = `
       <app-cotiza></app-cotiza>
 			<app-banner-slider
 					slides-data='[
@@ -30,7 +30,7 @@ class PageMonterrey extends HTMLElement {
 			<section class="hero">
 				<div class="hero__content">
 					<h1 class="hero__title">Autobús a Monterrey</h1>
-					<p class="hero__subtitle">Un destino que combina modernidad, cultura y una oferta gastronómica excepcional. ETN Turistar es la opción ideal.</p>
+					<p class="hero__subtitle">Un destino que combina modernidad, cultura y una oferta gastronómica excepcional. Autovías es la opción ideal.</p>
 				</div>
 			</section>
 
@@ -293,7 +293,7 @@ class PageMonterrey extends HTMLElement {
 
 			<section class="cta">
 				<div class="container">
-					<h2 class="cta__title">¡Viaja a Monterrey con ETN Turistar!</h2>
+					<h2 class="cta__title">¡Viaja a Monterrey con Autovías!</h2>
 					<p class="cta__subtitle">No lo pienses más, ¡tu próxima aventura te espera en Monterrey!</p>
 					<a href="../destinos/autobus-a-monterrey.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
 				</div>
@@ -303,6 +303,6 @@ class PageMonterrey extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
     `;
-  }
+	}
 }
 customElements.define("page-monterrey", PageMonterrey);

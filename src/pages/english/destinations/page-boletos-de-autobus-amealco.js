@@ -61,7 +61,7 @@ class PageBoletosAutobusAmealcoEnglish extends HTMLElement {
       </section>
         
       <section class="__section">
-        <app-section-title section-title="Explore more destinations with ETN Turistar Mexico is waiting for you."></app-section-title>
+        <app-section-title section-title="Explore more destinations with Autovías Mexico is waiting for you."></app-section-title>
         <app-destiny-slider src="../../src/data/english/destinations/amealco/grid-text-data.json"></app-destiny-slider>
       </section>
 		<app-cookies-policy-english></app-cookies-policy-english>

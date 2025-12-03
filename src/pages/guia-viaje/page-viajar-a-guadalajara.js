@@ -22,7 +22,7 @@ class PageViajarAGuadalajara extends HTMLElement {
   <div class="hero__content">
     <h1 class="hero__title">Descubre la Esencia de Guadalajara</h1>
     <h2 class="hero__subtitle">
-      Viaja cómodamente con ETN Turistar Lujo hacia Guadalajara y explora una de las ciudades más emblemáticas del occidente de México: tradición, arquitectura, música, tequila y modernidad en un solo destino.
+      Viaja cómodamente con Autovías La Línea hacia Guadalajara y explora una de las ciudades más emblemáticas del occidente de México: tradición, arquitectura, música, tequila y modernidad en un solo destino.
     </h2>
     <a href="../destinos/autobus-a-guadalajara.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
   </div>
@@ -195,7 +195,7 @@ class PageViajarAGuadalajara extends HTMLElement {
 <section class="cta-section">
   <h2 class="cta-section__title">¿Listo para tu Aventura en Guadalajara?</h2>
   <p class="cta-section__text">
-    Viaja con comodidad, lujo y puntualidad con ETN Turistar Lujo. Descubre la historia, cultura, sabores y modernidad de Guadalajara. ¡Compra tus boletos y vive la experiencia tapatía auténtica!
+    Viaja con comodidad, lujo y puntualidad con Autovías La Línea. Descubre la historia, cultura, sabores y modernidad de Guadalajara. ¡Compra tus boletos y vive la experiencia tapatía auténtica!
   </p>
      <a href="../destinos/autobus-a-guadalajara.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
 
