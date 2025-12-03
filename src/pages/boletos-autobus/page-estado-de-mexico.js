@@ -14,294 +14,241 @@ import "../../js/slick.js?v=1.0.0";
 class AppEstadoDeMexico extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
-            <app-banner-slider
-                slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/boletos-autobus/estado-de-mexico/banner/banner-monterrey.png","mediumImage": "../src/assets/img/boletos-autobus/estado-de-mexico/banner/banner-monterrey-tablet.png", "smallImage": "./src/assets/img/boletos-autobus/estado-de-mexico/banner/banner-monterrey-sm.png", "link": "#index.html/banner1"}]'
-            >
-            </app-banner-slider>
-            <app-payments></app-payments>
+      <app-cotiza></app-cotiza>
+			<app-banner-slider
+					slides-data='[
+						{"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/banner/web/bw-boleto-electronico-etn.webp","mediumImage": "../../../src/assets/img/banner/tablet/home-doters.webp", "smallImage": "../../../src/assets/img/banner/movil/home-doters.webp", "link": "#index.html/banner1"},
+						{"id": "slide2", "title": "Banner 2", "image": "../../../src/assets/img/banner/web/bw-metodos-de-pago-etn.webp", "mediumImage": "../../../src/assets/img/banner/tablet/home-pago.webp","smallImage": "../../../src/assets/img/banner/movil/home-pago.webp", "link": "#index.html/banner2"},
+						{"id": "slide3", "title": "Banner 3", "image": "../../../src/assets/img/banner/web/bw-sorteo-doters-aniversario-etn.webp", "mediumImage": "../../../src/assets/img/banner/tablet/home-verano.webp","smallImage": "../../../src/assets/img/banner/movil/home-verano.webp", "link": "#index.html/banner3"}
+					]'
+			>
+			</app-banner-slider>
+			<app-payments></app-payments>
+			
+			
+			<!-- Components for page -->
 
-            <section class="__section __section__monterrey__destinations">
-                <app-section-title section-title="Viaja a Uruapan en autobús con Autovías La Línea"></app-section-title>
-                <p class="__subtitle__destinos">Uruapan</p>
-                <p class="__paragraph">Uruapan, corazón de la Meseta Purépecha y puerta al Parque Nacional Barranca del Cupatitzio, te invita a descubrir un destino lleno de historia, naturaleza exuberante y una identidad cultural que late en cada rincón. Con Autovías La Línea, llegar a esta joya de Michoacán es tan cómodo como inspirador. Disfruta de un viaje seguro, relajado y con todo el confort que mereces.</p>
-                <p class="__paragraph">Bienvenido a Uruapan, donde la tradición y la naturaleza se abrazan en una experiencia única. Esta ciudad michoacana te cautiva con sus cascadas cristalinas, arquitectura virreinal y el legado ancestral de la cultura purépecha. Recorre el emblemático Parque Nacional Barranca del Cupatitzio, donde el río nace entre manantiales y senderos frondosos. Admira el arte del maque en el Museo La Huatápera, pasea por el pintoresco centro histórico y sumérgete en la espiritualidad del Antiguo Templo de San Juan Bautista. Además, si visitas en Semana Santa, no te pierdas el Tianguis Artesanal más grande de América Latina.</p>
-             </section>
+			<section class="hero">
+				<div class="hero__content">
+					<h1 class="hero__title">Viaja a Colima: El Encanto del Pacífico y el Volcán con Autovías</h1>
+					<p class="hero__subtitle">Descubre la "Ciudad de las Palmeras", su calidez y paisajes con el servicio de autobús líder. ¡Tu viaje te espera!</p>
+				</div>
+			</section>
 
-             <section class="__section __section__grid" id="monterrey-grid-section">
-                <article class="grid-container">
-                    <!-- Los elementos del grid se cargarán aquí -->
-                </article>
-             </section>
-                <p class="__subtitle__destinos">Gastronomía</p>
-              <section class="__section __section__monterrey__food">
-                <p class="__paragraph__xl">Uruapan deleita al paladar con sabores que son herencia viva de la cocina purépecha. Prueba las tradicionales corundas con crema y queso, los uchepos recién salidos del vapor, las carnitas michoacanas y la emblemática sopa tarasca. En sus mercados y fondas, la autenticidad es la protagonista, y cada platillo es un viaje por los sabores del alma michoacana.</p>
-                 <article class="container-cards__food">
-                    <!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
-                </article>
-             </section>
+			<section class="features">
+				<div class="container">
+					<h2 class="section-title">Autovías: Tu Mejor Opción para un Viaje Placentero a Colima</h2>
+					<div class="features__grid">
+						<div class="feature-card">
+							<div class="feature-card__icon-wrapper">
+								<span class="icon-armchair material-symbols-outlined"></span>
+							</div>
+							<h3 class="feature-card__title">Máxima Comodidad</h3>
+							<p class="feature-card__description">Asientos reclinables, amplio espacio y un ambiente ideal para relajarte durante todo el trayecto.</p>
+						</div>
+						<div class="feature-card">
+							<div class="feature-card__icon-wrapper">
+								<span class="icon-travel-security material-symbols-outlined"></span>
+							</div>
+							<h3 class="feature-card__title">Seguridad Garantizada</h3>
+							<p class="feature-card__description">Flota moderna, mantenimientos rigurosos y conductores profesionales para tu tranquilidad.</p>
+						</div>
+						<div class="feature-card">
+							<div class="feature-card__icon-wrapper">
+								<span class="icon-pig material-symbols-outlined"></span>
+							</div>
+							<h3 class="feature-card__title">Precios Justos</h3>
+							<p class="feature-card__description">Encuentra tarifas competitivas y acceso a promociones exclusivas para tu bolsillo.</p>
+						</div>
+						<div class="feature-card">
+							<div class="feature-card__icon-wrapper">
+								<span class="icon-clock material-symbols-outlined"></span>
+							</div>
+							<h3 class="feature-card__title">Horarios Flexibles</h3>
+							<p class="feature-card__description">Gran variedad de horarios para que tu viaje se ajuste perfectamente a tu agenda.</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-             <section class="__section __section__monterrey__ask">
-                <app-section-title section-title="Preguntas Frecuentes"></app-section-title>
-                <article class="__grid-cards-container__dropdown" id="dropdowns-container">
-                    <!-- Contenedor para los dropdowns -->
-                </article>
-            </section>
+			<section class="route-info">
+				<div class="container route-info__container">
+					<h2 class="section-title">Guadalajara → Colima</h2>
+					<div class="route-info__card">
+						<div class="route-info__timeline">
+							<div class="route-info__line"></div>
+							<div class="route-info__stops">
+								<div class="route-info__stop">
+									<div class="route-info__stop-icon">
+										<span class="icon-bus material-symbols-outlined"></span>
+									</div>
+									<span class="route-info__stop-name">Guadalajara</span>
+								</div>
+								<div class="route-info__stop">
+									<span class="route-info__stop-name">Colima</span>
+									<div class="route-info__stop-icon">
+										<span class="icon-place" material-symbols-outlined></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="route-info__details-grid">
+							<div class="detail-item">
+								<p class="detail-item__label">Duración</p>
+								<p class="detail-item__value">2.5 - 3 hrs</p>
+							</div>
+							<div class="detail-item">
+								<p class="detail-item__label">Frecuencia</p>
+								<p class="detail-item__value">Diaria (Ruta más rápida)</p>
+							</div>
+							<div class="detail-item">
+								<p class="detail-item__label">Tipo de autobús</p>
+								<p class="detail-item__value">Primera Clase</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-              <section class="__section __section__monterrey__other">
-                <app-section-title section-title="Otros destinos"></app-section-title>
-                <article class="container-slider-other">
-                    <app-slider-opacity></app-slider-opacity>
-                </article>
-             </section>
+			<section class="route-info">
+				<div class="container route-info__container">
+					<h2 class="section-title">Ciudad de México → Colima</h2>
+					<div class="route-info__card">
+						<div class="route-info__timeline">
+							<div class="route-info__line"></div>
+							<div class="route-info__stops">
+								<div class="route-info__stop">
+									<div class="route-info__stop-icon">
+										<span class="icon-bus material-symbols-outlined"></span>
+									</div>
+									<span class="route-info__stop-name">Ciudad de México (Terminal Poniente)</span>
+								</div>
+								<div class="route-info__stop">
+									<span class="route-info__stop-name">Colima</span>
+									<div class="route-info__stop-icon">
+										<span class="icon-place" material-symbols-outlined></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="route-info__details-grid">
+							<div class="detail-item">
+								<p class="detail-item__label">Duración</p>
+								<p class="detail-item__value">7 hrs</p>
+							</div>
+							<div class="detail-item">
+								<p class="detail-item__label">Frecuencia</p>
+								<p class="detail-item__value">Frecuente</p>
+							</div>
+							<div class="detail-item">
+								<p class="detail-item__label">Tipo de autobús</p>
+								<p class="detail-item__value">Doble piso / Lujo</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-             <app-modal-multi-image></app-modal-multi-image>
-              <app-modal-image></app-modal-image>
+			<section class="route-info">
+				<div class="container route-info__container">
+					<h2 class="section-title">Manzanillo → Colima</h2>
+					<div class="route-info__card">
+						<div class="route-info__timeline">
+							<div class="route-info__line"></div>
+							<div class="route-info__stops">
+								<div class="route-info__stop">
+									<div class="route-info__stop-icon"><span class="icon-bus material-symbols-outlined"></span></div>
+									<span class="route-info__stop-name">Manzanillo</span>
+								</div>
+								<div class="route-info__stop">
+									<span class="route-info__stop-name">Colima</span>
+									<div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined></span></div>
+								</div>
+							</div>
+						</div>
+						<div class="route-info__details-grid">
+							<div class="detail-item">
+								<p class="detail-item__label">Duración</p>
+								<p class="detail-item__value">1.5 hrs</p>
+							</div>
+							<div class="detail-item">
+								<p class="detail-item__label">Frecuencia</p>
+								<p class="detail-item__value">Muy Frecuente</p>
+							</div>
+							<div class="detail-item">
+								<p class="detail-item__label">Tipo de autobús</p>
+								<p class="detail-item__value">Económico / Primera</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="attractions">
+				<div class="container">
+					<h2 class="section-title">Imperdibles en Colima: Descubre la "Ciudad de las Palmeras"</h2>
+					<div class="attractions__grid">
+						<div class="attraction-card">
+							<div class="attraction-card__image" style='background-image: url("RUTA_IMAGEN_COMALA.webp")'></div>
+							<div class="attraction-card__content">
+								<h3 class="attraction-card__title">Comala (Pueblo Mágico)</h3>
+							</div>
+						</div>
+						<div class="attraction-card">
+							<div class="attraction-card__image" style='background-image: url("RUTA_IMAGEN_VOLCAN_COLIMA.webp")'></div>
+							<div class="attraction-card__content">
+								<h3 class="attraction-card__title">Volcán de Colima y Nevado</h3>
+							</div>
+						</div>
+						<div class="attraction-card">
+							<div class="attraction-card__image" style='background-image: url("RUTA_IMAGEN_CENTRO_HISTORICO_COLIMA.webp")'></div>
+							<div class="attraction-card__content">
+								<h3 class="attraction-card__title">Centro Histórico y Catedral</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
+			<section class="faq">
+				<div class="container faq__container">
+					<h2 class="section-title">Preguntas Frecuentes sobre tu Viaje a Colima</h2>
+					<div class="faq__list">
+						<details class="faq-item">
+							<summary class="faq-item__summary"><span class="faq-item__question">¿Cuáles son las principales rutas de autobús a Colima con Autovías?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">Autovías ofrece rutas directas a Colima desde ciudades importantes como Guadalajara, Ciudad de México (Terminal Poniente), Manzanillo, Morelia, y muchas más, garantizando conexiones cómodas y seguras.</p>
+						</details>
+						<details class="faq-item">
+							<summary class="faq-item__summary"><span class="faq-item__question">¿Qué servicios ofrecen los autobuses de Autovías a Colima?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span></span> </summary>
+							<p class="faq-item__answer">Nuestros autobuses cuentan con asientos reclinables, aire acondicionado, sanitarios, pantallas individuales y, en algunos servicios, Wi-Fi. Nos enfocamos en tu comodidad y seguridad durante todo el trayecto.</p>
+						</details>
+						<details class="faq-item">
+							<summary class="faq-item__summary"> <span class="faq-item__question">¿Cómo puedo comprar mis boletos de autobús a Colima en línea?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">Es muy fácil. Solo ingresa tu ciudad de origen, Colima como destino y la fecha de tu viaje en nuestro buscador. Selecciona el horario y asiento que prefieras, y finaliza tu compra con tarjeta de crédito/débito o en puntos de venta autorizados.</p>
+						</details>
+						<details class="faq-item">
+							<summary class="faq-item__summary"> <span class="faq-item__question">¿Hay descuentos disponibles para boletos de autobús a Colima?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">Constantemente ofrecemos promociones y descuentos especiales. Te invitamos a revisar nuestra sección de ofertas o suscribirte a nuestro newsletter para recibir las últimas novedades y viajar a Colima al mejor precio.</p>
+						</details>
+						<details class="faq-item">
+							<summary class="faq-item__summary"> <span class="faq-item__question">¿Cuál es la Terminal de Autobuses en Colima?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">La principal Central de Autobuses de Colima se ubica en Carretera Guadalajara-Manzanillo Km. 2, Col. Oriental. Desde allí, podrás acceder fácilmente al centro de la ciudad y otros puntos de interés.</p>
+						</details>
+					</div>
+				</div>
+			</section>
+
+			<section class="cta">
+				<div class="container">
+					<h2 class="cta__title">¡Aprovecha Nuestras Promociones Especiales a Colima!</h2>
+					<p class="cta__subtitle">¡No te pierdas nuestra promoción! Hasta 5% de descuento en tu viaje de ida + 10% de descuento en tu regreso. Consulta términos y condiciones.</p>
+					<a href="../promociones/colima.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Colima" tabindex="0">Ver Todas las Promociones</a>
+				</div>
+			</section>
+			
 			<app-cookies-policy></app-cookies-policy>
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
-
-        `;
-		await this.loadAndRenderGridItems();
-		await this.loadAndRenderFoodCards();
-		await this.loadAndRenderDropdowns();
-		await this._configureDestinationSlider();
-	}
-
-	async loadAndRenderGridItems() {
-		const gridContainer = this.querySelector(
-			"#monterrey-grid-section .grid-container"
-		);
-		if (!gridContainer) {
-			console.error("El contenedor del grid no fue encontrado.");
-			return;
-		}
-
-		try {
-			const response = await fetch(
-				"../src/data/boletos-autobus/estado-de-mexico/lugares.json"
-			);
-			if (!response.ok) {
-				throw new Error(`Error HTTP: ${response.status}`);
-			}
-			const items = await response.json();
-
-			items.forEach((item) => {
-				const cardDiv = document.createElement("div");
-				cardDiv.className = `card ${item.className || ""}`.trim();
-				const bgValue = item.backgroundImage;
-
-				if (bgValue) {
-					if (bgValue.includes(".") || bgValue.includes("/")) {
-						cardDiv.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('${bgValue}')`;
-					} else {
-						cardDiv.style.backgroundColor = bgValue;
-					}
-				}
-
-				cardDiv.innerHTML = `<span>${item.text}</span>`;
-				gridContainer.appendChild(cardDiv);
-
-				cardDiv.addEventListener("click", () => this.openMultiImageModal(item));
-			});
-		} catch (error) {
-			console.error("Error al cargar los items del grid:", error);
-			gridContainer.innerHTML = "<p>Error al cargar el contenido del grid.</p>";
-		}
-	}
-
-	async loadAndRenderFoodCards() {
-		const foodContainer = this.querySelector(".container-cards__food");
-		if (!foodContainer) {
-			console.error(
-				"El contenedor '.container-cards__food' no fue encontrado."
-			);
-			return;
-		}
-		foodContainer.innerHTML = "";
-
-		try {
-			const response = await fetch(
-				"../src/data/boletos-autobus/estado-de-mexico/platillos-ciudad-de-mexico.json"
-			);
-			if (!response.ok) {
-				throw new Error(
-					`Error HTTP al cargar platillos-morelia.json: ${response.status}`
-				);
-			}
-			const foodData = await response.json();
-
-			if (!foodData || !Array.isArray(foodData) || foodData.length === 0) {
-				foodContainer.innerHTML =
-					"<p>No hay platillos para mostrar en este momento.</p>";
-				console.warn(
-					"No se encontraron datos de platillos en food-monterrey.json"
-				);
-				return;
-			}
-
-			foodData.forEach((foodItem) => {
-				const cardElement = document.createElement("app-card-open-modal");
-
-				cardElement.setAttribute(
-					"card-title",
-					foodItem.title || "Título no disponible"
-				);
-				cardElement.setAttribute(
-					"card-modal-description",
-					foodItem.description || "Descripción no disponible"
-				);
-				cardElement.setAttribute(
-					"card-image",
-					foodItem.imageSrc || "src/assets/img/global/default-card.png"
-				);
-				cardElement.setAttribute(
-					"card-modal-image",
-					foodItem.imageModal ||
-						foodItem.imageSrc ||
-						"src/assets/img/global/default-modal.png"
-				);
-				cardElement.setAttribute(
-					"card-alt",
-					foodItem.altText || foodItem.title || "Platillo"
-				);
-				cardElement.setAttribute(
-					"card-link-text",
-					foodItem.linkText || "Ver más..."
-				);
-				foodContainer.appendChild(cardElement);
-			});
-		} catch (error) {
-			console.error(
-				"Error al cargar o renderizar las tarjetas de comida:",
-				error
-			);
-			foodContainer.innerHTML =
-				"<p>Error al cargar la información de los platillos. Intente más tarde.</p>";
-		}
-	}
-	async loadAndRenderDropdowns() {
-		try {
-			const response = await fetch(
-				"../src/data/boletos-autobus/estado-de-mexico/dropdown-preguntas-frecuentes.json"
-			);
-			if (!response.ok) {
-				throw new Error(`HTTP error! status: ${response.status}`);
-			}
-			const dropdownsData = await response.json();
-			this.renderDropdowns(dropdownsData);
-		} catch (error) {
-			console.error("Error al cargar o parsear dropdown-data.json:", error);
-			const container = this.querySelector("#dropdowns-container");
-			if (container) {
-				container.innerHTML =
-					"<p>Error al cargar las preguntas frecuentes.</p>";
-			}
-		}
-	}
-
-	renderDropdowns(dropdownsData) {
-		const container = this.querySelector("#dropdowns-container");
-		if (!container) {
-			console.error("El contenedor #dropdowns-container no fue encontrado.");
-			return;
-		}
-		container.innerHTML = "";
-
-		dropdownsData.forEach((data) => {
-			const dropdownElement = document.createElement("app-dropdown");
-			dropdownElement.setAttribute("title-dropdown", data["title-dropdown"]);
-			dropdownElement.setAttribute(
-				"content-dropdown",
-				data["content-dropdown"]
-			);
-			container.appendChild(dropdownElement);
-		});
-	}
-
-	async _configureDestinationSlider() {
-		const sliderElement = this.querySelector("app-slider-opacity");
-		if (!sliderElement) {
-			console.error("AppMorelia: app-slider-opacity element not found.");
-			return;
-		}
-
-		try {
-			const response = await fetch(
-				"../src/data/boletos-autobus/estado-de-mexico/card-opacity-destinations.json"
-			);
-			if (!response.ok) {
-				throw new Error(
-					`HTTP error loading destination slider data! status: ${response.status}`
-				);
-			}
-			const destinationsData = await response.json();
-
-			sliderElement.setAttribute(
-				"destinations-data",
-				JSON.stringify(destinationsData)
-			);
-		} catch (error) {
-			console.error(
-				"AppMorelia: Error loading or setting data for destination slider:",
-				error
-			);
-			sliderElement.innerHTML =
-				'<p style="color: red; text-align: center;">Could not load destination slider.</p>';
-		}
-	}
-
-	openMultiImageModal(itemData) {
-		const modal = this.querySelector("app-modal-multi-image");
-		if (!modal) {
-			console.error("AppMorelia: app-modal-multi-image element not found.");
-			return;
-		}
-
-		modal.setAttribute("modal-title", itemData.text || "Detalles del Lugar");
-
-		modal.setAttribute("content-title", itemData.title || "");
-		modal.setAttribute("content-description", itemData.description || "");
-
-		modal.setAttribute("image-1", itemData.backgroundImage || "");
-		modal.setAttribute(
-			"alt-1",
-			`Imagen principal de ${itemData.text || "lugar"}`
-		);
-
-		modal.setAttribute("image-2", itemData.image2 || "");
-		modal.setAttribute(
-			"alt-2",
-			`Imagen adicional 1 de ${itemData.text || "lugar"}`
-		);
-
-		modal.setAttribute("image-3", itemData.image3 || "");
-		modal.setAttribute(
-			"alt-3",
-			`Imagen adicional 2 de ${itemData.text || "lugar"}`
-		);
-
-		modal.setAttribute("image-4", itemData.image4 || "");
-		modal.setAttribute(
-			"alt-4",
-			`Imagen adicional 3 de ${itemData.text || "lugar"}`
-		);
-
-		if (typeof modal.openModal === "function") {
-			modal.openModal();
-		} else if (typeof modal.open === "function") {
-			modal.open();
-		} else if (typeof modal.show === "function") {
-			modal.show();
-		} else {
-			console.warn(
-				'AppMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
-			);
-		}
+    `;
 	}
 }
 customElements.define("page-estado-de-mexico", AppEstadoDeMexico);
