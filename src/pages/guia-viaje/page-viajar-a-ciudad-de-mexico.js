@@ -18,7 +18,7 @@ class PageViajarACiudadDeMexico extends HTMLElement {
 
 <!-- Components for page -->
 
-<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/ciudad-de-mexico/banner/banner-guia-viaje-cdmx.webp");' data-alt="Vista panorámica del Zócalo de la Ciudad de México al atardecer">
+<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/banners/banner-guia-viaje-ciudad-de-mexico.webp");' data-alt="Vista panorámica del Zócalo de la Ciudad de México al atardecer">
   <div class="hero__content">
     <h1 class="hero__title">
       Descubre la Grandeza de la Ciudad de México
@@ -42,7 +42,7 @@ class PageViajarACiudadDeMexico extends HTMLElement {
     <div class="place-list">
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ciudad-de-mexico/destinos/zocalo-cdmx.webp");' data-alt="Catedral Metropolitana en el Zócalo de la CDMX"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/ciudad-de-mexico/zocalo-cdmx.webp");' data-alt="Catedral Metropolitana en el Zócalo de la CDMX"></div>
           <div class="place-card__content">
             <p class="place-card__title">1. Zócalo y Catedral Metropolitana</p>
             <p class="place-card__description">
@@ -54,7 +54,7 @@ class PageViajarACiudadDeMexico extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ciudad-de-mexico/destinos/chapultepec.webp");' data-alt="Castillo de Chapultepec sobre el Bosque de Chapultepec"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/ciudad-de-mexico/chapultepec.webp");' data-alt="Castillo de Chapultepec sobre el Bosque de Chapultepec"></div>
           <div class="place-card__content">
             <p class="place-card__title">2. Bosque y Castillo de Chapultepec</p>
             <p class="place-card__description">
@@ -66,7 +66,7 @@ class PageViajarACiudadDeMexico extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ciudad-de-mexico/destinos/xochimilco.webp");' data-alt="Canales de Xochimilco con trajineras coloridas"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/ciudad-de-mexico/xochimilco.webp");' data-alt="Canales de Xochimilco con trajineras coloridas"></div>
           <div class="place-card__content">
             <p class="place-card__title">3. Xochimilco</p>
             <p class="place-card__description">
@@ -78,7 +78,7 @@ class PageViajarACiudadDeMexico extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ciudad-de-mexico/destinos/museo-soumaya.webp");' data-alt="Museo Soumaya en Polanco, CDMX"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/ciudad-de-mexico/museo-soumaya.webp");' data-alt="Museo Soumaya en Polanco, CDMX"></div>
           <div class="place-card__content">
             <p class="place-card__title">4. Museo Soumaya y Plaza Carso</p>
             <p class="place-card__description">
@@ -90,7 +90,7 @@ class PageViajarACiudadDeMexico extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ciudad-de-mexico/destinos/mural.webp");' data-alt="Murales de Diego Rivera en el Palacio Nacional"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/ciudad-de-mexico/mural.webp");' data-alt="Murales de Diego Rivera en el Palacio Nacional"></div>
           <div class="place-card__content">
             <p class="place-card__title">5. Palacio Nacional y Murales de Diego Rivera</p>
             <p class="place-card__description">
@@ -108,19 +108,19 @@ class PageViajarACiudadDeMexico extends HTMLElement {
   <h2 class="section-title">Sabores de la Ciudad de México</h2>
   <div class="food-grid">
     <div class="food-card">
-      <img alt="Tacos al pastor con piña" class="food-card__image" src="../src/assets/img/guia-viaje/ciudad-de-mexico/platillos/tacos-pastor.webp">
+      <img alt="Tacos al pastor con piña" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/ciudad-de-mexico/tacos-pastor.webp">
       <h3 class="food-card__title">Tacos al Pastor</h3>
       <p class="food-card__description">Símbolo gastronómico de la CDMX. Carne de cerdo marinada con achiote y piña asada en trompo, servida en tortilla de maíz con cilantro, cebolla y salsa.</p>
     </div>
 
     <div class="food-card">
-      <img alt="Tlacoyos con nopales y queso fresco" class="food-card__image" src="../src/assets/img/guia-viaje/ciudad-de-mexico/platillos/tlacoyos.webp"> 
+      <img alt="Tlacoyos con nopales y queso fresco" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/ciudad-de-mexico/tlacoyos.webp"> 
       <h3 class="food-card__title">Tlacoyos</h3>
       <p class="food-card__description">Antojito prehispánico hecho de maíz azul o blanco, relleno de frijol, haba o requesón. Se sirve con nopales, queso fresco y salsa. Un clásico de los mercados y tianguis de la ciudad.</p>
     </div>
 
     <div class="food-card">
-      <img alt="Churros con chocolate en San Ángel" class="food-card__image" src="../src/assets/img/guia-viaje/ciudad-de-mexico/platillos/churros.webp">
+      <img alt="Churros con chocolate en San Ángel" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/ciudad-de-mexico/churros.webp">
       <h3 class="food-card__title">Churros y Chocolate</h3>
       <p class="food-card__description">Una tradición dulce que no puede faltar. Las churrerías del Centro y San Ángel ofrecen el mejor acompañamiento para una tarde de paseo.</p>
     </div>

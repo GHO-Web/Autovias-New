@@ -1,5 +1,4 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
-import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
@@ -11,174 +10,199 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppViajarAtlacomulco extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
-			<app-cotiza></app-cotiza>
-			<app-modal-travelpass></app-modal-travelpass>
-			<app-modal-doters></app-modal-doters>
-			<app-banner-slider
-					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/Atlacomulco_Banner_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/global/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
-			>
-			</app-banner-slider>
-			<app-payments></app-payments>
-			
-			<!-- Components for page -->
+class PageViajarAAtlacomulco extends HTMLElement {
+  async connectedCallback() {
+    this.innerHTML = `
+     <app-cotiza></app-cotiza>
 
-			<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwRaNTXjC4hzOr7ORLU-a3-j_UGbsvK7KtPHMWzlMIR7xRNvcNaGo5GljsW9D44Ws7OgfDXE9ZPKBCpsr_uf_g_-ztpdGzfFPThxKuqb2hzD5nT362Mv4oP93kRGTkAx9UnO_P23Y8b_Zh0Kzt0FfD8RNTp80XvDNVvgy3PM5RpC3-DSI9e35zvy0R7kCRBq5Q6i4QAZYrBVNatDorVIR8azyZFtazNR6phcIv6Whute_reg49odo8zdG3_O3E2MSzmGst9hwG-0A");'>
-					<div class="hero__content">
-							<h1 class="hero__title">Autobús a Morelia</h1>
-							<p class="hero__subtitle">Descubre la belleza de Morelia viajando en autobús desde la Ciudad de México. Disfruta de un viaje cómodo, seguro y económico.</p>
-							<a href="../destinos/autobus-a-atlacomulco.html" class="btn btn--primary btn--large" aria-label="Comprar boletos" tabindex="0">Conoce más</a>
-					</div>
-			</section>
+<!-- Components for page -->
 
-			<section class="features">
-					<div class="container">
-							<h2 class="section-title">¿Por qué viajar en autobús a Morelia?</h2>
-							<div class="features__grid">
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-armchair material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Comodidad</h3>
-											<p class="feature-card__description">Viaja en autobuses modernos con asientos reclinables, aire acondicionado y entretenimiento a bordo.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-pig material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Ahorro</h3>
-											<p class="feature-card__description">Disfruta de tarifas competitivas y promociones especiales para que tu viaje sea más accesible.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-travel-security material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Viaje sin complicaciones</h3>
-											<p class="feature-card__description">Olvídate del tráfico y el estrés de conducir. Relájate y disfruta del paisaje.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-montain material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Paisajes inolvidables</h3>
-											<p class="feature-card__description">Admira la belleza de los paisajes mexicanos durante tu trayecto a Morelia.</p>
-									</div>
-							</div>
-					</div>
-			</section>
+<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/banners/banner-guia-viaje-atlacomulco.webp");' data-alt="Paisaje montañoso de Atlacomulco al amanecer">
+  <div class="hero__content">
+    <h1 class="hero__title">
+      Descubre Atlacomulco, corazón del norte del Estado de México
+    </h1>
+    <h2 class="hero__subtitle">
+      Viaja cómodamente con Autovías La Línea y explora este destino lleno de paisajes, historia, sabores tradicionales y sitios naturales únicos.
+    </h2>
+    <a href="../destinos/autobus-a-atlacomulco.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver más sobre Atlacomulco" tabindex="0">Ver más sobre el destino</a>
+  </div>
+</section>
 
-			<section class="route-info">
-					<div class="container route-info__container">
-							<h2 class="section-title">Trayecto destacado CDMX → Morelia</h2>
-							<div class="route-info__card">
-									<div class="route-info__timeline">
-											<div class="route-info__line"></div>
-											<div class="route-info__stops">
-													<div class="route-info__stop">
-															<div class="route-info__stop-icon"><span class="icon-bus material-symbols-outlined"></span></div>
-															<span class="route-info__stop-name">Ciudad de México</span>
-													</div>
-													<div class="route-info__stop">
-															<span class="route-info__stop-name">Morelia</span>
-															<div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined"></span></div>
-													</div>
-											</div>
-									</div>
-									<div class="route-info__details-grid">
-											<div class="detail-item">
-													<p class="detail-item__label">Duración</p>
-													<p class="detail-item__value">4.5 horas</p>
-											</div>
-											<div class="detail-item">
-													<p class="detail-item__label">Frecuencia</p>
-													<p class="detail-item__value">Diaria</p>
-											</div>
-											<div class="detail-item">
-													<p class="detail-item__label">Tipo de autobús</p>
-													<p class="detail-item__value">Doble piso, Ejecutivo</p>
-											</div>
-									</div>
-							</div>
-					</div>
-			</section>
+<section class="content-section content-section--light">
+  <div class="container">
+    <p class="intro-text">
+      Atlacomulco es un destino ideal para quienes buscan tranquilidad, naturaleza y tradiciones auténticas. Rodeado de montañas y con un ambiente típico del Estado de México, combina zonas naturales, gastronomía tradicional y puntos históricos que vale la pena conocer.
+    </p>
+    <hr class="divider">
+    <h2 class="section-title">Top 5 Lugares Imprescindibles en Atlacomulco</h2>
 
-			<section class="attractions">
-					<div class="container">
-							<h2 class="section-title">Atracciones cerca de la terminal</h2>
-							<div class="attractions__grid">
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">Palacio de Gobierno</h3>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">La Soterraña</h3>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">Mercado Independencia</h3>
-											</div>
-									</div>
-							</div>
-					</div>
-			</section>
+    <div class="place-list">
 
-			<section class="faq">
-					<div class="container faq__container">
-							<h2 class="section-title">Preguntas frecuentes</h2>
-							<div class="faq__list">
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Cuál es el precio del boleto de autobús de CDMX a Morelia?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Los precios varían según la temporada, la línea de autobús y el tipo de servicio. Te recomendamos consultar los precios actualizados en nuestra sección de compra de boletos.</p>
-									</details>
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Cuáles son los horarios de salida de los autobuses?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Contamos con salidas diarias y frecuentes. Puedes ver todos los horarios disponibles al momento de seleccionar tu fecha de viaje en el portal de compra.</p>
-									</details>
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Qué servicios incluyen los autobuses ejecutivos?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Nuestros autobuses ejecutivos ofrecen asientos más amplios y cómodos, pantallas individuales, conexión Wi-Fi, sanitarios y un refrigerio de cortesía para hacer tu viaje más placentero.</p>
-									</details>
-							</div>
-					</div>
-			</section>
+      <!-- 1. La Colina de Atlacomulco -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/atlacomulco/colina.webp");' data-alt="La Colina de Atlacomulco"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">1. La Colina de Atlacomulco</p>
+            <p class="place-card__description">
+              Un punto icónico del municipio que ofrece vistas panorámicas espectaculares. Ideal para caminar, tomar fotos y disfrutar del paisaje natural.
+            </p>
+          </div>
+        </div>
+      </div>
 
-			<section class="cta">
-					<div class="container">
-							<h2 class="cta__title">¡Viaja a Morelia con Autovías La Línea!</h2>
-							<p class="cta__subtitle">No esperes más para descubrir una de las ciudades más bellas de México. Tu aventura está a solo un clic de distancia.</p>
-							<a href="../destinos/autobus-a-atlacomulco.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Comprar boletos" tabindex="0">Consulta horarios y compra tu boleto</a>
-					</div>
-			</section>
-			
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+      <!-- 2. Museo Histórico de Atlacomulco -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/atlacomulco/museo-historico.webp");' data-alt="Museo Histórico de Atlacomulco"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">2. Museo Histórico de Atlacomulco</p>
+            <p class="place-card__description">
+              Aquí puedes conocer más sobre la historia del municipio a través de fotografías, documentos y piezas culturales que muestran su evolución.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Parque Recreativo Las Fuentes -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/atlacomulco/las-fuentes.webp");' data-alt="Parque Recreativo Las Fuentes"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">3. Parque Recreativo Las Fuentes</p>
+            <p class="place-card__description">
+              Un entorno ideal para disfrutar entre árboles, senderos y áreas verdes. Perfecto para caminar, convivir y descansar.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Parroquia del Municipio -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/atlacomulco/parroquia.webp");' data-alt="Parroquia del Municipio"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">4. Parroquia del Municipio</p>
+            <p class="place-card__description">
+              Un templo tradicional con arquitectura destacada y gran importancia cultural. Su plaza es un punto central de convivencia.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Centro de Atlacomulco -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/atlacomulco/centro.webp");' data-alt="Centro de Atlacomulco"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">5. Centro de Atlacomulco</p>
+            <p class="place-card__description">
+              El corazón del municipio: comercio, gastronomía, cultura y vida cotidiana. Ideal para caminar, comprar y disfrutar de la esencia local.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="content-section content-section--darker">
+  <div class="container">
+  <h2 class="section-title">Sabores de Atlacomulco</h2>
+  <div class="food-grid">
+
+    <div class="food-card">
+      <img alt="Plato de barbacoa tradicional" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/atlacomulco/barbacoa.webp">
+      <h3 class="food-card__title">Barbacoa Tradicional</h3>
+      <p class="food-card__description">Uno de los platillos más representativos de la región, preparada al estilo mexiquense con horno de tierra. Se acompaña con consomé, tortillas hechas a mano y salsas frescas.</p>
+    </div>
+
+    <div class="food-card">
+      <img alt="Tortitas de haba" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/atlacomulco/tortitas-haba.webp"> 
+      <h3 class="food-card__title">Tortitas de Haba</h3>
+      <p class="food-card__description">Un clásico de la zona: masa de haba molida mezclada con especias, frita y servida con caldillo rojo. Sabor casero y auténticamente mexiquense.</p>
+    </div>
+
+    <div class="food-card">
+      <img alt="Atole de guayaba" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/atlacomulco/atole.webp">
+      <h3 class="food-card__title">Atole de Frutas</h3>
+      <p class="food-card__description">Perfecto para las mañanas frías. Los más populares son de guayaba, ciruela y zarzamora, preparados de forma tradicional.</p>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<section class="content-section content-section--light">
+  <div class="container container--narrow">
+    <h2 class="section-title">Tips de Viaje para Atlacomulco</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Cuál es la mejor época para visitar?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          De noviembre a marzo el clima es fresco y agradable. En verano las lluvias son frecuentes, pero los paisajes se vuelven más verdes y hermosos.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Cómo moverse por el municipio?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          El transporte local es económico, pero para visitar zonas naturales cerca del municipio lo mejor es usar taxi autorizado o vehículo particular.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Dónde hospedarse?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          El centro de Atlacomulco ofrece hoteles cómodos y bien ubicados. También hay eco-hoteles y cabañas en los alrededores para una experiencia más natural.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Qué precauciones tomar?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Lleva ropa abrigadora, especialmente por la noche, y evita caminos rurales sin señalización si viajas por tu cuenta.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Qué souvenirs llevar?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Dulces regionales, artesanías otomíes, quesos locales y productos agrícolas de la región, como avena o frutos rojos.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2 class="cta-section__title">¿Listo para tu viaje a Atlacomulco?</h2>
+  <p class="cta-section__text">Viaja con comodidad y puntualidad con Autovías La Línea. Descubre paisajes naturales, tradiciones y sabores únicos del norte del Estado de México.</p>
+  <a href="../destinos/autobus-a-atlacomulco.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver más sobre Atlacomulco" tabindex="0">Ver más sobre el destino</a>
+</section>
+
+<app-cookies-policy></app-cookies-policy>
+<app-button-whats></app-button-whats>
+<app-button-eva-trip></app-button-eva-trip>
 
     `;
-	}
+  }
 }
-customElements.define("page-viajar-a-atlacomulco", AppViajarAtlacomulco);
+customElements.define("page-viajar-a-atlacomulco", PageViajarAAtlacomulco);
