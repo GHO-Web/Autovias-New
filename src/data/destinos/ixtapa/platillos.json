@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Tiritas de Pescado",
+    "description": "El platillo más representativo de Zihuatanejo e Ixtapa. Consiste en tiras delgadas de pescado fresco marinadas en jugo de limón, mezcladas con cebolla morada y chile. Es fresco, ligero y muy popular en la costa.",
+    "imageSrc": "../src/assets/img/platillos/ixtapa/tiritas1.webp",
+    "imageModal": "../src/assets/img/platillos/ixtapa/tiritas2.webp",
+    "altText": "Tiritas de Pescado",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Pescado a la Talla",
+    "description": "Un clásico de la costa guerrerense. El pescado entero se adoba con una mezcla de chiles, ajo y especias, luego se asa sobre brasas, logrando un sabor ahumado y jugoso. Se acompaña con arroz, ensalada y tortillas.",
+    "imageSrc": "../src/assets/img/platillos/ixtapa/talla1.webp",
+    "imageModal": "../src/assets/img/platillos/ixtapa/talla2.webp",
+    "altText": "Pescado a la Talla",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Camarones al Mojo de Ajo",
+    "description": "Camarones frescos salteados en mantequilla con abundante ajo y un toque de limón. Es un platillo muy solicitado en restaurantes frente al mar en Ixtapa, acompañado de arroz y ensalada.",
+    "imageSrc": "../src/assets/img/platillos/ixtapa/camaron-ajo1.webp",
+    "imageModal": "../src/assets/img/platillos/ixtapa/camaron-ajo2.webp",
+    "altText": "Camarones al Mojo de Ajo",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Coco Loco",
+    "description": "Una de las bebidas más famosas en las playas de Ixtapa. Se sirve en un coco fresco y combina ron, tequila y vodka con jugos tropicales. Refrescante, exótico y muy solicitado por los turistas.",
+    "imageSrc": "../src/assets/img/platillos/ixtapa/coco-loco1.webp",
+    "imageModal": "../src/assets/img/platillos/ixtapa/coco-loco2.webp",
+    "altText": "Coco Loco",
+    "linkText": "Ver..."
+  }
+]
