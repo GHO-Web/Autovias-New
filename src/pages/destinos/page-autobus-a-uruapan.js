@@ -26,177 +26,294 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 			
 			<!-- Components for page -->
 
-			<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDns_0shPK-2nErpAPYDUpUxwqTxQVi6CYtKnLzNyg9WpnR_5K29L7w55xX7sLqFL-0N3v61AKpQnDjNlHpQsyvKIgfSMnzP8FcS9y_wjwtn-LTdYvhQ47thgPx25OYK1av2aLqgYXlaJb5LZXR1cp4D8Ev4fJGJ2Ydi-tnuU8LNazUU767S-2Tr2I4oXHST8jXrWC9aBNw-nM0-GIwb2csgmYqHBk-Sd0KW8cJf1sCD9xcCSBjqzhdXdBR5gCuqyCF6dGTI34kgB0x");'>
-        <article class="container hero__content">
-            <h1 class="hero__title">Autobús a Morelia</h1>
-            <p class="hero__subtitle">
-                Viaja desde CDMX a Morelia con la máxima comodidad y seguridad. Disfruta de un viaje sin preocupaciones y llega a tu destino listo para explorar.
-            </p>
-            <a href="../boletos-autobus/uruapan.html" class="btn btn--primary" target="_blank" aria-label="Comprar boletos" tabindex="0">
-                Comprar boletos
-            </a>
-        </article>
+
+			<section class="__section __section__monterrey__destinations">
+				<app-section-title section-title="Viaja a Uruapan en autobús con ETN Turistar Lujo"></app-section-title>
+				<p class="__subtitle__destinos">Uruapan</p>
+				<p class="__paragraph">Uruapan, corazón de la Meseta Purépecha y puerta al Parque Nacional Barranca del Cupatitzio, te invita a descubrir un destino lleno de historia, naturaleza exuberante y una identidad cultural que late en cada rincón. Con ETN Turistar Lujo, llegar a esta joya de Michoacán es tan cómodo como inspirador. Disfruta de un viaje seguro, relajado y con todo el confort que mereces.</p>
+				<p class="__paragraph">Bienvenido a Uruapan, donde la tradición y la naturaleza se abrazan en una experiencia única. Esta ciudad michoacana te cautiva con sus cascadas cristalinas, arquitectura virreinal y el legado ancestral de la cultura purépecha. Recorre el emblemático Parque Nacional Barranca del Cupatitzio, donde el río nace entre manantiales y senderos frondosos. Admira el arte del maque en el Museo La Huatápera, pasea por el pintoresco centro histórico y sumérgete en la espiritualidad del Antiguo Templo de San Juan Bautista. Además, si visitas en Semana Santa, no te pierdas el Tianguis Artesanal más grande de América Latina.</p>
 			</section>
 
-			<section class="features">
-					<div class="container">
-							<div class="section-header">
-									<h2 class="section-title">¿Por qué viajar en autobús a Morelia?</h2>
-									<p class="section-subtitle">Descubre los beneficios que hacen de tu viaje una experiencia única.</p>
-							</div>
-							<article class="features__grid">
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-armchair material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Comodidad garantizada</h3>
-											<p class="feature-card__description">Asientos reclinables, aire acondicionado y entretenimiento a bordo para un viaje placentero.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-pig material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Ahorro inteligente</h3>
-											<p class="feature-card__description">Precios accesibles y promociones especiales para que tu viaje sea económico.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-car material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Viaje sin complicaciones</h3>
-											<p class="feature-card__description">Olvídate del tráfico y el estacionamiento. Relájate y disfruta del camino.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-camera material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Paisajes inolvidables</h3>
-											<p class="feature-card__description">Admira la belleza de los paisajes mexicanos mientras te diriges a tu destino.</p>
-									</div>
-							</article>
-					</div>
+			<section class="__section __section__grid" id="monterrey-grid-section">
+				<article class="grid-container">
+						<!-- Los elementos del grid se cargarán aquí -->
+				</article>
 			</section>
-
-			<section class="route-info">
-					<div class="container">
-							<div class="section-header">
-									<h2 class="section-title">Trayecto CDMX → Morelia</h2>
-							</div>
-							<article class="route-info__table-container">
-									<div class="table-wrapper">
-											<table class="data-table">
-													<thead>
-															<tr>
-																	<th>Característica</th>
-																	<th>Detalle</th>
-															</tr>
-													</thead>
-													<tbody>
-															<tr>
-																	<td>Duración</td>
-																	<td>Aproximadamente 4 horas</td>
-															</tr>
-															<tr>
-																	<td>Frecuencia</td>
-																	<td>Salidas cada hora</td>
-															</tr>
-															<tr>
-																	<td>Tipo de autobús</td>
-																	<td>Ejecutivo y de lujo</td>
-															</tr>
-													</tbody>
-											</table>
-									</div>
-							</article>
-					</div>
+				<p class="__subtitle__destinos">Gastronomía</p>
+			<section class="__section __section__monterrey__food">
+				<p class="__paragraph__xl">Uruapan deleita al paladar con sabores que son herencia viva de la cocina purépecha. Prueba las tradicionales corundas con crema y queso, los uchepos recién salidos del vapor, las carnitas michoacanas y la emblemática sopa tarasca. En sus mercados y fondas, la autenticidad es la protagonista, y cada platillo es un viaje por los sabores del alma michoacana.</p>
+					<article class="container-cards__food">
+						<!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
+				</article>
 			</section>
-
-			<section class="attractions">
-					<div class="container">
-							<div class="section-header">
-									<h2 class="section-title">Atracciones cerca de la terminal</h2>
-									<p class="section-subtitle">Aprovecha al máximo tu llegada a Morelia.</p>
-							</div>
-							<article class="attractions__grid">
-									<div class="attraction-card">
-											<img alt="Palacio de Gobierno de Morelia" class="attraction-card__image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClcDGRROURk5mV6h5ozmbtxsdPrxtSJ1AK6JhHYDKFujrHBEg9yHxzGTGW2ygDKDQ-M2V7ARuevMoA0iL3ndJbxgvg0OCVwIJgKlgri-x-hox-JJTVLMRpsy6riyc-27Yib7zY6aR3NFeO3zoWIqOlPRnKhxyDGfmrDOPhnfoX0K6zbH_7QpF66eVaIemziMmB7WyEWb_G57ZVEZn8haKDyBirf5XJljj8Kwx0oMYTNHU6wyqjwxxkTMuqJc-_p3V6at78V1m6rAii"/>
-											<div>
-													<h3 class="attraction-card__title">Palacio de Gobierno</h3>
-													<p class="attraction-card__description">Admira la arquitectura colonial y la historia de este emblemático edificio.</p>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<img alt="La Soterraña, acueducto subterráneo en Morelia" class="attraction-card__image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS60Wogx2Dqx5br7MKZIYdbYxmpzZeYviADMhei5eWnewxllDRu3hBt1KyxBtJQ5v3OuU-ffL6QTdR44BIJYulYnYNr5F9aaegoIxgSZTt8RqfCEJvXapjPGUc3ZJtkTEB8ogiRScJr8pM9arChBVOOvGZsGyBeK7VTp0EvXZVxuANKHYR3MorKM3p-Dazz8LoWCxssPGwvc_4ahmjSIklU9sK1mywUWT22X1RKvI7kbe_EF26FdnWVQxVEc7S3ASfXM2JYO8J49ab"/>
-											<div>
-													<h3 class="attraction-card__title">La Soterraña</h3>
-													<p class="attraction-card__description">Explora este antiguo acueducto subterráneo y descubre su fascinante pasado.</p>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<img alt="Mercado Independencia en Morelia" class="attraction-card__image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBfcdADlt1nRTjF2I21lukvtJDe7H4EgsWA6l3amfrx8jHXJevrlsM2ZfRY5eQd6RvTZcdNEpEyV8djjEFbbJMyEQzbBjS83s9vspJ4nSNugMcTLzQKc_rsvbbmDoHw7XRatFHULsolj29D6x-8b8JvltVGjySScb6sIjGY4_u0qLJ2SfbL241Mlr_aVHqExfqte56PNdZV0brgqunRkqzV8id4qd0SS16NW6JThJLIALgsTzFIlWyxMxMp5edDCISKfxY4gzxUDH_"/>
-											<div>
-													<h3 class="attraction-card__title">Mercado Independencia</h3>
-													<p class="attraction-card__description">Sumérgete en la cultura local y disfruta de la gastronomía moreliana.</p>
-											</div>
-									</div>
-							</article>
-					</div>
-			</section>
-
-			<section class="faq">
-					<div class="container">
-							<article class="faq__content">
-									<h2 class="section-title">Preguntas Frecuentes</h2>
-									<div class="faq__list">
-											<details class="faq-item" open>
-													<summary class="faq-item__summary">
-															<h3 class="faq-item__question">¿Cuál es el costo del boleto?</h3>
-															<div class="faq-item__icon">
-																	<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-															</div>
-													</summary>
-													<p class="faq-item__answer">El costo del boleto varía según la temporada y el tipo de autobús. Consulta nuestros precios en línea o en taquilla.</p>
-											</details>
-											<details class="faq-item">
-													<summary class="faq-item__summary">
-															<h3 class="faq-item__question">¿Qué servicios incluye el viaje?</h3>
-															<div class="faq-item__icon">
-																	<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-															</div>
-													</summary>
-													<p class="faq-item__answer">Nuestros autobuses cuentan con Wi-Fi, conexiones eléctricas, baño y asientos cómodos para garantizar un viaje placentero.</p>
-											</details>
-											<details class="faq-item">
-													<summary class="faq-item__summary">
-															<h3 class="faq-item__question">¿Cómo puedo comprar mis boletos?</h3>
-															<div class="faq-item__icon">
-																	<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path></svg>
-															</div>
-													</summary>
-													<p class="faq-item__answer">Puedes comprar tus boletos fácilmente a través de nuestra página web, nuestra aplicación móvil, o directamente en las taquillas de la terminal.</p>
-											</details>
-									</div>
-							</artile>
-					</div>
-			</section>
-
+            
 			<section class="cta">
-					<article class="container cta__content">
-							<h2 class="cta__title">¡Viaja a Morelia con Autovías La Línea!</h2>
-							<p class="cta__subtitle">No esperes más, reserva tu asiento ahora y prepárate para una experiencia inolvidable.</p>
-							<div class="cta__action">
-									<a href="../boletos-autobus/uruapan.html" class="btn btn--primary" aria-label="Comprar boletos" tabindex="0">
-											Comprar boletos ahora
-									</a>
-							</div>
-					</article>
+				<div class="container">
+					<h2 class="cta__title">¡Viaja a Ciudad de México con ETN Turistar!</h2>
+					<p class="cta__subtitle">No esperes más para vivir esta experiencia inolvidable. Tu aventura está a solo un clic de distancia.</p>
+					<a href="../boletos-autobus/ixtapa-zihuatanejo.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Comprar boletos" tabindex="0">Consulta horarios y compra tu boleto</a>
+				</div>
 			</section>
+
+             <section class="__section __section__monterrey__ask">
+                <app-section-title section-title="Preguntas Frecuentes"></app-section-title>
+                <article class="__grid-cards-container__dropdown" id="dropdowns-container">
+                    <!-- Contenedor para los dropdowns -->
+                </article>
+            </section>
+
+              <section class="__section __section__monterrey__other">
+                <app-section-title section-title="Otros destinos"></app-section-title>
+                <article class="container-slider-other">
+                    <app-slider-opacity></app-slider-opacity>
+                </article>
+             </section>
+
+			<app-modal-multi-image></app-modal-multi-image>
+			<app-modal-image></app-modal-image>
+
+			
 			
 			<app-cookies-policy></app-cookies-policy>
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
+        `;
+    await this.loadAndRenderGridItems();
+    await this.loadAndRenderFoodCards();
+    await this.loadAndRenderDropdowns();
+    await this._configureDestinationSlider();
+  }
 
-    `;
-	}
+  async loadAndRenderGridItems() {
+    const gridContainer = this.querySelector(
+      "#monterrey-grid-section .grid-container"
+    );
+    if (!gridContainer) {
+      console.error("El contenedor del grid no fue encontrado.");
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        "../../src/data/destinos/ixtapa/lugares.json"
+      );
+      if (!response.ok) {
+        throw new Error(`Error HTTP: ${response.status}`);
+      }
+      const items = await response.json();
+
+      items.forEach((item) => {
+        const cardDiv = document.createElement("div");
+        cardDiv.className = `card ${item.className || ""}`.trim();
+        const bgValue = item.backgroundImage;
+
+        if (bgValue) {
+          if (bgValue.includes(".") || bgValue.includes("/")) {
+            cardDiv.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('${bgValue}')`;
+          } else {
+            cardDiv.style.backgroundColor = bgValue;
+          }
+        }
+
+        cardDiv.innerHTML = `<span>${item.text}</span>`;
+        gridContainer.appendChild(cardDiv);
+
+        cardDiv.addEventListener("click", () => this.openMultiImageModal(item));
+      });
+    } catch (error) {
+      console.error("Error al cargar los items del grid:", error);
+      gridContainer.innerHTML = "<p>Error al cargar el contenido del grid.</p>";
+    }
+  }
+
+  async loadAndRenderFoodCards() {
+    const foodContainer = this.querySelector(".container-cards__food");
+    if (!foodContainer) {
+      console.error(
+        "El contenedor '.container-cards__food' no fue encontrado."
+      );
+      return;
+    }
+    foodContainer.innerHTML = "";
+
+    try {
+      const response = await fetch(
+        "../../src/data/destinos/ixtapa/platillos.json"
+      );
+      if (!response.ok) {
+        throw new Error(
+          `Error HTTP al cargar platillos-morelia.json: ${response.status}`
+        );
+      }
+      const foodData = await response.json();
+
+      if (!foodData || !Array.isArray(foodData) || foodData.length === 0) {
+        foodContainer.innerHTML =
+          "<p>No hay platillos para mostrar en este momento.</p>";
+        console.warn(
+          "No se encontraron datos de platillos en food-monterrey.json"
+        );
+        return;
+      }
+
+      foodData.forEach((foodItem) => {
+        const cardElement = document.createElement("app-card-open-modal");
+
+        cardElement.setAttribute(
+          "card-title",
+          foodItem.title || "Título no disponible"
+        );
+        cardElement.setAttribute(
+          "card-modal-description",
+          foodItem.description || "Descripción no disponible"
+        );
+        cardElement.setAttribute(
+          "card-image",
+          foodItem.imageSrc || "../../src/assets/img/global/default-card.png"
+        );
+        cardElement.setAttribute(
+          "card-modal-image",
+          foodItem.imageModal ||
+            foodItem.imageSrc ||
+            "../../src/assets/img/global/default-modal.png"
+        );
+        cardElement.setAttribute(
+          "card-alt",
+          foodItem.altText || foodItem.title || "Platillo"
+        );
+        cardElement.setAttribute(
+          "card-link-text",
+          foodItem.linkText || "Ver más..."
+        );
+        foodContainer.appendChild(cardElement);
+      });
+    } catch (error) {
+      console.error(
+        "Error al cargar o renderizar las tarjetas de comida:",
+        error
+      );
+      foodContainer.innerHTML =
+        "<p>Error al cargar la información de los platillos. Intente más tarde.</p>";
+    }
+  }
+  async loadAndRenderDropdowns() {
+    try {
+      const response = await fetch(
+        "../../src/data/destinos/ixtapa/dropdown-preguntas-frecuentes.json"
+      );
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const dropdownsData = await response.json();
+      this.renderDropdowns(dropdownsData);
+    } catch (error) {
+      console.error("Error al cargar o parsear dropdown-data.json:", error);
+      const container = this.querySelector("#dropdowns-container");
+      if (container) {
+        container.innerHTML =
+          "<p>Error al cargar las preguntas frecuentes.</p>";
+      }
+    }
+  }
+
+  renderDropdowns(dropdownsData) {
+    const container = this.querySelector("#dropdowns-container");
+    if (!container) {
+      console.error("El contenedor #dropdowns-container no fue encontrado.");
+      return;
+    }
+    container.innerHTML = "";
+
+    dropdownsData.forEach((data) => {
+      const dropdownElement = document.createElement("app-dropdown");
+      dropdownElement.setAttribute("title-dropdown", data["title-dropdown"]);
+      dropdownElement.setAttribute(
+        "content-dropdown",
+        data["content-dropdown"]
+      );
+      container.appendChild(dropdownElement);
+    });
+  }
+
+  async _configureDestinationSlider() {
+    const sliderElement = this.querySelector("app-slider-opacity");
+    if (!sliderElement) {
+      console.error("AppMorelia: app-slider-opacity element not found.");
+      return;
+    }
+
+    try {
+      const response = await fetch(
+        "../../src/data/destinos/card-opacity-destinations.json"
+      );
+      if (!response.ok) {
+        throw new Error(
+          `HTTP error loading destination slider data! status: ${response.status}`
+        );
+      }
+      const destinationsData = await response.json();
+
+      sliderElement.setAttribute(
+        "destinations-data",
+        JSON.stringify(destinationsData)
+      );
+    } catch (error) {
+      console.error(
+        "AppMorelia: Error loading or setting data for destination slider:",
+        error
+      );
+      sliderElement.innerHTML =
+        '<p style="color: red; text-align: center;">Could not load destination slider.</p>';
+    }
+  }
+
+  openMultiImageModal(itemData) {
+    const modal = this.querySelector("app-modal-multi-image");
+    if (!modal) {
+      console.error("AppMorelia: app-modal-multi-image element not found.");
+      return;
+    }
+
+    modal.setAttribute("modal-title", itemData.text || "Detalles del Lugar");
+
+    modal.setAttribute("content-title", itemData.title || "");
+    modal.setAttribute("content-description", itemData.description || "");
+
+    modal.setAttribute("image-1", itemData.backgroundImage || "");
+    modal.setAttribute(
+      "alt-1",
+      `Imagen principal de ${itemData.text || "lugar"}`
+    );
+
+    modal.setAttribute("image-2", itemData.image2 || "");
+    modal.setAttribute(
+      "alt-2",
+      `Imagen adicional 1 de ${itemData.text || "lugar"}`
+    );
+
+    modal.setAttribute("image-3", itemData.image3 || "");
+    modal.setAttribute(
+      "alt-3",
+      `Imagen adicional 2 de ${itemData.text || "lugar"}`
+    );
+
+    modal.setAttribute("image-4", itemData.image4 || "");
+    modal.setAttribute(
+      "alt-4",
+      `Imagen adicional 3 de ${itemData.text || "lugar"}`
+    );
+
+    if (typeof modal.openModal === "function") {
+      modal.openModal();
+    } else if (typeof modal.open === "function") {
+      modal.open();
+    } else if (typeof modal.show === "function") {
+      modal.show();
+    } else {
+      console.warn(
+        'AppMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
+      );
+    }
+  }
 }
 customElements.define("page-autobus-a-uruapan", AppBoletosAutobusUruapan);
