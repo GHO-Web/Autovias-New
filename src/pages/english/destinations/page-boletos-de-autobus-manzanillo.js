@@ -25,9 +25,9 @@ class PageBoletosAutobusManzanilloEnglish extends HTMLElement {
         <app-description-destination
           title-text="Manzanillo is waiting. Autovías La Línea will take you there."
           image-data='[
-            {"id": "1", "src": "../../src/assets/img/english/destinations/manzanillo/overflow-images/balsas.webp", "alt": "Miramar Beach"},
-            {"id": "2", "src": "../../src/assets/img/english/destinations/manzanillo/overflow-images/jilotepec.webp", "alt": "Las Hadas Marina"},
-            {"id": "3", "src": "../../src/assets/img/english/destinations/manzanillo/overflow-images/recreational.webp", "alt": "Espíritu Santo Promenade"}
+            {"id": "1", "src": "../../src/assets/img/english/destinations/manzanillo/overflow-images/miramar.webp", "alt": "Miramar Beach"},
+            {"id": "2", "src": "../../src/assets/img/english/destinations/manzanillo/overflow-images/hadas.webp", "alt": "Las Hadas Marina"},
+            {"id": "3", "src": "../../src/assets/img/english/destinations/manzanillo/overflow-images/espiritu.webp", "alt": "Espíritu Santo Promenade"}
           ]'
           paragraph-text="Manzanillo is a coastal paradise on Mexico’s Pacific shore, known for its golden beaches, vibrant marine life, and laid-back charm. As one of the country’s busiest ports and a favorite vacation spot, this destination blends adventure and relaxation in equal measure. From its scenic promenades and luxury marinas to its surf-friendly beaches and tropical sunsets, Manzanillo invites travelers to unwind, explore, and enjoy the rhythm of the ocean — with style and peace of mind."
         ></app-description-destination>

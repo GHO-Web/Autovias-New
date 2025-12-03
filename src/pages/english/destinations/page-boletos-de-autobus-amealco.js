@@ -25,9 +25,9 @@ class PageBoletosAutobusAmealcoEnglish extends HTMLElement {
         <app-description-destination
           title-text="Amealco is waiting. Autovías La Línea will take you there."
           image-data='[
-            {"id": "1", "src": "../../src/assets/img/english/destinations/amealco/overflow-images/fuente.webp", "alt": "Muñeca Museum"},
-            {"id": "2", "src": "../../src/assets/img/english/destinations/amealco/overflow-images/chupicuaro.webp", "alt": "Cerro de los Gallos Park"},
-            {"id": "3", "src": "../../src/assets/img/english/destinations/amealco/overflow-images/solis.webp", "alt": "San Ildefonso Artisan Workshops"}
+            {"id": "1", "src": "../../src/assets/img/english/destinations/amealco/overflow-images/muneca.webp", "alt": "Muñeca Museum"},
+            {"id": "2", "src": "../../src/assets/img/english/destinations/amealco/overflow-images/cerro.webp", "alt": "Cerro de los Gallos Park"},
+            {"id": "3", "src": "../../src/assets/img/english/destinations/amealco/overflow-images/artisan.webp", "alt": "San Ildefonso Artisan Workshops"}
           ]'
           paragraph-text="Amealco is a highland town rich in Otomí tradition, nestled among pine forests and rolling hills. Known for its handmade dolls, vibrant markets, and cultural depth, this Pueblo Mágico offers a peaceful yet colorful escape. From its scenic parks and artisan workshops to its community museums and indigenous heritage, Amealco invites travelers to explore a quieter, more authentic side of Mexico — with style and peace of mind."
         ></app-description-destination>
@@ -61,7 +61,7 @@ class PageBoletosAutobusAmealcoEnglish extends HTMLElement {
       </section>
         
       <section class="__section">
-        <app-section-title section-title="Explore more destinations with ETN Turistar Mexico is waiting for you."></app-section-title>
+        <app-section-title section-title="Explore more destinations with Autovías Mexico is waiting for you."></app-section-title>
         <app-destiny-slider src="../../src/data/english/destinations/amealco/grid-text-data.json"></app-destiny-slider>
       </section>
 		<app-cookies-policy-english></app-cookies-policy-english>

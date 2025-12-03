@@ -1,0 +1,6 @@
+User-agent: Googlebot
+
+Disallow: /.htaccess/
+Disallow: /gho/autobuses-hp/
+
+Sitemap: https://www.autovias.com.mx/sitemap.xml

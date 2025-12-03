@@ -110,6 +110,7 @@ import "./english/destinations/page-boletos-de-autobus-colima.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-dolores-hidalgo-gto.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-guadalajara.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-huetamo.js?v=1.3.3";
+import "./english/destinations/page-boletos-de-autobus-ixtapa.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-jilotepec.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-manzanillo.js?v=1.3.3";
 import "./english/destinations/page-boletos-de-autobus-maravatio.js?v=1.3.3";
@@ -140,6 +141,11 @@ import "./english/legal/terminos-condiciones/page-terminos-buen-fin.js?v=1.0.0";
 import "./english/legal/terminos-condiciones/page-terminos-condiciones.js?v=1.0.0";
 import "./english/legal/terminos-condiciones/page-terminos-hot-travel.js?v=1.0.0";
 import "./english/legal/terminos-condiciones/page-viajero-protegido.js?v=1.0.0";
+
+// OTHERS
+
+import "./english/page-site-map.js?v=1.3.3";
+
 
 /*------------------------------- PACK MULTIENLACE---------------------------------*/
 

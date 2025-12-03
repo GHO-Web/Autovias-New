@@ -36,8 +36,7 @@ class PageBoletosAutobusHuetamoEnglish extends HTMLElement {
         <app-section-title section-title="Explore the Highlights of Huetamo"></app-section-title>
         <app-explore-section></app-explore-section>
       </section>
-        
-        
+      
       <section class="__section">
         <app-section-title section-title="Hungry for México? Start here."></app-section-title>
         <app-banner-multi-image></app-banner-multi-image>

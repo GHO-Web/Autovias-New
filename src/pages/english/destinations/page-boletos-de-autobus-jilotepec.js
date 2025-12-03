@@ -25,9 +25,9 @@ class PageBoletosAutobusJilotepecEnglish extends HTMLElement {
         <app-description-destination
           title-text="Jilotepec is waiting. Autovías La Línea will take you there."
           image-data='[
-            {"id": "1", "src": "../../src/assets/img/english/destinations/jilotepec/overflow-images/balsas.webp", "alt": "Las Peñas Rock Formations"},
-            {"id": "2", "src": "../../src/assets/img/english/destinations/jilotepec/overflow-images/jilotepec.webp", "alt": "Manuel Ávila Camacho Plaza"},
-            {"id": "3", "src": "../../src/assets/img/english/destinations/jilotepec/overflow-images/recreational.webp", "alt": "Huamango Archaeological Site"}
+            {"id": "1", "src": "../../src/assets/img/english/destinations/jilotepec/overflow-images/penas-rock.webp", "alt": "Las Peñas Rock Formations"},
+            {"id": "2", "src": "../../src/assets/img/english/destinations/jilotepec/overflow-images/plaza.webp", "alt": "Manuel Ávila Camacho Plaza"},
+            {"id": "3", "src": "../../src/assets/img/english/destinations/jilotepec/overflow-images/archaeological.webp", "alt": "Huamango Archaeological Site"}
           ]'
           paragraph-text="Jilotepec is a mountain town in northern Estado de México, known for its rugged landscapes, Otomí heritage, and adventurous spirit. Surrounded by forests, canyons, and ancient ruins, this destination blends natural beauty with cultural depth. From its panoramic rock formations to its vibrant central plaza and pre-Hispanic legacy, Jilotepec invites travelers to explore a highland escape — with style and peace of mind."
         ></app-description-destination>
