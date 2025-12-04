@@ -29,42 +29,42 @@ class AppViajarMorelia extends HTMLElement {
 
 			<section class="hero">
 				<div class="hero__content">
-					<h1 class="hero__title">Autobús a Morelia</h1>
-					<p class="hero__subtitle">Descubre Morelia, una ciudad llena de historia, magia y cultura, con festivales internacionales y arquitectura colonial.</p>
+					<h1 class="hero__title">Boletos de Autobús a Morelia</h1>
+					<p class="hero__subtitle">Descubre el encanto de la capital michoacana con el servicio de autobús líder. Tu aventura comienza aquí.</p>
 				</div>
 			</section>
 
 			<section class="features">
 				<div class="container">
-					<h2 class="section-title">¿Por qué viajar en autobús a Morelia?</h2>
+					<h2 class="section-title">Autovías: Tu Mejor Opción para un Viaje Inolvidable a Morelia</h2>
 					<div class="features__grid">
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-armchair material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Comodidad Premium</h3>
-							<p class="feature-card__description">Viaja sin preocupaciones en autobuses equipados con wifi, asientos reclinables y pantallas individuales para tu confort.</p>
-						</div>
-						<div class="feature-card">
-							<div class="feature-card__icon-wrapper">
-								<span class="icon-pig material-symbols-outlined"></span>
-							</div>
-							<h3 class="feature-card__title">Ahorro</h3>
-							<p class="feature-card__description">Aprovecha descuentos online (10% ida, 15% regreso), la tarifa de Viajero Anticipado y 10% en viaje redondo en taquilla.</p>
+							<h3 class="feature-card__title">Máxima Comodidad</h3>
+							<p class="feature-card__description">Asientos reclinables, amplio espacio y un ambiente ideal para relajarte durante todo el trayecto.</p>
 						</div>
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-travel-security material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Viaje sin complicaciones</h3>
-							<p class="feature-card__description">Nuestras rutas conectan directamente con las principales ciudades del país, facilitando el acceso sin contratiempos.</p>
+							<h3 class="feature-card__title">Seguridad Garantizada</h3>
+							<p class="feature-card__description">Flota moderna, mantenimientos rigurosos y conductores profesionales para tu tranquilidad.</p>
 						</div>
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper">
-								<span class="icon-montain material-symbols-outlined"></span>
+								<span class="icon-pig material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Paisajes inolvidables</h3>
-							<p class="feature-card__description">Explora su impresionante arquitectura colonial, la Catedral iluminada y los murales históricos del Palacio de Gobierno.</p>
+							<h3 class="feature-card__title">Precios Justos</h3>
+							<p class="feature-card__description">Encuentra tarifas competitivas y acceso a promociones exclusivas para tu bolsillo.</p>
+						</div>
+						<div class="feature-card">
+							<div class="feature-card__icon-wrapper">
+								<span class="icon-clock material-symbols-outlined"></span>
+							</div>
+							<h3 class="feature-card__title">Horarios Flexibles</h3>
+							<p class="feature-card__description">Gran variedad de horarios para que tu viaje se ajuste perfectamente a tu agenda.</p>
 						</div>
 					</div>
 				</div>
@@ -72,75 +72,85 @@ class AppViajarMorelia extends HTMLElement {
 
 			<section class="route-info">
 				<div class="container route-info__container">
-					<h2 class="section-title">Trayecto destacado Ciudad de México Central Norte → Morelia</h2>
+					<h2 class="section-title">Ciudad de México → Morelia</h2>
 					<div class="route-info__card">
 						<div class="route-info__timeline">
 							<div class="route-info__line"></div>
 							<div class="route-info__stops">
 								<div class="route-info__stop">
-									<div class="route-info__stop-icon"><span class="icon-bus material-symbols-outlined"></span></div>
-									<span class="route-info__stop-name">Ciudad de México Central Norte</span>
+									<div class="route-info__stop-icon">
+										<span class="icon-bus material-symbols-outlined"></span>
+									</div>
+									<span class="route-info__stop-name">Ciudad de México (Terminal Poniente / Norte)</span>
 								</div>
 								<div class="route-info__stop">
 									<span class="route-info__stop-name">Morelia</span>
-									<div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined"></span></div>
+									<div class="route-info__stop-icon">
+										<span class="icon-place" material-symbols-outlined></span>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="route-info__details-grid">
 							<div class="detail-item">
 								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">4 horas</p>
+								<p class="detail-item__value">4.5 hrs</p>
 							</div>
 							<div class="detail-item">
 								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diaria (9 corridas)</p>
+								<p class="detail-item__value">Frecuente</p>
 							</div>
 							<div class="detail-item">
 								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Doble piso</p>
+								<p class="detail-item__value">Lujo / Primera</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
 			<section class="route-info">
 				<div class="container route-info__container">
-					<h2 class="section-title">Trayecto destacado Guadalajara → Morelia</h2>
+					<h2 class="section-title">Guadalajara → Morelia</h2>
 					<div class="route-info__card">
 						<div class="route-info__timeline">
 							<div class="route-info__line"></div>
 							<div class="route-info__stops">
 								<div class="route-info__stop">
-									<div class="route-info__stop-icon"><span class="icon-bus material-symbols-outlined"></span></div>
+									<div class="route-info__stop-icon">
+										<span class="icon-bus material-symbols-outlined"></span>
+									</div>
 									<span class="route-info__stop-name">Guadalajara</span>
 								</div>
 								<div class="route-info__stop">
 									<span class="route-info__stop-name">Morelia</span>
-									<div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined"></span></div>
+									<div class="route-info__stop-icon">
+										<span class="icon-place" material-symbols-outlined></span>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="route-info__details-grid">
 							<div class="detail-item">
 								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">3 hrs 30 minutos</p>
+								<p class="detail-item__value">3.5 hrs</p>
 							</div>
 							<div class="detail-item">
 								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diaria</p>
+								<p class="detail-item__value">Diaria (Rápida y cómoda)</p>
 							</div>
 							<div class="detail-item">
 								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Autobús de lujo</p>
+								<p class="detail-item__value">Primera Clase</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+
 			<section class="route-info">
 				<div class="container route-info__container">
-					<h2 class="section-title">Trayecto destacado Querétaro → Morelia</h2>
+					<h2 class="section-title">Querétaro → Morelia</h2>
 					<div class="route-info__card">
 						<div class="route-info__timeline">
 							<div class="route-info__line"></div>
@@ -151,116 +161,47 @@ class AppViajarMorelia extends HTMLElement {
 								</div>
 								<div class="route-info__stop">
 									<span class="route-info__stop-name">Morelia</span>
-									<div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined"></span></div>
+									<div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined></span></div>
 								</div>
 							</div>
 						</div>
 						<div class="route-info__details-grid">
 							<div class="detail-item">
 								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">3 hrs 30 minutos</p>
+								<p class="detail-item__value">2.5 hrs</p>
 							</div>
 							<div class="detail-item">
 								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diaria</p>
+								<p class="detail-item__value">Muy Frecuente</p>
 							</div>
 							<div class="detail-item">
 								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Autobús de lujo</p>
+								<p class="detail-item__value">Primera Clase</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="route-info">
-				<div class="container route-info__container">
-					<h2 class="section-title">Trayecto destacado Ciudad de México Central Poniente → Morelia</h2>
-					<div class="route-info__card">
-						<div class="route-info__timeline">
-							<div class="route-info__line"></div>
-							<div class="route-info__stops">
-								<div class="route-info__stop">
-									<div class="route-info__stop-icon"><span class="icon-bus material-symbols-outlined"></span></div>
-									<span class="route-info__stop-name">Ciudad de México Central Poniente</span>
-								</div>
-								<div class="route-info__stop">
-									<span class="route-info__stop-name">Morelia</span>
-									<div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined"></span></div>
-								</div>
-							</div>
-						</div>
-						<div class="route-info__details-grid">
-							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">4 hrs</p>
-							</div>
-							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diaria</p>
-							</div>
-							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Autobús de lujo</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="route-info">
-				<div class="container route-info__container">
-					<h2 class="section-title">Trayecto destacado Puebla → Morelia</h2>
-					<div class="route-info__card">
-						<div class="route-info__timeline">
-							<div class="route-info__line"></div>
-							<div class="route-info__stops">
-								<div class="route-info__stop">
-									<div class="route-info__stop-icon"><span class="icon-bus material-symbols-outlined"></span></div>
-									<span class="route-info__stop-name">Puebla</span>
-								</div>
-								<div class="route-info__stop">
-									<span class="route-info__stop-name">Morelia</span>
-									<div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined"></span></div>
-								</div>
-							</div>
-						</div>
-						<div class="route-info__details-grid">
-							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">6 horas 40 minutos</p>
-							</div>
-							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diaria (3 corridas)</p>
-							</div>
-							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Doble piso</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
 			<section class="attractions">
 				<div class="container">
-					<h2 class="section-title">Descubre en Morelia</h2>
+					<h2 class="section-title">Morelia te Espera: Descubre la Ciudad de la Cantera Rosa</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/morelia/centrohistorico.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("RUTA_IMAGEN_CATEDRAL_MORELIA.webp")'></div>
 							<div class="attraction-card__content">
-								<h3 class="attraction-card__title">Centro histórico de Morelia</h3>
+								<h3 class="attraction-card__title">Catedral de Morelia (Cantera Rosa)</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/morelia/catedral.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("RUTA_IMAGEN_ACUEDUCTO_MORELIA.webp")'></div>
 							<div class="attraction-card__content">
-								<h3 class="attraction-card__title">Catedral de Morelia</h3>
+								<h3 class="attraction-card__title">Acueducto de Morelia</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/morelia/palacio.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("RUTA_IMAGEN_MUSEO_DULCE.webp")'></div>
 							<div class="attraction-card__content">
-								<h3 class="attraction-card__title">Palacio de Gobierno</h3>
+								<h3 class="attraction-card__title">Museo del Dulce y Callejón del Romance</h3>
 							</div>
 						</div>
 					</div>
@@ -269,19 +210,31 @@ class AppViajarMorelia extends HTMLElement {
 
 			<section class="faq">
 				<div class="container faq__container">
-					<h2 class="section-title">Preguntas frecuentes</h2>
+					<h2 class="section-title">Preguntas Frecuentes sobre tu Viaje a Morelia</h2>
 					<div class="faq__list">
 						<details class="faq-item">
-							<summary class="faq-item__summary"><span class="faq-item__question">¿Cuánto cuesta el boleto de autobús de la Ciudad de México Central Norte a Morelia?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
-							<p class="faq-item__answer">El boleto de autobús barato es desde $594.00 MXN*. El viaje dura 4 horas. Tarifas sujetas a disponibilidad.</p>
+							<summary class="faq-item__summary"><span class="faq-item__question">¿Cuáles son las principales rutas de autobús a Morelia con Autovías?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">Autovías ofrece rutas directas a Morelia desde ciudades importantes como Ciudad de México (Terminal Poniente y Norte), Guadalajara, Querétaro, y muchas más, garantizando conexiones cómodas y seguras.</p>
 						</details>
 						<details class="faq-item">
-							<summary class="faq-item__summary"><span class="faq-item__question">¿Cuánto cuesta el boleto de autobús de Guadalajara a Morelia?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span></span> </summary>
-							<p class="faq-item__answer">El boleto de autobús barato tiene un costo de $580.50 MXN . El viaje dura 3 hrs 30 minutos. *Las tarifas sujetas a disponibilidad.</p>
+							<summary class="faq-item__summary"><span class="faq-item__question">¿Qué servicios ofrecen los autobuses de Autovías a Morelia?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span></span> </summary>
+							<p class="faq-item__answer">Nuestros autobuses cuentan con asientos reclinables, aire acondicionado, sanitarios, pantallas individuales y, en algunos servicios, Wi-Fi. Nos enfocamos en tu comodidad y seguridad durante todo el trayecto.</p>
 						</details>
 						<details class="faq-item">
-							<summary class="faq-item__summary"> <span class="faq-item__question">¿Qué servicios incluyen los autobuses?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
-							<p class="faq-item__answer">Nuestros autobuses cuentan con pantallas individuales, asientos individuales, descanso para piernas, sanitarios, conexiones eléctricas y cafetería.</p>
+							<summary class="faq-item__summary"> <span class="faq-item__question">¿Cómo puedo comprar mis boletos de autobús a Morelia en línea?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">Es muy fácil. Solo ingresa tu ciudad de origen, Morelia como destino y la fecha de tu viaje en nuestro buscador. Selecciona el horario y asiento que prefieras, y finaliza tu compra con tarjeta de crédito/débito o en puntos de venta autorizados.</p>
+						</details>
+						<details class="faq-item">
+							<summary class="faq-item__summary"> <span class="faq-item__question">¿Hay descuentos disponibles para boletos de autobús a Morelia?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">Constantemente ofrecemos promociones y descuentos especiales. Te invitamos a revisar nuestra sección de ofertas o suscribirte a nuestro newsletter para recibir las últimas novedades y viajar a Morelia al mejor precio.</p>
+						</details>
+						<details class="faq-item">
+							<summary class="faq-item__summary"> <span class="faq-item__question">¿Cuál es la Terminal de Autobuses en Morelia?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">La principal Central de Autobuses de Morelia se ubica en Periférico Paseo de la República 5555, Félix Ireta. Desde allí, podrás acceder fácilmente al Centro Histórico y otros puntos de interés.</p>
+						</details>
+						<details class="faq-item">
+							<summary class="faq-item__summary"> <span class="faq-item__question">¿Con cuánto tiempo de anticipación debo comprar mis boletos a Morelia?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">Recomendamos comprar tus boletos con la mayor anticipación posible, especialmente en temporadas altas o días festivos, para asegurar tu lugar y, en ocasiones, obtener mejores precios.</p>
 						</details>
 					</div>
 				</div>
@@ -289,9 +242,9 @@ class AppViajarMorelia extends HTMLElement {
 
 			<section class="cta">
 				<div class="container">
-					<h2 class="cta__title">¡Viaja a Morelia con Autovías!</h2>
-					<p class="cta__subtitle">Descubre la riqueza histórica, tradiciones y el festival de sabores de Morelia. Tu aventura está a solo un clic.</p>
-					<a href="../destinos/autobus-a-morelia.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
+					<h2 class="cta__title">¡Aprovecha Nuestras Promociones Especiales a Morelia!</h2>
+					<p class="cta__subtitle">¡No te pierdas nuestra promoción! Hasta 5% de descuento en tu viaje de ida + 10% de descuento en tu regreso. Consulta términos y condiciones.</p>
+					<a href="../promociones/morelia.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Morelia" tabindex="0">Ver Todas las Promociones</a>
 				</div>
 			</section>
 			

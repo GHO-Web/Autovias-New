@@ -20,8 +20,7 @@ class AutobusACiudadDeMexico extends HTMLElement {
 			>
 			</app-banner-slider>
 			<app-payments></app-payments>
-            
-			<section class="__section __section__grid" id="monterrey-grid-section">
+<section class="__section __section__grid" id="monterrey-grid-section">
 				<article class="grid-container">
 						<!-- Los elementos del grid se cargarán aquí -->
 				</article>

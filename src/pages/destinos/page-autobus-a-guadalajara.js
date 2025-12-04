@@ -22,24 +22,24 @@ class AutobusAGuadalajara extends HTMLElement {
 			<app-payments></app-payments>
             
 			<section class="__section __section__monterrey__destinations">
-                <app-section-title section-title="Viaja a Guadalajara en autobús con Autovías La Línea"></app-section-title>
-                <p class="__subtitle__destinos">Guadalajara</p>
-                <p class="__paragraph">Guadalajara, cuna del mariachi y el tequila, es una ciudad vibrante donde la tradición y la modernidad se entrelazan con elegancia. Sus monumentos históricos, barrios llenos de arte y una gastronomía inigualable hacen de cada visita una experiencia única. Autovías La Línea ofrece un servicio de autobús de lujo que conecta esta joya tapatía con diversos destinos, garantizando un viaje cómodo, seguro y sin estrés.</p>
-                <p class="__subtitle__destinos">¿Que lugares visitar en Guadalajara?</p>
-                <p class="__paragraph">Guadalajara, corazón cultural de Jalisco, ofrece una mezcla vibrante de historia, arte y tradición. Comienza tu recorrido en la Catedral Metropolitana y la Plaza de Armas, donde la arquitectura colonial te envuelve. Visita el Teatro Degollado, joya neoclásica, y el Instituto Cultural Cabañas, con murales de Orozco. Pasea por Tlaquepaque y Tonalá, ideales para comprar artesanías. No te pierdas la Rotonda de los Jaliscienses Ilustres ni el Templo Expiatorio, de estilo neogótico. Disfruta de una torta ahogada en el Mercado Libertad y relájate en el Bosque Los Colomos. Para una experiencia natural, visita el Lago de Chapala o explora el sitio arqueológico de Guachimontones. Guadalajara te espera con historia, sabor y calidez.</p>
-             </section>
+				<app-section-title section-title="Viaja a Guadalajara en autobús con Autovías La Línea"></app-section-title>
+				<p class="__subtitle__destinos">Guadalajara</p>
+				<p class="__paragraph">Guadalajara, cuna del mariachi y el tequila, es una ciudad vibrante donde la tradición y la modernidad se entrelazan con elegancia. Sus monumentos históricos, barrios llenos de arte y una gastronomía inigualable hacen de cada visita una experiencia única. Autovías La Línea ofrece un servicio de autobús de lujo que conecta esta joya tapatía con diversos destinos, garantizando un viaje cómodo, seguro y sin estrés.</p>
+				<p class="__subtitle__destinos">¿Que lugares visitar en Guadalajara?</p>
+				<p class="__paragraph">Guadalajara, corazón cultural de Jalisco, ofrece una mezcla vibrante de historia, arte y tradición. Comienza tu recorrido en la Catedral Metropolitana y la Plaza de Armas, donde la arquitectura colonial te envuelve. Visita el Teatro Degollado, joya neoclásica, y el Instituto Cultural Cabañas, con murales de Orozco. Pasea por Tlaquepaque y Tonalá, ideales para comprar artesanías. No te pierdas la Rotonda de los Jaliscienses Ilustres ni el Templo Expiatorio, de estilo neogótico. Disfruta de una torta ahogada en el Mercado Libertad y relájate en el Bosque Los Colomos. Para una experiencia natural, visita el Lago de Chapala o explora el sitio arqueológico de Guachimontones. Guadalajara te espera con historia, sabor y calidez.</p>
+			</section>
 
-             <section class="__section __section__grid" id="monterrey-grid-section">
-                <article class="grid-container">
-                    <!-- Los elementos del grid se cargarán aquí -->
-                </article>
-             </section>
-                <p class="__subtitle__destinos">Gastronomía</p>
-              <section class="__section __section__monterrey__food">
-                <p class="__paragraph__xl">Guadalajara conquista el paladar con sabores que son orgullo tapatío. Prueba la icónica torta ahogada, sumergida en salsa picante; la birria de chivo, cocida lentamente con especias; y la carne en su jugo, servida con frijoles y cebolla. Endulza tu visita con jericallas, un postre tradicional horneado. En mercados y fondas, cada platillo refleja la riqueza cultural de Jalisco y convierte cada comida en una experiencia auténtica e inolvidable.</p>
-                 <article class="container-cards__food">
-                    <!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
+			<section class="__section __section__grid" id="monterrey-grid-section">
+				<article class="grid-container">
+						<!-- Los elementos del grid se cargarán aquí -->
 				</article>
+			</section>
+				<p class="__subtitle__destinos">Gastronomía</p>
+			<section class="__section __section__monterrey__food">
+				<p class="__paragraph__xl">Guadalajara conquista el paladar con sabores que son orgullo tapatío. Prueba la icónica torta ahogada, sumergida en salsa picante; la birria de chivo, cocida lentamente con especias; y la carne en su jugo, servida con frijoles y cebolla. Endulza tu visita con jericallas, un postre tradicional horneado. En mercados y fondas, cada platillo refleja la riqueza cultural de Jalisco y convierte cada comida en una experiencia auténtica e inolvidable.</p>
+				<article class="container-cards__food">
+						<!-- Las tarjetas de comida se cargarán aquí dinámicamente -->
+			</article>
 			</section>
             
 			<section class="cta">
@@ -50,29 +50,28 @@ class AutobusAGuadalajara extends HTMLElement {
 				</div>
 			</section>
 
-             <section class="__section __section__monterrey__ask">
-                <app-section-title section-title="Preguntas Frecuentes"></app-section-title>
-                <article class="__grid-cards-container__dropdown" id="dropdowns-container">
-                    <!-- Contenedor para los dropdowns -->
-                </article>
-            </section>
+			<section class="__section __section__monterrey__ask">
+				<app-section-title section-title="Preguntas Frecuentes"></app-section-title>
+				<article class="__grid-cards-container__dropdown" id="dropdowns-container">
+						<!-- Contenedor para los dropdowns -->
+				</article>
+			</section>
 
-            <section class="__section __section__monterrey__other">
-                <app-section-title section-title="Otros destinos"></app-section-title>
-                <article class="container-slider-other">
-                    <app-slider-opacity></app-slider-opacity>
-                </article>
-            </section>
+			<section class="__section __section__monterrey__other">
+				<app-section-title section-title="Otros destinos"></app-section-title>
+				<article class="container-slider-other">
+						<app-slider-opacity></app-slider-opacity>
+				</article>
+			</section>
 
 			<app-modal-multi-image></app-modal-multi-image>
 			<app-modal-image></app-modal-image>
-
-			
 			
 			<app-cookies-policy></app-cookies-policy>
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
-        `;
+		`;
+
 		await this.loadAndRenderGridItems();
 		await this.loadAndRenderFoodCards();
 		await this.loadAndRenderDropdowns();

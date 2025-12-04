@@ -1,0 +1,35 @@
+[
+    {
+      "title": "Carne en su Jugo",
+      "description": "Un platillo emblemático de Guadalajara, elaborado con carne de res picada cocida en su propio jugo, acompañado de frijoles, tocino, cebolla y cilantro. Se sirve caliente con tortillas y un toque de limón. Su sabor concentrado y casero lo convierte en un favorito local.",
+      "imageSrc": "../src/assets/img/platillos/guadalajara/carneensujugo1.webp",
+      "imageModal": "../src/assets/img/platillos/guadalajara/carneensujugo2.webp",
+      "altText": "Carne en su jugo",
+      "linkText": "Ver..."
+    },
+    {
+      "title": "Tortas Ahogadas",
+      "description": "El ícono gastronómico de Guadalajara. Estas tortas se preparan con birote salado, relleno de carnitas y 'ahogadas' en salsa de jitomate o una versión más picante de chile de árbol. Se comen con las manos y son una experiencia imperdible para los amantes del sabor intenso.",
+      "imageSrc": "../src/assets/img/platillos/guadalajara/tortasahogadas1.webp",
+      "imageModal": "../src/assets/img/platillos/guadalajara/tortasahogadas2.webp",
+      "altText": "Tortas ahogadas",
+      "linkText": "Ver..."
+    },
+    {
+      "title": "Birria",
+      "description": "Tradicionalmente preparada con carne de chivo, aunque también se usa res, la birria se cocina lentamente en una mezcla de chiles y especias. Se sirve en consomé caliente con tortillas, cebolla, cilantro y limón. Es un plato típico de celebraciones y domingos tapatíos.",
+      "imageSrc": "../src/assets/img/platillos/guadalajara/birria1.webp",
+      "imageModal": "../src/assets/img/platillos/guadalajara/birria2.webp",
+      "altText": "Birria",
+      "linkText": "Ver..."
+    },
+    {
+      "title": "Tejuino",
+      "description": "Bebida tradicional de Jalisco, hecha a base de masa de maíz fermentada, piloncillo y limón. Se sirve fría y a menudo con una bola de nieve de limón, ideal para refrescarse en los días calurosos. Su sabor único mezcla lo dulce, ácido y fermentado.",
+      "imageSrc": "../src/assets/img/platillos/guadalajara/tejuino1.webp",
+      "imageModal": "../src/assets/img/platillos/guadalajara/tejuino2.webp",
+      "altText": "Tejuino",
+      "linkText": "Ver..."
+    }
+  ]
+  
