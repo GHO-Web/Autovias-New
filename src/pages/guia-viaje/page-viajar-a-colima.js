@@ -1,5 +1,4 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
-import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
@@ -11,174 +10,190 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppViajarColima extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
-			<app-cotiza></app-cotiza>
-			<app-modal-travelpass></app-modal-travelpass>
-			<app-modal-doters></app-modal-doters>
-			<app-banner-slider
-					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/Atlacomulco_Banner_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/global/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
-			>
-			</app-banner-slider>
-			<app-payments></app-payments>
-			
-			<!-- Components for page -->
+class PageViajarAColima extends HTMLElement {
+  async connectedCallback() {
+    this.innerHTML = `
+     <app-cotiza></app-cotiza>
 
-			<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwRaNTXjC4hzOr7ORLU-a3-j_UGbsvK7KtPHMWzlMIR7xRNvcNaGo5GljsW9D44Ws7OgfDXE9ZPKBCpsr_uf_g_-ztpdGzfFPThxKuqb2hzD5nT362Mv4oP93kRGTkAx9UnO_P23Y8b_Zh0Kzt0FfD8RNTp80XvDNVvgy3PM5RpC3-DSI9e35zvy0R7kCRBq5Q6i4QAZYrBVNatDorVIR8azyZFtazNR6phcIv6Whute_reg49odo8zdG3_O3E2MSzmGst9hwG-0A");'>
-					<div class="hero__content">
-							<h1 class="hero__title">Autobús a Morelia</h1>
-							<p class="hero__subtitle">Descubre la belleza de Morelia viajando en autobús desde la Ciudad de México. Disfruta de un viaje cómodo, seguro y económico.</p>
-							<a href="../destinos/autobus-a-colima.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Comprar boletos" tabindex="0">Conoce más</a>
-					</div>
-			</section>
+<!-- Components for page -->
 
-			<section class="features">
-					<div class="container">
-							<h2 class="section-title">¿Por qué viajar en autobús a Morelia?</h2>
-							<div class="features__grid">
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-armchair material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Comodidad</h3>
-											<p class="feature-card__description">Viaja en autobuses modernos con asientos reclinables, aire acondicionado y entretenimiento a bordo.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-pig material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Ahorro</h3>
-											<p class="feature-card__description">Disfruta de tarifas competitivas y promociones especiales para que tu viaje sea más accesible.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-travel-security material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Viaje sin complicaciones</h3>
-											<p class="feature-card__description">Olvídate del tráfico y el estrés de conducir. Relájate y disfruta del paisaje.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-montain material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Paisajes inolvidables</h3>
-											<p class="feature-card__description">Admira la belleza de los paisajes mexicanos durante tu trayecto a Morelia.</p>
-									</div>
-							</div>
-					</div>
-			</section>
+<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/banners/banner-guia-viaje-colima.webp");' data-alt="Vista panorámica de Colima al atardecer">
+  <div class="hero__content">
+    <h1 class="hero__title">
+      Descubre la Belleza de Colima
+    </h1>
+    <h2 class="hero__subtitle">
+      Viaja cómodamente con Autovías La Línea y explora Colima: historia, cultura, naturaleza y gastronomía en un solo destino.
+    </h2>
+    <a href="../destinos/autobus-a-colima.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre Colima" tabindex="0">Ver más sobre el destino</a>
+  </div>
+</section>
 
-			<section class="route-info">
-					<div class="container route-info__container">
-							<h2 class="section-title">Trayecto destacado CDMX → Morelia</h2>
-							<div class="route-info__card">
-									<div class="route-info__timeline">
-											<div class="route-info__line"></div>
-											<div class="route-info__stops">
-													<div class="route-info__stop">
-															<div class="route-info__stop-icon"><span class="icon-bus material-symbols-outlined"></span></div>
-															<span class="route-info__stop-name">Ciudad de México</span>
-													</div>
-													<div class="route-info__stop">
-															<span class="route-info__stop-name">Morelia</span>
-															<div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined"></span></div>
-													</div>
-											</div>
-									</div>
-									<div class="route-info__details-grid">
-											<div class="detail-item">
-													<p class="detail-item__label">Duración</p>
-													<p class="detail-item__value">4.5 horas</p>
-											</div>
-											<div class="detail-item">
-													<p class="detail-item__label">Frecuencia</p>
-													<p class="detail-item__value">Diaria</p>
-											</div>
-											<div class="detail-item">
-													<p class="detail-item__label">Tipo de autobús</p>
-													<p class="detail-item__value">Doble piso, Ejecutivo</p>
-											</div>
-									</div>
-							</div>
-					</div>
-			</section>
+<section class="content-section content-section--light">
+  <div class="container">
+    <p class="intro-text">
+      Colima, uno de los estados más pequeños de México, combina historia, tradiciones, cultura, naturaleza y playas en un solo destino. Desde la ciudad capital hasta Manzanillo y Comala, cada rincón ofrece experiencias únicas del Pacífico mexicano.
+    </p>
+    <hr class="divider">
+    <h2 class="section-title">Top 5 Lugares Imprescindibles en Colima</h2>
 
-			<section class="attractions">
-					<div class="container">
-							<h2 class="section-title">Atracciones cerca de la terminal</h2>
-							<div class="attractions__grid">
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">Palacio de Gobierno</h3>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">La Soterraña</h3>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">Mercado Independencia</h3>
-											</div>
-									</div>
-							</div>
-					</div>
-			</section>
+    <div class="place-list">
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/colima/catedral-colima.webp");' data-alt="Catedral Basílica de Colima"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">1. Catedral Basílica de Colima</p>
+            <p class="place-card__description">
+              Principal iglesia del centro histórico, de estilo colonial y declarada Basílica Menor. Ideal para comenzar un recorrido por la ciudad, admirando arquitectura y plazas.
+            </p>
+          </div>
+        </div>
+      </div>
 
-			<section class="faq">
-					<div class="container faq__container">
-							<h2 class="section-title">Preguntas frecuentes</h2>
-							<div class="faq__list">
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Cuál es el precio del boleto de autobús de CDMX a Morelia?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Los precios varían según la temporada, la línea de autobús y el tipo de servicio. Te recomendamos consultar los precios actualizados en nuestra sección de compra de boletos.</p>
-									</details>
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Cuáles son los horarios de salida de los autobuses?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Contamos con salidas diarias y frecuentes. Puedes ver todos los horarios disponibles al momento de seleccionar tu fecha de viaje en el portal de compra.</p>
-									</details>
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Qué servicios incluyen los autobuses ejecutivos?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Nuestros autobuses ejecutivos ofrecen asientos más amplios y cómodos, pantallas individuales, conexión Wi-Fi, sanitarios y un refrigerio de cortesía para hacer tu viaje más placentero.</p>
-									</details>
-							</div>
-					</div>
-			</section>
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/colima/comala.webp");' data-alt="Comala, Pueblo Mágico"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">2. Comala, Pueblo Mágico</p>
+            <p class="place-card__description">
+              Conocido como "Pueblo Blanco", famoso por sus calles empedradas, arquitectura colonial y vistas al Volcán de Colima. Ideal para cultura, historia y gastronomía local.
+            </p>
+          </div>
+        </div>
+      </div>
 
-			<section class="cta">
-					<div class="container">
-							<h2 class="cta__title">¡Viaja a Morelia con Autovías La Línea!</h2>
-							<p class="cta__subtitle">No esperes más para descubrir una de las ciudades más bellas de México. Tu aventura está a solo un clic de distancia.</p>
-							<a href="../destinos/autobus-a-colima.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Comprar boletos" tabindex="0">Consulta horarios y compra tu boleto</a>
-					</div>
-			</section>
-			
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/colima/nevado-colima.webp");' data-alt="Nevado de Colima"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">3. Nevado de Colima</p>
+            <p class="place-card__description">
+              Zona montañosa con clima fresco, perfecta para excursionismo y naturaleza. Permite observar panorámicas únicas y explorar flora y fauna locales.
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/colima/manzanillo.webp");' data-alt="Manzanillo, playa y puerto"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">4. Manzanillo</p>
+            <p class="place-card__description">
+              Destino costero famoso por sus playas, puerto y actividades acuáticas. Ideal para descanso, deportes de mar y gastronomía a base de mariscos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/colima/centro-colima.webp");' data-alt="Centro histórico de Colima"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">5. Centro Histórico de Colima</p>
+            <p class="place-card__description">
+              Explora plazas, calles coloniales y mercados locales. Descubre la cultura viva de la ciudad, con artesanías, gastronomía y vida cotidiana colimense.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section content-section--darker">
+  <div class="container">
+  <h2 class="section-title">Sabores de Colima</h2>
+  <div class="food-grid">
+    <div class="food-card">
+      <img alt="Tacos de pescado" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/colima/tacos-pescado.webp">
+      <h3 class="food-card__title">Tacos de Pescado</h3>
+      <p class="food-card__description">Especialidad costera de Colima, con pescado fresco, salsas locales y tortillas recién hechas.</p>
+    </div>
+
+    <div class="food-card">
+      <img alt="Sopa de almejas" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/colima/sopa-almejas.webp"> 
+      <h3 class="food-card__title">Sopa de Almejas</h3>
+      <p class="food-card__description">Platillo tradicional del Pacífico mexicano, fresco y reconfortante.</p>
+    </div>
+
+    <div class="food-card">
+      <img alt="Ceviche colimense" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/colima/ceviche.webp">
+      <h3 class="food-card__title">Ceviche Colimense</h3>
+      <p class="food-card__description">Fresco y ligero, preparado con mariscos locales, jugo de limón y especias típicas de la región.</p>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section class="content-section content-section--light">
+  <div class="container container--narrow">
+    <h2 class="section-title">Tips de Viaje para Colima</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Cuál es la mejor época para visitar?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          De noviembre a abril, clima cálido y seco. En verano hay lluvias, pero los paisajes se vuelven verdes y frescos.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Cómo moverse por la ciudad?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Transporte urbano y taxis locales son económicos. Para playas y excursiones, vehículo propio o tours organizados.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Dónde hospedarse?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Mejor en centro de Colima, Malecón o Manzanillo para playas. Hoteles, cabañas y eco-alojamientos disponibles.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Qué precauciones tomar?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Protector solar, ropa ligera y agua. Evita zonas desconocidas de noche y sigue indicaciones locales.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Qué souvenirs llevar?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Artesanías de palma, cerámica, textiles y productos locales como café, miel y dulces típicos de Colima.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2 class="cta-section__title">¿Listo para tu Aventura en Colima?</h2>
+  <p class="cta-section__text">Viaja con comodidad y puntualidad con Autovías La Línea. Descubre historia, cultura, naturaleza y sabores únicos de Colima. ¡Compra tus boletos y vive la experiencia!</p>
+  <a href="../destinos/autobus-a-colima.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
+</section>
+
+<app-cookies-policy></app-cookies-policy>
+<app-button-whats></app-button-whats>
+<app-button-eva-trip></app-button-eva-trip>
     `;
-	}
+  }
 }
-customElements.define("page-viajar-a-colima", AppViajarColima);
+customElements.define("page-viajar-a-colima", PageViajarAColima);
