@@ -1,5 +1,4 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
-import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
@@ -11,174 +10,200 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppViajarZitacuaro extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
-			<app-cotiza></app-cotiza>
-			<app-modal-travelpass></app-modal-travelpass>
-			<app-modal-doters></app-modal-doters>
-			<app-banner-slider
-					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/Atlacomulco_Banner_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/global/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
-			>
-			</app-banner-slider>
-			<app-payments></app-payments>
-			
-			<!-- Components for page -->
+class PageViajarAZitacuaro extends HTMLElement {
+  async connectedCallback() {
+    this.innerHTML = `
+      <app-cotiza></app-cotiza>
 
-			<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwRaNTXjC4hzOr7ORLU-a3-j_UGbsvK7KtPHMWzlMIR7xRNvcNaGo5GljsW9D44Ws7OgfDXE9ZPKBCpsr_uf_g_-ztpdGzfFPThxKuqb2hzD5nT362Mv4oP93kRGTkAx9UnO_P23Y8b_Zh0Kzt0FfD8RNTp80XvDNVvgy3PM5RpC3-DSI9e35zvy0R7kCRBq5Q6i4QAZYrBVNatDorVIR8azyZFtazNR6phcIv6Whute_reg49odo8zdG3_O3E2MSzmGst9hwG-0A");'>
-					<div class="hero__content">
-							<h1 class="hero__title">Autobús a Morelia</h1>
-							<p class="hero__subtitle">Descubre la belleza de Morelia viajando en autobús desde la Ciudad de México. Disfruta de un viaje cómodo, seguro y económico.</p>
-							<a href="../destinos/autobus-a-zitacuaro.html" class="btn btn--primary btn--large" target="_blank" aria-label="Comprar boletos" tabindex="0">Conoce más</a>
-					</div>
-			</section>
+<!-- HERO -->
+<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/banners/banner-guia-viaje-zitacuaro.webp");' data-alt="Zitácuaro Michoacán bosque y naturaleza">
+  <div class="hero__content">
+    <h1 class="hero__title">Vive la Naturaleza y Tradición de Zitácuaro</h1>
+    <h2 class="hero__subtitle">
+      Viaja con Autovías La Línea hacia Zitácuaro, un destino rodeado de montañas, bosques, historia y el espectacular Santuario de la Mariposa Monarca.
+    </h2>
+    <a href="../destinos/autobus-a-zitacuaro.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">Ver más sobre el destino</a>
+  </div>
+</section>
 
-			<section class="features">
-					<div class="container">
-							<h2 class="section-title">¿Por qué viajar en autobús a Morelia?</h2>
-							<div class="features__grid">
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-armchair material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Comodidad</h3>
-											<p class="feature-card__description">Viaja en autobuses modernos con asientos reclinables, aire acondicionado y entretenimiento a bordo.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-pig material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Ahorro</h3>
-											<p class="feature-card__description">Disfruta de tarifas competitivas y promociones especiales para que tu viaje sea más accesible.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-travel-security material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Viaje sin complicaciones</h3>
-											<p class="feature-card__description">Olvídate del tráfico y el estrés de conducir. Relájate y disfruta del paisaje.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-montain material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Paisajes inolvidables</h3>
-											<p class="feature-card__description">Admira la belleza de los paisajes mexicanos durante tu trayecto a Morelia.</p>
-									</div>
-							</div>
-					</div>
-			</section>
+<!-- INTRO -->
+<section class="content-section content-section--light">
+  <div class="container">
+    <p class="intro-text">
+      Zitácuaro es una ciudad rodeada de bosques, montañas y ríos que forman parte del corazón natural de Michoacán. Es una zona clave para la migración de la Mariposa Monarca y un destino ideal para quienes aman la naturaleza, la tranquilidad y la historia regional.
+    </p>
+    <hr class="divider">
 
-			<section class="route-info">
-					<div class="container route-info__container">
-							<h2 class="section-title">Trayecto destacado CDMX → Morelia</h2>
-							<div class="route-info__card">
-									<div class="route-info__timeline">
-											<div class="route-info__line"></div>
-											<div class="route-info__stops">
-													<div class="route-info__stop">
-															<div class="route-info__stop-icon"><span class="icon-bus material-symbols-outlined"></span></div>
-															<span class="route-info__stop-name">Ciudad de México</span>
-													</div>
-													<div class="route-info__stop">
-															<span class="route-info__stop-name">Morelia</span>
-															<div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined"></span></div>
-													</div>
-											</div>
-									</div>
-									<div class="route-info__details-grid">
-											<div class="detail-item">
-													<p class="detail-item__label">Duración</p>
-													<p class="detail-item__value">4.5 horas</p>
-											</div>
-											<div class="detail-item">
-													<p class="detail-item__label">Frecuencia</p>
-													<p class="detail-item__value">Diaria</p>
-											</div>
-											<div class="detail-item">
-													<p class="detail-item__label">Tipo de autobús</p>
-													<p class="detail-item__value">Doble piso, Ejecutivo</p>
-											</div>
-									</div>
-							</div>
-					</div>
-			</section>
+    <h2 class="section-title">Top 5 Lugares Imprescindibles en Zitácuaro</h2>
 
-			<section class="attractions">
-					<div class="container">
-							<h2 class="section-title">Atracciones cerca de la terminal</h2>
-							<div class="attractions__grid">
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">Palacio de Gobierno</h3>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">La Soterraña</h3>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">Mercado Independencia</h3>
-											</div>
-									</div>
-							</div>
-					</div>
-			</section>
+    <div class="place-list">
 
-			<section class="faq">
-					<div class="container faq__container">
-							<h2 class="section-title">Preguntas frecuentes</h2>
-							<div class="faq__list">
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Cuál es el precio del boleto de autobús de CDMX a Morelia?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Los precios varían según la temporada, la línea de autobús y el tipo de servicio. Te recomendamos consultar los precios actualizados en nuestra sección de compra de boletos.</p>
-									</details>
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Cuáles son los horarios de salida de los autobuses?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Contamos con salidas diarias y frecuentes. Puedes ver todos los horarios disponibles al momento de seleccionar tu fecha de viaje en el portal de compra.</p>
-									</details>
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Qué servicios incluyen los autobuses ejecutivos?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Nuestros autobuses ejecutivos ofrecen asientos más amplios y cómodos, pantallas individuales, conexión Wi-Fi, sanitarios y un refrigerio de cortesía para hacer tu viaje más placentero.</p>
-									</details>
-							</div>
-					</div>
-			</section>
+      <!-- 1 -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/zitacuaro/santuario-mariposa-monarca.webp");' data-alt="Santuario Mariposa Monarca Zitácuaro"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">1. Santuario de la Mariposa Monarca</p>
+            <p class="place-card__description">
+              Uno de los espectáculos naturales más impresionantes del mundo. Miles de mariposas llegan cada invierno para cubrir los árboles del bosque. Una visita obligada.
+            </p>
+          </div>
+        </div>
+      </div>
 
-			<section class="cta">
-					<div class="container">
-							<h2 class="cta__title">¡Viaja a Morelia con Autovías La Línea!</h2>
-							<p class="cta__subtitle">No esperes más para descubrir una de las ciudades más bellas de México. Tu aventura está a solo un clic de distancia.</p>
-							<a href="../destinos/autobus-a-zitacuaro.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Comprar boletos" tabindex="0">Consulta horarios y compra tu boleto</a>
-					</div>
-			</section>
-			
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+      <!-- 2 -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/zitacuaro/presa-del-bosque.webp");' data-alt="Presa del Bosque Zitácuaro"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">2. Presa del Bosque</p>
+            <p class="place-card__description">
+              Un lugar perfecto para relajarse, pescar, hacer picnic o disfrutar de paseos en lancha rodeado de naturaleza y tranquilidad.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/zitacuaro/plaza-civica.webp");' data-alt="Plaza Civica Zitácuaro"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">3. Plaza Civica de Zitácuaro</p>
+            <p class="place-card__description">
+              El corazón de la ciudad, un espacio abierto rodeado de arquitectura colonial, ideal para pasear, disfrutar de eventos culturales y conocer la vida local.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/zitacuaro/cerro-cacique.webp");' data-alt="Cerro del Cacique Zitácuaro"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">4. Cerro del Cacique</p>
+            <p class="place-card__description">
+              Un mirador natural con vistas espectaculares de Zitácuaro. Ideal para hacer ejercicio, caminar y disfrutar de panorámicas impresionantes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/zitacuaro/cascada-curungueo.webp");' data-alt="Cascada de Curungueo Zitácuaro"></div>
+          <div class="place-card__content">
+            <p class="place-card__title">5. Cascada de Curungueo</p>
+            <p class="place-card__description">
+              Una hermosa caída de agua rodeada de vegetación. Un sitio perfecto para disfrutar de naturaleza, fotografía y senderismo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GASTRONOMÍA -->
+<section class="content-section content-section--darker">
+  <div class="container">
+    <h2 class="section-title">Sabores Típicos de Zitácuaro</h2>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+        <img alt="Corundas michoacanas" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/zitacuaro/corundas.webp">
+        <h3 class="food-card__title">Corundas</h3>
+        <p class="food-card__description">Tamalitos triangulares envueltos en hojas de milpa, servidos con crema, queso y salsa casera.</p>
+      </div>
+
+      <div class="food-card">
+        <img alt="Cecina de Zitácuaro" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/zitacuaro/cecina-zitacuaro.webp">
+        <h3 class="food-card__title">Cecina Zitacuarense</h3>
+        <p class="food-card__description">Cecina suave y sazonada, famosa en la región y perfecta para tacos acompañados de nopales y queso.</p>
+      </div>
+
+      <div class="food-card">
+        <img alt="Pan de fiesta" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/zitacuaro/pan-de-fiesta.webp">
+        <h3 class="food-card__title">Pan de Fiesta</h3>
+        <p class="food-card__description">
+          Tradicional en las festividades locales, suave, aromático y preparado artesanalmente por panaderos de la región.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TIPS -->
+<section class="content-section content-section--light">
+  <div class="container container--narrow">
+    <h2 class="section-title">Tips de Viaje para Zitácuaro</h2>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Cuál es la mejor época para visitar Zitácuaro?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          De noviembre a marzo, durante la temporada de la Mariposa Monarca y cuando el clima es más fresco.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Qué eventos destacan en Zitácuaro?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Las Fiestas Patrias, la llegada de la Mariposa Monarca y diversas ferias gastronómicas y culturales.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Dónde hospedarse?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          El centro de Zitácuaro ofrece hoteles cómodos, mientras que las zonas cercanas al bosque cuentan con cabañas y alojamientos ecológicos.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Qué comprar en Zitácuaro?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Artesanías, pan tradicional, miel, productos locales y textiles elaborados a mano.
+        </p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section">
+  <h2 class="cta-section__title">¿Listo para tu viaje a Zitácuaro?</h2>
+  <p class="cta-section__text">
+    Viaja con Autovías La Línea y descubre un destino lleno de naturaleza, frescura y cultura. ¡Zitácuaro te espera!
+  </p>
+  <a href="../destinos/autobus-a-zitacuaro.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer">Ver más sobre el destino</a>
+</section>
+
+<app-cookies-policy></app-cookies-policy>
+<app-button-whats></app-button-whats>
+<app-button-eva-trip></app-button-eva-trip>
 
     `;
-	}
+  }
 }
-customElements.define("page-viajar-a-zitacuaro", AppViajarZitacuaro);
+
+customElements.define("page-viajar-a-zitacuaro", PageViajarAZitacuaro);
