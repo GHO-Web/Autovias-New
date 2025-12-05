@@ -190,19 +190,19 @@ class AppMaravatio extends HTMLElement {
 					<h2 class="section-title">Imperdibles en Guadalajara: Descubre la Perla Tapatía</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/maravatio/lugares/.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Catedral de Guadalajara</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/maravatio/lugares/.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Teatro Degollado</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/maravatio/lugares/.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Instituto Cultural Cabañas</h3>
 							</div>

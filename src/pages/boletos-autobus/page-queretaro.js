@@ -230,19 +230,19 @@ class PageQueretaro extends HTMLElement {
 					<h2 class="section-title">Descubre en Querétaro</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/queretaro/centro-historico-queretaro.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/queretaro/lugares/centro-historico-queretaro.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Centro Histórico de Querétaro</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/queretaro/acueducto-queretaro.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/queretaro/lugares/acueducto-queretaro.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Acueducto Querétaro</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/queretaro/pena-de-bernal.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/queretaro/lugares/pena-de-bernal.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Peña de Bernal</h3>
 							</div>

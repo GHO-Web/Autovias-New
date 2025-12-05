@@ -10,7 +10,7 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class PageIxtapaZihuatanejo extends HTMLElement {
+class PageIxtapa extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
 			<app-modal-travelpass></app-modal-travelpass>
@@ -143,19 +143,19 @@ class PageIxtapaZihuatanejo extends HTMLElement {
 					<h2 class="section-title">Descubre en Ixtapa Zihuatanejo</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/ixtapa/playa-la-ropa.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/ixtapa/lugares/playa-la-ropa.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Playa La Ropa</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/ixtapa/isla-ixtapa.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/ixtapa/lugares/isla-ixtapa.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Snorkel en Isla Ixtapa</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/ixtapa/playa-el-palmar-2.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/ixtapa/lugares/playa-el-palmar-2.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Playa El Palmar</h3>
 							</div>
@@ -196,4 +196,4 @@ class PageIxtapaZihuatanejo extends HTMLElement {
     `;
 	}
 }
-customElements.define("page-ixtapa-zihuatanejo", PageIxtapaZihuatanejo);
+customElements.define("page-ixtapa", PageIxtapa);
