@@ -1,43 +1,42 @@
 [
-    {
-      "title": "Dulce Gloria",
-      "description": "Las glorias son un dulce muy apreciado en Monterrey, hecho con leche caramelizada y nueces pecanas. Estos dulces son conocidos por su textura rica y cremosa, y suelen estar envueltos en celofán rojo. Son un recuerdo perfecto para llevar a casa o disfrutar como una deliciosa botana.",
-      "imageSrc": "../src/assets/img/platillos/monterrey/dulce-gloria.webp",
-      "imageModal":"../src/assets/img/platillos/monterrey/dulce-gloria-m.webp",
-      "altText": "Glorias de Linares",
-      "linkText": "Ver..."
-      },
-    {
-      "title": "Capirotada",
-      "description": "La capirotada es un postre tradicional mexicano, especialmente popular durante la Cuaresma. Se prepara con capas de pan tostado remojadas en un almíbar de piloncillo (azúcar de caña sin refinar), canela y clavo. El plato se cubre con pasas, nueces y queso, creando una combinación de sabores dulces y salados.",
-      "imageSrc": "../src/assets/img/platillos/monterrey/capirotada.webp",
-      "imageModal":"../src/assets/img/platillos/monterrey/capirotada-m.webp",
-      "altText": "Capirotada",
-      "linkText": "Ver..."
-    },
-    {
-      "title": "Cabrito asado",
-      "description": "El cabrito asado es uno de los platillos más emblemáticos de Monterrey. Esta comida tradicional consiste en asar un cabrito, generalmente en un horno de ladrillo, hasta que esté tierno y sabroso. El plato suele sazonarse con una mezcla de especias y servirse con acompañamientos como tortillas, salsa y frijoles. Es una experiencia imperdible para quienes visitan la región.",
-      "imageSrc": "../src/assets/img/platillos/monterrey/cabrito.webp",
-      "imageModal":"../src/assets/img/platillos/monterrey/cabrito-m.jpg",
-      "altText": "Cabrito asado",
-      "linkText": "Ver..."
-    },
-    {
-      "title": "Machaca con Huevo",
-      "description": "El machacacado con huevo es un desayuno tradicional elaborado con carne de res deshebrada (machaca) mezclada con huevos revueltos, tomates, cebollas y chiles. Este platillo se suele servir con tortillas de harina y frijoles refritos, ofreciendo una forma sabrosa y saciante de empezar el día.",
-      "imageSrc": "../src/assets/img/platillos/monterrey/machaca.webp",
-      "imageModal":"../src/assets/img/platillos/monterrey/machaca-m.jpg",
-      "altText": "Machaca con Huevo",
-      "linkText": "Ver..."
-    },
-    {
-      "title": "Empalmes",
-      "description": "Los empalmes son un desayuno único de Monterrey. Consisten en dos tortillas de maíz rellenas de frijoles refritos y, a veces, chorizo, que se fríen hasta quedar crujientes. Suelen servirse con un huevo frito encima y una guarnición de salsa, lo que los convierte en una comida sustanciosa y sabrosa.",
-      "imageSrc": "../src/assets/img/platillos/monterrey/empalmes.webp",
-      "imageModal":"../src/assets/img/platillos/monterrey/empalmes-m.jpg",
-      "altText": "Empalmes",
-      "linkText": "Ver..."
-    }
-   
-  ]
+	{
+		"title": "Dulce Gloria",
+		"description": "Las glorias son un dulce muy apreciado en Monterrey, hecho con leche caramelizada y nueces pecanas. Estos dulces son conocidos por su textura rica y cremosa, y suelen estar envueltos en celofán rojo. Son un recuerdo perfecto para llevar a casa o disfrutar como una deliciosa botana.",
+		"imageSrc": "../src/assets/img/destinos-img/morelia/platillos/dulce-gloria.webp",
+		"imageModal": "../src/assets/img/destinos-img/morelia/platillos/dulce-gloria-m.webp",
+		"altText": "Glorias de Linares",
+		"linkText": "Ver..."
+	},
+	{
+		"title": "Capirotada",
+		"description": "La capirotada es un postre tradicional mexicano, especialmente popular durante la Cuaresma. Se prepara con capas de pan tostado remojadas en un almíbar de piloncillo (azúcar de caña sin refinar), canela y clavo. El plato se cubre con pasas, nueces y queso, creando una combinación de sabores dulces y salados.",
+		"imageSrc": "../src/assets/img/destinos-img/morelia/platillos/capirotada.webp",
+		"imageModal": "../src/assets/img/destinos-img/morelia/platillos/capirotada-m.webp",
+		"altText": "Capirotada",
+		"linkText": "Ver..."
+	},
+	{
+		"title": "Cabrito asado",
+		"description": "El cabrito asado es uno de los platillos más emblemáticos de Monterrey. Esta comida tradicional consiste en asar un cabrito, generalmente en un horno de ladrillo, hasta que esté tierno y sabroso. El plato suele sazonarse con una mezcla de especias y servirse con acompañamientos como tortillas, salsa y frijoles. Es una experiencia imperdible para quienes visitan la región.",
+		"imageSrc": "../src/assets/img/destinos-img/morelia/platillos/cabrito.webp",
+		"imageModal": "../src/assets/img/destinos-img/morelia/platillos/cabrito-m.webp",
+		"altText": "Cabrito asado",
+		"linkText": "Ver..."
+	},
+	{
+		"title": "Machaca con Huevo",
+		"description": "El machacacado con huevo es un desayuno tradicional elaborado con carne de res deshebrada (machaca) mezclada con huevos revueltos, tomates, cebollas y chiles. Este platillo se suele servir con tortillas de harina y frijoles refritos, ofreciendo una forma sabrosa y saciante de empezar el día.",
+		"imageSrc": "../src/assets/img/destinos-img/morelia/platillos/machaca.webp",
+		"imageModal": "../src/assets/img/destinos-img/morelia/platillos/machaca-m.webp",
+		"altText": "Machaca con Huevo",
+		"linkText": "Ver..."
+	},
+	{
+		"title": "Empalmes",
+		"description": "Los empalmes son un desayuno único de Monterrey. Consisten en dos tortillas de maíz rellenas de frijoles refritos y, a veces, chorizo, que se fríen hasta quedar crujientes. Suelen servirse con un huevo frito encima y una guarnición de salsa, lo que los convierte en una comida sustanciosa y sabrosa.",
+		"imageSrc": "../src/assets/img/destinos-img/morelia/platillos/empalmes.webp",
+		"imageModal": "../src/assets/img/destinos-img/morelia/platillos/empalmes-m.webp",
+		"altText": "Empalmes",
+		"linkText": "Ver..."
+	}
+]

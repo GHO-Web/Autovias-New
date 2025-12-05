@@ -2,7 +2,7 @@
 	{
 		"title": "Cabrito Asado",
 		"description": "El platillo más representativo de Monterrey. Preparado al carbón con condimentos tradicionales, ofrece un sabor intenso y único. Perfecto para acompañar con frijoles y tortillas de harina.",
-		"imageSrc": "../src/assets/img/guia-viajes/platillos/monterrey/cabrito-asado.webp",
+		"imageSrc": "../src/assets/img/guia-viaje/monterrey/platillos/cabrito-asado.webp",
 		"imageModal": "../src/assets/img/destinos-img/monterrey/platillos/cabrito.webp",
 		"altText": "Cabrito Asado",
 		"linkText": "Ver..."
@@ -10,7 +10,7 @@
 	{
 		"title": "Machacado con Huevo",
 		"description": "Tradicional desayuno norteño preparado con carne seca desmenuzada, huevo, jitomate, cebolla y chile. Energético, sabroso y 100% regio.",
-		"imageSrc": "../src/assets/img/guia-viajes/platillos/monterrey/machacado-con-huevo.webp",
+		"imageSrc": "../src/assets/img/guia-viaje/monterrey/platillos/machacado-con-huevo.webp",
 		"imageModal": "../src/assets/img/destinos-img/monterrey/platillos/machacado.webp",
 		"altText": "Machacado con Huevo",
 		"linkText": "Ver..."
