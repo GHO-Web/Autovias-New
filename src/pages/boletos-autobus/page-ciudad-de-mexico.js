@@ -14,14 +14,14 @@ class PageCiudadDeMexico extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
-			<app-banner-slider
-					slides-data='[
-						{"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/banner/web/bw-boleto-electronico-etn.webp","mediumImage": "../../../src/assets/img/banner/tablet/home-doters.webp", "smallImage": "../../../src/assets/img/banner/movil/home-doters.webp", "link": "#index.html/banner1"},
-						{"id": "slide2", "title": "Banner 2", "image": "../../../src/assets/img/banner/web/bw-metodos-de-pago-etn.webp", "mediumImage": "../../../src/assets/img/banner/tablet/home-pago.webp","smallImage": "../../../src/assets/img/banner/movil/home-pago.webp", "link": "#index.html/banner2"},
-						{"id": "slide3", "title": "Banner 3", "image": "../../../src/assets/img/banner/web/bw-sorteo-doters-aniversario-etn.webp", "mediumImage": "../../../src/assets/img/banner/tablet/home-verano.webp","smallImage": "../../../src/assets/img/banner/movil/home-verano.webp", "link": "#index.html/banner3"}
-					]'
-			>
-			</app-banner-slider>
+      <app-banner-slider
+          slides-data='[
+          {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
+          {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
+          {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
+          ]'
+      >
+      </app-banner-slider>
 			<app-payments></app-payments>
 			
 			
@@ -187,21 +187,21 @@ class PageCiudadDeMexico extends HTMLElement {
           <h2 class="section-title">Imperdibles en Ciudad de México: Historia, Cultura y Metrópolis</h2>
           <div class="attractions__grid">
             <div class="attraction-card">
-              <div class="attraction-card__image" style='background-image: url("RUTA_IMAGEN_CENTRO_HISTORICO.webp")'></div>
+              <div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/cdmx-s.webp")'></div>
               <div class="attraction-card__content">
                 <h3 class="attraction-card__title">Centro Histórico y Zócalo</h3>
               </div>
             </div>
             <div class="attraction-card">
-              <div class="attraction-card__image" style='background-image: url("RUTA_IMAGEN_BELLAS_ARTES.webp")'></div>
+              <div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/palacio-de-bellas-artes.webp")'></div>
               <div class="attraction-card__content">
                 <h3 class="attraction-card__title">Palacio de Bellas Artes y Museos</h3>
               </div>
             </div>
             <div class="attraction-card">
-              <div class="attraction-card__image" style='background-image: url("RUTA_IMAGEN_COYOACAN.webp")'></div>
+              <div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/templo-mayor.webp")'></div>
               <div class="attraction-card__content">
-                <h3 class="attraction-card__title">Coyoacán y Casa Azul (Frida Kahlo)</h3>
+                <h3 class="attraction-card__title">Templo mayor</h3>
               </div>
             </div>
           </div>

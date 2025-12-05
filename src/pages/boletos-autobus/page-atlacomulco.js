@@ -17,9 +17,9 @@ class AppAtlacomulco extends HTMLElement {
       <app-cotiza></app-cotiza>
 			<app-banner-slider
 					slides-data='[
-						{"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/banner/web/bw-boleto-electronico-etn.webp","mediumImage": "../../../src/assets/img/banner/tablet/home-doters.webp", "smallImage": "../../../src/assets/img/banner/movil/home-doters.webp", "link": "#index.html/banner1"},
-						{"id": "slide2", "title": "Banner 2", "image": "../../../src/assets/img/banner/web/bw-metodos-de-pago-etn.webp", "mediumImage": "../../../src/assets/img/banner/tablet/home-pago.webp","smallImage": "../../../src/assets/img/banner/movil/home-pago.webp", "link": "#index.html/banner2"},
-						{"id": "slide3", "title": "Banner 3", "image": "../../../src/assets/img/banner/web/bw-sorteo-doters-aniversario-etn.webp", "mediumImage": "../../../src/assets/img/banner/tablet/home-verano.webp","smallImage": "../../../src/assets/img/banner/movil/home-verano.webp", "link": "#index.html/banner3"}
+					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
+					{"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
+					{"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
 					]'
 			>
 			</app-banner-slider>
@@ -188,19 +188,19 @@ class AppAtlacomulco extends HTMLElement {
 					<h2 class="section-title">Imperdibles en Atlacomulco: Tradición y Desarrollo en el Estado de México</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("RUTA_IMAGEN_PARROQUIA_GUADALUPE.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Parroquia de Nuestra Señora de Guadalupe</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("RUTA_IMAGEN_PARQUE_CULTURA.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Parque de la Cultura y la Identidad</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("RUTA_IMAGEN_MERCADO_MUNICIPAL.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Mercado Municipal</h3>
 							</div>
@@ -249,7 +249,6 @@ class AppAtlacomulco extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
 		`;
-
 	}
 }
 customElements.define("page-atlacomulco", AppAtlacomulco);
