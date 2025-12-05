@@ -18,7 +18,7 @@ class AppViajarMorelia extends HTMLElement {
 
 <!-- Components for page -->
 
-<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/morelia/banner/banner-guia-viaje-morelia.webp");' data-alt="Catedral de Morelia iluminada de noche">
+<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/banners/banner-guia-viaje-morelia.webp");' data-alt="Catedral de Morelia iluminada de noche">
   <div class="hero__content">
     <h1 class="hero__title">Descubre la Joya Colonial de Michoacán</h1>
     <h2 class="hero__subtitle">
@@ -40,7 +40,7 @@ class AppViajarMorelia extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/morelia/destinos/catedral-morelia.webp");' data-alt="Catedral de Morelia Michoacán"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/morelia/catedral-morelia.webp");' data-alt="Catedral de Morelia Michoacán"></div>
           <div class="place-card__content">
             <p class="place-card__title">1. Catedral de Morelia</p>
             <p class="place-card__description">
@@ -52,7 +52,7 @@ class AppViajarMorelia extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/morelia/destinos/aqueducto-morelia.webp");' data-alt="Acueducto de Morelia"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/morelia/aqueducto-morelia.webp");' data-alt="Acueducto de Morelia"></div>
           <div class="place-card__content">
             <p class="place-card__title">2. Acueducto de Morelia</p>
             <p class="place-card__description">
@@ -64,7 +64,7 @@ class AppViajarMorelia extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/morelia/destinos/callejon-del-romance.webp");' data-alt="Callejón del Romance Morelia"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/morelia/callejon-del-romance.webp");' data-alt="Callejón del Romance Morelia"></div>
           <div class="place-card__content">
             <p class="place-card__title">3. Callejón del Romance</p>
             <p class="place-card__description">
@@ -76,7 +76,7 @@ class AppViajarMorelia extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/morelia/destinos/museo-del-dulce.webp");' data-alt="Museo del Dulce de Morelia"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/morelia/museo-del-dulce.webp");' data-alt="Museo del Dulce de Morelia"></div>
           <div class="place-card__content">
             <p class="place-card__title">4. Museo del Dulce</p>
             <p class="place-card__description">
@@ -88,7 +88,7 @@ class AppViajarMorelia extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/morelia/destinos/zoologico-morelia.webp");' data-alt="Zoológico Benito Juárez Morelia"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/morelia/zoologico-morelia.webp");' data-alt="Zoológico Benito Juárez Morelia"></div>
           <div class="place-card__content">
             <p class="place-card__title">5. Zoológico Benito Juárez</p>
             <p class="place-card__description">
@@ -107,7 +107,7 @@ class AppViajarMorelia extends HTMLElement {
     <h2 class="section-title">Sabores Típicos de Morelia</h2>
     <div class="food-grid">
       <div class="food-card">
-        <img alt="Carnitas michoacanas típicas de Morelia" class="food-card__image" src="../src/assets/img/guia-viaje/morelia/platillos/carnitas-michoacanas.webp">
+        <img alt="Carnitas michoacanas típicas de Morelia" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/morelia/carnitas-michoacanas.webp">
         <h3 class="food-card__title">Carnitas Michoacanas</h3>
         <p class="food-card__description">
           Preparadas en su punto con carne de cerdo dorada lentamente. Un clásico infaltable acompañado de salsa verde, tortillas calientes y limón.
@@ -115,7 +115,7 @@ class AppViajarMorelia extends HTMLElement {
       </div>
 
       <div class="food-card">
-        <img alt="Corundas michoacanas con crema y salsa" class="food-card__image" src="../src/assets/img/guia-viaje/morelia/platillos/corundas.webp">
+        <img alt="Corundas michoacanas con crema y salsa" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/morelia/corundas.webp">
         <h3 class="food-card__title">Corundas</h3>
         <p class="food-card__description">
           Tamales triangulares envueltos en hojas de milpa, servidos con crema, queso y salsa. Son uno de los platillos más representativos de Michoacán.
@@ -123,7 +123,7 @@ class AppViajarMorelia extends HTMLElement {
       </div>
 
       <div class="food-card">
-        <img alt="Ate con queso típico de Morelia" class="food-card__image" src="../src/assets/img/guia-viaje/morelia/platillos/ate-con-queso.webp">
+        <img alt="Ate con queso típico de Morelia" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/morelia/ate-con-queso.webp">
         <h3 class="food-card__title">Ate con Queso</h3>
         <p class="food-card__description">
           Postre tradicional que combina lo dulce del ate de frutas con el sabor salado del queso fresco. Un contraste delicioso y típico de la región.

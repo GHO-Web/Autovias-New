@@ -41,7 +41,6 @@ import "./boletos-autobus/page-maravatio.js?v=1.0.0";
 // GUIA DE VIAJE
 
 
-import "./guia-viaje/page-viajar-a-monterrey.js?v=1.0.0";
 import "./guia-viaje/page-viajar-a-morelia.js?v=1.0.0";
 import "./guia-viaje/page-viajar-a-ciudad-de-mexico.js?v=1.0.0";
 import "./guia-viaje/page-viajar-a-colima.js?v=1.0.0";

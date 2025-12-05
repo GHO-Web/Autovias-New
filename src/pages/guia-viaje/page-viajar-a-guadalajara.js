@@ -18,7 +18,7 @@ class PageViajarAGuadalajara extends HTMLElement {
 
 <!-- Components for page -->
 
-<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/guadalajara/banner/banner-guia-viaje-guadalajara.webp");' data-alt="Vista panorámica de Guadalajara, Jalisco al atardecer">
+<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/banners/banner-guia-viaje-guadalajara.webp");' data-alt="Vista panorámica de Guadalajara, Jalisco al atardecer">
   <div class="hero__content">
     <h1 class="hero__title">Descubre la Esencia de Guadalajara</h1>
     <h2 class="hero__subtitle">
@@ -40,7 +40,7 @@ class PageViajarAGuadalajara extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/guadalajara/destinos/catedral-guadalajara.webp");' data-alt="Catedral Metropolitana de Guadalajara"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/guadalajara/catedral-guadalajara.webp");' data-alt="Catedral Metropolitana de Guadalajara"></div>
           <div class="place-card__content">
             <p class="place-card__title">1. Catedral Metropolitana de Guadalajara</p>
             <p class="place-card__description">
@@ -52,7 +52,7 @@ class PageViajarAGuadalajara extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/guadalajara/destinos/teatro-degollado-guadalajara.webp");' data-alt="Teatro Degollado en Guadalajara"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/guadalajara/teatro-degollado-guadalajara.webp");' data-alt="Teatro Degollado en Guadalajara"></div>
           <div class="place-card__content">
             <p class="place-card__title">2. Teatro Degollado</p>
             <p class="place-card__description">
@@ -64,7 +64,7 @@ class PageViajarAGuadalajara extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/guadalajara/destinos/basilica-zapopan-guadalajara.webp");' data-alt="Basílica de Zapopan cerca de Guadalajara"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/guadalajara/basilica-zapopan-guadalajara.webp");' data-alt="Basílica de Zapopan cerca de Guadalajara"></div>
           <div class="place-card__content">
             <p class="place-card__title">3. Basílica de Zapopan</p>
             <p class="place-card__description">
@@ -76,7 +76,7 @@ class PageViajarAGuadalajara extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/guadalajara/destinos/tequila-ruta-agave-jalisco.webp");' data-alt="Campos de agave y Ruta del Tequila desde Guadalajara"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/guadalajara/tequila-ruta-agave-jalisco.webp");' data-alt="Campos de agave y Ruta del Tequila desde Guadalajara"></div>
           <div class="place-card__content">
             <p class="place-card__title">4. Ruta del Tequila y campos de agave</p>
             <p class="place-card__description">
@@ -88,7 +88,7 @@ class PageViajarAGuadalajara extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/guadalajara/destinos/la-minerva-guadalajara.webp");' data-alt="Glorieta La Minerva en Guadalajara"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/guadalajara/la-minerva-guadalajara.webp");' data-alt="Glorieta La Minerva en Guadalajara"></div>
           <div class="place-card__content">
             <p class="place-card__title">5. Glorieta La Minerva</p>
             <p class="place-card__description">
@@ -107,7 +107,7 @@ class PageViajarAGuadalajara extends HTMLElement {
     <h2 class="section-title">Sabores Típicos de Guadalajara</h2>
     <div class="food-grid">
       <div class="food-card">
-        <img alt="Birria tapatía de Guadalajara" class="food-card__image" src="../src/assets/img/guia-viaje/guadalajara/platillos/birria-guadalajara.webp">
+        <img alt="Birria tapatía de Guadalajara" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/guadalajara/birria-guadalajara.webp">
         <h3 class="food-card__title">Birria tapatía</h3>
         <p class="food-card__description">
           Este emblemático guiso de carne de res o chivo acompañado de consomé es una de las delicias de la gastronomía de Guadalajara y del estado de Jalisco.
@@ -115,7 +115,7 @@ class PageViajarAGuadalajara extends HTMLElement {
       </div>
 
       <div class="food-card">
-        <img alt="Torta ahogada de Guadalajara" class="food-card__image" src="../src/assets/img/guia-viaje/guadalajara/platillos/torta-ahogada.webp">
+        <img alt="Torta ahogada de Guadalajara" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/guadalajara/torta-ahogada.webp">
         <h3 class="food-card__title">Torta ahogada</h3>
         <p class="food-card__description">
           Hecha con pan especial (“birote”), rellena de carnitas y bañada en salsa de jitomate picante. Un clásico que no puedes dejar de probar en tu visita a Guadalajara.
@@ -123,7 +123,7 @@ class PageViajarAGuadalajara extends HTMLElement {
       </div>
 
       <div class="food-card">
-        <img alt="Tequila artesanal de Jalisco" class="food-card__image" src="../src/assets/img/guia-viaje/guadalajara/platillos/tequila-copas.webp">
+        <img alt="Tequila artesanal de Jalisco" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/guadalajara/tequila-copas.webp">
         <h3 class="food-card__title">Tequila y degustaciones</h3>
         <p class="food-card__description">
           En la región de Guadalajara y sus alrededores puedes participar en tours de degustación de tequila, aprender sobre su elaboración y celebrar esta tradición jalisciense.

@@ -18,7 +18,7 @@ class PageViajarAQueretaro extends HTMLElement {
 			
 			<!-- Components for page -->
 
-<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/queretaro/banner/banner-guia-viaje-queretaro.webp");' data-alt="Acueducto de Querétaro iluminado de noche">
+<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/banners/banner-guia-viaje-queretaro.webp");' data-alt="Acueducto de Querétaro iluminado de noche">
   <div class="hero__content">
     <h1 class="hero__title">Descubre la Historia y el Encanto de Querétaro</h1>
     <h2 class="hero__subtitle">
@@ -40,7 +40,7 @@ class PageViajarAQueretaro extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/queretaro/destinos/queretaro/acueducto-queretaro.webp");' data-alt="Acueducto de Querétaro"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/queretaro/acueducto-queretaro.webp");' data-alt="Acueducto de Querétaro"></div>
           <div class="place-card__content">
             <p class="place-card__title">1. Acueducto de Querétaro</p>
             <p class="place-card__description">
@@ -52,7 +52,7 @@ class PageViajarAQueretaro extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/queretaro/destinos/queretaro/centro-historico-queretaro.webp");' data-alt="Centro Histórico de Querétaro"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/queretaro/centro-historico-queretaro.webp");' data-alt="Centro Histórico de Querétaro"></div>
           <div class="place-card__content">
             <p class="place-card__title">2. Centro Histórico</p>
             <p class="place-card__description">
@@ -64,7 +64,7 @@ class PageViajarAQueretaro extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/queretaro/destinos/queretaro/pena-de-bernal.webp");' data-alt="Peña de Bernal Querétaro"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/queretaro/pena-de-bernal.webp");' data-alt="Peña de Bernal Querétaro"></div>
           <div class="place-card__content">
             <p class="place-card__title">3. Peña de Bernal</p>
             <p class="place-card__description">
@@ -76,7 +76,7 @@ class PageViajarAQueretaro extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/queretaro/destinos/queretaro/ruta-del-vino-queso.webp");' data-alt="Ruta del Vino y Queso Querétaro"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/queretaro/ruta-del-vino-queso.webp");' data-alt="Ruta del Vino y Queso Querétaro"></div>
           <div class="place-card__content">
             <p class="place-card__title">4. Ruta del Vino y Queso</p>
             <p class="place-card__description">
@@ -88,7 +88,7 @@ class PageViajarAQueretaro extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/queretaro/destinos/queretaro/tequisquiapan.webp");' data-alt="Tequisquiapan Querétaro"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/queretaro/tequisquiapan.webp");' data-alt="Tequisquiapan Querétaro"></div>
           <div class="place-card__content">
             <p class="place-card__title">5. Tequisquiapan</p>
             <p class="place-card__description">
@@ -107,7 +107,7 @@ class PageViajarAQueretaro extends HTMLElement {
     <h2 class="section-title">Sabores Típicos de Querétaro</h2>
     <div class="food-grid">
       <div class="food-card">
-        <img alt="Enchiladas queretanas" class="food-card__image" src="../src/assets/img/guia-viaje/queretaro/platillos/enchiladas-queretanas.webp">
+        <img alt="Enchiladas queretanas" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/queretaro/enchiladas-queretanas.webp">
         <h3 class="food-card__title">Enchiladas Queretanas</h3>
         <p class="food-card__description">
           Un clásico local preparado con tortillas bañadas en salsa roja, rellenas de pollo y servidas con papas, zanahorias y queso fresco.
@@ -115,7 +115,7 @@ class PageViajarAQueretaro extends HTMLElement {
       </div>
 
       <div class="food-card">
-        <img alt="Gorditas de maíz quebrado" class="food-card__image" src="../src/assets/img/guia-viaje/queretaro/platillos/gorditas-maiz.webp">
+        <img alt="Gorditas de maíz quebrado" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/queretaro/gorditas-maiz.webp">
         <h3 class="food-card__title">Gorditas de Maíz Quebrado</h3>
         <p class="food-card__description">
           Preparadas con maíz quebrado y rellenas de guisos tradicionales como chicharrón, nopales o frijoles. Una delicia típica de los mercados locales.
@@ -123,7 +123,7 @@ class PageViajarAQueretaro extends HTMLElement {
       </div>
 
       <div class="food-card">
-        <img alt="Vinos queretanos" class="food-card__image" src="../src/assets/img/guia-viaje/queretaro/platillos/vinos-queretanos.webp">
+        <img alt="Vinos queretanos" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/queretaro/vinos-queretanos.webp">
         <h3 class="food-card__title">Vinos Queretanos</h3>
         <p class="food-card__description">
           Los vinos locales destacan por su calidad y variedad. Recorre las bodegas y disfruta de catas acompañadas con quesos artesanales de la región.

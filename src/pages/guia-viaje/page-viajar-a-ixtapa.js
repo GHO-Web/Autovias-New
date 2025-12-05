@@ -11,27 +11,26 @@ import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
 class PageViajarAIxtapa extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
       <app-cotiza></app-cotiza>
-
 
 <!-- Components for page -->
 
-<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/ixtapa/banner/banner-guia-viaje-ixtapa-zihuatanejo.webp");' data-alt="Vista aérea de Ixtapa Zihuatanejo, Guerrero con playas y mar turquesa">
+<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/banners/banner-guia-viaje-ixtapa-zihuatanejo.webp");' data-alt="Playa de Ixtapa al atardecer con palmeras">
   <div class="hero__content">
     <h1 class="hero__title">Escápate a Ixtapa Zihuatanejo</h1>
     <h2 class="hero__subtitle">
-      Viaja cómodamente con Autovías La Línea hacia Ixtapa Zihuatanejo y disfruta un paraíso de playas doradas, naturaleza tropical y un ambiente relajado en la Costa Grande de Guerrero.
+      Relájate entre playas de arena dorada, atardeceres espectaculares y la auténtica gastronomía del Pacífico. Viaja con Autovías La Línea y descubre lo mejor de Ixtapa y Zihuatanejo.
     </h2>
-    <a href="../destinos/autobus-a-ixtapa-zihuatanejo.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
+    <a href="../destinos/autobus-a-ixtapa.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
   </div>
 </section>
 
 <section class="content-section content-section--light">
   <div class="container">
     <p class="intro-text">
-      Ixtapa Zihuatanejo combina lo mejor de dos mundos: el encanto pesquero y tradicional de Zihuatanejo, con la modernidad y el confort turístico de Ixtapa. Su clima cálido todo el año, playas de ensueño y una gastronomía que fusiona mar y tierra lo convierten en uno de los destinos más amados del Pacífico mexicano.
+      Ixtapa Zihuatanejo, en la costa de Guerrero, ofrece una combinación entre el estilo resort de Ixtapa y el encanto pesquero de Zihuatanejo. Playas, actividades acuáticas y una oferta gastronómica basada en mariscos hacen de este destino una elección ideal para unas vacaciones relajadas.
     </p>
     <hr class="divider">
     <h2 class="section-title">Top 5 Lugares Imprescindibles en Ixtapa Zihuatanejo</h2>
@@ -40,11 +39,11 @@ class PageViajarAIxtapa extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ixtapa/destinos/playa-la-rope.webp");' data-alt="Playa La Ropa en Zihuatanejo, Guerrero"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/ixtapa/playa-el-palmar-ixtapa.webp");' data-alt="Playa El Palmar en Ixtapa"></div>
           <div class="place-card__content">
-            <p class="place-card__title">1. Playa La Ropa</p>
+            <p class="place-card__title">1. Playa El Palmar</p>
             <p class="place-card__description">
-              Considerada una de las playas más bellas del Pacífico mexicano, Playa La Ropa es perfecta para nadar, practicar deportes acuáticos o disfrutar un atardecer desde sus restaurantes frente al mar.
+              Una de las playas más amplias y populares de Ixtapa, ideal para nadar, caminar y disfrutar del sol. Perfecta para familias y para quienes buscan comodidades y servicios cercanos.
             </p>
           </div>
         </div>
@@ -52,11 +51,11 @@ class PageViajarAIxtapa extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ixtapa/destinos/isla-ixtapa.webp");' data-alt="Isla Ixtapa vista desde lancha turística"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/ixtapa/islote-ixtapa.webp");' data-alt="Isla Ixtapa y zonas de snorkel"></div>
           <div class="place-card__content">
-            <p class="place-card__title">2. Isla Ixtapa</p>
+            <p class="place-card__title">2. Islas y snorkel (Isla Ixtapa)</p>
             <p class="place-card__description">
-              Un paraíso natural a pocos minutos en lancha, con playas tranquilas ideales para snorkel, descanso y platillos frescos de mariscos. Ideal para pasar un día completo desconectado.
+              Excursiones en barco te llevan a zonas de snorkel y pequeñas islas donde puedes nadar entre peces tropicales y disfrutar paisajes marinos espectaculares.
             </p>
           </div>
         </div>
@@ -64,11 +63,11 @@ class PageViajarAIxtapa extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ixtapa/destinos/muelle-zihuatanejo.webp");' data-alt="Muelle principal de Zihuatanejo con vista al mar y embarcaciones"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/ixtapa/plaza-marina-ixtapa.webp");' data-alt="Marina Ixtapa y zona comercial"></div>
           <div class="place-card__content">
-            <p class="place-card__title">3. Muelle Principal de Zihuatanejo</p>
+            <p class="place-card__title">3. Marina y centro de Zihuatanejo</p>
             <p class="place-card__description">
-              Punto icónico para paseos al amanecer o al atardecer. Desde aquí parten tours de pesca deportiva y recorridos por la bahía. Un espacio ideal para fotos y caminatas junto al malecón.
+              El malecón y la marina en Zihuatanejo conservan un ambiente pesquero y relajado: restaurantes frente al mar, artesanías locales y vida nocturna tranquila.
             </p>
           </div>
         </div>
@@ -76,11 +75,11 @@ class PageViajarAIxtapa extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ixtapa/destinos/ciclopista-ixtapa.webp");' data-alt="Ciclopista ecológica de Ixtapa entre palmeras y selva"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/ixtapa/la-ropa-ixtapa.webp");' data-alt="Mirador y la playa de La Ropa en Zihuatanejo"></div>
           <div class="place-card__content">
-            <p class="place-card__title">4. Ciclopista Ecológica de Ixtapa</p>
+            <p class="place-card__title">4. Playa La Ropa</p>
             <p class="place-card__description">
-              Una ruta de más de 10 km que conecta Ixtapa con Playa Linda, rodeada de vegetación tropical y fauna local. Perfecta para quienes disfrutan de recorrer en bicicleta o caminando entre naturaleza.
+              Una de las playas más famosas de Zihuatanejo: aguas tranquilas, ideal para deportes acuáticos, paseos en kayak y cenar en restaurantes sobre la arena.
             </p>
           </div>
         </div>
@@ -88,11 +87,11 @@ class PageViajarAIxtapa extends HTMLElement {
 
       <div class="place-card-wrapper">
         <div class="place-card">
-          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/ixtapa/destinos/museo-arqueologico-zihuatanejo.webp");' data-alt="Museo Arqueológico de la Costa Grande, Zihuatanejo"></div>
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/ixtapa/artesanias.webp");' data-alt="Mercado de Artesanías Ixtapa"></div>
           <div class="place-card__content">
-            <p class="place-card__title">5. Museo Arqueológico de la Costa Grande</p>
+            <p class="place-card__title">5. Mercado de Artesanías Ixtapa</p>
             <p class="place-card__description">
-              Este pequeño pero interesante museo en el centro de Zihuatanejo ofrece una mirada al pasado prehispánico de la región y las culturas que habitaron la costa guerrerense.
+              Un lugar ideal para comprar recuerdos y artesanías locales, desde textiles hasta joyería y objetos decorativos hechos por artesanos de la región.
             </p>
           </div>
         </div>
@@ -107,26 +106,26 @@ class PageViajarAIxtapa extends HTMLElement {
     <h2 class="section-title">Sabores Típicos de Ixtapa Zihuatanejo</h2>
     <div class="food-grid">
       <div class="food-card">
-        <img alt="Pescado a la talla" class="food-card__image" src="../src/assets/img/guia-viaje/ixtapa/platillos/pescado-a-la-talla.webp">
+        <img alt="Pescado a la talla de Ixtapa" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/ixtapa/pescado-a-la-talla.webp">
         <h3 class="food-card__title">Pescado a la talla</h3>
         <p class="food-card__description">
-          Platillo emblema del Pacífico: pescado asado al carbón y bañado en salsa roja o verde, acompañado de arroz, frijoles y tortillas hechas a mano.
+          Preparado en la costa del Pacífico, el pescado a la talla es uno de los platillos más representativos: filetes marinados y asados con salsas locales.
         </p>
       </div>
 
       <div class="food-card">
-        <img alt="Tiritas de pescado" class="food-card__image" src="../src/assets/img/guia-viaje/ixtapa/platillos/tiritas-de-pescado.webp">
-        <h3 class="food-card__title">Tiritas de pescado</h3>
+        <img alt="Ceviche fresco de Ixtapa" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/ixtapa/ceviche-ixtapa.webp">
+        <h3 class="food-card__title">Ceviche y mariscos</h3>
         <p class="food-card__description">
-          Preparación tradicional de Zihuatanejo: pescado fresco cortado en tiras, marinado con limón, cebolla morada y chile. Refrescante y ligera, ideal para la playa.
+          Fresco y cítrico, el ceviche local y otros platillos de mar ofrecen una experiencia gastronómica perfecta junto al mar.
         </p>
       </div>
 
       <div class="food-card">
-        <img alt="Camarones al coco" class="food-card__image" src="../src/assets/img/guia-viaje/ixtapa/platillos/camarones-al-coco.webp">
-        <h3 class="food-card__title">Camarones al coco</h3>
+        <img alt="Cocina tradicional guerrerense en Ixtapa" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/ixtapa/antojitos-ixtapa.webp">
+        <h3 class="food-card__title">Guisos y antojitos guerrerenses</h3>
         <p class="food-card__description">
-          Camarones empanizados en coco rallado, dorados a la perfección y servidos con salsa de mango o tamarindo. Un clásico de la cocina guerrerense costera.
+          Prueba tacos de mariscos, sopas de la región y las especialidades locales en los mercados y fondas de Zihuatanejo.
         </p>
       </div>
     </div>
@@ -140,51 +139,51 @@ class PageViajarAIxtapa extends HTMLElement {
 
       <details class="faq-item">
         <summary class="faq-item__summary">
-          <span class="faq-item__question">¿Cuál es la mejor época para visitar Ixtapa Zihuatanejo?</span>
+          <span class="faq-item__question">¿Cuál es la mejor época para visitar Ixtapa?</span>
           <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
         </summary>
         <p class="faq-item__answer">
-          La temporada ideal va de noviembre a mayo, cuando el clima es seco, soleado y perfecto para disfrutar las playas. Durante junio a octubre hay lluvias, pero también paisajes más verdes y tarifas más bajas.
+          La temporada seca (noviembre a mayo) ofrece clima cálido y menos lluvias; sin embargo, los meses de otoño y primavera son ideales para evitar multitudes y aún disfrutar buen clima.
         </p>
       </details>
 
       <details class="faq-item">
         <summary class="faq-item__summary">
-          <span class="faq-item__question">¿Cómo moverse por la zona?</span>
+          <span class="faq-item__question">¿Qué actividades acuáticas puedo hacer?</span>
           <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
         </summary>
         <p class="faq-item__answer">
-          Puedes usar taxis, transporte local o rentar una bicicleta para recorrer la ciclopista. Las distancias entre Ixtapa y Zihuatanejo son cortas y muy accesibles.
+          Buceo, snorkel, paseos en lancha, kayak y pesca deportiva son actividades habituales. Verifica operadores turísticos certificados para garantizar seguridad.
         </p>
       </details>
 
       <details class="faq-item">
         <summary class="faq-item__summary">
-          <span class="faq-item__question">¿Dónde hospedarse?</span>
+          <span class="faq-item__question">¿Cómo moverse entre Ixtapa y Zihuatanejo?</span>
           <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
         </summary>
         <p class="faq-item__answer">
-          Ixtapa ofrece hoteles de lujo y resorts todo incluido, mientras que Zihuatanejo es ideal para hospedajes boutique frente al mar o cabañas ecológicas con vista a la bahía.
+          Hay transporte local (colectivos y taxis) y servicios privados entre ambos núcleos; la distancia es corta y el traslado es rápido.
         </p>
       </details>
 
       <details class="faq-item">
         <summary class="faq-item__summary">
-          <span class="faq-item__question">¿Qué actividades no debo perderme?</span>
+          <span class="faq-item__question">¿Qué precauciones tomar?</span>
           <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
         </summary>
         <p class="faq-item__answer">
-          Snorkel en Isla Ixtapa, paseos en lancha por la bahía, visitas a Playa Las Gatas, y recorridos en bicicleta por la ciclopista ecológica son imperdibles.
+          Mantén objetos de valor seguros, evita caminar en zonas poco iluminadas por la noche y respeta indicaciones de salvavidas en playas con bandera de advertencia.
         </p>
       </details>
 
       <details class="faq-item">
         <summary class="faq-item__summary">
-          <span class="faq-item__question">¿Qué souvenirs llevar?</span>
+          <span class="faq-item__question">¿Qué llevar en el equipaje?</span>
           <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
         </summary>
         <p class="faq-item__answer">
-          Artesanías de coco, textiles guerrerenses, joyería hecha con conchas marinas y productos locales como café o mezcal de la región son recuerdos típicos de este destino.
+          Protector solar, repelente, ropa ligera, traje de baño, calzado cómodo y una chaqueta ligera para la noche si planeas salir al malecón.
         </p>
       </details>
 
@@ -193,11 +192,11 @@ class PageViajarAIxtapa extends HTMLElement {
 </section>
 
 <section class="cta-section">
-  <h2 class="cta-section__title">¿Listo para tu Aventura en Ixtapa Zihuatanejo?</h2>
+  <h2 class="cta-section__title">¿Listo para tu Escapada a Ixtapa?</h2>
   <p class="cta-section__text">
-    Viaja con comodidad, lujo y puntualidad con Autovías La Línea. Vive el equilibrio perfecto entre relax y naturaleza en uno de los destinos más hermosos del Pacífico mexicano. ¡Compra tus boletos y disfruta la experiencia costera más auténtica!
+    Disfruta de playas, actividades al aire libre y la mejor experiencia costera con Autovías La Línea. Compra tus boletos ahora y viaja con seguridad y comodidad.
   </p>
-  <a href="../destinos/autobus-a-ixtapa-zihuatanejo.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
+     <a href="../destinos/autobus-a-ixtapa.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
 
 </section>
 
@@ -206,6 +205,6 @@ class PageViajarAIxtapa extends HTMLElement {
 <app-button-eva-trip></app-button-eva-trip>
 
     `;
-	}
+  }
 }
 customElements.define("page-viajar-a-ixtapa", PageViajarAIxtapa);

@@ -1,5 +1,4 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
-import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
@@ -11,174 +10,203 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
-class AppViajarUruapan extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
-			<app-cotiza></app-cotiza>
-			<app-modal-travelpass></app-modal-travelpass>
-			<app-modal-doters></app-modal-doters>
-			<app-banner-slider
-					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/Atlacomulco_Banner_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/global/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
-			>
-			</app-banner-slider>
-			<app-payments></app-payments>
-			
-			<!-- Components for page -->
+class PageViajarAUruapan extends HTMLElement {
+  async connectedCallback() {
+    this.innerHTML = `
+      <app-cotiza></app-cotiza>
 
-			<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwRaNTXjC4hzOr7ORLU-a3-j_UGbsvK7KtPHMWzlMIR7xRNvcNaGo5GljsW9D44Ws7OgfDXE9ZPKBCpsr_uf_g_-ztpdGzfFPThxKuqb2hzD5nT362Mv4oP93kRGTkAx9UnO_P23Y8b_Zh0Kzt0FfD8RNTp80XvDNVvgy3PM5RpC3-DSI9e35zvy0R7kCRBq5Q6i4QAZYrBVNatDorVIR8azyZFtazNR6phcIv6Whute_reg49odo8zdG3_O3E2MSzmGst9hwG-0A");'>
-					<div class="hero__content">
-							<h1 class="hero__title">Autobús a Morelia</h1>
-							<p class="hero__subtitle">Descubre la belleza de Morelia viajando en autobús desde la Ciudad de México. Disfruta de un viaje cómodo, seguro y económico.</p>
-							<a href="../destinos/autobus-a-uruapan.html" class="btn btn--primary btn--large" target="_blank" aria-label="Comprar boletos" tabindex="0">Conoce más</a>
-					</div>
-			</section>
+<!-- HERO -->
+<section class="hero" style='background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.6) 100%), url("../src/assets/img/guia-viaje/banners/banner-guia-viaje-uruapan.webp");' data-alt="Parque Nacional Barranca del Cupatitzio Uruapan">
+  <div class="hero__content">
+    <h1 class="hero__title">Explora la Naturaleza y Tradición de Uruapan</h1>
+    <h2 class="hero__subtitle">
+      Viaja con Autovías La Línea hacia Uruapan, una ciudad rodeada de agua, montañas, gastronomía y cultura purépecha.
+    </h2>
+    <a href="../destinos/autobus-a-uruapan.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">Ver más sobre el destino</a>
+  </div>
+</section>
 
-			<section class="features">
-					<div class="container">
-							<h2 class="section-title">¿Por qué viajar en autobús a Morelia?</h2>
-							<div class="features__grid">
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-armchair material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Comodidad</h3>
-											<p class="feature-card__description">Viaja en autobuses modernos con asientos reclinables, aire acondicionado y entretenimiento a bordo.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-pig material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Ahorro</h3>
-											<p class="feature-card__description">Disfruta de tarifas competitivas y promociones especiales para que tu viaje sea más accesible.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-travel-security material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Viaje sin complicaciones</h3>
-											<p class="feature-card__description">Olvídate del tráfico y el estrés de conducir. Relájate y disfruta del paisaje.</p>
-									</div>
-									<div class="feature-card">
-											<div class="feature-card__icon-wrapper">
-													<span class="icon-montain material-symbols-outlined"></span>
-											</div>
-											<h3 class="feature-card__title">Paisajes inolvidables</h3>
-											<p class="feature-card__description">Admira la belleza de los paisajes mexicanos durante tu trayecto a Morelia.</p>
-									</div>
-							</div>
-					</div>
-			</section>
+<!-- INTRO -->
+<section class="content-section content-section--light">
+  <div class="container">
+    <p class="intro-text">
+      Uruapan, conocida como la “Capital Mundial del Aguacate”, es uno de los destinos naturales más espectaculares de Michoacán. Sus ríos, parques, historia y cultura la convierten en una ciudad ideal para quienes buscan naturaleza, gastronomía y tradición purépecha.
+    </p>
+    <hr class="divider">
 
-			<section class="route-info">
-					<div class="container route-info__container">
-							<h2 class="section-title">Trayecto destacado CDMX → Morelia</h2>
-							<div class="route-info__card">
-									<div class="route-info__timeline">
-											<div class="route-info__line"></div>
-											<div class="route-info__stops">
-													<div class="route-info__stop">
-															<div class="route-info__stop-icon"><span class="icon-bus material-symbols-outlined"></span></div>
-															<span class="route-info__stop-name">Ciudad de México</span>
-													</div>
-													<div class="route-info__stop">
-															<span class="route-info__stop-name">Morelia</span>
-															<div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined"></span></div>
-													</div>
-											</div>
-									</div>
-									<div class="route-info__details-grid">
-											<div class="detail-item">
-													<p class="detail-item__label">Duración</p>
-													<p class="detail-item__value">4.5 horas</p>
-											</div>
-											<div class="detail-item">
-													<p class="detail-item__label">Frecuencia</p>
-													<p class="detail-item__value">Diaria</p>
-											</div>
-											<div class="detail-item">
-													<p class="detail-item__label">Tipo de autobús</p>
-													<p class="detail-item__value">Doble piso, Ejecutivo</p>
-											</div>
-									</div>
-							</div>
-					</div>
-			</section>
+    <h2 class="section-title">Top 5 Lugares Imprescindibles en Uruapan</h2>
 
-			<section class="attractions">
-					<div class="container">
-							<h2 class="section-title">Atracciones cerca de la terminal</h2>
-							<div class="attractions__grid">
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">Palacio de Gobierno</h3>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">La Soterraña</h3>
-											</div>
-									</div>
-									<div class="attraction-card">
-											<div class="attraction-card__image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRxud9AgXCbEuWBhciwCg-2_V_cucbSOLteunuqBydjl-LArm90RXflRQrkPGOjFA4Lva97g9liAZbTOAtoxjYR_KmTMlC_6JgYjUoOXpXgCNRDlktZ-5t04roVs4n27fliWl0fmmxv23CowdMSC23l55PV3iF3cMxFR_uZmQO3rfOXWoss8pMIjMryH7mrSHUzzX25-q9Yja2_sRFz8p1k3PmhP_NINRILMUn5G6kFm1W_TX3m1wE4C2wqYu3Q4lxf6MDqOA2Zc")'></div>
-											<div class="attraction-card__content">
-													<h3 class="attraction-card__title">Mercado Independencia</h3>
-											</div>
-									</div>
-							</div>
-					</div>
-			</section>
+    <div class="place-list">
 
-			<section class="faq">
-					<div class="container faq__container">
-							<h2 class="section-title">Preguntas frecuentes</h2>
-							<div class="faq__list">
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Cuál es el precio del boleto de autobús de CDMX a Morelia?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Los precios varían según la temporada, la línea de autobús y el tipo de servicio. Te recomendamos consultar los precios actualizados en nuestra sección de compra de boletos.</p>
-									</details>
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Cuáles son los horarios de salida de los autobuses?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Contamos con salidas diarias y frecuentes. Puedes ver todos los horarios disponibles al momento de seleccionar tu fecha de viaje en el portal de compra.</p>
-									</details>
-									<details class="faq-item">
-											<summary class="faq-item__summary">
-													<span class="faq-item__question">¿Qué servicios incluyen los autobuses ejecutivos?</span>
-													<span class="faq-item__icon">
-															<span class="material-symbols-outlined">expand_more</span>
-													</span>
-											</summary>
-											<p class="faq-item__answer">Nuestros autobuses ejecutivos ofrecen asientos más amplios y cómodos, pantallas individuales, conexión Wi-Fi, sanitarios y un refrigerio de cortesía para hacer tu viaje más placentero.</p>
-									</details>
-							</div>
-					</div>
-			</section>
+      <!-- 1 -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/uruapan/parque-nacional-cupatitzio.webp");' data-alt="Parque Nacional Barranca del Cupatitzio">
+          </div>
+          <div class="place-card__content">
+            <p class="place-card__title">1. Parque Nacional Barranca del Cupatitzio</p>
+            <p class="place-card__description">
+              Uno de los parques más bellos de México, famoso por sus manantiales, cascadas y senderos rodeados de vegetación. Ideal para caminar y apreciar la naturaleza en su máximo esplendor.
+            </p>
+          </div>
+        </div>
+      </div>
 
-			<section class="cta">
-					<div class="container">
-							<h2 class="cta__title">¡Viaja a Morelia con Autovías La Línea!</h2>
-							<p class="cta__subtitle">No esperes más para descubrir una de las ciudades más bellas de México. Tu aventura está a solo un clic de distancia.</p>
-							<a href="../destinos/autobus-a-uruapan.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Comprar boletos" tabindex="0">Consulta horarios y compra tu boleto</a>
-					</div>
-			</section>
-			
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+      <!-- 2 -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/uruapan/volcan-paricutin.webp");' data-alt="Volcán Paricutín">
+          </div>
+          <div class="place-card__content">
+            <p class="place-card__title">2. Volcán Paricutín</p>
+            <p class="place-card__description">
+              Uno de los volcanes más jóvenes del mundo. Puedes explorar sus campos de lava y visitar la icónica iglesia sepultada de San Juan Parangaricutiro.
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <!-- 3 -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/uruapan/tianguis-artesanal.webp");' data-alt="Tianguis Artesanal Uruapan">
+          </div>
+          <div class="place-card__content">
+            <p class="place-card__title">3. Tianguis Artesanal de Domingo de Ramos</p>
+            <p class="place-card__description">
+              El tianguis artesanal más grande de Latinoamérica, donde artesanos purépechas exhiben textiles, madera, máscaras, cobre y más. Un espectáculo cultural único.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/uruapan/plaza-martires.webp");' data-alt="Plaza Mártires de Uruapan">
+          </div>
+          <div class="place-card__content">
+            <p class="place-card__title">4. Plaza Mártires de Uruapan</p>
+            <p class="place-card__description">
+              El corazón de la ciudad, rodeado de cafeterías, comercios y arquitectura tradicional. Un punto perfecto para caminar y disfrutar del ambiente local.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="place-card-wrapper">
+        <div class="place-card">
+          <div class="place-card__image" style='background-image: url("../src/assets/img/guia-viaje/destinos/uruapan/cascada-tzararacua.webp");' data-alt="Cascada de la Tzaráracua">
+          </div>
+          <div class="place-card__content">
+            <p class="place-card__title">5. Cascada de la Tzaráracua</p>
+            <p class="place-card__description">
+              Una majestuosa caída de agua rodeada de paisajes boscosos. Puedes llegar en caballo, teleférico o caminando por senderos naturales.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GASTRONOMÍA -->
+<section class="content-section content-section--darker">
+  <div class="container">
+    <h2 class="section-title">Sabores Típicos de Uruapan</h2>
+
+    <div class="food-grid">
+
+      <div class="food-card">
+        <img alt="Uchepos michoacanos" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/uruapan/uchepos.webp">
+        <h3 class="food-card__title">Uchepos</h3>
+        <p class="food-card__description">Elotes tiernos molidos, servidos con crema y queso. Un clásico de la gastronomía michoacana.</p>
+      </div>
+
+      <div class="food-card">
+        <img alt="Carnitas de Michoacán" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/uruapan/carnitas.webp">
+        <h3 class="food-card__title">Carnitas Estilo Michoacán</h3>
+        <p class="food-card__description">Jugosas, doraditas y llenas de sabor. De las mejores que podrás probar en el país.</p>
+      </div>
+
+      <div class="food-card">
+        <img alt="Aguacate de Uruapan" class="food-card__image" src="../src/assets/img/guia-viaje/platillos/uruapan/aguacate.webp">
+        <h3 class="food-card__title">Aguacate Uruapense</h3>
+        <p class="food-card__description">
+          Uruapan es la capital mundial del aguacate. Fresco, cremoso y de calidad insuperable.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TIPS -->
+<section class="content-section content-section--light">
+  <div class="container container--narrow">
+    <h2 class="section-title">Tips de Viaje para Uruapan</h2>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Cuál es la mejor época para visitar Uruapan?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Entre febrero y abril, durante el clima más agradable y el famoso Tianguis Artesanal de Domingo de Ramos.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Qué eventos destacan en Uruapan?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          El Tianguis Artesanal, Noche de Muertos, la Fiesta del Agua y el Festival del Aguacate.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Dónde hospedarse?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          El centro ofrece hoteles cómodos y accesibles, mientras que cerca del Parque Nacional hay opciones más naturales y tranquilas.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-item__summary">
+          <span class="faq-item__question">¿Qué comprar en Uruapan?</span>
+          <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
+        </summary>
+        <p class="faq-item__answer">
+          Artesanías purépechas, madera tallada, textiles, cobre, máscaras y productos derivados del aguacate.
+        </p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section">
+  <h2 class="cta-section__title">¿Listo para tu viaje a Uruapan?</h2>
+  <p class="cta-section__text">
+    Viaja con Autovías La Línea y disfruta de una de las ciudades más hermosas de Michoacán. Naturaleza, cultura y tradición te esperan.
+  </p>
+  <a href="../destinos/autobus-a-uruapan.html" class="btn btn--light btn--large" target="_blank" rel="noopener noreferrer">Ver más sobre el destino</a>
+</section>
+
+<app-cookies-policy></app-cookies-policy>
+<app-button-whats></app-button-whats>
+<app-button-eva-trip></app-button-eva-trip>
     `;
-	}
+  }
 }
-customElements.define("page-viajar-a-uruapan", AppViajarUruapan);
+customElements.define("page-viajar-a-uruapan", PageViajarAUruapan);
