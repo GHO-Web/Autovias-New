@@ -190,19 +190,19 @@ class AppAtlacomulco extends HTMLElement {
 					<h2 class="section-title">Imperdibles en Atlacomulco: Tradición y Desarrollo en el Estado de México</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/atlacomulco/lugares/parroquia-guadalupe.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Parroquia de Nuestra Señora de Guadalupe</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/atlacomulco/lugares/parque-estatal.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Parque de la Cultura y la Identidad</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/atlacomulco/lugares/mercado-municipal.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Mercado Municipal</h3>
 							</div>
