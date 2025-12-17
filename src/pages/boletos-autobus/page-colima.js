@@ -190,19 +190,19 @@ class AppColima extends HTMLElement {
 					<h2 class="section-title">Imperdibles en Colima: Descubre la "Ciudad de las Palmeras"</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/colima/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/colima/lugares/comala.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Comala (Pueblo Mágico)</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/colima/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/colima/lugares/nevado-colima.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Volcán de Colima y Nevado</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/colima/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/colima/lugares/centro-historico.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Centro Histórico y Catedral</h3>
 							</div>

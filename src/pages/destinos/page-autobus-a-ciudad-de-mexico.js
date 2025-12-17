@@ -230,7 +230,7 @@ class AutobusACiudadDeMexico extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../../src/data/destinos/ciudad-de-mexico/card-opacity-destinations.json"
+				"../../src/data/destinos/card-opacity-destinations.json"
 			);
 			if (!response.ok) {
 				throw new Error(

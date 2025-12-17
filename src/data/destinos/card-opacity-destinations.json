@@ -1,0 +1,42 @@
+[
+    {
+      "imageSrc": "../src/assets/img/destinos-img/atlacomulco/plaza-civica.webp",
+      "imageAlt": "Atlacomulco, Estado de México",
+      "destinationName": "Atlacomulco, Estado de México",
+      "destinationTagline": "Descubre la magia de una ciudad colonial.",
+      "buttonText": "Explorar Atlacomulco",
+      "buttonLink": "../../destinos/autobus-a-atlacomulco.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/cdmx/palacio-de-bellas-artes-2.webp",
+      "imageAlt": "Ciudad de México, CDMX",
+      "destinationName": "Ciudad de México, CDMX",
+      "destinationTagline": "Conoce la vibrante capital del país.",
+      "buttonText": "Explorar Ciudad de México",
+      "buttonLink": "../../destinos/autobus-a-ciudad-de-mexico.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/colima/lugares/centro-historico.webp",
+      "imageAlt": "Colima, Colima",
+      "destinationName": "Colima, Colima",
+      "destinationTagline": "Disfruta de la riqueza cultural de Colima.",
+      "buttonText": "Explorar Colima",
+      "buttonLink": "../../destinos/autobus-a-colima.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/guadalajara/lugares/centrohistorico1.webp",
+      "imageAlt": "Guadalajara, Jalisco",
+      "destinationName": "Guadalajara, Jalisco",
+      "destinationTagline": "Disfruta de la riqueza cultural de Guadalajara.",
+      "buttonText": "Explorar Guadalajara",
+      "buttonLink": "../../destinos/autobus-a-guadalajara.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/ixtapa/lugares/playa-el-palmar.webp",
+      "imageAlt": "Ixtapa-Zihuatanejo, Guerrero",
+      "destinationName": "Ixtapa-Zihuatanejo, Guerrero",
+      "destinationTagline": "Disfruta de la riqueza cultural de Ixtapa-Zihuatanejo.",
+      "buttonText": "Explorar Ixtapa-Zihuatanejo",
+      "buttonLink": "../../destinos/autobus-a-ixtapa.html"
+    }
+  ]
