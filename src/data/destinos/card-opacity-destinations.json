@@ -38,5 +38,45 @@
       "destinationTagline": "Disfruta de la riqueza cultural de Ixtapa-Zihuatanejo.",
       "buttonText": "Explorar Ixtapa-Zihuatanejo",
       "buttonLink": "../../destinos/autobus-a-ixtapa.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/maravatio/lugares/torre-mirador-3.webp",
+      "imageAlt": "Maravatío, Michoacán",
+      "destinationName": "Maravatío, Michoacán",
+      "destinationTagline": "Descubre la belleza y cultura de Maravatío.",
+      "buttonText": "Explorar Maravatío",
+      "buttonLink": "../../destinos/autobus-a-maravatio.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/morelia/lugares/aqueducto-morelia.webp",
+      "imageAlt": "Morelia, Michoacán",
+      "destinationName": "Morelia, Michoacán",
+      "destinationTagline": "Descubre la belleza y cultura de Morelia.",
+      "buttonText": "Explorar Morelia",
+      "buttonLink": "../../destinos/autobus-a-morelia.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/queretaro/lugares/centro-historico-queretaro.webp",
+      "imageAlt": "Querétaro, Querétaro",
+      "destinationName": "Querétaro, Querétaro",
+      "destinationTagline": "Descubre la belleza y cultura de Querétaro.",
+      "buttonText": "Explorar Querétaro",
+      "buttonLink": "../../destinos/autobus-a-queretaro.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/uruapan/lugares/barranca-cupatitzio.webp",
+      "imageAlt": "Uruapan, Michoacán",
+      "destinationName": "Uruapan, Michoacán",
+      "destinationTagline": "Descubre la belleza y cultura de Uruapan.",
+      "buttonText": "Explorar Uruapan",
+      "buttonLink": "../../destinos/autobus-a-uruapan.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/zitacuaro/lugares/centro-historico.webp",
+      "imageAlt": "Zitacuaro, Michoacán",
+      "destinationName": "Zitacuaro, Michoacán",
+      "destinationTagline": "Descubre la belleza y cultura de Zitacuaro.",
+      "buttonText": "Explorar Zitacuaro",
+      "buttonLink": "../../destinos/autobus-a-zitacuaro.html"
     }
   ]

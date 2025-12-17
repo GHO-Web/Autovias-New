@@ -1,0 +1,46 @@
+[
+  {
+    "id": "parque-nacional-barranca-del-cupatitzio",
+    "text": "Parque Nacional Barranca del Cupatitzio",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/uruapan/lugares/barranca-cupatitzio.webp",
+    "image2": "../src/assets/img/destinos-img/uruapan/lugares/barranca-cupatitzio-2.webp",
+    "image3": "../src/assets/img/destinos-img/uruapan/lugares/barranca-cupatitzio-3.webp",
+    "image4": "../src/assets/img/destinos-img/uruapan/lugares/barranca-cupatitzio-4.webp",
+    "title": "Parque Nacional Barranca del Cupatitzio",
+    "description": "¿Por qué visitarlo? El Parque Nacional Barranca del Cupatitzio es el corazón natural de Uruapan y uno de los parques urbanos más bellos de México. Aquí nace el río Cupatitzio, rodeado de exuberante vegetación, puentes de piedra y senderos arbolados. Es ideal para caminatas tranquilas, fotografías y contacto directo con la naturaleza, ofreciendo un ambiente fresco y relajante en pleno centro de la ciudad."
+  },
+  {
+    "id": "centro-historico-uruapan",
+    "text": "Centro Histórico de Uruapan",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/uruapan/lugares/centro-historico-uruapan.webp",
+    "image2": "../src/assets/img/destinos-img/uruapan/lugares/centro-historico-uruapan-2.webp",
+    "image3": "../src/assets/img/destinos-img/uruapan/lugares/centro-historico-uruapan-3.webp",
+    "image4": "../src/assets/img/destinos-img/uruapan/lugares/centro-historico-uruapan-4.webp",
+    "title": "Centro Histórico de Uruapan",
+    "description": "¿Por qué visitarlo? El Centro Histórico de Uruapan combina historia, tradición y vida cotidiana. Sus plazas, templos y mercados reflejan la herencia purépecha y colonial de la región. Destacan sitios como la Parroquia de la Inmaculada Concepción y el Mercado de Antojitos, donde los visitantes pueden disfrutar de la gastronomía local y del ambiente auténtico de la ciudad."
+  },
+  {
+    "id": "zona-arqueologica-tingambato",
+    "text": "Zona Arqueológica de Tingambato",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/uruapan/lugares/tingambato.webp",
+    "image2": "../src/assets/img/destinos-img/uruapan/lugares/tingambato-2.webp",
+    "image3": "../src/assets/img/destinos-img/uruapan/lugares/tingambato-3.webp",
+    "image4": "../src/assets/img/destinos-img/uruapan/lugares/tingambato-4.webp",
+    "title": "Zona Arqueológica de Tingambato",
+    "description": "¿Por qué visitarla? Tingambato es uno de los sitios arqueológicos más importantes de Michoacán y se encuentra a pocos minutos de Uruapan. Este antiguo centro ceremonial purépecha destaca por sus plataformas, plazas y yácatas. Es ideal para quienes desean conocer la historia prehispánica de la región y disfrutar de un entorno natural tranquilo."
+  },
+  {
+    "id": "tzararacua",
+    "text": "Cascada La Tzaráracua",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/uruapan/lugares/tzararacua.webp",
+    "image2": "../src/assets/img/destinos-img/uruapan/lugares/tzararacua-2.webp",
+    "image3": "../src/assets/img/destinos-img/uruapan/lugares/tzararacua-3.webp",
+    "image4": "../src/assets/img/destinos-img/uruapan/lugares/tzararacua-4.webp",
+    "title": "Cascada La Tzaráracua",
+    "description": "¿Por qué visitarla? La cascada La Tzaráracua es uno de los atractivos naturales más impresionantes de la región. Ubicada cerca de Uruapan, ofrece una caída de agua rodeada de vegetación y miradores naturales. Es perfecta para los amantes del ecoturismo, la fotografía y quienes buscan una experiencia de contacto directo con la fuerza y belleza de la naturaleza."
+  }
+]

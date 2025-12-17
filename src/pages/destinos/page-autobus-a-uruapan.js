@@ -95,7 +95,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../../src/data/destinos/ixtapa/lugares.json"
+				"../../src/data/destinos/uruapan/lugares.json"
 			);
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
@@ -138,7 +138,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../../src/data/destinos/ixtapa/platillos.json"
+				"../../src/data/destinos/uruapan/platillos.json"
 			);
 			if (!response.ok) {
 				throw new Error(
