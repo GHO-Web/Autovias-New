@@ -134,7 +134,7 @@ class AppSliderOpacity extends HTMLElement {
       innerCarousel.appendChild(itemDiv);
     });
 
-    await Promise.all(imageLoadPromises); 
+    await Promise.all(imageLoadPromises);
   }
 
   _initializeCarousel() {
@@ -148,7 +148,12 @@ class AppSliderOpacity extends HTMLElement {
     const itemSel = ".MultiCarousel-inner .item";
 
     let currentIndex = 0;
+    let autoplayInterval = null;
     const $itemsInner = $componentRoot.find(itemsInnerSel);
+
+    // Asegurar que el contenedor interno tenga los estilos adecuados para el carrusel
+    $itemsInner.css("display", "flex");
+    $itemsInner.css("transition", "transform 0.4s ease-in-out");
 
     const updateAndGetState = () => {
       const $items = $componentRoot.find(itemSel);
@@ -169,6 +174,43 @@ class AppSliderOpacity extends HTMLElement {
       return { $items, totalItems, itemWidth, containerWidth, maxScroll };
     };
 
+    const moveRight = () => {
+      const state = updateAndGetState();
+      if (!state) return;
+
+      const { itemWidth, maxScroll } = state;
+      const currentTranslate = -currentIndex * itemWidth;
+
+      // Comprueba si el carrusel ya está en la posición final o muy cerca.
+      // Se usa una pequeña tolerancia (1px) por si hay decimales en los anchos.
+      if (currentTranslate > -maxScroll + 1) {
+        currentIndex++;
+      } else {
+        currentIndex = 0; // Reiniciar al llegar al final para un bucle infinito
+      }
+
+      let moveX = -itemWidth * currentIndex;
+      // Asegurarse de no pasar del límite al reiniciar
+      if (moveX < -maxScroll) moveX = -maxScroll;
+      if (currentIndex === 0) moveX = 0;
+
+      $itemsInner.css("transform", "translateX(" + moveX + "px)");
+    };
+
+    const startAutoplay = () => {
+      if (autoplayInterval) clearInterval(autoplayInterval); // Limpiar intervalo anterior
+      autoplayInterval = setInterval(moveRight, 3000); // Avanzar cada 5 segundos
+    };
+
+    const stopAutoplay = () => {
+      clearInterval(autoplayInterval);
+    };
+
+    // Iniciar autoplay y manejar pausa/reanudación con el mouse
+    startAutoplay();
+    $carousel.on("mouseenter", stopAutoplay);
+    $carousel.on("mouseleave", startAutoplay);
+
     $componentRoot
       .find(".leftLst, .rightLst")
       .off("click")
@@ -177,33 +219,20 @@ class AppSliderOpacity extends HTMLElement {
         if (!state) return;
 
         const { totalItems, itemWidth, containerWidth, maxScroll } = state;
-        let nextIndex = currentIndex;
 
         if ($(this).hasClass("leftLst")) {
           if (currentIndex > 0) {
-            nextIndex--;
+            currentIndex--;
           }
+          let moveX = -itemWidth * currentIndex;
+          if (moveX > 0) moveX = 0;
+          $itemsInner.css("transform", "translateX(" + moveX + "px)");
         } else {
-          if ((currentIndex + 1) * itemWidth <= maxScroll) {
-            nextIndex++;
-          } else {
-            if (itemWidth > 0) {
-              nextIndex = Math.ceil(maxScroll / itemWidth);
-            } else {
-              nextIndex = currentIndex;
-            }
-          }
+          moveRight(); // Usar la misma función de autoplay para el clic
         }
 
-        currentIndex = nextIndex;
-        let moveX = -itemWidth * currentIndex;
-
-        if (moveX > 0) moveX = 0;
-        if (moveX < -maxScroll) {
-          moveX = -maxScroll;
-        }
-
-        $itemsInner.css("transform", "translateX(" + moveX + "px)");
+        // La lógica de movimiento ya está dentro de moveRight() y del if para 'leftLst',
+        // por lo que el bloque de código que estaba aquí fue eliminado para evitar redundancia.
       });
   }
 }
