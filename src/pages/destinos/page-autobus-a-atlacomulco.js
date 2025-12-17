@@ -23,9 +23,9 @@ class AppAutobusAtlacomulco extends HTMLElement {
 					{
 						"id": "slide1",
 						"title": "Atlacomulco",
-						"image": "../src/assets/img/global/banner/Atlacomulco_Banner_web.webp",
-						"mediumImage": "../src/assets/img/global/banner/tablet/Atlacomulco_tablet.webp",
-						"smallImage": "../src/assets/img/global/banner/mobile/Atlacomulco_mobile.webp",
+						"image": "../src/assets/img/destinos-img/atlacomulco/banner/atlacomulco-banner-web.webp",
+						"mediumImage": "../src/assets/img/destinos-img/atlacomulco/banner/atlacomulco-banner-tablet.webp",
+						"smallImage": "../src/assets/img/destinos-img/atlacomulco/banner/atlacomulco-banner-mobile.webp",
 						"link": "#"
 					}
 				]'

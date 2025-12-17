@@ -16,7 +16,7 @@ class AutobusAQueretaro extends HTMLElement {
 			<app-cotiza></app-cotiza>
 <app-banner-slider
 	slides-data='[
-	{"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/banner-queretaro.webp","mediumImage": "../../src/assets/img/banner/tablet/banner-queretaro.webp", "smallImage": "../../src/assets/img/banner/movil/banner-queretaro.webp", "link": "#index.html/banner1"}]'
+	{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/destinos-img/queretaro/banner/queretaro-banner-web.webp","mediumImage": "../src/assets/img/destinos-img/queretaro/banner/queretaro-banner-tablet.webp", "smallImage": "../src/assets/img/destinos-img/queretaro/banner/queretaro-banner-mobile.webp", "link": "#index.html/banner1"}]'
 >
 </app-banner-slider>
 <app-payments></app-payments>
