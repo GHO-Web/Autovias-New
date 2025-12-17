@@ -16,7 +16,7 @@ class AutobusAGuadalajara extends HTMLElement {
 			<app-cotiza></app-cotiza>
 			<app-banner-slider
 					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/banner-guadalajara.webp","mediumImage": "../../src/assets/img/banner/tablet/banner-guadalajara.webp", "smallImage": "../../src/assets/img/banner/movil/banner-guadalajara.webp", "link": "#index.html/banner1"}]'
+					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/destinos-img/guadalajara/banner/guadalajara-banner-web.webp","mediumImage": "../src/assets/img/destinos-img/guadalajara/banner/guadalajara-banner-tablet.webp", "smallImage": "../src/assets/img/destinos-img/guadalajara/banner/guadalajara-banner-mobile.webp", "link": "#index.html/banner1"}]'
 			>
 			</app-banner-slider>
 			<app-payments></app-payments>

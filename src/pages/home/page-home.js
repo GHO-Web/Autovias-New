@@ -31,15 +31,15 @@ class PageHome extends HTMLElement {
                 {"id": "title1", "title": "¿Aún no sabes a dónde viajar?", "text": "Conoce nuestros destinos Autovías La Línea y elige tu lugar favorito"}
                 ]'
                 destinations='[
-                {"id": "destination1", "title": "Ciudad de México", "content": "Sumérgete en la esencia vibrante y cultural de la Ciudad de México.", "image": "./src/assets/img/destinos-img/ciudad-de-mexico.webp", "link": "../guia-viaje/viajar-a-ciudad-de-mexico.html"},
+                {"id": "destination1", "title": "Ciudad de México", "content": "Sumérgete en la esencia vibrante y cultural de la Ciudad de México.", "image": "./src/assets/img/destinos-img/cdmx/lugares/palacio-de-bellas-artes-2.webp", "link": "../guia-viaje/viajar-a-ciudad-de-mexico.html"},
         
-                {"id": "destination2", "title": "Colima", "content": "Explora la serenidad y riqueza natural de Colima.", "image": "./src/assets/img/destinos-img/Colima.webp", "link": "../guia-viaje/viajar-a-colima.html"},
+                {"id": "destination2", "title": "Colima", "content": "Explora la serenidad y riqueza natural de Colima.", "image": "./src/assets/img/destinos-img/colima/lugares/comala.webp", "link": "../guia-viaje/viajar-a-colima.html"},
         
-                {"id": "destination3", "title": "Guadalajara", "content": "Déjate envolver por la energía y el sabor vibrante de Guadalajara.", "image": "./src/assets/img/destinos-img/guadalajara.webp", "link": "../guia-viaje/viajar-a-guadalajara.html"},
+                {"id": "destination3", "title": "Guadalajara", "content": "Déjate envolver por la energía y el sabor vibrante de Guadalajara.", "image": "./src/assets/img/destinos-img/guadalajara/lugares/centrohistorico1.webp", "link": "../guia-viaje/viajar-a-guadalajara.html"},
                 
-                {"id": "destination5", "title": "Morelia", "content": "Descubre el encanto colonial y la riqueza histórica de Morelia.", "image": "./src/assets/img/destinos-img/Morelia.webp", "link": "../guia-viaje/viajar-a-morelia.html"},
+                {"id": "destination5", "title": "Morelia", "content": "Descubre el encanto colonial y la riqueza histórica de Morelia.", "image": "./src/assets/img/destinos-img/morelia/lugares/aqueducto-morelia.webp", "link": "../guia-viaje/viajar-a-morelia.html"},
         
-                {"id": "destination4", "title": "Zitácuaro", "content": "Descubre la esencia natural y cultural de Zitácuaro.", "image": "./src/assets/img/destinos-img/Zitacuaro.webp", "link": "../guia-viaje/viajar-a-zitacuaro.html"}
+                {"id": "destination4", "title": "Zitácuaro", "content": "Descubre la esencia natural y cultural de Zitácuaro.", "image": "./src/assets/img/destinos-img/zitacuaro/lugares/centro-historico.webp", "link": "../guia-viaje/viajar-a-zitacuaro.html"}
                 ]'
             >
             </app-destinations-grid>
@@ -51,15 +51,15 @@ class PageHome extends HTMLElement {
                 {"id": "title1", "title": "Destinos Autovías La Línea", "text": "Para los amantes de destinos cálidos"}
                 ]'
                 destinations='[
-                {"id": "destination1", "title": "Uruapan", "content": "Déjate llevar por la magia natural de Uruapan.", "image": "./src/assets/img/destinos-img/Uruapan.webp", "link": "../guia-viaje/viajar-a-uruapan.html"},
+                {"id": "destination1", "title": "Uruapan", "content": "Déjate llevar por la magia natural de Uruapan.", "image": "./src/assets/img/destinos-img/uruapan/lugares/centro-historico-uruapan.webp", "link": "../guia-viaje/viajar-a-uruapan.html"},
 
-                {"id": "destination2", "title": "Ixtapa", "content": "Descubre la esencia tropical de Ixtapa, Guerrero.", "image": "./src/assets/img/destinos-img/Ixtapan.webp", "link": "../guia-viaje/viajar-a-ixtapa.html"},
+                {"id": "destination2", "title": "Ixtapa", "content": "Descubre la esencia tropical de Ixtapa, Guerrero.", "image": "./src/assets/img/destinos-img/ixtapa/lugares/isla-ixtapa.webp", "link": "../guia-viaje/viajar-a-ixtapa.html"},
 
-                {"id": "destination3", "title": "Atlacomulco", "content": "Explora la esencia histórica y natural de Atlacomulco.", "image": "./src/assets/img/destinos-img/Atlacomulco.webp", "link": "../guia-viaje/viajar-a-atlacomulco.html"},
+                {"id": "destination3", "title": "Atlacomulco", "content": "Explora la esencia histórica y natural de Atlacomulco.", "image": "./src/assets/img/destinos-img/atlacomulco/lugares/plaza-civica.webp", "link": "../guia-viaje/viajar-a-atlacomulco.html"},
 
-                {"id": "destination4", "title": "Querétaro", "content": "Déjate sorprender por la historia y el encanto de Querétaro.", "image": "./src/assets/img/destinos-img/Queretaro.webp", "link": "../guia-viaje/viajar-a-queretaro.html"},
+                {"id": "destination4", "title": "Querétaro", "content": "Déjate sorprender por la historia y el encanto de Querétaro.", "image": "./src/assets/img/destinos-img/queretaro/lugares/acueducto-queretaro.webp", "link": "../guia-viaje/viajar-a-queretaro.html"},
 
-                {"id": "destination5", "title": "Maravatío", "content": "Descubre los maravillosos lugares de Maravatío.", "image": "./src/assets/img/destinos-img/maravatio.webp", "link": "../guia-viaje/viajar-a-maravatio.html"}
+                {"id": "destination5", "title": "Maravatío", "content": "Descubre los maravillosos lugares de Maravatío.", "image": "./src/assets/img/destinos-img/maravatio/lugares/torre-mirador-3.webp", "link": "../guia-viaje/viajar-a-maravatio.html"}
                 ]'
             >
             </app-destinations-grid>

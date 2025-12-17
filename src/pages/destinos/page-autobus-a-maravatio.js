@@ -20,7 +20,7 @@ class AppAutobusMaravatio extends HTMLElement {
 
 			<app-banner-slider
 				slides-data='[
-				{"id":"slide1","title":"Maravatío","image":"../src/assets/img/global/banner/Maravatio_Banner_web.webp","mediumImage":"../src/assets/img/global/banner/tablet/Maravatio_tablet.webp","smallImage":"../src/assets/img/global/banner/mobile/Maravatio_mobile.webp","link":"#"}
+				{"id":"slide1","title":"Maravatío","image":"../src/assets/img/destinos-img/maravatio/banner/maravatio-banner-web.webp","mediumImage":"../src/assets/img/destinos-img/maravatio/banner/maravatio-banner-tablet.webp","smallImage":"../src/assets/img/destinos-img/maravatio/banner/maravatio-banner-mobile.webp","link":"#"}
 				]'
 			></app-banner-slider>
 

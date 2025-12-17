@@ -19,7 +19,7 @@ class AppBoletosAutobusZitacuaro extends HTMLElement {
 			<app-modal-doters></app-modal-doters>
 			<app-banner-slider
 					slides-data='[
-					{"id": "slide1", "title": "Banner Zitácuaro", "image": "../src/assets/img/global/banner/Zitacuaro_Banner_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/Zitacuaro_tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/Zitacuaro_mobile.webp", "link": "#index.html/banner1"}]'
+					{"id": "slide1", "title": "Banner Zitácuaro", "image": "../src/assets/img/destinos-img/zitacuaro/banner/zitacuaro-banner-web.webp","mediumImage": "../src/assets/img/destinos-img/zitacuaro/banner/zitacuaro-banner-tablet.webp", "smallImage": "../src/assets/img/destinos-img/zitacuaro/banner/zitacuaro-banner-mobile.webp", "link": "#index.html/banner1"}]'
 			>
 			</app-banner-slider>
 			<app-payments></app-payments>

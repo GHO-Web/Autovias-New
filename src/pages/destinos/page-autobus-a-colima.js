@@ -23,9 +23,9 @@ class AppAutobusColima extends HTMLElement {
 					{
 						"id": "slide1",
 						"title": "Colima",
-						"image": "../src/assets/img/global/banner/Colima_Banner_web.webp",
-						"mediumImage": "../src/assets/img/global/banner/tablet/Colima_tablet.webp",
-						"smallImage": "../src/assets/img/global/banner/mobile/Colima_mobile.webp",
+						"image": "../src/assets/img/destinos-img/colima/banner/colima-banner-web.webp",
+						"mediumImage": "../src/assets/img/destinos-img/colima/banner/colima-banner-tablet.webp",
+						"smallImage": "../src/assets/img/destinos-img/colima/banner/colima-banner-mobile.webp",
 						"link": "#"
 					}
 				]'

@@ -20,9 +20,9 @@ class AutobusAIxtapaZihuatanejo extends HTMLElement {
 					{
 						"id": "slide1",
 						"title": "Ixtapa Zihuatanejo",
-						"image": "../../src/assets/img/banner/web/banner-ixtapa.webp",
-						"mediumImage": "../../src/assets/img/banner/tablet/banner-ixtapa.webp",
-						"smallImage": "../../src/assets/img/banner/movil/banner-ixtapa.webp",
+						"image": "../src/assets/img/destinos-img/ixtapa/banner/ixtapa-banner-web.webp",
+						"mediumImage": "../src/assets/img/destinos-img/ixtapa/banner/ixtapa-banner-tablet.webp",
+						"smallImage": "../src/assets/img/destinos-img/ixtapa/banner/ixtapa-banner-mobile.webp",
 						"link": "#index.html/banner1"
 					}
 				]'
