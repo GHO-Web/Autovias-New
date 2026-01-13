@@ -54,7 +54,7 @@ class AppListDestinations extends HTMLElement {
             <ul class="region_column__list-cities">
               <li>
                 <a
-                  href="#"
+                  href="/boletos-autobus/ciudad-de-mexico.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús a Ciudad de México Norte"
@@ -64,7 +64,7 @@ class AppListDestinations extends HTMLElement {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/boletos-autobus/ciudad-de-mexico.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos a Ciudad de México Poniente"
@@ -154,7 +154,7 @@ class AppListDestinations extends HTMLElement {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/boletos-autobus/maravatio.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús a Maravatío (Michoacán)"
@@ -164,7 +164,7 @@ class AppListDestinations extends HTMLElement {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/boletos-autobus/queretaro.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús a Queréndaro (Michoacán)"
@@ -183,7 +183,7 @@ class AppListDestinations extends HTMLElement {
             <ul class="region_column__list-cities">
               <li>
                 <a
-                  href="#"
+                  href="/boletos-autobus/guadalajara.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús a Guadalajara"
@@ -223,7 +223,7 @@ class AppListDestinations extends HTMLElement {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/boletos-autobus/colima.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús a Colima (Colima)"
@@ -262,7 +262,7 @@ class AppListDestinations extends HTMLElement {
             <ul class="region_column__list-cities">
               <li>
                 <a
-                  href="#"
+                  href="/boletos-autobus/morelia.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús a Morelia"
@@ -352,7 +352,7 @@ class AppListDestinations extends HTMLElement {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/boletos-autobus/uruapan.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús a Uruapan (Michoacán)"
@@ -372,7 +372,7 @@ class AppListDestinations extends HTMLElement {
               </li>
                <li>
                 <a
-                  href="#"
+                  href="/boletos-autobus/ixtapa.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús a Ixtapa (Michoacán)"
