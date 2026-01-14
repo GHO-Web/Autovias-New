@@ -20,32 +20,9 @@ class PageMaravatio extends HTMLElement {
 
 			<app-banner-slider
 				slides-data='[
-				{
-					"id": "slide1",
-					"title": "Viaja desde Maravatío",
-					"image": "../src/assets/img/destinos-img/maravatio/banner/maravatio_cdmx_web.webp",
-					"mediumImage": "../src/assets/img/destinos-img/maravatio/banner/maravatio_cdmx_tablet.webp",
-					"smallImage": "../src/assets/img/destinos-img/maravatio/banner/maravatio_cdmx_mobile.webp",
-					"link": "#"
-				},
-				{
-					"id": "slide2",
-					"title": "Confort y seguridad",
-					"image": "../src/assets/img/global/banner/verano_web.webp",
-					"mediumImage": "../src/assets/img/global/banner/tablet/verano_tablet.webp",
-					"smallImage": "../src/assets/img/global/banner/mobile/Verano_mobile.webp",
-					"link": "#"
-				},
-				{
-					"id": "slide3",
-					"title": "Compra fácil",
-					"image": "../src/assets/img/global/banner/metodos_pago_web.webp",
-					"mediumImage": "../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp",
-					"smallImage": "../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp",
-					"link": "#"
-				}
-				]'>
-			</app-banner-slider>
+				{"id":"slide1","title":"Maravatío","image":"../src/assets/img/destinos-img/maravatio/banner/maravatio-banner-web.webp","mediumImage":"../src/assets/img/destinos-img/maravatio/banner/maravatio-banner-tablet.webp","smallImage":"../src/assets/img/destinos-img/maravatio/banner/maravatio-banner-mobile.webp","link":"#"}
+				]'
+			></app-banner-slider>
 
 			<app-payments></app-payments>
 

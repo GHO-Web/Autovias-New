@@ -13,12 +13,10 @@ class PagePromociones extends HTMLElement {
 		<app-modal-travelpass></app-modal-travelpass>
 		<app-modal-doters></app-modal-doters>
 
-            <app-banner-slider
+           <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/Bw_Doters_Feria_Tacambaro1_Autovias.webp","mediumImage": "../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"},
-                {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/global/banner/Bw_Patio_Santa_Fe_Morelia2_Autovias.webp", "mediumImage": "../src/assets/img/global/banner/Tablet.png","smallImage": "../src/assets/img/global/banner/Movil.png", "link": "#index.html/banner2"},
-                {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/global/banner/Bw_Playas_Semana_Santa_Autovias.webp", "mediumImage": "../src/assets/img/global/banner/Tablet-1.png","smallImage": "../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner3"}
-                ]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/banner-3-pasos-web.webp","mediumImage": "../src/assets/img/global/banner/tablet/banner-3-pasos-tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/banner-3-pasos-mobile.webp", "link": "#index.html/banner1"},
+                {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/global/banner/banner-doters-web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/banner-doters-tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/banner-doters-mobile.webp", "link": "#index.html/banner2"}                ]'
             >
             </app-banner-slider>
 

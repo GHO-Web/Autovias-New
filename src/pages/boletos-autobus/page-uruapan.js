@@ -18,32 +18,9 @@ class PageUruapan extends HTMLElement {
       <app-cotiza></app-cotiza>
 
 			<app-banner-slider
-				slides-data='[
-				{
-					"id":"slide1",
-					"title":"Viaja desde Uruapan",
-					"image":"../src/assets/img/destinos-img/uruapan/banner/uruapan_cdmx_web.webp",
-					"mediumImage":"../src/assets/img/destinos-img/uruapan/banner/uruapan_cdmx_tablet.webp",
-					"smallImage":"../src/assets/img/destinos-img/uruapan/banner/uruapan_cdmx_mobile.webp",
-					"link":"#"
-				},
-				{
-					"id":"slide2",
-					"title":"Viaja cómodo y seguro",
-					"image":"../src/assets/img/global/banner/verano_web.webp",
-					"mediumImage":"../src/assets/img/global/banner/tablet/verano_tablet.webp",
-					"smallImage":"../src/assets/img/global/banner/mobile/Verano_mobile.webp",
-					"link":"#"
-				},
-				{
-					"id":"slide3",
-					"title":"Compra fácil",
-					"image":"../src/assets/img/global/banner/metodos_pago_web.webp",
-					"mediumImage":"../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp",
-					"smallImage":"../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp",
-					"link":"#"
-				}
-				]'>
+					slides-data='[
+					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-web.webp","mediumImage": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-tablet.webp", "smallImage": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-mobile.webp", "link": "#index.html/banner1"}]'
+			>
 			</app-banner-slider>
 
 			<app-payments></app-payments>
