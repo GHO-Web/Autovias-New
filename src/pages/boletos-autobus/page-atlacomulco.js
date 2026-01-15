@@ -17,18 +17,21 @@ class AppAtlacomulco extends HTMLElement {
 			<app-modal-travelpass></app-modal-travelpass>
 			<app-modal-doters></app-modal-doters>
       <app-cotiza></app-cotiza>
-			<app-banner-slider
-				slides-data='[
-					{
-						"id": "slide1",
-						"title": "Atlacomulco",
-						"image": "../src/assets/img/destinos-img/atlacomulco/banner/atlacomulco-banner-web.webp",
-						"mediumImage": "../src/assets/img/destinos-img/atlacomulco/banner/atlacomulco-banner-tablet.webp",
-						"smallImage": "../src/assets/img/destinos-img/atlacomulco/banner/atlacomulco-banner-mobile.webp",
-						"link": "#"
-					}
-				]'
-			></app-banner-slider>
+			<app-banner-slider-caption
+          slides-data='[
+    {
+      "title":"Promo 1",
+      "link":"https://example.com",
+      "image":"../src/assets/img/img-landing/atlacomulco-centro.webp",
+      "mediumImage":"../src/assets/img/img-landing/atlacomulco-centro.webp",
+      "smallImage":"../src/assets/img/img-landing/atlacomulco-centro.webp",
+      "captionTitle":"Viaja a Atlacomulco: Conecta con el Corazón del Estado de México",
+      "captionText":"Descubre la esencia de Atlacomulco con el servicio de autobús líder. Tu viaje seguro y cómodo comienza aquí.",
+      "captionAlign":"left",
+      "captionTheme":"dark"
+    }
+  ]'>
+      </app-banner-slider-caption>
 			<app-payments></app-payments>
 			
 			
@@ -247,7 +250,7 @@ class AppAtlacomulco extends HTMLElement {
 				<div class="container">
 					<h2 class="cta__title">¡Aprovecha Nuestras Promociones Especiales a Atlacomulco!</h2>
 					<p class="cta__subtitle">¡No te pierdas nuestra promoción! Hasta 5% de descuento en tu viaje de ida + 10% de descuento en tu regreso. Consulta términos y condiciones.</p>
-					<a href="../promociones/atlacomulco.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Atlacomulco" tabindex="0">Ver Todas las Promociones</a>
+					<a href="../promociones/" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Atlacomulco" tabindex="0">Ver Todas las Promociones</a>
 				</div>
 			</section>
 			

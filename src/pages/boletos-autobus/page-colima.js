@@ -251,7 +251,7 @@ class AppColima extends HTMLElement {
 				<div class="container">
 					<h2 class="cta__title">¡Aprovecha Nuestras Promociones Especiales a Colima!</h2>
 					<p class="cta__subtitle">¡No te pierdas nuestra promoción! Hasta 5% de descuento en tu viaje de ida + 10% de descuento en tu regreso. Consulta términos y condiciones.</p>
-					<a href="../promociones/colima.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Colima" tabindex="0">Ver Todas las Promociones</a>
+					<a href="../promociones/" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Colima" tabindex="0">Ver Todas las Promociones</a>
 				</div>
 			</section>
 			
