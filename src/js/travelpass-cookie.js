@@ -100,8 +100,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		const loginIconDesktop = document.getElementById("login-icon");
 		if (loginIconDesktop) {
 			loginIconDesktop.innerHTML = profileData
-				? `<a href="#" class="js-open-travelpass-login-modal"><img src="https://autovias.com.mx/gho-test/gho-img-web/iconos/icono-travel-pass.webp" class="icono-travel" alt="Travel Pass" title="Perfil Travel Pass"> Hola, ${profileData.name}</a>`
-				: `<a href="#" class="js-open-travelpass-login-modal"><img src="../../src/assets/img/global/gho-img/logos/logo-travel-pass.webp" alt="Iniciar sesión en Travel Pass" title="Ingresa a Travel Pass" width="100" height="32" style="cursor: pointer;"></a>`;
+				? `<a href="#" class="js-open-travelpass-login-modal"><img src="https://autovias.com.mx/gho-test/gho-img-web/iconos/icono-travel-pass.webp" class="icono-travel" alt="Monedero Eléctronico" title="Perfil Monedero Eléctronico"> Hola, ${profileData.name}</a>`
+				: `<a href="#" class="js-open-travelpass-login-modal"><img src="../../src/assets/img/global/gho-img/logos/logo-travel-pass.webp" alt="Iniciar sesión en Monedero Eléctronico" title="Ingresa a Monedero Eléctronico" width="100" height="32" style="cursor: pointer;"></a>`;
 		}
 		// Re-atachea los listeners después de actualizar el DOM
 		checkSessionTriggers();
@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		registerLink.href = registerUrl;
 	}
 
-	// Actualiza enlace de "¿Qué es Travel Pass?"
+	// Actualiza enlace de "¿Qué es Monedero Eléctronico?"
 	function updateInfoLink() {
 		infoLink.href = infoUrl;
 	}
