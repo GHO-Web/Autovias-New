@@ -17,18 +17,21 @@ class AppColima extends HTMLElement {
 			<app-modal-travelpass></app-modal-travelpass>
 			<app-modal-doters></app-modal-doters>
       <app-cotiza></app-cotiza>
-			<app-banner-slider
-				slides-data='[
-					{
-						"id": "slide1",
-						"title": "Colima",
-						"image": "../src/assets/img/destinos-img/colima/banner/colima-banner-web.webp",
-						"mediumImage": "../src/assets/img/destinos-img/colima/banner/colima-banner-tablet.webp",
-						"smallImage": "../src/assets/img/destinos-img/colima/banner/colima-banner-mobile.webp",
-						"link": "#"
-					}
-				]'
-			></app-banner-slider>
+			<app-banner-slider-caption
+          slides-data='[
+    {
+      "title":"Promo 1",
+      "link":"https://example.com",
+      "image":"../src/assets/img/img-landing/colima-centro.webp",
+      "mediumImage":"../src/assets/img/img-landing/colima-centro.webp",
+      "smallImage":"../src/assets/img/img-landing/colima-centro.webp",
+      "captionTitle":"Viaja a Ciudad de México: El Corazón de México con Autovías",
+      "captionText":"Descubre la vibrante capital del país con el servicio de autobús líder. Tu aventura comienza aquí.",
+      "captionAlign":"left",
+      "captionTheme":"dark"
+    }
+  ]'>
+      </app-banner-slider-caption>
 			<app-payments></app-payments>
 			
 			
