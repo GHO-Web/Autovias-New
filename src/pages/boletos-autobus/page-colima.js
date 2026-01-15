@@ -26,8 +26,8 @@ class AppColima extends HTMLElement {
       "image":"../src/assets/img/img-landing/colima-centro.webp",
       "mediumImage":"../src/assets/img/img-landing/colima-centro.webp",
       "smallImage":"../src/assets/img/img-landing/colima-centro.webp",
-      "captionTitle":"Viaja a Ciudad de México: El Corazón de México con Autovías",
-      "captionText":"Descubre la vibrante capital del país con el servicio de autobús líder. Tu aventura comienza aquí.",
+      "captionTitle":"Viaja a Colima: El Encanto del Pacífico y el Volcán con Autovías",
+      "captionText":"Descubre la "Ciudad de las Palmeras", su calidez y paisajes con el servicio de autobús líder. ¡Tu viaje te espera!",
       "captionAlign":"left",
       "captionTheme":"dark"
     }
