@@ -1,6 +1,7 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
+import "../../components/app-banner-slider-caption.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-open-modal.js";
@@ -18,11 +19,21 @@ class PageMaravatio extends HTMLElement {
 			<app-modal-doters></app-modal-doters>
       <app-cotiza></app-cotiza>
 
-			<app-banner-slider
-				slides-data='[
-				{"id":"slide1","title":"Maravatío","image":"../src/assets/img/destinos-img/maravatio/banner/maravatio-banner-web.webp","mediumImage":"../src/assets/img/destinos-img/maravatio/banner/maravatio-banner-tablet.webp","smallImage":"../src/assets/img/destinos-img/maravatio/banner/maravatio-banner-mobile.webp","link":"#"}
-				]'
-			></app-banner-slider>
+			<app-banner-slider-caption
+          slides-data='[
+    {
+      "title":"Promo 1",
+      "link":"https://example.com",
+      "image":"../src/assets/img/img-landing/maravatio.webp",
+      "mediumImage":"../src/assets/img/img-landing/maravatio.webp",
+      "smallImage":"../src/assets/img/img-landing/maravatio.webp",
+      "captionTitle":"Viaja a Maravatio: Confort, Seguridad y los Mejores Precios con Autovías",
+      "captionText":"Vive una nueva experiencia viajando con Autovías La Línea. Tu aventura comienza aquí.",
+      "captionAlign":"left",
+      "captionTheme":"dark"
+    }
+  ]'>
+      </app-banner-slider-caption>
 
 			<app-payments></app-payments>
 

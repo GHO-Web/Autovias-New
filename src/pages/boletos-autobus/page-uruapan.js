@@ -1,5 +1,6 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-banner-slider.js";
+import "../../components/app-banner-slider-caption.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-open-modal.js";
@@ -17,11 +18,21 @@ class PageUruapan extends HTMLElement {
 			<app-modal-doters></app-modal-doters>
       <app-cotiza></app-cotiza>
 
-			<app-banner-slider
-					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-web.webp","mediumImage": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-tablet.webp", "smallImage": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-mobile.webp", "link": "#index.html/banner1"}]'
-			>
-			</app-banner-slider>
+			<app-banner-slider-caption
+          slides-data='[
+    {
+      "title":"Promo 1",
+      "link":"https://example.com",
+      "image":"../src/assets/img/img-landing/uruapan.webp",
+      "mediumImage":"../src/assets/img/img-landing/uruapan.webp",
+      "smallImage":"../src/assets/img/img-landing/uruapan.webp",
+      "captionTitle":"Viaja a Uruapan: Descubre la magia de este destino",
+      "captionText":"Viaja con Autovías La Línea y vive la mejor experiencia. Tu aventura comienza aquí.",
+      "captionAlign":"left",
+      "captionTheme":"dark"
+    }
+  ]'>
+      </app-banner-slider-caption>
 
 			<app-payments></app-payments>
 

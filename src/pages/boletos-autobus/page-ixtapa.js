@@ -1,5 +1,6 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-banner-slider.js";
+import "../../components/app-banner-slider-caption.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-open-modal.js";
@@ -16,18 +17,21 @@ class PageIxtapa extends HTMLElement {
 			<app-modal-travelpass></app-modal-travelpass>
 			<app-modal-doters></app-modal-doters>
       <app-cotiza></app-cotiza>
-			<app-banner-slider
-				slides-data='[
-					{
-						"id": "slide1",
-						"title": "Ixtapa Zihuatanejo",
-						"image": "../src/assets/img/destinos-img/ixtapa/banner/ixtapa-banner-web.webp",
-						"mediumImage": "../src/assets/img/destinos-img/ixtapa/banner/ixtapa-banner-tablet.webp",
-						"smallImage": "../src/assets/img/destinos-img/ixtapa/banner/ixtapa-banner-mobile.webp",
-						"link": "#index.html/banner1"
-					}
-				]'
-			></app-banner-slider>
+			<app-banner-slider-caption
+          slides-data='[
+    {
+      "title":"Promo 1",
+      "link":"https://example.com",
+      "image":"../src/assets/img/img-landing/guadalajara.webp",
+      "mediumImage":"../src/assets/img/img-landing/guadalajara.webp",
+      "smallImage":"../src/assets/img/img-landing/guadalajara.webp",
+      "captionTitle":"Viaja a Ixtapa Zihuatanejo: Confort, Seguridad y los Mejores Precios con Autovías",
+      "captionText":"Descubre este paraiso con el servicio de autobús líder. Tu aventura comienza aquí.",
+      "captionAlign":"left",
+      "captionTheme":"dark"
+    }
+  ]'>
+      </app-banner-slider-caption>
 			<app-payments></app-payments>
 			
 			
