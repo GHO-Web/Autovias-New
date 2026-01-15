@@ -27,7 +27,7 @@ class AppColima extends HTMLElement {
       "mediumImage":"../src/assets/img/img-landing/colima-centro.webp",
       "smallImage":"../src/assets/img/img-landing/colima-centro.webp",
       "captionTitle":"Viaja a Colima: El Encanto del Pacífico y el Volcán con Autovías",
-      "captionText":"Descubre la "Ciudad de las Palmeras", su calidez y paisajes con el servicio de autobús líder. ¡Tu viaje te espera!",
+      "captionText":"Descubre la vibrante capital del país con el servicio de autobús líder. Tu aventura comienza aquí.",
       "captionAlign":"left",
       "captionTheme":"dark"
     }
