@@ -41,8 +41,7 @@ class PageHome extends HTMLElement {
                 ]'
             >
             </app-destinations-grid>
-            <app-list-destinations></app-list-destinations>
-
+<br><br>
             
             <app-destinations-grid
                 titlesText='[
