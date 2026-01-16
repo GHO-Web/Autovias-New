@@ -58,7 +58,7 @@ class AppModalTravelpass extends HTMLElement {
                 <button class="close" id="close-profile-modal"><span>&times;</span></button>
                 <div class="card-modal">
                     <div class="modal-header">
-                        <img src="../src/assets/img/global/gho-img/logos/logo-travel-pass.webp" alt="Logotipo TravelPass" title="Logo Monedero Eléctronico" width="100" height="32" class="modal-logo">
+                        <img src="../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="Logotipo TravelPass" title="Logo Monedero Eléctronico" width="100" height="32" class="modal-logo">
                     </div>
                     <div class="modalContenido">
                         <h2>Información del Usuario</h2>

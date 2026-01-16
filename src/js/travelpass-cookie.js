@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (loginIconDesktop) {
 			loginIconDesktop.innerHTML = profileData
 				? `<a href="#" class="js-open-travelpass-login-modal"><img src="https://autovias.com.mx/gho-test/gho-img-web/iconos/icono-travel-pass.webp" class="icono-travel" alt="Monedero Eléctronico" title="Perfil Monedero Eléctronico"> Hola, ${profileData.name}</a>`
-				: `<a href="#" class="js-open-travelpass-login-modal"><img src="../../src/assets/img/global/gho-img/logos/logo-travel-pass.webp" alt="Iniciar sesión en Monedero Eléctronico" title="Ingresa a Monedero Eléctronico" width="100" height="32" style="cursor: pointer;"></a>`;
+				: `<a href="#" class="js-open-travelpass-login-modal"><img src="../../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="Iniciar sesión en Monedero Eléctronico" title="Ingresa a Monedero Eléctronico" width="100" height="32" style="cursor: pointer;"></a>`;
 		}
 		// Re-atachea los listeners después de actualizar el DOM
 		checkSessionTriggers();
