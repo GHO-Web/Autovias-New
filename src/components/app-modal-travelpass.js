@@ -12,7 +12,7 @@ class AppModalTravelpass extends HTMLElement {
             <button class="close" class="close" id="close-login-modal"><span>&times;</span></button>
             <div class="card-modal">
               <div class="modal-header">
-                  <img src="../src/assets/img/global/gho-img/logos/logo-travel-pass.webp" alt="Logotipo TravelPass" title="Monedero Eléctronico Formulario" width="100" height="32" class="modal-logo">
+                  <img src="../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="Logotipo TravelPass" title="Monedero Eléctronico Formulario" width="100" height="32" class="modal-logo">
                   <hr class="__line-separador"/>
                   <img src="../src/assets/img/global/gho-img/logos/logo_Pegasso.webp" class="modal-logo" alt="Viajero">
               </div>
