@@ -24,6 +24,7 @@ class PageHome extends HTMLElement {
             >
             </app-banner-slider>
             <app-payments></app-payments>
+            <br><br><br>
             <app-destinations-grid
                 titlesText='[
                 {"id": "title1", "title": "¿Aún no sabes a dónde viajar?", "text": "Conoce nuestros destinos Autovías La Línea y elige tu lugar favorito"}
