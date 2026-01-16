@@ -49,7 +49,7 @@ class AppHeader extends HTMLElement {
         </nav>
           
         <button id="login-icon" class="btn-travelpass desktop-travelpass js-open-travelpass-login-modal" aria-label="Iniciar sesión TravelPass">
-			<img src="../../src/assets/img/global/gho-img/logos/logo-travel-pass.png" alt="Monedero Eléctronico" loading="lazy">
+			<img src="../../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="Monedero Eléctronico" loading="lazy">
 		</button>
 		<button id="openDotersModal" class="btn btn-doters desktop-doters" aria-label="Iniciar sesión Doters">
 			<img src='../../src/assets/img/global/logos/doters.svg' alt="Doters" loading="lazy">
