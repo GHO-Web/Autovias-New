@@ -12,7 +12,7 @@ class AppModalTravelpassEnglish extends HTMLElement {
           <button class="close" class="close" id="close-login-modal"><span>&times;</span></button>
           <div class="card-modal">
             <div class="modal-header">
-              <img src="../../../src/assets/img/global/gho-img/logos/logo-travel-pass.webp" alt="TravelPass Logo" title="Monedero Eléctronico Form" width="100" height="32" class="modal-logo">
+              <img src="../../../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="TravelPass Logo" title="Monedero Eléctronico Form" width="100" height="32" class="modal-logo">
               <hr class="__line-separador"/>
               <img src="../../../src/assets/img/global/gho-img/logos/logo_Pegasso.webp" class="modal-logo" alt="Traveler">
             </div>
@@ -58,7 +58,7 @@ class AppModalTravelpassEnglish extends HTMLElement {
           <button class="close" id="close-profile-modal"><span>&times;</span></button>
           <div class="card-modal">
             <div class="modal-header">
-              <img src="../../../src/assets/img/global/gho-img/logos/logo-travel-pass.webp" alt="TravelPass Logo" title="Monedero Eléctronico Logo" width="100" height="32" class="modal-logo">
+              <img src="../../../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="TravelPass Logo" title="Monedero Eléctronico Logo" width="100" height="32" class="modal-logo">
             </div>
             <div class="modalContenido">
               <h2>User Information</h2>
