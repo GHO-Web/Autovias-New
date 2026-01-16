@@ -106,7 +106,7 @@ class AppHeader extends HTMLElement {
                 </li>
                 <li class="li__login">
 					<button id="login-icon" class="btn-travelpass btn-travelpass__submenu js-open-travelpass-login-modal" aria-label="Iniciar sesión TravelPass">
-						<img src="../../../src/assets/img/global/gho-img/logos/logo-travel-pass.webp" alt="Monedero Eléctronico" loading="lazy">
+						<img src="../../../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="Monedero Eléctronico" loading="lazy">
 					</button>
 					<button id="openDotersModalMovil" class="btn-doters" aria-label="Iniciar sesión Doters">
 						<img src="../../src/assets/img/global/logos/doters.svg" alt="Doters" loading="lazy">
