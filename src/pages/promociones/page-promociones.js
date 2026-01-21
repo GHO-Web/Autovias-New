@@ -1,6 +1,7 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
+import "../../components/app-banner-slider-caption.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-forms.js";
@@ -13,15 +14,21 @@ class PagePromociones extends HTMLElement {
 		<app-modal-travelpass></app-modal-travelpass>
 		<app-modal-doters></app-modal-doters>
 
-            <app-banner-slider
-                slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/Bw_Doters_Feria_Tacambaro1_Autovias.webp","mediumImage": "../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"},
-                {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/global/banner/Bw_Patio_Santa_Fe_Morelia2_Autovias.webp", "mediumImage": "../src/assets/img/global/banner/Tablet.png","smallImage": "../src/assets/img/global/banner/Movil.png", "link": "#index.html/banner2"},
-                {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/global/banner/Bw_Playas_Semana_Santa_Autovias.webp", "mediumImage": "../src/assets/img/global/banner/Tablet-1.png","smallImage": "../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner3"}
-                ]'
-            >
-            </app-banner-slider>
-
+           <app-banner-slider-caption
+          slides-data='[
+    {
+      "title":"Promo 1",
+      "link":"https://example.com",
+      "image":"../src/assets/img/img-landing/promociones.webp",
+      "mediumImage":"../src/assets/img/img-landing/promociones.webp",
+      "smallImage":"../src/assets/img/img-landing/promociones.webp",
+      "captionTitle":"¡Viaja por menos con las Promociones de Autovías!",
+      "captionText":"Descubre las mejores ofertas y descuentos para hacer tu próximo viaje en autobús más económico y placentero.",
+      "captionAlign":"left",
+      "captionTheme":"dark"
+    }
+  ]'>
+      </app-banner-slider-caption>
 
             <app-payments></app-payments>
 

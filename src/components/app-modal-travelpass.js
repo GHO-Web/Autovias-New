@@ -12,7 +12,7 @@ class AppModalTravelpass extends HTMLElement {
             <button class="close" class="close" id="close-login-modal"><span>&times;</span></button>
             <div class="card-modal">
               <div class="modal-header">
-                  <img src="../src/assets/img/global/gho-img/logos/logo-travel-pass.webp" alt="Logotipo TravelPass" title="Travel Pass Formulario" width="100" height="32" class="modal-logo">
+                  <img src="../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="Logotipo TravelPass" title="Monedero Eléctronico Formulario" width="100" height="32" class="modal-logo">
                   <hr class="__line-separador"/>
                   <img src="../src/assets/img/global/gho-img/logos/logo_Pegasso.webp" class="modal-logo" alt="Viajero">
               </div>
@@ -44,7 +44,7 @@ class AppModalTravelpass extends HTMLElement {
               </form>
 
               <div class="__card-footer">
-                <a id="info-link" class="w-modal-link color-1 center" href="https://autovias.com.mx/pegasso/travel-pass.html">Conoce aquí&nbsp; <span class="bold"> ¿Qué es Travel Pass?</span></a>
+                <a id="info-link" class="w-modal-link color-1 center" href="https://autovias.com.mx/pegasso/travel-pass.html">Conoce aquí&nbsp; <span class="bold"> ¿Qué es Monedero Eléctronico?</span></a>
                 <a id="register-link" class="w-modal-link color-1" href="#">¿No tienes cuenta? <span class="bold"> Regístrate</span></a>
                 <div id="message" class="message"></div>
               </div>
@@ -58,7 +58,7 @@ class AppModalTravelpass extends HTMLElement {
                 <button class="close" id="close-profile-modal"><span>&times;</span></button>
                 <div class="card-modal">
                     <div class="modal-header">
-                        <img src="../src/assets/img/global/gho-img/logos/logo-travel-pass.webp" alt="Logotipo TravelPass" title="Logo Travel Pass" width="100" height="32" class="modal-logo">
+                        <img src="../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="Logotipo TravelPass" title="Logo Monedero Eléctronico" width="100" height="32" class="modal-logo">
                     </div>
                     <div class="modalContenido">
                         <h2>Información del Usuario</h2>

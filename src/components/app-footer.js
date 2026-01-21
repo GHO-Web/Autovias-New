@@ -39,7 +39,7 @@ class AppFooter extends HTMLElement {
 					},
 					{
 						text: "Bolsa de trabajo",
-						href: "https://Autovías.com.mx/bolsa-de-trabajo/",
+						href: "https://grupo-de-empresas-de-autotransporte.pandape.computrabajo.com/?utm_source=chatgpt.com",
 					},
 				],
 			},

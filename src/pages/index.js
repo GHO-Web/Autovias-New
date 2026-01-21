@@ -1,6 +1,6 @@
 /*-------------PAGINAS PRINCIPALES -------------------------*/
 
-import "./home/page-home.js?v=1.0.0";
+import "./home/page-home.js?v=1.0.1";
 import "./page-404.js";
 
 /*----------------------------PAGINAS-LANDINGS----------------------------------------*/
@@ -59,6 +59,7 @@ import "./servicios/page-pago-oxxo.js?v=1.0.0";
 import "./servicios/page-renta-de-autobuses.js?v=1.0.0";
 import "./servicios/page-salas-de-espera-vip.js?v=1.0.0";
 import "./servicios/page-servicios-a-bordo.js?v=1.0.0";
+import "./servicios/page-facturacion.js?v=1.2.2";
 
 //  PROMOCIONES
 
@@ -161,7 +162,7 @@ import "./packmultienlace/page-terminales-pack.js?v=1.3.3";
 
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
-import "../components/app-header.js?v=1.0.0";
+import "../components/app-header.js?v=1.0.1";
 import "../components/app-modal-doters.js";
 import "../components/app-modal-travelpass.js";
 import "../components/app-cookies-policy.js?v=1.0.0";
@@ -171,7 +172,7 @@ import "../components/app-footer.js?v=1.0.0";
 
 /*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
 
-import "../components/english/app-header.js?v=1.0.0";
+import "../components/english/app-header.js?v=1.0.1";
 import "../components/english/app-modal-doters.js";
 import "../components/english/app-modal-travelpass.js";
 import "../components/english/app-cookies-policy.js?v=1.0.0";

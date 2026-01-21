@@ -1,5 +1,6 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-banner-slider.js";
+import "../../components/app-banner-slider-caption.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-open-modal.js";
@@ -16,14 +17,21 @@ class PageCiudadDeMexico extends HTMLElement {
 			<app-modal-travelpass></app-modal-travelpass>
 			<app-modal-doters></app-modal-doters>
       <app-cotiza></app-cotiza>
-      <app-banner-slider
+      <app-banner-slider-caption
           slides-data='[
-          {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
-          {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
-          {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
-          ]'
-      >
-      </app-banner-slider>
+    {
+      "title":"Promo 1",
+      "link":"https://example.com",
+      "image":"../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
+      "mediumImage":"../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
+      "smallImage":"../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
+      "captionTitle":"Viaja a Ciudad de México: El Corazón de México con Autovías",
+      "captionText":"Descubre la vibrante capital del país con el servicio de autobús líder. Tu aventura comienza aquí.",
+      "captionAlign":"left",
+      "captionTheme":"dark"
+    }
+  ]'>
+      </app-banner-slider-caption>
 			<app-payments></app-payments>
 			
 			
@@ -31,7 +39,7 @@ class PageCiudadDeMexico extends HTMLElement {
 
 			<section class="hero">
         <div class="hero__content">
-          <h1 class="hero__title">Viaja a Ciudad de México: El Corazón de México con Autovías</h1>
+          <h2 class="hero__title">Viaja a Ciudad de México: El Corazón de México con Autovías</h2>
           <p class="hero__subtitle">Descubre la vibrante capital del país con el servicio de autobús líder. Tu aventura comienza aquí.</p>
         </div>
       </section>
@@ -238,7 +246,7 @@ class PageCiudadDeMexico extends HTMLElement {
         <div class="container">
           <h2 class="cta__title">¡Aprovecha Nuestras Promociones Especiales a Ciudad de México!</h2>
           <p class="cta__subtitle">¡No te pierdas nuestra promoción! Hasta 5% de descuento en tu viaje de ida + 10% de descuento en tu regreso. Consulta términos y condiciones.</p>
-          <a href="../promociones.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Ciudad de México" tabindex="0">Ver Todas las Promociones</a>
+          <a href="../promociones/" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Ciudad de México" tabindex="0">Ver Todas las Promociones</a>
         </div>
       </section>
 			

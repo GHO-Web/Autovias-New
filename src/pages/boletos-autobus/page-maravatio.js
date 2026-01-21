@@ -1,6 +1,7 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
+import "../../components/app-banner-slider-caption.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-open-modal.js";
@@ -18,34 +19,21 @@ class PageMaravatio extends HTMLElement {
 			<app-modal-doters></app-modal-doters>
       <app-cotiza></app-cotiza>
 
-			<app-banner-slider
-				slides-data='[
-				{
-					"id": "slide1",
-					"title": "Viaja desde Maravatío",
-					"image": "../src/assets/img/destinos-img/maravatio/banner/maravatio_cdmx_web.webp",
-					"mediumImage": "../src/assets/img/destinos-img/maravatio/banner/maravatio_cdmx_tablet.webp",
-					"smallImage": "../src/assets/img/destinos-img/maravatio/banner/maravatio_cdmx_mobile.webp",
-					"link": "#"
-				},
-				{
-					"id": "slide2",
-					"title": "Confort y seguridad",
-					"image": "../src/assets/img/global/banner/verano_web.webp",
-					"mediumImage": "../src/assets/img/global/banner/tablet/verano_tablet.webp",
-					"smallImage": "../src/assets/img/global/banner/mobile/Verano_mobile.webp",
-					"link": "#"
-				},
-				{
-					"id": "slide3",
-					"title": "Compra fácil",
-					"image": "../src/assets/img/global/banner/metodos_pago_web.webp",
-					"mediumImage": "../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp",
-					"smallImage": "../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp",
-					"link": "#"
-				}
-				]'>
-			</app-banner-slider>
+			<app-banner-slider-caption
+          slides-data='[
+    {
+      "title":"Promo 1",
+      "link":"https://example.com",
+      "image":"../src/assets/img/img-landing/maravatio.webp",
+      "mediumImage":"../src/assets/img/img-landing/maravatio.webp",
+      "smallImage":"../src/assets/img/img-landing/maravatio.webp",
+      "captionTitle":"Viaja a Maravatio: Confort, Seguridad y los Mejores Precios con Autovías",
+      "captionText":"Vive una nueva experiencia viajando con Autovías La Línea. Tu aventura comienza aquí.",
+      "captionAlign":"left",
+      "captionTheme":"dark"
+    }
+  ]'>
+      </app-banner-slider-caption>
 
 			<app-payments></app-payments>
 
