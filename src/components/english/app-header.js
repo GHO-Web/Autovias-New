@@ -51,7 +51,7 @@ class AppHeaderEnglish extends HTMLElement {
         </nav>
           
         <button id="login-icon" class="btn-travelpass desktop-travelpass js-open-travelpass-login-modal" aria-label="Login TravelPass">
-          <img src="../../../src/assets/img/global/gho-img/logos/logo-travel-pass.png" alt="Travel Pass" loading="lazy">
+          <img src="../../../src/assets/img/global/gho-img/logos/logo-travel-pass.png" alt="Monedero Eléctronico" loading="lazy">
         </button>
 
         <button id="openDotersModal" class="btn btn-doters desktop-doters" aria-label="Login Doters">
@@ -117,7 +117,7 @@ class AppHeaderEnglish extends HTMLElement {
 
             <li class="li__login">
               <button id="login-icon" class="btn-travelpass btn-travelpass__submenu js-open-travelpass-login-modal" aria-label="Login TravelPass">
-                <img src="../../../src/assets/img/global/gho-img/logos/logo-travel-pass.webp" alt="Travel Pass" loading="lazy">
+                <img src="../../../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="Monedero Eléctronico" loading="lazy">
               </button>
               
               <button id="openDotersModalMovil" class="btn-doters" aria-label="Login Doters">
