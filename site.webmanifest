@@ -1,0 +1,49 @@
+{
+    "name": "GHO Multiempresa",
+    "short_name": "Autovías",
+    "description": "Compra tus boletos de autobús y viaja con Autovías, La Línea, Pegasso y Sur de Jalisco. Adquiere tus boletos de Guadalajara a México desde $712.",
+    "background_color": "#fff",
+    "theme_color": "#06255b",
+    "Orientation": "portrait",
+    "display": "standalone",
+    "start_url": "/?utm_source=web_app_manifest",
+    "scope": "/",
+    "lang": "es-Mx",
+    "icons": [
+      {
+        "src": "/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "/android-chrome-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/apple-touch-icon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/favicon-32x32.png",
+        "type": "image/png",
+        "sizes": "32x32"
+      },
+      {
+        "src": "/favicon-16x16.png",
+        "type": "image/png",
+        "sizes": "16x16"
+      },
+      {
+        "src": "/safari-pinned-tab.svg",
+        "type": "image/png",
+        "sizes": "144x144"
+      }
+    ],
+    "dir": "auto",
+    "orientation": "portrait",
+    "categories": [
+      "travel"
+    ]
+  }

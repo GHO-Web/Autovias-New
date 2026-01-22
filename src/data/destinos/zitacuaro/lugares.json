@@ -1,0 +1,47 @@
+[
+  {
+    "id": "santuario-mariposa-monarca-el-rosario-zitacuaro",
+    "text": "Santuario de la Mariposa Monarca El Rosario",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/zitacuaro/lugares/santuario-monarca.webp",
+    "image2": "../src/assets/img/destinos-img/zitacuaro/lugares/santuario-monarca-2.webp",
+    "image3": "../src/assets/img/destinos-img/zitacuaro/lugares/santuario-monarca-3.webp",
+    "image4": "../src/assets/img/destinos-img/zitacuaro/lugares/santuario-monarca-4.webp",
+    "title": "Santuario de la Mariposa Monarca El Rosario",
+    "description": "¿Por qué visitarlo? Ubicado en las montañas cercanas a Zitácuaro, el Santuario de la Mariposa Monarca El Rosario es uno de los principales refugios de esta especie en México. Cada invierno, millones de mariposas cubren los bosques de oyamel creando un espectáculo natural único en el mundo. Sus senderos ecológicos y miradores permiten disfrutar de una experiencia inolvidable en contacto directo con la naturaleza."
+  },
+  {
+    "id": "presa-del-bosque",
+    "text": "Presa del Bosque",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/zitacuaro/lugares/presa-del-bosque.webp",
+    "image2": "../src/assets/img/destinos-img/zitacuaro/lugares/presa-del-bosque-2.webp",
+    "image3": "../src/assets/img/destinos-img/zitacuaro/lugares/presa-del-bosque-3.webp",
+    "image4": "../src/assets/img/destinos-img/zitacuaro/lugares/presa-del-bosque-4.webp",
+    "title": "Presa del Bosque",
+    "description": "¿Por qué visitarla? La Presa del Bosque es uno de los espacios naturales más visitados de Zitácuaro. Rodeada de áreas verdes y paisajes montañosos, es ideal para actividades al aire libre como caminatas, pesca recreativa y días de campo. Su ambiente tranquilo la convierte en un lugar perfecto para relajarse y disfrutar de la naturaleza."
+  },
+  {
+    "id": "centro-historico-zitacuaro",
+    "text": "Centro Histórico de Zitácuaro",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/zitacuaro/lugares/centro-historico.webp",
+    "image2": "../src/assets/img/destinos-img/zitacuaro/lugares/centro-historico-2.webp",
+    "image3": "../src/assets/img/destinos-img/zitacuaro/lugares/centro-historico-3.webp",
+    "image4": "../src/assets/img/destinos-img/zitacuaro/lugares/centro-historico-4.webp",
+    "title": "Centro Histórico de Zitácuaro",
+    "description": "¿Por qué visitarlo? El Centro Histórico de Zitácuaro es el corazón cultural y social de la ciudad. Sus plazas, portales y edificios históricos reflejan la importancia del municipio en la historia de México, especialmente por ser sede de la Suprema Junta Nacional Americana. Es un sitio ideal para pasear, conocer su arquitectura y disfrutar de la vida local."
+  },
+  {
+    "id": "parque-lineal-zitacuaro",
+    "text": "Parque Lineal de Zitácuaro",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/zitacuaro/lugares/parque-lineal.webp",
+    "image2": "../src/assets/img/destinos-img/zitacuaro/lugares/parque-lineal-2.webp",
+    "image3": "../src/assets/img/destinos-img/zitacuaro/lugares/parque-lineal-3.webp",
+    "image4": "../src/assets/img/destinos-img/zitacuaro/lugares/parque-lineal-4.webp",
+    "title": "Parque Lineal de Zitácuaro",
+    "description": "¿Por qué visitarlo? El Parque Lineal de Zitácuaro es un espacio urbano pensado para la convivencia y el esparcimiento. Cuenta con áreas verdes, andadores y zonas recreativas ideales para caminar, hacer ejercicio o disfrutar de un momento al aire libre. Es un punto de encuentro para familias y visitantes que buscan conocer el lado más cotidiano y relajado de la ciudad."
+  }
+
+]

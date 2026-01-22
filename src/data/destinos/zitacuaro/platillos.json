@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Carnitas Michoacanas",
+    "description": "Las carnitas son uno de los platillos más representativos de Michoacán y muy populares en Zitácuaro. Se preparan cocinando lentamente diferentes cortes de cerdo en su propia grasa hasta quedar dorados y jugosos. Se sirven con tortillas, salsa, limón y chiles en vinagre. Su sabor intenso y textura crujiente las convierten en un imperdible de la cocina regional.",
+    "imageSrc": "../src/assets/img/destinos-img/zitacuaro/platillos/carnitas.webp",
+    "imageModal": "../src/assets/img/destinos-img/zitacuaro/platillos/carnitas-m.webp",
+    "altText": "Carnitas michoacanas",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Corundas",
+    "description": "Las corundas son un platillo tradicional purépecha, similares a los tamales pero con forma triangular. Se elaboran con masa de maíz y se envuelven en hojas de maíz o carrizo. Generalmente se acompañan con crema, queso fresco y salsa roja o verde, siendo una opción muy común en la región oriente de Michoacán.",
+    "imageSrc": "../src/assets/img/destinos-img/zitacuaro/platillos/corundas.webp",
+    "imageModal": "../src/assets/img/destinos-img/zitacuaro/platillos/corundas-m.webp",
+    "altText": "Corundas",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Uchepos",
+    "description": "Los uchepos son tamales dulces elaborados con elote tierno molido, característicos de Michoacán. Su sabor es suave y ligeramente dulce, y se sirven calientes acompañados de crema, queso fresco o salsa. Son muy comunes en mercados y fondas de Zitácuaro, especialmente en temporada de elote.",
+    "imageSrc": "../src/assets/img/destinos-img/zitacuaro/platillos/uchepos.webp",
+    "imageModal": "../src/assets/img/destinos-img/zitacuaro/platillos/uchepos-m.webp",
+    "altText": "Uchepos",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Aporreadillo",
+    "description": "El aporreadillo es un platillo tradicional de la región, preparado con carne seca de res deshebrada, guisada con huevo, jitomate, cebolla y chile. Se acompaña con frijoles y tortillas recién hechas. Es un desayuno típico en Michoacán y muy apreciado por su sabor casero y contundente.",
+    "imageSrc": "../src/assets/img/destinos-img/zitacuaro/platillos/aporreadillo.webp",
+    "imageModal": "../src/assets/img/destinos-img/zitacuaro/platillos/aporreadillo-m.webp",
+    "altText": "Aporreadillo",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Atole de Grano",
+    "description": "El atole de grano es una bebida tradicional michoacana elaborada con maíz cocido, piloncillo y canela. Su consistencia espesa y sabor reconfortante lo convierten en un acompañamiento ideal para desayunos y tardes frías en Zitácuaro. Es una bebida profundamente ligada a las costumbres locales.",
+    "imageSrc": "../src/assets/img/destinos-img/zitacuaro/platillos/atole-de-grano.webp",
+    "imageModal": "../src/assets/img/destinos-img/zitacuaro/platillos/atole-de-grano-m.webp",
+    "altText": "Atole de grano",
+    "linkText": "Ver..."
+  }
+]

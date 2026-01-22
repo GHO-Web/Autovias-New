@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Tacos de Carne Apachurrada",
+    "description": "Los tacos de carne apachurrada son un antojito muy popular en Uruapan. Se preparan con carne de res cocida y prensada en el comal hasta quedar ligeramente dorada, servida en tortillas calientes y acompañada de salsa roja o verde. Su sabor sencillo pero intenso los convierte en una opción muy buscada en puestos y fondas locales.",
+    "imageSrc": "../src/assets/img/destinos-img/uruapan/platillos/carne-apachurrada.webp",
+    "imageModal":"../src/assets/img/destinos-img/uruapan/platillos/carne-apachurrada-m.webp",
+    "altText": "Tacos de carne apachurrada",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Morisqueta",
+    "description": "La morisqueta es un platillo tradicional de la región de Tierra Caliente que también se consume en Uruapan. Consiste en arroz blanco acompañado de frijoles guisados y, en algunas versiones, carne de cerdo o salsa roja. Es un platillo sencillo, reconfortante y muy representativo de la cocina michoacana.",
+    "imageSrc": "../src/assets/img/destinos-img/uruapan/platillos/morisqueta.webp",
+    "imageModal":"../src/assets/img/destinos-img/uruapan/platillos/morisqueta-m.webp",
+    "altText": "Morisqueta",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Charales Fritos",
+    "description": "Los charales fritos son un antojito típico que se disfruta en Uruapan y otras regiones de Michoacán. Se trata de pequeños pescados fritos hasta quedar crujientes, sazonados con sal y limón. Se sirven como botana o acompañamiento y son muy populares en mercados y festividades locales.",
+    "imageSrc": "../src/assets/img/destinos-img/uruapan/platillos/charales.webp",
+    "imageModal":"../src/assets/img/destinos-img/uruapan/platillos/charales-m.webp",
+    "altText": "Charales fritos",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Atapakua",
+    "description": "La atapakua es un guiso tradicional purépecha elaborado con masa de maíz, chiles y verduras, al que se pueden agregar ingredientes como carne de res, pollo o queso. Su consistencia espesa y su sabor profundo lo convierten en uno de los platillos más antiguos y representativos de la gastronomía de Uruapan.",
+    "imageSrc": "../src/assets/img/destinos-img/uruapan/platillos/atapakua.webp",
+    "imageModal":"../src/assets/img/destinos-img/uruapan/platillos/atapakua-m.webp",
+    "altText": "Atapakua",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Chongos Zamoranos",
+    "description": "Aunque originarios de Zamora, los chongos zamoranos son un postre muy consumido en Uruapan. Se elaboran con leche cuajada, azúcar y canela, creando una textura suave y un sabor dulce tradicional. Son un cierre perfecto para una comida típica michoacana.",
+    "imageSrc": "../src/assets/img/destinos-img/uruapan/platillos/chongos.webp",
+    "imageModal":"../src/assets/img/destinos-img/uruapan/platillos/chongos-m.webp",
+    "altText": "Chongos zamoranos",
+    "linkText": "Ver..."
+  }
+]

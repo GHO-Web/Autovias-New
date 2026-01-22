@@ -1,20 +1,21 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../components/app-cotiza.js";
 import "../components/app-section-title.js";
-import "../components/app-modal-doters.js";
-import "../components/app-modal-travelpass.js";
 
 class PageSiteMap extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
-      <app-modal-doters></app-modal-doters>
-      <app-modal-travelpass></app-modal-travelpass>
+      <app-modal-travelpass-english></app-modal-travelpass-english>
+      <app-modal-doters-english></app-modal-doters-english>
       <div class="space"></div>
       <section class="__section">
-        <app-section-title section-title="Site Map | ETN Turistar Lujo"></app-section-title>
+        <app-section-title section-title="Site Map | Autovías La Línea"></app-section-title>
         <div id="site-map-listas">Cargando...</div>
       </section>
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
     `;
 
 		// Cargar el JSON externo

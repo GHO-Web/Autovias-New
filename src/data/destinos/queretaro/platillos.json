@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Enchiladas Queretanas",
+    "description": "Un platillo tradicional servido con tortillas rellenas de pollo o queso, bañadas en una salsa roja ligeramente picante y acompañadas de papas fritas, zanahorias, lechuga y queso rallado. Son un clásico en los mercados y fondas queretanas.",
+    "imageSrc": "../src/assets/img/destinos-img/queretaro/platillos/enchiladas1.webp",
+    "imageModal": "../src/assets/img/destinos-img/queretaro/platillos/enchiladas2.webp",
+    "altText": "Enchiladas Queretanas",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Gorditas de Migajas",
+    "description": "Estas gorditas, hechas de masa de maíz, se rellenan con migajas de chicharrón, queso, nopales o guisos caseros. Son crujientes por fuera y suaves por dentro, un verdadero antojo típico de Querétaro.",
+    "imageSrc": "../src/assets/img/destinos-img/queretaro/platillos/gorditas1.webp",
+    "imageModal": "../src/assets/img/destinos-img/queretaro/platillos/gorditas2.webp",
+    "altText": "Gorditas de Migajas",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Nopal en Penca",
+    "description": "Un platillo rústico y delicioso donde los nopales se cocinan al vapor dentro de una penca de maguey, acompañados de carne de cerdo, cebolla, jitomate y chile. Es una receta tradicional que conserva el auténtico sabor del campo queretano.",
+    "imageSrc": "../src/assets/img/destinos-img/queretaro/platillos/nopal1.webp",
+    "imageModal": "../src/assets/img/destinos-img/queretaro/platillos/nopal2.webp",
+    "altText": "Nopal en Penca",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Atole de Avena",
+    "description": "Bebida tradicional que reconforta en los días frescos. Se prepara con avena, leche, canela y piloncillo, logrando una textura cremosa y un sabor dulce y aromático, típico de los desayunos en Querétaro.",
+    "imageSrc": "../src/assets/img/destinos-img/queretaro/platillos/atole1.webp",
+    "imageModal": "../src/assets/img/destinos-img/queretaro/platillos/atole2.webp",
+    "altText": "Atole de Avena",
+    "linkText": "Ver..."
+  }
+]

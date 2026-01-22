@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,11 +14,140 @@
 		/>
 		<meta
 			name="keywords"
-			content="boletos de autobús, boletos de camión, autovias..."
+			content="boletos de autobús, boletos de camión, autovias"
 		/>
-		<meta name="theme-color" content="#06255b" />
+
 		<meta name="language" content="Español" />
-		<link rel="icon" type="image/jpg" sizes="512x512" href="favicon.jpg" />
+		<link rel="canonical" href="https://autovias.com.mx/" />
+		<link
+			rel="alternate"
+			href="https://autovias.com.mx/english/"
+			hreflang="es-MX"
+		/>
+
+		<meta name="author" content="Autovías La Línea" />
+		<meta name="robots" content="index, follow" />
+		<meta name="googlebot" content="index, follow" />
+		<meta name="sitemap" content="https://autovias.com.mx/sitemap.xml" />
+
+		<meta name="theme-color" content="#06255b" />
+
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "TravelAgency",
+				"name": "Autovías La Línea",
+				"description": "Compra tus boletos de autobús y viaja con Autovías, La Línea, Pegasso y Sur de Jalisco. Adquiere tus boletos de Guadalajara a México desde $712.",
+				"url": "https://autovias.com.mx",
+				"logo": "https://autovias.com.mx/../src/assets/img/global/logos/logo.svg",
+				"image": "https://www.autovias.com.mx/gho-img/carrusel/Bw_Rio_Tiber_Mor_Uruapan_Autovias.webp",
+				"telephone": "+52-800-622-2222",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Av. Insurgentes Sur 428",
+					"addressLocality": "Ciudad de México",
+					"postalCode": "06760",
+					"addressCountry": "MX"
+				},
+				"sameAs": [
+					"https://www.facebook.com/Autobuses.Autovias",
+					"https://twitter.com/autovias_",
+					"https://www.instagram.com/autovias/",
+					"https://www.youtube.com/channel/UCOMVpctqR_Q2x__5b3iHDDQ",
+					"https://www.tiktok.com/@autovias"
+				],
+				"potentialAction": {
+					"@type": "SearchAction",
+					"target": "https://autovias.com.mx/destinos/autobus-a-{search_term_string}.html",
+					"query-input": "required name=search_term_string"
+				}
+			}
+		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"url": "https://autovias.com.mx/",
+				"potentialAction": {
+					"@type": "SearchAction",
+					"target": "https://autovias.com.mx/destinos/autobus-a-{search_term_string}.html",
+					"query-input": "required name=search_term_string"
+				}
+			}
+		</script>
+		<!-- Favicons for various devices for SEO and UX -->
+
+		<!-- Apple Touch Icons -->
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="/apple-touch-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="/apple-touch-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="/apple-touch-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="/apple-touch-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="/apple-touch-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="/apple-touch-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="/apple-touch-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/apple-touch-icon-180x180.png"
+		/>
+		<!-- End Apple Touch Icons -->
+
+		<!-- Android Icons -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="512x512"
+			href="/android-chrome-512x512.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="/android-chrome-192x192.png"
+		/>
+		<!-- End Android Icons -->
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<!-- End Favicon -->
+
+		<link rel="manifest" href="/site.webmanifest" />
+		<meta name="msapplication-TileColor" content="#06255b" />
+		<meta name="msapplication-config" content="/browserconfig.xml" />
+
+		<!-- Open Graph -->
+
 		<meta
 			property="og:title"
 			content="Compra Tus Boletos de Autobús aquí | Autovías La Línea"
@@ -31,43 +160,11 @@
 			property="og:image"
 			content="https://www.autovias.com.mx/gho-img/carrusel/Bw_Rio_Tiber_Mor_Uruapan_Autovias.webp"
 		/>
-		<link rel="canonical" href="https://autovias.com.mx/english" />
-		<link rel="alternate" href="https://autovias.com.mx/" hreflang="es-MX" />
-		<link
-			rel="alternate"
-			href="https://autovias.com.mx/english/"
-			hreflang="en-US"
-		/>
 
-		<!-- Preload images -->
-		<link
-			rel="preload"
-			as="image"
-			href="src/assets/img/banner/Movil-1.webp"
-			imagesrcset="src/assets/img/banner/Movil-1.webp"
-		/>
-		<link
-			rel="preload"
-			as="image"
-			href="src/assets/img/banner/Bw_Doters_Feria_Tacambaro1_Autovias.webp"
-			imagesrcset="src/assets/img/banner/Movil-1.webp"
-		/>
-		<!-- End preload images -->
+		<!-- End Open Graph -->
 
-		<!-- Stylesheets -->
+		<!-- ANALYTICS -->
 
-		<!-- CSS All Components -->
-
-		<link
-			rel="stylesheet"
-			href="./src/styles/css/css-components/home.min.css?v=1.0.7"
-		/>
-
-		<!--CSS widget de reservamos-->
-		<link
-			rel="stylesheet"
-			href="https://widgets.reservamos.mx/search/5.18.0/search.css?v=5.18.0"
-		/>
 		<!-- Google Tag Manager -->
 		<script>
 			(function (w, d, s, l, i) {
@@ -105,20 +202,42 @@
 		></script>
 		<!-- End Cloudflare -->
 
+		<!-- END ANALYTICS -->
+
+		<!-- Preload images -->
+		<link
+			rel="preload"
+			as="image"
+			href="src/assets/img/global/banner/Movil-1.webp"
+			imagesrcset="src/assets/img/global/banner/Movil-1.webp"
+		/>
+		<link
+			rel="preload"
+			as="image"
+			href="src/assets/img/global/banner/Bw_Doters_Feria_Tacambaro1_Autovias.webp"
+			imagesrcset="src/assets/img/global/banner/Movil-1.webp"
+		/>
+		<!-- End preload images -->
+
+		<!-- Stylesheets -->
+
+		<!-- CSS All Components -->
+
+		<link
+			rel="stylesheet"
+			href="./src/styles/css/css-pages/home.min.css?v=1.0.7"
+		/>
+
+		<!--CSS widget de reservamos-->
+		<link
+			rel="stylesheet"
+			href="https://widgets.reservamos.mx/search/5.23.6/search.css?v=5.18.0"
+		/>
+
 		<!-- Scripts -->
 		<script src="./src/js/jquery.min.js?v=1.0.0"></script>
 		<script type="module" src="./app.js?v=1.0.0"></script>
-
-		<script type="application/ld+json">
-			{
-			  "@context": "https://schema.org",
-			  "@type": "LocalBusiness",
-			  "name": "Autivías La Línea",
-			  "url": "https://autovias.com.mx",
-			  "logo": "https://autovias.com.mx/gho-etn/webp/logo-autovias-la-linea.webp",
-			  ...
-			}
-		</script>
+		<!-- End Scripts -->
 	</head>
 
 	<body>
@@ -146,22 +265,17 @@
 
 		<app-header
 			logo='{
-        "src": "src/assets/img/logos/logo.svg", 
+        "src": "./src/assets/img/global/logos/logo.svg", 
         "alt": "Logo de Autovias La Línea",
         "href": "https://www.autovias.com.mx/"
       }'
 		>
 		</app-header>
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
 		<main>
 			<page-home></page-home>
 		</main>
 		<app-footer></app-footer>
-		<app-cookies-policy></app-cookies-policy>
-		<!--<app-button-whats></app-button-whats> -->
-		<app-button-eva-trip></app-button-eva-trip>
 		<!-- JS widget de reservamos--->
-		<script src="https://widgets.reservamos.mx/search/5.18.0/search.js?v=5.18.0"></script>
+		<script src="https://widgets.reservamos.mx/search/5.23.6/search.js?v=5.18.0"></script>
 	</body>
 </html>

@@ -1,26 +1,26 @@
 [
-    {
-      "image": "../../../src/assets/img/autobuses/Asiento_Autovias.webp",
-      "alt": "Asiento confortable de autobús Autovías La Línea para renta",
-      "title": "El valor estratégico de la renta de autobuses en el turismo",
-      "content": "La renta de autobuses en turismo es clave para viajes sin contratiempos, reduciendo costos y mejorando la experiencia grupal. Diseñados para confort, ofrecen asientos reclinables, aire acondicionado, amplio espacio y entretenimiento. Además, la logística centralizada garantiza seguridad y puntualidad."
-    },
-    {
-      "image": "../../../src/assets/img/autobuses/interior-autobus.webp",
-      "alt": "Interior de un autobús de lujo para renta en CDMX",
-      "title": "Renta de autobuses en la CDMX",
-      "content": "La renta de autobuses de lujo en CDMX es ideal para eventos distinguidos como bodas y conferencias. Ofrecen máxima comodidad, seguridad y tecnología avanzada, con asientos confortables, pantallas individuales y sonido de alta fidelidad. Perfectos para viajes ejecutivos y corporativos."
-    },
-    {
-      "image": "../../../src/assets/img/autobuses/autobus.webp",
-      "alt": "Autobús Autovías La Línea disponible para renta",
-      "title": "Ventajas competitivas de Autovías La Línea en la renta de autobuses",
-      "content": "Autovías La Línea destaca en la renta de autobuses por su calidad y enfoque en la satisfacción del cliente. Con una flota moderna, garantiza viajes seguros y cómodos. Su plataforma en línea permite reservar fácilmente autobuses estándar o de lujo, adaptándose a distintas necesidades de transporte."
-    },
-    {
-      "image": "../../../src/assets/img/autobuses/asientos_cerca_autovias.webp",
-      "alt": "Detalle de asiento en autobús Autovías La Línea para la mejor experiencia de renta",
-      "title": "La mejor experiencia de renta de autobuses con Autovías La Línea",
-      "content": "La renta de autobuses con Autovías La Línea es la opción ideal para grupos que buscan transporte cómodo y confiable. Con autobuses estándar y de lujo, garantiza una experiencia superior respaldada por su trayectoria y compromiso con la satisfacción del cliente."
-    }
+	{
+		"image": "../../../src/assets/img/global/autobuses/Asiento_Autovias.webp",
+		"alt": "Asiento confortable de autobús Autovías La Línea para renta",
+		"title": "El valor estratégico de la renta de autobuses en el turismo",
+		"content": "La renta de autobuses en turismo es clave para viajes sin contratiempos, reduciendo costos y mejorando la experiencia grupal. Diseñados para confort, ofrecen asientos reclinables, aire acondicionado, amplio espacio y entretenimiento. Además, la logística centralizada garantiza seguridad y puntualidad."
+	},
+	{
+		"image": "../../../src/assets/img/global/autobuses/interior-autobus.webp",
+		"alt": "Interior de un autobús de lujo para renta en CDMX",
+		"title": "Renta de autobuses en la CDMX",
+		"content": "La renta de autobuses de lujo en CDMX es ideal para eventos distinguidos como bodas y conferencias. Ofrecen máxima comodidad, seguridad y tecnología avanzada, con asientos confortables, pantallas individuales y sonido de alta fidelidad. Perfectos para viajes ejecutivos y corporativos."
+	},
+	{
+		"image": "../../../src/assets/img/global/autobuses/autobus.webp",
+		"alt": "Autobús Autovías La Línea disponible para renta",
+		"title": "Ventajas competitivas de Autovías La Línea en la renta de autobuses",
+		"content": "Autovías La Línea destaca en la renta de autobuses por su calidad y enfoque en la satisfacción del cliente. Con una flota moderna, garantiza viajes seguros y cómodos. Su plataforma en línea permite reservar fácilmente autobuses estándar o de lujo, adaptándose a distintas necesidades de transporte."
+	},
+	{
+		"image": "../../../src/assets/img/global/autobuses/asientos_cerca_autovias.webp",
+		"alt": "Detalle de asiento en autobús Autovías La Línea para la mejor experiencia de renta",
+		"title": "La mejor experiencia de renta de autobuses con Autovías La Línea",
+		"content": "La renta de autobuses con Autovías La Línea es la opción ideal para grupos que buscan transporte cómodo y confiable. Con autobuses estándar y de lujo, garantiza una experiencia superior respaldada por su trayectoria y compromiso con la satisfacción del cliente."
+	}
 ]

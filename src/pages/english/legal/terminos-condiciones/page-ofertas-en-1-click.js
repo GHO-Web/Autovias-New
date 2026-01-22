@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../../components/app-cotiza.js";
-import "../../../../components/english/app-modal-doters.js";
-import "../../../../components/english/app-modal-travelpass.js";
 import "../../../../components/app-banner-slider.js";
 import "../../../../components/app-payments.js";
 import "../../../../components/app-section-title.js";
@@ -16,7 +14,7 @@ class PageOfertasClickEnglish extends HTMLElement {
 
             <app-banner-slider
                 slides-data='[
-                    {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/ofertas-1-click.png","mediumImage": "../src/assets/img/banner/Tablet-1.png", "smallImage": "../src/assets/img/banner/Movil-1.webp", "link": "#index.html/banner1"}
+                    {"id": "slide1", "title": "Banner 1", "image": "../../../../src/assets/img/global/banner/ofertas-1-click.png","mediumImage": "../../../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
                 ]'
             >
             </app-banner-slider>
@@ -248,6 +246,9 @@ class PageOfertasClickEnglish extends HTMLElement {
                     </ol>
                 </article>
             </section>
+		<app-cookies-policy-english></app-cookies-policy-english>
+		<app-button-whats></app-button-whats>
+		<app-button-eva-trip-english></app-button-eva-trip-english>
         `;
 	}
 }

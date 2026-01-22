@@ -1,0 +1,17 @@
+[
+  {
+    "image": "../../src/assets/img/english/destinations/ciudad-de-mexico/cards-explore-section/frida-calo-museum.webp",
+    "title": "Frida Kahlo Museum",
+    "description": "Step into the world of one of Mexico’s most iconic artists. Located in the heart of Coyoacán, the Casa Azul preserves Frida Kahlo’s life, art, and spirit. From her personal diaries to her vibrant paintings and intimate spaces, this museum offers a deeply emotional and cultural journey."
+  },
+  {
+    "image": "../../src/assets/img/english/destinations/ciudad-de-mexico/cards-explore-section/chapultepec-castle.webp",
+    "title": "Chapultepec Castle",
+    "description": "Perched atop Chapultepec Hill, this historic castle offers panoramic views of the city and a glimpse into Mexico’s imperial past. Once home to Emperor Maximilian, it now houses the National History Museum and showcases stunning architecture, gardens, and murals."
+  },
+  {
+    "image": "../../src/assets/img/english/destinations/ciudad-de-mexico/cards-explore-section/templo-mayor.webp",
+    "title": "Templo Mayor",
+    "description": "Discover the ruins of the ancient Aztec capital, Tenochtitlán, just steps from the Zócalo. The Templo Mayor archaeological site and museum reveal layers of Mexico’s indigenous history, featuring sacred relics, ceremonial platforms, and the legendary Coyolxauhqui stone."
+  }
+]

@@ -11,7 +11,7 @@ class AppFooterEnglish extends HTMLElement {
 				<div class="footer__content main-container">
 					<div class="footer__content__footer-logo">
 						<a href="https://www.autovias.com.mx/" aria-label="Go to homepage of CompanyName">
-							<img src="../../src/assets/img/logos/logo.svg" alt="Logo of [Company Name]" class="footer__logo" width="922" height="143" loading="lazy"/>
+							<img src="../../../src/assets/img/global/logos/logo.svg" alt="Logo of [Company Name]" class="footer__logo" width="922" height="143" loading="lazy"/>
 						</a>
 					</div>
 					<div class="footer__content__columns"></div>
@@ -33,7 +33,10 @@ class AppFooterEnglish extends HTMLElement {
 			{
 				title: "About the Company",
 				links: [
-					{ text: "Who We Are", href: "../../english/quienes-somos.html" },
+					{
+						text: "Who We Are",
+						href: "../../english/about/quienes-somos.html",
+					},
 					{
 						text: "Job Opportunities",
 						href: "https://Autovías.com.mx/bolsa-de-trabajo/",
@@ -43,10 +46,13 @@ class AppFooterEnglish extends HTMLElement {
 			{
 				title: "Legal",
 				links: [
-					{ text: "Privacy Notices", href: "../../english/aviso-de-privacidad.html" },
+					{
+						text: "Privacy Notices",
+						href: "../../english/about/aviso-de-privacidad.html",
+					},
 					{
 						text: "Terms and Conditions",
-						href: "../../english/terminos-condiciones.html",
+						href: "../../english/about/terminos-condiciones.html",
 					},
 				],
 			},
@@ -55,7 +61,10 @@ class AppFooterEnglish extends HTMLElement {
 					{
 						title: "Customer Service",
 						links: [
-							{ text: "Protected Traveler", href: "../../english/viajero-protegido.html" },
+							{
+								text: "Protected Traveler",
+								href: "../../english/viajero-protegido.html",
+							},
 							{
 								text: "Agencies",
 								href: "https://venta.autovias.com.mx/request.aspx?PRGNAME=AccesoEx&ARGUMENTS=-AAG,-AH,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-AES",
@@ -65,7 +74,10 @@ class AppFooterEnglish extends HTMLElement {
 					{
 						title: "Locations",
 						links: [
-							{ text: "Destination Terminals", href: "../../english/destinos.html" },
+							{
+								text: "Destination Terminals",
+								href: "../../english/destinos.html",
+							},
 						],
 					},
 				],
@@ -77,7 +89,10 @@ class AppFooterEnglish extends HTMLElement {
 						text: "Frequently Asked Questions",
 						href: "../../english/preguntas-frecuentes.html",
 					},
-					{ text: "Ticket Types", href: "../../english/boletos-de-autobus.html" },
+					{
+						text: "Ticket Types",
+						href: "../../english/boletos-de-autobus.html",
+					},
 					{ text: "Where to Buy", href: "../../english/donde-comprar.html" },
 					{ text: "Payment Methods", href: "#payment-methods" },
 					{ text: "Site Map", href: "../../english/sitemap.html" },
@@ -113,6 +128,11 @@ class AppFooterEnglish extends HTMLElement {
 								text: "YouTube",
 								href: "https://www.youtube.com/channel/UCOMVpctqR_Q2x__5b3iHDDQ",
 								type: "icon-yt",
+							},
+							{
+								text: "TikTok",
+								href: "https://www.tiktok.com/@autovias",
+								type: "icon-tiktok",
 							},
 						],
 					},

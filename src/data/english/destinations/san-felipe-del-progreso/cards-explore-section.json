@@ -1,17 +1,17 @@
 [
   {
     "image": "../../src/assets/img/english/destinations/san-felipe-del-progreso/cards-explore-section/san-marcos-garden.webp",
-    "title": "San Marcos Garden",
-    "description": "Visit the heart of Aguascalientes. Surrounded by pink quarry stone and century-old trees, San Marcos Garden is the perfect place to stroll, take photos, and connect with local culture. A charming corner full of history  ideal for relaxing and experiencing the authentic spirit of Mexico."
+    "title": "Los Mármoles Natural Reserve",
+    "description": "A protected area of rugged terrain, pine forests, and diverse wildlife. Ideal for hiking, birdwatching, and photography, this reserve showcases the ecological richness of northern Estado de México."
   },
   {
     "image": "../../src/assets/img/english/destinations/san-felipe-del-progreso/cards-explore-section/adventure-park.webp",
-    "title": "Boca de Túnel Adventure Park",
-    "description": "Boca de Túnel is an adventure park nestled among rocky canyons and a crystal-clear reservoir. It’s one of central Mexico’s best-kept secrets a place where wild nature, adrenaline, and breathtaking views come together in perfect harmony."
+    "title": "Ruta de Hidalgo “Cabezas de Águila”",
+    "description": "A historical trail commemorating the path of independence hero Miguel Hidalgo. Marked by symbolic monuments and scenic viewpoints, it offers a blend of history, nature, and reflection"
   },
   {
     "image": "../../src/assets/img/english/destinations/san-felipe-del-progreso/cards-explore-section/railway-workers-museum.webp",
-    "title": "Railway Workers Museum",
-    "description": "Housed in a former train station built in 1911, the Museo Ferrocarrilero de Aguascalientes is a time capsule that brings Mexico’s golden age of railroads back to life. This museum doesn’t just showcase original locomotives, railcars, and tools — it tells the human stories behind the progress: the workers, the travelers, and the dreams that once crossed the country on steel tracks."
+    "title": "Textile and Silver Workshops",
+    "description": "Visit local artisan studios where wool is spun into traditional quexquémetls and silver is forged into elegant jewelry. These spaces offer hands-on experiences and a chance to support indigenous craftsmanship."
   }
 ]

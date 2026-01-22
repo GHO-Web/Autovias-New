@@ -1,7 +1,9 @@
 class AppBannerImage extends HTMLElement {
 	connectedCallback() {
-    const imgSrc = this.getAttribute('image-src') || '../../src/assets/img/banner/banner-viajero-protegido.webp';
-    const imgAlt = this.getAttribute('image-alt') || 'Banner promocional';
+		const imgSrc =
+			this.getAttribute("image-src") ||
+			"../../src/assets/img/global/banner/banner-viajero-protegido.webp";
+		const imgAlt = this.getAttribute("image-alt") || "Banner promocional";
 
 		this.innerHTML = `
       <article class="__banner-container">

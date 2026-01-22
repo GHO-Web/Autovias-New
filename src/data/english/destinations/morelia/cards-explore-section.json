@@ -1,17 +1,17 @@
 [
   {
-    "image": "../../src/assets/img/english/destinations/morelia/cards-explore-section/san-marcos-garden.webp",
-    "title": "San Marcos Garden",
-    "description": "Visit the heart of Aguascalientes. Surrounded by pink quarry stone and century-old trees, San Marcos Garden is the perfect place to stroll, take photos, and connect with local culture. A charming corner full of history  ideal for relaxing and experiencing the authentic spirit of Mexico."
+    "image": "../../src/assets/img/english/destinations/morelia/cards-explore-section/callejon.webp",
+    "title": "Callejón del Romance",
+    "description": "A narrow, flower-lined alleyway that captures the poetic spirit of Morelia. With its stone benches, fountains, and romantic verses engraved along the walls, it’s a favorite spot for couples, photographers, and anyone seeking a quiet moment in the heart of the city."
   },
   {
-    "image": "../../src/assets/img/english/destinations/morelia/cards-explore-section/adventure-park.webp",
-    "title": "Boca de Túnel Adventure Park",
-    "description": "Boca de Túnel is an adventure park nestled among rocky canyons and a crystal-clear reservoir. It’s one of central Mexico’s best-kept secrets a place where wild nature, adrenaline, and breathtaking views come together in perfect harmony."
+    "image": "../../src/assets/img/english/destinations/morelia/cards-explore-section/bosque.webp",
+    "title": "Bosque Cuauhtémoc",
+    "description": "This urban forest offers shaded walking paths, playgrounds, and cultural spaces like the Museum of Natural History. It’s a peaceful retreat for families and nature lovers, just steps away from the city’s historic core."
   },
   {
-    "image": "../../src/assets/img/english/destinations/morelia/cards-explore-section/railway-workers-museum.webp",
-    "title": "Railway Workers Museum",
-    "description": "Housed in a former train station built in 1911, the Museo Ferrocarrilero de Aguascalientes is a time capsule that brings Mexico’s golden age of railroads back to life. This museum doesn’t just showcase original locomotives, railcars, and tools — it tells the human stories behind the progress: the workers, the travelers, and the dreams that once crossed the country on steel tracks."
+    "image": "../../src/assets/img/english/destinations/morelia/cards-explore-section/mercado.webp",
+    "title": "Mercado de Dulces y Artesanías",
+    "description": "A colorful market filled with regional sweets like ate, cocadas, and chongos zamoranos, alongside handcrafted toys, textiles, and ceramics. It’s a sensory experience that celebrates Morelia’s culinary and artistic traditions."
   }
 ]

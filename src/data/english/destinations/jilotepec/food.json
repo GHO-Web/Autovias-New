@@ -1,20 +1,20 @@
 [
   {
-    "imageSrc": "../../src/assets/img/english/destinations/jilotepec/food/cabrito-english.webp",
-    "imageAlt": "Cabrito",
-    "tag": "Cabrito al horno",
-    "text": "Tender, juicy goat meat, marinated and slow-roasted to perfection, served with traditional side dishes from the Bajío region."
+    "imageSrc": "../../src/assets/img/english/destinations/jilotepec/food/quintoniles.webp",
+    "imageAlt": "Quintoniles in Green Sauce",
+    "tag": "Quintoniles in Green Sauce",
+    "text": "Wild greens sautéed and simmered in a tangy tomatillo sauce, often served with beans and handmade tortillas. A simple, nutritious dish with deep regional roots."
   },
   {
-    "imageSrc": "../../src/assets/img/english/destinations/jilotepec/food/sopa-campesina-english.webp",
-    "imageAlt": "Sopa Campesina",
-    "tag": "Sopa Campesina",
-    "text": "A comforting broth with vegetables, meat, and spices perfect for cool days. It’s a reflection of traditional, homemade Mexican cooking"
+    "imageSrc": "../../src/assets/img/english/destinations/jilotepec/food/verdolagas.webp",
+    "imageAlt": "Carne con Verdolagas",
+    "tag": "Carne con Verdolagas",
+    "text": "Tender beef or pork cooked with purslane and seasoned with local herbs like chivatito. It’s a bold, aromatic stew that showcases the flavors of the highlands."
   },
   {
-    "imageSrc": "../../src/assets/img/english/destinations/jilotepec/food/flan-english.webp",
-    "imageAlt": "Flan de queso y guayaba",
-    "tag": "Flan de queso y guayaba",
-    "text": "A smooth, creamy dessert that blends the rich flavor of cheese with the sweetness of guava—a festive favorite in local celebrations."
+    "imageSrc": "../../src/assets/img/english/destinations/jilotepec/food/pan-pulque.webp",
+    "imageAlt": "Pan de Pulque",
+    "tag": "Pan de Pulque",
+    "text": "A soft, slightly sweet bread made with pulque, the traditional fermented agave drink. Its unique flavor and fluffy texture make it a local favorite during fairs and family gatherings."
   }
 ]

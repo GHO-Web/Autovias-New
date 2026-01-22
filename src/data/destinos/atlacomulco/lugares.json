@@ -1,0 +1,46 @@
+[
+  {
+    "id": "plaza-civica-atlacomulco",
+    "text": "Plaza Cívica de Atlacomulco",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/atlacomulco/lugares/plaza-civica.webp",
+    "image2": "../src/assets/img/destinos-img/atlacomulco/lugares/plaza-civica-2.webp",
+    "image3": "../src/assets/img/destinos-img/atlacomulco/lugares/plaza-civica-3.webp",
+    "image4": "../src/assets/img/destinos-img/atlacomulco/lugares/plaza-civica-4.webp",
+    "title": "Plaza Cívica de Atlacomulco",
+    "description": "¿Por qué visitarla? La Plaza Cívica de Atlacomulco es el corazón social y cultural del municipio. Este espacio es punto de encuentro para locales y visitantes, rodeado de edificios emblemáticos, comercios y áreas verdes. Aquí se celebran eventos culturales, festividades tradicionales y actividades comunitarias que reflejan la identidad de la región. Pasear por la plaza permite conocer el ambiente cotidiano de Atlacomulco y disfrutar de su hospitalidad."
+  },
+  {
+    "id": "parroquia-santa-maria",
+    "text": "Parroquia de Santa María",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/atlacomulco/lugares/parroquia-santa-maria.webp",
+    "image2": "../src/assets/img/destinos-img/atlacomulco/lugares/parroquia-santa-maria-2.webp",
+    "image3": "../src/assets/img/destinos-img/atlacomulco/lugares/parroquia-santa-maria-3.webp",
+    "image4": "../src/assets/img/destinos-img/atlacomulco/lugares/parroquia-santa-maria-4.webp",
+    "title": "Parroquia de Santa María",
+    "description": "¿Por qué visitarla? La Parroquia de Santa María es uno de los principales referentes religiosos y arquitectónicos de Atlacomulco. Su diseño sobrio y su relevancia histórica la convierten en un sitio de gran valor cultural. Los visitantes pueden apreciar su arquitectura, conocer las tradiciones religiosas de la comunidad y participar en celebraciones que forman parte esencial de la vida local."
+  },
+  {
+    "id": "mercado-municipal",
+    "text": "Mercado Municipal",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/atlacomulco/lugares/mercado-municipal.webp",
+    "image2": "../src/assets/img/destinos-img/atlacomulco/lugares/mercado-municipal-2.webp",
+    "image3": "../src/assets/img/destinos-img/atlacomulco/lugares/mercado-municipal-3.webp",
+    "image4": "../src/assets/img/destinos-img/atlacomulco/lugares/mercado-municipal-4.webp",
+    "title": "Mercado Municipal de Atlacomulco",
+    "description": "¿Por qué visitarlo? El Mercado Municipal de Atlacomulco es el lugar ideal para descubrir los sabores y productos típicos de la región. Aquí se pueden encontrar alimentos frescos, platillos tradicionales, artesanías y productos locales. Recorrer sus pasillos es una experiencia auténtica que permite conocer la gastronomía, costumbres y vida diaria de Atlacomulco."
+  },
+  {
+    "id": "entorno-natural-atlacomulco",
+    "text": "Entorno Natural",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/atlacomulco/lugares/entorno-natural.webp",
+    "image2": "../src/assets/img/destinos-img/atlacomulco/lugares/entorno-natural-2.webp",
+    "image3": "../src/assets/img/destinos-img/atlacomulco/lugares/entorno-natural-3.webp",
+    "image4": "../src/assets/img/destinos-img/atlacomulco/lugares/entorno-natural-4.webp",
+    "title": "Entorno Natural de Atlacomulco",
+    "description": "¿Por qué visitarlo? Atlacomulco está rodeado de paisajes naturales que invitan a la tranquilidad y el descanso. Sus alrededores ofrecen vistas rurales, caminos para caminatas y espacios ideales para conectar con la naturaleza. Es un destino perfecto para quienes buscan una experiencia más relajada, lejos del ritmo acelerado de la ciudad."
+  }
+]

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?rv0gyw');
-  src:  url('fonts/icomoon.eot?rv0gyw#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?rv0gyw') format('truetype'),
-    url('fonts/icomoon.woff?rv0gyw') format('woff'),
-    url('fonts/icomoon.svg?rv0gyw#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?vs7qxf');
+  src:  url('fonts/icomoon.eot?vs7qxf#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vs7qxf') format('truetype'),
+    url('fonts/icomoon.woff?vs7qxf') format('woff'),
+    url('fonts/icomoon.svg?vs7qxf#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-travel-security:before {
+  content: "\ea38";
+}
+.icon-montain:before {
+  content: "\ea39";
+}
+.icon-armchair:before {
+  content: "\ea34";
+}
+.icon-pig:before {
+  content: "\ea35";
+}
+.icon-camera:before {
+  content: "\ea36";
+}
+.icon-car:before {
+  content: "\ea37";
+}
 .icon-tarifas_generales:before {
   content: "\e912";
   color: #fff;

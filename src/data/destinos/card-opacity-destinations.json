@@ -1,0 +1,82 @@
+[
+    {
+      "imageSrc": "../src/assets/img/destinos-img/atlacomulco/lugares/plaza-civica.webp",
+      "imageAlt": "Atlacomulco, Estado de México",
+      "destinationName": "Atlacomulco, Estado de México",
+      "destinationTagline": "Descubre la magia de una ciudad colonial.",
+      "buttonText": "Explorar Atlacomulco",
+      "buttonLink": "../../destinos/autobus-a-atlacomulco.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/cdmx/palacio-de-bellas-artes-2.webp",
+      "imageAlt": "Ciudad de México, CDMX",
+      "destinationName": "Ciudad de México, CDMX",
+      "destinationTagline": "Conoce la vibrante capital del país.",
+      "buttonText": "Explorar Ciudad de México",
+      "buttonLink": "../../destinos/autobus-a-ciudad-de-mexico.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/colima/lugares/centro-historico.webp",
+      "imageAlt": "Colima, Colima",
+      "destinationName": "Colima, Colima",
+      "destinationTagline": "Disfruta de la riqueza cultural de Colima.",
+      "buttonText": "Explorar Colima",
+      "buttonLink": "../../destinos/autobus-a-colima.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/guadalajara/lugares/centrohistorico1.webp",
+      "imageAlt": "Guadalajara, Jalisco",
+      "destinationName": "Guadalajara, Jalisco",
+      "destinationTagline": "Disfruta de la riqueza cultural de Guadalajara.",
+      "buttonText": "Explorar Guadalajara",
+      "buttonLink": "../../destinos/autobus-a-guadalajara.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/ixtapa/lugares/playa-el-palmar.webp",
+      "imageAlt": "Ixtapa-Zihuatanejo, Guerrero",
+      "destinationName": "Ixtapa-Zihuatanejo, Guerrero",
+      "destinationTagline": "Disfruta de la riqueza cultural de Ixtapa-Zihuatanejo.",
+      "buttonText": "Explorar Ixtapa-Zihuatanejo",
+      "buttonLink": "../../destinos/autobus-a-ixtapa.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/maravatio/lugares/torre-mirador-3.webp",
+      "imageAlt": "Maravatío, Michoacán",
+      "destinationName": "Maravatío, Michoacán",
+      "destinationTagline": "Descubre la belleza y cultura de Maravatío.",
+      "buttonText": "Explorar Maravatío",
+      "buttonLink": "../../destinos/autobus-a-maravatio.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/morelia/lugares/aqueducto-morelia.webp",
+      "imageAlt": "Morelia, Michoacán",
+      "destinationName": "Morelia, Michoacán",
+      "destinationTagline": "Descubre la belleza y cultura de Morelia.",
+      "buttonText": "Explorar Morelia",
+      "buttonLink": "../../destinos/autobus-a-morelia.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/queretaro/lugares/centro-historico-queretaro.webp",
+      "imageAlt": "Querétaro, Querétaro",
+      "destinationName": "Querétaro, Querétaro",
+      "destinationTagline": "Descubre la belleza y cultura de Querétaro.",
+      "buttonText": "Explorar Querétaro",
+      "buttonLink": "../../destinos/autobus-a-queretaro.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/uruapan/lugares/barranca-cupatitzio.webp",
+      "imageAlt": "Uruapan, Michoacán",
+      "destinationName": "Uruapan, Michoacán",
+      "destinationTagline": "Descubre la belleza y cultura de Uruapan.",
+      "buttonText": "Explorar Uruapan",
+      "buttonLink": "../../destinos/autobus-a-uruapan.html"
+    },
+    {
+      "imageSrc": "../src/assets/img/destinos-img/zitacuaro/lugares/centro-historico.webp",
+      "imageAlt": "Zitacuaro, Michoacán",
+      "destinationName": "Zitacuaro, Michoacán",
+      "destinationTagline": "Descubre la belleza y cultura de Zitacuaro.",
+      "buttonText": "Explorar Zitacuaro",
+      "buttonLink": "../../destinos/autobus-a-zitacuaro.html"
+    }
+  ]

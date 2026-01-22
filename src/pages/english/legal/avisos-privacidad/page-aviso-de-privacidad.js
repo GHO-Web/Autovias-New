@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../../components/app-cotiza.js";
-import "../../../../components/english/app-modal-doters.js";
-import "../../../../components/english/app-modal-travelpass.js";
 import "../../../../components/app-banner-slider.js";
 import "../../../../components/app-payments.js";
 import "../../../../components/app-section-title.js";
@@ -15,9 +13,9 @@ class PageAvisoDePrivacidadEnglish extends HTMLElement {
       <app-modal-doters-english></app-modal-doters-english>
       <app-banner-slider
         slides-data='[
-          {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/metodos_pago_web.webp","mediumImage": "../src/assets/img/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../src/assets/img/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
-          {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/banner/Doters_web.webp", "mediumImage": "../src/assets/img/banner/tablet/doters_tablet.webp","smallImage": "../src/assets/img/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
-          {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/banner/verano_web.webp", "mediumImage": "../src/assets/img/banner/tablet/verano_tablet.webp","smallImage": "../src/assets/img/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
+          {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
+          {"id": "slide2", "title": "Banner 2", "image": "../../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
+          {"id": "slide3", "title": "Banner 3", "image": "../../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
         ]'
       >
       </app-banner-slider>
@@ -110,6 +108,9 @@ class PageAvisoDePrivacidadEnglish extends HTMLElement {
           <p class="__terms-purchase-text">If you believe that your right to personal data protection has been violated or affected by any conduct of our staff, actions, or responses from the company, or if there is any breach of the provisions set forth in the Federal Law on Protection of Personal Data Held by Private Parties, you may file the corresponding complaint with the IFAI. For more information, please visit <a href="http://www.ifai.org.mx" target="_blank" rel="noopener noreferrer" class="__link-text">www.ifai.org.mx</a>.</p>
         </article>
       </section>
+		<app-cookies-policy-english></app-cookies-policy-english>
+		<app-button-whats></app-button-whats>
+		<app-button-eva-trip-english></app-button-eva-trip-english>
     `;
 	}
 }

@@ -1,7 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/english/app-modal-doters.js";
-import "../../components/english/app-modal-travelpass.js";
 import "../../components/english/app-grid-text.js";
 import "../../components/english/app-destinations-grid-english.js";
 import "../../components/english/app-banner-promotional.js";
@@ -28,17 +26,17 @@ class PageHomeEnglish extends HTMLElement {
         <!-- Grid here -->
         <app-destinations-grid-english
           destinations='[
-            {"id": "destination1", "title": "Morelia", "content": "Cathedrals, flavors, and magic in every corner.", "image": "../../src/assets/img/english/home/grid-english/bg-morelia-english.webp", "link": "../english/destinations/boletos-de-autobus-a-aguascalientes.html"},
+            {"id": "destination1", "title": "Morelia", "content": "Cathedrals, flavors, and magic in every corner.", "image": "../../src/assets/img/english/home/grid-english/bg-morelia-english.webp", "link": "../english/destinations/boletos-de-autobus-a-morelia.html"},
 
-            {"id": "destination2", "title": "Colima", "content": "Where the volcano and the sea join hands.", "image": "../../src/assets/img/english/home/grid-english/bg-colima-english.webp", "link": "../english/destinations/boletos-de-autobus-a-culiacan.html"},
+            {"id": "destination2", "title": "Colima", "content": "Where the volcano and the sea join hands.", "image": "../../src/assets/img/english/home/grid-english/bg-colima-english.webp", "link": "../english/destinations/boletos-de-autobus-a-colima.html"},
 
             {"id": "destination3", "title": "Guadalajara", "content": "Culture, tequila, and rhythm on every corner.", "image": "../../src/assets/img/english/home/grid-english/bg-guadalajara-english.webp", "link": "../english/destinations/boletos-de-autobus-a-guadalajara.html"},
 
-            {"id": "destination4", "title": "Ciudad de México", "content": "The beating heart of Mexico.", "image": "../../src/assets/img/english/home/grid-english/bg-cdmx-english.webp", "link": "../english/destinations/boletos-de-autobus-a-leon.html"},
+            {"id": "destination4", "title": "Ciudad de México", "content": "The beating heart of Mexico.", "image": "../../src/assets/img/english/home/grid-english/bg-cdmx-english.webp", "link": "../english/destinations/boletos-de-autobus-a-ciudad-de-mexico.html"},
 
-            {"id": "destination5", "title": "Zitácuaro", "content": "The magical gateway to the monarch butterflies.", "image": "../../src/assets/img/english/home/grid-english/bg-zitacuaro-english.webp", "link": "../english/destinations/boletos-de-autobus-a-guanajuato.html"},
+            {"id": "destination5", "title": "Zitácuaro", "content": "The magical gateway to the monarch butterflies.", "image": "../../src/assets/img/english/home/grid-english/bg-zitacuaro-english.webp", "link": "../english/destinations/boletos-de-autobus-a-zitacuaro.html"},
 
-            {"id": "destination6", "title": "Uruapan", "content": "Waterfalls, culture, and magic in every corner.", "image": "../../src/assets/img/english/home/grid-english/bg-uruapan-english.webp", "link": "../english/destinations/boletos-de-autobus-a-queretaro.html"}
+            {"id": "destination6", "title": "Uruapan", "content": "Waterfalls, culture, and magic in every corner.", "image": "../../src/assets/img/english/home/grid-english/bg-uruapan-english.webp", "link": "../english/destinations/boletos-de-autobus-a-uruapan.html"}
             ]'
         ></app-destinations-grid-english>
       </section>
@@ -74,6 +72,9 @@ class PageHomeEnglish extends HTMLElement {
         <app-grid-text src="../../src/data/english/home/grid-text-data.json"></app-grid-text>
       </section>
 
+		<app-cookies-policy-english></app-cookies-policy-english>
+		<app-button-whats></app-button-whats>
+		<app-button-eva-trip-english></app-button-eva-trip-english>
     `;
 	}
 }

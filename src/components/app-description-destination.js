@@ -26,7 +26,20 @@ class AppDescriptionDestination extends HTMLElement {
 		return images
 			.map(
 				(image) => `
-          <div id="${image.id}" class="__item-image"><img class="__img-destination" src="${image.src}" alt="${image.alt}" title="${image.alt}" loading="lazy" width="427" height="285"></div>
+          <div id="${image.id}" class="__item-image">
+            <img 
+              class="__img-destination" 
+              src="${image.src}" 
+              alt="${image.alt}" 
+              title="${image.alt}" 
+              loading="lazy" 
+              width="427" 
+              height="285"
+            >
+            <div class="__image-footer">
+              <img src="../../src/assets/img/global/logos/autovias-logo-blanco.webp" alt="Brand Icon" class="__brand-icon">
+            </div>
+          </div>
         `
 			)
 			.join("");

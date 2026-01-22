@@ -1,0 +1,167 @@
+@use '../core' as*;
+@use '../_01-settings/variables' as *;
+@use '../_02-tools/mixin' as *;
+
+// Import components
+@use '../_06-components/header';
+@use '../_06-components/banner-slider';
+@use '../_06-components/payments-logos';
+@use '../_06-components/modal-doters';
+@use '../_06-components/modalDoters';
+@use '../_06-components/cotiza';
+@use '../_06-components/button-eva-trip';
+@use '../_06-components/button-whats';
+@use '../_06-components/section-title';
+@use '../_06-components/cards-text-list';
+@use '../_06-components/footer';
+
+@use '../_06-components/cookies-policy';
+
+
+.section__boletos-de-autobus {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 12.5rem);
+  padding: 0 $spacing-xxl $spacing-xxl $spacing-xxl; // 4.375rem
+  box-sizing: border-box;
+
+  @include media ("md") {
+    padding: 0 $padding-medium $padding-medium $padding-medium;
+  }
+
+  .__boletos-de-autobus__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    width: 100%;
+    height: 56px;
+
+    .__text__title {
+      color: $white;
+    }
+  }
+
+  .__boletos-de-autobus__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+
+    .__text__paragraph {
+      text-align: center;
+      font-size: 20px;
+
+      .__text__bold {
+        color: $primary-color;
+      }
+    }
+
+    .__boletos-de-autobus__scrollbar {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      width: 100%;
+      height: 430px;
+      margin-top: 50px;
+      gap: 57px;
+      overflow-x: auto;
+    }
+  }
+}
+
+
+
+
+/* Asegura que el media sea contenedor del overlay */
+app-banner-slider-caption .slide-media {
+  position: relative;
+  width: 100%;
+}
+
+/* Caption overlay */
+app-banner-slider-caption .slide-caption {
+  position: absolute;
+  inset: 0;              /* top/right/bottom/left:0 */
+  display: flex;
+  align-items: center;   /* vertical */
+  pointer-events: none;  /* para que el click siga siendo del <a> */
+}
+
+app-banner-slider-caption .slide-caption__inner {
+  padding: 1.25rem;
+  margin: 0 2rem;
+  pointer-events: none;
+}
+
+/* alineaciones */
+app-banner-slider-caption .caption--left  { justify-content: flex-start; }
+app-banner-slider-caption .caption--center{ justify-content: center; text-align: center; }
+app-banner-slider-caption .caption--right { justify-content: flex-end; text-align: right; }
+
+/* tema */
+app-banner-slider-caption .caption-theme--dark .slide-caption__inner {
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,.35);
+}
+
+app-banner-slider-caption .caption-theme--light .slide-caption__inner {
+  color: #111;
+  text-shadow: none;
+}
+
+/* Tipos */
+app-banner-slider-caption .slide-caption__title {
+  margin: 0 0 .5rem 0;
+  font-size: clamp(1.1rem, 4vw, 4rem);
+  line-height: 1.1;
+}
+
+app-banner-slider-caption .slide-caption__text {
+  margin: 0 0 .75rem 0;
+  font-size: clamp(.9rem, 1.8vw, 2.05rem);
+  line-height: 1.35;
+}
+
+app-banner-slider-caption .slide-caption__cta {
+  display: inline-block;
+  padding: .6rem 1rem;
+  border-radius: .75rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-weight: 600;
+}
+
+
+/* 1) Contenedor relativo para poder poner overlay */
+app-banner-slider-caption .slide-media {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 2) Overlay oscuro encima de la imagen */
+app-banner-slider-caption .slide-media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* <-- Ajusta aquí la opacidad */
+  z-index: 1;
+}
+
+/* 3) Asegura que la imagen quede debajo del overlay */
+app-banner-slider-caption .slide-media picture,
+app-banner-slider-caption .slide-media img {
+  position: relative;
+  z-index: 0;
+}
+
+/* 4) Asegura que el caption quede arriba del overlay */
+app-banner-slider-caption .slide-caption {
+  z-index: 2;
+}

@@ -1,0 +1,34 @@
+[
+	{
+		"title": "Gazpacho Moreliano",
+		"description": "El gazpacho moreliano es una botana tradicional y refrescante hecha a base de frutas como jícama, mango, piña y naranja. Se acompaña con jugo de naranja, queso fresco rallado, chile en polvo y, en algunas versiones, cebolla. Es una combinación única de sabores dulces, ácidos y salados muy representativa de Morelia.",
+		"imageSrc": "../src/assets/img/destinos-img/morelia/platillos/gazpacho.webp",
+		"imageModal": "../src/assets/img/destinos-img/morelia/platillos/gazpacho-m.webp",
+		"altText": "Gazpacho moreliano",
+		"linkText": "Ver..."
+	},
+	{
+		"title": "Corundas",
+		"description": "Las corundas son un tipo de tamal tradicional de Michoacán, preparados con masa de maíz y envueltos en hojas de maíz en forma triangular. Se sirven comúnmente con crema, queso, salsa roja o verde, y a veces acompañadas de carne de cerdo, siendo un platillo muy representativo de Morelia.",
+		"imageSrc": "../src/assets/img/destinos-img/morelia/platillos/corundas.webp",
+		"imageModal": "../src/assets/img/destinos-img/morelia/platillos/corundas-m.webp",
+		"altText": "Corundas",
+		"linkText": "Ver..."
+	},
+	{
+		"title": "Sopa Tarasca",
+		"description": "La sopa tarasca es uno de los platillos más emblemáticos de Morelia. Se elabora con frijoles, jitomate y chile pasilla, y se sirve acompañada de tiras de tortilla frita, queso fresco, crema y aguacate. Su sabor intenso y textura reconfortante la convierten en un clásico de la cocina michoacana.",
+		"imageSrc": "../src/assets/img/destinos-img/morelia/platillos/sopa-tarasca.webp",
+		"imageModal": "../src/assets/img/destinos-img/morelia/platillos/sopa-tarasca-m.webp",
+		"altText": "Sopa tarasca",
+		"linkText": "Ver..."
+	},
+	{
+		"title": "Ate Moreliano",
+		"description": "El ate moreliano es un dulce tradicional elaborado con pulpa de frutas como guayaba, membrillo o durazno. Su textura firme y sabor dulce lo convierten en un recuerdo típico de Morelia, comúnmente acompañado con queso fresco para crear un contraste delicioso.",
+		"imageSrc": "../src/assets/img/destinos-img/morelia/platillos/ate.webp",
+		"imageModal": "../src/assets/img/destinos-img/morelia/platillos/ate-m.webp",
+		"altText": "Ate moreliano",
+		"linkText": "Ver..."
+	}
+]
