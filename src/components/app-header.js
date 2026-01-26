@@ -14,13 +14,7 @@ class AppHeader extends HTMLElement {
         <nav aria-label="Menu de navegacion" >
           <ul>
             <li><a href="../../../" aria-label="Ir a inicio" tabindex="0">Inicio</a></li>
-            <li class="submenu">
-              <a href="#" role="button" aria-label="Facturar su viaje" tabindex="0" aria-haspopup="true" aria-expanded="false">Facture su viaje <span class="icon-arrow-down"></span></a>
-              <ul>
-                <li><a href="https://venta.autovias.com.mx/request.aspx?PRGNAME=Facturacion" tabindex="0">Facture aqui</a></li>
-                <li><a href="../servicios/que-datos-necesito.html" tabindex="0">¿Qué datos necesito?</a></li>
-              </ul>
-            </li>
+            <li><a href="../../servicios/facturacion.html" aria-label="Facturar su viaje" tabindex="0">Facturación</a></li> 
             <li><a href="https://viajes.autovias.com.mx/exchange/openTicket" aria-label="Imprimir pase de abordar" tabindex="0">Confirmar boleto abierto</a></li> 
             <li><a href="https://viajes.autovias.com.mx/download-tickets" aria-label="Imprimir pase de abordar" tabindex="0">Imprimir pase de abordar</a></li> 
             <li><a href="https://viajes.autovias.com.mx/exchange/itinerary" aria-label="Modificar itinerario" tabindex="0">Modificar itinerario</a></li> 
