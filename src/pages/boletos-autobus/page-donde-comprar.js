@@ -14,14 +14,8 @@ class PageDondeComprar extends HTMLElement {
 			<app-cotiza></app-cotiza>
 			<app-modal-travelpass></app-modal-travelpass>
 			<app-modal-doters></app-modal-doters>
-			<app-banner-slider
-					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"}					]'
-			>
+			<div class="__panthom_space"></div>
 
-			</app-banner-slider>
-
-			<app-payments></app-payments>
 
 			<app-section-title section-title="¿Dónde puedo comprar Boletos de autobús en Autovías?"></app-section-title>
 			
