@@ -69,6 +69,10 @@ class AppFooter extends HTMLElement {
 								text: "Agencias",
 								href: "https://venta.autovias.com.mx/request.aspx?PRGNAME=AccesoEx&ARGUMENTS=-AAG,-AH,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-AES",
 							},
+							{
+								text: "Facturación",
+								href: "../../servicios/facturacion.html",
+							},
 						],
 					},
 					{
