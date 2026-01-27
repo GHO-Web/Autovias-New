@@ -1,7 +1,7 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/app-modal-doters.js";
-import "../../components/app-banner-image.js";
+import "../../components/english/app-banner-image.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-right-description.js";
@@ -40,18 +40,18 @@ class DescuentosNavideños extends HTMLElement {
       
       <app-destinations-grid
           titlesText='[
-          {"id": "title1", "title": "¿Aún no sabes a dónde viajar?", "text": "Conoce nuestros destinos Costa Line y elige tu lugar favorito"}
+          {"id": "title1", "title": "¿Aún no sabes a dónde viajar?", "text": "Conoce nuestros destinos Autovías La Línea y elige tu lugar favorito"}
           ]'
           destinations='[
-          {"id": "destination1", "title": "Acapulco", "content": "Disfruta de sus playas doradas, noches llenas de vida y la magia de la Quebrada.", "image": "../src/assets/img/destinos-img/acapulco.webp", "link": "../guia-viaje/viajar-a-acapulco.html"},
+          {"id": "destination1", "title": "Ciudad de México", "content": "Sumérgete en la esencia vibrante y cultural de la Ciudad de México.", "image": "../src/assets/img/destinos-img/cdmx/lugares/palacio-de-bellas-artes-2.webp", "link": "../guia-viaje/viajar-a-ciudad-de-mexico.html"},
   
-          {"id": "destination2", "title": "Chilpancingo", "content": "Visita esta Joya colonial llena de historia, sabores y magia.", "image": "../src/assets/img/destinos-img/morelia.webp", "link": "../guia-viaje/viajar-a-chilpancingo.html"},
+          {"id": "destination2", "title": "Colima", "content": "Explora la serenidad y riqueza natural de Colima.", "image": "../src/assets/img/destinos-img/colima/lugares/comala.webp", "link": "../guia-viaje/viajar-a-colima.html"},
   
-          {"id": "destination3", "title": "Taxco", "content": "Sumergete en este laberinto de plata y encanto colonial.", "image": "../src/assets/img/destinos-img/taxco.webp", "link": "../guia-viaje/viajar-a-taxco.html"},
+          {"id": "destination3", "title": "Guadalajara", "content": "Déjate envolver por la energía y el sabor vibrante de Guadalajara.", "image": "../src/assets/img/destinos-img/guadalajara/lugares/centrohistorico1.webp", "link": "../guia-viaje/viajar-a-guadalajara.html"},
           
-          {"id": "destination5", "title": "Cuernavaca", "content": "Cuernavaca: La ciudad de la eterna primavera, donde el sol abraza y la historia inspira.", "image": "../src/assets/img/destinos-img/cuernavaca.webp", "link": "../guia-viaje/viajar-a-cuernavaca.html"},
+          {"id": "destination5", "title": "Morelia", "content": "Descubre el encanto colonial y la riqueza histórica de Morelia.", "image": "../src/assets/img/destinos-img/morelia/lugares/aqueducto-morelia.webp", "link": "../guia-viaje/viajar-a-morelia.html"},
   
-          {"id": "destination4", "title": "Ixtapa Zihuatanejo", "content": "Déjate cautivar por la magia colonial de Guanajuato.", "image": "../src/assets/img/destinos-img/ixtapa.webp", "link": "../guia-viaje/viajar-a-ixtapa-zihuatanejo.html"}
+          {"id": "destination4", "title": "Zitácuaro", "content": "Descubre la esencia natural y cultural de Zitácuaro.", "image": "../src/assets/img/destinos-img/zitacuaro/lugares/centro-historico.webp", "link": "../guia-viaje/viajar-a-zitacuaro.html"}
           ]'
       >
       </app-destinations-grid>
