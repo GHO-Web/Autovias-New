@@ -14,6 +14,8 @@ class AutobusACiudadDeMexico extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
 			<app-cotiza></app-cotiza>
+			<app-modal-travelpass></app-modal-travelpass>
+			<app-modal-doters></app-modal-doters>
 			<app-banner-slider
 					slides-data='[
 					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/destinos-img/cdmx/banner/cdmx-banner-web.webp","mediumImage": "../src/assets/img/destinos-img/cdmx/banner/cdmx-banner-tablet.webp", "smallImage": "../src/assets/img/destinos-img/cdmx/banner/cdmx-banner-mobile.webp", "link": "#index.html/banner1"}]'
