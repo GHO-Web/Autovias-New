@@ -3,22 +3,28 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ofertas en 1 Click | Autovías La Línea</title>
+
+		<!-- Title -->
+		<title>Terminos y Condiciones | Costa Line AERS</title>
+
+		<!-- Meta Description -->
 		<meta name="description" content="" />
+
+		<!-- Meta Keywords -->
 		<meta name="keywords" content="" />
 
 		<meta name="language" content="Español" />
 		<link
 			rel="canonical"
-			href="https://autovias.com.mx/promociones/ofertas-en-1-click.html"
+			href="https://costaline.com.mx/nosotros/terminos-condiciones.html"
 		/>
 		<link
 			rel="alternate"
-			href="https://autovias.com.mx/english/promociones/ofertas-en-1-click.html"
-			hreflang="es-MX"
+			href="https://costaline.com.mx/english/about/terms-conditions.html"
+			hreflang="en-US"
 		/>
 
-		<meta name="author" content="Autovías La Línea" />
+		<meta name="author" content="Costa Line AERS" />
 		<meta name="robots" content="index, follow" />
 		<meta name="googlebot" content="index, follow" />
 		<meta name="sitemap" content="/sitemap.xml" />
@@ -35,13 +41,13 @@
 						"@type": "ListItem",
 						"position": 1,
 						"name": "Inicio",
-						"item": "https://autovias.com.mx/"
+						"item": "https://costaline.com.mx/"
 					},
 					{
 						"@type": "ListItem",
 						"position": 2,
-						"name": "Renta de autobuses",
-						"item": "https://autovias.com.mx/promociones/ofertas-en-1-click.html"
+						"name": "Terminos y Condiciones",
+						"item": "https://costaline.com.mx/nosotros/terminos-condiciones.html"
 					}
 				]
 			}
@@ -50,10 +56,10 @@
 			{
 				"@context": "https://schema.org",
 				"@type": "WebSite",
-				"url": "https://autovias.com.mx/",
+				"url": "https://costaline.com.mx/",
 				"potentialAction": {
 					"@type": "SearchAction",
-					"target": "https://autovias.com.mx/promociones/{search_term_string}.html",
+					"target": "https://costaline.com.mx/destinos/autobus-a-{search_term_string}.html",
 					"query-input": "required name=search_term_string"
 				}
 			}
@@ -127,51 +133,62 @@
 		<!-- End Favicon -->
 
 		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#06255b" />
 		<meta name="msapplication-TileColor" content="#06255b" />
 		<meta name="msapplication-config" content="/browserconfig.xml" />
 
 		<!-- Open Graph -->
 
-		<meta property="og:title" content="" />
+		<meta
+			property="og:title"
+			content="Terminos y Condiciones | Costa Line AERS"
+		/>
 		<meta property="og:description" content="" />
 		<meta
 			property="og:image"
-			content="https://www.autovias.com.mx/gho-img/carrusel/Bw_Rio_Tiber_Mor_Uruapan_Autovias.webp"
+			content="https://www.costaline.com.mx/gho-img/carrusel/Bw_Rio_Tiber_Mor_Uruapan_costaline.webp"
 		/>
 		<!-- End Open Graph -->
 
-		<script src="../src/js/jquery.min.js?v=1.2.0"></script>
-		<script type="module" src="../app.js?v=1.0.0"></script>
+		<!-- Scripts -->
+
+		<script src="../../src/js/jquery.min.js?v=1.0.0"></script>
+		<script type="module" src="../../app.js?v=1.0.0"></script>
+
 		<!-- Stylesheets -->
-
+		
 		<!-- CSS All Components -->
-
 		<link
 			rel="stylesheet"
-			href="../src/styles/css/css-pages/page-ofertas-en-1-click.min.css?v=1.0.7"
-			type="text/css"
+			href="../../src/styles/css/css-pages/page-dimanicas.min.css?v=1.0.7"
 		/>
 
 		<!-- CSS widget de reservamos -->
 		<link
 			rel="stylesheet"
-			href="https://widgets.reservamos.mx/search/5.23.6/search.css?v=5.18.0"
+			href="https://widgets.reservamos.mx/search/5.18.0/search.css?v=5.18.0"
 		/>
 	</head>
 	<body>
 		<app-header
 			logo='{
-        "src": "../../src/assets/img/global/logos/logo.svg", 
+        "src": "./../src/assets/img/global/logos/logo.svg", 
         "alt": "Logo de Autovías La Línea",
         "href": "https://www.autovias.com.mx/"
       }'
 		>
 		</app-header>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
 		<main>
-			<page-ofertas-en-1-click></page-ofertas-en-1-click>
+			<page-deinamica-descuento-cine></page-deinamica-descuento-cine>
 		</main>
 		<app-footer></app-footer>
+		<app-cookies-policy></app-cookies-policy>
+		<app-button-whats></app-button-whats>
+		<app-button-eva-trip></app-button-eva-trip>
+		<script src="../../src/js/doters-cookies.js?v=1.2.1"></script>
 		<!-- JS widget de reservamos -->
-		<script src="https://widgets.reservamos.mx/search/5.23.6/search.js?v=5.18.0"></script>
+		<script src="https://widgets.reservamos.mx/search/5.18.0/search.js?v=5.18.0"></script>
 	</body>
 </html>

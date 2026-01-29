@@ -3,19 +3,20 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ofertas en 1 Click | Autovías La Línea</title>
+
+		<!-- Title -->
+		<title>Autovías La Línea: Descuentos Únicos de temporada navideña</title>
+
+		<!-- Meta Description -->
 		<meta name="description" content="" />
+
+		<!-- Meta Keywords -->
 		<meta name="keywords" content="" />
 
 		<meta name="language" content="Español" />
 		<link
 			rel="canonical"
-			href="https://autovias.com.mx/promociones/ofertas-en-1-click.html"
-		/>
-		<link
-			rel="alternate"
-			href="https://autovias.com.mx/english/promociones/ofertas-en-1-click.html"
-			hreflang="es-MX"
+			href="https://autovias.com.mx/promociones/temporada-navidena-estudiantes-profesores-2025.html"
 		/>
 
 		<meta name="author" content="Autovías La Línea" />
@@ -40,8 +41,8 @@
 					{
 						"@type": "ListItem",
 						"position": 2,
-						"name": "Renta de autobuses",
-						"item": "https://autovias.com.mx/promociones/ofertas-en-1-click.html"
+						"name": "Buen Fin Terminos y Condiciones",
+						"item": "https://autovias.com.mx/promociones/temporada-navidena-estudiantes-profesores-2025.html"
 					}
 				]
 			}
@@ -127,12 +128,16 @@
 		<!-- End Favicon -->
 
 		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#06255b" />
 		<meta name="msapplication-TileColor" content="#06255b" />
 		<meta name="msapplication-config" content="/browserconfig.xml" />
 
 		<!-- Open Graph -->
 
-		<meta property="og:title" content="" />
+		<meta
+			property="og:title"
+			content="Buen Fin Terminos y Condiciones | Autovías La Línea"
+		/>
 		<meta property="og:description" content="" />
 		<meta
 			property="og:image"
@@ -140,22 +145,23 @@
 		/>
 		<!-- End Open Graph -->
 
-		<script src="../src/js/jquery.min.js?v=1.2.0"></script>
+		<!-- Scripts -->
+
+		<script src="../src/js/jquery.min.js?v=1.0.0"></script>
 		<script type="module" src="../app.js?v=1.0.0"></script>
+
 		<!-- Stylesheets -->
 
 		<!-- CSS All Components -->
-
 		<link
 			rel="stylesheet"
-			href="../src/styles/css/css-pages/page-ofertas-en-1-click.min.css?v=1.0.7"
-			type="text/css"
+			href="../src/styles/css/css-pages/page-desc-tem-nav-estd-prof.min.css?v=1.0.7"
 		/>
 
 		<!-- CSS widget de reservamos -->
 		<link
 			rel="stylesheet"
-			href="https://widgets.reservamos.mx/search/5.23.6/search.css?v=5.18.0"
+			href="https://widgets.reservamos.mx/search/5.18.0/search.css?v=5.18.0"
 		/>
 	</head>
 	<body>
@@ -167,11 +173,17 @@
       }'
 		>
 		</app-header>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
 		<main>
-			<page-ofertas-en-1-click></page-ofertas-en-1-click>
+			<page-descuentos-navideños></page-descuentos-navideños>
 		</main>
 		<app-footer></app-footer>
+		<app-cookies-policy></app-cookies-policy>
+		<app-button-whats></app-button-whats>
+		<app-button-eva-trip></app-button-eva-trip>
+		<script src="../src/js/doters-cookies.js?v=1.2.1"></script>
 		<!-- JS widget de reservamos -->
-		<script src="https://widgets.reservamos.mx/search/5.23.6/search.js?v=5.18.0"></script>
+		<script src="https://widgets.reservamos.mx/search/5.18.0/search.js?v=5.18.0"></script>
 	</body>
 </html>
