@@ -8,8 +8,8 @@ import "../../components/app-slider-opacity.js";
 import "../../components/app-faqs.js";
 
 class DinamicaDescuentoCine extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <app-cotiza></app-cotiza>
 
       <app-modal-doters></app-modal-doters>
@@ -24,7 +24,7 @@ class DinamicaDescuentoCine extends HTMLElement {
       ></app-banner-image>
       
       <section class="__sections">
-        <app-section-title section-title="Términos y Condiciones - Dinámica “¡GANA BOLETOS PARA EL CINE!”"></app-section-title>
+        <app-section-title section-title="Términos y Condiciones de la dinámica &quot;Tu Viaje de Película&quot;"></app-section-title>
       </section>
 
       <section class="__sections">
@@ -32,7 +32,7 @@ class DinamicaDescuentoCine extends HTMLElement {
           <h3 class="__subtitle-section">1. Organizador:</h3>
           
           <p>
-            La presente dinámica es organizada por <b>Costa Line</b> (en adelante “el Organizador”).
+            La presente dinámica es organizada por <b>Autovías</b> (en adelante “el Organizador”).
           </p>
         </article>
       </section>
@@ -69,7 +69,7 @@ class DinamicaDescuentoCine extends HTMLElement {
           <ol class="__terms-purchase-list">
             <li class="__terms-purchase-item">
               <p class="__terms-purchase-text">
-                Compartir en los comentarios de la publicación oficial tu <b>foto favorita viajando con Costa Line</b>, usando el hashtag <b>#CostaLine</b> y donde aparezcas tú.
+                Compartir en los comentarios de la publicación oficial tu <b>foto favorita viajando con Autovías o La Línea</b>, usando el hashtag <b>#Autovías</b> y donde aparezcas tú.
               </p>
             </li>
 
@@ -112,7 +112,7 @@ class DinamicaDescuentoCine extends HTMLElement {
           <ul class="__terms-purchase-list">
             <li class="__terms-purchase-item">
               <p class="__terms-purchase-text">
-                Los ganadores serán contactados por mensaje directo desde la cuenta oficial de <b>Costa Line</b>.
+                Los ganadores serán contactados por mensaje directo desde la cuenta oficial de <b>Autovías</b>.
               </p>
             </li>
 
@@ -206,6 +206,6 @@ class DinamicaDescuentoCine extends HTMLElement {
         </article>
       </section>
     `;
-	}
+  }
 }
 customElements.define("page-deinamica-descuento-cine", DinamicaDescuentoCine);
