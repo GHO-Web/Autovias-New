@@ -1,3 +1,9 @@
+
+/*--------------------------- IMPORT SCRIPTS --------------------------*/
+
+import "../js/doters-cookies.js";
+import "../js/travelpass-cookies.js";
+
 class AppHeaderEnglish extends HTMLElement {
 	connectedCallback() {
 		const logoData = JSON.parse(this.getAttribute("logo"));

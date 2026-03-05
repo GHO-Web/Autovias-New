@@ -1,3 +1,8 @@
+
+import "./app-cookies-policy.js?v=1.0.0";
+import "../app-button-whats.js?v=1.0.0";
+import "./app-button-eva-trip.js?v=1.0.0";
+
 class AppFooterEnglish extends HTMLElement {
 	constructor() {
 		super();

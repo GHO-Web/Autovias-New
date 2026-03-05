@@ -40,7 +40,6 @@ import "./boletos-autobus/page-maravatio.js?v=1.0.0";
 
 // GUIA DE VIAJE
 
-
 import "./guia-viaje/page-viajar-a-morelia.js?v=1.0.0";
 import "./guia-viaje/page-viajar-a-ciudad-de-mexico.js?v=1.0.0";
 import "./guia-viaje/page-viajar-a-colima.js?v=1.0.0";
@@ -53,7 +52,6 @@ import "./guia-viaje/page-viajar-a-guadalajara.js?v=1.0.0";
 import "./guia-viaje/page-viajar-a-zitacuaro.js?v=1.0.0";
 import "./guia-viaje/page-viajar-a-maravatio.js?v=1.0.0";
 
-
 // SERVICIOS
 import "./servicios/page-pago-oxxo.js?v=1.0.0";
 import "./servicios/page-renta-de-autobuses.js?v=1.0.0";
@@ -64,8 +62,8 @@ import "./servicios/page-facturacion.js?v=1.2.2";
 //  PROMOCIONES
 
 import "./promociones/page-promociones.js?v=1.0.0";
-import "./promociones/page-descuentos-navidenos.js?v=1.0.2"
-import "./promociones/page-descuentos-semana-santa.js?v=1.0.2"
+import "./promociones/page-descuentos-navidenos.js?v=1.0.2";
+import "./promociones/page-descuentos-semana-santa.js?v=1.0.2";
 
 import "./promociones/dinamica-gana-boletos-para-el-cine.js?v=1.0.0";
 // LEGAL
@@ -84,7 +82,7 @@ import "./legal/terminos-condiciones/page-viajero-protegido.js?v=1.0.0";
 // ATC
 import "./legal/page-atencion-a-clientes.js?v=1.0.0";
 
-// OTHERS 
+// OTHERS
 
 import "./page-salidas-charters.js?v=1.0.0";
 import "./page-site-map.js?v=1.3.3";
@@ -93,11 +91,7 @@ import "./page-festival-de-viajes.js?v=1.0.0";
 import "./page-quienes-somos.js?v=1.0.0";
 import "./page-preguntas-frecuentes.js?v=1.0.0";
 
-
-
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
 
 // Imports pages for english version
 
@@ -149,7 +143,6 @@ import "./english/legal/terminos-condiciones/page-viajero-protegido.js?v=1.0.0";
 
 import "./english/page-site-map.js?v=1.3.3";
 
-
 /*------------------------------- PACK MULTIENLACE---------------------------------*/
 
 import "./packmultienlace/page-pack-multienlace.js?v=1.3.3";
@@ -166,8 +159,6 @@ import "./packmultienlace/page-terminales-pack.js?v=1.3.3";
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../components/app-header.js?v=1.0.1";
-import "../components/app-modal-doters.js";
-import "../components/app-modal-travelpass.js";
 import "../components/app-cookies-policy.js?v=1.0.0";
 import "../components/app-button-whats.js?v=1.0.0";
 import "../components/app-button-eva-trip.js?v=1.0.0";
