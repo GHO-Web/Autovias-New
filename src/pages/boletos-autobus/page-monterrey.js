@@ -22,9 +22,7 @@ import "../../components/app-modal-image.js";
 class PageMonterrey extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-			<app-modal-travelpass></app-modal-travelpass>
-			<app-modal-doters></app-modal-doters>
-      <app-cotiza></app-cotiza>
+			<app-cotiza></app-cotiza>
 			<app-banner-slider
 					slides-data='[
 					{"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/banner-monterrey.webp","mediumImage": "../../src/assets/img/banner/tablet/banner-monterrey.webp", "smallImage": "../../src/assets/img/banner/movil/banner-monterrey.webp", "link": "#index.html/banner1"}]'

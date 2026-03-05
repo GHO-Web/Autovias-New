@@ -23,9 +23,7 @@ import "../../components/app-modal-image.js";
 class PageCiudadDeMexico extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-			<app-modal-travelpass></app-modal-travelpass>
-			<app-modal-doters></app-modal-doters>
-      <app-cotiza></app-cotiza>
+			<app-cotiza></app-cotiza>
       <app-banner-slider-caption
           slides-data='[
     {
