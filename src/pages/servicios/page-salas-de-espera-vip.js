@@ -1,9 +1,6 @@
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../components/app-header.js?v=1.0.1";
-import "../components/app-cookies-policy.js?v=1.0.0";
-import "../components/app-button-whats.js?v=1.0.0";
-import "../components/app-button-eva-trip.js?v=1.0.0";
 import "../components/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
