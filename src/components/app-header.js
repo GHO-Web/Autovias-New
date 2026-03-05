@@ -4,8 +4,6 @@ import "../components/app-modal-doters-profile.js";
 
 /*--------------------------- IMPORT SCRIPTS --------------------------*/
 
-import "../js/doters-cookies.js";
-import "../js/travelpass-cookies.js";
 
 class AppHeader extends HTMLElement {
 	connectedCallback() {
@@ -118,6 +116,10 @@ class AppHeader extends HTMLElement {
             </ul>
         </div>
       </header>
+
+			<app-modal-doters></app-modal-doters>
+			<app-modal-travelpass></app-modal-travelpass>
+			<app-modal-doters-profile></app-modal-doters-profile>
     `;
 
 		this.openDesktopSubmenuInstance = null;
