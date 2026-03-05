@@ -21,7 +21,7 @@ class DescuentosNavideños extends HTMLElement {
       </div>
 
       <section class="__sections">
-        <h2 class="__first-title">Que esta temporada sea un viaje lleno de alegría, felicidad, conexión y momentos inolvidables. Costa Line te acompaña con descuentos especiales para que disfrutes cada instante junto a tus seres queridos.</h2>
+        <h2 class="__first-title">Que esta temporada sea un viaje lleno de alegría, felicidad, conexión y momentos inolvidables. Autovías te acompaña con descuentos especiales para que disfrutes cada instante junto a tus seres queridos.</h2>
       </section>
 
       <app-banner-image
@@ -34,8 +34,8 @@ class DescuentosNavideños extends HTMLElement {
           {
             "imageSrc": "../src/assets/img/promociones/desc-temp/navidad/playa-con-arbol.webp",
             "imageAlt": "Asientos reclinables",
-            "title": "¡Los descuentos llegaron a Costa Line!",
-            "description": "En esta temporada, Costa Line tiene descuentos increíbles para que planees tu viaje. Los estudiantes obtienen un 50% de descuento, mientras que los profesores disfrutan de un 25% de descuento. Compra a partir del 10 de diciembre para viajar del 18 de  diciembre al 12 de enero de 2026. No olvides que estos descuentos están sujetos a disponibilidad por autobús (6 de estudiante y 2 de profesor) no acumulables con otras promociones o descuentos."
+            "title": "¡Los descuentos llegaron a Autovías!",
+            "description": "En esta temporada, Autovías tiene descuentos increíbles para que planees tu viaje. Los estudiantes obtienen un 50% de descuento, mientras que los profesores disfrutan de un 25% de descuento. Compra a partir del 10 de diciembre para viajar del 18 de  diciembre al 12 de enero de 2026. No olvides que estos descuentos están sujetos a disponibilidad por autobús (6 de estudiante y 2 de profesor) no acumulables con otras promociones o descuentos."
           }
         ]'></app-card-right-description>
       </section>
@@ -60,10 +60,10 @@ class DescuentosNavideños extends HTMLElement {
 
       <section class="__sections">
         <article class="__bg-white">
-          <h3 class="__subtitle-section">Viaja con Costa Line</h3>
+          <h3 class="__subtitle-section">Viaja con Autovías</h3>
           
           <p>
-            En Costa Line, valoramos el esfuerzo y dedicación de los estudiantes y profesores, por eso, en estas fechas queremos hacer tu viaje aún más especial con descuentos exclusivos:
+            En Autovías, valoramos el esfuerzo y dedicación de los estudiantes y profesores, por eso, en estas fechas queremos hacer tu viaje aún más especial con descuentos exclusivos:
           </p>
 
           <ul class="__terms-purchase-list">
@@ -109,7 +109,7 @@ class DescuentosNavideños extends HTMLElement {
         ></app-faqs>
 
         <p>
-          ¡Prepárate para vivir momentos inolvidables con Costa Line! Compra tu boleto de autobús y déjanos llevarte a explorar los destinos más increíbles de México. ¡Te esperamos a bordo!
+          ¡Prepárate para vivir momentos inolvidables con Autovías! Compra tu boleto de autobús y déjanos llevarte a explorar los destinos más increíbles de México. ¡Te esperamos a bordo!
         </p>
       </section>
 

@@ -78,7 +78,7 @@ class PageDoters extends HTMLElement {
               <h2 class="__section__taquilla-exclusiva__title">Acumula Puntos Doters en cada uno de tus viajes</h2>
                 <p class="__paragraph__xl">
                      Disfruta de muchos beneficios únicos en</br>
-                   Costa Line.
+                   Autovías.
                 </p>
             </section>
 

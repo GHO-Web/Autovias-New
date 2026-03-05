@@ -81,7 +81,7 @@ class PageDotersEnglish extends HTMLElement {
               <h2 class="__section__taquilla-exclusiva__title">Collect Doters Points on every trip</h2>
                 <p class="__paragraph__xl">
                      Enjoy many exclusive benefits in</br>
-                   Costa Line.
+                   Autovías.
                 </p>
             </section>
 
