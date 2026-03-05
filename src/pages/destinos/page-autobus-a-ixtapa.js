@@ -1,3 +1,13 @@
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../components/app-header.js?v=1.0.1";
+import "../components/app-modal-doters.js";
+import "../components/app-modal-travelpass.js";
+import "../components/app-cookies-policy.js?v=1.0.0";
+import "../components/app-button-whats.js?v=1.0.0";
+import "../components/app-button-eva-trip.js?v=1.0.0";
+import "../components/app-footer.js?v=1.0.0";
+
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
@@ -11,8 +21,8 @@ import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
 class AutobusAIxtapaZihuatanejo extends HTMLElement {
-  async connectedCallback() {
-    this.innerHTML = `
+	async connectedCallback() {
+		this.innerHTML = `
 			<app-cotiza></app-cotiza>
 
 			<app-banner-slider
@@ -95,138 +105,138 @@ class AutobusAIxtapaZihuatanejo extends HTMLElement {
 			<app-button-eva-trip></app-button-eva-trip>
 		`;
 
-    await this.loadAndRenderGridItems();
-    await this.loadAndRenderFoodCards();
-    await this.loadAndRenderDropdowns();
-    await this._configureDestinationSlider();
-  }
+		await this.loadAndRenderGridItems();
+		await this.loadAndRenderFoodCards();
+		await this.loadAndRenderDropdowns();
+		await this._configureDestinationSlider();
+	}
 
-  /* ===== LUGARES ===== */
-  async loadAndRenderGridItems() {
-    const gridContainer = this.querySelector(
-      "#monterrey-grid-section .grid-container"
-    );
+	/* ===== LUGARES ===== */
+	async loadAndRenderGridItems() {
+		const gridContainer = this.querySelector(
+			"#monterrey-grid-section .grid-container",
+		);
 
-    if (!gridContainer) return;
+		if (!gridContainer) return;
 
-    try {
-      const response = await fetch(
-        "../../src/data/destinos/ixtapa/lugares.json"
-      );
-      const items = await response.json();
+		try {
+			const response = await fetch(
+				"../../src/data/destinos/ixtapa/lugares.json",
+			);
+			const items = await response.json();
 
-      items.forEach((item) => {
-        const cardDiv = document.createElement("div");
-        cardDiv.className = `card ${item.className || ""}`.trim();
+			items.forEach((item) => {
+				const cardDiv = document.createElement("div");
+				cardDiv.className = `card ${item.className || ""}`.trim();
 
-        cardDiv.style.backgroundImage = `
+				cardDiv.style.backgroundImage = `
 					linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.4)),
 					url('${item.backgroundImage}')
 				`;
 
-        cardDiv.innerHTML = `<span>${item.text}</span>`;
-        cardDiv.addEventListener("click", () => this.openMultiImageModal(item));
+				cardDiv.innerHTML = `<span>${item.text}</span>`;
+				cardDiv.addEventListener("click", () => this.openMultiImageModal(item));
 
-        gridContainer.appendChild(cardDiv);
-      });
-    } catch (error) {
-      gridContainer.innerHTML =
-        "<p>Error al cargar los lugares turísticos.</p>";
-    }
-  }
+				gridContainer.appendChild(cardDiv);
+			});
+		} catch (error) {
+			gridContainer.innerHTML =
+				"<p>Error al cargar los lugares turísticos.</p>";
+		}
+	}
 
-  /* ===== GASTRONOMÍA ===== */
-  async loadAndRenderFoodCards() {
-    const foodContainer = this.querySelector(".container-cards__food");
-    if (!foodContainer) return;
+	/* ===== GASTRONOMÍA ===== */
+	async loadAndRenderFoodCards() {
+		const foodContainer = this.querySelector(".container-cards__food");
+		if (!foodContainer) return;
 
-    foodContainer.innerHTML = "";
+		foodContainer.innerHTML = "";
 
-    try {
-      const response = await fetch(
-        "../../src/data/destinos/ixtapa/platillos.json"
-      );
-      const foodData = await response.json();
+		try {
+			const response = await fetch(
+				"../../src/data/destinos/ixtapa/platillos.json",
+			);
+			const foodData = await response.json();
 
-      foodData.forEach((foodItem) => {
-        const card = document.createElement("app-card-open-modal");
+			foodData.forEach((foodItem) => {
+				const card = document.createElement("app-card-open-modal");
 
-        card.setAttribute("card-title", foodItem.title);
-        card.setAttribute("card-modal-description", foodItem.description);
-        card.setAttribute("card-image", foodItem.imageSrc);
-        card.setAttribute(
-          "card-modal-image",
-          foodItem.imageModal || foodItem.imageSrc
-        );
-        card.setAttribute("card-alt", foodItem.altText);
-        card.setAttribute("card-link-text", foodItem.linkText || "Ver más...");
+				card.setAttribute("card-title", foodItem.title);
+				card.setAttribute("card-modal-description", foodItem.description);
+				card.setAttribute("card-image", foodItem.imageSrc);
+				card.setAttribute(
+					"card-modal-image",
+					foodItem.imageModal || foodItem.imageSrc,
+				);
+				card.setAttribute("card-alt", foodItem.altText);
+				card.setAttribute("card-link-text", foodItem.linkText || "Ver más...");
 
-        foodContainer.appendChild(card);
-      });
-    } catch (error) {
-      foodContainer.innerHTML =
-        "<p>Error al cargar la información de los platillos.</p>";
-    }
-  }
+				foodContainer.appendChild(card);
+			});
+		} catch (error) {
+			foodContainer.innerHTML =
+				"<p>Error al cargar la información de los platillos.</p>";
+		}
+	}
 
-  /* ===== FAQ ===== */
-  async loadAndRenderDropdowns() {
-    try {
-      const response = await fetch(
-        "../../src/data/destinos/ixtapa/dropdown-preguntas-frecuentes.json"
-      );
-      const data = await response.json();
+	/* ===== FAQ ===== */
+	async loadAndRenderDropdowns() {
+		try {
+			const response = await fetch(
+				"../../src/data/destinos/ixtapa/dropdown-preguntas-frecuentes.json",
+			);
+			const data = await response.json();
 
-      const container = this.querySelector("#dropdowns-container");
-      container.innerHTML = "";
+			const container = this.querySelector("#dropdowns-container");
+			container.innerHTML = "";
 
-      data.forEach((item) => {
-        const dropdown = document.createElement("app-dropdown");
-        dropdown.setAttribute("title-dropdown", item["title-dropdown"]);
-        dropdown.setAttribute("content-dropdown", item["content-dropdown"]);
-        container.appendChild(dropdown);
-      });
-    } catch (error) {
-      this.querySelector("#dropdowns-container").innerHTML =
-        "<p>Error al cargar las preguntas frecuentes.</p>";
-    }
-  }
+			data.forEach((item) => {
+				const dropdown = document.createElement("app-dropdown");
+				dropdown.setAttribute("title-dropdown", item["title-dropdown"]);
+				dropdown.setAttribute("content-dropdown", item["content-dropdown"]);
+				container.appendChild(dropdown);
+			});
+		} catch (error) {
+			this.querySelector("#dropdowns-container").innerHTML =
+				"<p>Error al cargar las preguntas frecuentes.</p>";
+		}
+	}
 
-  /* ===== SLIDER OTROS DESTINOS ===== */
-  async _configureDestinationSlider() {
-    const sliderElement = this.querySelector("app-slider-opacity");
-    if (!sliderElement) return;
+	/* ===== SLIDER OTROS DESTINOS ===== */
+	async _configureDestinationSlider() {
+		const sliderElement = this.querySelector("app-slider-opacity");
+		if (!sliderElement) return;
 
-    try {
-      const response = await fetch(
-        "../../src/data/destinos/card-opacity-destinations.json"
-      );
-      const destinationsData = await response.json();
+		try {
+			const response = await fetch(
+				"../../src/data/destinos/card-opacity-destinations.json",
+			);
+			const destinationsData = await response.json();
 
-      sliderElement.setAttribute(
-        "destinations-data",
-        JSON.stringify(destinationsData)
-      );
-    } catch (error) {
-      sliderElement.innerHTML = "<p>Error al cargar otros destinos.</p>";
-    }
-  }
+			sliderElement.setAttribute(
+				"destinations-data",
+				JSON.stringify(destinationsData),
+			);
+		} catch (error) {
+			sliderElement.innerHTML = "<p>Error al cargar otros destinos.</p>";
+		}
+	}
 
-  /* ===== MODAL ===== */
-  openMultiImageModal(itemData) {
-    const modal = this.querySelector("app-modal-multi-image");
-    if (!modal) return;
+	/* ===== MODAL ===== */
+	openMultiImageModal(itemData) {
+		const modal = this.querySelector("app-modal-multi-image");
+		if (!modal) return;
 
-    modal.setAttribute("modal-title", itemData.text);
-    modal.setAttribute("content-title", itemData.title || "");
-    modal.setAttribute("content-description", itemData.description || "");
-    modal.setAttribute("image-1", itemData.backgroundImage || "");
-    modal.setAttribute("image-2", itemData.image2 || "");
-    modal.setAttribute("image-3", itemData.image3 || "");
-    modal.setAttribute("image-4", itemData.image4 || "");
+		modal.setAttribute("modal-title", itemData.text);
+		modal.setAttribute("content-title", itemData.title || "");
+		modal.setAttribute("content-description", itemData.description || "");
+		modal.setAttribute("image-1", itemData.backgroundImage || "");
+		modal.setAttribute("image-2", itemData.image2 || "");
+		modal.setAttribute("image-3", itemData.image3 || "");
+		modal.setAttribute("image-4", itemData.image4 || "");
 
-    modal.openModal?.();
-  }
+		modal.openModal?.();
+	}
 }
 
 customElements.define("page-autobus-a-ixtapa", AutobusAIxtapaZihuatanejo);

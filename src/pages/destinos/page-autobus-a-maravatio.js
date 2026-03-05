@@ -1,3 +1,13 @@
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../components/app-header.js?v=1.0.1";
+import "../components/app-modal-doters.js";
+import "../components/app-modal-travelpass.js";
+import "../components/app-cookies-policy.js?v=1.0.0";
+import "../components/app-button-whats.js?v=1.0.0";
+import "../components/app-button-eva-trip.js?v=1.0.0";
+import "../components/app-footer.js?v=1.0.0";
+
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
@@ -12,8 +22,8 @@ import "../../components/app-modal-image.js";
 import "../../js/slick.js?v=1.0.0";
 
 class AppAutobusMaravatio extends HTMLElement {
-  async connectedCallback() {
-    this.innerHTML = `
+	async connectedCallback() {
+		this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-modal-travelpass></app-modal-travelpass>
 			<app-modal-doters></app-modal-doters>
@@ -71,119 +81,119 @@ class AppAutobusMaravatio extends HTMLElement {
 			<app-button-eva-trip></app-button-eva-trip>
 		`;
 
-    await this.loadAndRenderGridItems();
-    await this.loadAndRenderFoodCards();
-    await this.loadAndRenderDropdowns();
-    await this._configureDestinationSlider();
-  }
+		await this.loadAndRenderGridItems();
+		await this.loadAndRenderFoodCards();
+		await this.loadAndRenderDropdowns();
+		await this._configureDestinationSlider();
+	}
 
-  async loadAndRenderGridItems() {
-    const gridContainer = this.querySelector(
-      "#maravatio-grid-section .grid-container"
-    );
-    if (!gridContainer) return;
+	async loadAndRenderGridItems() {
+		const gridContainer = this.querySelector(
+			"#maravatio-grid-section .grid-container",
+		);
+		if (!gridContainer) return;
 
-    try {
-      const response = await fetch(
-        "../../src/data/destinos/maravatio/lugares.json"
-      );
-      const items = await response.json();
+		try {
+			const response = await fetch(
+				"../../src/data/destinos/maravatio/lugares.json",
+			);
+			const items = await response.json();
 
-      items.forEach((item) => {
-        const card = document.createElement("div");
-        card.className = `card ${item.className || ""}`;
-        card.style.backgroundImage = `linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)), url('${item.backgroundImage}')`;
-        card.innerHTML = `<span>${item.text}</span>`;
-        card.addEventListener("click", () => this.openMultiImageModal(item));
-        gridContainer.appendChild(card);
-      });
-    } catch (e) {
-      gridContainer.innerHTML =
-        "<p>Error al cargar los lugares de Maravatío.</p>";
-    }
-  }
+			items.forEach((item) => {
+				const card = document.createElement("div");
+				card.className = `card ${item.className || ""}`;
+				card.style.backgroundImage = `linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)), url('${item.backgroundImage}')`;
+				card.innerHTML = `<span>${item.text}</span>`;
+				card.addEventListener("click", () => this.openMultiImageModal(item));
+				gridContainer.appendChild(card);
+			});
+		} catch (e) {
+			gridContainer.innerHTML =
+				"<p>Error al cargar los lugares de Maravatío.</p>";
+		}
+	}
 
-  async loadAndRenderFoodCards() {
-    const container = this.querySelector(".container-cards__food");
-    if (!container) return;
-    container.innerHTML = "";
+	async loadAndRenderFoodCards() {
+		const container = this.querySelector(".container-cards__food");
+		if (!container) return;
+		container.innerHTML = "";
 
-    try {
-      const response = await fetch(
-        "../../src/data/destinos/maravatio/platillos.json"
-      );
-      const data = await response.json();
+		try {
+			const response = await fetch(
+				"../../src/data/destinos/maravatio/platillos.json",
+			);
+			const data = await response.json();
 
-      data.forEach((food) => {
-        const card = document.createElement("app-card-open-modal");
-        card.setAttribute("card-title", food.title);
-        card.setAttribute("card-modal-description", food.description);
-        card.setAttribute("card-image", food.imageSrc);
-        card.setAttribute("card-modal-image", food.imageModal || food.imageSrc);
-        card.setAttribute("card-alt", food.altText || food.title);
-        container.appendChild(card);
-      });
-    } catch (e) {
-      container.innerHTML = "<p>No se pudo cargar la gastronomía.</p>";
-    }
-  }
+			data.forEach((food) => {
+				const card = document.createElement("app-card-open-modal");
+				card.setAttribute("card-title", food.title);
+				card.setAttribute("card-modal-description", food.description);
+				card.setAttribute("card-image", food.imageSrc);
+				card.setAttribute("card-modal-image", food.imageModal || food.imageSrc);
+				card.setAttribute("card-alt", food.altText || food.title);
+				container.appendChild(card);
+			});
+		} catch (e) {
+			container.innerHTML = "<p>No se pudo cargar la gastronomía.</p>";
+		}
+	}
 
-  async loadAndRenderDropdowns() {
-    try {
-      const response = await fetch(
-        "../../src/data/destinos/maravatio/dropdown-preguntas-frecuentes.json"
-      );
-      const data = await response.json();
-      this.renderDropdowns(data);
-    } catch (e) {
-      const container = this.querySelector("#dropdowns-container");
-      if (container)
-        container.innerHTML = "<p>Error al cargar preguntas frecuentes.</p>";
-    }
-  }
+	async loadAndRenderDropdowns() {
+		try {
+			const response = await fetch(
+				"../../src/data/destinos/maravatio/dropdown-preguntas-frecuentes.json",
+			);
+			const data = await response.json();
+			this.renderDropdowns(data);
+		} catch (e) {
+			const container = this.querySelector("#dropdowns-container");
+			if (container)
+				container.innerHTML = "<p>Error al cargar preguntas frecuentes.</p>";
+		}
+	}
 
-  renderDropdowns(data) {
-    const container = this.querySelector("#dropdowns-container");
-    if (!container) return;
-    container.innerHTML = "";
+	renderDropdowns(data) {
+		const container = this.querySelector("#dropdowns-container");
+		if (!container) return;
+		container.innerHTML = "";
 
-    data.forEach((item) => {
-      const dropdown = document.createElement("app-dropdown");
-      dropdown.setAttribute("title-dropdown", item["title-dropdown"]);
-      dropdown.setAttribute("content-dropdown", item["content-dropdown"]);
-      container.appendChild(dropdown);
-    });
-  }
+		data.forEach((item) => {
+			const dropdown = document.createElement("app-dropdown");
+			dropdown.setAttribute("title-dropdown", item["title-dropdown"]);
+			dropdown.setAttribute("content-dropdown", item["content-dropdown"]);
+			container.appendChild(dropdown);
+		});
+	}
 
-  async _configureDestinationSlider() {
-    const slider = this.querySelector("app-slider-opacity");
-    if (!slider) return;
+	async _configureDestinationSlider() {
+		const slider = this.querySelector("app-slider-opacity");
+		if (!slider) return;
 
-    try {
-      const response = await fetch(
-        "../../src/data/destinos/card-opacity-destinations.json"
-      );
-      const data = await response.json();
-      slider.setAttribute("destinations-data", JSON.stringify(data));
-    } catch (e) {
-      slider.innerHTML = "<p>Error al cargar destinos.</p>";
-    }
-  }
+		try {
+			const response = await fetch(
+				"../../src/data/destinos/card-opacity-destinations.json",
+			);
+			const data = await response.json();
+			slider.setAttribute("destinations-data", JSON.stringify(data));
+		} catch (e) {
+			slider.innerHTML = "<p>Error al cargar destinos.</p>";
+		}
+	}
 
-  openMultiImageModal(item) {
-    const modal = this.querySelector("app-modal-multi-image");
-    if (!modal) return;
+	openMultiImageModal(item) {
+		const modal = this.querySelector("app-modal-multi-image");
+		if (!modal) return;
 
-    modal.setAttribute("modal-title", item.text);
-    modal.setAttribute("content-title", item.title || "");
-    modal.setAttribute("content-description", item.description || "");
-    modal.setAttribute("image-1", item.backgroundImage || "");
-    modal.setAttribute("image-2", item.image2 || "");
-    modal.setAttribute("image-3", item.image3 || "");
-    modal.setAttribute("image-4", item.image4 || "");
+		modal.setAttribute("modal-title", item.text);
+		modal.setAttribute("content-title", item.title || "");
+		modal.setAttribute("content-description", item.description || "");
+		modal.setAttribute("image-1", item.backgroundImage || "");
+		modal.setAttribute("image-2", item.image2 || "");
+		modal.setAttribute("image-3", item.image3 || "");
+		modal.setAttribute("image-4", item.image4 || "");
 
-    modal.openModal?.();
-  }
+		modal.openModal?.();
+	}
 }
 
 customElements.define("page-autobus-a-maravatio", AppAutobusMaravatio);

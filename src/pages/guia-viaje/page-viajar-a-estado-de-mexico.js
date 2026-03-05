@@ -1,3 +1,13 @@
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../components/app-header.js?v=1.0.1";
+import "../components/app-modal-doters.js";
+import "../components/app-modal-travelpass.js";
+import "../components/app-cookies-policy.js?v=1.0.0";
+import "../components/app-button-whats.js?v=1.0.0";
+import "../components/app-button-eva-trip.js?v=1.0.0";
+import "../components/app-footer.js?v=1.0.0";
+
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
@@ -183,5 +193,5 @@ class AppViajarEstadoDeMexico extends HTMLElement {
 }
 customElements.define(
 	"page-viajar-a-estado-de-mexico",
-	AppViajarEstadoDeMexico
+	AppViajarEstadoDeMexico,
 );
