@@ -1,4 +1,4 @@
-/*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/app-cotiza.js";
 import "../../../components/english/app-destiny-slider.js";
 import "../../../components/english/app-banner-multi-image.js";
@@ -74,7 +74,7 @@ class PageBoletosAutobusSanFelipeDelProgresoEnglish extends HTMLElement {
 	async _loadExploreSectionData() {
 		try {
 			const response = await fetch(
-				"../../src/data/english/destinations/san-felipe-del-progreso/cards-explore-section.json"
+				"../../src/data/english/destinations/san-felipe-del-progreso/cards-explore-section.json",
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -91,5 +91,5 @@ class PageBoletosAutobusSanFelipeDelProgresoEnglish extends HTMLElement {
 }
 customElements.define(
 	"page-boletos-de-autobus-san-felipe-del-progreso-english",
-	PageBoletosAutobusSanFelipeDelProgresoEnglish
+	PageBoletosAutobusSanFelipeDelProgresoEnglish,
 );

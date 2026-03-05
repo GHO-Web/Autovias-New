@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-MX">
 	<head>
 		<meta charset="UTF-8" />
@@ -154,7 +154,16 @@
 		/>
 
 		<!-- Scripts -->
-		<script type="module" src="../app.js?v=1.2.1"></script>
+
+		<!-- Components for page -->
+		<script
+			type="module"
+			src="../src/pages/destinos/page-autobus-a-uruapan.js?v=1.2.1"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- js -->
+		<script src="../src/js/jquery.min.js?v=1.0.1"></script>
 		<!-- CSS widget de reservamos -->
 		<link
 			rel="stylesheet"
@@ -174,7 +183,6 @@
 			<page-autobus-a-uruapan></page-autobus-a-uruapan>
 		</main>
 		<app-footer></app-footer>
-		<script src="../src/js/jquery.min.js?v=1.2.1"></script>
 		<!-- JS widget de reservamos -->
 		<script src="https://widgets.reservamos.mx/search/5.23.6/search.js?v=1.2.1"></script>
 	</body>

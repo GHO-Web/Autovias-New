@@ -1,10 +1,9 @@
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
-import "../components/app-header.js?v=1.0.1";
-import "../components/app-footer.js?v=1.0.0";
+import "../../components/app-header.js?v=1.0.1";
+import "../../components/app-footer.js?v=1.0.0";
 
-/*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
-import "../../components/app-cotiza.js";
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
@@ -18,7 +17,6 @@ import "../../components/app-modal-image.js";
 class AppBoletosAutobusUruapan extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-      <app-cotiza></app-cotiza>
 			<app-banner-slider
 					slides-data='[
 					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-web.webp","mediumImage": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-tablet.webp", "smallImage": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-mobile.webp", "link": "#index.html/banner1"}]'

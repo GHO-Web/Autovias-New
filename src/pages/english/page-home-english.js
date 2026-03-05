@@ -1,4 +1,4 @@
-/*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/english/app-grid-text.js";
 import "../../components/english/app-destinations-grid-english.js";

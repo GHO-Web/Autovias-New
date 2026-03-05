@@ -3,7 +3,7 @@
 import "../components/app-header.js?v=1.0.1";
 import "../components/app-footer.js?v=1.0.0";
 
-/*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-banner-slider-caption.js";
