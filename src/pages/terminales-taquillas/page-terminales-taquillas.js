@@ -5,6 +5,7 @@ import "../../components/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
+import "../../components/app-card-image.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
@@ -14,31 +15,28 @@ class PageTerminalesTaquillas extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
-    
-            <div class="__panthom_space"></div>
+
+			<div class="__panthom_space"></div>
 
 
-            <section class="__section __section__encuentra-taquilla">
-                <app-section-title section-title="Encuentra tu taquilla Autovías La Línea: ubicaciones y horarios"></app-section-title>
-                <p class="__paragraph">El sector de renta de autobuses en la Ciudad de México ha experimentado un crecimiento significativo, reflejando la creciente demanda de soluciones de transporte cómodas y seguras para grupos. Desde excursiones escolares hasta viajes corporativos, la renta de autobuses se ha consolidado como una opción ideal para facilitar la movilidad de grupos grandes, ofreciendo un equilibrio entre eficiencia, seguridad y confort.</p>
-                <article class="__grid-cards-container">
-                    <!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
-                </article>
-                <p class="__section-paragraph-xl">Explora más rutas y destinos de Autovías La Línea para planificar tu viaje.</>
-            </section>
+			<section class="__section __section__encuentra-taquilla">
+					<app-section-title section-title="Encuentra tu taquilla Autovías La Línea: ubicaciones y horarios"></app-section-title>
+					<p class="__paragraph">El sector de renta de autobuses en la Ciudad de México ha experimentado un crecimiento significativo, reflejando la creciente demanda de soluciones de transporte cómodas y seguras para grupos. Desde excursiones escolares hasta viajes corporativos, la renta de autobuses se ha consolidado como una opción ideal para facilitar la movilidad de grupos grandes, ofreciendo un equilibrio entre eficiencia, seguridad y confort.</p>
+					<article class="__grid-cards-container">
+							<!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
+					</article>
+					<p class="__section-paragraph-xl">Explora más rutas y destinos de Autovías La Línea para planificar tu viaje.</>
+			</section>
 
-            <section class="__section __section__FATQs">
-                <app-section-title section-title="Preguntas frecuentes sobre las taquillas Autovías La Línea"></app-section-title>
-                <h3 class="__subtitle-center-xl">¿Por qué comprar en las taquillas Autovías La Línea?</h3>
-                <p class="__paragraph-left">Comprar tus boletos en las taquillas de Autovías La Línea ofrece múltiples ventajas. Además de contar con un servicio rápido y eficiente, nuestras taquillas están estratégicamente ubicadas para facilitarte el acceso desde cualquier punto de la ciudad. Al comprar en taquilla, tienes la posibilidad de recibir asesoría personalizada, resolver cualquier duda sobre tu viaje y asegurarte de que todos los detalles están perfectamente organizados antes de tu salida. Además, en nuestras taquillas también puedes acceder a promociones exclusivas y obtener información actualizada sobre los horarios Autovías La Línea y los destinos más populares. Ya sea que estés buscando Autovías La Línea cerca de mí o prefieras comprar tus boletos directamente en una central de Autovías La Línea, nuestras taquillas son la opción más confiable y conveniente.</p>
-                <article class="__grid-cards-container__dropdown" id="dropdowns-container">
-                    <!-- Contenedor para los dropdowns -->
-                </article>
-            </section>
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
-        `;
+			<section class="__section __section__FATQs">
+					<app-section-title section-title="Preguntas frecuentes sobre las taquillas Autovías La Línea"></app-section-title>
+					<h3 class="__subtitle-center-xl">¿Por qué comprar en las taquillas Autovías La Línea?</h3>
+					<p class="__paragraph-left">Comprar tus boletos en las taquillas de Autovías La Línea ofrece múltiples ventajas. Además de contar con un servicio rápido y eficiente, nuestras taquillas están estratégicamente ubicadas para facilitarte el acceso desde cualquier punto de la ciudad. Al comprar en taquilla, tienes la posibilidad de recibir asesoría personalizada, resolver cualquier duda sobre tu viaje y asegurarte de que todos los detalles están perfectamente organizados antes de tu salida. Además, en nuestras taquillas también puedes acceder a promociones exclusivas y obtener información actualizada sobre los horarios Autovías La Línea y los destinos más populares. Ya sea que estés buscando Autovías La Línea cerca de mí o prefieras comprar tus boletos directamente en una central de Autovías La Línea, nuestras taquillas son la opción más confiable y conveniente.</p>
+					<article class="__grid-cards-container__dropdown" id="dropdowns-container">
+							<!-- Contenedor para los dropdowns -->
+					</article>
+			</section>
+		`;
 
 		this.loadAndRenderImageCards();
 		this.loadAndRenderDropdowns();

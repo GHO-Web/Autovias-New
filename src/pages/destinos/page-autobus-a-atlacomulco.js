@@ -86,9 +86,7 @@ class AppAutobusAtlacomulco extends HTMLElement {
 			<app-modal-multi-image></app-modal-multi-image>
 			<app-modal-image></app-modal-image>
 
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+			
 		`;
 
 		await this.loadAndRenderGridItems();

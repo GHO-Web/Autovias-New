@@ -246,9 +246,7 @@ class AppEstadoDeMexico extends HTMLElement {
 				</div>
 			</section>
 			
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+			
     `;
 	}
 }

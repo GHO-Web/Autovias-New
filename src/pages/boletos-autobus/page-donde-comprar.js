@@ -27,9 +27,7 @@ class PageDondeComprar extends HTMLElement {
 					<!-- Las tarjetas de tiendas se cargarán aquí -->
 			</div>
 
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+			
   
 		`;
 		this.loadAndRenderShopCards();

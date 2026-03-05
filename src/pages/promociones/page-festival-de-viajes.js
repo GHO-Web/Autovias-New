@@ -1,4 +1,3 @@
-
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../../components/app-header.js?v=1.0.1";
@@ -9,7 +8,6 @@ import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
-
 
 class PageFestivalViajes extends HTMLElement {
 	connectedCallback() {
@@ -223,9 +221,7 @@ class PageFestivalViajes extends HTMLElement {
                           
                     </ol>
             </section>
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+			
         `;
 	}
 }

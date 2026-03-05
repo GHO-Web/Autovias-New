@@ -104,9 +104,7 @@ class PageAvisoDePrivacidad extends HTMLElement {
                     <p class="__terms-purchase-text">Si usted considera que su derecho de protección de datos personales ha sido lesionado o se ve afectados por alguna conducta de nuestro personal, actuaciones o respuestas de la empresa, existe alguna violación a las disposiciones previstas en la Ley Federal de Protección de Datos Personales en Posesión de Particulares, podrá interponer la queja correspondiente ante el IFAl, para mayor información consulte <a href="http://www.ifai.org.mx" target="_blank" rel="noopener noreferrer" class="__link-text">www.ifai.org.mx</a>.</p>
                 </article>
             </section>
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+			
         `;
 	}
 }

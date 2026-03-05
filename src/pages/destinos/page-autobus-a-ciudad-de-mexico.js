@@ -63,9 +63,7 @@ class AutobusACiudadDeMexico extends HTMLElement {
 
 			
 			
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+			
         `;
 		await this.loadAndRenderGridItems();
 		await this.loadAndRenderFoodCards();

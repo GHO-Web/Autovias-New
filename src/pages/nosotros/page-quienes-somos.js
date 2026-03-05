@@ -50,9 +50,7 @@ class PageQuienesSomos extends HTMLElement {
                     </ul>
                 </article>
             </section>
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+			
         `;
 	}
 }

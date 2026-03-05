@@ -14,30 +14,27 @@ class PageSalidasCharters extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
-    
-            <app-banner-slider
-                    slides-data='[
-                    {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
-                    {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
-                    {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
-                    ]'
-            >
-            </app-banner-slider>
+
+			<app-banner-slider
+							slides-data='[
+							{"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
+							{"id": "slide2", "title": "Banner 2", "image": "../../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
+							{"id": "slide3", "title": "Banner 3", "image": "../../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
+							]'
+			>
+			</app-banner-slider>
 
 
-            <app-payments></app-payments>
+			<app-payments></app-payments>
 
-            <section class="__section __section--salidas-charters">
-                <app-section-title section-title="Salidas Charters"></app-section-title>
-                <article class="__article-grid">
-                    <p class="__paragraph">Para tu comodidad Autovías te ofrece un servicio de autobuses de lujo con salidas exclusivas en hoteles y centros comerciales de la Ciudad de México y Guadalajara.</p>
-                    <div class="__grid-container" id="grid-cards-container"></div>
-                </article>
-            </section>
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
-        `;
+			<section class="__section __section--salidas-charters">
+					<app-section-title section-title="Salidas Charters"></app-section-title>
+					<article class="__article-grid">
+							<p class="__paragraph">Para tu comodidad Autovías te ofrece un servicio de autobuses de lujo con salidas exclusivas en hoteles y centros comerciales de la Ciudad de México y Guadalajara.</p>
+							<div class="__grid-container" id="grid-cards-container"></div>
+					</article>
+			</section>
+		`;
 
 		await this.loadCharterCards();
 	}
@@ -46,7 +43,7 @@ class PageSalidasCharters extends HTMLElement {
 		try {
 			// Construye la URL al archivo JSON de forma robusta usando import.meta.url
 			const jsonFileUrl = new URL(
-				"../data/cards-salidas-charters-data.json",
+				"../../data/cards-salidas-charters-data.json",
 				import.meta.url,
 			);
 			const response = await fetch(jsonFileUrl);

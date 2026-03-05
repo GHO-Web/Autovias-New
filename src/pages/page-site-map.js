@@ -16,9 +16,7 @@ class PageSiteMap extends HTMLElement {
         <app-section-title section-title="Site Map | Autovías La Línea"></app-section-title>
         <div id="site-map-listas">Cargando...</div>
       </section>
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+			
     `;
 
 		// Cargar el JSON externo
