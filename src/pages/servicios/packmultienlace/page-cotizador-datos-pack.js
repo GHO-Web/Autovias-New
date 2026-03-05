@@ -1,10 +1,10 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
-import "../../components/packmultienlace/app-header-pack-multienlace.js";
-import "../../components/packmultienlace/app-cotiza-pack.js";
-import "../../components/app-banner-slider.js";
-import "../../components/app-section-title.js";
-import "../../components/app-cotizador-pack.js";
-import "../../components/packmultienlace/app-footer-pack-multienlace.js";
+import "../../../components/packmultienlace/app-header-pack-multienlace.js";
+import "../../../components/packmultienlace/app-cotiza-pack.js";
+import "../../../components/app-banner-slider.js";
+import "../../../components/app-section-title.js";
+import "../../../components/app-cotizador-pack.js";
+import "../../../components/packmultienlace/app-footer-pack-multienlace.js";
 
 class PageCotizadorDatosPack extends HTMLElement {
 	connectedCallback() {
