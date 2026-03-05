@@ -14,9 +14,26 @@ class PageGroupEight extends HTMLElement {
 	connectedCallback() {
 		// 1. Definimos todas las rutas en un array de strings.
 		const routes = [
-			"San Jerónimo a Técpan de Galeana",
-			"Técpan de Galeana a San Jerónimo",
-			"Atoyac de Álvarez a San Jerónimo",
+			"Maravatío a Crucero Ucareo",
+			"Crucero Ucareo a Maravatío",
+			"Maravatío a Jeráhuaro",
+			"Jeráhuaro a Maravatío",
+			"Maravatío a Ucareo",
+			"Ucareo a Maravatío",
+			"Zitácuaro a Parícuaro",
+			"Parícuaro a Zitácuaro",
+			"Cd. Hidalgo a Zitácuaro",
+			"Zitácuaro a Cd. Hidalgo",
+			"Morelia a Queréndaro",
+			"Queréndaro a Morelia",
+			"Zitácuaro a Benito Juárez",
+			"Benito Juárez a Zitácuaro",
+			"Maravatío a Acámbaro",
+			"Acámbaro a Maravatío",
+			"Queréndaro a Crucero Ucareo",
+			"Crucero Ucareo a Queréndaro",
+			"C. Charo a Queréndaro",
+			"Queréndaro a C. Charo",
 		];
 
 		// 2. Usamos .map() para transformar cada string del array en un bloque de HTML.
