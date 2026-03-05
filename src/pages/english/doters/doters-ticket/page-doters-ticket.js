@@ -35,47 +35,47 @@ class PageDotersTicket extends HTMLElement {
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>12,038</td>
+                            <td>13,077</td>
                             <td><a href="./group-1" class="btn-route">See Routes</a></td>
                         </tr>
                         <tr>
                             <td>2</td>
-                            <td>7,231</td>
+                            <td>8,500</td>
                             <td><a href="./group-2" class="btn-route">See Routes</a></td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td>7,231</td>
+                            <td>5,500</td>
                             <td><a href="./group-3" class="btn-route">See Routes</a></td>
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td>4,308</td>
+                            <td>3,577</td>
                             <td><a href="./group-4" class="btn-route">See Routes</a></td>
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td>2,577</td>
+                            <td>2,308</td>
                             <td><a href="./group-5" class="btn-route">See Routes</a></td>
                         </tr>
                         <tr>
                             <td>6</td>
-                            <td>1,538</td>
+                            <td>1,500</td>
                             <td><a href="./group-6" class="btn-route">See Routes</a></td>
                         </tr>
                           <tr>
                             <td>7</td>
-                            <td>923</td>
+                            <td>962</td>
                             <td><a href="./group-7" class="btn-route">See Routes</a></td>
                         </tr>
                           <tr>
                             <td>8</td>
-                            <td>538</td>
+                            <td>615</td>
                             <td><a href="./group-8" class="btn-route">See Routes</a></td>
                         </tr>
                           <tr>
                             <td>9</td>
-                            <td>308</td>
+                            <td>385</td>
                             <td><a href="./group-9" class="btn-route">See Routes</a></td>
                         </tr>
                     </tbody>
