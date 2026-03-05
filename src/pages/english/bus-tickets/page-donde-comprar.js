@@ -1,0 +1,77 @@
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../components/app-header.js?v=1.0.1";
+import "../components/app-footer.js?v=1.0.0";
+
+/*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
+
+import "../../components/app-cotiza.js";
+import "../../components/app-banner-slider.js";
+import "../../components/app-payments.js";
+import "../../components/app-img-shop-left.js";
+import "../../components/app-img-shop-right.js";
+import "../../components/app-section-title.js";
+import "../../components/app-card-image.js";
+
+class PageDondeComprar extends HTMLElement {
+	connectedCallback() {
+		this.innerHTML = `
+    
+      <app-cotiza></app-cotiza>
+			<div class="__panthom_space"></div>
+
+
+			<app-section-title section-title="¿Dónde puedo comprar Boletos de autobús en Autovías?"></app-section-title>
+			
+			<div class="shop-container" id="shop-cards-container">
+					<!-- Las tarjetas de tiendas se cargarán aquí -->
+			</div>
+
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
+  
+		`;
+		this.loadAndRenderShopCards();
+		this.loadAndRenderTitleIconCards();
+	}
+
+	async loadAndRenderShopCards() {
+		try {
+			const response = await fetch("../src/data/cards-buy-options.json"); // Ruta corregida
+			if (!response.ok) {
+				throw new Error(`HTTP error! status: ${response.status}`);
+			}
+			const cardsData = await response.json();
+			this.renderShopCards(cardsData);
+		} catch (error) {
+			console.error("Error al cargar o parsear cards-buy-options.json:", error);
+			const container = this.querySelector("#shop-cards-container");
+			if (container) {
+				container.innerHTML =
+					"<p>Error al cargar la información de los puntos de venta.</p>";
+			}
+		}
+	}
+
+	renderShopCards(cardsData) {
+		const container = this.querySelector("#shop-cards-container");
+		if (!container) {
+			console.error("El contenedor de shop-cards no fue encontrado.");
+			return;
+		}
+		container.innerHTML = "";
+
+		cardsData.forEach((data) => {
+			const cardElement = document.createElement(
+				data.type === "left" ? "app-img-shop-left" : "app-img-shop-right",
+			);
+			cardElement.setAttribute("image-src", data.imageSrc);
+			cardElement.setAttribute("alt-text", data.altText);
+			cardElement.setAttribute("card-title", data.cardTitle);
+			cardElement.setAttribute("card-link", data.linkUrl);
+			container.appendChild(cardElement);
+		});
+	}
+}
+customElements.define("page-donde-comprar", PageDondeComprar);
