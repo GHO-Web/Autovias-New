@@ -1,11 +1,12 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
-import "../../components/packmultienlace/app-cotiza-pack.js";
-import "../../components/app-section-title.js";
+import "../../../components/packmultienlace/app-cotiza-pack.js";
+import "../../../components/app-section-title.js";
 
-import "../../components/packmultienlace/app-card-bg-primary.js";
-import "../../components/packmultienlace/app-card-small-list.js";
-import "../../components/packmultienlace/app-header-pack-multienlace.js";
-import "../../components/app-card-circle.js";
+import "../../../components/packmultienlace/app-card-bg-primary.js";
+import "../../../components/packmultienlace/app-card-small-list.js";
+import "../../../components/packmultienlace/app-header-pack-multienlace.js";
+import "../../../components/packmultienlace/app-footer-pack-multienlace.js";
+import "../../../components/app-card-circle.js";
 
 class PageRestriccionesPack extends HTMLElement {
 	connectedCallback() {
@@ -14,14 +15,14 @@ class PageRestriccionesPack extends HTMLElement {
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/paqueteria/banner/pack-banner-restricciones.webp","mediumImage": "../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/paqueteria/banner/pack-banner-restricciones.webp","mediumImage": "../../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
                 ]'
             >
             </app-banner-slider>
             <section class="__section__pack-services">
                 <app-section-title section-title="Pack Multienlace"></app-section-title>
                 <h3 class="__subtitle">Tu Paquetería Más Rápida y Confiable</h3>
-                <app-card-circle cards-data-src="../../src/data/pack-multienlace/restricciones.json"></app-card-circle>
+                <app-card-circle cards-data-src="../../../src/data/pack-multienlace/restricciones.json"></app-card-circle>
                 <article class="__section-note">
                     <div class="__note">
                         En general cualquier envío que requiera de declaración aduanal o permiso de importación. (insumos para la salud, alimentos y sus materias primas, suplementos, productos cosméticos y aditivos, plaguicidas, nutrientes vegetales y sustancias tóxicas y tabaco).

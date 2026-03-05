@@ -1,10 +1,10 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
-import "../../components/packmultienlace/app-header-pack-multienlace.js";
-import "../../components/packmultienlace/app-cotiza-pack.js";
-import "../../components/app-banner-slider.js";
-import "../../components/app-section-title.js";
-import "../../components/app-cotizador-pack.js";
-import "../../components/packmultienlace/app-footer-pack-multienlace.js";
+import "../../../components/packmultienlace/app-header-pack-multienlace.js";
+import "../../../components/packmultienlace/app-cotiza-pack.js";
+import "../../../components/app-banner-slider.js";
+import "../../../components/app-section-title.js";
+import "../../../components/app-cotizador-pack.js";
+import "../../../components/packmultienlace/app-footer-pack-multienlace.js";
 
 class PageCotizadorPack extends HTMLElement {
 	connectedCallback() {
@@ -14,7 +14,7 @@ class PageCotizadorPack extends HTMLElement {
         
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/paqueteria/banner/pack-banner-cotizador.webp","mediumImage": "../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/paqueteria/banner/pack-banner-cotizador.webp","mediumImage": "../../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
 
                 ]'
             >

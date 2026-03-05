@@ -1,12 +1,13 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
-import "../../components/packmultienlace/app-cotiza-pack.js";
-import "../../components/app-banner-slider.js";
-import "../../components/app-section-title.js";
+import "../../../components/packmultienlace/app-cotiza-pack.js";
+import "../../../components/app-banner-slider.js";
+import "../../../components/app-section-title.js";
 
-import "../../components/packmultienlace/app-card-bg-primary.js";
-import "../../components/packmultienlace/app-card-small-list.js";
-import "../../components/packmultienlace/app-header-pack-multienlace.js";
-import "../../components/packmultienlace/app-card-bg-secondary.js";
+import "../../../components/packmultienlace/app-card-bg-primary.js";
+import "../../../components/packmultienlace/app-card-small-list.js";
+import "../../../components/packmultienlace/app-header-pack-multienlace.js";
+import "../../../components/packmultienlace/app-footer-pack-multienlace.js";
+import "../../../components/packmultienlace/app-card-bg-secondary.js";
 
 class PageServiciosCorporativosPack extends HTMLElement {
 	connectedCallback() {
@@ -15,7 +16,7 @@ class PageServiciosCorporativosPack extends HTMLElement {
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/paqueteria/banner/pack-banner-servicios.webp","mediumImage": "../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/paqueteria/banner/pack-banner-servicios.webp","mediumImage": "../../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
 
                 ]'
             >
@@ -23,7 +24,7 @@ class PageServiciosCorporativosPack extends HTMLElement {
             <section class="__section__pack-description">
                 <app-section-title section-title="Paquetería para negocios: rápida y efectiva"></app-section-title>
                 <h3 class="__subtitle">Ofrecemos servicios especiales de envíos de paquetería para empresas:</h3>
-                <app-card-bg-secondary cards-data-src="../../src/data/pack-multienlace/servicios-corporativos.json"></app-card-bg-secondary>
+                <app-card-bg-secondary cards-data-src="../../../src/data/pack-multienlace/servicios-corporativos.json"></app-card-bg-secondary>
 
             </section>
 

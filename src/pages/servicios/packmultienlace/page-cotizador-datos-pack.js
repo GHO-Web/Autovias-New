@@ -13,7 +13,7 @@ class PageCotizadorDatosPack extends HTMLElement {
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/paqueteria/banner/pack-banner-cotizador.webp","mediumImage": "../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/paqueteria/banner/pack-banner-cotizador.webp","mediumImage": "../../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
 
                 ]'
             >
@@ -76,7 +76,7 @@ class PageCotizadorDatosPack extends HTMLElement {
             <div class="modal-content">
               <span class="modal-close-btn" style="background-color: #0E3A51;"></span>
               <div class="modal-header">
-                <img src="../../src/assets/img/paqueteria/logo-pack.png" alt="Logo Paqueteria" class="modal-logo" style="background-color: transparent;"/>
+                <img src="../../../src/assets/img/paqueteria/logo-pack.png" alt="Logo Paqueteria" class="modal-logo" style="background-color: transparent;"/>
               </div>
               <div class="modal-body">
                 <h2 class="modal-title-custom">Cotización enviada con éxito</h2>

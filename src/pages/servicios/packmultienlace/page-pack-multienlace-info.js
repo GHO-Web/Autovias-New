@@ -1,11 +1,11 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
-import "../../components/packmultienlace/app-cotiza-pack.js";
-import "../../components/app-banner-slider.js";
-import "../../components/app-section-title.js";
+import "../../../components/packmultienlace/app-cotiza-pack.js";
+import "../../../components/app-banner-slider.js";
+import "../../../components/app-section-title.js";
 
-import "../../components/packmultienlace/app-card-bg-primary.js";
-import "../../components/packmultienlace/app-card-small-list.js";
-import "../../components/packmultienlace/app-header-pack-multienlace.js";
+import "../../../components/packmultienlace/app-card-bg-primary.js";
+import "../../../components/packmultienlace/app-card-small-list.js";
+import "../../../components/packmultienlace/app-header-pack-multienlace.js";
 
 class PagePackMultienlaceInfo extends HTMLElement {
 	connectedCallback() {
@@ -15,7 +15,7 @@ class PagePackMultienlaceInfo extends HTMLElement {
             
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/paqueteria/banner/pack-banner-multienlace.webp","mediumImage": "../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/paqueteria/banner/pack-banner-multienlace.webp","mediumImage": "../../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
 
                 ]'
             >
@@ -31,12 +31,12 @@ class PagePackMultienlaceInfo extends HTMLElement {
                             <p class="__content">Con Pack Multienlace, puedes enviar tus paquetes a más de 150 destinos en todo México. Esto significa que, sin importar si estás en una gran ciudad o en un pueblo más pequeño, puedes confiar en que tu paquete llegará rápidamente a su destino. Nuestra cobertura amplia asegura que puedas contar con un servicio de calidad, sin importar a dónde necesites enviar algo.</p>
                         </div>
                         <div class="__grid-row__img">
-                            <img src="../../src/assets/img/paqueteria/150corridas.webp" alt="banner 1" class="__img__grid">
+                            <img src="../../../src/assets/img/paqueteria/150corridas.webp" alt="banner 1" class="__img__grid">
                         </div>
                     </div>
                     <div class="__grid-row">
                         <div class="__grid-row__img">
-                            <img src="../../src/assets/img/paqueteria/entrega.webp" alt="banner 1" class="__img__grid">
+                            <img src="../../../src/assets/img/paqueteria/entrega.webp" alt="banner 1" class="__img__grid">
                         </div>
                         <div class="__grid-row__text">
                             <h3 class="__title-grid">Entrega Extra Urgente: Envía y Recibe sin Esperas</h3>
