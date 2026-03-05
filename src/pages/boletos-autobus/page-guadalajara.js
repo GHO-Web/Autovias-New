@@ -19,7 +19,6 @@ import "../../components/app-card-destination-opacity.js";
 import "../../components/app-slider-opacity.js";
 import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
-import "../../js/slick.js?v=1.0.0";
 
 class PageGuadalajara extends HTMLElement {
 	async connectedCallback() {

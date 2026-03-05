@@ -6,7 +6,6 @@ import "../../components/packmultienlace/app-dropdown-quest-services.js";
 import "../../components/packmultienlace/app-header-pack-multienlace.js";
 import "../../components/packmultienlace/app-footer-pack-multienlace.js";
 import "../../components/packmultienlace/app-time-line-packm.js";
-import "../../js/slick.js?v=1.0.0";
 
 class PageComoFunciona extends HTMLElement {
 	async connectedCallback() {
@@ -31,12 +30,12 @@ class PageComoFunciona extends HTMLElement {
 
 		// Fetch data and pass it to the custom element
 		const dropdownQuestServicesElement = this.querySelector(
-			"app-dropdown-quest-services"
+			"app-dropdown-quest-services",
 		);
 		if (dropdownQuestServicesElement) {
 			try {
 				const response = await fetch(
-					"../../src/data/pack-multienlace/dropdown-quest-services.json"
+					"../../src/data/pack-multienlace/dropdown-quest-services.json",
 				); // Path to the new JSON file
 				if (!response.ok) {
 					throw new Error(`HTTP error! status: ${response.status}`);

@@ -14,14 +14,12 @@ import "../components/app-cotiza.js";
 import "../components/app-banner-slider.js";
 import "../components/app-payments.js";
 import "../components/app-section-title.js";
-import "../js/slick.js?v=1.0.0";
+
 
 class PageFestivalViajes extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
+      <app-cotiza></app-cotiza>
 
             <app-banner-slider
                 slides-data='[

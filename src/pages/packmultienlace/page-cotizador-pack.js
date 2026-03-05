@@ -5,7 +5,6 @@ import "../../components/app-banner-slider.js";
 import "../../components/app-section-title.js";
 import "../../components/app-cotizador-pack.js";
 import "../../components/packmultienlace/app-footer-pack-multienlace.js";
-import "../../js/slick.js?v=1.0.0";
 
 class PageCotizadorPack extends HTMLElement {
 	connectedCallback() {

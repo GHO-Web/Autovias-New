@@ -19,14 +19,11 @@ import "../../components/app-card-destination-opacity.js";
 import "../../components/app-slider-opacity.js";
 import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
-import "../../js/slick.js?v=1.0.0";
 
 class AppBoletosAutobusUruapan extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-			<app-cotiza></app-cotiza>
-			<app-modal-travelpass></app-modal-travelpass>
-			<app-modal-doters></app-modal-doters>
+      <app-cotiza></app-cotiza>
 			<app-banner-slider
 					slides-data='[
 					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-web.webp","mediumImage": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-tablet.webp", "smallImage": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-mobile.webp", "link": "#index.html/banner1"}]'

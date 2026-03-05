@@ -16,8 +16,6 @@ class PageSiteMap extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
-      <app-modal-travelpass-english></app-modal-travelpass-english>
-      <app-modal-doters-english></app-modal-doters-english>
       <div class="space"></div>
       <section class="__section">
         <app-section-title section-title="Site Map | Autovías La Línea"></app-section-title>

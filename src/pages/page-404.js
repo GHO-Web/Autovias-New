@@ -14,8 +14,8 @@ import "../components/app-footer.js?v=1.0.0";
 class Page404 extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-modal-travelpass></app-modal-travelpass>
-            <app-modal-doters></app-modal-doters>
+            <app-cotiza></app-cotiza>
+
             <section class="page-404-section">
                 <div class="container">
                     <h1 class="title-404">404</h1>

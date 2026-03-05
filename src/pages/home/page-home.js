@@ -19,14 +19,11 @@ import "../../components/app-other-services.js";
 import "../../components/app-blog.js";
 import "../../components/app-img-shop-left.js";
 import "../../components/app-section-title.js";
-import "../../js/slick.js?v=1.0.0";
 
 class PageHome extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
-            <app-modal-travelpass></app-modal-travelpass>
-            <app-modal-doters></app-modal-doters>
+      <app-cotiza></app-cotiza>
             <app-banner-slider
                 slides-data='[
                 {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/banner-3-pasos-web.webp","mediumImage": "../src/assets/img/global/banner/tablet/banner-3-pasos-tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/banner-3-pasos-mobile.webp", "link": "#index.html/banner1"},

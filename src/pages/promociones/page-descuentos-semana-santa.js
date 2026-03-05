@@ -21,8 +21,6 @@ class DescuentosSemanaSanta extends HTMLElement {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
 
-      <app-modal-doters></app-modal-doters>
-
       <div class="__first-section">
         <app-payments></app-payments>
       </div>

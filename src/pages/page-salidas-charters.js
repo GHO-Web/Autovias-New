@@ -1,4 +1,3 @@
-
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../components/app-header.js?v=1.0.1";
@@ -15,14 +14,11 @@ import "../components/app-banner-slider.js";
 import "../components/app-payments.js";
 import "../components/app-section-title.js";
 import "../components/app-card-text-bg-white.js";
-import "../js/slick.js?v=1.0.0";
 
 class PageSalidasCharters extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
+      <app-cotiza></app-cotiza>
     
             <app-banner-slider
                     slides-data='[
@@ -56,7 +52,7 @@ class PageSalidasCharters extends HTMLElement {
 			// Construye la URL al archivo JSON de forma robusta usando import.meta.url
 			const jsonFileUrl = new URL(
 				"../data/cards-salidas-charters-data.json",
-				import.meta.url
+				import.meta.url,
 			);
 			const response = await fetch(jsonFileUrl);
 			if (!response.ok) {
@@ -78,7 +74,7 @@ class PageSalidasCharters extends HTMLElement {
 		} catch (error) {
 			console.error(
 				"Error al cargar los datos de las tarjetas de salidas charters:",
-				error
+				error,
 			);
 		}
 	}

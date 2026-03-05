@@ -5,7 +5,6 @@ import "../../components/app-cotizador-pack.js";
 import "../../components/packmultienlace/app-header-pack-multienlace.js";
 import "../../components/packmultienlace/app-footer-pack-multienlace.js";
 import "../../components/packmultienlace/app-time-line-packm.js";
-import "../../js/slick.js?v=1.0.0";
 
 class PageProcesoEnvio extends HTMLElement {
 	connectedCallback() {

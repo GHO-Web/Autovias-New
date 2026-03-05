@@ -2,7 +2,7 @@
 import "../../components/packmultienlace/app-cotiza-pack.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-section-title.js";
-import "../../js/slick.js?v=1.0.0";
+
 import "../../components/packmultienlace/app-card-bg-primary.js";
 import "../../components/packmultienlace/app-card-small-list.js";
 import "../../components/packmultienlace/app-header-pack-multienlace.js";
@@ -32,5 +32,5 @@ class PageServiciosCorporativosPack extends HTMLElement {
 }
 customElements.define(
 	"page-servicios-corporativos-pack",
-	PageServiciosCorporativosPack
+	PageServiciosCorporativosPack,
 );

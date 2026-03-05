@@ -1,4 +1,3 @@
-
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../components/app-header.js?v=1.0.1";
@@ -15,15 +14,11 @@ import "../components/app-banner-slider.js";
 import "../components/app-payments.js";
 import "../components/app-section-title.js";
 import "../components/app-dropdown.js"; // Importar el componente dropdown
-import "../js/slick.js?v=1.0.0";
 
 class PageTerminalesTaquillas extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
-
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
+      <app-cotiza></app-cotiza>
     
             <div class="__panthom_space"></div>
 
@@ -57,7 +52,7 @@ class PageTerminalesTaquillas extends HTMLElement {
 		const imageCardContainer = this.querySelector(".__grid-cards-container");
 		if (!imageCardContainer) {
 			console.error(
-				"El contenedor '.__grid-cards-container' para app-card-image no fue encontrado."
+				"El contenedor '.__grid-cards-container' para app-card-image no fue encontrado.",
 			);
 			return;
 		}
@@ -66,14 +61,14 @@ class PageTerminalesTaquillas extends HTMLElement {
 			const response = await fetch("../src/data/card-image-term-taqui.json");
 			if (!response.ok) {
 				throw new Error(
-					`HTTP error! status: ${response.status} al cargar card-image-term-taqui.json`
+					`HTTP error! status: ${response.status} al cargar card-image-term-taqui.json`,
 				);
 			}
 			const cardsData = await response.json();
 
 			if (!cardsData || !Array.isArray(cardsData)) {
 				throw new Error(
-					"Formato de datos incorrecto o vacío para card-image-term-taqui.json"
+					"Formato de datos incorrecto o vacío para card-image-term-taqui.json",
 				);
 			}
 
@@ -101,7 +96,7 @@ class PageTerminalesTaquillas extends HTMLElement {
 	async loadAndRenderDropdowns() {
 		try {
 			const response = await fetch(
-				"../src/data/dropdown-preguntas-frecuentes.json"
+				"../src/data/dropdown-preguntas-frecuentes.json",
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -131,7 +126,7 @@ class PageTerminalesTaquillas extends HTMLElement {
 			dropdownElement.setAttribute("title-dropdown", data["title-dropdown"]);
 			dropdownElement.setAttribute(
 				"content-dropdown",
-				data["content-dropdown"]
+				data["content-dropdown"],
 			);
 			container.appendChild(dropdownElement);
 		});

@@ -17,14 +17,11 @@ import "../../components/app-section-title.js";
 import "../../components/app-card-text.js";
 import "../../components/app-map.js";
 import "../../components/app-card-title-icon.js";
-import "../../js/slick.js?v=1.0.0";
 
 class PageDestinos extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-			<app-cotiza></app-cotiza>
-			<app-modal-travelpass></app-modal-travelpass>
-			<app-modal-doters></app-modal-doters>
+      <app-cotiza></app-cotiza>
 			<div class="__panthom_space"></div>
 			<app-map></app-map>
 
@@ -84,7 +81,7 @@ class PageDestinos extends HTMLElement {
 		const cardsContainer = this.querySelector("#grid-cards-container");
 		if (!cardsContainer) {
 			console.error(
-				'El contenedor con ID "grid-cards-container" no fue encontrado.'
+				'El contenedor con ID "grid-cards-container" no fue encontrado.',
 			);
 			return;
 		}
@@ -92,7 +89,7 @@ class PageDestinos extends HTMLElement {
 			const responseCardsText = await fetch("../src/data/card-text-data.json");
 			if (!responseCardsText.ok) {
 				throw new Error(
-					`Error HTTP al cargar card-text-data.json: ${responseCardsText.status}`
+					`Error HTTP al cargar card-text-data.json: ${responseCardsText.status}`,
 				);
 			}
 			const cardsTextData = await responseCardsText.json();
@@ -101,7 +98,7 @@ class PageDestinos extends HTMLElement {
 		} catch (error) {
 			console.error(
 				"Error al cargar o renderizar los datos de tarjetas:",
-				error
+				error,
 			);
 			cardsContainer.innerHTML =
 				"<p>Error al cargar la información de las tarjetas.</p>";
@@ -111,7 +108,7 @@ class PageDestinos extends HTMLElement {
 	renderCardsText(cardsTextData, targetContainer) {
 		if (!targetContainer) {
 			console.error(
-				"Error en renderCardsText: El contenedor de destino no es válido o no fue proporcionado."
+				"Error en renderCardsText: El contenedor de destino no es válido o no fue proporcionado.",
 			);
 			return;
 		}
@@ -121,7 +118,7 @@ class PageDestinos extends HTMLElement {
 			cardsTextData.length === 0
 		) {
 			console.error(
-				"No se pudieron cargar los datos para las cards, están vacíos o el formato es incorrecto."
+				"No se pudieron cargar los datos para las cards, están vacíos o el formato es incorrecto.",
 			);
 			targetContainer.innerHTML =
 				"<p>No hay datos disponibles para mostrar las cards.</p>";
@@ -168,7 +165,7 @@ class PageDestinos extends HTMLElement {
 		const container = this.querySelector("#title-icon-cards-container");
 		if (!container) {
 			console.error(
-				"El contenedor #title-icon-cards-container no fue encontrado."
+				"El contenedor #title-icon-cards-container no fue encontrado.",
 			);
 			return;
 		}
@@ -193,7 +190,7 @@ class PageDestinos extends HTMLElement {
 		} catch (error) {
 			console.error("Error al cargar o parsear card-title-icon.json:", error);
 			const container = this.querySelector(
-				"#title-icon-cards-horarios-container"
+				"#title-icon-cards-horarios-container",
 			);
 			if (container) {
 				container.innerHTML =
@@ -204,11 +201,11 @@ class PageDestinos extends HTMLElement {
 
 	renderTitleIconCardsHorarios(cardsData) {
 		const container = this.querySelector(
-			"#title-icon-cards-horarios-container"
+			"#title-icon-cards-horarios-container",
 		);
 		if (!container) {
 			console.error(
-				"El contenedor #title-icon-cards-container no fue encontrado."
+				"El contenedor #title-icon-cards-container no fue encontrado.",
 			);
 			return;
 		}
@@ -245,7 +242,7 @@ class PageDestinos extends HTMLElement {
 		const container = this.querySelector("#title-icon-cards-rates-container");
 		if (!container) {
 			console.error(
-				"El contenedor #title-icon-cards-container no fue encontrado."
+				"El contenedor #title-icon-cards-container no fue encontrado.",
 			);
 			return;
 		}
@@ -271,7 +268,7 @@ class PageDestinos extends HTMLElement {
 		} catch (error) {
 			console.error("Error al cargar o parsear card-title-icon.json:", error);
 			const container = this.querySelector(
-				"#title-icon-cards-confort-container"
+				"#title-icon-cards-confort-container",
 			);
 			if (container) {
 				container.innerHTML =
@@ -284,7 +281,7 @@ class PageDestinos extends HTMLElement {
 		const container = this.querySelector("#title-icon-cards-confort-container");
 		if (!container) {
 			console.error(
-				"El contenedor #title-icon-cards-container no fue encontrado."
+				"El contenedor #title-icon-cards-container no fue encontrado.",
 			);
 			return;
 		}

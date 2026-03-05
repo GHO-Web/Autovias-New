@@ -15,14 +15,11 @@ import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-text.js";
 import "../../components/app-card-text-bg-blue-gray.js";
-import "../../js/slick.js?v=1.0.0";
 
 class PageServiciosABordo extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
+      <app-cotiza></app-cotiza>
     
             <div class="__panthom_space"></div>
 

@@ -21,8 +21,6 @@ class PageFacturacion extends HTMLElement {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
 
-            <app-modal-doters></app-modal-doters>
-
             <div class="__panthom_space"></div>
 
             <section class="__section">
