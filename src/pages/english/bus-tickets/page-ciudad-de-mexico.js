@@ -28,8 +28,8 @@ class PageCiudadDeMexico extends HTMLElement {
       "image":"../../../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
       "mediumImage":"../../../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
       "smallImage":"../../../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
-      "captionTitle":"Viaja a Ciudad de México: El Corazón de México con Autovías",
-      "captionText":"Descubre la vibrante capital del país con el servicio de autobús líder. Tu aventura comienza aquí.",
+      "captionTitle":"Travel to Mexico City: The Heart of Mexico with Autovías",
+      "captionText":"Discover the vibrant capital of the country with the leading bus service. Your adventure starts here.",
       "captionAlign":"left",
       "captionTheme":"dark"
     }
@@ -42,42 +42,42 @@ class PageCiudadDeMexico extends HTMLElement {
 
 			<section class="hero">
         <div class="hero__content">
-          <h2 class="hero__title">Viaja a Ciudad de México: El Corazón de México con Autovías</h2>
-          <p class="hero__subtitle">Descubre la vibrante capital del país con el servicio de autobús líder. Tu aventura comienza aquí.</p>
+          <h2 class="hero__title">Travel to Mexico City: The Heart of Mexico with Autovías</h2>
+          <p class="hero__subtitle">Discover the vibrant capital of the country with the leading bus service. Your adventure starts here.</p>
         </div>
       </section>
 
       <section class="features">
         <div class="container">
-          <h2 class="section-title">Autovías: Tu Mejor Opción para un Viaje Inolvidable a CDMX</h2>
+          <h2 class="section-title">Autovías: Your Best Option for an Unforgettable Trip to CDMX</h2>
           <div class="features__grid">
             <div class="feature-card">
               <div class="feature-card__icon-wrapper">
                 <span class="icon-armchair material-symbols-outlined"></span>
               </div>
-              <h3 class="feature-card__title">Máxima Comodidad</h3>
-              <p class="feature-card__description">Asientos reclinables, amplio espacio y un ambiente ideal para relajarte durante todo el trayecto.</p>
+              <h3 class="feature-card__title">Maximum Comfort</h3>
+              <p class="feature-card__description">Reclining seats, ample space, and an ideal environment to relax throughout the journey.</p>
             </div>
             <div class="feature-card">
               <div class="feature-card__icon-wrapper">
                 <span class="icon-travel-security material-symbols-outlined"></span>
               </div>
-              <h3 class="feature-card__title">Seguridad Garantizada</h3>
-              <p class="feature-card__description">Flota moderna, mantenimientos rigurosos y conductores profesionales para tu tranquilidad.</p>
+              <h3 class="feature-card__title">Guaranteed Safety</h3>
+              <p class="feature-card__description">Modern fleet, rigorous maintenance, and professional drivers for your peace of mind.</p>
             </div>
             <div class="feature-card">
               <div class="feature-card__icon-wrapper">
                 <span class="icon-pig material-symbols-outlined"></span>
               </div>
-              <h3 class="feature-card__title">Precios Justos</h3>
-              <p class="feature-card__description">Encuentra tarifas competitivas y acceso a promociones exclusivas para tu bolsillo.</p>
+              <h3 class="feature-card__title">Fair Prices</h3>
+              <p class="feature-card__description">Find competitive rates and access to exclusive promotions for your budget.</p>
             </div>
             <div class="feature-card">
               <div class="feature-card__icon-wrapper">
                 <span class="icon-clock material-symbols-outlined"></span>
               </div>
-              <h3 class="feature-card__title">Horarios Flexibles</h3>
-              <p class="feature-card__description">Gran variedad de horarios para que tu viaje se ajuste perfectamente a tu agenda.</p>
+              <h3 class="feature-card__title">Flexible Schedules</h3>
+              <p class="feature-card__description">A wide variety of schedules so that your trip fits perfectly into your agenda.</p>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ class PageCiudadDeMexico extends HTMLElement {
 
       <section class="route-info">
         <div class="container route-info__container">
-          <h2 class="section-title">Morelia → Ciudad de México</h2>
+          <h2 class="section-title">Morelia → Mexico City</h2>
           <div class="route-info__card">
             <div class="route-info__timeline">
               <div class="route-info__line"></div>
@@ -97,7 +97,7 @@ class PageCiudadDeMexico extends HTMLElement {
                   <span class="route-info__stop-name">Morelia</span>
                 </div>
                 <div class="route-info__stop">
-                  <span class="route-info__stop-name">México Norte / Poniente</span>
+                  <span class="route-info__stop-name">Mexico North / West</span>
                   <div class="route-info__stop-icon">
                     <span class="icon-place" material-symbols-outlined></span>
                   </div>
@@ -106,16 +106,16 @@ class PageCiudadDeMexico extends HTMLElement {
             </div>
             <div class="route-info__details-grid">
               <div class="detail-item">
-                <p class="detail-item__label">Duración</p>
+                <p class="detail-item__label">Duration</p>
                 <p class="detail-item__value">4.5 hrs</p>
               </div>
               <div class="detail-item">
-                <p class="detail-item__label">Frecuencia</p>
-                <p class="detail-item__value">Frecuente</p>
+                <p class="detail-item__label">Frequency</p>
+                <p class="detail-item__value">Frequent</p>
               </div>
               <div class="detail-item">
-                <p class="detail-item__label">Tipo de autobús</p>
-                <p class="detail-item__value">Lujo / Primera</p>
+                <p class="detail-item__label">Bus Type</p>
+                <p class="detail-item__value">Luxury / First Class</p>
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@ class PageCiudadDeMexico extends HTMLElement {
 
       <section class="route-info">
         <div class="container route-info__container">
-          <h2 class="section-title">Guadalajara → Ciudad de México (Terminal Poniente)</h2>
+          <h2 class="section-title">Guadalajara → Mexico City (West Terminal)</h2>
           <div class="route-info__card">
             <div class="route-info__timeline">
               <div class="route-info__line"></div>
@@ -136,7 +136,7 @@ class PageCiudadDeMexico extends HTMLElement {
                   <span class="route-info__stop-name">Guadalajara</span>
                 </div>
                 <div class="route-info__stop">
-                  <span class="route-info__stop-name">México Poniente (Observatorio)</span>
+                  <span class="route-info__stop-name">Mexico West (Observatorio)</span>
                   <div class="route-info__stop-icon">
                     <span class="icon-place" material-symbols-outlined></span>
                   </div>
@@ -145,16 +145,16 @@ class PageCiudadDeMexico extends HTMLElement {
             </div>
             <div class="route-info__details-grid">
               <div class="detail-item">
-                <p class="detail-item__label">Duración</p>
+                <p class="detail-item__label">Duration</p>
                 <p class="detail-item__value">6 hrs</p>
               </div>
               <div class="detail-item">
-                <p class="detail-item__label">Frecuencia</p>
-                <p class="detail-item__value">Diaria (Ruta más demandada)</p>
+                <p class="detail-item__label">Frequency</p>
+                <p class="detail-item__value">Daily (Most demanded route)</p>
               </div>
               <div class="detail-item">
-                <p class="detail-item__label">Tipo de autobús</p>
-                <p class="detail-item__value">Doble piso / Lujo</p>
+                <p class="detail-item__label">Bus Type</p>
+                <p class="detail-item__value">Double decker / Luxury</p>
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@ class PageCiudadDeMexico extends HTMLElement {
 
       <section class="route-info">
         <div class="container route-info__container">
-          <h2 class="section-title">Querétaro → Ciudad de México (Terminal Norte)</h2>
+          <h2 class="section-title">Querétaro → Mexico City (North Terminal)</h2>
           <div class="route-info__card">
             <div class="route-info__timeline">
               <div class="route-info__line"></div>
@@ -173,23 +173,23 @@ class PageCiudadDeMexico extends HTMLElement {
                   <span class="route-info__stop-name">Querétaro</span>
                 </div>
                 <div class="route-info__stop">
-                  <span class="route-info__stop-name">México Norte</span>
+                  <span class="route-info__stop-name">Mexico North</span>
                   <div class="route-info__stop-icon"><span class="icon-place" material-symbols-outlined></span></div>
                 </div>
               </div>
             </div>
             <div class="route-info__details-grid">
               <div class="detail-item">
-                <p class="detail-item__label">Duración</p>
+                <p class="detail-item__label">Duration</p>
                 <p class="detail-item__value">2.5 hrs</p>
               </div>
               <div class="detail-item">
-                <p class="detail-item__label">Frecuencia</p>
-                <p class="detail-item__value">Muy frecuente</p>
+                <p class="detail-item__label">Frequency</p>
+                <p class="detail-item__value">Very frequent</p>
               </div>
               <div class="detail-item">
-                <p class="detail-item__label">Tipo de autobús</p>
-                <p class="detail-item__value">Primera Clase</p>
+                <p class="detail-item__label">Bus Type</p>
+                <p class="detail-item__value">First Class</p>
               </div>
             </div>
           </div>
@@ -197,24 +197,24 @@ class PageCiudadDeMexico extends HTMLElement {
       </section>
       <section class="attractions">
         <div class="container">
-          <h2 class="section-title">Imperdibles en Ciudad de México: Historia, Cultura y Metrópolis</h2>
+          <h2 class="section-title">Must-sees in Mexico City: History, Culture and Metropolis</h2>
           <div class="attractions__grid">
             <div class="attraction-card">
               <div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/cdmx/lugares/cdmx-s.webp")'></div>
               <div class="attraction-card__content">
-                <h3 class="attraction-card__title">Centro Histórico y Zócalo</h3>
+                <h3 class="attraction-card__title">Historic Center and Zócalo</h3>
               </div>
             </div>
             <div class="attraction-card">
               <div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/cdmx/lugares/palacio-de-bellas-artes.webp")'></div>
               <div class="attraction-card__content">
-                <h3 class="attraction-card__title">Palacio de Bellas Artes y Museos</h3>
+                <h3 class="attraction-card__title">Palace of Fine Arts and Museums</h3>
               </div>
             </div>
             <div class="attraction-card">
               <div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/cdmx/lugares/templo-mayor.webp")'></div>
               <div class="attraction-card__content">
-                <h3 class="attraction-card__title">Templo mayor</h3>
+                <h3 class="attraction-card__title">Templo Mayor</h3>
               </div>
             </div>
           </div>
@@ -223,23 +223,23 @@ class PageCiudadDeMexico extends HTMLElement {
 
       <section class="faq">
         <div class="container faq__container">
-          <h2 class="section-title">Preguntas Frecuentes sobre tu Viaje a Ciudad de México</h2>
+          <h2 class="section-title">Frequently Asked Questions about your Trip to Mexico City</h2>
           <div class="faq__list">
             <details class="faq-item">
-              <summary class="faq-item__summary"><span class="faq-item__question">¿Cuáles son las principales rutas de autobús a Ciudad de México con Autovías?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
-              <p class="faq-item__answer">Autovías ofrece rutas directas a Ciudad de México desde ciudades importantes como Morelia, Guadalajara, Querétaro, y muchas más, llegando a Terminal Poniente (Observatorio) y Terminal Norte.</p>
+              <summary class="faq-item__summary"><span class="faq-item__question">What are the main bus routes to Mexico City with Autovías?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+              <p class="faq-item__answer">Autovías offers direct routes to Mexico City from major cities such as Morelia, Guadalajara, Querétaro, and many more, arriving at the West Terminal (Observatorio) and North Terminal.</p>
             </details>
             <details class="faq-item">
-              <summary class="faq-item__summary"><span class="faq-item__question">¿Qué servicios ofrecen los autobuses de Autovías a Ciudad de México?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span></span> </summary>
-              <p class="faq-item__answer">Nuestros autobuses cuentan con asientos reclinables, aire acondicionado, sanitarios, pantallas individuales y, en algunos servicios, Wi-Fi. Nos enfocamos en tu comodidad y seguridad durante todo el trayecto.</p>
+              <summary class="faq-item__summary"><span class="faq-item__question">What services do Autovías buses to Mexico City offer?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span></span> </summary>
+              <p class="faq-item__answer">Our buses have reclining seats, air conditioning, restrooms, individual screens, and, on some services, Wi-Fi. We focus on your comfort and safety throughout the journey.</p>
             </details>
             <details class="faq-item">
-              <summary class="faq-item__summary"> <span class="faq-item__question">¿Cómo puedo comprar mis boletos de autobús a Ciudad de México en línea?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
-              <p class="faq-item__answer">Es muy fácil. Solo ingresa tu ciudad de origen, Ciudad de México como destino y la fecha de tu viaje en nuestro buscador. Selecciona el horario y asiento que prefieras, y finaliza tu compra con tarjeta de crédito/débito o en puntos de venta autorizados.</p>
+              <summary class="faq-item__summary"> <span class="faq-item__question">How can I buy my bus tickets to Mexico City online?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+              <p class="faq-item__answer">It's very easy. Just enter your city of origin, Mexico City as your destination, and the date of your trip in our search engine. Select the schedule and seat you prefer, and complete your purchase with a credit/debit card or at authorized points of sale.</p>
             </details>
             <details class="faq-item">
-              <summary class="faq-item__summary"> <span class="faq-item__question">¿Hay descuentos disponibles para boletos de autobús a Ciudad de México?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
-              <p class="faq-item__answer">Constantemente ofrecemos promociones y descuentos especiales. Te invitamos a revisar nuestra sección de ofertas o suscribirte a nuestro newsletter para recibir las últimas novedades y viajar a Ciudad de México al mejor precio.</p>
+              <summary class="faq-item__summary"> <span class="faq-item__question">Are there discounts available for bus tickets to Mexico City?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+              <p class="faq-item__answer">We constantly offer special promotions and discounts. We invite you to check our offers section or subscribe to our newsletter to receive the latest news and travel to Mexico City at the best price.</p>
             </details>
           </div>
         </div>
@@ -247,9 +247,9 @@ class PageCiudadDeMexico extends HTMLElement {
 
       <section class="cta">
         <div class="container">
-          <h2 class="cta__title">¡Aprovecha Nuestras Promociones Especiales a Ciudad de México!</h2>
-          <p class="cta__subtitle">¡No te pierdas nuestra promoción! Hasta 5% de descuento en tu viaje de ida + 10% de descuento en tu regreso. Consulta términos y condiciones.</p>
-          <a href="../promociones/" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Ciudad de México" tabindex="0">Ver Todas las Promociones</a>
+          <h2 class="cta__title">Take Advantage of Our Special Promotions to Mexico City!</h2>
+          <p class="cta__subtitle">Don't miss our promotion! Up to 5% discount on your one-way trip + 10% discount on your return. Check terms and conditions.</p>
+          <a href="../promociones/" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="See all promotions to Mexico City" tabindex="0">See All Promotions</a>
         </div>
       </section>
 			

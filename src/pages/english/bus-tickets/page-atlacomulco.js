@@ -28,8 +28,8 @@ class AppAtlacomulco extends HTMLElement {
 					"image":"../../../src/assets/img/img-landing/atlacomulco-centro.webp",
 					"mediumImage":"../../../src/assets/img/img-landing/atlacomulco-centro.webp",
 					"smallImage":"../../../src/assets/img/img-landing/atlacomulco-centro.webp",
-					"captionTitle":"Viaja a Atlacomulco: Conecta con el Corazón del Estado de México",
-					"captionText":"Descubre la esencia de Atlacomulco con el servicio de autobús líder. Tu viaje seguro y cómodo comienza aquí.",
+					"captionTitle":"Travel to Atlacomulco: Connect with the Heart of the State of Mexico",
+					"captionText":"Discover the essence of Atlacomulco with the leading bus service. Your safe and comfortable journey starts here.",
 					"captionAlign":"left",
 					"captionTheme":"dark"
 				}
@@ -42,42 +42,42 @@ class AppAtlacomulco extends HTMLElement {
 
 			<section class="hero">
 				<div class="hero__content">
-					<h1 class="hero__title">Viaja a Atlacomulco: Conecta con el Corazón del Estado de México</h1>
-					<p class="hero__subtitle">Descubre la esencia de Atlacomulco con el servicio de autobús líder. Tu viaje seguro y cómodo comienza aquí.</p>
+					<h1 class="hero__title">Travel to Atlacomulco: Connect with the Heart of the State of Mexico</h1>
+					<p class="hero__subtitle">Discover the essence of Atlacomulco with the leading bus service. Your safe and comfortable journey starts here.</p>
 				</div>
 			</section>
 
 			<section class="features">
 				<div class="container">
-					<h2 class="section-title">Autovías: Tu Mejor Opción para un Viaje Confiable a Atlacomulco</h2>
+					<h2 class="section-title">Autovías: Your Best Option for a Reliable Trip to Atlacomulco</h2>
 					<div class="features__grid">
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-armchair material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Máxima Comodidad</h3>
-							<p class="feature-card__description">Asientos reclinables, amplio espacio y un ambiente ideal para relajarte durante todo el trayecto.</p>
+							<h3 class="feature-card__title">Maximum Comfort</h3>
+							<p class="feature-card__description">Reclining seats, ample space, and an ideal environment to relax throughout the journey.</p>
 						</div>
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-travel-security material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Seguridad Garantizada</h3>
-							<p class="feature-card__description">Flota moderna, mantenimientos rigurosos y conductores profesionales para tu tranquilidad.</p>
+							<h3 class="feature-card__title">Guaranteed Safety</h3>
+							<p class="feature-card__description">Modern fleet, rigorous maintenance, and professional drivers for your peace of mind.</p>
 						</div>
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-pig material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Precios Justos</h3>
-							<p class="feature-card__description">Encuentra tarifas competitivas y acceso a promociones exclusivas para tu bolsillo.</p>
+							<h3 class="feature-card__title">Fair Prices</h3>
+							<p class="feature-card__description">Find competitive rates and access to exclusive promotions for your budget.</p>
 						</div>
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-clock material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Horarios Flexibles</h3>
-							<p class="feature-card__description">Gran variedad de horarios para que tu viaje se ajuste perfectamente a tu agenda.</p>
+							<h3 class="feature-card__title">Flexible Schedules</h3>
+							<p class="feature-card__description">A wide variety of schedules so that your trip fits perfectly into your agenda.</p>
 						</div>
 					</div>
 				</div>
@@ -85,7 +85,7 @@ class AppAtlacomulco extends HTMLElement {
 
 			<section class="route-info">
 				<div class="container route-info__container">
-					<h2 class="section-title">Ciudad de México → Atlacomulco</h2>
+					<h2 class="section-title">Mexico City → Atlacomulco</h2>
 					<div class="route-info__card">
 						<div class="route-info__timeline">
 							<div class="route-info__line"></div>
@@ -94,7 +94,7 @@ class AppAtlacomulco extends HTMLElement {
 									<div class="route-info__stop-icon">
 										<span class="icon-bus material-symbols-outlined"></span>
 									</div>
-									<span class="route-info__stop-name">Ciudad de México (Terminal Poniente / Norte)</span>
+									<span class="route-info__stop-name">Mexico City (Poniente / Norte Terminal)</span>
 								</div>
 								<div class="route-info__stop">
 									<span class="route-info__stop-name">Atlacomulco</span>
@@ -106,16 +106,16 @@ class AppAtlacomulco extends HTMLElement {
 						</div>
 						<div class="route-info__details-grid">
 							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
+								<p class="detail-item__label">Duration</p>
 								<p class="detail-item__value">2 hrs</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Frecuente</p>
+								<p class="detail-item__label">Frequency</p>
+								<p class="detail-item__value">Frequent</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Primera Clase</p>
+								<p class="detail-item__label">Bus Type</p>
+								<p class="detail-item__value">First Class</p>
 							</div>
 						</div>
 					</div>
@@ -145,16 +145,16 @@ class AppAtlacomulco extends HTMLElement {
 						</div>
 						<div class="route-info__details-grid">
 							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
+								<p class="detail-item__label">Duration</p>
 								<p class="detail-item__value">2.5 hrs</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diaria</p>
+								<p class="detail-item__label">Frequency</p>
+								<p class="detail-item__value">Daily</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Lujo / Primera</p>
+								<p class="detail-item__label">Bus Type</p>
+								<p class="detail-item__value">Luxury / First Class</p>
 							</div>
 						</div>
 					</div>
@@ -180,16 +180,16 @@ class AppAtlacomulco extends HTMLElement {
 						</div>
 						<div class="route-info__details-grid">
 							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
+								<p class="detail-item__label">Duration</p>
 								<p class="detail-item__value">1 hr</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Muy Frecuente</p>
+								<p class="detail-item__label">Frequency</p>
+								<p class="detail-item__value">Very Frequent</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Económico / Primera</p>
+								<p class="detail-item__label">Bus Type</p>
+								<p class="detail-item__value">Economy / First Class</p>
 							</div>
 						</div>
 					</div>
@@ -197,24 +197,24 @@ class AppAtlacomulco extends HTMLElement {
 			</section>
 			<section class="attractions">
 				<div class="container">
-					<h2 class="section-title">Imperdibles en Atlacomulco: Tradición y Desarrollo en el Estado de México</h2>
+					<h2 class="section-title">Must-sees in Atlacomulco: Tradition and Development in the State of Mexico</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
 							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/atlacomulco/lugares/parroquia-guadalupe.webp")'></div>
 							<div class="attraction-card__content">
-								<h3 class="attraction-card__title">Parroquia de Nuestra Señora de Guadalupe</h3>
+								<h3 class="attraction-card__title">Parish of Our Lady of Guadalupe</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
 							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/atlacomulco/lugares/parque-estatal.webp")'></div>
 							<div class="attraction-card__content">
-								<h3 class="attraction-card__title">Parque de la Cultura y la Identidad</h3>
+								<h3 class="attraction-card__title">Park of Culture and Identity</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
 							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/atlacomulco/lugares/mercado-municipal.webp")'></div>
 							<div class="attraction-card__content">
-								<h3 class="attraction-card__title">Mercado Municipal</h3>
+								<h3 class="attraction-card__title">Municipal Market</h3>
 							</div>
 						</div>
 					</div>
@@ -223,27 +223,27 @@ class AppAtlacomulco extends HTMLElement {
 
 			<section class="faq">
 				<div class="container faq__container">
-					<h2 class="section-title">Preguntas Frecuentes sobre tu Viaje a Atlacomulco</h2>
+					<h2 class="section-title">Frequently Asked Questions about your Trip to Atlacomulco</h2>
 					<div class="faq__list">
 						<details class="faq-item">
-							<summary class="faq-item__summary"><span class="faq-item__question">¿Cuáles son las principales rutas de autobús a Atlacomulco con Autovías?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
-							<p class="faq-item__answer">Autovías ofrece rutas directas a Atlacomulco desde ciudades importantes como Ciudad de México (Terminal Poniente y Norte), Morelia, Querétaro, y otras localidades del Estado de México, garantizando conexiones cómodas y seguras.</p>
+							<summary class="faq-item__summary"><span class="faq-item__question">What are the main bus routes to Atlacomulco with Autovías?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">Autovías offers direct routes to Atlacomulco from major cities such as Mexico City (Poniente and Norte Terminals), Morelia, Querétaro, and other locations in the State of Mexico, ensuring comfortable and safe connections.</p>
 						</details>
 						<details class="faq-item">
-							<summary class="faq-item__summary"><span class="faq-item__question">¿Qué servicios ofrecen los autobuses de Autovías a Atlacomulco?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span></span> </summary>
-							<p class="faq-item__answer">Nuestros autobuses cuentan con asientos reclinables, aire acondicionado, sanitarios, pantallas individuales y, en algunos servicios, Wi-Fi. Nos enfocamos en tu comodidad y seguridad durante todo el trayecto.</p>
+							<summary class="faq-item__summary"><span class="faq-item__question">What services do Autovías buses to Atlacomulco offer?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span></span> </summary>
+							<p class="faq-item__answer">Our buses have reclining seats, air conditioning, restrooms, individual screens, and, on some services, Wi-Fi. We focus on your comfort and safety throughout the journey.</p>
 						</details>
 						<details class="faq-item">
-							<summary class="faq-item__summary"> <span class="faq-item__question">¿Cómo puedo comprar mis boletos de autobús a Atlacomulco en línea?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
-							<p class="faq-item__answer">Es muy fácil. Solo ingresa tu ciudad de origen, Atlacomulco como destino y la fecha de tu viaje en nuestro buscador. Selecciona el horario y asiento que prefieras, y finaliza tu compra con tarjeta de crédito/débito o en puntos de venta autorizados.</p>
+							<summary class="faq-item__summary"> <span class="faq-item__question">How can I buy my bus tickets to Atlacomulco online?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">It's very easy. Just enter your city of origin, Atlacomulco as your destination, and your travel date in our search engine. Select the time and seat you prefer, and complete your purchase with a credit/debit card or at authorized points of sale.</p>
 						</details>
 						<details class="faq-item">
-							<summary class="faq-item__summary"> <span class="faq-item__question">¿Hay descuentos disponibles para boletos de autobús a Atlacomulco?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
-							<p class="faq-item__answer">Constantemente ofrecemos promociones y descuentos especiales. Te invitamos a revisar nuestra sección de ofertas o suscribirte a nuestro newsletter para recibir las últimas novedades y viajar a Atlacomulco al mejor precio.</p>
+							<summary class="faq-item__summary"> <span class="faq-item__question">Are there discounts available for bus tickets to Atlacomulco?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">We constantly offer special promotions and discounts. We invite you to check our offers section or subscribe to our newsletter to receive the latest news and travel to Atlacomulco at the best price.</p>
 						</details>
 						<details class="faq-item">
-							<summary class="faq-item__summary"> <span class="faq-item__question">¿Cuál es la Terminal de Autobuses en Atlacomulco?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
-							<p class="faq-item__answer">La Central de Autobuses de Atlacomulco se encuentra convenientemente ubicada para facilitar tu acceso a la ciudad y sus alrededores. Es un punto clave para la conectividad en la región.</p>
+							<summary class="faq-item__summary"> <span class="faq-item__question">What is the Bus Terminal in Atlacomulco?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">The Atlacomulco Bus Terminal is conveniently located to facilitate your access to the city and its surroundings. It is a key point for connectivity in the region.</p>
 						</details>
 					</div>
 				</div>
@@ -251,9 +251,9 @@ class AppAtlacomulco extends HTMLElement {
 
 			<section class="cta">
 				<div class="container">
-					<h2 class="cta__title">¡Aprovecha Nuestras Promociones Especiales a Atlacomulco!</h2>
-					<p class="cta__subtitle">¡No te pierdas nuestra promoción! Hasta 5% de descuento en tu viaje de ida + 10% de descuento en tu regreso. Consulta términos y condiciones.</p>
-					<a href="../promociones/" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Atlacomulco" tabindex="0">Ver Todas las Promociones</a>
+					<h2 class="cta__title">Take Advantage of Our Special Promotions to Atlacomulco!</h2>
+					<p class="cta__subtitle">Don't miss our promotion! Up to 5% discount on your one-way trip + 10% discount on your return. Check terms and conditions.</p>
+					<a href="../promociones/" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="See all promotions to Atlacomulco" tabindex="0">See All Promotions</a>
 				</div>
 			</section>
 			

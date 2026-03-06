@@ -28,8 +28,8 @@ class PageQueretaro extends HTMLElement {
       "image":"../../../src/assets/img/img-landing/queretaro.webp",
       "mediumImage":"../../../src/assets/img/img-landing/queretaro.webp",
       "smallImage":"../../../src/assets/img/img-landing/queretaro.webp",
-      "captionTitle":"Viaja a Querétaro: Disfruta de comodidad, seguridad y mejores precios con Autovías",
-      "captionText":"Vive una nueva experiencia viajando. Tu aventura comienza aquí.",
+      "captionTitle":"Travel to Querétaro: Enjoy comfort, safety, and the best prices with Autovías",
+      "captionText":"Live a new travel experience. Your adventure starts here.",
       "captionAlign":"left",
       "captionTheme":"dark"
     }
@@ -42,34 +42,34 @@ class PageQueretaro extends HTMLElement {
 
 			<section class="hero">
 				<div class="hero__content">
-					<h1 class="hero__title">Autobús a Querétaro</h1>
-					<p class="hero__subtitle">Descubre Querétaro: la joya colonial del Bajío, una ciudad que encanta con su rica historia y arquitectura impresionante.</p>
+					<h1 class="hero__title">Bus to Querétaro</h1>
+					<p class="hero__subtitle">Discover Querétaro: the colonial jewel of the Bajío, a city that enchants with its rich history and impressive architecture.</p>
 				</div>
 			</section>
 			
 			<section class="features">
 				<div class="container">
-					<h2 class="section-title">¿Por qué viajar en autobús a Querétaro?</h2>
+					<h2 class="section-title">Why travel by bus to Querétaro?</h2>
 					<div class="features__grid">
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper"> <span class="icon-armchair material-symbols-outlined"></span> </div>
-							<h3 class="feature-card__title">Comodidad Premium</h3>
-							<p class="feature-card__description">Autovías es tu mejor opción para un viaje cómodo y seguro a este fascinante destino colonial.</p>
+							<h3 class="feature-card__title">Premium Comfort</h3>
+							<p class="feature-card__description">Autovías is your best option for a comfortable and safe trip to this fascinating colonial destination.</p>
 						</div>
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper"> <span class="icon-pig material-symbols-outlined"></span> </div>
-							<h3 class="feature-card__title">Ahorro</h3>
-							<p class="feature-card__description">Aprovecha descuentos online (5% ida, 10% regreso), la tarifa de Viajero Anticipado y 10% en viaje redondo en taquilla.</p>
+							<h3 class="feature-card__title">Savings</h3>
+							<p class="feature-card__description">Take advantage of online discounts (5% one-way, 10% round trip), the Early Traveler fare, and 10% on round trips at the ticket office.</p>
 						</div>
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper"> <span class="icon-travel-security material-symbols-outlined"></span> </div>
-							<h3 class="feature-card__title">Viaje sin complicaciones</h3>
-							<p class="feature-card__description">Viaja con la línea de autobuses de lujo Autovías y llega sin contratiempos a tu destino.</p>
+							<h3 class="feature-card__title">Hassle-free travel</h3>
+							<p class="feature-card__description">Travel with the luxury bus line Autovías and arrive at your destination without any setbacks.</p>
 						</div>
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper"> <span class="icon-montain material-symbols-outlined"></span> </div>
-							<h3 class="feature-card__title">Paisajes inolvidables</h3>
-							<p class="feature-card__description">Explora calles empedradas, el Acueducto, museos y disfruta su vibrante oferta gastronómica.</p>
+							<h3 class="feature-card__title">Unforgettable landscapes</h3>
+							<p class="feature-card__description">Explore cobblestone streets, the Aqueduct, museums and enjoy its vibrant gastronomic offer.</p>
 						</div>
 					</div>
 				</div>
@@ -77,7 +77,7 @@ class PageQueretaro extends HTMLElement {
 			
 			<section class="route-info">
 				<div class="container route-info__container">
-					<h2 class="section-title">Trayecto destacado Ciudad de México Central Norte → Querétaro</h2>
+					<h2 class="section-title">Featured route Mexico City Central North → Querétaro</h2>
 					<div class="route-info__card">
 						<div class="route-info__timeline">
 							<div class="route-info__line"></div>
@@ -92,16 +92,16 @@ class PageQueretaro extends HTMLElement {
 						</div>
 						<div class="route-info__details-grid">
 							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">3 horas</p>
+								<p class="detail-item__label">Duration</p>
+								<p class="detail-item__value">3 hours</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diaria (19 corridas)</p>
+								<p class="detail-item__label">Frequency</p>
+								<p class="detail-item__value">Daily (19 runs)</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Doble piso / Un piso</p>
+								<p class="detail-item__label">Bus type</p>
+								<p class="detail-item__value">Double decker / One floor</p>
 							</div>
 						</div>
 					</div>
@@ -109,7 +109,7 @@ class PageQueretaro extends HTMLElement {
 			</section>
 			<section class="route-info">
 				<div class="container route-info__container">
-					<h2 class="section-title">Trayecto destacado Monterrey Central → Querétaro</h2>
+					<h2 class="section-title">Featured route Monterrey Central → Querétaro</h2>
 					<div class="route-info__card">
 						<div class="route-info__timeline">
 							<div class="route-info__line"></div>
@@ -124,16 +124,16 @@ class PageQueretaro extends HTMLElement {
 						</div>
 						<div class="route-info__details-grid">
 							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">9 horas 20 minutos</p>
+								<p class="detail-item__label">Duration</p>
+								<p class="detail-item__value">9 hours 20 minutes</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diaria (7 corridas)</p>
+								<p class="detail-item__label">Frequency</p>
+								<p class="detail-item__value">Daily (7 runs)</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Doble piso / Un piso</p>
+								<p class="detail-item__label">Bus type</p>
+								<p class="detail-item__value">Double decker / One floor</p>
 							</div>
 						</div>
 					</div>
@@ -141,7 +141,7 @@ class PageQueretaro extends HTMLElement {
 			</section>
 			<section class="route-info">
 				<div class="container route-info__container">
-					<h2 class="section-title">Trayecto destacado Acapulco → Querétaro</h2>
+					<h2 class="section-title">Featured route Acapulco → Querétaro</h2>
 					<div class="route-info__card">
 						<div class="route-info__timeline">
 							<div class="route-info__line"></div>
@@ -156,16 +156,16 @@ class PageQueretaro extends HTMLElement {
 						</div>
 						<div class="route-info__details-grid">
 							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">8 Horas</p>
+								<p class="detail-item__label">Duration</p>
+								<p class="detail-item__value">8 hours</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diaria (3 corridas)</p>
+								<p class="detail-item__label">Frequency</p>
+								<p class="detail-item__value">Daily (3 runs)</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Doble piso / Un piso</p>
+								<p class="detail-item__label">Bus type</p>
+								<p class="detail-item__value">Double decker / One floor</p>
 							</div>
 						</div>
 					</div>
@@ -173,7 +173,7 @@ class PageQueretaro extends HTMLElement {
 			</section>
 			<section class="route-info">
 				<div class="container route-info__container">
-					<h2 class="section-title">Trayecto destacado Aguascalientes → Querétaro</h2>
+					<h2 class="section-title">Featured route Aguascalientes → Querétaro</h2>
 					<div class="route-info__card">
 						<div class="route-info__timeline">
 							<div class="route-info__line"></div>
@@ -188,16 +188,16 @@ class PageQueretaro extends HTMLElement {
 						</div>
 						<div class="route-info__details-grid">
 							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">4 horas</p>
+								<p class="detail-item__label">Duration</p>
+								<p class="detail-item__value">4 hours</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diaria (5 corridas)</p>
+								<p class="detail-item__label">Frequency</p>
+								<p class="detail-item__value">Daily (5 runs)</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Autobús de lujo</p>
+								<p class="detail-item__label">Bus type</p>
+								<p class="detail-item__value">Luxury bus</p>
 							</div>
 						</div>
 					</div>
@@ -205,7 +205,7 @@ class PageQueretaro extends HTMLElement {
 			</section>
 			<section class="route-info">
 				<div class="container route-info__container">
-					<h2 class="section-title">Trayecto destacado Puebla → Querétaro</h2>
+					<h2 class="section-title">Featured route Puebla → Querétaro</h2>
 					<div class="route-info__card">
 						<div class="route-info__timeline">
 							<div class="route-info__line"></div>
@@ -220,16 +220,16 @@ class PageQueretaro extends HTMLElement {
 						</div>
 						<div class="route-info__details-grid">
 							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">4 horas 15 minutos</p>
+								<p class="detail-item__label">Duration</p>
+								<p class="detail-item__value">4 hours 15 minutes</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diaria (13 corridas)</p>
+								<p class="detail-item__label">Frequency</p>
+								<p class="detail-item__value">Daily (13 runs)</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Autobús de lujo</p>
+								<p class="detail-item__label">Bus type</p>
+								<p class="detail-item__value">Luxury bus</p>
 							</div>
 						</div>
 					</div>
@@ -238,18 +238,18 @@ class PageQueretaro extends HTMLElement {
 			
 			<section class="attractions">
 				<div class="container">
-					<h2 class="section-title">Descubre en Querétaro</h2>
+					<h2 class="section-title">Discover in Queretaro</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
 							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/queretaro/lugares/centro-historico-queretaro.webp")'></div>
 							<div class="attraction-card__content">
-								<h3 class="attraction-card__title">Centro Histórico de Querétaro</h3>
+								<h3 class="attraction-card__title">Historic Center of Queretaro</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
 							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/queretaro/lugares/acueducto-queretaro.webp")'></div>
 							<div class="attraction-card__content">
-								<h3 class="attraction-card__title">Acueducto Querétaro</h3>
+								<h3 class="attraction-card__title">Aqueduct Queretaro</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
@@ -264,19 +264,19 @@ class PageQueretaro extends HTMLElement {
 			
 			<section class="faq">
 				<div class="container faq__container">
-					<h2 class="section-title">Preguntas frecuentes</h2>
+					<h2 class="section-title">Frequently asked questions</h2>
 					<div class="faq__list">
 						<details class="faq-item">
-							<summary class="faq-item__summary"><span class="faq-item__question">¿Cuánto cuesta el boleto de autobús de la Ciudad de México Central Norte a Querétaro?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
-							<p class="faq-item__answer">El boleto de autobús barato es desde $405.00 MXN*. El viaje dura 2 horas 46 minutos. Tarifas sujetas a disponibilidad.</p>
+							<summary class="faq-item__summary"><span class="faq-item__question">How much is the bus ticket from Mexico City Central North to Queretaro?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">The cheap bus ticket is from $405.00 MXN*. The trip lasts 2 hours and 46 minutes. Fares subject to availability.</p>
 						</details>
 						<details class="faq-item">
-							<summary class="faq-item__summary"><span class="faq-item__question">¿Cuánto cuesta el boleto de autobús de Monterrey Central a Querétaro?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span></span> </summary>
-							<p class="faq-item__answer">El boleto de autobús barato tiene un costo de $1,005.00 MXN . El viaje dura 9 horas 20 minutos. *Las tarifas sujetas a disponibilidad.</p>
+							<summary class="faq-item__summary"><span class="faq-item__question">How much is the bus ticket from Monterrey Central to Queretaro?</span> <span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span></span> </summary>
+							<p class="faq-item__answer">The cheap bus ticket costs $1,005.00 MXN. The trip lasts 9 hours and 20 minutes. *Fares subject to availability.</p>
 						</details>
 						<details class="faq-item">
-							<summary class="faq-item__summary"> <span class="faq-item__question">¿Qué servicios incluyen los autobuses?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
-							<p class="faq-item__answer">Nuestros autobuses cuentan con pantallas individuales, asientos individuales, descanso para piernas, sanitarios, conexiones eléctricas y cafetería.</p>
+							<summary class="faq-item__summary"> <span class="faq-item__question">What services do the buses include?</span><span class="faq-item__icon"> <span class="icon-arrow-down material-symbols-outlined"></span> </span> </summary>
+							<p class="faq-item__answer">Our buses have individual screens, individual seats, leg rests, restrooms, electrical outlets and a cafeteria.</p>
 						</details>
 					</div>
 				</div>
@@ -284,8 +284,8 @@ class PageQueretaro extends HTMLElement {
 			
 			<section class="cta">
 				<div class="container">
-					<h2 class="cta__title">¡Viaja a Querétaro con Autovías!</h2>
-					<p class="cta__subtitle">Prepara tus maletas y descubre todo lo que esta maravillosa ciudad tiene para ofrecer. Tu aventura está a solo un clic.</p> <a href="../destinos/autobus-a-queretaro.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
+					<h2 class="cta__title">Travel to Queretaro with Autovias!</h2>
+					<p class="cta__subtitle">Pack your bags and discover everything this wonderful city has to offer. Your adventure is just a click away.</p> <a href="../destinos/autobus-a-queretaro.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Go see more about the destination" tabindex="0">See more about the destination</a>
 				</div>
 			</section>
 			

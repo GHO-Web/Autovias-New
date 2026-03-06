@@ -29,8 +29,8 @@ class PageMaravatio extends HTMLElement {
       "image":"../../../src/assets/img/img-landing/maravatio.webp",
       "mediumImage":"../../../src/assets/img/img-landing/maravatio.webp",
       "smallImage":"../../../src/assets/img/img-landing/maravatio.webp",
-      "captionTitle":"Viaja a Maravatio: Confort, Seguridad y los Mejores Precios con Autovías",
-      "captionText":"Vive una nueva experiencia viajando con Autovías La Línea. Tu aventura comienza aquí.",
+      "captionTitle":"Travel to Maravatio: Comfort, Safety, and the Best Prices with Autovías",
+      "captionText":"Live a new experience traveling with Autovías La Línea. Your adventure starts here.",
       "captionAlign":"left",
       "captionTheme":"dark"
     }
@@ -41,25 +41,25 @@ class PageMaravatio extends HTMLElement {
 
 			<section class="hero">
 				<div class="hero__content">
-					<h1 class="hero__title">Autobús de Maravatío</h1>
+					<h1 class="hero__title">Bus from Maravatío</h1>
 					<p class="hero__subtitle">
-						Conecta Maravatío con otros destinos por carretera en autobús con comodidad, horarios flexibles y servicios confiables.
+						Connect Maravatío with other destinations by road by bus with comfort, flexible schedules, and reliable services.
 					</p>
 				</div>
 			</section>
 
 			<section class="features">
 				<div class="container">
-					<h2 class="section-title">¿Por qué viajar en autobús desde Maravatío?</h2>
+					<h2 class="section-title">Why travel by bus from Maravatío?</h2>
 					<div class="features__grid">
 
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-armchair material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Comodidad</h3>
+							<h3 class="feature-card__title">Comfort</h3>
 							<p class="feature-card__description">
-								Unidades confortables con espacio para descansar durante todo el trayecto.
+								Comfortable units with space to rest throughout the journey.
 							</p>
 						</div>
 
@@ -67,9 +67,9 @@ class PageMaravatio extends HTMLElement {
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-travel-security material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Seguridad</h3>
+							<h3 class="feature-card__title">Safety</h3>
 							<p class="feature-card__description">
-								Conductores profesionales y unidades sometidas a mantenimiento riguroso.
+								Professional drivers and units undergoing rigorous maintenance.
 							</p>
 						</div>
 
@@ -77,9 +77,9 @@ class PageMaravatio extends HTMLElement {
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-pig material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Precios accesibles</h3>
+							<h3 class="feature-card__title">Affordable Prices</h3>
 							<p class="feature-card__description">
-								Tarifas competitivas y diversas opciones de compra en línea o en taquilla.
+								Competitive rates and various purchase options online or at the ticket office.
 							</p>
 						</div>
 
@@ -87,9 +87,9 @@ class PageMaravatio extends HTMLElement {
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-clock material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Horarios flexibles</h3>
+							<h3 class="feature-card__title">Flexible schedules</h3>
 							<p class="feature-card__description">
-								Saliendo a lo largo del día para que elijas el que mejor se adapte a ti.
+								Departures throughout the day so you can choose the one that best suits you.
 							</p>
 						</div>
 
@@ -101,7 +101,7 @@ class PageMaravatio extends HTMLElement {
 
 			<section class="route-info">
 				<div class="container route-info__container">
-					<h2 class="section-title">Trayecto destacado Maravatío → Ciudad de México (Poniente)</h2>
+					<h2 class="section-title">Featured Route Maravatío → Mexico City (Poniente)</h2>
 					<div class="route-info__card">
 						<div class="route-info__timeline">
 							<div class="route-info__line"></div>
@@ -114,7 +114,7 @@ class PageMaravatio extends HTMLElement {
 								</div>
 
 								<div class="route-info__stop">
-									<span class="route-info__stop-name">Ciudad de México Central Poniente</span>
+									<span class="route-info__stop-name">Mexico City Central Poniente</span>
 									<div class="route-info__stop-icon">
 										<span class="icon-place material-symbols-outlined"></span>
 									</div>
@@ -124,16 +124,16 @@ class PageMaravatio extends HTMLElement {
 
 						<div class="route-info__details-grid">
 							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">~3 horas aprox.</p>
+								<p class="detail-item__label">Duration</p>
+								<p class="detail-item__value">~3 hours approx.</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diarias (varias salidas)</p>
+								<p class="detail-item__label">Frequency</p>
+								<p class="detail-item__value">Daily (several departures)</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Servicio ejecutivo</p>
+								<p class="detail-item__label">Bus type</p>
+								<p class="detail-item__value">Executive service</p>
 							</div>
 						</div>
 					</div>
@@ -142,7 +142,7 @@ class PageMaravatio extends HTMLElement {
 
 			<section class="route-info">
 				<div class="container route-info__container">
-					<h2 class="section-title">Trayecto destacado Maravatío → Guadalajara</h2>
+					<h2 class="section-title">Featured Route Maravatío → Guadalajara</h2>
 					<div class="route-info__card">
 						<div class="route-info__timeline">
 							<div class="route-info__line"></div>
@@ -165,16 +165,16 @@ class PageMaravatio extends HTMLElement {
 
 						<div class="route-info__details-grid">
 							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">~4 h 30 min aprox.</p>
+								<p class="detail-item__label">Duration</p>
+								<p class="detail-item__value">~4 h 30 min approx.</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Salidas regulares</p>
+								<p class="detail-item__label">Frequency</p>
+								<p class="detail-item__value">Regular departures</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Servicio ejecutivo / Primera</p>
+								<p class="detail-item__label">Bus type</p>
+								<p class="detail-item__value">Executive service / First</p>
 							</div>
 						</div>
 					</div>
@@ -184,7 +184,7 @@ class PageMaravatio extends HTMLElement {
 			<!-- Lugares -->
 			<section class="attractions">
 				<div class="container">
-					<h2 class="section-title">Descubre en Maravatío y sus alrededores</h2>
+					<h2 class="section-title">Discover in Maravatío and its surroundings</h2>
 					<div class="attractions__grid">
 
 						<div class="attraction-card">
@@ -192,7 +192,7 @@ class PageMaravatio extends HTMLElement {
 								style='background-image:url("../../../src/assets/img/destinos-img/maravatio/lugares/centro-historico.webp")'>
 							</div>
 							<div class="attraction-card__content">
-								<h3 class="attraction-card__title">Centro Histórico de Maravatío</h3>
+								<h3 class="attraction-card__title">Historic Center of Maravatío</h3>
 							</div>
 						</div>
 
@@ -201,7 +201,7 @@ class PageMaravatio extends HTMLElement {
 								style='background-image:url("../../../src/assets/img/destinos-img/maravatio/lugares/santuario-mariposa.webp")'>
 							</div>
 							<div class="attraction-card__content">
-								<h3 class="attraction-card__title">Santuario de la Mariposa Monarca (cercano)</h3>
+								<h3 class="attraction-card__title">Monarch Butterfly Sanctuary (nearby)</h3>
 							</div>
 						</div>
 
@@ -210,7 +210,7 @@ class PageMaravatio extends HTMLElement {
 								style='background-image:url("../../../src/assets/img/destinos-img/maravatio/lugares/laguna.webp")'>
 							</div>
 							<div class="attraction-card__content">
-								<h3 class="attraction-card__title">Laguna / Paraje Natural</h3>
+								<h3 class="attraction-card__title">Lagoon / Natural Spot</h3>
 							</div>
 						</div>
 
@@ -221,22 +221,22 @@ class PageMaravatio extends HTMLElement {
 			<!-- FAQ -->
 			<section class="faq">
 				<div class="container faq__container">
-					<h2 class="section-title">Preguntas frecuentes</h2>
+					<h2 class="section-title">Frequently asked questions</h2>
 					<div class="faq__list">
 
 						<details class="faq-item">
-							<summary class="faq-item__summary"><span class="faq-item__question">¿Desde dónde salen los autobuses en Maravatío?</span> <span class="faq-item__icon"><span class="icon-arrow-down material-symbols-outlined"></span></span></summary>
-							<p class="faq-item__answer">Las salidas se realizan desde la Central de Autobuses de Maravatío, con varias corridas al día.</p>
+							<summary class="faq-item__summary"><span class="faq-item__question">From where do the buses depart in Maravatío?</span> <span class="faq-item__icon"><span class="icon-arrow-down material-symbols-outlined"></span></span></summary>
+							<p class="faq-item__answer">Departures are from the Maravatío Bus Terminal, with several runs a day.</p>
 						</details>
 
 						<details class="faq-item">
-							<summary class="faq-item__summary"><span class="faq-item__question">¿Cuánto dura el viaje a Ciudad de México?</span> <span class="faq-item__icon"><span class="icon-arrow-down material-symbols-outlined"></span></span></summary>
-							<p class="faq-item__answer">El viaje dura aproximadamente 3 horas, dependiendo de tráfico y paradas intermedias.*</p>
+							<summary class="faq-item__summary"><span class="faq-item__question">How long is the trip to Mexico City?</span> <span class="faq-item__icon"><span class="icon-arrow-down material-symbols-outlined"></span></span></summary>
+							<p class="faq-item__answer">The trip takes approximately 3 hours, depending on traffic and intermediate stops.*</p>
 						</details>
 
 						<details class="faq-item">
-							<summary class="faq-item__summary"><span class="faq-item__question">¿Puedo comprar mis boletos en línea?</span> <span class="faq-item__icon"><span class="icon-arrow-down material-symbols-outlined"></span></span></summary>
-							<p class="faq-item__answer">Sí, puedes comprar tus boletos en línea desde el buscador de Autovías o en taquilla.</p>
+							<summary class="faq-item__summary"><span class="faq-item__question">Can I buy my tickets online?</span> <span class="faq-item__icon"><span class="icon-arrow-down material-symbols-outlined"></span></span></summary>
+							<p class="faq-item__answer">Yes, you can buy your tickets online from the Autovías search engine or at the ticket office.</p>
 						</details>
 
 					</div>
@@ -245,9 +245,9 @@ class PageMaravatio extends HTMLElement {
 
 			<section class="cta">
 				<div class="container">
-					<h2 class="cta__title">¡Viaja desde Maravatío!</h2>
-					<p class="cta__subtitle">Cotiza tu viaje y elige los horarios y servicios que mejor se adapten a tus planes.</p>
-					<a href="../destinos/autobus-a-maravatio.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">Ver más sobre el destino</a>
+					<h2 class="cta__title">Travel from Maravatío!</h2>
+					<p class="cta__subtitle">Quote your trip and choose the schedules and services that best suit your plans.</p>
+					<a href="../destinos/autobus-a-maravatio.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">See more about the destination</a>
 				</div>
 			</section>
 

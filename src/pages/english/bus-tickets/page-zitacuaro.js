@@ -29,8 +29,8 @@ class PageZitacuaro extends HTMLElement {
       "image":"../../../src/assets/img/img-landing/zitacuaro.webp",
       "mediumImage":"../../../src/assets/img/img-landing/zitacuaro.webp",
       "smallImage":"../../../src/assets/img/img-landing/zitacuaro.webp",
-      "captionTitle":"Viaja a Zitacuaro: Descubre la magia de este destino",
-      "captionText":"Viaja con Autovías La Línea y vive la mejor experiencia. Tu aventura comienza aquí.",
+      "captionTitle":"Travel to Zitacuaro: Discover the magic of this destination",
+      "captionText":"Travel with Autovías La Línea and live the best experience. Your adventure starts here.",
       "captionAlign":"left",
       "captionTheme":"dark"
     }
@@ -42,9 +42,9 @@ class PageZitacuaro extends HTMLElement {
 			<!-- HERO -->
 			<section class="hero">
 				<div class="hero__content">
-					<h1 class="hero__title">Autobús de Zitácuaro</h1>
+					<h1 class="hero__title">Bus from Zitácuaro</h1>
 					<p class="hero__subtitle">
-						Viaja desde Zitácuaro en autobús con comodidad, seguridad y múltiples horarios diarios.
+						Travel from Zitácuaro by bus with comfort, safety, and multiple daily schedules.
 					</p>
 				</div>
 			</section>
@@ -52,16 +52,16 @@ class PageZitacuaro extends HTMLElement {
 			<!-- FEATURES -->
 			<section class="features">
 				<div class="container">
-					<h2 class="section-title">¿Por qué viajar en autobús desde Zitácuaro?</h2>
+					<h2 class="section-title">Why travel by bus from Zitácuaro?</h2>
 					<div class="features__grid">
 
 						<div class="feature-card">
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-armchair material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Comodidad</h3>
+							<h3 class="feature-card__title">Comfort</h3>
 							<p class="feature-card__description">
-								Autobuses modernos con asientos reclinables y mayor espacio para un viaje confortable.
+								Modern buses with reclining seats and more space for a comfortable trip.
 							</p>
 						</div>
 
@@ -69,9 +69,9 @@ class PageZitacuaro extends HTMLElement {
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-pig material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Ahorro</h3>
+							<h3 class="feature-card__title">Savings</h3>
 							<p class="feature-card__description">
-								Compra en línea y aprovecha tarifas preferenciales, descuentos y promociones especiales.
+								Buy online and take advantage of preferential rates, discounts, and special promotions.
 							</p>
 						</div>
 
@@ -79,9 +79,9 @@ class PageZitacuaro extends HTMLElement {
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-travel-security material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Viaje seguro</h3>
+							<h3 class="feature-card__title">Safe trip</h3>
 							<p class="feature-card__description">
-								Conductores certificados y unidades monitoreadas durante todo el trayecto.
+								Certified drivers and monitored units throughout the journey.
 							</p>
 						</div>
 
@@ -89,9 +89,9 @@ class PageZitacuaro extends HTMLElement {
 							<div class="feature-card__icon-wrapper">
 								<span class="icon-montain material-symbols-outlined"></span>
 							</div>
-							<h3 class="feature-card__title">Conecta destinos</h3>
+							<h3 class="feature-card__title">Connect destinations</h3>
 							<p class="feature-card__description">
-								Salidas hacia distintos puntos del país desde la terminal de Zitácuaro.
+								Departures to different parts of the country from the Zitácuaro terminal.
 							</p>
 						</div>
 
@@ -103,7 +103,7 @@ class PageZitacuaro extends HTMLElement {
 			<section class="route-info">
 				<div class="container route-info__container">
 					<h2 class="section-title">
-						Trayecto destacado Zitácuaro → Ciudad de México Central Poniente
+						Featured Route Zitácuaro → Mexico City Central Poniente
 					</h2>
 
 					<div class="route-info__card">
@@ -128,16 +128,16 @@ class PageZitacuaro extends HTMLElement {
 
 						<div class="route-info__details-grid">
 							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">4 h 30 min aprox.</p>
+								<p class="detail-item__label">Duration</p>
+								<p class="detail-item__value">4 h 30 min approx.</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diaria</p>
+								<p class="detail-item__label">Frequency</p>
+								<p class="detail-item__value">Daily</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Servicio ejecutivo</p>
+								<p class="detail-item__label">Bus type</p>
+								<p class="detail-item__value">Executive service</p>
 							</div>
 						</div>
 					</div>
@@ -148,7 +148,7 @@ class PageZitacuaro extends HTMLElement {
 			<section class="route-info">
 				<div class="container route-info__container">
 					<h2 class="section-title">
-						Trayecto destacado Zitácuaro → Ciudad de México Central Norte
+						Featured Route Zitácuaro → Mexico City Central Norte
 					</h2>
 
 					<div class="route-info__card">
@@ -173,16 +173,16 @@ class PageZitacuaro extends HTMLElement {
 
 						<div class="route-info__details-grid">
 							<div class="detail-item">
-								<p class="detail-item__label">Duración</p>
-								<p class="detail-item__value">5 horas aprox.</p>
+								<p class="detail-item__label">Duration</p>
+								<p class="detail-item__value">5 hours approx.</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Frecuencia</p>
-								<p class="detail-item__value">Diaria</p>
+								<p class="detail-item__label">Frequency</p>
+								<p class="detail-item__value">Daily</p>
 							</div>
 							<div class="detail-item">
-								<p class="detail-item__label">Tipo de autobús</p>
-								<p class="detail-item__value">Servicio ejecutivo</p>
+								<p class="detail-item__label">Bus type</p>
+								<p class="detail-item__value">Executive service</p>
 							</div>
 						</div>
 					</div>
@@ -192,7 +192,7 @@ class PageZitacuaro extends HTMLElement {
 			<!-- ATTRACTIONS -->
 			<section class="attractions">
 				<div class="container">
-					<h2 class="section-title">Descubre en Zitácuaro</h2>
+					<h2 class="section-title">Discover in Zitácuaro</h2>
 
 					<div class="attractions__grid">
 
@@ -210,7 +210,7 @@ class PageZitacuaro extends HTMLElement {
 								style='background-image:url("../../../src/assets/img/destinos-img/zitacuaro/lugares/santuario-mariposa.webp")'>
 							</div>
 							<div class="attraction-card__content">
-								<h3 class="attraction-card__title">Santuario de la Mariposa Monarca</h3>
+								<h3 class="attraction-card__title">Monarch Butterfly Sanctuary</h3>
 							</div>
 						</div>
 
@@ -219,7 +219,7 @@ class PageZitacuaro extends HTMLElement {
 								style='background-image:url("../../../src/assets/img/destinos-img/zitacuaro/lugares/centro-historico.webp")'>
 							</div>
 							<div class="attraction-card__content">
-								<h3 class="attraction-card__title">Centro Histórico</h3>
+								<h3 class="attraction-card__title">Historic Center</h3>
 							</div>
 						</div>
 
@@ -230,49 +230,49 @@ class PageZitacuaro extends HTMLElement {
 			<!-- FAQ -->
 			<section class="faq">
 			<div class="container faq__container">
-				<h2 class="section-title">Preguntas frecuentes</h2>
+				<h2 class="section-title">Frequently asked questions</h2>
 
 				<div class="faq__list">
 
 				<details class="faq-item">
 					<summary class="faq-item__summary">
 					<span class="faq-item__question">
-						¿Desde dónde salen los autobuses en Zitácuaro?
+						From where do the buses depart in Zitácuaro?
 					</span>
 					<span class="faq-item__icon">
 						<span class="icon-arrow-down material-symbols-outlined"></span>
 					</span>
 					</summary>
 					<p class="faq-item__answer">
-					Las salidas se realizan desde la Central de Autobuses de Zitácuaro.
+					Departures are from the Zitácuaro Bus Terminal.
 					</p>
 				</details>
 
 				<details class="faq-item">
 					<summary class="faq-item__summary">
 					<span class="faq-item__question">
-						¿Hay corridas todos los días?
+						Are there runs every day?
 					</span>
 					<span class="faq-item__icon">
 						<span class="icon-arrow-down material-symbols-outlined"></span>
 					</span>
 					</summary>
 					<p class="faq-item__answer">
-					Sí, existen corridas diarias con distintos horarios dependiendo del destino.
+					Yes, there are daily runs with different schedules depending on the destination.
 					</p>
 				</details>
 
 				<details class="faq-item">
 					<summary class="faq-item__summary">
 					<span class="faq-item__question">
-						¿Puedo comprar mis boletos en línea?
+						Can I buy my tickets online?
 					</span>
 					<span class="faq-item__icon">
 						<span class="icon-arrow-down material-symbols-outlined"></span>
 					</span>
 					</summary>
 					<p class="faq-item__answer">
-					Sí, puedes comprar tus boletos en línea de forma segura y elegir el horario que más te convenga.
+					Yes, you can buy your tickets online safely and choose the schedule that best suits you.
 					</p>
 				</details>
 
@@ -283,8 +283,8 @@ class PageZitacuaro extends HTMLElement {
 
 			<section class="cta">
 				<div class="container">
-					<h2 class="cta__title">¡Viaja a Zitacuaro con Autovías!</h2>
-					<p class="cta__subtitle">Prepara tus maletas y descubre todo lo que esta maravillosa ciudad tiene para ofrecer. Tu aventura está a solo un clic.</p> <a href="../destinos/autobus-a-zitacuaro.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
+					<h2 class="cta__title">Travel to Zitacuaro with Autovías!</h2>
+					<p class="cta__subtitle">Pack your bags and discover everything this wonderful city has to offer. Your adventure is just a click away.</p> <a href="../destinos/autobus-a-zitacuaro.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Go to see more about the destination" tabindex="0">See more about the destination</a>
 				</div>
 			</section>
 
