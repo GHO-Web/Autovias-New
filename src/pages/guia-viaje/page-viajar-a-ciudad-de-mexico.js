@@ -1,4 +1,9 @@
-/*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../components/app-header.js?v=1.0.1";
+import "../components/app-footer.js?v=1.0.0";
+
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
@@ -8,12 +13,11 @@ import "../../components/app-card-destination-opacity.js";
 import "../../components/app-slider-opacity.js";
 import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
-import "../../js/slick.js?v=1.0.0";
 
 class PageViajarACiudadDeMexico extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-     <app-cotiza></app-cotiza>
+      <app-cotiza></app-cotiza>
 
 
 <!-- Components for page -->
@@ -202,5 +206,5 @@ class PageViajarACiudadDeMexico extends HTMLElement {
 }
 customElements.define(
 	"page-viajar-a-ciudad-de-mexico",
-	PageViajarACiudadDeMexico
+	PageViajarACiudadDeMexico,
 );

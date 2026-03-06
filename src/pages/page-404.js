@@ -1,8 +1,15 @@
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../components/app-header.js?v=1.0.1";
+import "../components/app-footer.js?v=1.0.0";
+
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+
 class Page404 extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-modal-travelpass></app-modal-travelpass>
-            <app-modal-doters></app-modal-doters>
+            <app-cotiza></app-cotiza>
+
             <section class="page-404-section">
                 <div class="container">
                     <h1 class="title-404">404</h1>
@@ -13,9 +20,6 @@ class Page404 extends HTMLElement {
                     <a href="/" class="button-primary">Volver al Inicio</a>
                 </div>
             </section>
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
         `;
 	}
 }

@@ -1,9 +1,14 @@
+/*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
+
+import "../../../components/english/app-header.js?v=1.0.1";
+import "../../../components/english/app-footer.js?v=1.0.0";
+
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+
 import "../../../components/app-cotiza.js";
 import "../../../components/app-banner-slider.js";
 import "../../../components/app-payments.js";
 import "../../../components/app-section-title.js";
-import "../../../js/slick.js?v=1.0.0";
 
 class PageQuienesSomosEnglish extends HTMLElement {
 	connectedCallback() {

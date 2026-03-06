@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-MX">
 	<head>
 		<meta charset="UTF-8" />
@@ -53,7 +53,7 @@
 				"url": "https://autovias.com.mx/",
 				"potentialAction": {
 					"@type": "SearchAction",
-					"target": "https://autovias.com.mx/destinos/autobus-a-{search_term_string}.html",
+					"target": "https://autovias.com.mx/promociones/{search_term_string}.html",
 					"query-input": "required name=search_term_string"
 				}
 			}
@@ -140,8 +140,17 @@
 		/>
 		<!-- End Open Graph -->
 
-		<script src="../src/js/jquery.min.js?v=1.2.0"></script>
-		<script type="module" src="../app.js?v=1.0.0"></script>
+		<!-- Scripts -->
+
+		<!-- Components for page -->
+		<script
+			type="module"
+			src="../src/pages/promociones/page-ofertas-en-1-click.js?v=1.0.0"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- js -->
+		<script src="../src/js/jquery.min.js?v=1.0.1"></script>
 		<!-- Stylesheets -->
 
 		<!-- CSS All Components -->

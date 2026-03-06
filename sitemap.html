@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-MX">
 	<head>
 		<meta charset="UTF-8" />
@@ -140,8 +140,17 @@
 		/>
 
 		<!-- Scripts -->
-		<script src="./src/js/jquery.min.js?v=1.0.0"></script>
-		<script type="module" src="./app.js?v=1.0.0"></script>
+
+		<!-- Components for page -->
+		<script
+			type="module"
+			src="../src/pages/page-site-map.js?v=1.0.0"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- js -->
+		<script src="../src/js/jquery.min.js?v=1.0.1"></script>
+
 		<!-- Stylesheets -->
 
 		<!-- CSS All Components -->
@@ -172,9 +181,6 @@
 			<page-site-map></page-site-map>
 		</main>
 		<app-footer></app-footer>
-		<app-cookies-policy></app-cookies-policy>
-		<app-button-whats></app-button-whats>
-		<app-button-eva-trip></app-button-eva-trip>
 		<!-- JS widget de reservamos -->
 		<script src="https://widgets.reservamos.mx/search/5.23.6/search.js?v=5.18.0"></script>
 	</body>

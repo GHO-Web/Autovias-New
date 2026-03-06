@@ -1,4 +1,8 @@
-/*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
+/*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
+import "../../components/english/app-header.js?v=1.0.2";
+import "../../components/english/app-footer.js?v=1.0.2";
+
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/app-section-title.js";
 
@@ -35,12 +39,12 @@ class PageSiteMapEnglish extends HTMLElement {
 						.map(
 							(landing) => `
             <li><a href="${landing.url}">${landing.nombre}</a></li>
-          `
+          `,
 						)
 						.join("")}
         </ul>
       </div>
-    `
+    `,
 				)
 				.join("");
 

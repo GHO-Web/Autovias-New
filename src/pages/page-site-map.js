@@ -1,4 +1,9 @@
-/*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../components/app-header.js?v=1.0.1";
+import "../components/app-footer.js?v=1.0.0";
+
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../components/app-cotiza.js";
 import "../components/app-section-title.js";
 
@@ -6,16 +11,12 @@ class PageSiteMap extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
-      <app-modal-travelpass-english></app-modal-travelpass-english>
-      <app-modal-doters-english></app-modal-doters-english>
       <div class="space"></div>
       <section class="__section">
         <app-section-title section-title="Site Map | Autovías La Línea"></app-section-title>
         <div id="site-map-listas">Cargando...</div>
       </section>
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+			
     `;
 
 		// Cargar el JSON externo
@@ -35,12 +36,12 @@ class PageSiteMap extends HTMLElement {
 						.map(
 							(landing) => `
             <li><a href="${landing.url}">${landing.nombre}</a></li>
-          `
+          `,
 						)
 						.join("")}
         </ul>
       </div>
-    `
+    `,
 				)
 				.join("");
 

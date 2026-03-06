@@ -1,17 +1,19 @@
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../../components/app-header.js?v=1.0.1";
+import "../../components/app-footer.js?v=1.0.0";
+
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-cards-text-image.js";
-import "../../js/slick.js?v=1.0.0";
 
 class PageSalasDeEsperaVip extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-			<app-cotiza></app-cotiza>
-			<app-modal-travelpass></app-modal-travelpass>
-			<app-modal-doters></app-modal-doters>
+      <app-cotiza></app-cotiza>
 
 			<app-banner-slider
 							slides-data='[
@@ -56,7 +58,7 @@ class PageSalasDeEsperaVip extends HTMLElement {
 			"../src/data/cards-text-image.json",
 			"#services-cards-container",
 			"app-cards-text-image",
-			textImageMapper
+			textImageMapper,
 		);
 	}
 
@@ -64,7 +66,7 @@ class PageSalasDeEsperaVip extends HTMLElement {
 		jsonPath,
 		containerSelector,
 		componentTag,
-		dataToAttributesMapper
+		dataToAttributesMapper,
 	) {
 		const container = this.querySelector(containerSelector);
 		if (!container) {
@@ -77,14 +79,14 @@ class PageSalasDeEsperaVip extends HTMLElement {
 			const response = await fetch(jsonPath);
 			if (!response.ok) {
 				throw new Error(
-					`Error HTTP! status: ${response.status} al cargar ${jsonPath}`
+					`Error HTTP! status: ${response.status} al cargar ${jsonPath}`,
 				);
 			}
 			const itemsData = await response.json();
 
 			if (!itemsData || !Array.isArray(itemsData) || itemsData.length === 0) {
 				console.warn(
-					`No hay datos en ${jsonPath}, están vacíos o el formato es incorrecto.`
+					`No hay datos en ${jsonPath}, están vacíos o el formato es incorrecto.`,
 				);
 				container.innerHTML = "<p>No hay datos disponibles para mostrar.</p>";
 				return;
@@ -98,7 +100,7 @@ class PageSalasDeEsperaVip extends HTMLElement {
 		} catch (error) {
 			console.error(
 				`Error al cargar o renderizar desde ${jsonPath} en ${containerSelector}:`,
-				error
+				error,
 			);
 			if (container) {
 				container.innerHTML = `<p>Error al cargar la información desde ${jsonPath}.</p>`;

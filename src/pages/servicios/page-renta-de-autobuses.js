@@ -1,3 +1,8 @@
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../../components/app-header.js?v=1.0.1";
+import "../../components/app-footer.js?v=1.0.0";
+
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
@@ -8,26 +13,14 @@ import "../../components/app-section-title.js";
 import "../../components/app-card-image.js";
 import "../../components/app-hover-card.js";
 import "../../components/app-forms.js";
-import "../../js/slick.js?v=1.0.0";
 
 class PageRentaDeAutobuses extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
+      <app-cotiza></app-cotiza>
     
-            <app-banner-slider
-                    slides-data='[
-                    {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
-                    {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
-                    {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
-                    ]'
-            >
-            </app-banner-slider>
+            <div class="__panthom_space"></div>
 
-
-            <app-payments></app-payments>
 
 
             <section class="__section__renta-autobuses">
@@ -116,15 +109,15 @@ class PageRentaDeAutobuses extends HTMLElement {
 	async loadAndRenderHoverCards() {
 		// Select both containers
 		const hoverCardContainer24Seats = this.querySelector(
-			".hover-cards-24-seats"
+			".hover-cards-24-seats",
 		);
 		const hoverCardContainer44Seats = this.querySelector(
-			".hover-cards-44-seats"
+			".hover-cards-44-seats",
 		);
 
 		if (!hoverCardContainer24Seats || !hoverCardContainer44Seats) {
 			console.error(
-				"Uno o ambos contenedores '.hover-cards-24-seats' o '.hover-cards-44-seats' para app-hover-card no fueron encontrados."
+				"Uno o ambos contenedores '.hover-cards-24-seats' o '.hover-cards-44-seats' para app-hover-card no fueron encontrados.",
 			);
 			if (hoverCardContainer24Seats)
 				hoverCardContainer24Seats.innerHTML =
@@ -138,14 +131,14 @@ class PageRentaDeAutobuses extends HTMLElement {
 			const response = await fetch("../src/data/card-hover-sits.json");
 			if (!response.ok) {
 				throw new Error(
-					`HTTP error! status: ${response.status} al cargar hover-cards-data.json`
+					`HTTP error! status: ${response.status} al cargar hover-cards-data.json`,
 				);
 			}
 			const cardsData = await response.json();
 
 			if (!cardsData || !Array.isArray(cardsData)) {
 				throw new Error(
-					"Formato de datos incorrecto o vacío para hover-cards-data.json"
+					"Formato de datos incorrecto o vacío para hover-cards-data.json",
 				);
 			}
 
@@ -179,7 +172,7 @@ class PageRentaDeAutobuses extends HTMLElement {
 		const imageCardContainer = this.querySelector(".__grid-cards-container");
 		if (!imageCardContainer) {
 			console.error(
-				"El contenedor '.__grid-cards-container' para app-card-image no fue encontrado."
+				"El contenedor '.__grid-cards-container' para app-card-image no fue encontrado.",
 			);
 			return;
 		}
@@ -188,14 +181,14 @@ class PageRentaDeAutobuses extends HTMLElement {
 			const response = await fetch("../src/data/card-image-rent.json");
 			if (!response.ok) {
 				throw new Error(
-					`HTTP error! status: ${response.status} al cargar card-image-rent.json`
+					`HTTP error! status: ${response.status} al cargar card-image-rent.json`,
 				);
 			}
 			const cardsData = await response.json();
 
 			if (!cardsData || !Array.isArray(cardsData)) {
 				throw new Error(
-					"Formato de datos incorrecto o vacío para card-image-rent.json"
+					"Formato de datos incorrecto o vacío para card-image-rent.json",
 				);
 			}
 
@@ -223,7 +216,7 @@ class PageRentaDeAutobuses extends HTMLElement {
 	async loadAndRenderCards() {
 		try {
 			const responseIconsCards = await fetch(
-				"../src/data/cards-icons-data.json"
+				"../src/data/cards-icons-data.json",
 			); // Ruta ajustada
 			if (!responseIconsCards.ok) {
 				throw new Error(`HTTP error! status: ${responseIconsCards.status}`);
@@ -253,7 +246,7 @@ class PageRentaDeAutobuses extends HTMLElement {
 			cardsIconsData.length === 0 // Corregido: usar cardsIconsData en lugar de cardsData
 		) {
 			console.error(
-				"No se pudieron cargar los datos para las cards o el formato es incorrecto."
+				"No se pudieron cargar los datos para las cards o el formato es incorrecto.",
 			);
 			container.innerHTML =
 				"<p>No hay datos disponibles para mostrar las cards.</p>";
@@ -300,7 +293,7 @@ class PageRentaDeAutobuses extends HTMLElement {
 			cardsWhatsData.length === 0
 		) {
 			console.error(
-				"No se pudieron cargar los datos para las cards o el formato es incorrecto."
+				"No se pudieron cargar los datos para las cards o el formato es incorrecto.",
 			);
 			container.innerHTML =
 				"<p>No hay datos disponibles para mostrar las cards.</p>";
@@ -326,7 +319,7 @@ class PageRentaDeAutobuses extends HTMLElement {
 			const response = await fetch("../src/data/forms-cotiza.json");
 			if (!response.ok) {
 				throw new Error(
-					`Error HTTP: ${response.status} al cargar forms-cotiza.json`
+					`Error HTTP: ${response.status} al cargar forms-cotiza.json`,
 				);
 			}
 			const formData = await response.json();
@@ -335,7 +328,7 @@ class PageRentaDeAutobuses extends HTMLElement {
 				appFormsElement.setFormData(formData);
 			} else {
 				console.error(
-					"El método setFormData no existe en el elemento app-forms. Asegúrate de que el componente app-forms esté definido y cargado correctamente."
+					"El método setFormData no existe en el elemento app-forms. Asegúrate de que el componente app-forms esté definido y cargado correctamente.",
 				);
 
 				appFormsElement.innerHTML =
@@ -344,7 +337,7 @@ class PageRentaDeAutobuses extends HTMLElement {
 		} catch (error) {
 			console.error(
 				"No se pudo cargar o procesar los datos del formulario para app-forms:",
-				error
+				error,
 			);
 			const formContainer = appFormsElement.querySelector(".dynamic-form");
 			if (formContainer) {

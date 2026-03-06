@@ -1,3 +1,8 @@
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../../components/app-header.js?v=1.0.1";
+import "../../components/app-footer.js?v=1.0.0";
+
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
@@ -5,25 +10,13 @@ import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-text.js";
 import "../../components/app-card-text-bg-blue-gray.js";
-import "../../js/slick.js?v=1.0.0";
 
 class PageServiciosABordo extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
+      <app-cotiza></app-cotiza>
     
-            <app-banner-slider
-                    slides-data='[
-                    {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
-                    {"id": "slide2", "title": "Banner 2", "image": "../../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
-                    {"id": "slide3", "title": "Banner 3", "image": "../../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
-                    ]'
-            >
-            </app-banner-slider>
-
-            <app-payments></app-payments>
+            <div class="__panthom_space"></div>
 
             <section class="__section __section__servicio-autobus">
 							<app-section-title section-title="Servicios a bordo: Autobus de doble piso Marco Polo"></app-section-title>
@@ -99,13 +92,13 @@ class PageServiciosABordo extends HTMLElement {
 			"../../src/data/cards-text-image-comodidad.json",
 			"#comodidad-cards-container",
 			"app-cards-text-image",
-			textImageMapper
+			textImageMapper,
 		);
 		this.loadAndRenderComponentList(
 			"../../src/data/cards-text-image-asientos.json",
 			"#asientos-cards-container",
 			"app-cards-text-image",
-			textImageMapper
+			textImageMapper,
 		);
 
 		// Call the specific methods to load cards for each section
@@ -117,17 +110,17 @@ class PageServiciosABordo extends HTMLElement {
 		const cardsContainer = this.querySelector("#scroll-bar-container");
 		if (!cardsContainer) {
 			console.error(
-				'El contenedor con ID "grid-cards-container" no fue encontrado.'
+				'El contenedor con ID "grid-cards-container" no fue encontrado.',
 			);
 			return;
 		}
 		try {
 			const responseCardsText = await fetch(
-				"../src/data/card-text-servicios-abordo-data.json"
+				"../src/data/card-text-servicios-abordo-data.json",
 			);
 			if (!responseCardsText.ok) {
 				throw new Error(
-					`Error HTTP al cargar card-text-data.json: ${responseCardsText.status}`
+					`Error HTTP al cargar card-text-data.json: ${responseCardsText.status}`,
 				);
 			}
 			const cardsTextData = await responseCardsText.json();
@@ -136,7 +129,7 @@ class PageServiciosABordo extends HTMLElement {
 		} catch (error) {
 			console.error(
 				"Error al cargar o renderizar los datos de tarjetas:",
-				error
+				error,
 			);
 			cardsContainer.innerHTML =
 				"<p>Error al cargar la información de las tarjetas.</p>";
@@ -146,7 +139,7 @@ class PageServiciosABordo extends HTMLElement {
 	renderCardsText(cardsTextData, targetContainer) {
 		if (!targetContainer) {
 			console.error(
-				"Error en renderCardsText: El contenedor de destino no es válido o no fue proporcionado."
+				"Error en renderCardsText: El contenedor de destino no es válido o no fue proporcionado.",
 			);
 			return;
 		}
@@ -156,7 +149,7 @@ class PageServiciosABordo extends HTMLElement {
 			cardsTextData.length === 0
 		) {
 			console.error(
-				"No se pudieron cargar los datos para las cards, están vacíos o el formato es incorrecto."
+				"No se pudieron cargar los datos para las cards, están vacíos o el formato es incorrecto.",
 			);
 			targetContainer.innerHTML =
 				"<p>No hay datos disponibles para mostrar las cards.</p>";
@@ -184,7 +177,7 @@ class PageServiciosABordo extends HTMLElement {
 		jsonPath,
 		containerSelector,
 		componentTag,
-		dataToAttributesMapper
+		dataToAttributesMapper,
 	) {
 		const container = this.querySelector(containerSelector);
 		if (!container) {
@@ -197,14 +190,14 @@ class PageServiciosABordo extends HTMLElement {
 			const response = await fetch(jsonPath);
 			if (!response.ok) {
 				throw new Error(
-					`Error HTTP! status: ${response.status} al cargar ${jsonPath}`
+					`Error HTTP! status: ${response.status} al cargar ${jsonPath}`,
 				);
 			}
 			const itemsData = await response.json();
 
 			if (!itemsData || !Array.isArray(itemsData) || itemsData.length === 0) {
 				console.warn(
-					`No hay datos en ${jsonPath}, están vacíos o el formato es incorrecto.`
+					`No hay datos en ${jsonPath}, están vacíos o el formato es incorrecto.`,
 				);
 				container.innerHTML = "<p>No hay datos disponibles para mostrar.</p>";
 				return;
@@ -218,7 +211,7 @@ class PageServiciosABordo extends HTMLElement {
 		} catch (error) {
 			console.error(
 				`Error al cargar o renderizar desde ${jsonPath} en ${containerSelector}:`,
-				error
+				error,
 			);
 			if (container) {
 				container.innerHTML = `<p>Error al cargar la información desde ${jsonPath}.</p>`;
@@ -231,7 +224,7 @@ class PageServiciosABordo extends HTMLElement {
 			// Construye la URL al archivo JSON de forma robusta usando import.meta.url
 			const jsonFileUrl = new URL(
 				"../../data/card-servicios-disponibles-data.json",
-				import.meta.url
+				import.meta.url,
 			);
 			const response = await fetch(jsonFileUrl);
 			if (!response.ok) {
@@ -243,7 +236,7 @@ class PageServiciosABordo extends HTMLElement {
 			if (container) {
 				cardsData.forEach((cardInfo) => {
 					const cardElement = document.createElement(
-						"app-card-text-bg-blue-gray"
+						"app-card-text-bg-blue-gray",
 					);
 					cardElement.setAttribute("card-title", cardInfo.title);
 					cardElement.setAttribute("card-description", cardInfo.description);
@@ -255,7 +248,7 @@ class PageServiciosABordo extends HTMLElement {
 		} catch (error) {
 			console.error(
 				"Error al cargar los datos de las tarjetas de salidas charters:",
-				error
+				error,
 			);
 		}
 	}
@@ -264,7 +257,7 @@ class PageServiciosABordo extends HTMLElement {
 			// Construye la URL al archivo JSON de forma robusta usando import.meta.url
 			const jsonFileUrl = new URL(
 				"../../data/card-tech-data.json",
-				import.meta.url
+				import.meta.url,
 			);
 			const response = await fetch(jsonFileUrl);
 			if (!response.ok) {
@@ -276,7 +269,7 @@ class PageServiciosABordo extends HTMLElement {
 			if (container) {
 				cardsData.forEach((cardInfo) => {
 					const cardElement = document.createElement(
-						"app-card-text-bg-blue-gray"
+						"app-card-text-bg-blue-gray",
 					);
 					cardElement.setAttribute("card-title", cardInfo.title);
 					cardElement.setAttribute("card-description", cardInfo.description);
@@ -288,7 +281,7 @@ class PageServiciosABordo extends HTMLElement {
 		} catch (error) {
 			console.error(
 				"Error al cargar los datos de las tarjetas de salidas charters:",
-				error
+				error,
 			);
 		}
 	}
@@ -297,7 +290,7 @@ class PageServiciosABordo extends HTMLElement {
 			// Construye la URL al archivo JSON de forma robusta usando import.meta.url
 			const jsonFileUrl = new URL(
 				"../../data/card-futuro-autobuses-data.json",
-				import.meta.url
+				import.meta.url,
 			);
 			const response = await fetch(jsonFileUrl);
 			if (!response.ok) {
@@ -309,7 +302,7 @@ class PageServiciosABordo extends HTMLElement {
 			if (container) {
 				cardsData.forEach((cardInfo) => {
 					const cardElement = document.createElement(
-						"app-card-text-bg-blue-gray"
+						"app-card-text-bg-blue-gray",
 					);
 					cardElement.setAttribute("card-title", cardInfo.title);
 					cardElement.setAttribute("card-description", cardInfo.description);
@@ -321,7 +314,7 @@ class PageServiciosABordo extends HTMLElement {
 		} catch (error) {
 			console.error(
 				"Error al cargar los datos de las tarjetas de salidas charters:",
-				error
+				error,
 			);
 		}
 	}

@@ -5,235 +5,139 @@ class AppSliderOpacity extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ["destinations-data"];
+    return ["destinations-src", "destinations-data"];
   }
 
   connectedCallback() {
-    if (!this.querySelector(".MultiCarousel")) {
-      this.innerHTML = `
-         <div class="container">
-              <div class="row">
-                  <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
-                      <div class="MultiCarousel-inner">
-                          <!-- Destination items will be dynamically inserted here -->
-                          <p>Loading slider...</p> 
-                      </div>
-                      <button class="btn btn-primary leftLst"><</button>
-                      <button class="btn btn-primary rightLst">></button>
-                  </div>
-              </div>
-          </div>
-        `;
+    this.innerHTML = `
+      <div class="MultiCarousel">
+        <div class="MultiCarousel-inner"></div>
+        <button class="leftLst">&lt;</button>
+        <button class="rightLst">&gt;</button>
+      </div>
+    `;
+
+    const src = this.getAttribute("destinations-src");
+    if (src) {
+      this._loadDataFromSrc(src);
     }
 
-    // Siempre llama a _updateSliderContent, manejará datos nulos/vacíos.
-    this._updateSliderContent(this.getAttribute("destinations-data"));
+    const data = this.getAttribute("destinations-data");
+    if (data) {
+      this._processData(data);
+    }
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
+    if (name === "destinations-src" && oldValue !== newValue) {
+      this._loadDataFromSrc(newValue);
+    }
     if (name === "destinations-data" && oldValue !== newValue) {
-      this._updateSliderContent(newValue);
+      this._processData(newValue);
     }
   }
 
-  _updateSliderContent(jsonData) {
-    const innerCarousel = this.querySelector(".MultiCarousel-inner");
-    if (!innerCarousel) {
-      console.error(
-        "AppSliderOpacity: MultiCarousel-inner not found during data update."
+  async _processData(jsonData) {
+    try {
+      this._destinations = JSON.parse(jsonData);
+      await this._renderItems();
+      requestAnimationFrame(() =>
+        requestAnimationFrame(() => this._initializeCarousel())
       );
+    } catch (e) {
+      console.error("Error parsing destinations-data:", e);
+      this.querySelector(".MultiCarousel-inner").innerHTML =
+        "<p>Error loading data</p>";
+    }
+  }
+
+  async _loadDataFromSrc(src) {
+    const container = this.querySelector(".MultiCarousel-inner");
+    container.innerHTML = "<p>Loading...</p>";
+
+    try {
+      const res = await fetch(src);
+      this._destinations = await res.json();
+    } catch (e) {
+      console.error("Error loading:", e);
+      container.innerHTML = "<p>Error loading data</p>";
       return;
     }
 
-    let parseError = false;
-    if (!jsonData) {
-      this._destinations = [];
-    } else {
-      try {
-        const parsedData = JSON.parse(jsonData);
-        if (!Array.isArray(parsedData)) {
-          console.error(
-            "AppSliderOpacity: Parsed destinations-data is not an array."
-          );
-          this._destinations = [];
-          parseError = true;
-        } else {
-          this._destinations = parsedData;
-        }
-      } catch (e) {
-        console.error(
-          "AppSliderOpacity: Failed to parse destinations-data attribute:",
-          e
-        );
-        this._destinations = [];
-        parseError = true;
-      }
-    }
-
-    if (parseError) {
-      innerCarousel.innerHTML = "<p>Error loading slider data.</p>";
-    } else {
-      this._renderItems().then(() => {
-        this._initializeCarousel(); // ← AHORA sí se ejecuta cuando las imágenes ya están listas
-      });
-    }
+    await this._renderItems();
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => this._initializeCarousel())
+    );
   }
 
   async _renderItems() {
-    const innerCarousel = this.querySelector(".MultiCarousel-inner");
-    if (!innerCarousel) {
-      console.error(
-        "AppSliderOpacity: MultiCarousel-inner not found for rendering items."
-      );
-      return;
-    }
-    innerCarousel.innerHTML = "";
+    const container = this.querySelector(".MultiCarousel-inner");
+    container.innerHTML = "";
 
-    if (!this._destinations || this._destinations.length === 0) {
-      innerCarousel.innerHTML = "<p>No destinations to display.</p>";
-      return;
-    }
-
-    const imageLoadPromises = [];
-
-    this._destinations.forEach((dest) => {
-      const itemDiv = document.createElement("div");
-      itemDiv.classList.add("item");
-      itemDiv.innerHTML = `
-        <div class="card-destination">
-            <img 
-                src="${dest.imageSrc}" 
-                alt="${dest.imageAlt}" 
-                loading="lazy" 
-                decoding="async"
-                class="fade-in-image"
-            >
+    for (const dest of this._destinations) {
+      const item = document.createElement("div");
+      item.className = "item";
+      item.innerHTML = `
+        <div class="card-wrapper">
+          <div class="card-destination">
+            <img src="${dest.imageSrc}" alt="${dest.imageAlt}">
             <div class="overlay"></div>
             <div class="card-info">
-                <p class="card-text">
-                    <span class="icon-pin-ubicacion"></span>
-                    Destino<br>
-                    ${dest.destinationName}<br>
-                    "${dest.destinationTagline}"
-                </p>
+              <p class="card-text">
+                <span class="icon-pin-ubicacion"></span>${dest.destinationName}<br>
+                "${dest.destinationTagline}"
+              </p>
             </div>
-            <a href="${dest.buttonLink}" class="btn-destination">${dest.buttonText}</a>
+            <a class="btn-destination" href="${dest.buttonLink}">${dest.buttonText}</a>
+          </div>
         </div>
       `;
-
-      const img = itemDiv.querySelector("img");
-      const imgPromise = new Promise((resolve) => {
-        if (img.complete) resolve();
-        else {
-          img.onload = () => resolve();
-          img.onerror = () => resolve();
-        }
-      });
-
-      imageLoadPromises.push(imgPromise);
-      innerCarousel.appendChild(itemDiv);
-    });
-
-    await Promise.all(imageLoadPromises);
+      container.appendChild(item);
+    }
   }
 
   _initializeCarousel() {
-    const $componentRoot = $(this);
-    const $carousel = $componentRoot.find(".MultiCarousel");
-    if (!$carousel.length) {
-      return;
-    }
+    const $root = $(this);
+    const $inner = $root.find(".MultiCarousel-inner");
+    const $items = $inner.find(".item");
 
-    const itemsInnerSel = ".MultiCarousel-inner";
-    const itemSel = ".MultiCarousel-inner .item";
+    if (!$items.length) return;
 
     let currentIndex = 0;
-    let autoplayInterval = null;
-    const $itemsInner = $componentRoot.find(itemsInnerSel);
+    const itemWidth = $items.first().outerWidth(true);
+    const visibleWidth = $root.find(".MultiCarousel").width();
+    const totalItems = $items.length;
 
-    // Asegurar que el contenedor interno tenga los estilos adecuados para el carrusel
-    $itemsInner.css("display", "flex");
-    $itemsInner.css("transition", "transform 0.4s ease-in-out");
+    // Cuántas tarjetas caben completamente
+    const itemsPerView = Math.floor(visibleWidth / itemWidth);
+    const maxIndex = Math.max(0, totalItems - itemsPerView);
 
-    const updateAndGetState = () => {
-      const $items = $componentRoot.find(itemSel);
-      if (!$items.length) {
-        $itemsInner.css("transform", "translateX(0px)");
-        return null;
-      }
-      const totalItems = $items.length;
+    const updateTransform = () => {
+      let moveX = -currentIndex * itemWidth;
 
-      const itemWidth = $items.first().outerWidth(true) || 0;
-      const containerWidth = $carousel.width() || 0;
+      const maxMove = totalItems * itemWidth - visibleWidth;
+      if (-moveX > maxMove) moveX = -maxMove;
 
-      if (itemWidth === 0 && totalItems > 0) {
-        return null;
-      }
-
-      const maxScroll = Math.max(0, itemWidth * totalItems - containerWidth);
-      return { $items, totalItems, itemWidth, containerWidth, maxScroll };
+      $inner.css("transform", `translateX(${moveX}px)`);
     };
 
-    const moveRight = () => {
-      const state = updateAndGetState();
-      if (!state) return;
-
-      const { itemWidth, maxScroll } = state;
-      const currentTranslate = -currentIndex * itemWidth;
-
-      // Comprueba si el carrusel ya está en la posición final o muy cerca.
-      // Se usa una pequeña tolerancia (1px) por si hay decimales en los anchos.
-      if (currentTranslate > -maxScroll + 1) {
-        currentIndex++;
-      } else {
-        currentIndex = 0; // Reiniciar al llegar al final para un bucle infinito
-      }
-
-      let moveX = -itemWidth * currentIndex;
-      // Asegurarse de no pasar del límite al reiniciar
-      if (moveX < -maxScroll) moveX = -maxScroll;
-      if (currentIndex === 0) moveX = 0;
-
-      $itemsInner.css("transform", "translateX(" + moveX + "px)");
-    };
-
-    const startAutoplay = () => {
-      if (autoplayInterval) clearInterval(autoplayInterval); // Limpiar intervalo anterior
-      autoplayInterval = setInterval(moveRight, 3000); // Avanzar cada 5 segundos
-    };
-
-    const stopAutoplay = () => {
-      clearInterval(autoplayInterval);
-    };
-
-    // Iniciar autoplay y manejar pausa/reanudación con el mouse
-    startAutoplay();
-    $carousel.on("mouseenter", stopAutoplay);
-    $carousel.on("mouseleave", startAutoplay);
-
-    $componentRoot
+    $root
       .find(".leftLst, .rightLst")
       .off("click")
       .on("click", function () {
-        const state = updateAndGetState();
-        if (!state) return;
-
-        const { totalItems, itemWidth, containerWidth, maxScroll } = state;
-
         if ($(this).hasClass("leftLst")) {
-          if (currentIndex > 0) {
-            currentIndex--;
-          }
-          let moveX = -itemWidth * currentIndex;
-          if (moveX > 0) moveX = 0;
-          $itemsInner.css("transform", "translateX(" + moveX + "px)");
+          if (currentIndex > 0) currentIndex--;
         } else {
-          moveRight(); // Usar la misma función de autoplay para el clic
+          if (currentIndex < maxIndex) currentIndex++;
         }
-
-        // La lógica de movimiento ya está dentro de moveRight() y del if para 'leftLst',
-        // por lo que el bloque de código que estaba aquí fue eliminado para evitar redundancia.
+        updateTransform();
       });
+
+    // Autoavance cada 3 segundos
+    setInterval(() => {
+      currentIndex = currentIndex < maxIndex ? currentIndex + 1 : 0;
+      updateTransform();
+    }, 3000);
   }
 }
 

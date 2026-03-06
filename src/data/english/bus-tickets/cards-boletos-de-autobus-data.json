@@ -1,0 +1,62 @@
+{
+	"cards": [
+		{
+			"title": "Confirmed Ticket",
+			"mainText": "It is the physical ticket that has a travel date, departure time, and seat number.",
+			"secondaryText": "This type of ticket is issued at:",
+			"items": [
+				"Ticket Booths",
+				"Direct and Affiliated Points of Sale",
+				"Website (Internet and Mobile)",
+				"Home Delivery Service",
+				"Travel Agencies",
+				"OXXO",
+				"Price Travel",
+				"BestDay"
+			]
+		},
+		{
+			"title": "Connection Ticket",
+			"mainText": "You can request your reservation by phone at our Contact Center.",
+			"secondaryText": "This type of ticket is issued at:",
+			"items": [
+				"Contact Center",
+				"Website",
+				"Ticket Booths",
+				"Direct and Affiliated Points of Sale"
+			]
+		},
+		{
+			"title": "Open Ticket",
+			"mainText": "You can request your reservation by phone at our Contact Center.",
+			"secondaryText": "This type of ticket is issued at:",
+			"items": [
+				"Contact Center",
+				"Direct and Affiliated Home Delivery Service Points",
+				"Travel Agencies"
+			]
+		},
+		{
+			"title": "Electronic Confirmed Ticket",
+			"mainText": "It is the non-printed ticket that has a travel date, departure time, and seat number. The printing of this ticket must be requested at the ticket booths one hour before departure, presenting an official ID, Operation number, and NIT.",
+			"secondaryText": "This type of ticket is issued at:",
+			"items": [
+				"Contact Center",
+				"Website (Internet and Mobile)",
+				"Ticket Booths",
+				"Direct and Affiliated Points of Sale"
+			]
+		},
+		{
+			"title": "Electronic Open Ticket",
+			"mainText": "It is the non-printed ticket that only indicates origin and destination; at the time of purchase, you are provided with the Operation number and NIT. It is subject to seat availability and bus discounts. The printing of this ticket must be requested at the ticket booths one hour before departure, presenting an official ID, Operation number, and NIT. You can request your reservation by phone at our Contact Center.",
+			"secondaryText": "This type of ticket is issued at:",
+			"items": [
+				"Contact Center",
+				"Website",
+				"Ticket Booths",
+				"Direct and Affiliated Points of Sale"
+			]
+		}
+	]
+}
