@@ -26,7 +26,7 @@ class AppModalDotersEnglish extends HTMLElement {
         <div id="modalDoters-loginModal" class="modalDoters-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="modalDoters-title">
             <div class="modalDoters-modal-content">
                 <div class="modalHeader">
-                    <img src="https://www.autovias.com.mx/etn-img-web/logos/logo-doters-24-blanc.webp" alt="Doters Logo" title="Doters" loading="lazy">
+                    <img src="../../../../src/assets/img/global/logos/logo-doters-white.webp" alt="Doters Logo" title="Doters" loading="lazy">
                     <button class="modalDoters-close" aria-label="Close modal">×</button>
                 </div>
                 <div class="modalContenido">
@@ -49,7 +49,7 @@ class AppModalDotersEnglish extends HTMLElement {
 		this.closeButtonElement.addEventListener("click", this.close);
 		this.loginButton.addEventListener("click", () => this.redirectToLogin());
 		this.registerButton.addEventListener("click", () =>
-			this.redirectToRegister()
+			this.redirectToRegister(),
 		);
 
 		// The modal is hidden by default. It needs to be opened by an external trigger
@@ -60,8 +60,8 @@ class AppModalDotersEnglish extends HTMLElement {
 		// Find all focusable children
 		this.focusableElements = Array.from(
 			this.modalElement.querySelectorAll(
-				'a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])'
-			)
+				'a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])',
+			),
 		).filter((el) => el.offsetParent !== null); // Ensure elements are visible
 
 		if (this.focusableElements.length === 0) {
@@ -89,7 +89,7 @@ class AppModalDotersEnglish extends HTMLElement {
 
 		document.addEventListener("keydown", this._handleKeyDown);
 		this.dispatchEvent(
-			new CustomEvent("modal-opened", { bubbles: true, composed: true })
+			new CustomEvent("modal-opened", { bubbles: true, composed: true }),
 		);
 	}
 
@@ -102,7 +102,7 @@ class AppModalDotersEnglish extends HTMLElement {
 			this.previouslyFocusedElement.focus(); // Restore focus to the element that opened the modal
 		}
 		this.dispatchEvent(
-			new CustomEvent("modal-closed", { bubbles: true, composed: true })
+			new CustomEvent("modal-closed", { bubbles: true, composed: true }),
 		);
 	}
 

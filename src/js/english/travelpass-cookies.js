@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const loginIconDesktop = document.getElementById("login-icon"); // Botón de escritorio para actualización visual
 	const loginModal = document.getElementById("modalTravelPass");
 	const openLoginModalTriggers = document.querySelectorAll(
-		".js-open-travelpass-login-modal"
+		".js-open-travelpass-login-modal",
 	); // Todos los botones que abren el modal
 	const profileModal = document.getElementById("modalTravelPassLogueado");
 	const loginForm = document.getElementById("login-form");
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Adjunta listeners a todos los triggers
 	function attachLoginModalListeners() {
 		const triggers = document.querySelectorAll(
-			".js-open-travelpass-login-modal"
+			".js-open-travelpass-login-modal",
 		);
 		triggers.forEach((trigger) => {
 			trigger.removeEventListener("click", openLoginModal);
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	function attachProfileModalListeners() {
 		const triggers = document.querySelectorAll(
-			".js-open-travelpass-login-modal"
+			".js-open-travelpass-login-modal",
 		);
 		triggers.forEach((trigger) => {
 			trigger.removeEventListener("click", openProfileModal);
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (loginIconDesktop) {
 			loginIconDesktop.innerHTML = profileData
 				? `<a href="#" class="js-open-travelpass-login-modal"><img src="https://autovias.com.mx/gho-test/gho-img-web/iconos/icono-travel-pass.webp" class="icono-travel" alt="Monedero Eléctronico" title="Perfil Monedero Eléctronico"> Hola, ${profileData.name}</a>`
-				: `<a href="#" class="js-open-travelpass-login-modal"><img src="../../../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="Iniciar sesión en Monedero Eléctronico" title="Ingresa a Monedero Eléctronico" width="100" height="32" style="cursor: pointer;"></a>`;
+				: `<a href="#" class="js-open-travelpass-login-modal"><img src="../../../../src/assets/img/global/logos/logo-monedero-electronico.webp" alt="Iniciar sesión en Monedero Eléctronico" title="Ingresa a Monedero Eléctronico" width="100" height="32" style="cursor: pointer;"></a>`;
 		}
 		// Re-atachea los listeners después de actualizar el DOM
 		checkSessionTriggers();
