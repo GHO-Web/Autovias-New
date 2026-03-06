@@ -1,3 +1,9 @@
+import "../components/app-modal-doters.js";
+import "../components/app-modal-travelpass.js";
+import "../components/app-modal-doters-profile.js";
+
+/*--------------------------- IMPORT SCRIPTS --------------------------*/
+
 class AppHeader extends HTMLElement {
 	connectedCallback() {
 		const logoData = JSON.parse(this.getAttribute("logo"));
@@ -43,7 +49,7 @@ class AppHeader extends HTMLElement {
         </nav>
           
         <button id="login-icon" class="btn-travelpass desktop-travelpass js-open-travelpass-login-modal" aria-label="Iniciar sesión TravelPass">
-			<img src="../../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="Monedero Eléctronico" loading="lazy">
+			<img src="../../src/assets/img/global/logos/logo-monedero-electronico.webp" alt="Monedero Eléctronico" loading="lazy">
 		</button>
 		<button id="openDotersModal" class="btn btn-doters desktop-doters" aria-label="Iniciar sesión Doters">
 			<img src='../../src/assets/img/global/logos/doters.svg' alt="Doters" loading="lazy">
@@ -100,7 +106,7 @@ class AppHeader extends HTMLElement {
                 </li>
                 <li class="li__login">
 					<button id="login-icon" class="btn-travelpass btn-travelpass__submenu js-open-travelpass-login-modal" aria-label="Iniciar sesión TravelPass">
-						<img src="../../../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="Monedero Eléctronico" loading="lazy">
+						<img src="../../../src/assets/img/global/logos/logo-monedero-electronico.webp" alt="Monedero Eléctronico" loading="lazy">
 					</button>
 					<button id="openDotersModalMovil" class="btn-doters" aria-label="Iniciar sesión Doters">
 						<img src="../../src/assets/img/global/logos/doters.svg" alt="Doters" loading="lazy">
@@ -109,6 +115,10 @@ class AppHeader extends HTMLElement {
             </ul>
         </div>
       </header>
+
+			<app-modal-doters></app-modal-doters>
+			<app-modal-travelpass></app-modal-travelpass>
+			<app-modal-doters-profile></app-modal-doters-profile>
     `;
 
 		this.openDesktopSubmenuInstance = null;
@@ -145,7 +155,7 @@ class AppHeader extends HTMLElement {
 					new CustomEvent("mobile-menu-opened", {
 						bubbles: true,
 						composed: true,
-					})
+					}),
 				);
 			} else {
 				hamburgerIcon.innerHTML = originalSvg; // Volver al ícono de hamburguesa
@@ -153,7 +163,7 @@ class AppHeader extends HTMLElement {
 					new CustomEvent("mobile-menu-closed", {
 						bubbles: true,
 						composed: true,
-					})
+					}),
 				);
 			}
 			event.stopPropagation();
@@ -161,7 +171,7 @@ class AppHeader extends HTMLElement {
 
 		// Mobile submenus
 		const mobileSubmenuTriggers = this.querySelectorAll(
-			".submenu__media-queries > a"
+			".submenu__media-queries > a",
 		);
 
 		mobileSubmenuTriggers.forEach((trigger) => {
@@ -276,7 +286,7 @@ class AppHeader extends HTMLElement {
 					this.openDesktopSubmenuInstance.previousElementSibling;
 				this._closeDesktopSubmenu(
 					this.openDesktopSubmenuInstance,
-					prevTrigger && prevTrigger.matches("a") ? prevTrigger : null
+					prevTrigger && prevTrigger.matches("a") ? prevTrigger : null,
 				);
 			}
 			this._openDesktopSubmenu(submenuList, triggerLink);
@@ -333,7 +343,7 @@ class AppHeader extends HTMLElement {
 						this.openDesktopSubmenuInstance.previousElementSibling;
 					this._closeDesktopSubmenu(
 						this.openDesktopSubmenuInstance,
-						prevTrigger && prevTrigger.matches("a") ? prevTrigger : null
+						prevTrigger && prevTrigger.matches("a") ? prevTrigger : null,
 					);
 				}
 				this._openDesktopSubmenu(list, link);
@@ -386,7 +396,7 @@ class AppHeader extends HTMLElement {
 				const trigger = this.openDesktopSubmenuInstance.previousElementSibling;
 				this._closeDesktopSubmenu(
 					this.openDesktopSubmenuInstance,
-					trigger && trigger.matches("a") ? trigger : null
+					trigger && trigger.matches("a") ? trigger : null,
 				);
 				this.openDesktopSubmenuInstance = null;
 			}
@@ -409,7 +419,7 @@ class AppHeader extends HTMLElement {
 				} else {
 					console.error(
 						"El método open() no está disponible en el elemento app-modal-doters.",
-						dotersModalElement
+						dotersModalElement,
 					);
 				}
 			};

@@ -1,3 +1,10 @@
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../../components/app-header.js?v=1.0.1";
+import "../../components/app-footer.js?v=1.0.0";
+
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+
 import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
@@ -5,15 +12,12 @@ import "../../components/app-img-shop-left.js";
 import "../../components/app-img-shop-right.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-image.js";
-import "../../js/slick.js?v=1.0.0";
 
 class PageDondeComprar extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
     
-			<app-cotiza></app-cotiza>
-			<app-modal-travelpass></app-modal-travelpass>
-			<app-modal-doters></app-modal-doters>
+      <app-cotiza></app-cotiza>
 			<div class="__panthom_space"></div>
 
 
@@ -23,9 +27,7 @@ class PageDondeComprar extends HTMLElement {
 					<!-- Las tarjetas de tiendas se cargarán aquí -->
 			</div>
 
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+			
   
 		`;
 		this.loadAndRenderShopCards();
@@ -60,7 +62,7 @@ class PageDondeComprar extends HTMLElement {
 
 		cardsData.forEach((data) => {
 			const cardElement = document.createElement(
-				data.type === "left" ? "app-img-shop-left" : "app-img-shop-right"
+				data.type === "left" ? "app-img-shop-left" : "app-img-shop-right",
 			);
 			cardElement.setAttribute("image-src", data.imageSrc);
 			cardElement.setAttribute("alt-text", data.altText);

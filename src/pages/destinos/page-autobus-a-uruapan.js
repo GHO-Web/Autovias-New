@@ -1,5 +1,9 @@
-/*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
-import "../../components/app-cotiza.js";
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../../components/app-header.js?v=1.0.1";
+import "../../components/app-footer.js?v=1.0.0";
+
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
@@ -9,14 +13,10 @@ import "../../components/app-card-destination-opacity.js";
 import "../../components/app-slider-opacity.js";
 import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
-import "../../js/slick.js?v=1.0.0";
 
 class AppBoletosAutobusUruapan extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-			<app-cotiza></app-cotiza>
-			<app-modal-travelpass></app-modal-travelpass>
-			<app-modal-doters></app-modal-doters>
 			<app-banner-slider
 					slides-data='[
 					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-web.webp","mediumImage": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-tablet.webp", "smallImage": "../src/assets/img/destinos-img/uruapan/banner/uruapan-banner-mobile.webp", "link": "#index.html/banner1"}]'
@@ -74,9 +74,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 
 			
 			
-			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
-			<app-button-eva-trip></app-button-eva-trip>
+			
         `;
 		await this.loadAndRenderGridItems();
 		await this.loadAndRenderFoodCards();
@@ -86,7 +84,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 
 	async loadAndRenderGridItems() {
 		const gridContainer = this.querySelector(
-			"#monterrey-grid-section .grid-container"
+			"#monterrey-grid-section .grid-container",
 		);
 		if (!gridContainer) {
 			console.error("El contenedor del grid no fue encontrado.");
@@ -95,7 +93,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../../src/data/destinos/uruapan/lugares.json"
+				"../../src/data/destinos/uruapan/lugares.json",
 			);
 			if (!response.ok) {
 				throw new Error(`Error HTTP: ${response.status}`);
@@ -130,7 +128,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 		const foodContainer = this.querySelector(".container-cards__food");
 		if (!foodContainer) {
 			console.error(
-				"El contenedor '.container-cards__food' no fue encontrado."
+				"El contenedor '.container-cards__food' no fue encontrado.",
 			);
 			return;
 		}
@@ -138,11 +136,11 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../../src/data/destinos/uruapan/platillos.json"
+				"../../src/data/destinos/uruapan/platillos.json",
 			);
 			if (!response.ok) {
 				throw new Error(
-					`Error HTTP al cargar platillos-morelia.json: ${response.status}`
+					`Error HTTP al cargar platillos-morelia.json: ${response.status}`,
 				);
 			}
 			const foodData = await response.json();
@@ -151,7 +149,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 				foodContainer.innerHTML =
 					"<p>No hay platillos para mostrar en este momento.</p>";
 				console.warn(
-					"No se encontraron datos de platillos en food-monterrey.json"
+					"No se encontraron datos de platillos en food-monterrey.json",
 				);
 				return;
 			}
@@ -161,36 +159,36 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 
 				cardElement.setAttribute(
 					"card-title",
-					foodItem.title || "Título no disponible"
+					foodItem.title || "Título no disponible",
 				);
 				cardElement.setAttribute(
 					"card-modal-description",
-					foodItem.description || "Descripción no disponible"
+					foodItem.description || "Descripción no disponible",
 				);
 				cardElement.setAttribute(
 					"card-image",
-					foodItem.imageSrc || "../../src/assets/img/global/default-card.png"
+					foodItem.imageSrc || "../../src/assets/img/global/default-card.png",
 				);
 				cardElement.setAttribute(
 					"card-modal-image",
 					foodItem.imageModal ||
 						foodItem.imageSrc ||
-						"../../src/assets/img/global/default-modal.png"
+						"../../src/assets/img/global/default-modal.png",
 				);
 				cardElement.setAttribute(
 					"card-alt",
-					foodItem.altText || foodItem.title || "Platillo"
+					foodItem.altText || foodItem.title || "Platillo",
 				);
 				cardElement.setAttribute(
 					"card-link-text",
-					foodItem.linkText || "Ver más..."
+					foodItem.linkText || "Ver más...",
 				);
 				foodContainer.appendChild(cardElement);
 			});
 		} catch (error) {
 			console.error(
 				"Error al cargar o renderizar las tarjetas de comida:",
-				error
+				error,
 			);
 			foodContainer.innerHTML =
 				"<p>Error al cargar la información de los platillos. Intente más tarde.</p>";
@@ -199,7 +197,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 	async loadAndRenderDropdowns() {
 		try {
 			const response = await fetch(
-				"../../src/data/destinos/ixtapa/dropdown-preguntas-frecuentes.json"
+				"../../src/data/destinos/ixtapa/dropdown-preguntas-frecuentes.json",
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -229,7 +227,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 			dropdownElement.setAttribute("title-dropdown", data["title-dropdown"]);
 			dropdownElement.setAttribute(
 				"content-dropdown",
-				data["content-dropdown"]
+				data["content-dropdown"],
 			);
 			container.appendChild(dropdownElement);
 		});
@@ -244,23 +242,23 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../../src/data/destinos/card-opacity-destinations.json"
+				"../../src/data/destinos/card-opacity-destinations.json",
 			);
 			if (!response.ok) {
 				throw new Error(
-					`HTTP error loading destination slider data! status: ${response.status}`
+					`HTTP error loading destination slider data! status: ${response.status}`,
 				);
 			}
 			const destinationsData = await response.json();
 
 			sliderElement.setAttribute(
 				"destinations-data",
-				JSON.stringify(destinationsData)
+				JSON.stringify(destinationsData),
 			);
 		} catch (error) {
 			console.error(
 				"AppMorelia: Error loading or setting data for destination slider:",
-				error
+				error,
 			);
 			sliderElement.innerHTML =
 				'<p style="color: red; text-align: center;">Could not load destination slider.</p>';
@@ -282,25 +280,25 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 		modal.setAttribute("image-1", itemData.backgroundImage || "");
 		modal.setAttribute(
 			"alt-1",
-			`Imagen principal de ${itemData.text || "lugar"}`
+			`Imagen principal de ${itemData.text || "lugar"}`,
 		);
 
 		modal.setAttribute("image-2", itemData.image2 || "");
 		modal.setAttribute(
 			"alt-2",
-			`Imagen adicional 1 de ${itemData.text || "lugar"}`
+			`Imagen adicional 1 de ${itemData.text || "lugar"}`,
 		);
 
 		modal.setAttribute("image-3", itemData.image3 || "");
 		modal.setAttribute(
 			"alt-3",
-			`Imagen adicional 2 de ${itemData.text || "lugar"}`
+			`Imagen adicional 2 de ${itemData.text || "lugar"}`,
 		);
 
 		modal.setAttribute("image-4", itemData.image4 || "");
 		modal.setAttribute(
 			"alt-4",
-			`Imagen adicional 3 de ${itemData.text || "lugar"}`
+			`Imagen adicional 3 de ${itemData.text || "lugar"}`,
 		);
 
 		if (typeof modal.openModal === "function") {
@@ -311,7 +309,7 @@ class AppBoletosAutobusUruapan extends HTMLElement {
 			modal.show();
 		} else {
 			console.warn(
-				'AppMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.'
+				'AppMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.',
 			);
 		}
 	}

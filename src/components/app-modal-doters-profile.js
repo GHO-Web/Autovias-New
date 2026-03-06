@@ -1,3 +1,5 @@
+import "../js/doters-cookies.js";
+
 class ModalDotersProfile extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `

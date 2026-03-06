@@ -1,3 +1,7 @@
+import "./modals/app-modal-doters.js";
+import "./modals/app-modal-doters-profile.js";
+import "./modals/app-modal-travelpass.js";
+
 class AppHeaderEnglish extends HTMLElement {
 	connectedCallback() {
 		const logoData = JSON.parse(this.getAttribute("logo"));
@@ -51,15 +55,15 @@ class AppHeaderEnglish extends HTMLElement {
         </nav>
           
         <button id="login-icon" class="btn-travelpass desktop-travelpass js-open-travelpass-login-modal" aria-label="Login TravelPass">
-          <img src="../../../src/assets/img/global/gho-img/logos/logo-travel-pass.png" alt="Monedero Eléctronico" loading="lazy">
+          <img src="../../../../src/assets/img/global/logos/logo-monedero-electronico.webp" alt="Monedero Eléctronico" loading="lazy">
         </button>
 
         <button id="openDotersModal" class="btn btn-doters desktop-doters" aria-label="Login Doters">
-          <img src='../../../src/assets/img/global/logos/doters.svg' alt="Doters" loading="lazy">
+          <img src='../../../../src/assets/img/global/logos/doters.svg' alt="Doters" loading="lazy">
         </button>
 
         <a class="li__languaje desktop-languaje" href="../../../" aria-label="Change language">
-          <img src='../../../src/assets/icons/icons-img/MX_Flag.webp' alt="English" loading="lazy">
+          <img src='../../../../src/assets/icons/icons-img/MX_Flag.webp' alt="English" loading="lazy">
         </a>
 
         <button class="container-menu-hamburguer" aria-label="Menu" id="hamburger-icon" aria-label="Open dropdown menu">
@@ -74,7 +78,7 @@ class AppHeaderEnglish extends HTMLElement {
           <ul>
             <li class="lili__languaje">
               <a class="a__languaje" href="../../../" aria-label="Change language">
-                <img src='../../../src/assets/icons/icons-img/MX_Flag.webp' alt="English" loading="lazy">
+                <img src='../../../../src/assets/icons/icons-img/MX_Flag.webp' alt="English" loading="lazy">
               </a>
             </li>
 
@@ -117,16 +121,20 @@ class AppHeaderEnglish extends HTMLElement {
 
             <li class="li__login">
               <button id="login-icon" class="btn-travelpass btn-travelpass__submenu js-open-travelpass-login-modal" aria-label="Login TravelPass">
-                <img src="../../../src/assets/img/global/gho-img/logos/logo-monedero-electronico.webp" alt="Monedero Eléctronico" loading="lazy">
+                <img src="../../../../src/assets/img/global/logos/logo-monedero-electronico.webp" alt="Monedero Eléctronico" loading="lazy">
               </button>
               
               <button id="openDotersModalMovil" class="btn-doters" aria-label="Login Doters">
-                <img src="../../../src/assets/img/global/logos/doters.svg" alt="Doters" loading="lazy">
+                <img src="../../../../src/assets/img/global/logos/doters.svg" alt="Doters" loading="lazy">
               </button>
             </li>
           </ul>
         </div>
       </header>
+
+			<app-modal-doters-english></app-modal-doters-english>
+			<app-modal-doters-profile-english></app-modal-doters-profile-english>
+			<app-modal-travelpass-english></app-modal-travelpass-english>
 
     `;
 
@@ -164,7 +172,7 @@ class AppHeaderEnglish extends HTMLElement {
 					new CustomEvent("mobile-menu-opened", {
 						bubbles: true,
 						composed: true,
-					})
+					}),
 				);
 			} else {
 				hamburgerIcon.innerHTML = originalSvg; // Volver al ícono de hamburguesa
@@ -172,7 +180,7 @@ class AppHeaderEnglish extends HTMLElement {
 					new CustomEvent("mobile-menu-closed", {
 						bubbles: true,
 						composed: true,
-					})
+					}),
 				);
 			}
 			event.stopPropagation();
@@ -180,7 +188,7 @@ class AppHeaderEnglish extends HTMLElement {
 
 		// Mobile submenus
 		const mobileSubmenuTriggers = this.querySelectorAll(
-			".submenu__media-queries > a"
+			".submenu__media-queries > a",
 		);
 
 		mobileSubmenuTriggers.forEach((trigger) => {
@@ -295,7 +303,7 @@ class AppHeaderEnglish extends HTMLElement {
 					this.openDesktopSubmenuInstance.previousElementSibling;
 				this._closeDesktopSubmenu(
 					this.openDesktopSubmenuInstance,
-					prevTrigger && prevTrigger.matches("a") ? prevTrigger : null
+					prevTrigger && prevTrigger.matches("a") ? prevTrigger : null,
 				);
 			}
 			this._openDesktopSubmenu(submenuList, triggerLink);
@@ -352,7 +360,7 @@ class AppHeaderEnglish extends HTMLElement {
 						this.openDesktopSubmenuInstance.previousElementSibling;
 					this._closeDesktopSubmenu(
 						this.openDesktopSubmenuInstance,
-						prevTrigger && prevTrigger.matches("a") ? prevTrigger : null
+						prevTrigger && prevTrigger.matches("a") ? prevTrigger : null,
 					);
 				}
 				this._openDesktopSubmenu(list, link);
@@ -405,7 +413,7 @@ class AppHeaderEnglish extends HTMLElement {
 				const trigger = this.openDesktopSubmenuInstance.previousElementSibling;
 				this._closeDesktopSubmenu(
 					this.openDesktopSubmenuInstance,
-					trigger && trigger.matches("a") ? trigger : null
+					trigger && trigger.matches("a") ? trigger : null,
 				);
 				this.openDesktopSubmenuInstance = null;
 			}
@@ -420,7 +428,7 @@ class AppHeaderEnglish extends HTMLElement {
 		// Asumimos que solo hay UNA instancia de app-modal-doters en la página.
 		// Si tienes más, necesitarás una forma más específica de seleccionarlo (ej. por un ID único en el tag <app-modal-doters id="miModalUnico">).
 		const dotersModalElement = document.querySelector(
-			"app-modal-doters-english"
+			"app-modal-doters-english",
 		);
 
 		if (dotersModalElement) {
@@ -430,7 +438,7 @@ class AppHeaderEnglish extends HTMLElement {
 				} else {
 					console.error(
 						"El método open() no está disponible en el elemento app-modal-doters.",
-						dotersModalElement
+						dotersModalElement,
 					);
 				}
 			};

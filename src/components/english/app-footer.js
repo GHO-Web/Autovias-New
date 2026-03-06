@@ -1,3 +1,8 @@
+
+import "./app-cookies-policy.js?v=1.0.0";
+import "../app-button-whats.js?v=1.0.0";
+import "./app-button-eva-trip.js?v=1.0.0";
+
 class AppFooterEnglish extends HTMLElement {
 	constructor() {
 		super();
@@ -11,7 +16,7 @@ class AppFooterEnglish extends HTMLElement {
 				<div class="footer__content main-container">
 					<div class="footer__content__footer-logo">
 						<a href="https://www.autovias.com.mx/" aria-label="Go to homepage of CompanyName">
-							<img src="../../../src/assets/img/global/logos/logo.svg" alt="Logo of [Company Name]" class="footer__logo" width="922" height="143" loading="lazy"/>
+							<img src="../../../../src/assets/img/global/logos/logo.svg" alt="Logo of [Company Name]" class="footer__logo" width="922" height="143" loading="lazy"/>
 						</a>
 					</div>
 					<div class="footer__content__columns"></div>

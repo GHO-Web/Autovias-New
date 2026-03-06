@@ -1,4 +1,4 @@
-/*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/app-cotiza.js";
 import "../../../components/english/app-destiny-slider.js";
 import "../../../components/english/app-banner-multi-image.js";
@@ -73,7 +73,7 @@ class PageBoletosAutobusAcambayEnglish extends HTMLElement {
 	async _loadExploreSectionData() {
 		try {
 			const response = await fetch(
-				"../../src/data/english/destinations/acambay/cards-explore-section.json"
+				"../../src/data/english/destinations/acambay/cards-explore-section.json",
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -90,5 +90,5 @@ class PageBoletosAutobusAcambayEnglish extends HTMLElement {
 }
 customElements.define(
 	"page-boletos-de-autobus-acambay-english",
-	PageBoletosAutobusAcambayEnglish
+	PageBoletosAutobusAcambayEnglish,
 );

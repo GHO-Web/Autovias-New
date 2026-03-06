@@ -1,3 +1,8 @@
+
+import "../components/app-cookies-policy.js?v=1.0.0";
+import "../components/app-button-whats.js?v=1.0.0";
+import "../components/app-button-eva-trip.js?v=1.0.0";
+
 class AppFooter extends HTMLElement {
 	constructor() {
 		super();
@@ -22,6 +27,9 @@ class AppFooter extends HTMLElement {
           </p>
         </div>
       </footer>
+			<app-cookies-policy></app-cookies-policy>
+			<app-button-whats></app-button-whats>
+			<app-button-eva-trip></app-button-eva-trip>
     `;
 
 		this.fillFooterColumns();

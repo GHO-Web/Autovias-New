@@ -1,4 +1,10 @@
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../../components/app-header.js?v=1.0.1";
+import "../../components/app-footer.js?v=1.0.0";
+
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+import "../../components/app-cotiza.js";
 import "../../components/english/app-banner-image.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
@@ -7,11 +13,9 @@ import "../../components/app-faqs.js";
 import "../../components/card-image-top.js";
 
 class DescuentosSemanaSanta extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
       <app-cotiza></app-cotiza>
-
-      <app-modal-doters></app-modal-doters>
 
       <div class="__first-section">
         <app-payments></app-payments>
@@ -119,6 +123,6 @@ class DescuentosSemanaSanta extends HTMLElement {
       </section>
 
     `;
-  }
+	}
 }
 customElements.define("page-descuentos-semana-santa", DescuentosSemanaSanta);

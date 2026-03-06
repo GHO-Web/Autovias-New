@@ -1,3 +1,5 @@
+import "../js/slick.min.js";
+
 class AppBlog extends HTMLElement {
 	constructor() {
 		super();

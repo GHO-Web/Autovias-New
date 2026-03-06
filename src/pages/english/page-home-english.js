@@ -1,4 +1,8 @@
-/*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
+/*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
+import "../../components/english/app-header.js?v=1.0.2";
+import "../../components/english/app-footer.js?v=1.0.2";
+
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/english/app-grid-text.js";
 import "../../components/english/app-destinations-grid-english.js";
@@ -6,7 +10,6 @@ import "../../components/english/app-banner-promotional.js";
 import "../../components/english/app-card-left-description.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
-import "../../js/slick.js?v=1.0.0";
 
 class PageHomeEnglish extends HTMLElement {
 	connectedCallback() {
