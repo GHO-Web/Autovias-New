@@ -1,8 +1,6 @@
-
-/*--------------------------- IMPORT SCRIPTS --------------------------*/
-
-import "../js/doters-cookies.js";
-import "../js/travelpass-cookies.js";
+import "./modals/app-modal-doters.js";
+import "./modals/app-modal-doters-profile.js";
+import "./modals/app-modal-travelpass.js";
 
 class AppHeaderEnglish extends HTMLElement {
 	connectedCallback() {

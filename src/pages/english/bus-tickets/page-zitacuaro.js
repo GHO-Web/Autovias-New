@@ -1,19 +1,19 @@
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
-import "../components/app-header.js?v=1.0.1";
-import "../components/app-footer.js?v=1.0.0";
+import "../../../components/english/app-header.js?v=1.0.1";
+import "../../../components/english/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
-import "../../components/app-banner-slider.js";
-import "../../components/app-banner-slider-caption.js";
-import "../../components/app-payments.js";
-import "../../components/app-section-title.js";
-import "../../components/app-card-open-modal.js";
-import "../../components/app-dropdown.js";
-import "../../components/app-card-destination-opacity.js";
-import "../../components/app-slider-opacity.js";
-import "../../components/app-modal-multi-image.js";
-import "../../components/app-modal-image.js";
+import "../../../components/app-banner-slider.js";
+import "../../../components/app-banner-slider-caption.js";
+import "../../../components/app-payments.js";
+import "../../../components/app-section-title.js";
+import "../../../components/app-card-open-modal.js";
+import "../../../components/app-dropdown.js";
+import "../../../components/app-card-destination-opacity.js";
+import "../../../components/app-slider-opacity.js";
+import "../../../components/app-modal-multi-image.js";
+import "../../../components/app-modal-image.js";
 
 class PageZitacuaro extends HTMLElement {
 	async connectedCallback() {

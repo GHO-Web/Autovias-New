@@ -3,7 +3,6 @@ import "../../../../components/app-cotiza.js";
 import "../../../../components/app-banner-slider.js";
 import "../../../../components/app-payments.js";
 import "../../../../components/app-section-title.js";
-import "../../../../js/slick.js?v=1.0.0";
 
 class PageViajeroProtegidoEnglish extends HTMLElement {
 	connectedCallback() {
@@ -538,5 +537,5 @@ class PageViajeroProtegidoEnglish extends HTMLElement {
 }
 customElements.define(
 	"page-viajero-protegido-english",
-	PageViajeroProtegidoEnglish
+	PageViajeroProtegidoEnglish,
 );

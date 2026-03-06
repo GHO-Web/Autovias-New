@@ -3,7 +3,6 @@ import "../../../../components/app-cotiza.js";
 import "../../../../components/app-banner-slider.js";
 import "../../../../components/app-payments.js";
 import "../../../../components/app-section-title.js";
-import "../../../../js/slick.js?v=1.0.0";
 
 class PageOfertasClickEnglish extends HTMLElement {
 	connectedCallback() {
@@ -254,5 +253,5 @@ class PageOfertasClickEnglish extends HTMLElement {
 }
 customElements.define(
 	"page-ofertas-en-1-click-english",
-	PageOfertasClickEnglish
+	PageOfertasClickEnglish,
 );

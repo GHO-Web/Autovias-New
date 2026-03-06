@@ -1,6 +1,6 @@
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../../js/english/doters-cookies.js?v=1.0.0";
+import "../../../js/english/doters-cookies.js?v=1.0.0";
 
 class AppModalDotersEnglish extends HTMLElement {
 	constructor() {
