@@ -26,9 +26,9 @@ class PageMaravatio extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/maravatio.webp",
-      "mediumImage":"../src/assets/img/img-landing/maravatio.webp",
-      "smallImage":"../src/assets/img/img-landing/maravatio.webp",
+      "image":"../../../src/assets/img/img-landing/maravatio.webp",
+      "mediumImage":"../../../src/assets/img/img-landing/maravatio.webp",
+      "smallImage":"../../../src/assets/img/img-landing/maravatio.webp",
       "captionTitle":"Viaja a Maravatio: Confort, Seguridad y los Mejores Precios con Autovías",
       "captionText":"Vive una nueva experiencia viajando con Autovías La Línea. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -189,7 +189,7 @@ class PageMaravatio extends HTMLElement {
 
 						<div class="attraction-card">
 							<div class="attraction-card__image"
-								style='background-image:url("../src/assets/img/destinos-img/maravatio/lugares/centro-historico.webp")'>
+								style='background-image:url("../../../src/assets/img/destinos-img/maravatio/lugares/centro-historico.webp")'>
 							</div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Centro Histórico de Maravatío</h3>
@@ -198,7 +198,7 @@ class PageMaravatio extends HTMLElement {
 
 						<div class="attraction-card">
 							<div class="attraction-card__image"
-								style='background-image:url("../src/assets/img/destinos-img/maravatio/lugares/santuario-mariposa.webp")'>
+								style='background-image:url("../../../src/assets/img/destinos-img/maravatio/lugares/santuario-mariposa.webp")'>
 							</div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Santuario de la Mariposa Monarca (cercano)</h3>
@@ -207,7 +207,7 @@ class PageMaravatio extends HTMLElement {
 
 						<div class="attraction-card">
 							<div class="attraction-card__image"
-								style='background-image:url("../src/assets/img/destinos-img/maravatio/lugares/laguna.webp")'>
+								style='background-image:url("../../../src/assets/img/destinos-img/maravatio/lugares/laguna.webp")'>
 							</div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Laguna / Paraje Natural</h3>

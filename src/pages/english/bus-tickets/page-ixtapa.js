@@ -4,6 +4,7 @@ import "../../../components/english/app-header.js?v=1.0.1";
 import "../../../components/english/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+import "../../../components/app-cotiza.js";
 import "../../../components/app-banner-slider.js";
 import "../../../components/app-banner-slider-caption.js";
 import "../../../components/app-payments.js";
@@ -24,9 +25,9 @@ class PageIxtapa extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/guadalajara.webp",
-      "mediumImage":"../src/assets/img/img-landing/guadalajara.webp",
-      "smallImage":"../src/assets/img/img-landing/guadalajara.webp",
+      "image":"../../../src/assets/img/img-landing/guadalajara.webp",
+      "mediumImage":"../../../src/assets/img/img-landing/guadalajara.webp",
+      "smallImage":"../../../src/assets/img/img-landing/guadalajara.webp",
       "captionTitle":"Viaja a Ixtapa Zihuatanejo: Confort, Seguridad y los Mejores Precios con Autovías",
       "captionText":"Descubre este paraiso con el servicio de autobús líder. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -153,19 +154,19 @@ class PageIxtapa extends HTMLElement {
 					<h2 class="section-title">Descubre en Ixtapa Zihuatanejo</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/ixtapa/lugares/playa-la-ropa.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/ixtapa/lugares/playa-la-ropa.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Playa La Ropa</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/ixtapa/lugares/isla-ixtapa.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/ixtapa/lugares/isla-ixtapa.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Snorkel en Isla Ixtapa</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/ixtapa/lugares/playa-el-palmar-2.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/ixtapa/lugares/playa-el-palmar-2.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Playa El Palmar</h3>
 							</div>

@@ -4,6 +4,7 @@ import "../../../components/english/app-header.js?v=1.0.1";
 import "../../../components/english/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+import "../../../components/app-cotiza.js";
 import "../../../components/app-banner-slider.js";
 import "../../../components/app-banner-slider-caption.js";
 import "../../../components/app-payments.js";
@@ -24,9 +25,9 @@ class PageQueretaro extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/queretaro.webp",
-      "mediumImage":"../src/assets/img/img-landing/queretaro.webp",
-      "smallImage":"../src/assets/img/img-landing/queretaro.webp",
+      "image":"../../../src/assets/img/img-landing/queretaro.webp",
+      "mediumImage":"../../../src/assets/img/img-landing/queretaro.webp",
+      "smallImage":"../../../src/assets/img/img-landing/queretaro.webp",
       "captionTitle":"Viaja a Querétaro: Disfruta de comodidad, seguridad y mejores precios con Autovías",
       "captionText":"Vive una nueva experiencia viajando. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -240,19 +241,19 @@ class PageQueretaro extends HTMLElement {
 					<h2 class="section-title">Descubre en Querétaro</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/queretaro/lugares/centro-historico-queretaro.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/queretaro/lugares/centro-historico-queretaro.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Centro Histórico de Querétaro</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/queretaro/lugares/acueducto-queretaro.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/queretaro/lugares/acueducto-queretaro.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Acueducto Querétaro</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/queretaro/lugares/pena-de-bernal.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/queretaro/lugares/pena-de-bernal.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Peña de Bernal</h3>
 							</div>

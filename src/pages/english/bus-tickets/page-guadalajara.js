@@ -4,6 +4,7 @@ import "../../../components/english/app-header.js?v=1.0.1";
 import "../../../components/english/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+import "../../../components/app-cotiza.js";
 import "../../../components/app-banner-slider.js";
 import "../../../components/app-banner-slider-caption.js";
 import "../../../components/app-payments.js";
@@ -24,9 +25,9 @@ class PageGuadalajara extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/guadalajara.webp",
-      "mediumImage":"../src/assets/img/img-landing/guadalajara.webp",
-      "smallImage":"../src/assets/img/img-landing/guadalajara.webp",
+      "image":"../../../src/assets/img/img-landing/guadalajara.webp",
+      "mediumImage":"../../../src/assets/img/img-landing/guadalajara.webp",
+      "smallImage":"../../../src/assets/img/img-landing/guadalajara.webp",
       "captionTitle":"Viaja a Guadalajara: Confort, Seguridad y los Mejores Precios con Autovías",
       "captionText":"Descubre la Perla Tapatía con el servicio de autobús líder. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -199,19 +200,19 @@ class PageGuadalajara extends HTMLElement {
 					<h2 class="section-title">Imperdibles en Guadalajara: Descubre la Perla Tapatía</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/guadalajara/lugares/guadalajara-home.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/guadalajara/lugares/guadalajara-home.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Catedral de Guadalajara</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/guadalajara/lugares/mercadolibertad1.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/guadalajara/lugares/mercadolibertad1.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Mercado Libertad</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/guadalajara/lugares/acuario2.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/guadalajara/lugares/acuario2.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Acuario</h3>
 							</div>

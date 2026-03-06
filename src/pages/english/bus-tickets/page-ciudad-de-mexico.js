@@ -4,6 +4,7 @@ import "../../../components/english/app-header.js?v=1.0.1";
 import "../../../components/english/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+import "../../../components/app-cotiza.js";
 import "../../../components/app-banner-slider.js";
 import "../../../components/app-banner-slider-caption.js";
 import "../../../components/app-payments.js";
@@ -24,9 +25,9 @@ class PageCiudadDeMexico extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
-      "mediumImage":"../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
-      "smallImage":"../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
+      "image":"../../../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
+      "mediumImage":"../../../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
+      "smallImage":"../../../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
       "captionTitle":"Viaja a Ciudad de México: El Corazón de México con Autovías",
       "captionText":"Descubre la vibrante capital del país con el servicio de autobús líder. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -199,19 +200,19 @@ class PageCiudadDeMexico extends HTMLElement {
           <h2 class="section-title">Imperdibles en Ciudad de México: Historia, Cultura y Metrópolis</h2>
           <div class="attractions__grid">
             <div class="attraction-card">
-              <div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/cdmx-s.webp")'></div>
+              <div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/cdmx/lugares/cdmx-s.webp")'></div>
               <div class="attraction-card__content">
                 <h3 class="attraction-card__title">Centro Histórico y Zócalo</h3>
               </div>
             </div>
             <div class="attraction-card">
-              <div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/palacio-de-bellas-artes.webp")'></div>
+              <div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/cdmx/lugares/palacio-de-bellas-artes.webp")'></div>
               <div class="attraction-card__content">
                 <h3 class="attraction-card__title">Palacio de Bellas Artes y Museos</h3>
               </div>
             </div>
             <div class="attraction-card">
-              <div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/cdmx/lugares/templo-mayor.webp")'></div>
+              <div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/cdmx/lugares/templo-mayor.webp")'></div>
               <div class="attraction-card__content">
                 <h3 class="attraction-card__title">Templo mayor</h3>
               </div>

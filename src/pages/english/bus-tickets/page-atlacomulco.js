@@ -21,19 +21,19 @@ class AppAtlacomulco extends HTMLElement {
 		this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider-caption
-          slides-data='[
-    {
-      "title":"Promo 1",
-      "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/atlacomulco-centro.webp",
-      "mediumImage":"../src/assets/img/img-landing/atlacomulco-centro.webp",
-      "smallImage":"../src/assets/img/img-landing/atlacomulco-centro.webp",
-      "captionTitle":"Viaja a Atlacomulco: Conecta con el Corazón del Estado de México",
-      "captionText":"Descubre la esencia de Atlacomulco con el servicio de autobús líder. Tu viaje seguro y cómodo comienza aquí.",
-      "captionAlign":"left",
-      "captionTheme":"dark"
-    }
-  ]'>
+				slides-data='[
+				{
+					"title":"Promo 1",
+					"link":"https://example.com",
+					"image":"../../../src/assets/img/img-landing/atlacomulco-centro.webp",
+					"mediumImage":"../../../src/assets/img/img-landing/atlacomulco-centro.webp",
+					"smallImage":"../../../src/assets/img/img-landing/atlacomulco-centro.webp",
+					"captionTitle":"Viaja a Atlacomulco: Conecta con el Corazón del Estado de México",
+					"captionText":"Descubre la esencia de Atlacomulco con el servicio de autobús líder. Tu viaje seguro y cómodo comienza aquí.",
+					"captionAlign":"left",
+					"captionTheme":"dark"
+				}
+			]'>
       </app-banner-slider-caption>
 			<app-payments></app-payments>
 			
@@ -200,19 +200,19 @@ class AppAtlacomulco extends HTMLElement {
 					<h2 class="section-title">Imperdibles en Atlacomulco: Tradición y Desarrollo en el Estado de México</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/atlacomulco/lugares/parroquia-guadalupe.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/atlacomulco/lugares/parroquia-guadalupe.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Parroquia de Nuestra Señora de Guadalupe</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/atlacomulco/lugares/parque-estatal.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/atlacomulco/lugares/parque-estatal.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Parque de la Cultura y la Identidad</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/atlacomulco/lugares/mercado-municipal.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/atlacomulco/lugares/mercado-municipal.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Mercado Municipal</h3>
 							</div>

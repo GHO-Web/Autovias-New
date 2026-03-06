@@ -4,6 +4,7 @@ import "../../../components/english/app-header.js?v=1.0.1";
 import "../../../components/english/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+import "../../../components/app-cotiza.js";
 import "../../../components/app-banner-slider.js";
 import "../../../components/app-banner-slider-caption.js";
 import "../../../components/app-payments.js";
@@ -25,9 +26,9 @@ class PageUruapan extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/uruapan.webp",
-      "mediumImage":"../src/assets/img/img-landing/uruapan.webp",
-      "smallImage":"../src/assets/img/img-landing/uruapan.webp",
+      "image":"../../../src/assets/img/img-landing/uruapan.webp",
+      "mediumImage":"../../../src/assets/img/img-landing/uruapan.webp",
+      "smallImage":"../../../src/assets/img/img-landing/uruapan.webp",
       "captionTitle":"Viaja a Uruapan: Descubre la magia de este destino",
       "captionText":"Viaja con Autovías La Línea y vive la mejor experiencia. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -197,7 +198,7 @@ class PageUruapan extends HTMLElement {
 
 						<div class="attraction-card">
 							<div class="attraction-card__image"
-								style='background-image:url("../src/assets/img/destinos-img/uruapan/lugares/cupatitzio.webp")'>
+								style='background-image:url("../../../src/assets/img/destinos-img/uruapan/lugares/cupatitzio.webp")'>
 							</div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Parque Nacional Barranca del Cupatitzio</h3>
@@ -206,7 +207,7 @@ class PageUruapan extends HTMLElement {
 
 						<div class="attraction-card">
 							<div class="attraction-card__image"
-								style='background-image:url("../src/assets/img/destinos-img/uruapan/lugares/tingambato.webp")'>
+								style='background-image:url("../../../src/assets/img/destinos-img/uruapan/lugares/tingambato.webp")'>
 							</div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Zona Arqueológica de Tingambato</h3>
@@ -215,7 +216,7 @@ class PageUruapan extends HTMLElement {
 
 						<div class="attraction-card">
 							<div class="attraction-card__image"
-								style='background-image:url("../src/assets/img/destinos-img/uruapan/lugares/tzararacua.webp")'>
+								style='background-image:url("../../../src/assets/img/destinos-img/uruapan/lugares/tzararacua.webp")'>
 							</div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Cascada de Tzaráracua</h3>

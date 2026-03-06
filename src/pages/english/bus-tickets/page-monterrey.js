@@ -188,19 +188,19 @@ class PageMonterrey extends HTMLElement {
 					<h2 class="section-title">Morelia te Espera: Descubre la Ciudad de la Cantera Rosa</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/monterrey/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/monterrey/lugares/.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Catedral de Morelia (Cantera Rosa)</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/monterrey/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/monterrey/lugares/.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Acueducto de Morelia</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/monterrey/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/monterrey/lugares/.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Museo del Dulce y Callejón del Romance</h3>
 							</div>

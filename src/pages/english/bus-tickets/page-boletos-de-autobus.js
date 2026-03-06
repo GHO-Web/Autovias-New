@@ -19,28 +19,27 @@ class PageBoletosDeAutobus extends HTMLElement {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
 			<!-- <app-banner-slider-caption
-          slides-data='[
-    {
-      "title":"Promo 1",
-      "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/banner-boletos-autobus.webp",
-      "mediumImage":"../src/assets/img/img-landing/banner-boletos-autobus.webp",
-      "smallImage":"../src/assets/img/img-landing/banner-boletos-autobus.webp",
-      "captionTitle":"Boletos de Autobús Autovías: Viaja a Donde Quieras",
-      "captionText":"Encuentra tus pasajes de autobús de forma rápida, segura y al mejor precio. ¡Tu viaje ideal está a solo un clic!",
-      "captionAlign":"left",
-      "captionTheme":"dark"
-    }
-  ]'>
+        slides-data='[
+				{
+					"title":"Promo 1",
+					"link":"https://example.com",
+					"image":"../../../src/assets/img/img-landing/banner-boletos-autobus.webp",
+					"mediumImage":"../../../src/assets/img/img-landing/banner-boletos-autobus.webp",
+					"smallImage":"../../../src/assets/img/img-landing/banner-boletos-autobus.webp",
+					"captionTitle":"Autovías La Línea Bus Tickets: Your best option for traveling",
+					"captionText":"Find your bus tickets quickly, safely, and at the best price. Your ideal trip is just a click away!",
+					"captionAlign":"left",
+					"captionTheme":"dark"
+				}
+			]'>
       </app-banner-slider-caption>
-	  <app-payments></app-payments> -->
-	  <div class="__panthom_space"></div>
+			<app-payments></app-payments> -->
+			<div class="__panthom_space"></div>
 
-			
 			<section class="section__boletos-de-autobus">
-					<app-section-title section-title="Boletos de Autobús Autovías La Línea: tu mejor opcón para viajar"></app-section-title>
+					<app-section-title section-title="Autovías La Línea Bus Tickets: Your best option for traveling"></app-section-title>
 					<article class="__boletos-de-autobus__text">
-							<p class="__text__paragraph"><b class="__text__bold">Viajar con Autovías La Línea es sinónimo de comodidad, seguridad y puntualidad.</b> No esperes más y adquiere tus boletos de autobús hoy mismo para disfrutar de una experiencia de viaje superior. Si te preguntas dónde comprar boletos de autobús de Autovías La Línea recuerda que puedes hacerlo fácilmente a través de nuestro sitio web, por teléfono o en nuestras taquillas.</p>
+							<p class="__text__paragraph"><b class="__text__bold">Traveling with Autovías La Línea means comfort, safety, and punctuality. Don't wait any longer and get your bus tickets today to enjoy a superior travel experience. If you're wondering where to buy Autovías La Línea bus tickets, remember that you can easily do so through our website, by phone, or at our ticket offices.</b></p>
 							<div class="__boletos-de-autobus__scrollbar">
 									<p>Cargando tipos de boletos...</p> 
 							</div>
@@ -82,7 +81,7 @@ class PageBoletosDeAutobus extends HTMLElement {
 
 		try {
 			const response = await fetch(
-				"../src/data/cards-boletos-de-autobus-data.json",
+				"../../../src/data/english/bus-tickets/cards-boletos-de-autobus-data.json",
 			);
 			if (!response.ok) {
 				throw new Error(

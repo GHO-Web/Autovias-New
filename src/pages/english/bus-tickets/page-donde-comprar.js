@@ -21,7 +21,7 @@ class PageDondeComprar extends HTMLElement {
 			<div class="__panthom_space"></div>
 
 
-			<app-section-title section-title="¿Dónde puedo comprar Boletos de autobús en Autovías?"></app-section-title>
+			<app-section-title section-title="Where can I buy bus tickets on Autovías?"></app-section-title>
 			
 			<div class="shop-container" id="shop-cards-container">
 					<!-- Las tarjetas de tiendas se cargarán aquí -->
@@ -38,7 +38,7 @@ class PageDondeComprar extends HTMLElement {
 
 	async loadAndRenderShopCards() {
 		try {
-			const response = await fetch("../src/data/cards-buy-options.json"); // Ruta corregida
+			const response = await fetch("../../../src/data/english/bus-tickets/cards-buy-options.json"); // Ruta corregida
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
 			}

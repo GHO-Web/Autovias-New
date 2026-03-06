@@ -132,6 +132,10 @@ class AppHeaderEnglish extends HTMLElement {
         </div>
       </header>
 
+			<app-modal-doters-english></app-modal-doters-english>
+			<app-modal-doters-profile-english></app-modal-doters-profile-english>
+			<app-modal-travelpass-english></app-modal-travelpass-english>
+
     `;
 
 		this.openDesktopSubmenuInstance = null;

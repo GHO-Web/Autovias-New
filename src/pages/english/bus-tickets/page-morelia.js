@@ -4,6 +4,7 @@ import "../../../components/english/app-header.js?v=1.0.1";
 import "../../../components/english/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+import "../../../components/app-cotiza.js";
 import "../../../components/app-banner-slider.js";
 import "../../../components/app-banner-slider-caption.js";
 import "../../../components/app-payments.js";
@@ -24,9 +25,9 @@ class AppViajarMorelia extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/morelia.webp",
-      "mediumImage":"../src/assets/img/img-landing/morelia.webp",
-      "smallImage":"../src/assets/img/img-landing/morelia.webp",
+      "image":"../../../src/assets/img/img-landing/morelia.webp",
+      "mediumImage":"../../../src/assets/img/img-landing/morelia.webp",
+      "smallImage":"../../../src/assets/img/img-landing/morelia.webp",
       "captionTitle":"Viaja a Morelia: Disfruta de comodidad, seguridad y mejores precios con Autovías",
       "captionText":"Vive una nueva experiencia viajando. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -198,19 +199,19 @@ class AppViajarMorelia extends HTMLElement {
 					<h2 class="section-title">Morelia te Espera: Descubre la Ciudad de la Cantera Rosa</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/morelia/lugares/catedral.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/morelia/lugares/catedral.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Catedral de Morelia (Cantera Rosa)</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/morelia/lugares/acueducto3.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/morelia/lugares/acueducto3.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Acueducto de Morelia</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/morelia/lugares/callejon3.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/morelia/lugares/callejon3.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Museo del Dulce y Callejón del Romance</h3>
 							</div>

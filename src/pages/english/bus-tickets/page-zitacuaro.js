@@ -4,6 +4,7 @@ import "../../../components/english/app-header.js?v=1.0.1";
 import "../../../components/english/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+import "../../../components/app-cotiza.js";
 import "../../../components/app-banner-slider.js";
 import "../../../components/app-banner-slider-caption.js";
 import "../../../components/app-payments.js";
@@ -25,9 +26,9 @@ class PageZitacuaro extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/zitacuaro.webp",
-      "mediumImage":"../src/assets/img/img-landing/zitacuaro.webp",
-      "smallImage":"../src/assets/img/img-landing/zitacuaro.webp",
+      "image":"../../../src/assets/img/img-landing/zitacuaro.webp",
+      "mediumImage":"../../../src/assets/img/img-landing/zitacuaro.webp",
+      "smallImage":"../../../src/assets/img/img-landing/zitacuaro.webp",
       "captionTitle":"Viaja a Zitacuaro: Descubre la magia de este destino",
       "captionText":"Viaja con Autovías La Línea y vive la mejor experiencia. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -197,7 +198,7 @@ class PageZitacuaro extends HTMLElement {
 
 						<div class="attraction-card">
 							<div class="attraction-card__image"
-								style='background-image:url("../src/assets/img/destinos-img/zitacuaro/lugares/cerro-cacique.webp")'>
+								style='background-image:url("../../../src/assets/img/destinos-img/zitacuaro/lugares/cerro-cacique.webp")'>
 							</div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Cerro del Cacique</h3>
@@ -206,7 +207,7 @@ class PageZitacuaro extends HTMLElement {
 
 						<div class="attraction-card">
 							<div class="attraction-card__image"
-								style='background-image:url("../src/assets/img/destinos-img/zitacuaro/lugares/santuario-mariposa.webp")'>
+								style='background-image:url("../../../src/assets/img/destinos-img/zitacuaro/lugares/santuario-mariposa.webp")'>
 							</div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Santuario de la Mariposa Monarca</h3>
@@ -215,7 +216,7 @@ class PageZitacuaro extends HTMLElement {
 
 						<div class="attraction-card">
 							<div class="attraction-card__image"
-								style='background-image:url("../src/assets/img/destinos-img/zitacuaro/lugares/centro-historico.webp")'>
+								style='background-image:url("../../../src/assets/img/destinos-img/zitacuaro/lugares/centro-historico.webp")'>
 							</div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Centro Histórico</h3>

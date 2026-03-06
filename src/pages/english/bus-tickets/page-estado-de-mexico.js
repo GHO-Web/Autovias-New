@@ -21,7 +21,7 @@ class AppEstadoDeMexico extends HTMLElement {
 			<app-cotiza></app-cotiza>
 			<app-banner-slider
 					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/Atlacomulco_Banner_web.webp","mediumImage": "../src/assets/img/global/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/global/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
+					{"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/global/banner/Atlacomulco_Banner_web.webp","mediumImage": "../../../src/assets/img/global/banner/tablet/Atlacomulco_tablet.webp", "smallImage": "./src/assets/img/global/banner/mobile/Atlacomulco_mobile.webp", "link": "#index.html/banner1"}]'
 			>
 			</app-banner-slider>
 			<app-payments></app-payments>
@@ -189,19 +189,19 @@ class AppEstadoDeMexico extends HTMLElement {
 					<h2 class="section-title">Imperdibles en Colima: Descubre la "Ciudad de las Palmeras"</h2>
 					<div class="attractions__grid">
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/estado-de-mexico/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/estado-de-mexico/lugares/.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Comala (Pueblo Mágico)</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/estado-de-mexico/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/estado-de-mexico/lugares/.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Volcán de Colima y Nevado</h3>
 							</div>
 						</div>
 						<div class="attraction-card">
-							<div class="attraction-card__image" style='background-image: url("../src/assets/img/destinos-img/estado-de-mexico/lugares/.webp")'></div>
+							<div class="attraction-card__image" style='background-image: url("../../../src/assets/img/destinos-img/estado-de-mexico/lugares/.webp")'></div>
 							<div class="attraction-card__content">
 								<h3 class="attraction-card__title">Centro Histórico y Catedral</h3>
 							</div>
