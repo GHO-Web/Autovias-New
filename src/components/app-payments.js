@@ -123,47 +123,47 @@ class AppPayments extends HTMLElement {
 			},
 		];
 
-		$(document).ready(function () {
-			// 1. Duplicar los logos:
-			const duplicatedLogos = [...paymentLogos, ...paymentLogos]; // Creamos un nuevo array con los logos duplicados
+    $(document).ready(function () {
+      // 1. Duplicar los logos:
+      const duplicatedLogos = [...paymentLogos, ...paymentLogos]; // Creamos un nuevo array con los logos duplicados
 
-			// Insertar los logos duplicados en el slider:
-			duplicatedLogos.forEach((logo) => {
-				$(".payment-slider").append(`
+      // Insertar los logos duplicados en el slider:
+      duplicatedLogos.forEach((logo) => {
+        $(".payment-slider").append(`
           <div>
             <picture>
               <source srcset="${logo.srcset}" type="image/webp">
-              <img src="${logo.src}" title="${logo.title}" width="1" height="1" alt="${logo.alt}">
+              <img src="${logo.src}" title="${logo.title}" width="210" height="87" alt="${logo.alt}">
             </picture>
           </div>
         `);
-			});
+      });
 
-			// Configuración Slick :
-			$(".payment-slider").slick({
-				slidesToShow: 10, // Mostrar 10 logos a la vez (ajustable segun los que queramos mostrar)
-				slidesToScroll: 1, // Desplazar de 1 en 1
-				autoplay: true, // Habilitar el desplazamiento automático
-				autoplaySpeed: 0, // Eliminar la pausa para la iluciond el carrusel continuo: Establecer en 0 para que no haya pausa entre desplazamientos
-				speed: 5000, // Ajuste de la velocidad: Tiempo en milisegundos que tarda en recorrer una "tira" de logos (se puede ajustar según la velocidad deseada)
-				cssEase: "linear", // Desplazamiento lineal: Para asegurar una velocidad constante
-				infinite: true, // Habilitar el loop infinito
-				arrows: false, // Ocultar las flechas de navegación (ya que no se necesitan)
-				pauseOnHover: false, // Deshabilitar la pausa al pasar el mouse por encima
-				pauseOnFocus: false, // Deshabilitar la pausa al hacer foco en el slider
-				draggable: false, // Deshabilitar el arrastre con el mouse ya que no es interactivo con el usuario
-				swipe: false, // Deshabilitar el swipe en dispositivos táctiles
-				touchMove: false, // Deshabilitar el movimiento táctil
-				responsive: [
-					{ breakpoint: 1280, settings: { slidesToShow: 6 } }, // Ajustar para pantallas más grandes
-					{ breakpoint: 1200, settings: { slidesToShow: 5 } }, // Ajustar para pantallas más grandes
-					{ breakpoint: 1024, settings: { slidesToShow: 4 } }, // Ajustar para pantallas más pequeñas
-					{ breakpoint: 768, settings: { slidesToShow: 3 } },
-					{ breakpoint: 480, settings: { slidesToShow: 2 } },
-				],
-			});
-			$(".payment-slider").slick("refresh"); // Ya no es necesario
-		});
-	}
+      // Configuración Slick :
+      $(".payment-slider").slick({
+        slidesToShow: 10, // Mostrar 10 logos a la vez (ajustable segun los que queramos mostrar)
+        slidesToScroll: 1, // Desplazar de 1 en 1
+        autoplay: true, // Habilitar el desplazamiento automático
+        autoplaySpeed: 0, // Eliminar la pausa para la iluciond el carrusel continuo: Establecer en 0 para que no haya pausa entre desplazamientos
+        speed: 5000, // Ajuste de la velocidad: Tiempo en milisegundos que tarda en recorrer una "tira" de logos (se puede ajustar según la velocidad deseada)
+        cssEase: "linear", // Desplazamiento lineal: Para asegurar una velocidad constante
+        infinite: true, // Habilitar el loop infinito
+        arrows: false, // Ocultar las flechas de navegación (ya que no se necesitan)
+        pauseOnHover: false, // Deshabilitar la pausa al pasar el mouse por encima
+        pauseOnFocus: false, // Deshabilitar la pausa al hacer foco en el slider
+        draggable: false, // Deshabilitar el arrastre con el mouse ya que no es interactivo con el usuario
+        swipe: false, // Deshabilitar el swipe en dispositivos táctiles
+        touchMove: false, // Deshabilitar el movimiento táctil
+        responsive: [
+          { breakpoint: 1280, settings: { slidesToShow: 6 } }, // Ajustar para pantallas más grandes
+          { breakpoint: 1200, settings: { slidesToShow: 5 } }, // Ajustar para pantallas más grandes
+          { breakpoint: 1024, settings: { slidesToShow: 4 } }, // Ajustar para pantallas más pequeñas
+          { breakpoint: 768, settings: { slidesToShow: 3 } },
+          { breakpoint: 480, settings: { slidesToShow: 2 } },
+        ],
+      });
+      $(".payment-slider").slick("refresh"); // Ya no es necesario
+    });
+  }
 }
 customElements.define("app-payments", AppPayments);
