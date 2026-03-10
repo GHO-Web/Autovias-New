@@ -21,8 +21,8 @@ class PageHome extends HTMLElement {
       <app-cotiza></app-cotiza>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/banner-3-pasos-web.webp","mediumImage": "../src/assets/img/global/banner/tablet/banner-3-pasos-tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/banner-3-pasos-mobile.webp", "link": "#index.html/banner1"},
-                {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/global/banner/banner-doters-web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/banner-doters-tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/banner-doters-mobile.webp", "link": "#index.html/banner2"}                ]'
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/banner-3-pasos-web.webp","mediumImage": "../src/assets/img/global/banner/tablet/banner-3-pasos-tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/banner-3-pasos-mobile.webp", "link": "/"},
+                {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/global/banner/banner-doters-web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/banner-doters-tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/banner-doters-mobile.webp", "link": "/doters"}                ]'
             >
             </app-banner-slider>
             <app-payments></app-payments>

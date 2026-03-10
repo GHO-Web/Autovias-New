@@ -1,15 +1,10 @@
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../../components/app-header.js?v=1.1.3";
-import "../../components/app-cookies-policy.js?v=1.0.3";
-import "../../components/app-button-whats.js?v=1.0.2";
-import "../../components/app-button-eva-trip.js?v=1.0.2";
 import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
-import "../../components/app-cotiza.js?v=1.0.2";
 import "../../components/app-banner-slider.js";
-import "../../components/app-payments.js";
 import "../../components/app-destinations-grid.js";
 import "../../components/app-list-destinations.js";
 import "../../components/app-tickets-sales-locations.js";
@@ -17,20 +12,20 @@ import "../../components/app-other-services.js";
 import "../../components/app-blog.js";
 import "../../components/app-img-shop-left.js";
 import "../../components/app-section-title.js";
-import "../../components/app-card-doters.js";
-import "../../components/app-card-left-description.js";
-import "../../components/app-card-right-description.js";
+import "../../components/cards/doters/app-card-doters.js";
+import "../../components/cards/app-card-left-description.js";
+import "../../components/cards/app-card-right-description.js";
 import "../../components/app-carousel-banners.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
 class PageDoters extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             
             <app-banner-slider
 					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/banner-viaja-con-puntos-doters.webp","mediumImage": "../../src/assets/img/banner/tablet/banner-viaja-con-puntos-doters.webp", "smallImage": "../../src/assets/img/banner/movil/banner-doters.webp", "link": "#index.html/banner1"}]'
+					{"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/doters/banners/web/banner-viaja-con-puntos-doters.webp","mediumImage": "../../src/assets/img/doters/banners/tablet/banner-viaja-con-puntos-doters.webp", "smallImage": "../../src/assets/img/doters/banners/mobile/banner-viaja-con-puntos-doters.webp", "link": "/"}]'
 			>
 			</app-banner-slider>
             <section class="__section__taquilla-exclusiva__ask">
@@ -42,7 +37,7 @@ class PageDoters extends HTMLElement {
             
             <section class="__section__taquilla-exclusiva__cards">
                 <div class="__section__taquilla-exclusiva__cards__items">
-                <app-card-doters card-doters-src="../src/data/card-doters-data.json"></app-card-doters>
+                <app-card-doters card-doters-src="../src/data/doters/card-doters-data.json"></app-card-doters>
                 </div>
                 <div class="__section__taquilla-exclusiva__cards__bg"></div>
             </section>
@@ -142,6 +137,6 @@ class PageDoters extends HTMLElement {
             
     
         `;
-	}
+  }
 }
 customElements.define("page-doters", PageDoters);

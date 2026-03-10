@@ -8,13 +8,13 @@ import "../../components/app-cotiza.js";
 import "../../components/english/app-banner-image.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
-import "../../components/app-card-right-description.js";
+import "../../components/cards/app-card-right-description.js";
 import "../../components/app-faqs.js";
 import "../../components/card-image-top.js";
 
 class DescuentosSemanaSanta extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <app-cotiza></app-cotiza>
 
       <div class="__first-section">
@@ -123,6 +123,6 @@ class DescuentosSemanaSanta extends HTMLElement {
       </section>
 
     `;
-	}
+  }
 }
 customElements.define("page-descuentos-semana-santa", DescuentosSemanaSanta);

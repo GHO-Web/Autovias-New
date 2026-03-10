@@ -20,7 +20,7 @@ class AppHeader extends HTMLElement {
         <nav aria-label="Menu de navegacion" >
           <ul>
             <li><a href="../../../" aria-label="Ir a inicio" tabindex="0">Inicio</a></li>
-            <li><a href="../../servicios/facturacion.html" aria-label="Facturar su viaje" tabindex="0">Facturación</a></li> 
+            <li><a href="../../../servicios/facturacion.html" aria-label="Facturar su viaje" tabindex="0">Facturación</a></li> 
             <li><a href="https://viajes.autovias.com.mx/exchange/openTicket" aria-label="Imprimir pase de abordar" tabindex="0">Confirmar boleto abierto</a></li> 
             <li><a href="https://viajes.autovias.com.mx/download-tickets" aria-label="Imprimir pase de abordar" tabindex="0">Imprimir pase de abordar</a></li> 
             <li><a href="https://viajes.autovias.com.mx/exchange/itinerary" aria-label="Modificar itinerario" tabindex="0">Modificar itinerario</a></li> 
@@ -54,7 +54,7 @@ class AppHeader extends HTMLElement {
 		<button id="openDotersModal" class="btn btn-doters desktop-doters" aria-label="Iniciar sesión Doters">
 			<img src='../../src/assets/img/global/logos/doters.svg' alt="Doters" loading="lazy">
 		</button>
-		<a class="li__languaje desktop-languaje" href="../../english/" aria-label="Cambiar idioma">
+		<a class="li__languaje desktop-languaje" href="../../../english/" aria-label="Cambiar idioma">
 			<img src='../../src/assets/icons/icons-img/USA_Flag.webp' alt="English" loading="lazy">
 		</a>
 
@@ -69,11 +69,11 @@ class AppHeader extends HTMLElement {
         <div id="dropdown-menu" class="show">
             <ul>
 				<li class="lili__languaje">
-					<a class="a__languaje" href="../../english/" aria-label="Cambiar idioma">
+					<a class="a__languaje" href="../../../english/" aria-label="Cambiar idioma">
 						<img src='../../src/assets/icons/icons-img/USA_Flag.webp' alt="English" loading="lazy">
 					</a>
 				</li>
-                <li><a href="../index.html" aria-label="Ir a inicio">INICIO</a></li>
+                <li><a href="../../../" aria-label="Ir a inicio">INICIO</a></li>
                 <li class="submenu__media-queries">
                     <a href="#" aria-label="Facturar su viaje" aria-haspopup="true" aria-expanded="false">Facture su viaje <span class="icon-arrow-down"></span></a>
                     <ul>
