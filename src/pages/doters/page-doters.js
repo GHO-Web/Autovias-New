@@ -5,13 +5,6 @@ import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-banner-slider.js";
-import "../../components/app-destinations-grid.js";
-import "../../components/app-list-destinations.js";
-import "../../components/app-tickets-sales-locations.js";
-import "../../components/app-other-services.js";
-import "../../components/app-blog.js";
-import "../../components/app-img-shop-left.js";
-import "../../components/app-section-title.js";
 import "../../components/cards/doters/app-card-doters.js";
 import "../../components/cards/app-card-left-description.js";
 import "../../components/cards/app-card-right-description.js";
