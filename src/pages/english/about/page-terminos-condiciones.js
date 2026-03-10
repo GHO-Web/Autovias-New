@@ -11,20 +11,33 @@ import "../../../components/app-payments.js";
 import "../../../components/app-section-title.js";
 
 class PageTerminosCondicionesEnglish extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza></app-cotiza>
             <app-modal-travelpass-english></app-modal-travelpass-english>
             <app-modal-doters-english></app-modal-doters-english>
     
             <app-banner-slider
-                    slides-data='[
-                    {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
-                    {"id": "slide2", "title": "Banner 2", "image": "../../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
-                    {"id": "slide3", "title": "Banner 3", "image": "../../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
-                    ]'
-            >
-            </app-banner-slider>
+        slides-data='[
+          {
+            "id": "slide1", 
+            "title": "Banner 1", 
+            "image": "../../src/assets/img/global/banner/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp",
+            "mediumImage": "../../src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+            "smallImage": "../../src/assets/img/global/banner/mobile/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+            "link": "/"
+          },
+          {
+            "id": "slide2", 
+            "title": "Banner 2", 
+            "image": "../../src/assets/img/global/banner/banner-doters-web.webp", 
+            "mediumImage": "../../src/assets/img/global/banner/tablet/banner-doters-tablet.webp",
+            "smallImage": "../../src/assets/img/global/banner/mobile/banner-doters-mobile.webp", 
+            "link": "/doters"
+          }
+        ]'
+      >
+      </app-banner-slider>
 
             <app-payments></app-payments>
             
@@ -388,9 +401,9 @@ class PageTerminosCondicionesEnglish extends HTMLElement {
 		<app-button-whats></app-button-whats>
 		<app-button-eva-trip-english></app-button-eva-trip-english>
         `;
-	}
+  }
 }
 customElements.define(
-	"page-terminos-condiciones-english",
-	PageTerminosCondicionesEnglish,
+  "page-terminos-condiciones-english",
+  PageTerminosCondicionesEnglish,
 );

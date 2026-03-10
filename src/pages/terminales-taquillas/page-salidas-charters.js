@@ -11,16 +11,29 @@ import "../../components/app-section-title.js";
 import "../../components/app-card-text-bg-white.js";
 
 class PageSalidasCharters extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
       <app-cotiza></app-cotiza>
 
 			<app-banner-slider
-							slides-data='[
-							{"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
-							{"id": "slide2", "title": "Banner 2", "image": "../../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
-							{"id": "slide3", "title": "Banner 3", "image": "../../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
-							]'
+				slides-data='[
+					{
+						"id": "slide1", 
+						"title": "Banner 1", 
+						"image": "../src/assets/img/global/banner/web/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp",
+						"mediumImage": "../src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+						"smallImage": "../src/assets/img/global/banner/mobile/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+						"link": "/"
+					},
+					{
+						"id": "slide2", 
+						"title": "Banner 2", 
+						"image": "../src/assets/img/global/banner/banner-doters-web.webp", 
+						"mediumImage": "../src/assets/img/global/banner/tablet/banner-doters-tablet.webp",
+						"smallImage": "../src/assets/img/global/banner/mobile/banner-doters-mobile.webp", 
+						"link": "/doters"
+					}
+				]'
 			>
 			</app-banner-slider>
 
@@ -36,39 +49,39 @@ class PageSalidasCharters extends HTMLElement {
 			</section>
 		`;
 
-		await this.loadCharterCards();
-	}
+    await this.loadCharterCards();
+  }
 
-	async loadCharterCards() {
-		try {
-			// Construye la URL al archivo JSON de forma robusta usando import.meta.url
-			const jsonFileUrl = new URL(
-				"../../data/cards-salidas-charters-data.json",
-				import.meta.url,
-			);
-			const response = await fetch(jsonFileUrl);
-			if (!response.ok) {
-				throw new Error(`HTTP error! status: ${response.status}`);
-			}
-			const cardsData = await response.json();
+  async loadCharterCards() {
+    try {
+      // Construye la URL al archivo JSON de forma robusta usando import.meta.url
+      const jsonFileUrl = new URL(
+        "../../data/cards-salidas-charters-data.json",
+        import.meta.url,
+      );
+      const response = await fetch(jsonFileUrl);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const cardsData = await response.json();
 
-			const container = this.querySelector("#grid-cards-container");
-			if (container) {
-				cardsData.forEach((cardInfo) => {
-					const cardElement = document.createElement("app-card-text-bg-white");
-					cardElement.setAttribute("card-title", cardInfo.title);
-					cardElement.setAttribute("card-description", cardInfo.description);
-					container.appendChild(cardElement);
-				});
-			} else {
-				console.error("El contenedor #grid-cards-container no fue encontrado.");
-			}
-		} catch (error) {
-			console.error(
-				"Error al cargar los datos de las tarjetas de salidas charters:",
-				error,
-			);
-		}
-	}
+      const container = this.querySelector("#grid-cards-container");
+      if (container) {
+        cardsData.forEach((cardInfo) => {
+          const cardElement = document.createElement("app-card-text-bg-white");
+          cardElement.setAttribute("card-title", cardInfo.title);
+          cardElement.setAttribute("card-description", cardInfo.description);
+          container.appendChild(cardElement);
+        });
+      } else {
+        console.error("El contenedor #grid-cards-container no fue encontrado.");
+      }
+    } catch (error) {
+      console.error(
+        "Error al cargar los datos de las tarjetas de salidas charters:",
+        error,
+      );
+    }
+  }
 }
 customElements.define("page-salidas-charters", PageSalidasCharters);

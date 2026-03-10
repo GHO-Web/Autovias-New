@@ -21,12 +21,26 @@ class PageHome extends HTMLElement {
       <app-cotiza></app-cotiza>
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/banner-3-pasos-web.webp","mediumImage": "../src/assets/img/global/banner/tablet/banner-3-pasos-tablet.webp", "smallImage": "../src/assets/img/global/banner/mobile/banner-3-pasos-mobile.webp", "link": "/"},
-                {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/global/banner/banner-doters-web.webp", "mediumImage": "../src/assets/img/global/banner/tablet/banner-doters-tablet.webp","smallImage": "../src/assets/img/global/banner/mobile/banner-doters-mobile.webp", "link": "/doters"}                ]'
+                    {
+                        "id": "slide1", 
+                        "title": "Banner 1", 
+                        "image": "../src/assets/img/global/banner/web/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp",
+                        "mediumImage": "../src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+                        "smallImage": "../src/assets/img/global/banner/mobile/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+                        "link": "/"
+                    },
+                    {
+                        "id": "slide2", 
+                        "title": "Banner 2", 
+                        "image": "../src/assets/img/global/banner/banner-doters-web.webp", 
+                        "mediumImage": "../src/assets/img/global/banner/tablet/banner-doters-tablet.webp",
+                        "smallImage": "../src/assets/img/global/banner/mobile/banner-doters-mobile.webp", 
+                        "link": "/doters"
+                    }
+                ]'
             >
             </app-banner-slider>
             <app-payments></app-payments>
-            <br><br><br>
             <app-destinations-grid
                 titlesText='[
                 {"id": "title1", "title": "¿Aún no sabes a dónde viajar?", "text": "Conoce nuestros destinos Autovías La Línea y elige tu lugar favorito"}

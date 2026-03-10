@@ -18,9 +18,22 @@ class PageAvisoDePrivacidadEnglish extends HTMLElement {
       <app-modal-doters-english></app-modal-doters-english>
       <app-banner-slider
         slides-data='[
-          {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/global/banner/metodos_pago_web.webp","mediumImage": "../../src/assets/img/global/banner/tablet/metodos_pago_tablet.webp", "smallImage": "../../src/assets/img/global/banner/mobile/metodos_pago_mobile.webp", "link": "#index.html/banner1"},
-          {"id": "slide2", "title": "Banner 2", "image": "../../src/assets/img/promociones/doters/Doters_web.webp", "mediumImage": "../../src/assets/img/global/banner/tablet/doters_tablet.webp","smallImage": "../../src/assets/img/global/banner/mobile/Doters_mobile.webp", "link": "#index.html/banner2"},
-          {"id": "slide3", "title": "Banner 3", "image": "../../src/assets/img/global/banner/verano_web.webp", "mediumImage": "../../src/assets/img/global/banner/tablet/verano_tablet.webp","smallImage": "../../src/assets/img/global/banner/mobile/Verano_mobile.webp", "link": "#index.html/banner3"}
+          {
+            "id": "slide1", 
+            "title": "Banner 1", 
+            "image": "../../src/assets/img/global/banner/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp",
+            "mediumImage": "../../src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+            "smallImage": "../../src/assets/img/global/banner/mobile/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+            "link": "/"
+          },
+          {
+            "id": "slide2", 
+            "title": "Banner 2", 
+            "image": "../../src/assets/img/global/banner/banner-doters-web.webp", 
+            "mediumImage": "../../src/assets/img/global/banner/tablet/banner-doters-tablet.webp",
+            "smallImage": "../../src/assets/img/global/banner/mobile/banner-doters-mobile.webp", 
+            "link": "/doters"
+          }
         ]'
       >
       </app-banner-slider>
