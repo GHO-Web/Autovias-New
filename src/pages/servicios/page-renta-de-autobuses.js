@@ -5,7 +5,6 @@ import "../../components/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-cards-icons.js";
 import "../../components/app-cards-contact-whats.js";
@@ -18,88 +17,86 @@ class PageRentaDeAutobuses extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
-    
-            <div class="__panthom_space"></div>
+
+			<section class="__section__renta-autobuses">
+					<app-section-title section-title="Renta de autobuses: Soluciones para viajes y turismo en CDMX"></app-section-title>
+					<p class="__paragraph">El sector de renta de autobuses en la Ciudad de México ha experimentado un crecimiento significativo, reflejando la creciente demanda de soluciones de transporte cómodas y seguras para grupos. Desde excursiones escolares hasta viajes corporativos, la renta de autobuses se ha consolidado como una opción ideal para facilitar la movilidad de grupos grandes, ofreciendo un equilibrio entre eficiencia, seguridad y confort.</p>
+					<article class="__grid-cards-container">
+							<!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
+					</article>
+			</section>
 
 
-
-            <section class="__section__renta-autobuses">
-                <app-section-title section-title="Renta de autobuses: Soluciones para viajes y turismo en CDMX"></app-section-title>
-                <p class="__paragraph">El sector de renta de autobuses en la Ciudad de México ha experimentado un crecimiento significativo, reflejando la creciente demanda de soluciones de transporte cómodas y seguras para grupos. Desde excursiones escolares hasta viajes corporativos, la renta de autobuses se ha consolidado como una opción ideal para facilitar la movilidad de grupos grandes, ofreciendo un equilibrio entre eficiencia, seguridad y confort.</p>
-                <article class="__grid-cards-container">
-                    <!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
-                </article>
-            </section>
-
-
-            <section class="__section__learn-more">
-                <app-section-title section-title="Más información"></app-section-title>
-                <p class="__paragraph">El sector de renta de autobuses en la Ciudad de México ha experimentado un crecimiento significativo, reflejando la creciente demanda de soluciones de transporte cómodas y seguras para grupos. Desde excursiones escolares hasta viajes corporativos, la renta de autobuses se ha consolidado como una opción ideal para facilitar la movilidad de grupos grandes, ofreciendo un equilibrio entre eficiencia, seguridad y confort.</p>
-                <article class="__icons-cards-container" id="icons-cards-container">
-                    <!-- Las cards se insertarán aquí dinámicamente -->
-                </article>
-                <p class="__paragraph">El servicio de Turismo Gran Clase de Autovías La Línea, cuenta con dos opciones de capacidad para su comodidad y necesidades de transporte.</p>
-            </section>
+			<section class="__section__learn-more">
+					<app-section-title section-title="Más información"></app-section-title>
+					<p class="__paragraph">El sector de renta de autobuses en la Ciudad de México ha experimentado un crecimiento significativo, reflejando la creciente demanda de soluciones de transporte cómodas y seguras para grupos. Desde excursiones escolares hasta viajes corporativos, la renta de autobuses se ha consolidado como una opción ideal para facilitar la movilidad de grupos grandes, ofreciendo un equilibrio entre eficiencia, seguridad y confort.</p>
+					<article class="__icons-cards-container" id="icons-cards-container">
+							<!-- Las cards se insertarán aquí dinámicamente -->
+					</article>
+					<p class="__paragraph">El servicio de Turismo Gran Clase de Autovías La Línea, cuenta con dos opciones de capacidad para su comodidad y necesidades de transporte.</p>
+			</section>
 
 
-            <section class="__section__seats">
-                <app-section-title section-title="Asientos"></app-section-title>
-                <div class="seats-grid-container">
-                  <div class="seat-image-container">
-                      <h3 class="__subtitle-seats">24 asientos</h3>
-                      <img class="__image" src="../../../src/assets/img/global/autobuses/plano-bus-24.webp" alt="Autobús de 24 asientos">
-                  </div>
-                  <div class="hover-cards-grid-container hover-cards-24-seats">
-                  </div>
-                  <div class="hover-cards-grid-container hover-cards-44-seats">
-                  </div>
-                  <div class="seat-image-container">
-                      <h3 class="__subtitle-seats">44 asientos</h3>
-                      <img class="__image" src="../../../src/assets/img/global/autobuses/plano-bus-44.webp" alt="44 asientos">
-                  </div>
-                </div>
-            </section>
+			<section class="__section__seats">
+					<app-section-title section-title="Asientos"></app-section-title>
+					<div class="seats-grid-container">
+						<div class="seat-image-container">
+								<h3 class="__subtitle-seats">24 asientos</h3>
+								<img class="__image" src="../../../src/assets/img/global/autobuses/plano-bus-24.webp" alt="Autobús de 24 asientos">
+						</div>
+						<div class="hover-cards-grid-container hover-cards-24-seats">
+						</div>
+						<div class="hover-cards-grid-container hover-cards-44-seats">
+						</div>
+						<div class="seat-image-container">
+								<h3 class="__subtitle-seats">44 asientos</h3>
+								<img class="__image" src="../../../src/assets/img/global/autobuses/plano-bus-44.webp" alt="44 asientos">
+						</div>
+					</div>
+			</section>
 
 
-            <section class="__section__quote-bus-rental">
-                <app-section-title section-title="Cotiza la renta de autobús"></app-section-title>
-                <p class="__paragraph">¡Cotiza tu autobús con Autovías La Línea y viaja con comodidad y exclusividad!</p>
-                <p class="__paragraph">Encuentra la mejor opción para tu grupo, ajusta detalles a tu medida y disfruta de un viaje con el servicio exclusivo de Autovías La Línea.</p>
-                <div class="__quote-contact-container">
-                    <div class="__form-container">
-                       <app-forms></app-forms>
-                    </div>
-                    <aside class="__cards-contact-container">
-                        <h3 class="__subtitle">Contácanos por WhatsApp</h3>
-                        <div class="__cards-whats-container" id="cards-whats-container">
-                            <!-- Las cards se insertarán aquí dinámicamente -->
-                        </div>
-                    </aside>   
-              
-                </div>
-            </section>
+			<section class="__section__quote-bus-rental">
+					<app-section-title section-title="Cotiza la renta de autobús"></app-section-title>
+					<p class="__paragraph">¡Cotiza tu autobús con Autovías La Línea y viaja con comodidad y exclusividad!</p>
+					<p class="__paragraph">Encuentra la mejor opción para tu grupo, ajusta detalles a tu medida y disfruta de un viaje con el servicio exclusivo de Autovías La Línea.</p>
+					<div class="__quote-contact-container">
+							<div class="__form-container">
+									<app-forms></app-forms>
+							</div>
+							<aside class="__cards-contact-container">
+									<h3 class="__subtitle">Contácanos por WhatsApp</h3>
+									<div class="__cards-whats-container" id="cards-whats-container">
+											<!-- Las cards se insertarán aquí dinámicamente -->
+									</div>
+							</aside>   
+				
+					</div>
+			</section>
 
-            <section class="__section__info">
-                <app-section-title section-title="Más información"></app-section-title>
-                <article class="__info-container">
-                    <div class="__card-location">
-                        <h3 class="__subtitle">MÉXICO:</h3>
-                        <p class="__paragraph">Saturno núm. 39 Nueva Industrial Vallejo, Gustavo A. Madero. C.P. 07700, CDMX.</p>
-                        <p class="__paragraph-tel">TEL. (01 55) 57 54 83 39</p>
-                    </div>
-                    <div class="__card-location">
-                        <h3 class="__subtitle">MONTERREY:</h3>
-                        <p class="__paragraph">Churubusco núm. 300, Col. Fierro C.P. 64590</p>
-                        <p class="__paragraph-tel">TEL. (01 55) 50 90 39 00</p>
-                    </div>
-                    <div class="__card-location">
-                        <h3 class="__subtitle">GUADALAJARA:</h3>
-                        <p class="__paragraph">Salvador Hinojosa núm. 4, Colonia Nueva Central de Autobuses, Tlaquepaque. C.P. 45625 Guadalajara, Jalisco.</p>
-                        <p class="__paragraph-tel">TEL. (01 33) 37 70 38 05</p>
-                    </div>
-                </article>
-            </section>
-        `;
+			<section class="__section__info">
+					<app-section-title section-title="Más información"></app-section-title>
+					<article class="__info-container">
+							<div class="__card-location">
+									<h3 class="__subtitle">MÉXICO:</h3>
+									<p class="__paragraph">Saturno núm. 39 Nueva Industrial Vallejo, Gustavo A. Madero. C.P. 07700, CDMX.</p>
+									<p class="__paragraph-tel">TEL. (01 55) 57 54 83 39</p>
+							</div>
+							<div class="__card-location">
+									<h3 class="__subtitle">MONTERREY:</h3>
+									<p class="__paragraph">Churubusco núm. 300, Col. Fierro C.P. 64590</p>
+									<p class="__paragraph-tel">TEL. (01 55) 50 90 39 00</p>
+							</div>
+							<div class="__card-location">
+									<h3 class="__subtitle">GUADALAJARA:</h3>
+									<p class="__paragraph">Salvador Hinojosa núm. 4, Colonia Nueva Central de Autobuses, Tlaquepaque. C.P. 45625 Guadalajara, Jalisco.</p>
+									<p class="__paragraph-tel">TEL. (01 33) 37 70 38 05</p>
+							</div>
+					</article>
+			</section>
+			
+		`;
+
 		this.loadAndRenderCards();
 		this.loadAndRenderCardsWhats();
 		this.loadAndRenderHoverCards();

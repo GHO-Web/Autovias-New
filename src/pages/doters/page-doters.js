@@ -24,8 +24,16 @@ class PageDoters extends HTMLElement {
     this.innerHTML = `
             
             <app-banner-slider
-					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/doters/banners/web/banner-viaja-con-puntos-doters.webp","mediumImage": "../../src/assets/img/doters/banners/tablet/banner-viaja-con-puntos-doters.webp", "smallImage": "../../src/assets/img/doters/banners/mobile/banner-viaja-con-puntos-doters.webp", "link": "/"}]'
+                slides-data='[
+                    {
+                        "id": "slide1", 
+                        "title": "Banner 2", 
+                        "image": "../src/assets/img/global/banner/banner-doters-web.webp", 
+                        "mediumImage": "../src/assets/img/global/banner/tablet/banner-doters-tablet.webp",
+                        "smallImage": "../src/assets/img/global/banner/mobile/banner-doters-mobile.webp", 
+                        "link": "/doters"
+                    }
+                ]'
 			>
 			</app-banner-slider>
             <section class="__section__taquilla-exclusiva__ask">
@@ -51,7 +59,7 @@ class PageDoters extends HTMLElement {
                     "description": "Convierte tus <strong>Puntos Doters</strong> en aventuras inolvidables que te llevarán a descubrir nuevos destinos, vivir experiencias únicas y crear recuerdos que durarán para siempre. Cada punto que acumulas es una oportunidad para acercarte a tu próximo viaje, a esa escapada que tanto sueñas o a la experiencia que siempre quisiste disfrutar.",
                     "buttonText": "Boleto Doters",
                     "buttonLink": "./boleto-doters/",
-                    "buttonIcon": "../../src/assets/img/doters/doter-green.webp"
+                    "buttonIcon": "../src/assets/img/doters/doter-green.webp"
                 }
                 ]'></app-card-left-description>
             </section>
@@ -64,7 +72,7 @@ class PageDoters extends HTMLElement {
                     "description": "Sube de nivel con Doters y descubre un mundo diseñado para ti: beneficios exclusivos, acceso preferente y sorpresas que harán cada paso más emocionante. Convierte tus viajes y tu día a día en experiencias memorables, donde cada momento cuenta. Porque con Doters, cada punto es mucho más que un número: es la llave que abre la puerta a un universo de posibilidades, recompensas y emociones que te acompañan siempre.",
                     "buttonText": "Iniciar Sesión",
                     "buttonLink": "https://auth.doters.com/v2/login",
-                    "buttonIcon": "../../src/assets/img/doters/doter-green.webp"
+                    "buttonIcon": "../src/assets/img/doters/doter-green.webp"
                 }
                 ]'></app-card-right-description>
             </section>

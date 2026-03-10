@@ -5,77 +5,78 @@ import "../../components/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
+import "../../components/app-card-image.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-text.js";
+import "../../components/app-cards-text-image.js";
 import "../../components/app-card-text-bg-blue-gray.js";
+
 
 class PageServiciosABordo extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
-    
-            <div class="__panthom_space"></div>
 
-            <section class="__section __section__servicio-autobus">
-							<app-section-title section-title="Servicios a bordo: Autobus de doble piso Marco Polo"></app-section-title>
-							<p class="__paragraph">Los autobuses de dos pisos se han convertido en una opción popular para el transporte de pasajeros, ofreciendo una combinación de capacidad, comodidad y vistas panorámicas únicas.</p>
-							<article class="__imgs-container">
-								<div class="__auto-bus-container"></div>
-									<div class="__seats-bus-container">
-										<div "__img-container">
-											<p>El confort es clave para una experiencia de viaje excepcional, y nuestro diseño de asientos lo refleja.</p>
-											<article class="__grid-cards-container__travel">
-												<div class="services-container__comodidad">
-													<h3 class="__subtitle-center-xl">Comodidad</h3>
-													<div class="services-container-comodidad" id="comodidad-cards-container">
-															<!-- Las tarjetas de tiendas se cargarán aquí -->
-													</div>     
-												</div>
-												<div class="services-container__asientos">
-													<h3 class="__subtitle-center-xl">Asientos</h3>
-													<div class="services-container-asientos" id="asientos-cards-container">
-															<!-- Las tarjetas de tiendas se cargarán aquí -->
-													</div>     
-												</div>
-											</article>
-										</div>
+			<section class="__section __section__servicio-autobus">
+				<app-section-title section-title="Servicios a bordo: Autobus de doble piso Marco Polo"></app-section-title>
+				<p class="__paragraph">Los autobuses de dos pisos se han convertido en una opción popular para el transporte de pasajeros, ofreciendo una combinación de capacidad, comodidad y vistas panorámicas únicas.</p>
+				<article class="__imgs-container">
+					<div class="__auto-bus-container"></div>
+						<div class="__seats-bus-container">
+							<div "__img-container">
+								<p>El confort es clave para una experiencia de viaje excepcional, y nuestro diseño de asientos lo refleja.</p>
+								<article class="__grid-cards-container__travel">
+									<div class="services-container__comodidad">
+										<h3 class="__subtitle-center-xl">Comodidad</h3>
+										<div class="services-container-comodidad" id="comodidad-cards-container">
+												<!-- Las tarjetas de tiendas se cargarán aquí -->
+										</div>     
 									</div>
-                </article>
-                <article class="__scroll-bar-container" id="scroll-bar-container">
-                    <!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
-                </article>
-            </section>
-            <section class="__section __section__aplicaciones">
+									<div class="services-container__asientos">
+										<h3 class="__subtitle-center-xl">Asientos</h3>
+										<div class="services-container-asientos" id="asientos-cards-container">
+												<!-- Las tarjetas de tiendas se cargarán aquí -->
+										</div>     
+									</div>
+								</article>
+							</div>
+						</div>
+					</article>
+					<article class="__scroll-bar-container" id="scroll-bar-container">
+							<!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
+					</article>
+			</section>
+			<section class="__section __section__aplicaciones">
 
-                <app-section-title section-title="Aplicaciones y usos de los autobuses de dos pisos"></app-section-title>
-                <h3 class="__subtitle-center-xl">Servicios Disponibles</h3>
-                <p class="__paragraph">Los autobuses de dos pisos han evolucionado para convertirse en una solución versátil en el transporte moderno. Desde su papel fundamental en las ciudades hasta su atractivo en el sector turístico y los trayectos interurbanos, estos vehículos ofrecen ventajas significativas en comodidad, eficiencia y capacidad.</p>
-                <article class="__cards-container" id="services-cards-container">
-                    <!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
-                </article>
-                
-                <hr class="__line"/>
-                
-                <h3 class="__subtitle-center-xl">Tecnologías y características de los autobuses de dos pisos</h3>
-                <p class="__paragraph">La evolución del transporte no se detiene, y los autobuses de dos pisos están en el centro de esta transformación. Innovaciones tecnológicas, diseños sostenibles y mejoras en la experiencia del pasajero están redefiniendo estos vehículos para hacerlos más eficientes, cómodos y amigables con el medio ambiente.</p>
-                <article class="__cards-container" id="tech-cards-container">
-                    <!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
-                </article>
+					<app-section-title section-title="Aplicaciones y usos de los autobuses de dos pisos"></app-section-title>
+					<h3 class="__subtitle-center-xl">Servicios Disponibles</h3>
+					<p class="__paragraph">Los autobuses de dos pisos han evolucionado para convertirse en una solución versátil en el transporte moderno. Desde su papel fundamental en las ciudades hasta su atractivo en el sector turístico y los trayectos interurbanos, estos vehículos ofrecen ventajas significativas en comodidad, eficiencia y capacidad.</p>
+					<article class="__cards-container" id="services-cards-container">
+							<!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
+					</article>
+					
+					<hr class="__line"/>
+					
+					<h3 class="__subtitle-center-xl">Tecnologías y características de los autobuses de dos pisos</h3>
+					<p class="__paragraph">La evolución del transporte no se detiene, y los autobuses de dos pisos están en el centro de esta transformación. Innovaciones tecnológicas, diseños sostenibles y mejoras en la experiencia del pasajero están redefiniendo estos vehículos para hacerlos más eficientes, cómodos y amigables con el medio ambiente.</p>
+					<article class="__cards-container" id="tech-cards-container">
+							<!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
+					</article>
 
-                <hr class="__line"/>
-                
-                <h3 class="__subtitle-center-xl">Futuro de los autobuses de dos pisos</h3>
-                <p class="__paragraph">Los autobuses de dos pisos han revolucionado el transporte al combinar comodidad, capacidad y tecnología avanzada. No solo optimizan el espacio, sino que también incorporan mejoras significativas en seguridad, eficiencia energética y accesibilidad.</p>
-                <article class="__cards-container" id="future-cards-container">
-                    <!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
-                </article>
+					<hr class="__line"/>
+					
+					<h3 class="__subtitle-center-xl">Futuro de los autobuses de dos pisos</h3>
+					<p class="__paragraph">Los autobuses de dos pisos han revolucionado el transporte al combinar comodidad, capacidad y tecnología avanzada. No solo optimizan el espacio, sino que también incorporan mejoras significativas en seguridad, eficiencia energética y accesibilidad.</p>
+					<article class="__cards-container" id="future-cards-container">
+							<!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
+					</article>
 
-                <p class="__paragraph">Los autobuses de dos pisos representan una solución efectiva y eficiente para el transporte de pasajeros en diversas aplicaciones, desde el transporte urbano hasta el turismo y las rutas interurbanas. Con su capacidad aumentada, vistas panorámicas y comodidades modernas, estos autobuses ofrecen una experiencia de viaje superior. Además, con las innovaciones tecnológicas y el enfoque en la sostenibilidad, el futuro de los autobuses de dos pisos parece prometedor.</p>
-            </section>
+					<p class="__paragraph">Los autobuses de dos pisos representan una solución efectiva y eficiente para el transporte de pasajeros en diversas aplicaciones, desde el transporte urbano hasta el turismo y las rutas interurbanas. Con su capacidad aumentada, vistas panorámicas y comodidades modernas, estos autobuses ofrecen una experiencia de viaje superior. Además, con las innovaciones tecnológicas y el enfoque en la sostenibilidad, el futuro de los autobuses de dos pisos parece prometedor.</p>
+			</section>
 
-        `;
+		`;
 
 		this.loadAndRenderCardsText();
 		// Mapper para app-cards-text-image

@@ -12,11 +12,8 @@ import "../../components/app-section-title.js";
 class PageTerminosCondiciones extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-      <app-cotiza></app-cotiza>
+            <app-cotiza></app-cotiza>
     
-            <div class="__panthom_space"></div>
-
-            
             <section class="__section">
                 <app-section-title section-title="Términos y Condiciones"></app-section-title>
                 <h3 class="__subtitle">I. TÉRMINOS Y CONDICIONES</h3>

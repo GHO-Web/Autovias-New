@@ -5,7 +5,7 @@ import "../../components/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 
-import "../../components/app-banner-slider.js";
+import "../../components/app-cotiza.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-text.js";
@@ -15,7 +15,10 @@ import "../../components/app-card-title-icon.js";
 class PageDestinos extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
+      <app-cotiza></app-cotiza>
+
 			<div class="__panthom_space"></div>
+			
 			<app-map></app-map>
 
 			<section class="__section __section__quest-shop-tickets">

@@ -14,9 +14,6 @@ class PageQuienesSomos extends HTMLElement {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
     
-            <div class="__panthom_space"></div>
-
-            
             <section class="__section">
                 <app-section-title section-title="¿Quiénes somos?"></app-section-title>
                 <h3 class="__subtitle">Somos una empresa 100% mexicana, dedicada al autotransporte de pasajeros con más de 68 años de experiencia y servicio.</h3>

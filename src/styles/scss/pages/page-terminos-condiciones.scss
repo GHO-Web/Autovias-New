@@ -16,7 +16,68 @@
 @use '../_06-components/footer' as *;
 @use '../_06-components/cookies-policy' as *;
 
+
+/*----------------------------ESTILOS ESPECIFICOS PARA LA SECCIONDE BOTONES EN GRUPO---------------------*/
+
+.__btn-group-pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .btn-enable {
+            background-color: $primary-color;
+            color: $white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border: 2px solid $primary-color;
+            text-align: center;
+
+            &:hover {
+                background-color: $white;
+                color: $primary-color;
+            }
+        }
+
+        .btn-disable {
+            background-color: #ccc;
+            color: #666;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: not-allowed;
+            border: 2px solid #ccc;
+            text-align: center;
+        }
+    }
+
+}
+
+/*---------------------------ESTILOS ESPECIFICOS DE IMAGEN DE MONEDERO ----------------------------*/
+.__section-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo {
+    max-width: 350px;
+}
+
 /*-------------------ESTILOS ESPECIFICOS PARA LAS SECCIONES DE RENTA DE AUTOBUSES---------------------*/
+
 .__panthom_space {
     height: 200px;
     width: 100%;
@@ -27,6 +88,7 @@
 
     }
 }
+
 .__sections {
     width: 100%;
     padding: 35px 70px;
@@ -246,4 +308,88 @@ p {
     font-size: 20px;
     margin-top: 10px;
     text-decoration-line: underline;
+}
+
+.pets-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    text-align: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+
+    .pet-item {
+        max-width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #0b3a5b;
+
+        img {
+            width: auto;
+            height: 100px;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #0b3a5b;
+            opacity: 0.9;
+        }
+    }
+
+    @media (max-width: 900px) {
+        gap: 2rem;
+
+        .pet-item {
+
+            h3 {
+                font-size: 1.1rem;
+            }
+
+            p {
+                font-size: 0.95rem;
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+
+        .pet-item {
+            max-width: 100%;
+
+
+        }
+    }
+}
+
+.asterisk-list {
+    list-style: none; // 🔹 Quita la bolita predeterminada
+    padding-left: 1.2em;
+
+    li {
+        position: relative;
+        margin-bottom: 0.5em;
+        line-height: 1.5;
+
+        &::before {
+            content: "*"; // 🔹 Asterisco personalizado
+            position: absolute;
+            left: -1.2em;
+            color: #0b3a5b; // 🔹 Cambia el color si quieres
+            font-weight: bold;
+        }
+    }
 }

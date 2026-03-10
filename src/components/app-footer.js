@@ -103,7 +103,7 @@ class AppFooter extends HTMLElement {
 						text: "Dónde comprar",
 						href: "../../boletos-autobus/donde-comprar.html",
 					},
-					{ text: "Formas de pago", href: "#payment-methods" },
+					{ text: "Formas de pago", href: "../../boletos-autobus/donde-comprar.html" },
 					{ text: "Mapa del sitio", href: "../../sitemap.html" },
 				],
 			},

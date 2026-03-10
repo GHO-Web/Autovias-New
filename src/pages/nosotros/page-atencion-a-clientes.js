@@ -15,27 +15,22 @@ class PageAtencionAClientes extends HTMLElement {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
 
-            <div class="__panthom_space"></div>
+			<section class="__section __section__atencion-clientes">
+					<app-section-title section-title="Atencion a Clientes""></app-section-title>
+					<div class="__grid-cards-container">
+							<div class="__container-image">
+									<p class="__container__title">Ponte en contacto con nosotros</p>
+										<img class="__img" src="../src/assets/img/sales-location/atencion-clientes.webp" alt="Atencion a clientes" loading="lazy"> 
+									<p class="__container-image__footer">Resolveremos tus dudas</p>
+							</div>
+							<div class="__container-form">
+									<p class="__container__title">Completa el formulario y estaremos en contacto</p>
+									<app-forms></app-forms>
+							</div>
+					</div>
+			</section>
 
-
-            <section class="__section __section__atencion-clientes">
-                <app-section-title section-title="Atencion a Clientes""></app-section-title>
-                <div class="__grid-cards-container">
-                    <div class="__container-image">
-                        <p class="__container__title">Ponte en contacto con nosotros</p>
-                         <img class="__img" src="../src/assets/img/sales-location/atencion-clientes.webp" alt="Atencion a clientes" loading="lazy"> 
-                        <p class="__container-image__footer">Resolveremos tus dudas</p>
-                    </div>
-                    <div class="__container-form">
-                        <p class="__container__title">Completa el formulario y estaremos en contacto</p>
-                        <app-forms></app-forms>
-                    </div>
-                </div>
-            </section>
-
-			
-            
-        `;
+		`;
 
 		this.loadAndSetFormDataToAppForms();
 	}

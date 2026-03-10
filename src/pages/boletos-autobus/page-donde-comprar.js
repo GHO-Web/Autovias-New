@@ -6,7 +6,6 @@ import "../../components/app-footer.js?v=1.0.0";
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 
 import "../../components/app-cotiza.js";
-import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-img-shop-left.js";
 import "../../components/app-img-shop-right.js";
@@ -18,8 +17,6 @@ class PageDondeComprar extends HTMLElement {
 		this.innerHTML = `
     
       <app-cotiza></app-cotiza>
-			<div class="__panthom_space"></div>
-
 
 			<app-section-title section-title="¿Dónde puedo comprar Boletos de autobús en Autovías?"></app-section-title>
 			

@@ -3,15 +3,17 @@
 @use '../_02-tools/mixin' as *;
 
 // Import components
-@use '../_06-components/header' as *;
-@use '../_06-components/footer' as *;
-@use '../_06-components/modal-doters' as *;
-@use '../_06-components/banner-slider' as *;
-@use '../_06-components/app-card-doters' as *;
-@use '../_06-components/cookies-policy' as *;
-@use '../_06-components/card-right-description' as *;
-@use '../_06-components/card-left-description' as *;
-@use '../_06-components/carousel-banners' as *;
+@use '../_06-components/header';
+@use '../_06-components/footer';
+@use '../_06-components/modal-doters';
+@use '../_06-components/cotiza';
+@use '../_06-components/banner-slider';
+@use '../_06-components/section-title';
+@use '../_06-components/app-card-doters';
+@use '../_06-components/cookies-policy';
+@use '../_06-components/card-right-description';
+@use '../_06-components/card-left-description';
+@use '../_06-components/carousel-banners';
 @use '../_06-components/button-eva-trip' as *;
 
 // Import utilities
