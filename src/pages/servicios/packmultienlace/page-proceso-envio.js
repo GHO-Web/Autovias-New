@@ -9,7 +9,8 @@ import "../../../components/packmultienlace/app-time-line-packm.js";
 class PageProcesoEnvio extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
+            <app-cotiza-pack></app-cotiza-pack>
+            <div class="cotiza-pack-space"></div>
 
             <app-banner-slider
                 slides-data='[
