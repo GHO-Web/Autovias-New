@@ -25,9 +25,9 @@ class AppViajarMorelia extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/boletos-autobus/acambaro/overflow-images/morelia.webp",
-      "mediumImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/morelia.webp",
-      "smallImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/morelia.webp",
+      "image":"../src/assets/img/boletos-autobus/morelia/overflow-images/morelia.webp",
+      "mediumImage":"../src/assets/img/boletos-autobus/morelia/overflow-images/morelia.webp",
+      "smallImage":"../src/assets/img/boletos-autobus/morelia/overflow-images/morelia.webp",
       "captionTitle":"Viaja a Morelia: Disfruta de comodidad, seguridad y mejores precios con Autovías",
       "captionText":"Vive una nueva experiencia viajando. Tu aventura comienza aquí.",
       "captionAlign":"left",

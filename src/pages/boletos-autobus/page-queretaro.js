@@ -25,9 +25,9 @@ class PageQueretaro extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/boletos-autobus/acambaro/overflow-images/queretaro.webp",
-      "mediumImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/queretaro.webp",
-      "smallImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/queretaro.webp",
+      "image":"../src/assets/img/boletos-autobus/queretaro/overflow-images/queretaro.webp",
+      "mediumImage":"../src/assets/img/boletos-autobus/queretaro/overflow-images/queretaro.webp",
+      "smallImage":"../src/assets/img/boletos-autobus/queretaro/overflow-images/queretaro.webp",
       "captionTitle":"Viaja a Querétaro: Disfruta de comodidad, seguridad y mejores precios con Autovías",
       "captionText":"Vive una nueva experiencia viajando. Tu aventura comienza aquí.",
       "captionAlign":"left",

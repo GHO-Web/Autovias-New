@@ -26,9 +26,9 @@ class PageUruapan extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/boletos-autobus/acambaro/overflow-images/uruapan.webp",
-      "mediumImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/uruapan.webp",
-      "smallImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/uruapan.webp",
+      "image":"../src/assets/img/boletos-autobus/uruapan/overflow-images/uruapan.webp",
+      "mediumImage":"../src/assets/img/boletos-autobus/uruapan/overflow-images/uruapan.webp",
+      "smallImage":"../src/assets/img/boletos-autobus/uruapan/overflow-images/uruapan.webp",
       "captionTitle":"Viaja a Uruapan: Descubre la magia de este destino",
       "captionText":"Viaja con Autovías La Línea y vive la mejor experiencia. Tu aventura comienza aquí.",
       "captionAlign":"left",

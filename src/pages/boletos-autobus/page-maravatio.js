@@ -26,9 +26,9 @@ class PageMaravatio extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/boletos-autobus/acambaro/overflow-images/maravatio.webp",
-      "mediumImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/maravatio.webp",
-      "smallImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/maravatio.webp",
+      "image":"../src/assets/img/boletos-autobus/maravatio/overflow-images/maravatio.webp",
+      "mediumImage":"../src/assets/img/boletos-autobus/maravatio/overflow-images/maravatio.webp",
+      "smallImage":"../src/assets/img/boletos-autobus/maravatio/overflow-images/maravatio.webp",
       "captionTitle":"Viaja a Maravatio: Confort, Seguridad y los Mejores Precios con Autovías",
       "captionText":"Vive una nueva experiencia viajando con Autovías La Línea. Tu aventura comienza aquí.",
       "captionAlign":"left",

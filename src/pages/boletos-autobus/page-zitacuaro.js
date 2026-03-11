@@ -26,9 +26,9 @@ class PageZitacuaro extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/boletos-autobus/acambaro/overflow-images/zitacuaro.webp",
-      "mediumImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/zitacuaro.webp",
-      "smallImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/zitacuaro.webp",
+      "image":"../src/assets/img/boletos-autobus/zitacuaro/overflow-images/zitacuaro.webp",
+      "mediumImage":"../src/assets/img/boletos-autobus/zitacuaro/overflow-images/zitacuaro.webp",
+      "smallImage":"../src/assets/img/boletos-autobus/zitacuaro/overflow-images/zitacuaro.webp",
       "captionTitle":"Viaja a Zitacuaro: Descubre la magia de este destino",
       "captionText":"Viaja con Autovías La Línea y vive la mejor experiencia. Tu aventura comienza aquí.",
       "captionAlign":"left",
