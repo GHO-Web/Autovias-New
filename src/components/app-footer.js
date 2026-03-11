@@ -1,6 +1,5 @@
 
 import "../components/app-cookies-policy.js?v=1.0.0";
-import "../components/buttons/app-button-whats.js?v=1.0.0";
 import "../components/buttons/app-button-eva-trip.js?v=1.0.0";
 
 class AppFooter extends HTMLElement {
@@ -28,7 +27,6 @@ class AppFooter extends HTMLElement {
         </div>
       </footer>
 			<app-cookies-policy></app-cookies-policy>
-			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
     `;
 
