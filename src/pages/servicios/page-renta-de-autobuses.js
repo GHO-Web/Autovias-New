@@ -10,8 +10,8 @@ import "../../components/cards/app-cards-icons.js";
 import "../../components/cards/app-cards-contact-whats.js";
 import "../../components/app-section-title.js";
 import "../../components/cards/app-card-image.js";
-import "../../components/app-hover-card.js";
-import "../../components/app-forms.js";
+import "../../components/cards/app-card-hover.js";
+import "../../components/forms/app-froms.js";
 
 class PageRentaDeAutobuses extends HTMLElement {
   connectedCallback() {
@@ -141,7 +141,7 @@ class PageRentaDeAutobuses extends HTMLElement {
 
       // Populate the first 9 cards into the 24-seats container
       cardsData.slice(0, 9).forEach((data) => {
-        const hoverCardElement = document.createElement("app-hover-card");
+        const hoverCardElement = document.createElement("app-card-hover");
         hoverCardElement.setAttribute("card-title", data.title);
         hoverCardElement.setAttribute("icon-src", data.iconSrc);
         hoverCardContainer24Seats.appendChild(hoverCardElement);
@@ -149,7 +149,7 @@ class PageRentaDeAutobuses extends HTMLElement {
 
       // Populate the rest of the cards into the 44-seats container
       cardsData.slice(9).forEach((data) => {
-        const hoverCardElement = document.createElement("app-hover-card");
+        const hoverCardElement = document.createElement("app-card-hover");
         hoverCardElement.setAttribute("card-title", data.title);
         hoverCardElement.setAttribute("icon-src", data.iconSrc);
         hoverCardContainer44Seats.appendChild(hoverCardElement);

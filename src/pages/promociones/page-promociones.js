@@ -9,7 +9,7 @@ import "../../components/sliders/app-banner-slider.js";
 import "../../components/sliders/app-banner-slider-caption.js";
 import "../../components/carousel/app-payments.js";
 import "../../components/app-section-title.js";
-import "../../components/app-forms.js";
+import "../../components/forms/app-froms.js";
 
 class PagePromociones extends HTMLElement {
   connectedCallback() {
