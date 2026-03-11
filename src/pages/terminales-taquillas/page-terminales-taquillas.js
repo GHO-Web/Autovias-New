@@ -8,7 +8,7 @@ import "../../components/app-cotiza.js";
 import "../../components/cards/app-card-image.js";
 import "../../components/carousel/app-payments.js";
 import "../../components/app-section-title.js";
-import "../../components/faqs/app-dropdown.js"; // Importar el componente dropdown
+import "../../components/dropdown/app-dropdown.js"; // Importar el componente dropdown
 
 class PageTerminalesTaquillas extends HTMLElement {
   connectedCallback() {

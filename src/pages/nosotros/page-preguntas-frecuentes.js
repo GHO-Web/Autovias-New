@@ -6,7 +6,7 @@ import "../../components/app-footer.js?v=1.0.2";
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/app-section-title.js";
-import "../../components/faqs/app-dropdown.js"; // Importar el componente dropdown
+import "../../components/dropdown/app-dropdown.js"; // Importar el componente dropdown
 
 /*-------------------------SCRIPTS---------------------------*/
 

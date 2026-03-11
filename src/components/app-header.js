@@ -41,6 +41,7 @@ class AppHeader extends HTMLElement {
                     <li><a href="../../../promociones/" tabindex="0">Promociones</a></li>
                     <li><a href="https://venta.autovias.com.mx/request.aspx?PRGNAME=AccesoEx&ARGUMENTS=-AAG,-AH,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-AES" tabindex="0">Agencias</a></li>
                     <li><a href="../../../servicios/pago-referenciado-oxxo.html" tabindex="0">Pagos OXXO Pay</a></li>
+                    <li><a href="../../../promociones/viajero-anticipado.html" tabindex="0">Viajero anticipado</a></li>
                     <li><a href="../../../servicios/viajero-protegido.html" tabindex="0">Viajero protegido</a></li>
                     <li><a href="https://www.autovias.com.mx/blog/" tabindex="0">Blog</a></li>
                     <li><a href="../../../nosotros/atencion-a-clientes.html" tabindex="0">Atención a clientes</a></li>
@@ -100,6 +101,7 @@ class AppHeader extends HTMLElement {
                   <li><a href="../../../promociones/" tabindex="0">Promociones</a></li>
                   <li><a href="https://venta.autovias.com.mx/request.aspx?PRGNAME=AccesoEx&ARGUMENTS=-AAG,-AH,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-AES" tabindex="0">Agencias</a></li>
                   <li><a href="../../../servicios/pago-referenciado-oxxo.html" tabindex="0">Pagos OXXO Pay</a></li>
+                    <li><a href="../../../promociones/viajero-anticipado.html" tabindex="0">Viajero anticipado</a></li>
                   <li><a href="../../../servicios/viajero-protegido.html" tabindex="0">Viajero protegido</a></li>
                   <li><a href="https://www.autovias.com.mx/blog/" tabindex="0">Blog</a></li>
                   <li><a href="../../../nosotros/atencion-a-clientes.html" tabindex="0">Atención a clientes</a></li>

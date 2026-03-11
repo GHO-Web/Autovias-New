@@ -4,8 +4,8 @@ import "/src/components/app-header.js?v=1.0.1";
 import "/src/components/app-footer.js?v=1.0.0";
 import "/src/components/app-cotiza.js";
 /* --------------------COMPONENTES DE LANDING--------------------- */
-import "/src/components/app-banner-slider.js";
-import "/src/components/app-payments.js";
+import "/src/components/sliders/app-banner-slider.js";
+import "/src/components/carousel/app-payments.js";
 import "/src/components/app-destinations-table.js";
 /* ------------------------------SCRIPTS-------------------------- */
 
@@ -13,8 +13,6 @@ class LayoutViajeroAnticipado extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
             <app-cotiza></app-cotiza>
-
-            
 
             <app-banner-slider
                 slides-data='[

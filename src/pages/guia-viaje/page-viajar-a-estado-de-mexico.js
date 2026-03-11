@@ -9,7 +9,7 @@ import "../../components/sliders/app-banner-slider.js";
 import "../../components/carousel/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/cards/app-card-open-modal.js";
-import "../../components/faqs/app-dropdown.js";
+import "../../components/dropdown/app-dropdown.js";
 import "../../components/cards/app-card-destination-opacity.js";
 import "../../components/sliders/app-slider-opacity.js";
 import "../../components/modal/app-modal-multi-image.js";
