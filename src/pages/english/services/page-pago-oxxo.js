@@ -30,14 +30,14 @@ class PagePagoOxxoEnglish extends HTMLElement {
                     "title": "Banner 2", 
                     "image": "../../../../src/assets/img/global/banner/web/banner-viajero-anticipado-semana-santa-30-descuento.webp", 
                     "mediumImage": "../../../../src/assets/img/global/banner/tablet/banner-viajero-anticipado-semana-santa-30-descuento.webp",
-                    "smallImage": "../../../../src/assets/img/global/banner/mobile/banner-viajero-anticipado-semana-santa-30-descuento.webp", 
+                    "smallImage": "../../../../src/assets/img/global/banner/tablet/banner-compra-en-internet-descuento-10-de-regreso.webp", 
                     "link": "/doters"
                 },
                 {
                     "id": "slide3", 
                     "title": "Banner 3", 
-                    "image": "../../../../src/assets/img/global/banner/banner-doters-web.webp", 
-                    "mediumImage": "../../../../src/assets/img/global/banner/tablet/banner-doters-tablet.webp",
+                    "image": "../../../../src/assets/img/global/banner/web/banner-compra-en-internet-descuento-10-de-regreso.webp",  
+                    "mediumImage": "../../../../src/assets/img/global/banner/tablet/banner-compra-en-internet-descuento-10-de-regreso.webp",
                     "smallImage": "../../../../src/assets/img/global/banner/mobile/banner-doters-mobile.webp", 
                     "link": "/doters"
                 }
