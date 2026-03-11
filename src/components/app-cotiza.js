@@ -91,111 +91,142 @@ class AppCotiza extends HTMLElement {
         <!-- Fin Widget Ventas Reservamos -->
 
       </div>
-          `;
+            `;
 
+    // Si quieres aplicar el espaciado específico (tu método existía pero no se llamaba)
     this.addPageSpacingAfterCotiza();
 
-    document.addEventListener("DOMContentLoaded", () => {
-      const buy = document.querySelector(".cotiza");
-      const searchButton = document.createElement("button");
-      searchButton.innerHTML = `
-              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 250 250" fill="currentColor">
-                <path class="bbvaicn" d="M182.85 162.85a90 90 0 1 0-20 20L220 240l20-20zM150 110a40 40 0 0 0-40-40V50a60 60 0 0 1 60 60z"></path>
-              </svg>
-            `;
-      searchButton.setAttribute("role", "button");
-      searchButton.setAttribute(
-        "aria-label",
-        isEn ? "Go to the quote tool" : "Ir al cotizador",
-      );
-      searchButton.setAttribute("tabindex", "0");
-      searchButton.classList.add("search-button");
-      searchButton.style.display = "none";
-      searchButton.style.position = "fixed";
-      // Se posiciona en la parte inferior derecha para evitar el desbordamiento horizontal.
-      searchButton.style.bottom = "5.45rem";
-      searchButton.style.right = "1.25rem";
-      searchButton.style.zIndex = "9999";
-      searchButton.style.padding = "0.2125rem";
-      searchButton.style.backgroundImage =
-        "radial-gradient( #3a6ea5 40%, #15395a 100%)";
-      searchButton.style.color = "#fff";
-      searchButton.style.border = "none";
-      searchButton.style.borderRadius = "100%";
-      searchButton.style.cursor = "pointer";
-      searchButton.style.transform = "translateY(-6.25rem) scale(0.5)";
-      searchButton.style.opacity = "0";
-      searchButton.style.transition = "transform 0.8s ease, opacity 0.8s ease";
-      document.body.appendChild(searchButton);
+    const buy = this.querySelector(".cotiza");
+    if (!buy) return;
 
-      // Evento para desplazar la página hacia el elemento "buy"
-      searchButton.addEventListener("click", () => {
-        buy.scrollIntoView({ behavior: "smooth", block: "center" });
-      });
+    // Crear botón flotante (si no existe ya)
+    const existingBtn = document.querySelector(".search-button");
+    if (existingBtn) existingBtn.remove();
 
-      // Detectar cuando "buy" sale de la vista
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (!entry.isIntersecting) {
-              // Si "buy" no está visible, mostrar el botón
-              searchButton.style.display = "block";
-              setTimeout(() => {
-                searchButton.style.transform = "translateY(0) scale(1)";
-                searchButton.style.opacity = "1";
-              }, 10);
-            } else {
-              // Si "buy" está visible, ocultar el botón con animación
-              searchButton.style.transform = "translateY(-5.25rem) scale(0.5)";
-              searchButton.style.opacity = "0";
-              setTimeout(() => {
-                searchButton.style.display = "none";
-              }, 800);
-            }
-          });
-        },
-        { threshold: 0.1 },
-      );
+    const searchButton = document.createElement("button");
+    searchButton.innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 250 250" fill="currentColor">
+        <path class="bbvaicn" d="M182.85 162.85a90 90 0 1 0-20 20L220 240l20-20zM150 110a40 40 0 0 0-40-40V50a60 60 0 0 1 60 60z"></path>
+      </svg>
+    `;
+    searchButton.setAttribute("role", "button");
+    searchButton.setAttribute(
+      "aria-label",
+      isEn ? "Go to ticket search" : "Ir al cotizador",
+    );
+    searchButton.setAttribute("tabindex", "0");
+    searchButton.classList.add("search-button");
 
-      observer.observe(buy);
-    });
+    // Estilos del botón
+    searchButton.style.display = "none";
+    searchButton.style.position = "fixed";
+    searchButton.style.bottom = "5.45rem";
+    searchButton.style.right = "1.25rem";
+    searchButton.style.zIndex = "9999";
+    searchButton.style.padding = "0.9125rem";
+    searchButton.style.backgroundImage =
+      "radial-gradient(#3a6ea5 40%, #15395a 100%)";
+    searchButton.style.color = "#fff";
+    searchButton.style.border = "none";
+    searchButton.style.borderRadius = "100%";
+    searchButton.style.cursor = "pointer";
+    searchButton.style.transform = "translateY(-6.25rem) scale(0.5)";
+    searchButton.style.opacity = "0";
+    searchButton.style.transition = "transform 0.8s ease, opacity 0.8s ease";
+    searchButton.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
 
-    const header = document.querySelector(".cotiza");
+    document.body.appendChild(searchButton);
+
+    const onBtnClick = () => {
+      buy.scrollIntoView({ behavior: "smooth", block: "center" });
+    };
+    searchButton.addEventListener("click", onBtnClick);
+
+    // IntersectionObserver para mostrar/ocultar el botón
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            searchButton.style.display = "block";
+            setTimeout(() => {
+              searchButton.style.transform = "translateY(0) scale(1)";
+              searchButton.style.opacity = "1";
+            }, 10);
+          } else {
+            searchButton.style.transform = "translateY(-5.25rem) scale(0.5)";
+            searchButton.style.opacity = "0";
+            setTimeout(() => {
+              searchButton.style.display = "none";
+            }, 800);
+          }
+        });
+      },
+      { threshold: 0.1 },
+    );
+
+    observer.observe(buy);
+
+    // Scroll listener para header (en tu caso, es .cotiza)
+    const header = buy;
     let lastScrollY = window.scrollY;
 
-    // Evento para manejar el scroll
-    window.addEventListener("scroll", () => {
-      if (window.innerWidth >= 990) {
+    const onScroll = () => {
+      if (window.innerWidth > 1024) {
         const currentScrollY = window.scrollY;
 
         if (currentScrollY > lastScrollY) {
-          // Scroll hacia abajo: ocultar el header
           header.classList.remove("visible");
           header.classList.add("hidden");
         } else {
-          // Scroll hacia arriba: mostrar el header
           header.classList.remove("hidden");
           header.classList.add("visible");
         }
 
         lastScrollY = currentScrollY;
       }
-    });
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    // Cleanup para evitar duplicar observers/listeners al re-render
+    this._cleanup = () => {
+      try {
+        observer.disconnect();
+      } catch (_) {}
+
+      try {
+        window.removeEventListener("scroll", onScroll);
+      } catch (_) {}
+
+      try {
+        searchButton.removeEventListener("click", onBtnClick);
+      } catch (_) {}
+
+      try {
+        if (searchButton && searchButton.parentNode) searchButton.remove();
+      } catch (_) {}
+
+      this._cleanup = null;
+    };
+  }
+
+  disconnectedCallback() {
+    if (this._cleanup) this._cleanup();
   }
 }
+
 customElements.define("app-cotiza", AppCotiza);
 
 /**
  * Lógica global para gestionar el espaciado de la página.
- * Se asegura de que el contenido principal no quede oculto debajo de elementos fijos como el encabezado,
- * especialmente en páginas que no incluyen los componentes `app-cotiza` o `app-banner-slider`.
+ * Se asegura de que el contenido principal no quede oculto debajo de elementos fijos como el header,
+ * especialmente en páginas que no incluyen `app-cotiza` o `app-banner-slider`.
  */
 function addPageSpacingForHeader() {
   const hasCotiza = document.querySelector("app-cotiza");
   const hasBanner = document.querySelector("app-banner-slider");
 
-  // Esta lógica se aplica solo si ni el cotizador ni el banner están presentes.
-  // Los otros casos son manejados por la lógica interna de esos componentes.
+  // Solo aplica si NO hay cotiza NI banner
   if (!hasCotiza && !hasBanner) {
     const header = document.querySelector("header");
     if (!header) return;
@@ -203,9 +234,7 @@ function addPageSpacingForHeader() {
     let nextElement = header.nextElementSibling;
     while (nextElement) {
       const tagName = nextElement.tagName.toLowerCase();
-      if (tagName !== "script" && tagName !== "style") {
-        break; // Se encontró un elemento de contenido visible.
-      }
+      if (tagName !== "script" && tagName !== "style") break;
       nextElement = nextElement.nextElementSibling;
     }
 
@@ -215,8 +244,7 @@ function addPageSpacingForHeader() {
   }
 }
 
-// Se ejecuta después de que el DOM esté completamente cargado para asegurar que todos los elementos estén disponibles.
+// Se ejecuta después de que el DOM esté completamente cargado
 document.addEventListener("DOMContentLoaded", () => {
-  // Un pequeño retardo puede ayudar a evitar conflictos con otros scripts que se ejecutan al cargar.
   setTimeout(addPageSpacingForHeader, 100);
 });

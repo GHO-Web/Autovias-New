@@ -1,10 +1,60 @@
 class AppCotizaPack extends HTMLElement {
+  static get observedAttributes() {
+    return ["lang"];
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === "lang" && oldValue !== newValue) {
+      // rebuild with new language
+      this.connectedCallback();
+    }
+  }
+
+  addPageSpacingAfterCotiza() {
+    // Usamos un timeout para permitir que el DOM se renderice completamente, asegurando que otros componentes estén disponibles para su selección.
+    setTimeout(() => {
+      // Si el carrusel de banners existe, este manejará su propio espaciado, por lo que no hacemos nada.
+      const bannerExists = document.querySelector("app-banner-slider");
+      if (bannerExists) {
+        return;
+      }
+
+      // Si no hay banner, buscamos el primer elemento de contenido que sigue a app-cotiza.
+      let nextElement = this.nextElementSibling;
+      while (nextElement) {
+        // Ignoramos etiquetas de script u otros elementos no visibles.
+        const tagName = nextElement.tagName.toLowerCase();
+        if (tagName !== "script" && tagName !== "style") {
+          break; // Encontramos un elemento de contenido.
+        }
+        nextElement = nextElement.nextElementSibling;
+      }
+
+      // Agregamos una clase a este elemento para poder estilizarlo con CSS.
+      if (nextElement) {
+        nextElement.classList.add("content-after-cotiza");
+      }
+    }, 10);
+  }
+
   connectedCallback() {
+    // determine language; default to Spanish
+    const lang = (this.getAttribute("lang") || "es").toLowerCase();
+    const isEn = lang.startsWith("en");
+
+    const titleText = isEn
+      ? "Your new adventure starts here! 🚍 Buy your bus tickets"
+      : "¡Tu nueva aventura comienza aquí! 🚍 Compra tus boletos de autobús";
+
     this.innerHTML = `
-        <div class="cotiza">
-          <div class="widget" style="display: flex; justify-content:center;">
-            <div style="max-width: 100%; margin: 10px auto 10px; width: 100%; padding: 0 15px;" 
-             data-widget-host="habitat" 
+      <div class="cotiza">
+      <p class="titulo-widget">${titleText}</p>
+        <!-- Widget Ventas Reservamos -->
+        <div class="espaciado-widget"
+          style="display: flex; background-color: #eeeeee; justify-content:center; ; border-radius: 12px; width: 100%; margin: auto; margin-top: 3px; margin-bottom: 3px;">
+          <div style="max-width: 1430px; margin: 0; width: 100%; padding: 10px;"
+            data-prop-widget-title="Nos hemos renovado para ti, conoce nuestra nueva experiencia de compra"
+            data-widget-host="habitat" 
              data-prop-source-url="one-api.etn.com.mx/api/v2/places"
              data-prop-funnel-url="viajes.etn.com.mx" 
              data-prop-primary-color="#0C3D5C" 
@@ -37,7 +87,7 @@ class AppCotizaPack extends HTMLElement {
         </div>
            
     `;
-    
+
     const buy = this.querySelector(".cotiza");
     if (!buy) return;
 

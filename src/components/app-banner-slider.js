@@ -196,7 +196,9 @@ class AppBannerSlider extends HTMLElement {
     if (containerCarousel) {
       // Esperar un ciclo para asegurar que todo el DOM esté listo
       setTimeout(() => {
-        const cotizaElement = document.querySelector("app-cotiza");
+        const cotizaElement = document.querySelector(
+          "app-cotiza, app-cotiza-pack",
+        );
         if (!cotizaElement) {
           containerCarousel.classList.add("no-cotiza-presente");
         }

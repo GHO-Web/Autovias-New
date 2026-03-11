@@ -1,6 +1,7 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/packmultienlace/app-cotiza-pack.js";
 import "../../../components/app-section-title.js";
+import "../../../components/app-banner-slider.js";
 
 import "../../../components/packmultienlace/app-card-bg-primary.js";
 import "../../../components/packmultienlace/app-card-small-list.js";
@@ -16,7 +17,7 @@ class PageRestriccionesPack extends HTMLElement {
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/paqueteria/banner/pack-banner-restricciones.webp","mediumImage": "../../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "/src/assets/img/paqueteria/banner/web/pack-restricciones-web.webp","mediumImage": "/src/assets/img/paqueteria/banner/tablet/pack-restricciones-tablet.webp", "smallImage": "/src/assets/img/paqueteria/banner/movil/pack-restricciones-mobile.webp", "link": "#index.html/banner1"}
                 ]'
             >
             </app-banner-slider>

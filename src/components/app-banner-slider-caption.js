@@ -60,7 +60,7 @@ class AppBannerSliderCaption extends HTMLElement {
           (_, index) => `
             <div class="indicator" data-index="${index}" role="button" tabindex="0"
                  aria-label="Ir a la diapositiva ${index + 1}"></div>
-          `
+          `,
         )
         .join("");
 
@@ -109,6 +109,7 @@ class AppBannerSliderCaption extends HTMLElement {
       const slides = this.querySelectorAll(".slide");
       const indicators = this.querySelectorAll(".indicator");
       const carouselContainer = this.querySelector(".carousel-container");
+
       let autoSlideInterval;
 
       const updateCarousel = () => {
@@ -160,7 +161,8 @@ class AppBannerSliderCaption extends HTMLElement {
       startAutoSlide();
     } else if (slidesData.length === 1) {
       const carouselContainer = this.querySelector(".carousel-container");
-      if (carouselContainer) carouselContainer.style.transform = "translateX(0%)";
+      if (carouselContainer)
+        carouselContainer.style.transform = "translateX(0%)";
 
       const mainContainer = this.querySelector(".container__carousel");
       if (mainContainer) {
@@ -171,8 +173,24 @@ class AppBannerSliderCaption extends HTMLElement {
       const singleBannerLink = this.querySelector(".banner-slider-link");
       if (singleBannerLink) {
         singleBannerLink.style.cursor = "default";
-        singleBannerLink.addEventListener("click", (event) => event.preventDefault());
+        singleBannerLink.addEventListener("click", (event) =>
+          event.preventDefault(),
+        );
       }
+    }
+
+    // Lógica para ajustar el margen superior si app-cotiza no existe
+    const containerCarousel = this.querySelector(".container__carousel");
+    if (containerCarousel) {
+      // Esperar un ciclo para asegurar que todo el DOM esté listo
+      setTimeout(() => {
+        const cotizaElement = document.querySelector(
+          "app-cotiza, app-cotiza-pack",
+        );
+        if (!cotizaElement) {
+          containerCarousel.classList.add("no-cotiza-presente");
+        }
+      }, 0);
     }
 
     // --- scroll hide/show (igual que el tuyo) ---
