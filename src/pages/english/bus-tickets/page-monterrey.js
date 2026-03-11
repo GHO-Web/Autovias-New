@@ -17,17 +17,17 @@ import "../../../components/app-modal-multi-image.js";
 import "../../../components/app-modal-image.js";
 
 class PageMonterrey extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider-caption
           slides-data='[
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../../../src/assets/img/img-landing/monterrey.webp",
-      "mediumImage":"../../../src/assets/img/img-landing/monterrey.webp",
-      "smallImage":"../../../src/assets/img/img-landing/monterrey.webp",
+      "image":"../../../src/assets/img/english/bus-tickets/monterrey/overflow-images/monterrey.webp",
+      "mediumImage":"../../../src/assets/img/english/bus-tickets/monterrey/overflow-images/monterrey.webp",
+      "smallImage":"../../../src/assets/img/english/bus-tickets/monterrey/overflow-images/monterrey.webp",
       "captionTitle":"Travel to Monterrey: The Industrial Heart of Mexico",
       "captionText":"Discover the 'Sultan of the North' with the leading bus service. Your adventure starts here.",
       "captionAlign":"left",
@@ -261,6 +261,6 @@ class PageMonterrey extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
     `;
-	}
+  }
 }
 customElements.define("page-monterrey", PageMonterrey);

@@ -17,8 +17,8 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 
 class PageUruapan extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 
 			<app-banner-slider-caption
@@ -26,9 +26,9 @@ class PageUruapan extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/uruapan.webp",
-      "mediumImage":"../src/assets/img/img-landing/uruapan.webp",
-      "smallImage":"../src/assets/img/img-landing/uruapan.webp",
+      "image":"../src/assets/img/boletos-autobus/uruapan/overflow-images/uruapan.webp",
+      "mediumImage":"../src/assets/img/boletos-autobus/uruapan/overflow-images/uruapan.webp",
+      "smallImage":"../src/assets/img/boletos-autobus/uruapan/overflow-images/uruapan.webp",
       "captionTitle":"Viaja a Uruapan: Descubre la magia de este destino",
       "captionText":"Viaja con Autovías La Línea y vive la mejor experiencia. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -299,7 +299,7 @@ class PageUruapan extends HTMLElement {
 
 			
     `;
-	}
+  }
 }
 
 customElements.define("page-uruapan", PageUruapan);

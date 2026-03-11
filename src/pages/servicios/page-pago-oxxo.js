@@ -16,9 +16,30 @@ class PagePagoOxxo extends HTMLElement {
 
         <app-banner-slider
             slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/Bw_Doters_Feria_Tacambaro1_Autovias.webp","mediumImage": "../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"},
-                {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/global/banner/Bw_Patio_Santa_Fe_Morelia2_Autovias.webp", "mediumImage": "../src/assets/img/global/banner/Tablet.png","smallImage": "../src/assets/img/global/banner/Movil.png", "link": "#index.html/banner2"},
-                {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/global/banner/Bw_Playas_Semana_Santa_Autovias.webp", "mediumImage": "../src/assets/img/global/banner/Tablet-1.png","smallImage": "../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner3"}
+                {
+                    "id": "slide1", 
+                    "title": "Banner 1", 
+                    "image": "../src/assets/img/global/banner/web/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp",
+                    "mediumImage": "../src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+                    "smallImage": "../src/assets/img/global/banner/mobile/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+                    "link": "/"
+                },
+                {
+                    "id": "slide2", 
+                    "title": "Banner 2", 
+                    "image": "../src/assets/img/global/banner/web/banner-viajero-anticipado-semana-santa-30-descuento.webp", 
+                    "mediumImage": "../src/assets/img/global/banner/tablet/banner-viajero-anticipado-semana-santa-30-descuento.webp",
+                    "smallImage": "../src/assets/img/global/banner/mobile/banner-viajero-anticipado-semana-santa-30-descuento.webp", 
+                    "link": "/doters"
+                },
+                {
+                    "id": "slide3", 
+                    "title": "Banner 3", 
+                    "image": "../src/assets/img/global/banner/banner-doters-web.webp", 
+                    "mediumImage": "../src/assets/img/global/banner/tablet/banner-doters-tablet.webp",
+                    "smallImage": "../src/assets/img/global/banner/mobile/banner-doters-mobile.webp", 
+                    "link": "/doters"
+                }
             ]'
         >
         </app-banner-slider>

@@ -17,17 +17,17 @@ import "../../../components/app-modal-multi-image.js";
 import "../../../components/app-modal-image.js";
 
 class PageCiudadDeMexico extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
       <app-banner-slider-caption
           slides-data='[
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../../../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
-      "mediumImage":"../../../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
-      "smallImage":"../../../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
+      "image":"../../../src/assets/img/english/bus-tickets/ciudad-de-mexico/overflow-images/ciudad-de-mexico-chapultepec.webp",
+      "mediumImage":"../../../src/assets/img/english/bus-tickets/ciudad-de-mexico/overflow-images/ciudad-de-mexico-chapultepec.webp",
+      "smallImage":"../../../src/assets/img/english/bus-tickets/ciudad-de-mexico/overflow-images/ciudad-de-mexico-chapultepec.webp",
       "captionTitle":"Travel to Mexico City: The Heart of Mexico with Autovías",
       "captionText":"Discover the vibrant capital of the country with the leading bus service. Your adventure starts here.",
       "captionAlign":"left",
@@ -257,6 +257,6 @@ class PageCiudadDeMexico extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
     `;
-	}
+  }
 }
 customElements.define("page-ciudad-de-mexico", PageCiudadDeMexico);

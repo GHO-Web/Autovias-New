@@ -17,17 +17,17 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 
 class PageIxtapa extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider-caption
           slides-data='[
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/guadalajara.webp",
-      "mediumImage":"../src/assets/img/img-landing/guadalajara.webp",
-      "smallImage":"../src/assets/img/img-landing/guadalajara.webp",
+      "image":"../src/assets/img/boletos-autobus/ixtapa/overflow-images/guadalajara.webp",
+      "mediumImage":"../src/assets/img/boletos-autobus/ixtapa/overflow-images/guadalajara.webp",
+      "smallImage":"../src/assets/img/boletos-autobus/ixtapa/overflow-images/guadalajara.webp",
       "captionTitle":"Viaja a Ixtapa Zihuatanejo: Confort, Seguridad y los Mejores Precios con Autovías",
       "captionText":"Descubre este paraiso con el servicio de autobús líder. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -203,6 +203,6 @@ class PageIxtapa extends HTMLElement {
 			
 			
     `;
-	}
+  }
 }
 customElements.define("page-ixtapa", PageIxtapa);

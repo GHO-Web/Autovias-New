@@ -17,19 +17,19 @@ import "../../../components/app-modal-multi-image.js";
 import "../../../components/app-modal-image.js";
 
 class PageGuadalajara extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider-caption
           slides-data='[
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../../../src/assets/img/img-landing/guadalajara.webp",
-      "mediumImage":"../../../src/assets/img/img-landing/guadalajara.webp",
-      "smallImage":"../../../src/assets/img/img-landing/guadalajara.webp",
+      "image":"../../../src/assets/img/english/bus-tickets/guadalajara/overflow-images/guadalajara.webp",
+      "mediumImage":"../../../src/assets/img/english/bus-tickets/guadalajara/overflow-images/guadalajara.webp",
+      "smallImage":"../../../src/assets/img/english/bus-tickets/guadalajara/overflow-images/guadalajara.webp",
       "captionTitle":"Travel to Guadalajara: Comfort, Safety, and the Best Prices with Autovías",
-      "captionText":"Discover the 'Pearl of the West' with the leading bus service. Your adventure starts here.",
+      "captionText":"Discover the Pearl of the West with the leading bus service. Your adventure starts here.",
       "captionAlign":"left",
       "captionTheme":"dark"
     }
@@ -265,6 +265,6 @@ class PageGuadalajara extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
     `;
-	}
+  }
 }
 customElements.define("page-guadalajara", PageGuadalajara);

@@ -11,15 +11,15 @@
 		"landings": [
 			{
 				"nombre": "OXXO Pay",
-				"url": "../../english/servicios/pago-referenciado-oxxo.html"
+				"url": "../../english/servicios/referenced-payment-oxxo.html"
 			},
 			{
 				"nombre": "Pack Multienlace",
 				"url": "../../servicios/packmultienlace/"
 			},
 			{
-				"nombre": "Viajero Protegido",
-				"url": "../../english/servicios/viajero-protegido.html"
+				"nombre": "Protected Traveler",
+				"url": "../../english/servicios/protected-traveler.html"
 			}
 		]
 	},
@@ -29,30 +29,30 @@
 			{ "nombre": "Destinos", "url": "../../destinos/" },
 			{
 				"nombre": "Ciudad de México",
-				"url": "../../english/destinations/boletos-de-autobus-a-ciudad-de-mexico.html"
+				"url": "../../english/destinations/bus-ticket-to-ciudad-de-mexico.html"
 			},
-			{ "nombre": "Colima", "url": "../../english/destinations/boletos-de-autobus-a-colima.html" },
+			{ "nombre": "Colima", "url": "../../english/destinations/bus-ticket-to-colima.html" },
 			{
 				"nombre": "Guadalajara",
-				"url": "../../english/destinations/boletos-de-autobus-a-guadalajara.html"
+				"url": "../../english/destinations/bus-ticket-to-guadalajara.html"
 			},
-			{ "nombre": "Ixtapa", "url": "../../english/destinations/boletos-de-autobus-a-ixtapa.html" },
+			{ "nombre": "Ixtapa", "url": "../../english/destinations/bus-ticket-to-ixtapa.html" },
 			{
 				"nombre": "Maravatío",
-				"url": "../../english/destinations/boletos-de-autobus-a-maravatio.html"
+				"url": "../../english/destinations/bus-ticket-to-maravatio.html"
 			},
-			{ "nombre": "Morelia", "url": "../../english/destinations/boletos-de-autobus-a-morelia.html" },
-			{ "nombre": "Uruapan", "url": "../../english/destinations/boletos-de-autobus-a-uruapan.html" },
+			{ "nombre": "Morelia", "url": "../../english/destinations/bus-ticket-to-morelia.html" },
+			{ "nombre": "Uruapan", "url": "../../english/destinations/bus-ticket-to-uruapan.html" },
 			{
 				"nombre": "Zitacuaro",
-				"url": "../../english/destinations/boletos-de-autobus-a-zitacuaro.html"
+				"url": "../../english/destinations/bus-ticket-to-zitacuaro.html"
 			}
 		]
 	},
 	{
 		"categoria": "Promotions",
 		"landings": [
-			{ "nombre": "Promociones", "url": "../../english/promotions/" },
+			{ "nombre": "Promotions", "url": "../../english/promotions/" },
 			{ "nombre": "Buen Fin", "url": "../../english/promotions/buen-fin/" },
 			{ "nombre": "Hot travel", "url": "../../english/promotions/hot-travel/" },
 			{
@@ -65,16 +65,16 @@
 		"categoria": "About",
 		"landings": [
 			{
-				"nombre": "Aviso de privacidad",
-				"url": "../../english/about/aviso-de-privacidad.html"
+				"nombre": "Privacy Notice",
+				"url": "../../english/about/privacy-notice.html"
 			},
 			{
-				"nombre": "¿Quienes somos?",
-				"url": "../../english/about/quienes-somos.html"
+				"nombre": "About Us",
+				"url": "../../english/about/who-we-are.html"
 			},
 			{
-				"nombre": "Terminos y condiciones",
-				"url": "../../english/about/terminos-condiciones.html"
+				"nombre": "Terms and Conditions",
+				"url": "../../english/about/terms-and-conditions.html"
 			}
 		]
 	}

@@ -17,8 +17,8 @@ import "../../../components/app-modal-multi-image.js";
 import "../../../components/app-modal-image.js";
 
 class PageMaravatio extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 
 			<app-banner-slider-caption
@@ -26,9 +26,9 @@ class PageMaravatio extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../../../src/assets/img/img-landing/maravatio.webp",
-      "mediumImage":"../../../src/assets/img/img-landing/maravatio.webp",
-      "smallImage":"../../../src/assets/img/img-landing/maravatio.webp",
+      "image":"../../../src/assets/img/english/bus-tickets/maravatio/overflow-images/maravatio.webp",
+      "mediumImage":"../../../src/assets/img/english/bus-tickets/maravatio/overflow-images/maravatio.webp",
+      "smallImage":"../../../src/assets/img/english/bus-tickets/maravatio/overflow-images/maravatio.webp",
       "captionTitle":"Travel to Maravatio: Comfort, Safety, and the Best Prices with Autovías",
       "captionText":"Live a new experience traveling with Autovías La Línea. Your adventure starts here.",
       "captionAlign":"left",
@@ -255,6 +255,6 @@ class PageMaravatio extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
 		`;
-	}
+  }
 }
 customElements.define("page-maravatio", PageMaravatio);

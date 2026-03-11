@@ -17,17 +17,17 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 
 class AppAtlacomulco extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider-caption
           slides-data='[
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/atlacomulco-centro.webp",
-      "mediumImage":"../src/assets/img/img-landing/atlacomulco-centro.webp",
-      "smallImage":"../src/assets/img/img-landing/atlacomulco-centro.webp",
+      "image":"../src/assets/img/boletos-autobus/atlacomulco/overflow-images/atlacomulco-centro.webp",
+      "mediumImage":"../src/assets/img/boletos-autobus/atlacomulco/overflow-images/atlacomulco-centro.webp",
+      "smallImage":"../src/assets/img/boletos-autobus/atlacomulco/overflow-images/atlacomulco-centro.webp",
       "captionTitle":"Viaja a Atlacomulco: Conecta con el Corazón del Estado de México",
       "captionText":"Descubre la esencia de Atlacomulco con el servicio de autobús líder. Tu viaje seguro y cómodo comienza aquí.",
       "captionAlign":"left",
@@ -259,6 +259,6 @@ class AppAtlacomulco extends HTMLElement {
 			
 			
 		`;
-	}
+  }
 }
 customElements.define("page-atlacomulco", AppAtlacomulco);

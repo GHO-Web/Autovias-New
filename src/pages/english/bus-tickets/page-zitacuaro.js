@@ -17,8 +17,8 @@ import "../../../components/app-modal-multi-image.js";
 import "../../../components/app-modal-image.js";
 
 class PageZitacuaro extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 
 			<app-banner-slider-caption
@@ -26,9 +26,9 @@ class PageZitacuaro extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../../../src/assets/img/img-landing/zitacuaro.webp",
-      "mediumImage":"../../../src/assets/img/img-landing/zitacuaro.webp",
-      "smallImage":"../../../src/assets/img/img-landing/zitacuaro.webp",
+      "image":"../../../src/assets/img/english/bus-tickets/zitacuaro/overflow-images/zitacuaro.webp",
+      "mediumImage":"../../../src/assets/img/english/bus-tickets/zitacuaro/overflow-images/zitacuaro.webp",
+      "smallImage":"../../../src/assets/img/english/bus-tickets/zitacuaro/overflow-images/zitacuaro.webp",
       "captionTitle":"Travel to Zitacuaro: Discover the magic of this destination",
       "captionText":"Travel with Autovías La Línea and live the best experience. Your adventure starts here.",
       "captionAlign":"left",
@@ -293,7 +293,7 @@ class PageZitacuaro extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
     `;
-	}
+  }
 }
 
 customElements.define("page-zitacuaro", PageZitacuaro);
