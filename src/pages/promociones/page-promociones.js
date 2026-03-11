@@ -12,8 +12,8 @@ import "../../components/app-section-title.js";
 import "../../components/app-forms.js";
 
 class PagePromociones extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <app-cotiza></app-cotiza>
 
             <app-banner-slider-caption
@@ -21,9 +21,9 @@ class PagePromociones extends HTMLElement {
                     {
                         "title":"Promo 1",
                         "link":"https://example.com",
-                        "image":"../src/assets/img/img-landing/promociones.webp",
-                        "mediumImage":"../src/assets/img/img-landing/promociones.webp",
-                        "smallImage":"../src/assets/img/img-landing/promociones.webp",
+                        "image":"../src/assets/img/promociones/promociones.webp/promociones.webp",
+                        "mediumImage":"../src/assets/img/promociones/promociones.webp/promociones.webp",
+                        "smallImage":"../src/assets/img/promociones/promociones.webp/promociones.webp",
                         "captionTitle":"¡Viaja por menos con las Promociones de Autovías!",
                         "captionText":"Descubre las mejores ofertas y descuentos para hacer tu próximo viaje en autobús más económico y placentero.",
                         "captionAlign":"left",
@@ -59,6 +59,6 @@ class PagePromociones extends HTMLElement {
             </section>
 			
         `;
-	}
+  }
 }
 customElements.define("page-promociones", PagePromociones);

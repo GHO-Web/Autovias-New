@@ -17,17 +17,17 @@ import "../../../components/app-modal-multi-image.js";
 import "../../../components/app-modal-image.js";
 
 class AppAtlacomulco extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider-caption
 				slides-data='[
 				{
 					"title":"Promo 1",
 					"link":"https://example.com",
-					"image":"../../../src/assets/img/img-landing/atlacomulco-centro.webp",
-					"mediumImage":"../../../src/assets/img/img-landing/atlacomulco-centro.webp",
-					"smallImage":"../../../src/assets/img/img-landing/atlacomulco-centro.webp",
+					"image":"../../../src/assets/img/english/bus-tickets/atlacomulco/overflow-images/atlacomulco-centro.webp",
+					"mediumImage":"../../../src/assets/img/english/bus-tickets/atlacomulco/overflow-images/atlacomulco-centro.webp",
+					"smallImage":"../../../src/assets/img/english/bus-tickets/atlacomulco/overflow-images/atlacomulco-centro.webp",
 					"captionTitle":"Travel to Atlacomulco: Connect with the Heart of the State of Mexico",
 					"captionText":"Discover the essence of Atlacomulco with the leading bus service. Your safe and comfortable journey starts here.",
 					"captionAlign":"left",
@@ -261,6 +261,6 @@ class AppAtlacomulco extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
 		`;
-	}
+  }
 }
 customElements.define("page-atlacomulco", AppAtlacomulco);

@@ -17,17 +17,17 @@ import "../../../components/app-modal-multi-image.js";
 import "../../../components/app-modal-image.js";
 
 class PageIxtapa extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider-caption
           slides-data='[
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../../../src/assets/img/img-landing/guadalajara.webp",
-      "mediumImage":"../../../src/assets/img/img-landing/guadalajara.webp",
-      "smallImage":"../../../src/assets/img/img-landing/guadalajara.webp",
+      "image":"../../../src/assets/img/english/bus-tickets/ixtapa/overflow-images/ixtapa.webp",
+      "mediumImage":"../../../src/assets/img/english/bus-tickets/ixtapa/overflow-images/ixtapa.webp",
+      "smallImage":"../../../src/assets/img/english/bus-tickets/ixtapa/overflow-images/ixtapa.webp",
       "captionTitle":"Travel to Ixtapa Zihuatanejo: Comfort, Safety, and the Best Prices with Autovías",
       "captionText":"Discover this paradise with the leading bus service. Your adventure starts here.",
       "captionAlign":"left",
@@ -205,6 +205,6 @@ class PageIxtapa extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
     `;
-	}
+  }
 }
 customElements.define("page-ixtapa", PageIxtapa);

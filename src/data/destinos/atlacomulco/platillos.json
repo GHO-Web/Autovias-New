@@ -2,40 +2,40 @@
   {
     "title": "Carnitas Tradicionales",
     "description": "Las carnitas son uno de los platillos más representativos de Atlacomulco y la región norte del Estado de México. Preparadas lentamente en cazo de cobre, la carne de cerdo se cocina en su propia grasa hasta lograr una textura suave por dentro y dorada por fuera. Se sirven en tortillas calientes con salsa, cebolla y cilantro, convirtiéndose en un imperdible de fondas y mercados locales.",
-    "imageSrc": "../src/assets/img/platillos/atlacomulco/carnitas.webp",
-    "imageModal": "../src/assets/img/platillos/atlacomulco/carnitas-m.webp",
+    "imageSrc": "../src/assets/img/destinos-img/atlacomulco/platillos/carnitas.webp",
+    "imageModal": "../src/assets/img/destinos-img/atlacomulco/platillos/carnitas-m.webp",
     "altText": "Carnitas tradicionales de Atlacomulco",
     "linkText": "Ver..."
   },
   {
     "title": "Barbacoa de Borrego",
     "description": "La barbacoa de borrego es una tradición dominical en Atlacomulco. Cocinada lentamente en horno de tierra y envuelta en pencas de maguey, su carne es jugosa y llena de sabor. Se acompaña con consomé, tortillas recién hechas, salsa verde o roja y limón. Es un platillo que reúne a familias y visitantes en torno a la cocina tradicional.",
-    "imageSrc": "../src/assets/img/platillos/atlacomulco/barbacoa.webp",
-    "imageModal": "../src/assets/img/platillos/atlacomulco/barbacoa-m.webp",
+    "imageSrc": "../src/assets/img/destinos-img/atlacomulco/platillos/barbacoa.webp",
+    "imageModal": "../src/assets/img/destinos-img/atlacomulco/platillos/barbacoa-m.webp",
     "altText": "Barbacoa de borrego",
     "linkText": "Ver..."
   },
   {
     "title": "Tlacoyos Mazahuas",
     "description": "Los tlacoyos mazahuas son una herencia prehispánica presente en Atlacomulco. Elaborados con masa de maíz azul o blanco, se rellenan de frijol, haba o requesón y se cuecen en comal. Se sirven con nopales, queso fresco, salsa y cilantro, ofreciendo un sabor auténtico que conecta directamente con las raíces indígenas de la región.",
-    "imageSrc": "../src/assets/img/platillos/atlacomulco/tlacoyos.webp",
-    "imageModal": "../src/assets/img/platillos/atlacomulco/tlacoyos-m.webp",
+    "imageSrc": "../src/assets/img/destinos-img/atlacomulco/platillos/tlacoyos.webp",
+    "imageModal": "../src/assets/img/destinos-img/atlacomulco/platillos/tlacoyos-m.webp",
     "altText": "Tlacoyos mazahuas",
     "linkText": "Ver..."
   },
   {
     "title": "Tortillas Artesanales",
     "description": "Las tortillas artesanales hechas a mano son la base de la gastronomía en Atlacomulco. Preparadas con maíz nixtamalizado y cocidas en comal, destacan por su aroma, textura y sabor inigualable. Acompañan cualquier platillo tradicional y representan el trabajo diario de las cocineras locales que preservan técnicas ancestrales.",
-    "imageSrc": "../src/assets/img/platillos/atlacomulco/tortillas-artesanales.webp",
-    "imageModal": "../src/assets/img/platillos/atlacomulco/tortillas-artesanales-m.webp",
+    "imageSrc": "../src/assets/img/destinos-img/atlacomulco/platillos/tortillas-artesanales.webp",
+    "imageModal": "../src/assets/img/destinos-img/atlacomulco/platillos/tortillas-artesanales-m.webp",
     "altText": "Tortillas artesanales",
     "linkText": "Ver..."
   },
   {
     "title": "Salsas Tradicionales",
     "description": "Las salsas tradicionales de Atlacomulco se elaboran en molcajete con chiles secos o frescos, jitomate, ajo y hierbas locales. Cada salsa aporta un carácter único, desde sabores ahumados hasta notas picantes intensas. Son el complemento perfecto para carnitas, barbacoa y antojitos, elevando cada bocado con identidad regional.",
-    "imageSrc": "../src/assets/img/platillos/atlacomulco/salsas.webp",
-    "imageModal": "../src/assets/img/platillos/atlacomulco/salsas-m.webp",
+    "imageSrc": "../src/assets/img/destinos-img/atlacomulco/platillos/salsas.webp",
+    "imageModal": "../src/assets/img/destinos-img/atlacomulco/platillos/salsas-m.webp",
     "altText": "Salsas tradicionales",
     "linkText": "Ver..."
   }

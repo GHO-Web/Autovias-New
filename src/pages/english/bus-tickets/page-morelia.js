@@ -5,7 +5,6 @@ import "../../../components/english/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/app-cotiza.js";
-import "../../../components/app-banner-slider.js";
 import "../../../components/app-banner-slider-caption.js";
 import "../../../components/app-payments.js";
 import "../../../components/app-section-title.js";
@@ -17,17 +16,17 @@ import "../../../components/app-modal-multi-image.js";
 import "../../../components/app-modal-image.js";
 
 class PageMorelia extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider-caption
           slides-data='[
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../../../src/assets/img/img-landing/morelia.webp",
-      "mediumImage":"../../../src/assets/img/img-landing/morelia.webp",
-      "smallImage":"../../../src/assets/img/img-landing/morelia.webp",
+      "image":"../../../src/assets/img/english/bus-tickets/morelia/overflow-images/morelia.webp",
+      "mediumImage":"../../../src/assets/img/english/bus-tickets/morelia/overflow-images/morelia.webp",
+      "smallImage":"../../../src/assets/img/english/bus-tickets/morelia/overflow-images/morelia.webp",
       "captionTitle":"Travel to Morelia: Enjoy comfort, safety, and the best prices with Autovías",
       "captionText":"Live a new travel experience. Your adventure starts here.",
       "captionAlign":"left",
@@ -265,6 +264,6 @@ class PageMorelia extends HTMLElement {
 			<app-button-eva-trip></app-button-eva-trip>
 
     `;
-	}
+  }
 }
 customElements.define("page-morelia", PageMorelia);

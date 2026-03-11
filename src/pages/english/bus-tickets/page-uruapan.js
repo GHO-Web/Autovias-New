@@ -17,8 +17,8 @@ import "../../../components/app-modal-multi-image.js";
 import "../../../components/app-modal-image.js";
 
 class PageUruapan extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 
 			<app-banner-slider-caption
@@ -26,9 +26,9 @@ class PageUruapan extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../../../src/assets/img/img-landing/uruapan.webp",
-      "mediumImage":"../../../src/assets/img/img-landing/uruapan.webp",
-      "smallImage":"../../../src/assets/img/img-landing/uruapan.webp",
+      "image":"../../../src/assets/img/english/bus-tickets/uruapan/overflow-images/uruapan.webp",
+      "mediumImage":"../../../src/assets/img/english/bus-tickets/uruapan/overflow-images/uruapan.webp",
+      "smallImage":"../../../src/assets/img/english/bus-tickets/uruapan/overflow-images/uruapan.webp",
       "captionTitle":"Travel to Uruapan: Discover the magic of this destination",
       "captionText":"Travel with Autovías La Línea and live the best experience. Your adventure starts here.",
       "captionAlign":"left",
@@ -301,7 +301,7 @@ class PageUruapan extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
     `;
-	}
+  }
 }
 
 customElements.define("page-uruapan", PageUruapan);

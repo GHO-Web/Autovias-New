@@ -17,17 +17,17 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 
 class PageGuadalajara extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider-caption
           slides-data='[
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/guadalajara.webp",
-      "mediumImage":"../src/assets/img/img-landing/guadalajara.webp",
-      "smallImage":"../src/assets/img/img-landing/guadalajara.webp",
+      "image":"../src/assets/img/boletos-autobus/guadalajara/overflow-images/guadalajara.webp",
+      "mediumImage":"../src/assets/img/boletos-autobus/guadalajara/overflow-images/guadalajara.webp",
+      "smallImage":"../src/assets/img/boletos-autobus/guadalajara/overflow-images/guadalajara.webp",
       "captionTitle":"Viaja a Guadalajara: Confort, Seguridad y los Mejores Precios con Autovías",
       "captionText":"Descubre la Perla Tapatía con el servicio de autobús líder. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -263,6 +263,6 @@ class PageGuadalajara extends HTMLElement {
 			
 			
     `;
-	}
+  }
 }
 customElements.define("page-guadalajara", PageGuadalajara);

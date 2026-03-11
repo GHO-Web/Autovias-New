@@ -6,7 +6,6 @@ import "../../../components/english/app-footer.js?v=1.0.0";
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/app-cotiza.js";
 import "../../../components/app-banner-slider-caption.js";
-import "../../../components/app-banner-slider.js";
 import "../../../components/app-payments.js";
 import "../../../components/app-section-title.js";
 import "../../../components/app-card-open-modal.js";
@@ -17,23 +16,24 @@ import "../../../components/app-modal-multi-image.js";
 import "../../../components/app-modal-image.js";
 
 class AppColima extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider-caption
-          slides-data='[
-    {
-      "title":"Promo 1",
-      "link":"https://example.com",
-      "image":"../../../src/assets/img/img-landing/colima-centro.webp",
-      "mediumImage":"../../../src/assets/img/img-landing/colima-centro.webp",
-      "smallImage":"../../../src/assets/img/img-landing/colima-centro.webp",
-      "captionTitle":"Travel to Colima: The Charm of the Pacific and the Volcano with Autovías",
-      "captionText":"Discover the 'City of Palms', its warmth and landscapes with the leading bus service. Your trip awaits!",
-      "captionAlign":"left",
-      "captionTheme":"dark"
-    }
-  ]'>
+        slides-data='[
+					{
+						"title":"Promo 1",
+						"link":"https://example.com",
+						"image":"../../../src/assets/img/english/bus-tickets/colima/overflow-images/colima-centro.webp",
+						"mediumImage":"../../../src/assets/img/english/bus-tickets/colima/overflow-images/colima-centro.webp",
+						"smallImage":"../../../src/assets/img/english/bus-tickets/colima/overflow-images/colima-centro.webp",
+						"captionTitle":"Travel to Colima: The Charm of the Pacific and the Volcano with Autovías",
+						"captionText":"Discover the City of Palms, its warmth and landscapes with the leading bus service. Your trip awaits!",
+						"captionAlign":"left",
+						"captionTheme":"dark"
+					}
+				]'
+			>
       </app-banner-slider-caption>
 			<app-payments></app-payments>
 			
@@ -261,6 +261,6 @@ class AppColima extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
     `;
-	}
+  }
 }
 customElements.define("page-colima", AppColima);

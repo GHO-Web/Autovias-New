@@ -6,8 +6,6 @@ import "../../../components/english/app-footer.js?v=1.0.0";
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 
 import "../../../components/app-cotiza.js";
-import "../../../components/app-banner-slider.js";
-import "../../../components/app-payments.js";
 import "../../../components/app-section-title.js";
 
 class PageQuienesSomosEnglish extends HTMLElement {
@@ -17,31 +15,9 @@ class PageQuienesSomosEnglish extends HTMLElement {
 
             <app-modal-travelpass-english></app-modal-travelpass-english>
             <app-modal-doters-english></app-modal-doters-english>
-
-            <app-banner-slider
-        slides-data='[
-          {
-            "id": "slide1", 
-            "title": "Banner 1", 
-            "image": "../../src/assets/img/global/banner/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp",
-            "mediumImage": "../../src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
-            "smallImage": "../../src/assets/img/global/banner/mobile/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
-            "link": "/"
-          },
-          {
-            "id": "slide2", 
-            "title": "Banner 2", 
-            "image": "../../src/assets/img/global/banner/banner-doters-web.webp", 
-            "mediumImage": "../../src/assets/img/global/banner/tablet/banner-doters-tablet.webp",
-            "smallImage": "../../src/assets/img/global/banner/mobile/banner-doters-mobile.webp", 
-            "link": "/doters"
-          }
-        ]'
-      >
-      </app-banner-slider>
-
-            <app-payments></app-payments>
             
+            <div class=" __panthom_space"></div>
+
             <section class="__section">
                 <app-section-title section-title="Who We Are"></app-section-title>
                 <h3 class="__subtitle">We are a 100% Mexican company, dedicated to passenger transportation with over 68 years of experience and service.</h3>

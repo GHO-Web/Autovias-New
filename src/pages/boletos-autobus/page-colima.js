@@ -17,17 +17,17 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 
 class AppColima extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider-caption
           slides-data='[
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/colima-centro.webp",
-      "mediumImage":"../src/assets/img/img-landing/colima-centro.webp",
-      "smallImage":"../src/assets/img/img-landing/colima-centro.webp",
+      "image":"../src/assets/img/boletos-autobus/colima/overflow-images/colima-centro.webp",
+      "mediumImage":"../src/assets/img/boletos-autobus/colima/overflow-images/colima-centro.webp",
+      "smallImage":"../src/assets/img/boletos-autobus/colima/overflow-images/colima-centro.webp",
       "captionTitle":"Viaja a Colima: El Encanto del Pacífico y el Volcán con Autovías",
       "captionText":"Descubre la Ciudad de las Palmeras, su calidez y paisajes con el servicio de autobús líder. ¡Tu viaje te espera!",
       "captionAlign":"left",
@@ -259,6 +259,6 @@ class AppColima extends HTMLElement {
 			
 			
     `;
-	}
+  }
 }
 customElements.define("page-colima", AppColima);

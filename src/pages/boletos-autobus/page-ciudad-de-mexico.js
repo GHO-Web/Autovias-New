@@ -17,17 +17,17 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 
 class PageCiudadDeMexico extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
       <app-banner-slider-caption
           slides-data='[
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
-      "mediumImage":"../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
-      "smallImage":"../src/assets/img/img-landing/ciudad-de-mexico-chapultepec.webp",
+      "image":"../src/assets/img/boletos-autobus/acambaro/overflow-images/ciudad-de-mexico-chapultepec.webp",
+      "mediumImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/ciudad-de-mexico-chapultepec.webp",
+      "smallImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/ciudad-de-mexico-chapultepec.webp",
       "captionTitle":"Viaja a Ciudad de México: El Corazón de México con Autovías",
       "captionText":"Descubre la vibrante capital del país con el servicio de autobús líder. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -255,6 +255,6 @@ class PageCiudadDeMexico extends HTMLElement {
 			
 			
     `;
-	}
+  }
 }
 customElements.define("page-ciudad-de-mexico", PageCiudadDeMexico);

@@ -17,17 +17,17 @@ import "../../../components/app-modal-multi-image.js";
 import "../../../components/app-modal-image.js";
 
 class PageQueretaro extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider-caption
           slides-data='[
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../../../src/assets/img/img-landing/queretaro.webp",
-      "mediumImage":"../../../src/assets/img/img-landing/queretaro.webp",
-      "smallImage":"../../../src/assets/img/img-landing/queretaro.webp",
+      "image":"../../../src/assets/img/english/bus-tickets/queretaro/overflow-images/queretaro.webp",
+      "mediumImage":"../../../src/assets/img/english/bus-tickets/queretaro/overflow-images/queretaro.webp",
+      "smallImage":"../../../src/assets/img/english/bus-tickets/queretaro/overflow-images/queretaro.webp",
       "captionTitle":"Travel to Querétaro: Enjoy comfort, safety, and the best prices with Autovías",
       "captionText":"Live a new travel experience. Your adventure starts here.",
       "captionAlign":"left",
@@ -293,6 +293,6 @@ class PageQueretaro extends HTMLElement {
 			<app-button-whats></app-button-whats>
 			<app-button-eva-trip></app-button-eva-trip>
         `;
-	}
+  }
 }
 customElements.define("page-queretaro", PageQueretaro);

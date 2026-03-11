@@ -17,17 +17,17 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 
 class AppViajarMorelia extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider-caption
           slides-data='[
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/morelia.webp",
-      "mediumImage":"../src/assets/img/img-landing/morelia.webp",
-      "smallImage":"../src/assets/img/img-landing/morelia.webp",
+      "image":"../src/assets/img/boletos-autobus/acambaro/overflow-images/morelia.webp",
+      "mediumImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/morelia.webp",
+      "smallImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/morelia.webp",
       "captionTitle":"Viaja a Morelia: Disfruta de comodidad, seguridad y mejores precios con Autovías",
       "captionText":"Vive una nueva experiencia viajando. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -263,6 +263,6 @@ class AppViajarMorelia extends HTMLElement {
 			
 
     `;
-	}
+  }
 }
 customElements.define("page-morelia", AppViajarMorelia);

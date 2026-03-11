@@ -17,8 +17,8 @@ import "../../components/app-modal-multi-image.js";
 import "../../components/app-modal-image.js";
 
 class PageMaravatio extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 
 			<app-banner-slider-caption
@@ -26,9 +26,9 @@ class PageMaravatio extends HTMLElement {
     {
       "title":"Promo 1",
       "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/maravatio.webp",
-      "mediumImage":"../src/assets/img/img-landing/maravatio.webp",
-      "smallImage":"../src/assets/img/img-landing/maravatio.webp",
+      "image":"../src/assets/img/boletos-autobus/acambaro/overflow-images/maravatio.webp",
+      "mediumImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/maravatio.webp",
+      "smallImage":"../src/assets/img/boletos-autobus/acambaro/overflow-images/maravatio.webp",
       "captionTitle":"Viaja a Maravatio: Confort, Seguridad y los Mejores Precios con Autovías",
       "captionText":"Vive una nueva experiencia viajando con Autovías La Línea. Tu aventura comienza aquí.",
       "captionAlign":"left",
@@ -253,6 +253,6 @@ class PageMaravatio extends HTMLElement {
 
 			
 		`;
-	}
+  }
 }
 customElements.define("page-maravatio", PageMaravatio);

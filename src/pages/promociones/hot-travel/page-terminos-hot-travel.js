@@ -20,9 +20,9 @@ class PageTerminosHotTravel extends HTMLElement {
                 {
                     "id": "slide1", 
                     "title": "Banner 1", 
-                    "image": "../../src/assets/img/promociones/hot-travel/Hot_Travel_web.webp",
-                    "mediumImage": "../../src/assets/img/promociones/hot-travel/Hot_Travel_tablet.webp", 
-                    "smallImage": "../../src/assets/img/promociones/hot-travel/Hot_Travel_mobile.webp", 
+                    "image": "../../src/assets/img/promociones/hot-travel/banners/web/Hot_Travel_web.webp",
+                    "mediumImage": "../../src/assets/img/promociones/hot-travel/banners/tablet/Hot_Travel_tablet.webp", 
+                    "smallImage": "../../src/assets/img/promociones/hot-travel/banners/mobile/Hot_Travel_mobile.webp", 
                     "link": "#index.html/banner1"
                 }
             ]'

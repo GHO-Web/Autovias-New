@@ -6,9 +6,6 @@ import "../../../components/english/app-footer.js?v=1.0.0";
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 
 import "../../../components/app-cotiza.js";
-import "../../../components/app-banner-slider.js";
-import "../../../components/app-banner-slider-caption.js";
-import "../../../components/app-payments.js";
 import "../../../components/app-cards-text-list.js";
 import "../../../components/app-section-title.js";
 
@@ -18,23 +15,6 @@ class PageBoletosDeAutobus extends HTMLElement {
 		// El contenido de __boletos-de-autobus__scrollbar se llenará dinámicamente.
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
-			<!-- <app-banner-slider-caption
-        slides-data='[
-				{
-					"title":"Promo 1",
-					"link":"https://example.com",
-					"image":"../../../src/assets/img/img-landing/banner-boletos-autobus.webp",
-					"mediumImage":"../../../src/assets/img/img-landing/banner-boletos-autobus.webp",
-					"smallImage":"../../../src/assets/img/img-landing/banner-boletos-autobus.webp",
-					"captionTitle":"Autovías La Línea Bus Tickets: Your best option for traveling",
-					"captionText":"Find your bus tickets quickly, safely, and at the best price. Your ideal trip is just a click away!",
-					"captionAlign":"left",
-					"captionTheme":"dark"
-				}
-			]'>
-      </app-banner-slider-caption>
-			<app-payments></app-payments> -->
-			<div class="__panthom_space"></div>
 
 			<section class="section__boletos-de-autobus">
 					<app-section-title section-title="Autovías La Línea Bus Tickets: Your best option for traveling"></app-section-title>
