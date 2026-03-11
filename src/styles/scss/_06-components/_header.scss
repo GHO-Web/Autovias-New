@@ -283,31 +283,44 @@ header {
 
 }
 
+// --- Global Page Spacing Rules ---
 
-.content-after-cotiza {
-    margin-top: 18rem;
-}
+// SCENARIO 1: Cotiza is present, but Banner Slider is NOT.
+// Handles animations by changing margin when .hidden class is applied to app-cotiza.
+body:has(app-cotiza, app-cotiza-pack):not(:has(app-banner-slider, app-banner-slider-caption)) {
 
-@include media("lg") {
-    .content-after-cotiza {
-        margin-top: 10rem;
+    // Target the first visible element immediately following app-cotiza.
+    // On desktop, the header is fixed. We add padding to the body to push all content down.
+    @media screen and (min-width: 990px) {
+        padding-top: 15rem; // Height of header + some space
+    }
+
+    // When the user scrolls down, the inner .cotiza of app-cotiza gets a '.hidden' class.
+    // We reduce the margin to pull the content up, leaving space only for the header.
+    &:has(.cotiza.hidden) {
+        app-cotiza+*:not(script):not(style) {
+            @media screen and (min-width: 901px) {
+                // Space for header only
+                margin-top: 6.5rem;
+            }
+        }
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 900px) {
-    .content-after-cotiza {
-        margin-top: 0;
-    }
-}
+// SCENARIO 2: NEITHER Cotiza NOR Banner Slider are present.
+// The content needs to be pushed below the fixed header on desktop.
+body:not(:has(app-cotiza, app-cotiza-pack)):not(:has(app-banner-slider, app-banner-slider-caption)) {
 
-.content-after-header {
-    @media screen and (min-width: 901px) {
-        margin-top: 5.25rem;
+    // On desktop, the header is fixed. We add padding to the body to push all content down.
+    @media screen and (min-width: 1025px) {
+        padding-top: 6.5rem; // Height of header + some space
     }
-}
 
-@media screen and (max-width: 480px) {
-    .content-after-cotiza {
-        margin-top: 0;
+    // On mobile, the header is sticky. We add a margin-bottom to the header itself
+    // to create space between it and the following content.
+    header {
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 2rem;
+        }
     }
 }

@@ -1,4 +1,4 @@
-import "../app-dropdown.js";
+import "./app-dropdown.js";
 
 class AppDropdownQuestServices extends HTMLElement {
   connectedCallback() {

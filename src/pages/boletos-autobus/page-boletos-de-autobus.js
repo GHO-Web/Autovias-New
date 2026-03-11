@@ -17,9 +17,13 @@ class PageBoletosDeAutobus extends HTMLElement {
 		// El contenido de __boletos-de-autobus__scrollbar se llenará dinámicamente.
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
+	  
+            <section class="__section">
+				<app-section-title section-title="Boletos de Autobús Autovías La Línea: tu mejor opcón para viajar"></app-section-title>
+			</section>
 
 			<section class="section__boletos-de-autobus">
-					<app-section-title section-title="Boletos de Autobús Autovías La Línea: tu mejor opcón para viajar"></app-section-title>
+				
 					<article class="__boletos-de-autobus__text">
 							<p class="__text__paragraph"><b class="__text__bold">Viajar con Autovías La Línea es sinónimo de comodidad, seguridad y puntualidad.</b> No esperes más y adquiere tus boletos de autobús hoy mismo para disfrutar de una experiencia de viaje superior. Si te preguntas dónde comprar boletos de autobús de Autovías La Línea recuerda que puedes hacerlo fácilmente a través de nuestro sitio web, por teléfono o en nuestras taquillas.</p>
 							<div class="__boletos-de-autobus__scrollbar">

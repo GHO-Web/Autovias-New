@@ -17,7 +17,7 @@ class PageServiciosCorporativosPack extends HTMLElement {
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/paqueteria/banner/pack-banner-servicios.webp","mediumImage": "../../../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../../../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "/src/assets/img/paqueteria/banner/web/pack-corporativos-web.webp","mediumImage": "/src/assets/img/paqueteria/banner/tablet/pack-corporativos-tablet.webp", "smallImage": "/src/assets/img/paqueteria/banner/movil/pack-corporativos-mobile.webp", "link": "#index.html/banner1"}
 
                 ]'
             >
