@@ -9,7 +9,7 @@ import "../../../components/app-cotiza.js";
 import "../../../components/app-img-shop-left.js";
 import "../../../components/app-img-shop-right.js";
 import "../../../components/app-section-title.js";
-import "../../../components/app-card-image.js";
+import "../../../components/cards/app-card-image.js";
 
 class PageDondeComprar extends HTMLElement {
   connectedCallback() {

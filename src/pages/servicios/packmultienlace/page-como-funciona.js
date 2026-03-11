@@ -1,7 +1,6 @@
-
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "/src/components/packmultienlace/app-cotiza-pack.js";
-import "/src/components/app-banner-slider.js";
+import "/src/components/sliders/app-banner-slider.js";
 import "/src/components/app-section-title.js";
 import "/src/components/packmultienlace/app-dropdown-quest-services.js";
 import "/src/components/packmultienlace/app-header-pack-multienlace.js";

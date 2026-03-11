@@ -1,6 +1,6 @@
 /*--------------IMPORT COMPONENTS FROM DOTERS PAGE -----------------*/
 
-import "../../../components/app-banner-slider.js";
+import "../../../components/sliders/app-banner-slider.js";
 import "../../../components/cards/doters/app-card-doters.js";
 import "../../../components/cards/app-card-left-description.js";
 import "../../../components/cards/app-card-right-description.js";
@@ -9,9 +9,9 @@ import "../../../components/carousel/app-carousel-banners.js";
 /*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
 import "../../../components/english/app-header.js?v=1.0.2";
 import "../../../components/english/app-footer.js?v=1.0.2";
-import "../../../components/english/app-banner-multi-image.js?v=1.0.2";
-import "../../../components/english/app-card-image-tag-text.js?v=1.0.2";
-import "../../../components/english/app-destiny-slider.js?v=1.0.2";
+import "../../../components/english/banners/app-banner-multi-image.js?v=1.0.2";
+import "../../../components/english/cards/app-card-image-tag-text.js?v=1.0.2";
+import "../../../components/english/sliders/app-destiny-slider.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 

@@ -5,13 +5,13 @@ import "../../components/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/app-banner-slider.js";
-import "../../components/app-payments.js";
-import "../../components/app-destinations-grid.js";
+import "../../components/sliders/app-banner-slider.js";
+import "../../components/carousel/app-payments.js";
+import "../../components/carousel/app-destinations-grid.js";
 import "../../components/app-list-destinations.js";
 import "../../components/app-tickets-sales-locations.js";
 import "../../components/app-other-services.js";
-import "../../components/app-blog.js";
+import "../../components/carousel/app-blog.js";
 import "../../components/app-img-shop-left.js";
 import "../../components/app-section-title.js";
 

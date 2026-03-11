@@ -1,6 +1,6 @@
-import "../components/app-modal-doters.js";
-import "../components/app-modal-travelpass.js";
-import "../components/app-modal-doters-profile.js";
+import "../components/modal/app-modal-doters.js";
+import "../components/modal/app-modal-travelpass.js";
+import "../components/modal/app-modal-doters-profile.js";
 
 /*--------------------------- IMPORT SCRIPTS --------------------------*/
 

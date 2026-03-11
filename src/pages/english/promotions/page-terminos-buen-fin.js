@@ -4,14 +4,14 @@ import "../../../components/english/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/app-cotiza.js";
-import "../../../components/app-banner-slider.js";
-import "../../../components/app-payments.js";
+import "../../../components/sliders/app-banner-slider.js";
+import "../../../components/carousel/app-payments.js";
 import "../../../components/app-section-title.js";
 import "../../../components/app-table-pets.js";
 
 class PageTerminosBuenFinEnglish extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <app-cotiza></app-cotiza>
 		<app-modal-travelpass-english></app-modal-travelpass-english>
 		<app-modal-doters-english></app-modal-doters-english>
@@ -208,10 +208,10 @@ class PageTerminosBuenFinEnglish extends HTMLElement {
 		<app-button-whats></app-button-whats>
 		<app-button-eva-trip-english></app-button-eva-trip-english>
     `;
-	}
+  }
 }
 
 customElements.define(
-	"page-terminos-buen-fin-english",
-	PageTerminosBuenFinEnglish,
+  "page-terminos-buen-fin-english",
+  PageTerminosBuenFinEnglish,
 );

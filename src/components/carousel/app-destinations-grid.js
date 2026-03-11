@@ -1,6 +1,6 @@
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/slick.js?v=1.0.2";
+import "../../js/slick.js?v=1.0.2";
 
 class AppDestinationsGrid extends HTMLElement {
   static #instanceCounter = 0;

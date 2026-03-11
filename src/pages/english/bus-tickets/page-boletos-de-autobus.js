@@ -6,7 +6,7 @@ import "../../../components/english/app-footer.js?v=1.0.0";
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 
 import "../../../components/app-cotiza.js";
-import "../../../components/app-cards-text-list.js";
+import "../../../components/cards/app-cards-text-list.js";
 import "../../../components/app-section-title.js";
 
 class PageBoletosDeAutobus extends HTMLElement {

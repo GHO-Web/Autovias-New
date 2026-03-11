@@ -5,13 +5,13 @@ import "../../components/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/app-banner-slider.js";
-import "../../components/app-payments.js";
+import "../../components/sliders/app-banner-slider.js";
+import "../../components/carousel/app-payments.js";
 import "../../components/app-section-title.js";
 
 class PageViajeroProtegido extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <app-cotiza></app-cotiza>
 
             <app-banner-slider
@@ -545,6 +545,6 @@ class PageViajeroProtegido extends HTMLElement {
 			
 
         `;
-	}
+  }
 }
 customElements.define("page-viajero-protegido", PageViajeroProtegido);

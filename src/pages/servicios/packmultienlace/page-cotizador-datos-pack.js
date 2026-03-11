@@ -1,14 +1,14 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/packmultienlace/app-header-pack-multienlace.js";
 import "../../../components/packmultienlace/app-cotiza-pack.js";
-import "../../../components/app-banner-slider.js";
+import "../../../components/sliders/app-banner-slider.js";
 import "../../../components/app-section-title.js";
-import "../../../components/app-cotizador-pack.js";
+import "../../../components/packmultienlace/app-cotizador-pack.js";
 import "../../../components/packmultienlace/app-footer-pack-multienlace.js";
 
 class PageCotizadorDatosPack extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza-pack></app-cotiza-pack>
             <div class="cotiza-pack-space"></div>
 
@@ -88,68 +88,68 @@ class PageCotizadorDatosPack extends HTMLElement {
 
             
         `;
-		document.addEventListener("DOMContentLoaded", () => {
-			const cotizadorForm = document.getElementById("cotizador-form");
-			if (cotizadorForm) {
-				cotizadorForm.addEventListener("submit", (event) => {
-					event.preventDefault();
+    document.addEventListener("DOMContentLoaded", () => {
+      const cotizadorForm = document.getElementById("cotizador-form");
+      if (cotizadorForm) {
+        cotizadorForm.addEventListener("submit", (event) => {
+          event.preventDefault();
 
-					const hiddenInput = document.getElementById("tipo_paquete_input");
-					const summary = document.querySelector(".dropdown > summary");
+          const hiddenInput = document.getElementById("tipo_paquete_input");
+          const summary = document.querySelector(".dropdown > summary");
 
-					const isFormValid = cotizadorForm.checkValidity();
+          const isFormValid = cotizadorForm.checkValidity();
 
-					if (hiddenInput.value === "") {
-						summary.classList.add("invalid");
-					}
+          if (hiddenInput.value === "") {
+            summary.classList.add("invalid");
+          }
 
-					if (isFormValid && hiddenInput.value !== "") {
-						window.location.href = "cotizador.html";
-					}
-				});
-			}
+          if (isFormValid && hiddenInput.value !== "") {
+            window.location.href = "cotizador.html";
+          }
+        });
+      }
 
-			const cotizadorPageForm = document.getElementById("cotizador-form");
-			const successModal = document.getElementById("success-modal");
+      const cotizadorPageForm = document.getElementById("cotizador-form");
+      const successModal = document.getElementById("success-modal");
 
-			if (cotizadorPageForm && successModal) {
-				const closeModalBtn = successModal.querySelector(".modal-close-btn");
-				const acceptAndRedirectBtn =
-					document.getElementById("modal-accept-btn");
+      if (cotizadorPageForm && successModal) {
+        const closeModalBtn = successModal.querySelector(".modal-close-btn");
+        const acceptAndRedirectBtn =
+          document.getElementById("modal-accept-btn");
 
-				const openModal = () => {
-					successModal.classList.add("active");
-				};
+        const openModal = () => {
+          successModal.classList.add("active");
+        };
 
-				const closeModal = () => {
-					successModal.classList.remove("active");
-				};
+        const closeModal = () => {
+          successModal.classList.remove("active");
+        };
 
-				cotizadorPageForm.addEventListener("submit", (event) => {
-					event.preventDefault();
-					cotizadorPageForm.classList.add("form-submitted");
+        cotizadorPageForm.addEventListener("submit", (event) => {
+          event.preventDefault();
+          cotizadorPageForm.classList.add("form-submitted");
 
-					if (cotizadorPageForm.checkValidity()) {
-						openModal();
-					} else {
-						cotizadorPageForm.querySelector(":invalid").focus();
-					}
-				});
+          if (cotizadorPageForm.checkValidity()) {
+            openModal();
+          } else {
+            cotizadorPageForm.querySelector(":invalid").focus();
+          }
+        });
 
-				closeModalBtn.addEventListener("click", closeModal);
-				successModal.addEventListener("click", (event) => {
-					if (event.target === successModal) closeModal();
-				});
+        closeModalBtn.addEventListener("click", closeModal);
+        successModal.addEventListener("click", (event) => {
+          if (event.target === successModal) closeModal();
+        });
 
-				if (acceptAndRedirectBtn) {
-					acceptAndRedirectBtn.addEventListener("click", () => {
-						window.location.href =
-							"../../../packmultienlace/cotizador-paqueteria.html";
-					});
-				}
-			}
-		});
-	}
+        if (acceptAndRedirectBtn) {
+          acceptAndRedirectBtn.addEventListener("click", () => {
+            window.location.href =
+              "../../../packmultienlace/cotizador-paqueteria.html";
+          });
+        }
+      }
+    });
+  }
 }
 
 customElements.define("page-cotizador-datos-pack", PageCotizadorDatosPack);

@@ -6,11 +6,11 @@ import "../../components/app-footer.js?v=1.0.0";
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 
 import "../../components/app-cotiza.js";
-import "../../components/app-payments.js";
+import "../../components/carousel/app-payments.js";
 import "../../components/app-section-title.js";
-import "../../components/app-card-text.js";
+import "../../components/cards/app-card-text.js";
 import "../../components/app-map.js";
-import "../../components/app-card-title-icon.js";
+import "../../components/cards/app-card-title-icon.js";
 
 class PageDestinos extends HTMLElement {
   connectedCallback() {

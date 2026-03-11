@@ -5,13 +5,13 @@ import "../../components/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/app-banner-slider.js";
-import "../../components/app-payments.js";
+import "../../components/sliders/app-banner-slider.js";
+import "../../components/carousel/app-payments.js";
 import "../../components/app-section-title.js";
 
 class PageQuienesSomos extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza></app-cotiza>
     
             <section class="__section">
@@ -49,6 +49,6 @@ class PageQuienesSomos extends HTMLElement {
             </section>
 			
         `;
-	}
+  }
 }
 customElements.define("page-quienes-somos", PageQuienesSomos);

@@ -40,4 +40,4 @@ class AppCookiesPolicyEnglish extends HTMLElement {
     allowCookiesBtn.addEventListener("click", action);
   }
 }
-customElements.define("app-cookies-policy-english", AppCookiesPolicyEnglish);
+customElements.define("app-cookies-policy", AppCookiesPolicyEnglish);

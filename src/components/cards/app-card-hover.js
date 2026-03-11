@@ -1,4 +1,4 @@
-class AppHoverCard extends HTMLElement {
+class AppCardHover extends HTMLElement {
     static get observedAttributes() {
         return ['card-title', 'icon-src'];
     }
@@ -54,4 +54,4 @@ class AppHoverCard extends HTMLElement {
         if (this.iconElement) this.iconElement.style.backgroundImage = iconSrc ? `url('${iconSrc}')` : 'none';
     }
 }
-customElements.define("app-hover-card", AppHoverCard);
+customElements.define("app-card-hover", AppCardHover);

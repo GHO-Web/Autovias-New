@@ -1,6 +1,6 @@
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/travelpass-cookies.js?v=1.0.0";
+import "../../js/travelpass-cookies.js?v=1.0.0";
 
 class AppModalTravelpass extends HTMLElement {
 	connectedCallback() {

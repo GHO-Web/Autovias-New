@@ -4,19 +4,19 @@ import "../../components/app-header.js?v=1.0.1";
 import "../../components/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
-import "../../components/app-banner-slider.js";
-import "../../components/app-payments.js";
+import "../../components/sliders/app-banner-slider.js";
+import "../../components/carousel/app-payments.js";
 import "../../components/app-section-title.js";
-import "../../components/app-card-open-modal.js";
-import "../../components/app-dropdown.js";
-import "../../components/app-card-destination-opacity.js";
-import "../../components/app-slider-opacity.js";
-import "../../components/app-modal-multi-image.js";
-import "../../components/app-modal-image.js";
+import "../../components/cards/app-card-open-modal.js";
+import "../../components/faqs/app-dropdown.js";
+import "../../components/cards/app-card-destination-opacity.js";
+import "../../components/sliders/app-slider-opacity.js";
+import "../../components/modal/app-modal-multi-image.js";
+import "../../components/modal/app-modal-image.js";
 
 class AutobusAGuadalajara extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
 			<app-banner-slider
 					slides-data='[
@@ -74,242 +74,242 @@ class AutobusAGuadalajara extends HTMLElement {
 			
 		`;
 
-		await this.loadAndRenderGridItems();
-		await this.loadAndRenderFoodCards();
-		await this.loadAndRenderDropdowns();
-		await this._configureDestinationSlider();
-	}
+    await this.loadAndRenderGridItems();
+    await this.loadAndRenderFoodCards();
+    await this.loadAndRenderDropdowns();
+    await this._configureDestinationSlider();
+  }
 
-	async loadAndRenderGridItems() {
-		const gridContainer = this.querySelector(
-			"#monterrey-grid-section .grid-container",
-		);
-		if (!gridContainer) {
-			console.error("El contenedor del grid no fue encontrado.");
-			return;
-		}
+  async loadAndRenderGridItems() {
+    const gridContainer = this.querySelector(
+      "#monterrey-grid-section .grid-container",
+    );
+    if (!gridContainer) {
+      console.error("El contenedor del grid no fue encontrado.");
+      return;
+    }
 
-		try {
-			const response = await fetch(
-				"../../src/data/destinos/guadalajara/lugares.json",
-			);
-			if (!response.ok) {
-				throw new Error(`Error HTTP: ${response.status}`);
-			}
-			const items = await response.json();
+    try {
+      const response = await fetch(
+        "../../src/data/destinos/guadalajara/lugares.json",
+      );
+      if (!response.ok) {
+        throw new Error(`Error HTTP: ${response.status}`);
+      }
+      const items = await response.json();
 
-			items.forEach((item) => {
-				const cardDiv = document.createElement("div");
-				cardDiv.className = `card ${item.className || ""}`.trim();
-				const bgValue = item.backgroundImage;
+      items.forEach((item) => {
+        const cardDiv = document.createElement("div");
+        cardDiv.className = `card ${item.className || ""}`.trim();
+        const bgValue = item.backgroundImage;
 
-				if (bgValue) {
-					if (bgValue.includes(".") || bgValue.includes("/")) {
-						cardDiv.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('${bgValue}')`;
-					} else {
-						cardDiv.style.backgroundColor = bgValue;
-					}
-				}
+        if (bgValue) {
+          if (bgValue.includes(".") || bgValue.includes("/")) {
+            cardDiv.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url('${bgValue}')`;
+          } else {
+            cardDiv.style.backgroundColor = bgValue;
+          }
+        }
 
-				cardDiv.innerHTML = `<span>${item.text}</span>`;
-				gridContainer.appendChild(cardDiv);
+        cardDiv.innerHTML = `<span>${item.text}</span>`;
+        gridContainer.appendChild(cardDiv);
 
-				cardDiv.addEventListener("click", () => this.openMultiImageModal(item));
-			});
-		} catch (error) {
-			console.error("Error al cargar los items del grid:", error);
-			gridContainer.innerHTML = "<p>Error al cargar el contenido del grid.</p>";
-		}
-	}
+        cardDiv.addEventListener("click", () => this.openMultiImageModal(item));
+      });
+    } catch (error) {
+      console.error("Error al cargar los items del grid:", error);
+      gridContainer.innerHTML = "<p>Error al cargar el contenido del grid.</p>";
+    }
+  }
 
-	async loadAndRenderFoodCards() {
-		const foodContainer = this.querySelector(".container-cards__food");
-		if (!foodContainer) {
-			console.error(
-				"El contenedor '.container-cards__food' no fue encontrado.",
-			);
-			return;
-		}
-		foodContainer.innerHTML = "";
+  async loadAndRenderFoodCards() {
+    const foodContainer = this.querySelector(".container-cards__food");
+    if (!foodContainer) {
+      console.error(
+        "El contenedor '.container-cards__food' no fue encontrado.",
+      );
+      return;
+    }
+    foodContainer.innerHTML = "";
 
-		try {
-			const response = await fetch(
-				"../../src/data/destinos/guadalajara/platillos.json",
-			);
-			if (!response.ok) {
-				throw new Error(
-					`Error HTTP al cargar platillos-morelia.json: ${response.status}`,
-				);
-			}
-			const foodData = await response.json();
+    try {
+      const response = await fetch(
+        "../../src/data/destinos/guadalajara/platillos.json",
+      );
+      if (!response.ok) {
+        throw new Error(
+          `Error HTTP al cargar platillos-morelia.json: ${response.status}`,
+        );
+      }
+      const foodData = await response.json();
 
-			if (!foodData || !Array.isArray(foodData) || foodData.length === 0) {
-				foodContainer.innerHTML =
-					"<p>No hay platillos para mostrar en este momento.</p>";
-				console.warn(
-					"No se encontraron datos de platillos en food-monterrey.json",
-				);
-				return;
-			}
+      if (!foodData || !Array.isArray(foodData) || foodData.length === 0) {
+        foodContainer.innerHTML =
+          "<p>No hay platillos para mostrar en este momento.</p>";
+        console.warn(
+          "No se encontraron datos de platillos en food-monterrey.json",
+        );
+        return;
+      }
 
-			foodData.forEach((foodItem) => {
-				const cardElement = document.createElement("app-card-open-modal");
+      foodData.forEach((foodItem) => {
+        const cardElement = document.createElement("app-card-open-modal");
 
-				cardElement.setAttribute(
-					"card-title",
-					foodItem.title || "Título no disponible",
-				);
-				cardElement.setAttribute(
-					"card-modal-description",
-					foodItem.description || "Descripción no disponible",
-				);
-				cardElement.setAttribute(
-					"card-image",
-					foodItem.imageSrc || "../../src/assets/img/global/default-card.png",
-				);
-				cardElement.setAttribute(
-					"card-modal-image",
-					foodItem.imageModal ||
-						foodItem.imageSrc ||
-						"../../src/assets/img/global/default-modal.png",
-				);
-				cardElement.setAttribute(
-					"card-alt",
-					foodItem.altText || foodItem.title || "Platillo",
-				);
-				cardElement.setAttribute(
-					"card-link-text",
-					foodItem.linkText || "Ver más...",
-				);
-				foodContainer.appendChild(cardElement);
-			});
-		} catch (error) {
-			console.error(
-				"Error al cargar o renderizar las tarjetas de comida:",
-				error,
-			);
-			foodContainer.innerHTML =
-				"<p>Error al cargar la información de los platillos. Intente más tarde.</p>";
-		}
-	}
-	async loadAndRenderDropdowns() {
-		try {
-			const response = await fetch(
-				"../../src/data/destinos/guadalajara/dropdown-preguntas-frecuentes.json",
-			);
-			if (!response.ok) {
-				throw new Error(`HTTP error! status: ${response.status}`);
-			}
-			const dropdownsData = await response.json();
-			this.renderDropdowns(dropdownsData);
-		} catch (error) {
-			console.error("Error al cargar o parsear dropdown-data.json:", error);
-			const container = this.querySelector("#dropdowns-container");
-			if (container) {
-				container.innerHTML =
-					"<p>Error al cargar las preguntas frecuentes.</p>";
-			}
-		}
-	}
+        cardElement.setAttribute(
+          "card-title",
+          foodItem.title || "Título no disponible",
+        );
+        cardElement.setAttribute(
+          "card-modal-description",
+          foodItem.description || "Descripción no disponible",
+        );
+        cardElement.setAttribute(
+          "card-image",
+          foodItem.imageSrc || "../../src/assets/img/global/default-card.png",
+        );
+        cardElement.setAttribute(
+          "card-modal-image",
+          foodItem.imageModal ||
+            foodItem.imageSrc ||
+            "../../src/assets/img/global/default-modal.png",
+        );
+        cardElement.setAttribute(
+          "card-alt",
+          foodItem.altText || foodItem.title || "Platillo",
+        );
+        cardElement.setAttribute(
+          "card-link-text",
+          foodItem.linkText || "Ver más...",
+        );
+        foodContainer.appendChild(cardElement);
+      });
+    } catch (error) {
+      console.error(
+        "Error al cargar o renderizar las tarjetas de comida:",
+        error,
+      );
+      foodContainer.innerHTML =
+        "<p>Error al cargar la información de los platillos. Intente más tarde.</p>";
+    }
+  }
+  async loadAndRenderDropdowns() {
+    try {
+      const response = await fetch(
+        "../../src/data/destinos/guadalajara/dropdown-preguntas-frecuentes.json",
+      );
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const dropdownsData = await response.json();
+      this.renderDropdowns(dropdownsData);
+    } catch (error) {
+      console.error("Error al cargar o parsear dropdown-data.json:", error);
+      const container = this.querySelector("#dropdowns-container");
+      if (container) {
+        container.innerHTML =
+          "<p>Error al cargar las preguntas frecuentes.</p>";
+      }
+    }
+  }
 
-	renderDropdowns(dropdownsData) {
-		const container = this.querySelector("#dropdowns-container");
-		if (!container) {
-			console.error("El contenedor #dropdowns-container no fue encontrado.");
-			return;
-		}
-		container.innerHTML = "";
+  renderDropdowns(dropdownsData) {
+    const container = this.querySelector("#dropdowns-container");
+    if (!container) {
+      console.error("El contenedor #dropdowns-container no fue encontrado.");
+      return;
+    }
+    container.innerHTML = "";
 
-		dropdownsData.forEach((data) => {
-			const dropdownElement = document.createElement("app-dropdown");
-			dropdownElement.setAttribute("title-dropdown", data["title-dropdown"]);
-			dropdownElement.setAttribute(
-				"content-dropdown",
-				data["content-dropdown"],
-			);
-			container.appendChild(dropdownElement);
-		});
-	}
+    dropdownsData.forEach((data) => {
+      const dropdownElement = document.createElement("app-dropdown");
+      dropdownElement.setAttribute("title-dropdown", data["title-dropdown"]);
+      dropdownElement.setAttribute(
+        "content-dropdown",
+        data["content-dropdown"],
+      );
+      container.appendChild(dropdownElement);
+    });
+  }
 
-	async _configureDestinationSlider() {
-		const sliderElement = this.querySelector("app-slider-opacity");
-		if (!sliderElement) {
-			console.error("AppMorelia: app-slider-opacity element not found.");
-			return;
-		}
+  async _configureDestinationSlider() {
+    const sliderElement = this.querySelector("app-slider-opacity");
+    if (!sliderElement) {
+      console.error("AppMorelia: app-slider-opacity element not found.");
+      return;
+    }
 
-		try {
-			const response = await fetch(
-				"../../src/data/destinos/card-opacity-destinations.json",
-			);
-			if (!response.ok) {
-				throw new Error(
-					`HTTP error loading destination slider data! status: ${response.status}`,
-				);
-			}
-			const destinationsData = await response.json();
+    try {
+      const response = await fetch(
+        "../../src/data/destinos/card-opacity-destinations.json",
+      );
+      if (!response.ok) {
+        throw new Error(
+          `HTTP error loading destination slider data! status: ${response.status}`,
+        );
+      }
+      const destinationsData = await response.json();
 
-			sliderElement.setAttribute(
-				"destinations-data",
-				JSON.stringify(destinationsData),
-			);
-		} catch (error) {
-			console.error(
-				"AppMorelia: Error loading or setting data for destination slider:",
-				error,
-			);
-			sliderElement.innerHTML =
-				'<p style="color: red; text-align: center;">Could not load destination slider.</p>';
-		}
-	}
+      sliderElement.setAttribute(
+        "destinations-data",
+        JSON.stringify(destinationsData),
+      );
+    } catch (error) {
+      console.error(
+        "AppMorelia: Error loading or setting data for destination slider:",
+        error,
+      );
+      sliderElement.innerHTML =
+        '<p style="color: red; text-align: center;">Could not load destination slider.</p>';
+    }
+  }
 
-	openMultiImageModal(itemData) {
-		const modal = this.querySelector("app-modal-multi-image");
-		if (!modal) {
-			console.error("AppMorelia: app-modal-multi-image element not found.");
-			return;
-		}
+  openMultiImageModal(itemData) {
+    const modal = this.querySelector("app-modal-multi-image");
+    if (!modal) {
+      console.error("AppMorelia: app-modal-multi-image element not found.");
+      return;
+    }
 
-		modal.setAttribute("modal-title", itemData.text || "Detalles del Lugar");
+    modal.setAttribute("modal-title", itemData.text || "Detalles del Lugar");
 
-		modal.setAttribute("content-title", itemData.title || "");
-		modal.setAttribute("content-description", itemData.description || "");
+    modal.setAttribute("content-title", itemData.title || "");
+    modal.setAttribute("content-description", itemData.description || "");
 
-		modal.setAttribute("image-1", itemData.backgroundImage || "");
-		modal.setAttribute(
-			"alt-1",
-			`Imagen principal de ${itemData.text || "lugar"}`,
-		);
+    modal.setAttribute("image-1", itemData.backgroundImage || "");
+    modal.setAttribute(
+      "alt-1",
+      `Imagen principal de ${itemData.text || "lugar"}`,
+    );
 
-		modal.setAttribute("image-2", itemData.image2 || "");
-		modal.setAttribute(
-			"alt-2",
-			`Imagen adicional 1 de ${itemData.text || "lugar"}`,
-		);
+    modal.setAttribute("image-2", itemData.image2 || "");
+    modal.setAttribute(
+      "alt-2",
+      `Imagen adicional 1 de ${itemData.text || "lugar"}`,
+    );
 
-		modal.setAttribute("image-3", itemData.image3 || "");
-		modal.setAttribute(
-			"alt-3",
-			`Imagen adicional 2 de ${itemData.text || "lugar"}`,
-		);
+    modal.setAttribute("image-3", itemData.image3 || "");
+    modal.setAttribute(
+      "alt-3",
+      `Imagen adicional 2 de ${itemData.text || "lugar"}`,
+    );
 
-		modal.setAttribute("image-4", itemData.image4 || "");
-		modal.setAttribute(
-			"alt-4",
-			`Imagen adicional 3 de ${itemData.text || "lugar"}`,
-		);
+    modal.setAttribute("image-4", itemData.image4 || "");
+    modal.setAttribute(
+      "alt-4",
+      `Imagen adicional 3 de ${itemData.text || "lugar"}`,
+    );
 
-		if (typeof modal.openModal === "function") {
-			modal.openModal();
-		} else if (typeof modal.open === "function") {
-			modal.open();
-		} else if (typeof modal.show === "function") {
-			modal.show();
-		} else {
-			console.warn(
-				'AppMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.',
-			);
-		}
-	}
+    if (typeof modal.openModal === "function") {
+      modal.openModal();
+    } else if (typeof modal.open === "function") {
+      modal.open();
+    } else if (typeof modal.show === "function") {
+      modal.show();
+    } else {
+      console.warn(
+        'AppMorelia: app-modal-multi-image necesita un método openModal(), open() o show(). Alternativamente, podría usar un atributo como "opened" para controlar la visibilidad.',
+      );
+    }
+  }
 }
 customElements.define("page-autobus-a-guadalajara", AutobusAGuadalajara);

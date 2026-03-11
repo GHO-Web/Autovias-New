@@ -1,7 +1,7 @@
 
 import "../components/app-cookies-policy.js?v=1.0.0";
-import "../components/app-button-whats.js?v=1.0.0";
-import "../components/app-button-eva-trip.js?v=1.0.0";
+import "../components/buttons/app-button-whats.js?v=1.0.0";
+import "../components/buttons/app-button-eva-trip.js?v=1.0.0";
 
 class AppFooter extends HTMLElement {
 	constructor() {

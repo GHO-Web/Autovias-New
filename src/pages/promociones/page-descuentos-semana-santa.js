@@ -6,11 +6,11 @@ import "../../components/app-footer.js?v=1.0.0";
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/english/app-banner-image.js";
-import "../../components/app-payments.js";
+import "../../components/carousel/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/cards/app-card-right-description.js";
-import "../../components/app-faqs.js";
-import "../../components/card-image-top.js";
+import "../../components/faqs/app-faqs.js";
+import "../../components/cards/card-image-top.js";
 
 class DescuentosSemanaSanta extends HTMLElement {
   connectedCallback() {

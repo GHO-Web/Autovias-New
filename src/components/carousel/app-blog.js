@@ -1,4 +1,4 @@
-import "../js/slick.min.js";
+import "../../js/slick.min.js";
 
 class AppBlog extends HTMLElement {
 	constructor() {

@@ -1,14 +1,15 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/packmultienlace/app-cotiza-pack.js";
 import "../../../components/app-section-title.js";
+import "../../../components/packmultienlace/app-cotizador-pack.js";
 import "../../../components/packmultienlace/app-header-pack-multienlace.js";
 import "../../../components/packmultienlace/app-footer-pack-multienlace.js";
 import "../../../components/packmultienlace/app-time-line-packm.js";
 import "../../../components/app-banner-slider.js";
 
 class PageProcesoEnvio extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza-pack></app-cotiza-pack>
             <div class="cotiza-pack-space"></div>
 
@@ -30,7 +31,7 @@ class PageProcesoEnvio extends HTMLElement {
               </article>
             </section>
     `;
-	}
+  }
 }
 
 customElements.define("page-proceso-envio", PageProcesoEnvio);

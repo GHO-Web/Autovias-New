@@ -6,14 +6,14 @@ import "../../components/app-footer.js?v=1.0.0";
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/english/app-banner-image.js";
-import "../../components/app-payments.js";
+import "../../components/carousel/app-payments.js";
 import "../../components/app-section-title.js";
-import "../../components/app-slider-opacity.js";
-import "../../components/app-faqs.js";
+import "../../components/sliders/app-slider-opacity.js";
+import "../../components/faqs/app-faqs.js";
 
 class DinamicaDescuentoCine extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <app-cotiza></app-cotiza>
 
       <div class="__first-section">
@@ -208,6 +208,6 @@ class DinamicaDescuentoCine extends HTMLElement {
         </article>
       </section>
     `;
-	}
+  }
 }
 customElements.define("page-deinamica-descuento-cine", DinamicaDescuentoCine);
