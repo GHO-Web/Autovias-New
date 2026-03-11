@@ -12,11 +12,18 @@ import "../../components/app-section-title.js";
 class PageFestivalViajes extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-      <app-cotiza></app-cotiza>
+            <app-cotiza></app-cotiza>
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/global/banner/festival-de-viajes.png","mediumImage": "../src/assets/img/global/banner/Tablet-1.png", "smallImage": "../src/assets/img/global/banner/Movil-1.webp", "link": "#index.html/banner1"}
+                    {
+                        "id": "slide1", 
+                        "title": "Banner 1", 
+                        "image": "../src/assets/img/global/banner/festival-de-viajes.png",
+                        "mediumImage": "../src/assets/img/global/banner/Tablet-1.png", 
+                        "smallImage": "../src/assets/img/global/banner/Movil-1.webp", 
+                        "link": "#index.html/banner1"
+                    }
                 ]'
             >
             </app-banner-slider>

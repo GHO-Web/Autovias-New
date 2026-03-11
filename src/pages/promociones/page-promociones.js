@@ -16,21 +16,21 @@ class PagePromociones extends HTMLElement {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
 
-           <app-banner-slider-caption
-          slides-data='[
-    {
-      "title":"Promo 1",
-      "link":"https://example.com",
-      "image":"../src/assets/img/img-landing/promociones.webp",
-      "mediumImage":"../src/assets/img/img-landing/promociones.webp",
-      "smallImage":"../src/assets/img/img-landing/promociones.webp",
-      "captionTitle":"¡Viaja por menos con las Promociones de Autovías!",
-      "captionText":"Descubre las mejores ofertas y descuentos para hacer tu próximo viaje en autobús más económico y placentero.",
-      "captionAlign":"left",
-      "captionTheme":"dark"
-    }
-  ]'>
-      </app-banner-slider-caption>
+            <app-banner-slider-caption
+                slides-data='[
+                    {
+                        "title":"Promo 1",
+                        "link":"https://example.com",
+                        "image":"../src/assets/img/img-landing/promociones.webp",
+                        "mediumImage":"../src/assets/img/img-landing/promociones.webp",
+                        "smallImage":"../src/assets/img/img-landing/promociones.webp",
+                        "captionTitle":"¡Viaja por menos con las Promociones de Autovías!",
+                        "captionText":"Descubre las mejores ofertas y descuentos para hacer tu próximo viaje en autobús más económico y placentero.",
+                        "captionAlign":"left",
+                        "captionTheme":"dark"
+                    }
+                ]'>
+            </app-banner-slider-caption>
 
             <app-payments></app-payments>
 

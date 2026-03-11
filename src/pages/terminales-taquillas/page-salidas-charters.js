@@ -28,14 +28,22 @@ class PageSalidasCharters extends HTMLElement {
 					{
 						"id": "slide2", 
 						"title": "Banner 2", 
+						"image": "../src/assets/img/global/banner/web/banner-viajero-anticipado-semana-santa-30-descuento.webp", 
+						"mediumImage": "../src/assets/img/global/banner/tablet/banner-viajero-anticipado-semana-santa-30-descuento.webp",
+						"smallImage": "../src/assets/img/global/banner/mobile/banner-viajero-anticipado-semana-santa-30-descuento.webp", 
+						"link": "/doters"
+					},
+					{
+						"id": "slide3", 
+						"title": "Banner 3", 
 						"image": "../src/assets/img/global/banner/banner-doters-web.webp", 
 						"mediumImage": "../src/assets/img/global/banner/tablet/banner-doters-tablet.webp",
 						"smallImage": "../src/assets/img/global/banner/mobile/banner-doters-mobile.webp", 
 						"link": "/doters"
 					}
 				]'
-			>
-			</app-banner-slider>
+      >
+      </app-banner-slider>
 
 
 			<app-payments></app-payments>
