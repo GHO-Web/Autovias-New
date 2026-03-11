@@ -27,4 +27,4 @@ class AppButtonEvaTripEnglish extends HTMLElement {
     this.button.style.display = 'block';
   }
 }
-customElements.define("app-button-eva-trip-english", AppButtonEvaTripEnglish);
+customElements.define("app-button-eva-trip", AppButtonEvaTripEnglish);

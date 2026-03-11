@@ -5,13 +5,13 @@ import "../../../components/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/app-cotiza.js";
-import "../../../components/app-payments.js";
+import "../../../components/carousel/app-payments.js";
 import "../../../components/app-section-title.js";
 import "../../../components/app-table-pets.js";
 
 class PageTerminosBuenFin extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <app-cotiza></app-cotiza>
 
         <app-banner-slider
@@ -204,7 +204,7 @@ class PageTerminosBuenFin extends HTMLElement {
         </section>
 			
     `;
-	}
+  }
 }
 
 customElements.define("page-terminos-buen-fin", PageTerminosBuenFin);

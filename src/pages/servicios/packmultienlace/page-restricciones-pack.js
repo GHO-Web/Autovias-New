@@ -6,11 +6,11 @@ import "../../../components/packmultienlace/app-card-bg-primary.js";
 import "../../../components/packmultienlace/app-card-small-list.js";
 import "../../../components/packmultienlace/app-header-pack-multienlace.js";
 import "../../../components/packmultienlace/app-footer-pack-multienlace.js";
-import "../../../components/app-card-circle.js";
+import "../../../components/cards/app-card-circle.js";
 
 class PageRestriccionesPack extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza-pack></app-cotiza-pack>
             <div class="cotiza-pack-space"></div>
 
@@ -43,6 +43,6 @@ class PageRestriccionesPack extends HTMLElement {
 
 
         `;
-	}
+  }
 }
 customElements.define("page-restricciones-pack", PageRestriccionesPack);

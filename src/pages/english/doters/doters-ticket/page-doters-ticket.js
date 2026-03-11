@@ -5,15 +5,15 @@ import "../../../../components/app-section-title.js";
 
 import "../../../../components/english/app-header.js?v=1.0.2";
 import "../../../../components/english/app-footer.js?v=1.0.2";
-import "../../../../components/english/app-banner-multi-image.js?v=1.0.2";
-import "../../../../components/english/app-card-image-tag-text.js?v=1.0.2";
-import "../../../../components/english/app-destiny-slider.js?v=1.0.2";
+import "../../../../components/english/banners/app-banner-multi-image.js?v=1.0.2";
+import "../../../../components/english/cards/app-card-image-tag-text.js?v=1.0.2";
+import "../../../../components/english/sliders/app-destiny-slider.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 
 class PageDotersTicket extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <div class="main-container">
         <div class="content-header">
             <h1>Doters</h1>
@@ -135,6 +135,6 @@ class PageDotersTicket extends HTMLElement {
         </section>
       </div>
     `;
-	}
+  }
 }
 customElements.define("page-doters-ticket", PageDotersTicket);

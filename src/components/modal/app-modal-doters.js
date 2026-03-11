@@ -1,6 +1,6 @@
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/doters-cookies.js?v=1.0.0";
+import "../../js/doters-cookies.js?v=1.0.0";
 
 class AppModalDoters extends HTMLElement {
 	constructor() {

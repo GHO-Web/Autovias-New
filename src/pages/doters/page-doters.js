@@ -4,11 +4,11 @@ import "../../components/app-header.js?v=1.1.3";
 import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
-import "../../components/app-banner-slider.js";
+import "../../components/sliders/app-banner-slider.js";
 import "../../components/cards/doters/app-card-doters.js";
 import "../../components/cards/app-card-left-description.js";
 import "../../components/cards/app-card-right-description.js";
-import "../../components/app-carousel-banners.js";
+import "../../components/carousel/app-carousel-banners.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 

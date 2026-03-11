@@ -5,11 +5,11 @@ import "../../../components/english/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/app-cotiza.js";
-import "../../../components/english/app-destiny-slider.js";
-import "../../../components/english/app-banner-multi-image.js";
-import "../../../components/english/app-card-image-tag-text.js";
+import "../../../components/english/sliders/app-destiny-slider.js";
+import "../../../components/english/banners/app-banner-multi-image.js";
+import "../../../components/english/cards/app-card-image-tag-text.js";
 import "../../../components/app-section-title.js";
-import "../../../components/english/app-banner-image.js";
+import "../../../components/english/banners/app-banner-image.js";
 import "../../../components/app-description-destination.js";
 import "../../../components/app-explore-section.js";
 

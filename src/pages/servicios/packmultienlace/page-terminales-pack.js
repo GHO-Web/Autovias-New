@@ -1,14 +1,14 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/packmultienlace/app-header-pack-multienlace.js";
 import "../../../components/packmultienlace/app-cotiza-pack.js";
-import "../../../components/app-banner-slider.js";
+import "../../../components/sliders/app-banner-slider.js";
 import "../../../components/app-section-title.js";
 import "../../../components/packmultienlace/app-map-pack.js";
 import "../../../components/packmultienlace/app-footer-pack-multienlace.js";
 
 class PageTerminalesPack extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza-pack></app-cotiza-pack>
             <div class="cotiza-pack-space"></div>
 
@@ -23,7 +23,7 @@ class PageTerminalesPack extends HTMLElement {
 
         <app-map-pack></app-map-pack>
     `;
-	}
+  }
 }
 
 customElements.define("page-terminales-pack", PageTerminalesPack);

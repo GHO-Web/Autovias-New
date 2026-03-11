@@ -5,14 +5,14 @@ import "../../../components/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/app-cotiza.js";
-import "../../../components/app-banner-slider.js";
-import "../../../components/app-payments.js";
+import "../../../components/sliders/app-banner-slider.js";
+import "../../../components/carousel/app-payments.js";
 import "../../../components/app-section-title.js";
 import "../../../components/app-table-pets.js";
 
 class PageTerminosHotTravel extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <app-cotiza></app-cotiza>
 
         <app-banner-slider
@@ -207,6 +207,6 @@ class PageTerminosHotTravel extends HTMLElement {
         </section>
 			
     `;
-	}
+  }
 }
 customElements.define("page-terminos-hot-travel", PageTerminosHotTravel);

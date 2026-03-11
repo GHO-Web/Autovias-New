@@ -1,6 +1,6 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/packmultienlace/app-cotiza-pack.js";
-import "../../../components/app-banner-slider.js";
+import "../../../components/sliders/app-banner-slider.js";
 import "../../../components/app-section-title.js";
 import "../../../components/packmultienlace/app-card-bg-primary.js";
 import "../../../components/packmultienlace/app-card-small-list.js";
@@ -8,8 +8,8 @@ import "../../../components/packmultienlace/app-header-pack-multienlace.js";
 import "../../../components/packmultienlace/app-footer-pack-multienlace.js";
 
 class PageFacturacionPack extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza-pack></app-cotiza-pack>
             <div class="cotiza-pack-space"></div>
 
@@ -173,6 +173,6 @@ class PageFacturacionPack extends HTMLElement {
         </section>
 
         `;
-	}
+  }
 }
 customElements.define("page-facturacion-pack", PageFacturacionPack);
