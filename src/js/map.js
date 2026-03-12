@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         function (error) {
           console.error("Error al obtener la ubicación:", error);
           callback(null);
-        }
+        },
       );
     } else {
       alert("Geolocalización no soportada en este navegador.");
@@ -32,13 +32,14 @@ document.addEventListener("DOMContentLoaded", function () {
     window.open(url, "_blank");
   }
 
-  // Cargar los marcadores desde un archivo JSON
-  async function loadMarkers() {
-    const response = await fetch("/src/data/map-data.json");
-    const data = await response.json();
+  // Esta función se va a encargar de poner el mapa y los marcadores
+  // una vez que tengamos los datos. Ya no los va a ir a buscar.
+  function renderMapAndMarkers(data) {
+    // Guardamos los datos de los marcadores para usarlos en todo el script.
     markers = data;
 
     // Inicializar el mapa
+    // Buscamos el contenedor del mapa dentro de nuestro componente.
     const mapContainer = document
       .querySelector("app-map")
       .querySelector("#modalMapContainer");
@@ -47,15 +48,17 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
+    // Creamos el mapa con Leaflet, le ponemos unas coordenadas para que se centre y un zoom.
     map = L.map(mapContainer).setView([19.2835, -99.6598], 15);
 
-    // Capa base de OpenStreetMap
+    // Esta es la capa de 'tiles', o sea, el mapa visual. Usamos OpenStreetMap que es gratis.
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
     // Agregar marcadores al mapa
+    // Ahora vamos a recorrer cada marcador de los datos y lo vamos a poner en el mapa.
     markers.forEach(function (marker) {
       var lat = marker.position[0];
       var lon = marker.position[1];
@@ -63,14 +66,49 @@ document.addEventListener("DOMContentLoaded", function () {
                         <h2>${marker.name}</h2>
                         <p>${marker.address}</p>
                         <a href="javascript:void(0);" onclick="handleOpenGoogleMaps(${JSON.stringify(
-                          marker.position
+                          marker.position,
                         )})">Ver en Google Maps</a>
                     `);
     });
   }
-  loadMarkers().catch((error) =>
-    console.error("Error al cargar los marcadores:", error)
-  );
+
+  // Esta parte es nueva. Se va a quedar escuchando hasta que los datos del mapa estén listos.
+  // Es como cuando esperas a que te llegue un paquete.
+  const mapComponent = document.querySelector("app-map");
+  if (mapComponent) {
+    // Un 'MutationObserver' es como un chismoso que se fija si algo cambia en un elemento.
+    const observer = new MutationObserver(function (mutations) {
+      // Vemos la lista de cambios que hubo.
+      mutations.forEach(function (mutation) {
+        // Nos interesa si cambió un atributo, y si ese atributo es 'data'.
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "data"
+        ) {
+          const mapDataString = mapComponent.getAttribute("data");
+          if (mapDataString) {
+            // ¡Llegó el paquete! Los datos están en el atributo 'data'.
+            try {
+              // El atributo es texto, lo convertimos a algo que JS pueda usar (un objeto).
+              const mapData = JSON.parse(mapDataString);
+              // Ahora sí, llamamos a la función que pinta el mapa y los marcadores.
+              renderMapAndMarkers(mapData);
+              // Ya que tenemos los datos, el chismoso puede dejar de vigilar.
+              observer.disconnect();
+            } catch (e) {
+              console.error(
+                "Hubo un problema con los datos del mapa, no se pudieron usar.",
+                e,
+              );
+            }
+          }
+        }
+      });
+    });
+
+    // Aquí le decimos al observador que empiece a vigilar el componente del mapa.
+    observer.observe(mapComponent, { attributes: true });
+  }
 
   //Funcion para generalizar la busqueda
   function removePunctuationAndAccents(text) {
@@ -180,9 +218,9 @@ document.addEventListener("DOMContentLoaded", function () {
       <h2>${marker.name}</h2>
       <p>${marker.address}</p>
       <a href="javascript:void(0);" onclick="handleOpenGoogleMaps(${JSON.stringify(
-        marker.position
+        marker.position,
       )})">Ver en Google Maps</a>
-    `
+    `,
       )
       .openPopup();
 
@@ -219,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <h2>${marker.name}</h2>
                         <p>${marker.address}</p>
                         <a href="javascript:void(0);" onclick="handleOpenGoogleMaps(${JSON.stringify(
-                          marker.position
+                          marker.position,
                         )})">Ver en Google Maps</a>
                     `);
       });
@@ -268,14 +306,14 @@ document.addEventListener("DOMContentLoaded", function () {
           text: "Conoce nuestra amplia cobertura de sucursales en México",
         },
         null,
-        false
+        false,
       );
 
       chart.setSubtitle(
         {
           text: "Haz clic en uno de los estados azul oscuro para ver las direcciones de nuestras sucursales",
         },
-        false
+        false,
       );
 
       chart.series[0].points.forEach((point) => {
@@ -308,7 +346,7 @@ document.addEventListener("DOMContentLoaded", function () {
           userLocation.lat,
           userLocation.lng,
           destinationPosition[0],
-          destinationPosition[1]
+          destinationPosition[1],
         );
       } else {
         abrirGoogleMaps(0, 0, destinationPosition[0], destinationPosition[1]);
