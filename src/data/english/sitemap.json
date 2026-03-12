@@ -3,7 +3,7 @@
 		"categoria": "Home",
 		"landings": [
 			{ "nombre": "Inicio (Spanish)", "url": "../../" },
-			{ "nombre": "Inicio (ingles)", "url": "../../english/" }
+			{ "nombre": "Inicio (ingles)", "url": "../../english/ }
 		]
 	},
 	{

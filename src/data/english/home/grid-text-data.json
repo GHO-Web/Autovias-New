@@ -3,25 +3,25 @@
     {
       "imageSrc": "../src/assets/img/english/home/other-destinations-grid/bg-atlacomulco-english.webp",
       "alt": "Atlacomulco",
-      "href": "./destinations/boletos-de-autobus-a-atlacomulco.html",
+      "href": "./destinations/bus-ticket-to-atlacomulco.html",
       "text": "Atlacomulco"
     },
     {
       "imageSrc": "../src/assets/img/english/home/other-destinations-grid/bg-edomex-english.webp",
       "alt": "Estado de México",
-      "href": "./destinations/boletos-de-autobus-a-estado-de-mexico.html",
+      "href": "./destinations/bus-ticket-to-estado-de-mexico.html",
       "text": "Estado de México"
     },
     {
       "imageSrc": "../src/assets/img/english/home/other-destinations-grid/bg-ixtapa-guerrero-english.webp",
       "alt": "Ixtapa, Guerrero",
-      "href": "./destinations/boletos-de-autobus-a-ixtapa.html",
+      "href": "./destinations/bus-ticket-to-ixtapa.html",
       "text": "Ixtapa, Guerrero"
     },
     {
       "imageSrc": "../src/assets/img/english/home/other-destinations-grid/bg-queretaro-english.webp",
       "alt": "Querétaro",
-      "href": "./destinations/boletos-de-autobus-a-queretaro.html",
+      "href": "./destinations/bus-ticket-to-queretaro.html",
       "text": "Querétaro"
     }
   ],
