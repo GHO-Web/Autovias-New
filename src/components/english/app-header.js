@@ -15,40 +15,40 @@ class AppHeaderEnglish extends HTMLElement {
         
         <nav aria-label="Navigation menu" >
           <ul>
-            <li><a href="../../../english/" aria-label="Go to home" tabindex="0">Home</a></li>
+            <li><a href="../../../../english/" aria-label="Go to home" tabindex="0">Home</a></li>
             <li class="submenu">
               <a href="#" role="button" aria-label="Services us" tabindex="0" aria-haspopup="true" aria-expanded="false">Services<span class="icon-arrow-down"></span></a>
               <ul>
-                <li><a href="../../../english/services/referenced-payment-oxxo.html" tabindex="0">Referenced Pay OXXO</a></li>
-                <li><a href="../../../english/services/protected-traveler.html" tabindex="0">Protected traveler</a></li>
+                <li><a href="../../../../english/services/referenced-payment-oxxo.html" tabindex="0">Referenced Pay OXXO</a></li>
+                <li><a href="../../../../english/services/protected-traveler.html" tabindex="0">Protected traveler</a></li>
               </ul>
             </li>
             <li class="submenu">
               <a href="#" role="button" aria-label="Destinations" tabindex="0" aria-haspopup="true" aria-expanded="false">Destinations<span class="icon-arrow-down"></span></a>
               <ul>
-                <li><a href="../../../english/destinations/bus-ticket-to-acambaro.html" tabindex="0">Acámbaro</a></li>
-                <li><a href="../../../english/destinations/bus-ticket-to-acambay.html" tabindex="0">Acambay</a></li>
-                <li><a href="../../../english/destinations/bus-ticket-to-atlacomulco.html" tabindex="0">Atlacomulco</a></li>
-                <li><a href="../../../english/destinations/bus-ticket-to-ciudad-de-mexico.html" tabindex="0">CDMX</a></li>
-                <li><a href="../../../english/destinations/bus-ticket-to-colima.html" tabindex="0">Colima</a></li>
-                <li><a href="../../../english/destinations/bus-ticket-to-guadalajara.html" tabindex="0">Guadalajara</a></li>
-                <li><a href="../../../english/destinations/bus-ticket-to-uruapan.html" tabindex="0">Uruapan</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-acambaro.html" tabindex="0">Acámbaro</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-acambay.html" tabindex="0">Acambay</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-atlacomulco.html" tabindex="0">Atlacomulco</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-ciudad-de-mexico.html" tabindex="0">CDMX</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-colima.html" tabindex="0">Colima</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-guadalajara.html" tabindex="0">Guadalajara</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-uruapan.html" tabindex="0">Uruapan</a></li>
               </ul>
             </li>
             <li class="submenu">
               <a href="#" role="button" aria-label="Promotions" tabindex="0" aria-haspopup="true" aria-expanded="false">Promotions<span class="icon-arrow-down"></span></a>
               <ul>
-                <li><a href="../../../english/promotions/buen-fin/" tabindex="0">Buen Fin</a></li>
-                <li><a href="../../../english/promotions/hot-travel/" tabindex="0">Hot Travel</a></li>
-                <li><a href="../../../english/promotions/offers-in-1-click/" tabindex="0">Offers in 1 Click</a></li>
+                <li><a href="../../../../english/promotions/buen-fin/" tabindex="0">Buen Fin</a></li>
+                <li><a href="../../../../english/promotions/hot-travel/" tabindex="0">Hot Travel</a></li>
+                <li><a href="../../../../english/promotions/offers-in-1-click/" tabindex="0">Offers in 1 Click</a></li>
               </ul>
             </li>
             <li class="submenu">
               <a href="#" role="button" aria-label="About" tabindex="0" aria-haspopup="true" aria-expanded="false">About<span class="icon-arrow-down"></span></a>
               <ul>
-                <li><a href="../../../english/about/terms-and-conditions.html" tabindex="0">Terms and Conditions</a></li>
-                <li><a href="../../../english/about/privacy-notice.html" tabindex="0">Privacy Notice</a></li>
-                <li><a href="../../../english/about/who-we-are.html" tabindex="0">About Us</a></li>
+                <li><a href="../../../../english/about/terms-and-conditions.html" tabindex="0">Terms and Conditions</a></li>
+                <li><a href="../../../../english/about/privacy-notice.html" tabindex="0">Privacy Notice</a></li>
+                <li><a href="../../../../english/about/who-we-are.html" tabindex="0">About Us</a></li>
               </ul>
             </li>
           </ul>
@@ -62,7 +62,7 @@ class AppHeaderEnglish extends HTMLElement {
           <img src='../../../../src/assets/img/global/logos/doters.svg' alt="Doters" loading="lazy">
         </button>
 
-        <a class="li__languaje desktop-languaje" href="../../../" aria-label="Change language">
+        <a class="li__languaje desktop-languaje" href="../../../../" aria-label="Change language">
           <img src='../../../../src/assets/icons/icons-img/MX_Flag.webp' alt="English" loading="lazy">
         </a>
 
@@ -77,45 +77,45 @@ class AppHeaderEnglish extends HTMLElement {
         <div id="dropdown-menu" class="show">
           <ul>
             <li class="lili__languaje">
-              <a class="a__languaje" href="../../../" aria-label="Change language">
+              <a class="a__languaje" href="../../../../" aria-label="Change language">
                 <img src='../../../../src/assets/icons/icons-img/MX_Flag.webp' alt="English" loading="lazy">
               </a>
             </li>
 
-            <li><a href="../../../english/" aria-label="Go to home">HOME</a></li>
+            <li><a href="../../../../english/" aria-label="Go to home">HOME</a></li>
             <li class="submenu">
               <a href="#" role="button" aria-label="Services us" tabindex="0" aria-haspopup="true" aria-expanded="false">Services<span class="icon-arrow-down"></span></a>
               <ul>
-                <li><a href="../../../english/services/referenced-payment-oxxo.html" tabindex="0">Referenced Pay OXXO</a></li>
-                <li><a href="../../../english/services/protected-traveler.html" tabindex="0">Protected traveler</a></li>
+                <li><a href="../../../../english/services/referenced-payment-oxxo.html" tabindex="0">Referenced Pay OXXO</a></li>
+                <li><a href="../../../../english/services/protected-traveler.html" tabindex="0">Protected traveler</a></li>
               </ul>
             </li>
             <li class="submenu">
               <a href="#" role="button" aria-label="Destinations" tabindex="0" aria-haspopup="true" aria-expanded="false">Destinations<span class="icon-arrow-down"></span></a>
               <ul>
-                <li><a href="../../../english/destinations/bus-ticket-to-acambaro.html" tabindex="0">Acámbaro</a></li>
-                <li><a href="../../../english/destinations/bus-ticket-to-acambay.html" tabindex="0">Acambay</a></li>
-                <li><a href="../../../english/destinations/bus-ticket-to-atlacomulco.html" tabindex="0">Atlacomulco</a></li>
-                <li><a href="../../../english/destinations/bus-ticket-to-ciudad-de-mexico.html" tabindex="0">CDMX</a></li>
-                <li><a href="../../../english/destinations/bus-ticket-to-colima.html" tabindex="0">Colima</a></li>
-                <li><a href="../../../english/destinations/bus-ticket-to-guadalajara.html" tabindex="0">Guadalajara</a></li>
-                <li><a href="../../../english/destinations/bus-ticket-to-uruapan.html" tabindex="0">Uruapan</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-acambaro.html" tabindex="0">Acámbaro</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-acambay.html" tabindex="0">Acambay</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-atlacomulco.html" tabindex="0">Atlacomulco</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-ciudad-de-mexico.html" tabindex="0">CDMX</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-colima.html" tabindex="0">Colima</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-guadalajara.html" tabindex="0">Guadalajara</a></li>
+                <li><a href="../../../../english/destinations/bus-ticket-to-uruapan.html" tabindex="0">Uruapan</a></li>
               </ul>
             </li>
             <li class="submenu">
               <a href="#" role="button" aria-label="Promotions" tabindex="0" aria-haspopup="true" aria-expanded="false">Promotions<span class="icon-arrow-down"></span></a>
               <ul>
-                <li><a href="../../../english/promotions/buen-fin/" tabindex="0">Buen Fin</a></li>
-                <li><a href="../../../english/promotions/hot-travel/" tabindex="0">Hot Travel</a></li>
-                <li><a href="../../../english/promotions/offers-in-1-click/" tabindex="0">Offers in 1 Click</a></li>
+                <li><a href="../../../../english/promotions/buen-fin/" tabindex="0">Buen Fin</a></li>
+                <li><a href="../../../../english/promotions/hot-travel/" tabindex="0">Hot Travel</a></li>
+                <li><a href="../../../../english/promotions/offers-in-1-click/" tabindex="0">Offers in 1 Click</a></li>
               </ul>
             </li>
             <li class="submenu">
               <a href="#" role="button" aria-label="About" tabindex="0" aria-haspopup="true" aria-expanded="false">About<span class="icon-arrow-down"></span></a>
               <ul>
-                <li><a href="../../../english/about/terms-and-conditions.html" tabindex="0">Terms and Conditions</a></li>
-                <li><a href="../../../english/about/privacy-notice.html" tabindex="0">Privacy Notice</a></li>
-                <li><a href="../../../english/about/who-we-are.html" tabindex="0">About Us</a></li>
+                <li><a href="../../../../english/about/terms-and-conditions.html" tabindex="0">Terms and Conditions</a></li>
+                <li><a href="../../../../english/about/privacy-notice.html" tabindex="0">Privacy Notice</a></li>
+                <li><a href="../../../../english/about/who-we-are.html" tabindex="0">About Us</a></li>
               </ul>
             </li>
 
