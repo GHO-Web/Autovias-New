@@ -17,9 +17,7 @@ class PageHomeEnglish extends HTMLElement {
       <app-cotiza></app-cotiza>
       <app-modal-travelpass-english></app-modal-travelpass-english>
       <app-modal-doters-english></app-modal-doters-english>
-      <div class="__first-section">
-        <app-payments></app-payments>
-      </div>
+      <app-payments></app-payments>
       <section class="__section">
         <app-section-title section-title="Travel differently. Discover Mexico with Autovías"></app-section-title>
         <article>

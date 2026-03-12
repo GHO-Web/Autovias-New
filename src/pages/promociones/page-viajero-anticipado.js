@@ -16,7 +16,7 @@ class LayoutViajeroAnticipado extends HTMLElement {
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "/src/assets/img/global/banner/web/banner-viajero-anticipado-semana-santa-30-descuento.webp", "mediumImage": "/src/assets/img/global/banner/tablet/banner-viajero-anticipado-semana-santa-30-descuento.webp", "smallImage": "/src/assets/img/global/banner/tablet/banner-compra-en-internet-descuento-10-de-regreso.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "/src/assets/img/global/banner/web/banner-viajero-anticipado-semana-santa-30-descuento.webp", "mediumImage": "/src/assets/img/global/banner/tablet/banner-viajero-anticipado-semana-santa-30-descuento.webp", "smallImage": "/src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", "link": "#index.html/banner1"}
                 ]'
             >
             </app-banner-slider>

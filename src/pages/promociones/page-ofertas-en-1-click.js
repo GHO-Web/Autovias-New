@@ -19,12 +19,11 @@ class PageOfertasClick extends HTMLElement {
                     {
                         "id": "slide1", 
                         "title": "Banner 1", 
-                        "image": "../src/assets/img/promociones/ofertas-en-1-click/ofertas-1-click.png",
-                        "mediumImage": "../src/assets/img/promociones/ofertas-en-1-click/Tablet-1.png", 
-                        "smallImage": "../src/assets/img/promociones/ofertas-en-1-click/Movil-1.webp", 
-                        "link": "#index.html/banner1"
+                        "image": "../../src/assets/img/promociones/ofertas-en-1-click/banners/web/banner-ofertas-1-click.webp",
+                        "mediumImage": "../../src/assets/img/promociones/ofertas-en-1-click/banners/tablet/banner-ofertas-1-click.webp", 
+                        "smallImage": "../../src/assets/img/promociones/ofertas-en-1-click/banners/mobile/banner-ofertas-1-click.webp", 
+                        "link": "https://www.autovias.com.mx/promociones/ofertas-en-1-click"
                     }
-               
                 ]'
             >
             </app-banner-slider>

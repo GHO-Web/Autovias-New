@@ -20,10 +20,10 @@ class PageViajeroProtegidoEnglish extends HTMLElement {
                     {
                         "id": "slide1", 
                         "title": "Banner 1", 
-                        "image": "../../src/assets/img/english/home/banner/viajero/banner-viajero-protegido.webp",
-                        "mediumImage": "../../src/assets/img/english/home/banner/viajero/banner-viajero-protegido-tablet.webp", 
-                        "smallImage": "../../src/assets/img/english/home/banner/viajero/banner-viajero-protegido-mobile.webp", 
-                        "link": "#index.html/banner1"
+                        "image": "../../src/assets/img/english/services/protected-traveler/banners/web/banner-viajero-protegido-seguro-de-viaje.webp",
+                        "mediumImage": "../../src/assets/img/english/services/protected-traveler/banners/tablet/banner-viajero-protegido-seguro-de-viaje.webp", 
+                        "smallImage": "../../src/assets/img/english/services/protected-traveler/banners/mobile/banner-viajero-protegido-seguro-de-viaje.webp", 
+                        "link": "/"
                     }
                 ]'
             >

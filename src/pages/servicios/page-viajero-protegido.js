@@ -19,9 +19,9 @@ class PageViajeroProtegido extends HTMLElement {
                     {
                         "id": "slide1", 
                         "title": "Banner 1", 
-                        "image": "../src/assets/img/global/banner/banner-viajero-protegido-gho.webp",
-                        "mediumImage": "../src/assets/img/global/banner/Tablet-1.png", 
-                        "smallImage": "../src/assets/img/global/banner/Movil-1.webp", 
+                        "image": "../src/assets/img/servicios/oxxo-pay/banners/web/banner-viajero-protegido-seguro-de-viaje.webp",
+                        "mediumImage": "../src/assets/img/servicios/oxxo-pay/banners/tablet/banner-viajero-protegido-seguro-de-viaje.webp", 
+                        "smallImage": "../src/assets/img/servicios/oxxo-pay/banners/mobile/banner-viajero-protegido-seguro-de-viaje.webp", 
                         "link": "#index.html/banner1"
                     }
                 ]'

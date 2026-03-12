@@ -19,9 +19,9 @@ class PageFestivalViajes extends HTMLElement {
                     {
                         "id": "slide1", 
                         "title": "Banner 1", 
-                        "image": "../src/assets/img/global/banner/festival-de-viajes.png",
-                        "mediumImage": "../src/assets/img/global/banner/Tablet-1.png", 
-                        "smallImage": "../src/assets/img/global/banner/Movil-1.webp", 
+                        "image": "../src/assets/img/promociones/festival-de-viajes/banners/tablet/festival-de-viajes.png",
+                        "mediumImage": "../src/assets/img/promociones/festival-de-viajes/banners/tablet/banner-ofertas-1-click.webp", 
+                        "smallImage": "../src/assets/img/promociones/festival-de-viajes/banners/mobile/banner-ofertas-1-click.webp",
                         "link": "#index.html/banner1"
                     }
                 ]'

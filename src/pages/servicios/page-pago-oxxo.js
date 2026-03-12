@@ -19,26 +19,10 @@ class PagePagoOxxo extends HTMLElement {
                 {
                     "id": "slide1", 
                     "title": "Banner 1", 
-                    "image": "../src/assets/img/global/banner/web/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp",
-                    "mediumImage": "../src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
-                    "smallImage": "../src/assets/img/global/banner/mobile/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
-                    "link": "/"
-                },
-                {
-                    "id": "slide2", 
-                    "title": "Banner 2", 
-                    "image": "../src/assets/img/global/banner/web/banner-viajero-anticipado-semana-santa-30-descuento.webp", 
-                    "mediumImage": "../src/assets/img/global/banner/tablet/banner-viajero-anticipado-semana-santa-30-descuento.webp",
-                    "smallImage": "../src/assets/img/global/banner/tablet/banner-compra-en-internet-descuento-10-de-regreso.webp", 
-                    "link": "/doters"
-                },
-                {
-                    "id": "slide3", 
-                    "title": "Banner 3", 
-                    "image": "../src/assets/img/global/banner/web/banner-compra-en-internet-descuento-10-de-regreso.webp", 
-                    "mediumImage":  "../src/assets/img/global/banner/tablet/banner-compra-en-internet-descuento-10-de-regreso.webp",
-                    "smallImage":  "../src/assets/img/global/banner/tablet/banner-compra-en-internet-descuento-10-de-regreso.webp",
-                    "link": "/doters"
+                    "image": "../src/assets/img/servicios/oxxo-pay/banners/web/banner-pago-referenciado-oxxo.webp", 
+                    "mediumImage":  "../src/assets/img/servicios/oxxo-pay/banners/tablet/banner-pago-referenciado-oxxo.webp",
+                    "smallImage":  "../src/assets/img/servicios/oxxo-pay/banners/tablet/banner-pago-referenciado-oxxo.webp",
+                    "link": "../"
                 }
             ]'
         >
