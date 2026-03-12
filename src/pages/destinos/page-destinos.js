@@ -69,6 +69,7 @@ class PageDestinos extends HTMLElement {
     this.loadAndRenderTitleIconHorariosCards();
     this.loadAndRenderTitleIconRatesCards();
     this.loadAndRenderTitleIconConfortCards();
+    this.loadAndSetMapData();
   }
 
   async loadAndRenderCardsText() {
@@ -135,6 +136,33 @@ class PageDestinos extends HTMLElement {
       }
       targetContainer.appendChild(cardElement);
     });
+  }
+
+  // Esta función es nueva. Se va a encargar de ir por los datos del mapa
+  // y pasárselos al componente <app-map>.
+  async loadAndSetMapData() {
+    // Primero, buscamos el componente del mapa en nuestra página.
+    const appMap = this.querySelector("app-map");
+    if (!appMap) {
+      console.error("Oye, no encontré el componente del mapa (<app-map>).");
+      return;
+    }
+    try {
+      // Hacemos una petición para traer el archivo con las ubicaciones.
+      const response = await fetch("/src/data/map-data.json");
+      if (!response.ok) {
+        throw new Error(
+          `¡Rayos! No se pudo cargar el archivo del mapa: ${response.status}`,
+        );
+      }
+      // Convertimos la respuesta a un formato que JavaScript pueda leer.
+      const mapData = await response.json();
+      // Ahora, le ponemos los datos al componente del mapa en un atributo llamado 'data'.
+      // Lo convertimos a texto porque los atributos solo guardan texto.
+      appMap.setAttribute("data", JSON.stringify(mapData));
+    } catch (error) {
+      console.error("Falló la carga de datos para el mapa:", error);
+    }
   }
 
   async loadAndRenderTitleIconCards() {
