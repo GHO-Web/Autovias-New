@@ -5,30 +5,32 @@ import "../../components/app-footer.js?v=1.0.0";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
-import "../../components/english/app-banner-image.js";
+import "../../components/english/banners/app-banner-image.js";
 import "../../components/carousel/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/cards/app-card-right-description.js";
 import "../../components/dropdown/app-faqs.js";
 import "../../components/cards/card-image-top.js";
 
-class DescuentosSemanaSanta extends HTMLElement {
+class DescuentosTemporadaVacacional extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <app-cotiza></app-cotiza>
 
-      <div class="__first-section">
         <app-payments></app-payments>
-      </div>
+      
 
       <section class="__sections">
         <h2 class="__first-title">En Autovías La Línea te invitamos a conocer los eventos y festividades que se celebrarán en los próximos meses.</h2>
       </section>
 
       <app-banner-image
-        image-src="../src/assets/img/global/banner/web/banner-semana-santa.webp"
+        image-src="/src/assets/img/global/banner/web/banner-descuentos-temporada-vacacional-web.webp"
+        medium-image="/src/assets/img/global/banner/tablet/banner-descuentos-temporada-vacacional-tablet.webp"
+        small-image="/src/assets/img/global/banner/mobile/banner-descuentos-temporada-vacacional-mobile.webp"
         image-alt="Banner promocional de descuento de temporada para estudiantes y profesores"
       ></app-banner-image>
+   
       
       <section class="__sections">
         <app-card-right-description cards='[
@@ -125,4 +127,4 @@ class DescuentosSemanaSanta extends HTMLElement {
     `;
   }
 }
-customElements.define("page-descuentos-semana-santa", DescuentosSemanaSanta);
+customElements.define("page-descuentos-temporada-vacacional", DescuentosTemporadaVacacional);
