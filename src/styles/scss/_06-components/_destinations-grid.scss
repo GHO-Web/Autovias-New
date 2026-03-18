@@ -134,6 +134,29 @@
   }
 }
 
+@media (min-width: 2200px) and (max-width: 3000px) {
+
+  .section__destinations-container {
+
+    min-height: calc(100vh - 25rem) !important;
+
+    & .__destinations-container {
+      flex-grow: 1;
+      width: 100%;
+
+      & .section__destinations__container__grid {
+        height: 100% !important;
+
+        & .destinations__item:hover,
+        & .destinations__item:focus {
+          transform: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
 @include media("xxl") {
   .section__destinations {
     width: 100%;

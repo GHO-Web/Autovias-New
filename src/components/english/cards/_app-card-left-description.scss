@@ -1,0 +1,25 @@
+// Estilos para el componente app-card-left-description
+
+.card-left {
+  // Aseguramos que el contenedor de la imagen no tenga márgenes extraños
+  .card-image {
+    margin: 0;
+    width: 100%;
+    display: block;
+
+    img {
+      // 1. Que se adapte al contenedor (ancho completo)
+      width: 100%;
+      height: 100%;
+
+      // 2. Que se vea más rectangular (proporción panorámica 16:9)
+      aspect-ratio: 16 / 9;
+
+      // Evita que la imagen se deforme al forzar la proporción
+      object-fit: cover;
+
+      // 3. Bordes redondeados
+      border-radius: 16px;
+    }
+  }
+}
