@@ -34,9 +34,10 @@
   justify-content: start;
   align-items: center;
   width: 100%;
-  min-height: calc(100vh - 12.5rem);
+  min-height: auto;
   padding: 0 $spacing-xxl $spacing-xxl $spacing-xxl; // 4.375rem
-  box-sizing: border-box;
+  box-sizing: border-box; 
+
 
   @include media ("md") {
     padding: 0 $padding-medium $padding-medium $padding-medium;
@@ -78,9 +79,16 @@
       align-items: start;
       width: 100%;
       height: 430px;
+      margin: auto;
       margin-top: 50px;
       gap: 57px;
       overflow-x: auto;
+
+      @media screen and (min-width: 2500px) {
+        width: 80%;
+        justify-content: center;
+        margin-bottom: 50px !important;
+      }
     }
   }
 }

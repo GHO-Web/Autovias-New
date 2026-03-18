@@ -20,11 +20,13 @@ class AppDestinationsGrid extends HTMLElement {
           <div class="section__destinations-container">
               ${this.renderText(titleTexts)}
               
-              <div id="${containerId}">
+              <div id="${containerId}" class="__destinations-container">
                 <button class="slider-btn prev icon-next-button" aria-label="Anterior" aria-controls="${wrapperId}" tabindex="0" style="display: none;"></button>
+
                 <div id="${wrapperId}" class="section__destinations__container__grid ${gridClass}" role="group">
                   ${this.renderDestinations(destinations)}
                 </div>
+                
                 <button class="slider-btn next icon-next-button" aria-label="Siguiente" aria-controls="${wrapperId}" tabindex="0" style="display: none;"></button>
               </div>
           </div>

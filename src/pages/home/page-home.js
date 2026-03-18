@@ -16,7 +16,26 @@ import "../../components/app-img-shop-left.js";
 import "../../components/app-section-title.js";
 
 class PageHome extends HTMLElement {
-  connectedCallback() {
+    connectedCallback() {
+      const otherServicesData = [
+        {
+          sectionTitleId: "other-programs-section",
+          dataSource: "/src/data/home/mosaics/other-services-loyalty.json",
+        },
+        {
+          sectionTitleId: "other-services-section",
+          dataSource: "/src/data/home/mosaics/other-services-general.json",
+        },
+      ];
+
+      const otherServicesHTML = otherServicesData
+        .map(
+          (service) =>
+            `<app-other-services section-title-id="${
+              service.sectionTitleId
+            }" data-src="${service.dataSource}"></app-other-services>`,
+        )
+        .join("");
     this.innerHTML = `
         <app-cotiza></app-cotiza>
         <app-banner-slider
@@ -89,16 +108,8 @@ class PageHome extends HTMLElement {
         >
         </app-destinations-grid>
         
-        <app-other-services
-            section-title-id="other-programs-section"
-            title-data-src="../src/data/home/mosaics/programs/other-services-loyalty-titles.json"
-            cards-data-src="../src/data/home/mosaics/programs/other-services-loyalty-cards.json"
-        >
-        </app-other-services>
-        <app-other-services
-            title-data-src="../src/data/home/mosaics/services/other-services-general-titles.json"
-            cards-data-src="../src/data/home/mosaics/services/other-services-general-cards.json"
-        >
+        ${otherServicesHTML}
+
         </app-other-services>
         <app-blog></app-blog>
 			
