@@ -17,7 +17,6 @@ import "../../components/modal/app-modal-image.js";
 class AutobusAMorelia extends HTMLElement {
   async connectedCallback() {
     this.innerHTML = `
-			<app-cotiza></app-cotiza>
 			<app-banner-slider
 					slides-data='[
 					{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/destinos-img/morelia/banner/morelia-banner-web.webp","mediumImage": "../src/assets/img/destinos-img/morelia/banner/morelia-banner-tablet.webp", "smallImage": "../src/assets/img/destinos-img/morelia/banner/morelia-banner-mobile.webp", "link": "#index.html/banner1"}]'

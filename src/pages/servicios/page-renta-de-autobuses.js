@@ -11,7 +11,7 @@ import "../../components/cards/app-cards-contact-whats.js";
 import "../../components/app-section-title.js";
 import "../../components/cards/app-card-image.js";
 import "../../components/cards/app-card-hover.js";
-import "../../components/forms/app-froms.js";
+import "../../components/forms/app-forms.js";
 
 class PageRentaDeAutobuses extends HTMLElement {
   connectedCallback() {

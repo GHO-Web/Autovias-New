@@ -21,28 +21,42 @@ class PageZitacuaro extends HTMLElement {
     this.innerHTML = `
 			<app-cotiza></app-cotiza>
 
-			<app-banner-slider-caption
-          slides-data='[
-    {
-      "title":"Promo 1",
-      "link":"https://example.com",
-      "image":"../src/assets/img/boletos-autobus/zitacuaro/overflow-images/zitacuaro.webp",
-      "mediumImage":"../src/assets/img/boletos-autobus/zitacuaro/overflow-images/zitacuaro.webp",
-      "smallImage":"../src/assets/img/boletos-autobus/zitacuaro/overflow-images/zitacuaro.webp",
-      "captionTitle":"Viaja a Zitacuaro: Descubre la magia de este destino",
-      "captionText":"Viaja con Autovías La Línea y vive la mejor experiencia. Tu aventura comienza aquí.",
-      "captionAlign":"left",
-      "captionTheme":"dark"
-    }
-  ]'>
-      </app-banner-slider-caption>
+			<app-banner-slider
+            slides-data='[
+                {
+                    "id": "slide1", 
+                    "title": "Banner 1", 
+                    "image": "../src/assets/img/global/banner/web/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp",
+                    "mediumImage": "../src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+                    "smallImage": "../src/assets/img/global/banner/mobile/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+                    "link": "/"
+                },
+                {
+                    "id": "slide2", 
+                    "title": "Banner 2", 
+                    "image": "../src/assets/img/global/banner/web/banner-viajero-anticipado-semana-santa-30-descuento.webp", 
+                    "mediumImage": "../src/assets/img/global/banner/tablet/banner-viajero-anticipado-semana-santa-30-descuento.webp",
+                    "smallImage": "../src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+                    "link": "/doters"
+                },
+                {
+                    "id": "slide3", 
+                    "title": "Banner 3", 
+                    "image": "../src/assets/img/global/banner/web/banner-descuentos-temporada-vacacional-web.webp", 
+                    "mediumImage":  "../src/assets/img/global/banner/tablet/banner-descuentos-temporada-vacacional-tablet.webp",
+                    "smallImage":  "../src/assets/img/global/banner/mobile/banner-descuentos-temporada-vacacional-mobile.webp",
+                    "link": "/doters"
+                }
+            ]'
+        >
+        </app-banner-slider>
 
 			<app-payments></app-payments>
 
 			<!-- HERO -->
 			<section class="hero">
 				<div class="hero__content">
-					<h1 class="hero__title">Autobús de Zitácuaro</h1>
+					<h1 class="hero__title">Autobús de Zitácuaro con Autovías</h1>
 					<p class="hero__subtitle">
 						Viaja desde Zitácuaro en autobús con comodidad, seguridad y múltiples horarios diarios.
 					</p>
@@ -280,16 +294,13 @@ class PageZitacuaro extends HTMLElement {
 			</div>
 			</section>
 
-
 			<section class="cta">
 				<div class="container">
 					<h2 class="cta__title">¡Viaja a Zitacuaro con Autovías!</h2>
-					<p class="cta__subtitle">Prepara tus maletas y descubre todo lo que esta maravillosa ciudad tiene para ofrecer. Tu aventura está a solo un clic.</p> <a href="../destinos/autobus-a-zitacuaro.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ir a ver más sobre el destino" tabindex="0">Ver más sobre el destino</a>
+					<p class="cta__subtitle">¡Compra tu boleto hoy mismo y disfruta un viaje seguro, económico y accesible!</p>
+					<a href="/destinos/autobus-a-zitacuaro.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Atlacomulco" tabindex="0">Ver mas sobre el destino.</a>
 				</div>
 			</section>
-
-
-			
     `;
   }
 }

@@ -20,21 +20,35 @@ class AppColima extends HTMLElement {
   async connectedCallback() {
     this.innerHTML = `
 			<app-cotiza></app-cotiza>
-			<app-banner-slider-caption
-          slides-data='[
-    {
-      "title":"Promo 1",
-      "link":"https://example.com",
-      "image":"../src/assets/img/boletos-autobus/colima/overflow-images/colima-centro.webp",
-      "mediumImage":"../src/assets/img/boletos-autobus/colima/overflow-images/colima-centro.webp",
-      "smallImage":"../src/assets/img/boletos-autobus/colima/overflow-images/colima-centro.webp",
-      "captionTitle":"Viaja a Colima: El Encanto del Pacífico y el Volcán con Autovías",
-      "captionText":"Descubre la Ciudad de las Palmeras, su calidez y paisajes con el servicio de autobús líder. ¡Tu viaje te espera!",
-      "captionAlign":"left",
-      "captionTheme":"dark"
-    }
-  ]'>
-      </app-banner-slider-caption>
+			<app-banner-slider
+            slides-data='[
+                {
+                    "id": "slide1", 
+                    "title": "Banner 1", 
+                    "image": "../src/assets/img/global/banner/web/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp",
+                    "mediumImage": "../src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+                    "smallImage": "../src/assets/img/global/banner/mobile/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+                    "link": "/"
+                },
+                {
+                    "id": "slide2", 
+                    "title": "Banner 2", 
+                    "image": "../src/assets/img/global/banner/web/banner-viajero-anticipado-semana-santa-30-descuento.webp", 
+                    "mediumImage": "../src/assets/img/global/banner/tablet/banner-viajero-anticipado-semana-santa-30-descuento.webp",
+                    "smallImage": "../src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+                    "link": "/doters"
+                },
+                {
+                    "id": "slide3", 
+                    "title": "Banner 3", 
+                    "image": "../src/assets/img/global/banner/web/banner-descuentos-temporada-vacacional-web.webp", 
+                    "mediumImage":  "../src/assets/img/global/banner/tablet/banner-descuentos-temporada-vacacional-tablet.webp",
+                    "smallImage":  "../src/assets/img/global/banner/mobile/banner-descuentos-temporada-vacacional-mobile.webp",
+                    "link": "/doters"
+                }
+            ]'
+        >
+        </app-banner-slider>
 			<app-payments></app-payments>
 			
 			
@@ -42,7 +56,7 @@ class AppColima extends HTMLElement {
 
 			<section class="hero">
 				<div class="hero__content">
-					<h1 class="hero__title">Viaja a Colima: El Encanto del Pacífico y el Volcán con Autovías</h1>
+					<h1 class="hero__title">Autobus a Colima con Autovías</h1>
 					<p class="hero__subtitle">Descubre la "Ciudad de las Palmeras", su calidez y paisajes con el servicio de autobús líder. ¡Tu viaje te espera!</p>
 				</div>
 			</section>
@@ -251,9 +265,9 @@ class AppColima extends HTMLElement {
 
 			<section class="cta">
 				<div class="container">
-					<h2 class="cta__title">¡Aprovecha Nuestras Promociones Especiales a Colima!</h2>
-					<p class="cta__subtitle">¡No te pierdas nuestra promoción! Hasta 5% de descuento en tu viaje de ida + 10% de descuento en tu regreso. Consulta términos y condiciones.</p>
-					<a href="../promociones/" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Colima" tabindex="0">Ver Todas las Promociones</a>
+					<h2 class="cta__title">¡Viaja a Colima con Autovías!</h2>
+					<p class="cta__subtitle">¡Compra tu boleto hoy mismo y disfruta un viaje seguro, económico y accesible!</p>
+					<a href="/destinos/autobus-a-colima.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Atlacomulco" tabindex="0">Ver mas sobre el destino.</a>
 				</div>
 			</section>
 			

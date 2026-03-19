@@ -21,21 +21,35 @@ class PageUruapan extends HTMLElement {
     this.innerHTML = `
 			<app-cotiza></app-cotiza>
 
-			<app-banner-slider-caption
-          slides-data='[
-    {
-      "title":"Promo 1",
-      "link":"https://example.com",
-      "image":"../src/assets/img/boletos-autobus/uruapan/overflow-images/uruapan.webp",
-      "mediumImage":"../src/assets/img/boletos-autobus/uruapan/overflow-images/uruapan.webp",
-      "smallImage":"../src/assets/img/boletos-autobus/uruapan/overflow-images/uruapan.webp",
-      "captionTitle":"Viaja a Uruapan: Descubre la magia de este destino",
-      "captionText":"Viaja con Autovías La Línea y vive la mejor experiencia. Tu aventura comienza aquí.",
-      "captionAlign":"left",
-      "captionTheme":"dark"
-    }
-  ]'>
-      </app-banner-slider-caption>
+			<app-banner-slider
+            slides-data='[
+                {
+                    "id": "slide1", 
+                    "title": "Banner 1", 
+                    "image": "../src/assets/img/global/banner/web/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp",
+                    "mediumImage": "../src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+                    "smallImage": "../src/assets/img/global/banner/mobile/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+                    "link": "/"
+                },
+                {
+                    "id": "slide2", 
+                    "title": "Banner 2", 
+                    "image": "../src/assets/img/global/banner/web/banner-viajero-anticipado-semana-santa-30-descuento.webp", 
+                    "mediumImage": "../src/assets/img/global/banner/tablet/banner-viajero-anticipado-semana-santa-30-descuento.webp",
+                    "smallImage": "../src/assets/img/global/banner/tablet/banner-semana-santa-compra-en-tres-pasos-desc-5-mas-10.webp", 
+                    "link": "/doters"
+                },
+                {
+                    "id": "slide3", 
+                    "title": "Banner 3", 
+                    "image": "../src/assets/img/global/banner/web/banner-descuentos-temporada-vacacional-web.webp", 
+                    "mediumImage":  "../src/assets/img/global/banner/tablet/banner-descuentos-temporada-vacacional-tablet.webp",
+                    "smallImage":  "../src/assets/img/global/banner/mobile/banner-descuentos-temporada-vacacional-mobile.webp",
+                    "link": "/doters"
+                }
+            ]'
+        >
+        </app-banner-slider>
 
 			<app-payments></app-payments>
 
@@ -284,16 +298,8 @@ class PageUruapan extends HTMLElement {
 			<section class="cta">
 				<div class="container">
 					<h2 class="cta__title">¡Viaja a Uruapan con Autovías!</h2>
-					<p class="cta__subtitle">
-						Prepara tus maletas y descubre todo lo que esta ciudad tiene para ofrecer.
-					</p>
-					<a href="../destinos/autobus-a-uruapan.html"
-						class="btn btn--primary btn--large"
-						target="_blank"
-						rel="noopener noreferrer"
-						aria-label="Ir a ver más sobre el destino">
-						Ver más sobre el destino
-					</a>
+					<p class="cta__subtitle">¡Compra tu boleto hoy mismo y disfruta un viaje seguro, económico y accesible!</p>
+					<a href="/destinos/autobus-a-uruapan.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Ver todas las promociones a Atlacomulco" tabindex="0">Ver mas sobre el destino.</a>
 				</div>
 			</section>
 

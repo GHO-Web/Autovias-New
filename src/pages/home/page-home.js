@@ -97,7 +97,7 @@ class PageHome extends HTMLElement {
             destinations='[
             {"id": "destination1", "title": "Uruapan", "content": "Déjate llevar por la magia natural de Uruapan.", "image": "./src/assets/img/destinos-img/uruapan/lugares/centro-historico-uruapan.webp", "link": "../boletos-autobus/uruapan.html"},
 
-            {"id": "destination2", "title": "Ixtapa", "content": "Descubre la esencia tropical de Ixtapa, Guerrero.", "image": "./src/assets/img/destinos-img/ixtapa/lugares/isla-ixtapa.webp", "link": "../boletos-autobus/ixtapa.html"},
+            {"id": "destination2", "title": "Ixtapa", "content": "Descubre la esencia tropical de Ixtapa, Guerrero.", "image": "./src/assets/img/destinos-img/ixtapa/lugares/isla-ixtapa.webp", "link": "../boletos-autobus/ixtapa-zihuatanejo.html"},
 
             {"id": "destination3", "title": "Atlacomulco", "content": "Explora la esencia histórica y natural de Atlacomulco.", "image": "./src/assets/img/destinos-img/atlacomulco/lugares/plaza-civica.webp", "link": "../boletos-autobus/atlacomulco.html"},
 

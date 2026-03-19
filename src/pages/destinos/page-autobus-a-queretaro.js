@@ -17,7 +17,6 @@ import "../../components/modal/app-modal-image.js";
 class AutobusAQueretaro extends HTMLElement {
   async connectedCallback() {
     this.innerHTML = `
-			<app-cotiza></app-cotiza>
 <app-banner-slider
 	slides-data='[
 	{"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/destinos-img/queretaro/banner/queretaro-banner-web.webp","mediumImage": "../src/assets/img/destinos-img/queretaro/banner/queretaro-banner-tablet.webp", "smallImage": "../src/assets/img/destinos-img/queretaro/banner/queretaro-banner-mobile.webp", "link": "#index.html/banner1"}]'

@@ -1,6 +1,6 @@
-import "../components/modal/app-modal-doters.js";
-import "../components/modal/app-modal-travelpass.js";
-import "../components/modal/app-modal-doters-profile.js";
+import "/src/components/modal/app-modal-doters.js";
+import "/src/components/modal/app-modal-travelpass.js";
+import "/src/components/modal/app-modal-doters-profile.js";
 
 /*--------------------------- IMPORT SCRIPTS --------------------------*/
 
@@ -19,8 +19,8 @@ class AppHeader extends HTMLElement {
         
         <nav aria-label="Menu de navegacion" >
           <ul>
-            <li><a href="../../../" aria-label="Ir a inicio" tabindex="0">Inicio</a></li>
-            <li><a href="../../../servicios/facturacion.html" aria-label="Facturar su viaje" tabindex="0">Facturación</a></li> 
+            <li><a href="/" aria-label="Ir a inicio" tabindex="0">Inicio</a></li>
+            <li><a href="/servicios/facturacion.html" aria-label="Facturar su viaje" tabindex="0">Facturación</a></li> 
             <li><a href="https://viajes.autovias.com.mx/exchange/openTicket" aria-label="Imprimir pase de abordar" tabindex="0">Confirmar boleto abierto</a></li> 
             <li><a href="https://viajes.autovias.com.mx/download-tickets" aria-label="Imprimir pase de abordar" tabindex="0">Imprimir pase de abordar</a></li> 
             <li><a href="https://viajes.autovias.com.mx/exchange/itinerary" aria-label="Modificar itinerario" tabindex="0">Modificar itinerario</a></li> 
@@ -28,36 +28,36 @@ class AppHeader extends HTMLElement {
                 <a href="#" role="button" aria-label="Mas opciones" tabindex="0" aria-haspopup="true" aria-expanded="false">Mas<span class="icon-arrow-down"></span></a>
                 <ul class="submenu__media-items"> 
 
-                    <li><a href="../../../boletos-autobus/" tabindex="0">Boletos de autobus</a></li>
-                    <li><a href="../../../doters" tabindex="0">Doters</a></li>
-                    <li><a href="../../../boletos-autobus/donde-comprar.html" tabindex="0">¿Donde comprar?</a></li>
-                    <!-- <li><a href="../index.html" tabindex="0">Mascotas a bordo</a></li> -->
-                    <li><a href="../../../servicios/renta-de-autobuses.html" tabindex="0">Renta de autobuses</a></li>
-                    <li><a href="../../../destinos/" tabindex="0">Destinos</a></li>
-                    <li><a href="../../../terminales/" tabindex="0">Terminales y taquillas</a></li>
-                    <!-- <li><a href="../../../salas-de-espera-vip.html" tabindex="0">Salas de espera</a></li>
-                    <li><a href="../../../salidas-charters.html" tabindex="0">Salidas charters</a></li> -->
-                    <li><a href="../../../servicios/servicio-a-bordo.html" tabindex="0">Servicios a bordo</a></li>
-                    <li><a href="../../../promociones/" tabindex="0">Promociones</a></li>
+                    <li><a href="/boletos-autobus/" tabindex="0">Boletos de autobus</a></li>
+                    <li><a href="/doters" tabindex="0">Doters</a></li>
+                    <li><a href="/boletos-autobus/donde-comprar.html" tabindex="0">¿Donde comprar?</a></li>
+                    <!-- <li><a href="/src/index.html" tabindex="0">Mascotas a bordo</a></li> -->
+                    <li><a href="/servicios/renta-de-autobuses.html" tabindex="0">Renta de autobuses</a></li>
+                    <li><a href="/destinos/" tabindex="0">Destinos</a></li>
+                    <li><a href="/terminales/" tabindex="0">Terminales y taquillas</a></li>
+                    <!-- <li><a href="/salas-de-espera-vip.html" tabindex="0">Salas de espera</a></li>
+                    <li><a href="/salidas-charters.html" tabindex="0">Salidas charters</a></li> -->
+                    <li><a href="/servicios/servicio-a-bordo.html" tabindex="0">Servicios a bordo</a></li>
+                    <li><a href="/promociones/" tabindex="0">Promociones</a></li>
                     <li><a href="https://venta.autovias.com.mx/request.aspx?PRGNAME=AccesoEx&ARGUMENTS=-AAG,-AH,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-AES" tabindex="0">Agencias</a></li>
-                    <li><a href="../../../servicios/pago-referenciado-oxxo.html" tabindex="0">Pagos OXXO Pay</a></li>
-                    <li><a href="../../../promociones/viajero-anticipado.html" tabindex="0">Viajero anticipado</a></li>
-                    <li><a href="../../../servicios/viajero-protegido.html" tabindex="0">Viajero protegido</a></li>
+                    <li><a href="/servicios/pago-referenciado-oxxo.html" tabindex="0">Pagos OXXO Pay</a></li>
+                    <li><a href="/promociones/viajero-anticipado.html" tabindex="0">Viajero anticipado</a></li>
+                    <li><a href="/servicios/viajero-protegido.html" tabindex="0">Viajero protegido</a></li>
                     <li><a href="https://www.autovias.com.mx/blog/" tabindex="0">Blog</a></li>
-                    <li><a href="../../../nosotros/atencion-a-clientes.html" tabindex="0">Atención a clientes</a></li>
+                    <li><a href="/nosotros/atencion-a-clientes.html" tabindex="0">Atención a clientes</a></li>
                 </ul>
             </li>
           </ul>
         </nav>
           
         <button id="login-icon" class="btn-travelpass desktop-travelpass js-open-travelpass-login-modal" aria-label="Iniciar sesión TravelPass">
-          <img src="../../src/assets/img/global/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" width="60px" height="21px" loading="lazy">
+          <img src="/src/assets/img/global/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" width="60px" height="21px" loading="lazy">
         </button>
         <button id="openDotersModal" class="btn btn-doters desktop-doters" aria-label="Iniciar sesión Doters">
-          <img src='../../src/assets/img/global/logos/doters.svg' alt="Doters" loading="lazy">
+          <img src='/src/assets/img/global/logos/doters.svg' alt="Doters" loading="lazy">
         </button>
-        <a class="li__languaje desktop-languaje" href="../../../english/" aria-label="Cambiar idioma">
-          <img src='../../src/assets/icons/icons-img/USA_Flag.webp' alt="English" loading="lazy">
+        <a class="li__languaje desktop-languaje" href="/english/" aria-label="Cambiar idioma">
+          <img src='/src/assets/icons/icons-img/USA_Flag.webp' alt="English" loading="lazy">
         </a>
 
         <button class="container-menu-hamburguer" aria-label="Menu" id="hamburger-icon" aria-label="Abrir menu desplegable">
@@ -71,11 +71,11 @@ class AppHeader extends HTMLElement {
         <div id="dropdown-menu" class="show">
           <ul>
             <li class="lili__languaje">
-              <a class="a__languaje" href="../../../english/" aria-label="Cambiar idioma">
-                <img src='../../src/assets/icons/icons-img/USA_Flag.webp' alt="English" loading="lazy">
+              <a class="a__languaje" href="/english/" aria-label="Cambiar idioma">
+                <img src='/src/assets/icons/icons-img/USA_Flag.webp' alt="English" loading="lazy">
               </a>
             </li>
-            <li><a href="../../../" aria-label="Ir a inicio">INICIO</a></li>
+            <li><a href="/" aria-label="Ir a inicio">INICIO</a></li>
             <li class="submenu__media-queries">
                 <a href="#" aria-label="Facturar su viaje" aria-haspopup="true" aria-expanded="false">Facture su viaje <span class="icon-arrow-down"></span></a>
                 <ul>
@@ -89,30 +89,30 @@ class AppHeader extends HTMLElement {
             <li class="submenu__media-queries">
                 <a href="#" aria-label="Mas opciones" aria-haspopup="true" aria-expanded="false">Mas <span class="icon-arrow-down"></span></a>
                 <ul>
-                  <li><a href="../../../boletos-autobus/" tabindex="0">Boletos de autobus</a></li>
-                  <li><a href="../../../boletos-autobus/donde-comprar.html" tabindex="0">¿Donde comprar?</a></li>
-                  <!-- <li><a href="../index.html" tabindex="0">Mascotas a bordo</a></li> -->
-                  <li><a href="../../../servicios/renta-de-autobuses.html" tabindex="0">Renta de autobuses</a></li>
-                  <li><a href="../../../destinos/" tabindex="0">Destinos</a></li>
-                  <li><a href="../../../terminales/" tabindex="0">Terminales y taquillas</a></li>
-                  <!-- <li><a href="../../../salas-de-espera-vip.html" tabindex="0">Salas de espera</a></li>
-                  <li><a href="../../../salidas-charters.html" tabindex="0">Salidas charters</a></li> -->
-                  <li><a href="../../../servicios/servicio-a-bordo.html" tabindex="0">Servicios a bordo</a></li>
-                  <li><a href="../../../promociones/" tabindex="0">Promociones</a></li>
+                  <li><a href="/boletos-autobus/" tabindex="0">Boletos de autobus</a></li>
+                  <li><a href="/boletos-autobus/donde-comprar.html" tabindex="0">¿Donde comprar?</a></li>
+                  <!-- <li><a href="/src/index.html" tabindex="0">Mascotas a bordo</a></li> -->
+                  <li><a href="/servicios/renta-de-autobuses.html" tabindex="0">Renta de autobuses</a></li>
+                  <li><a href="/destinos/" tabindex="0">Destinos</a></li>
+                  <li><a href="/terminales/" tabindex="0">Terminales y taquillas</a></li>
+                  <!-- <li><a href="/salas-de-espera-vip.html" tabindex="0">Salas de espera</a></li>
+                  <li><a href="/salidas-charters.html" tabindex="0">Salidas charters</a></li> -->
+                  <li><a href="/servicios/servicio-a-bordo.html" tabindex="0">Servicios a bordo</a></li>
+                  <li><a href="/promociones/" tabindex="0">Promociones</a></li>
                   <li><a href="https://venta.autovias.com.mx/request.aspx?PRGNAME=AccesoEx&ARGUMENTS=-AAG,-AH,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-AES" tabindex="0">Agencias</a></li>
-                  <li><a href="../../../servicios/pago-referenciado-oxxo.html" tabindex="0">Pagos OXXO Pay</a></li>
-                    <li><a href="../../../promociones/viajero-anticipado.html" tabindex="0">Viajero anticipado</a></li>
-                  <li><a href="../../../servicios/viajero-protegido.html" tabindex="0">Viajero protegido</a></li>
+                  <li><a href="/servicios/pago-referenciado-oxxo.html" tabindex="0">Pagos OXXO Pay</a></li>
+                    <li><a href="/promociones/viajero-anticipado.html" tabindex="0">Viajero anticipado</a></li>
+                  <li><a href="/servicios/viajero-protegido.html" tabindex="0">Viajero protegido</a></li>
                   <li><a href="https://www.autovias.com.mx/blog/" tabindex="0">Blog</a></li>
-                  <li><a href="../../../nosotros/atencion-a-clientes.html" tabindex="0">Atención a clientes</a></li>
+                  <li><a href="/nosotros/atencion-a-clientes.html" tabindex="0">Atención a clientes</a></li>
                 </ul>
             </li>
             <li class="li__login">
               <button id="login-icon" class="btn-travelpass btn-travelpass__submenu js-open-travelpass-login-modal" aria-label="Iniciar sesión TravelPass">
-                <img src="../../../src/assets/img/global/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" width="60px" height="21px" loading="lazy">
+                <img src="/src/assets/img/global/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" width="60px" height="21px" loading="lazy">
               </button>
               <button id="openDotersModalMovil" class="btn-doters" aria-label="Iniciar sesión Doters">
-                <img src="../../../src/assets/img/global/logos/doters.svg" alt="Doters" width="66px" height="21px"  loading="lazy">
+                <img src="/src/assets/img/global/logos/doters.svg" alt="Doters" width="66px" height="21px"  loading="lazy">
               </button>
             </li>
           </ul>
