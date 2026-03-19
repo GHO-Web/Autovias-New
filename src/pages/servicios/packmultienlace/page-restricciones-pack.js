@@ -1,7 +1,7 @@
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/packmultienlace/app-cotiza-pack.js";
 import "../../../components/app-section-title.js";
-import "../../../components/app-banner-slider.js";
+import "../../../components/sliders/app-banner-slider.js";
 
 import "../../../components/packmultienlace/app-card-bg-primary.js";
 import "../../../components/packmultienlace/app-card-small-list.js";

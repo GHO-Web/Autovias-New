@@ -6,6 +6,7 @@ import "../../../components/app-section-title.js";
 import "../../../components/packmultienlace/app-card-bg-primary.js";
 import "../../../components/packmultienlace/app-card-small-list.js";
 import "../../../components/packmultienlace/app-header-pack-multienlace.js";
+import "../../../components/packmultienlace/app-footer-pack-multienlace.js";
 
 class PagePackMultienlaceInfo extends HTMLElement {
   connectedCallback() {
