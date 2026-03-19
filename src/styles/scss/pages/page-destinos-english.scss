@@ -21,7 +21,6 @@
 /*--------------------ESTILOS REPETITIVOS DEL LAYOUT RENTA DE AUTOBUSES---------------------*/
 
 .__first-section {
-  margin-top: 12rem;
 }
 
 .text-description {
@@ -80,18 +79,15 @@
 
 @include media("lg") {
   .__first-section {
-    margin-top: 10rem; // 13rem
   }
 }
 
 @media screen and (min-width:481px) and (max-width:900px) {
   .__first-section {
-    margin-top: 5rem !important;
   }
 }
 
 @media screen and (max-width:480px) {
   .__first-section {
-    margin-top: 4rem !important; // 4rem
   }
 }
